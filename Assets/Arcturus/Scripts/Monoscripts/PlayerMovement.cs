@@ -87,6 +87,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(ctx.ReadValue<float>() == 1 && canAttack)
         {
+            Debug.Log("Attacked");
             buttonHeld = true;
             if(weaponType == "blade")
             {
@@ -106,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(Attack());
                 foreach (RaycastHit2D hit in hits)
                 {
+                    Debug.Log("in for loop");
                     if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
                     {
                         Debug.Log("attack succesful");
