@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
             playerStats.suit = Player.Suit.spade;
         }
         playerStats.weapon = new Weapon(playerStats.suit);
-        playerStats.weapon.baseAttackSize *= 1; 
+        // playerStats.weapon.baseAttackSize *= 1; 
     }
     public void Move(InputAction.CallbackContext ctx)
     {
@@ -158,7 +158,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator Axe3Hit()
     {
-        playerStats.weapon.baseAttackSpeed = 10;
+        playerStats.weapon.baseAttackSpeed = 400;
         playerStats.weapon.baseKnockback = 6;
         yield return new WaitForSeconds(0.6f);
         inCombo = false;
