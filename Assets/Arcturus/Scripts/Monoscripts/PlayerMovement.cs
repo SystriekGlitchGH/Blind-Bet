@@ -21,19 +21,15 @@ public class PlayerMovement : MonoBehaviour
 	[Header("Movement stats")]
     // actual stats for how the player moves
     public float acceleration;
-    public float topSpeed;
     public float friction;
-    
     // variables for direction when moving
     private float directionX, directionY;
 
     [Header("Attack stats")]
-    public Weapon weapon;
     //variables for which weapon you are holding
     public float spearLungeForce;
     private bool isLunging = false;
     private bool inCombo = true;
-    // tracks which weapon is currently held
     public LayerMask boxLayer;
     // tracks if you're attacking or not, and how you are attacking
     private bool canAttack = true;
@@ -47,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerStats = new Player();
-		weapon = new Weapon(playerStats.suit);
 	}
     private void FixedUpdate()
     {
@@ -60,8 +55,8 @@ public class PlayerMovement : MonoBehaviour
         Vector2 newVelocity = new Vector2(directionX * acceleration, directionY * acceleration);
         // adding the force to the rigidbody2d
         rb2d.AddForce(newVelocity);
-        // maxing the velocity of the player to the topSpeed variable
-        Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), topSpeed);
+        // maxing the velocity of the player to the playerStats.baseSpeed variable
+        Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), playerStats.baseSpeed);
         // applying clamped velocity to rigidbody2d
         rb2d.linearVelocity = velocity;
         // when both direction inputs are 0, add linear damping to slow down player quickly
@@ -74,6 +69,24 @@ public class PlayerMovement : MonoBehaviour
         FindAngle();
         anchorTransform.eulerAngles = new Vector3(0,0,attackAngle);
     }
+    //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Diamond"))
+        {
+            playerStats.suit = Player.Suit.diamond;
+        }
+        if (collision.CompareTag("Club"))
+        {
+            playerStats.suit = Player.Suit.club;
+        }
+        if (collision.CompareTag("Spade"))
+        {
+            playerStats.suit = Player.Suit.spade;
+        }
+        playerStats.weapon = new Weapon(playerStats.suit);
+        playerStats.weapon.baseAttackSize *= 1; 
+    }
     public void Move(InputAction.CallbackContext ctx)
     {
         // direction x takes left and right, direction y takes up and down
@@ -85,6 +98,7 @@ public class PlayerMovement : MonoBehaviour
         if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.suit != Player.Suit.blank)
         {
             Debug.Log("Attacked");
+            Debug.Log(playerStats.suit);
             buttonHeld = true;
             RaycastHit2D[] hits = MakeBoxCastAttack();
             // starts the axe combo timer
@@ -105,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
                 if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
                 {
                     Debug.Log("attack succesful");
-                    enemy.Hit(this, weapon.baseKnockback);
+                    enemy.Hit(this, playerStats.weapon.baseKnockback);
                 }
             }
         }
@@ -118,22 +132,22 @@ public class PlayerMovement : MonoBehaviour
     private RaycastHit2D[] MakeBoxCastAttack()
     {
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
-        Vector2 position = angleAsVector * weapon.baseAttackDistance;
-		return Physics2D.BoxCastAll(transform.position + (Vector3)position, weapon.baseAttackSize, attackAngle, Vector2.zero,0,boxLayer);
+        Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
+		return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize, attackAngle, Vector2.zero,0,boxLayer);
     }
     private IEnumerator Attack()
     {
         canAttack = false;
         // all this code is purely for visual during presentation, will be replaced with animator sprites from here
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
-        Vector2 position = angleAsVector * weapon.baseAttackDistance;
+        Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
-        attack.transform.localScale = weapon.baseAttackSize;
+        attack.transform.localScale = playerStats.weapon.baseAttackSize;
         // to here
         
         yield return new WaitForSeconds(0.1f);
         Destroy(attack);
-        yield return new WaitForSeconds(2/weapon.baseAttackSpeed-0.1f);
+        yield return new WaitForSeconds(TimebetweenAttacks()-0.1f);
         canAttack = true;
     }
     private IEnumerator SpearLunge()
@@ -144,12 +158,12 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator Axe3Hit()
     {
-        weapon.baseAttackSpeed = 10;
-        weapon.baseKnockback = 6;
+        playerStats.weapon.baseAttackSpeed = 10;
+        playerStats.weapon.baseKnockback = 6;
         yield return new WaitForSeconds(0.6f);
         inCombo = false;
-        weapon.baseAttackSpeed = 2;
-        weapon.baseKnockback = 20;
+        playerStats.weapon.baseAttackSpeed = 2;
+        playerStats.weapon.baseKnockback = 20;
         yield return new WaitForSeconds(4);
         inCombo = true;
     }
@@ -195,12 +209,16 @@ public class PlayerMovement : MonoBehaviour
         if(playerDirection == Direction.SouthWest) return new Vector2(-0.7071f,-0.7071f);
         return new Vector2(0,0);
     }
+    private float TimebetweenAttacks()
+    {
+        return 1/(1+(playerStats.AttackSpeed-100 + playerStats.weapon.baseAttackSpeed)/100);
+    }
     private void OnDrawGizmos()
     {   
-        if(weapon != null)
+        if(playerStats != null)
         {
             Gizmos.matrix = anchorTransform.localToWorldMatrix;
-            Gizmos.DrawWireCube(new Vector2(0,weapon.baseAttackDistance), weapon.baseAttackSize);
+            Gizmos.DrawWireCube(new Vector2(0,playerStats.weapon.baseAttackSize.y/2+1), playerStats.weapon.baseAttackSize);
         }
     }
 }
