@@ -334,9 +334,9 @@ GameObject:
   - component: {fileID: 1998338956}
   - component: {fileID: 1998338955}
   - component: {fileID: 1998338953}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyMovement
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -358,7 +358,7 @@ MonoBehaviour:
   spriteRend: {fileID: 1998338954}
   acceleration: 40
   topSpeed: 2
-  friction: 6
+  friction: 8
   knockbackTime: 0.15
 --- !u!212 &1998338954
 SpriteRenderer:
