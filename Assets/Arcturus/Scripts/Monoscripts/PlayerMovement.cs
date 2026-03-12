@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2d;
     [SerializeField] SpriteRenderer spriteRend;
 	[SerializeField] Transform anchorTransform;
+    public Player playerStats;
 
 	[Header("Movement stats")]
     // actual stats for how the player moves
@@ -27,22 +28,17 @@ public class PlayerMovement : MonoBehaviour
     private float directionX, directionY;
 
     [Header("Attack stats")]
+    public Weapon weapon;
     //variables for which weapon you are holding
-    public string weaponName;
-    public string weaponType;
     public float spearLungeForce;
     private bool isLunging = false;
     private bool inCombo = true;
     // tracks which weapon is currently held
-    private int typeNum;
-    private int weaponNum;
     public LayerMask boxLayer;
-    public Weapon weapon;
     // tracks if you're attacking or not, and how you are attacking
     private bool canAttack = true;
     private bool buttonHeld;
     private float attackAngle;
-    Random rand = new Random();
     private enum Direction
     {
         North, South, East, West, NorthEast, NorthWest, SouthEast, SouthWest
@@ -50,7 +46,8 @@ public class PlayerMovement : MonoBehaviour
     private Direction playerDirection;
     private void Awake()
     {
-		weapon = new Weapon(weaponName, weaponType);
+        playerStats = new Player();
+		weapon = new Weapon(playerStats.suit);
 	}
     private void FixedUpdate()
     {
@@ -85,34 +82,30 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Attack(InputAction.CallbackContext ctx)
     {
-        if(ctx.ReadValue<float>() == 1 && canAttack)
+        if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.suit != Player.Suit.blank)
         {
             Debug.Log("Attacked");
             buttonHeld = true;
-            if(weaponType == "blade")
+            RaycastHit2D[] hits = MakeBoxCastAttack();
+            // starts the axe combo timer
+            if(playerStats.suit == Player.Suit.club && inCombo)
             {
-                RaycastHit2D[] hits = MakeBoxCastAttack();
-                // makes the dash when attacking as spear
-                if (weaponName == "spear")
+                StartCoroutine(Axe3Hit());
+            }
+            // makes the dash when attacking as spear
+            if (playerStats.suit == Player.Suit.spade)
+            {
+                StartCoroutine(SpearLunge());
+                rb2d.AddForce(DirectionToVector()*spearLungeForce, ForceMode2D.Impulse);
+            }
+            // detecting and delivering hits
+            StartCoroutine(Attack());
+            foreach (RaycastHit2D hit in hits)
+            {
+                if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
                 {
-                    StartCoroutine(SpearLunge());
-                    rb2d.AddForce(DirectionToVector()*spearLungeForce, ForceMode2D.Impulse);
-                }
-                // starts the axe combo timer
-                if(weaponName == "axe" && inCombo)
-                {
-                    StartCoroutine(Axe3Hit());
-                }
-                // detecting and delivering hits
-                StartCoroutine(Attack());
-                foreach (RaycastHit2D hit in hits)
-                {
-                    Debug.Log("in for loop");
-                    if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
-                    {
-                        Debug.Log("attack succesful");
-                        enemy.Hit(this, weapon.baseKnockback);
-                    }
+                    Debug.Log("attack succesful");
+                    enemy.Hit(this, weapon.baseKnockback);
                 }
             }
         }
@@ -121,31 +114,44 @@ public class PlayerMovement : MonoBehaviour
             buttonHeld = false;
         }
     }
-    public void SwitchWeaponName(InputAction.CallbackContext ctx)
+
+    private RaycastHit2D[] MakeBoxCastAttack()
     {
-        if (ctx.performed)
-        {
-            weaponNum++;
-            if (typeNum == 0)
-            {
-                if(weaponNum == 1)
-                {
-                    weaponName = "axe";
-                    weapon = new Weapon(weaponName, weaponType);
-                }
-                else if(weaponNum == 2)
-                {
-                    weaponName = "spear";
-                    weapon = new Weapon(weaponName, weaponType);
-                }
-                else if(weaponNum == 3)
-                {
-                    weaponNum = 0;
-                    weaponName = "sword";
-                    weapon = new Weapon(weaponName, weaponType);
-                }
-            }
-        }
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
+        Vector2 position = angleAsVector * weapon.baseAttackDistance;
+		return Physics2D.BoxCastAll(transform.position + (Vector3)position, weapon.baseAttackSize, attackAngle, Vector2.zero,0,boxLayer);
+    }
+    private IEnumerator Attack()
+    {
+        canAttack = false;
+        // all this code is purely for visual during presentation, will be replaced with animator sprites from here
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
+        Vector2 position = angleAsVector * weapon.baseAttackDistance;
+        GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
+        attack.transform.localScale = weapon.baseAttackSize;
+        // to here
+        
+        yield return new WaitForSeconds(0.1f);
+        Destroy(attack);
+        yield return new WaitForSeconds(2/weapon.baseAttackSpeed-0.1f);
+        canAttack = true;
+    }
+    private IEnumerator SpearLunge()
+    {
+        isLunging = true;
+        yield return new WaitForSeconds(0.2f);
+        isLunging = false;
+    }
+    private IEnumerator Axe3Hit()
+    {
+        weapon.baseAttackSpeed = 10;
+        weapon.baseKnockback = 6;
+        yield return new WaitForSeconds(0.6f);
+        inCombo = false;
+        weapon.baseAttackSpeed = 2;
+        weapon.baseKnockback = 20;
+        yield return new WaitForSeconds(4);
+        inCombo = true;
     }
     private void FindAngle()
     {
@@ -188,44 +194,6 @@ public class PlayerMovement : MonoBehaviour
         if(playerDirection == Direction.SouthEast) return new Vector2(0.7071f,-0.7071f);
         if(playerDirection == Direction.SouthWest) return new Vector2(-0.7071f,-0.7071f);
         return new Vector2(0,0);
-    }
-    private RaycastHit2D[] MakeBoxCastAttack()
-    {
-        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
-        Vector2 position = angleAsVector * weapon.baseAttackDistance;
-		return Physics2D.BoxCastAll(transform.position + (Vector3)position, weapon.baseAttackSize, attackAngle, Vector2.zero,0,boxLayer);
-    }
-    private IEnumerator Attack()
-    {
-        canAttack = false;
-        // all this code is purely for visual during presentation, will be replaced with animator sprites from here
-        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
-        Vector2 position = angleAsVector * weapon.baseAttackDistance;
-        GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
-        attack.transform.localScale = weapon.baseAttackSize;
-        // to here
-        
-        yield return new WaitForSeconds(0.1f);
-        Destroy(attack);
-        yield return new WaitForSeconds(2/weapon.baseAttackSpeed-0.1f);
-        canAttack = true;
-    }
-    private IEnumerator SpearLunge()
-    {
-        isLunging = true;
-        yield return new WaitForSeconds(0.2f);
-        isLunging = false;
-    }
-    private IEnumerator Axe3Hit()
-    {
-        weapon.baseAttackSpeed = 10;
-        weapon.baseKnockback = 6;
-        yield return new WaitForSeconds(0.6f);
-        inCombo = false;
-        weapon.baseAttackSpeed = 2;
-        weapon.baseKnockback = 20;
-        yield return new WaitForSeconds(4);
-        inCombo = true;
     }
     private void OnDrawGizmos()
     {   
