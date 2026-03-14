@@ -878,7 +878,8 @@ MonoBehaviour:
   knockbackTime: 0.15
   attackCooldown: 3
   AttackRange: 4
-  dashForce: 10
+  baseKnockback: 5
+  dashForce: 16
 --- !u!1001 &2833576129669177058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -912,7 +913,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
@@ -920,7 +929,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 719165811}
     - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 719165811}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
@@ -928,11 +945,23 @@ PrefabInstance:
       value: Dash
       objectReference: {fileID: 0}
     - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Parry
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerMovement, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4386654664542035037, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
@@ -982,6 +1011,14 @@ PrefabInstance:
     - target: {fileID: 8453562600957011447, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: parryObject
+      value: 
+      objectReference: {fileID: 2512939790457252142, guid: 1417442bbfc44164d829b909d2654f6c, type: 3}
+    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: knockbackTime
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

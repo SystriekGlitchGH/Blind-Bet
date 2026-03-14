@@ -7,6 +7,7 @@ public class Weapon
     public float baseAttackSpeed; // base attack speed of weapon
     public float baseKnockback; // base knockback of weapon
     public Vector2 baseAttackSize; // size of melee weapon hitbox
+    public Vector2 baseParrySize; // size of parry hitbox
 
 
 	public Weapon(Player.Suit s)
@@ -32,5 +33,6 @@ public class Weapon
             baseKnockback = 8;
             baseAttackSize = new Vector2(2f, 4);
         }
+        baseParrySize = new Vector2(2,0.5f);
     }
 }

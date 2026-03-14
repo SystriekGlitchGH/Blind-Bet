@@ -25,6 +25,7 @@ public class EnemyMovement : MonoBehaviour
     public float attackCooldown;
     protected bool canAttack = true, isReadyingAttack, isAttacking;
     public float AttackRange;
+    public float baseKnockback;
 
     //other
     protected float colliderPushForce = 8;
@@ -52,7 +53,7 @@ public class EnemyMovement : MonoBehaviour
             }
             if(distance < AttackRange && canAttack)
             {
-                ActivateAttack();
+                StartCoroutine(AttackTimer());
             }
             if(distance < 2 && !isAttacking)
             {
@@ -82,17 +83,13 @@ public class EnemyMovement : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    public void Hit(PlayerMovement attacker, float knockback)
+    public void GetHit(PlayerMovement attacker, float knockback)
     {
-        StartCoroutine(GetHit());
+        StartCoroutine(GetHitTimer());
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
     }
-    public void ActivateAttack()
-    {
-        StartCoroutine(Attack());
-    }
 
-    protected IEnumerator GetHit()
+    protected IEnumerator GetHitTimer()
     {
         hasKnockback = true;
         spriteRend.color = new Color32(150,0,0,255);
@@ -100,7 +97,7 @@ public class EnemyMovement : MonoBehaviour
         spriteRend.color = new Color32(90,215,0,255);
         hasKnockback = false;
     }
-    protected virtual IEnumerator Attack()
+    protected virtual IEnumerator AttackTimer()
     {
         canAttack = false; // make the enemy not duplicate attacks
         isReadyingAttack = true; // small moment before attack to make it not instant
@@ -117,8 +114,17 @@ public class EnemyMovement : MonoBehaviour
     {
         return Vector2.Distance((Vector2)transform.position, playerPos);
     }
-    protected Vector2 PlayerDirection(Vector2 playerPos)
+    public Vector2 PlayerDirection(Vector2 playerPos)
     {
         return (playerPos - (Vector2)transform.position).normalized;
+    }
+    // get statements
+    public bool IsAttacking()
+    {
+        return isAttacking;
+    }
+    public void setVelocity(Vector2 velocity)
+    {
+        rb2d.linearVelocity = velocity;
     }
 }

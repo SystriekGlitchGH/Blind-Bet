@@ -9,14 +9,15 @@ using Random = System.Random;
 public class PlayerMovement : MonoBehaviour
 {
     //Non-Permanant components
-    [SerializeField] GameObject attackVisual;
+    public GameObject attackVisual;
+    [SerializeField] GameObject parryObject;
 
     //Permanent components
 
     [Header("Components")]
     public Rigidbody2D rb2d;
     [SerializeField] SpriteRenderer spriteRend;
-	[SerializeField] Transform anchorTransform;
+	public Transform anchorTransform;
     public Player playerStats;
 
 	[Header("Movement stats")]
@@ -26,12 +27,18 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Attack stats")]
     private bool isDashing, canDash = true; // checks if you are currently dashing and are allowed to dash
+    private bool isParrying, canParry = true; // checks if you are parrying and if you can parry
     private bool isLunging; // checks if you are currently lunging and are allowed to lunge
     private bool inCombo = true; // checks if you are currently in an axe combo
     public LayerMask boxLayer; // the layers that your attack can hit
     private bool canAttack = true; // checks if you can attack
     private bool buttonHeld; // checks if the attack button is held for auto fire purposes
     private float attackAngle; // the angle of your attack
+
+    [Header("Getting Attacked")]
+    private bool hasKnockback;
+    public float knockbackTime = 0.2f;
+
     // enum to make direction more readble
     private enum Direction
     {
@@ -45,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // if you are currently lunging, your lineardamping should be 0 and regular movement shouldn't apply
-        if (isDashing || isLunging)
+        if (isDashing || isLunging || hasKnockback)
         {
             rb2d.linearDamping = 0;
             return;
@@ -85,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
         }
         playerStats.weapon = new Weapon(playerStats.suit);
     }
+    #region INPUTS
     // gives directions from inputs
     public void Move(InputAction.CallbackContext ctx)
     {
@@ -98,11 +106,11 @@ public class PlayerMovement : MonoBehaviour
         if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.suit != Player.Suit.blank)
         {
             buttonHeld = true;
-            RaycastHit2D[] hits = MakeBoxCastAttack();
+            RaycastHit2D[] hits = MakeBoxCastAll("attack");
             // starts the axe combo timer
             if(playerStats.suit == Player.Suit.club && inCombo)
             {
-                StartCoroutine(Axe3Hit());
+                StartCoroutine(Axe3HitTimer());
             }
             // makes the dash when attacking as spear
             if (playerStats.suit == Player.Suit.spade)
@@ -110,13 +118,13 @@ public class PlayerMovement : MonoBehaviour
                 ActivateDash(1);
             }
             // detecting and delivering hits
-            StartCoroutine(Attack());
+            StartCoroutine(AttackTimer());
             foreach (RaycastHit2D hit in hits)
             {
                 if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
                 {
                     Debug.Log("attack succesful");
-                    enemy.Hit(this, playerStats.weapon.baseKnockback);
+                    enemy.GetHit(this, playerStats.weapon.baseKnockback);
                 }
             }
         }
@@ -125,6 +133,15 @@ public class PlayerMovement : MonoBehaviour
             buttonHeld = false;
         }
     }
+    // input for parrying
+    public void Parry(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed && canParry)
+        {
+            StartCoroutine(ParryTimer());
+        }
+    }
+    
     // input for dashing
     public void Dash(InputAction.CallbackContext ctx)
     {
@@ -133,23 +150,25 @@ public class PlayerMovement : MonoBehaviour
             ActivateDash(0);
         }
     }
-    // makes a boxcastall that is the size of the weapon
-    private RaycastHit2D[] MakeBoxCastAttack()
-    {
-        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
-        Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
-		return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize, attackAngle, Vector2.zero,0,boxLayer);
-    }
-    // attacking script for melee attacks
+    #endregion
+    #region ACTIVATION METHODS
     private void ActivateDash(int type)
     {
         if(type == 0)
-            StartCoroutine(Dash());
+            StartCoroutine(DashTimer());
         if(type == 1)
-            StartCoroutine(Lunge());
+            StartCoroutine(LungeTimer());
         rb2d.AddForce(DirectionToVector()*playerStats.dashDistance, ForceMode2D.Impulse);
     }
-    private IEnumerator Attack()
+    // getting hit
+    public void GetHit(EnemyMovement attacker, float knockback)
+    {
+        StartCoroutine(GetHitTimer());
+        rb2d.AddForce(attacker.PlayerDirection(transform.position)*knockback,ForceMode2D.Impulse);
+    }
+    #endregion
+    #region IENUMERATORS
+    private IEnumerator AttackTimer()
     {
         canAttack = false;
         // makes an attack visual sprite when using a melee attack
@@ -165,25 +184,25 @@ public class PlayerMovement : MonoBehaviour
         canAttack = true;
     }
     // timer script for allowing the dash
-    private IEnumerator Dash()
+    private IEnumerator DashTimer()
     {
         canDash = false;
         isDashing = true;
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
-        yield return new WaitForSeconds(TimeBetweenDashes());
+        yield return new WaitForSeconds(playerStats.dashCooldown);
         canDash = true;
     }
     // this is needed to make sure the dash cooldown doesn't break
-    private IEnumerator Lunge()
+    private IEnumerator LungeTimer()
     {
         isLunging = true;
         yield return new WaitForSeconds(0.2f);
         isLunging = false;
-        yield return new WaitForSeconds(TimeBetweenDashes());
+        yield return new WaitForSeconds(playerStats.dashCooldown);
     }
     // timer script for the axe combo attack
-    private IEnumerator Axe3Hit()
+    private IEnumerator Axe3HitTimer()
     {
         playerStats.weapon.baseAttackSpeed = 400;
         playerStats.weapon.baseKnockback = 6;
@@ -194,6 +213,41 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(4);
         inCombo = true;
     }
+    // timer script for getting hit by anything
+    private IEnumerator GetHitTimer()
+    {
+        hasKnockback = true;
+        spriteRend.color = new Color32(150,0,0,255);
+        yield return new WaitForSeconds(knockbackTime);
+        spriteRend.color = new Color32(255,255,255,255);
+        hasKnockback = false;
+    }
+    private IEnumerator ParryTimer()
+    {
+        canParry = false;
+        isParrying = true;
+        // makes the parry object when parrying
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
+        Vector2 position = angleAsVector * (playerStats.weapon.baseParrySize.y/2+1);
+        GameObject parry = Instantiate(parryObject, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
+        parry.transform.localScale = playerStats.weapon.baseParrySize;
+        if(parry.TryGetComponent(out Parry p))
+        {
+            p.attackAngle = attackAngle;
+            p.playerStats = playerStats;
+            p.pm = this;
+            p.boxLayer = boxLayer;
+        }
+
+        
+        yield return new WaitForSeconds(playerStats.baseParryTime);
+        isParrying = false;
+        Destroy(parry);
+        yield return new WaitForSeconds(playerStats.parryCooldown);
+        canParry = true;
+    }
+    #endregion
+    #region HELP METHODS
     // assigns attack angle from the corresponding direction
     private void FindAngle()
     {
@@ -239,15 +293,27 @@ public class PlayerMovement : MonoBehaviour
         if(playerDirection == Direction.SouthWest) return new Vector2(-0.7071f,-0.7071f);
         return new Vector2(0,0);
     }
+    // makes a boxcastAll that is the size of the weapon
+    private RaycastHit2D[] MakeBoxCastAll(string type)
+    {
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
+        if(type == "attack")
+        {
+           Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
+           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize, attackAngle, Vector2.zero,0,boxLayer); 
+        }
+        else // dummy boxcast, does nothing
+        {
+            return Physics2D.BoxCastAll(transform.position, Vector3.zero, attackAngle, Vector2.zero);
+        }
+    }
     // equations for finding amount of time between singular attacks
     private float TimeBetweenAttacks()
     {
         return 1/(1+(playerStats.AttackSpeed-100 + playerStats.weapon.baseAttackSpeed)/100);
     }
-    private float TimeBetweenDashes()
-    {
-        return 0.5f/(1+(playerStats.dashCooldown-100)/100);
-    }
+
+    #endregion
     // for debugging attack hitboxes
     private void OnDrawGizmos()
     {   

@@ -11,6 +11,7 @@ public class Player
     public float baseSpeed;
     public float AttackSpeed;
     public float dashDistance, dashCooldown;
+    public float baseParryTime, parryCooldown;
     public Player()
     {
         suit = Suit.blank;
@@ -18,6 +19,8 @@ public class Player
         baseSpeed = 10;
         AttackSpeed = 100;
         dashDistance = 20;
-        dashCooldown = 100;
+        dashCooldown = 0.5f;
+        baseParryTime = 0.2f;
+        parryCooldown = 1;
     }
 }
