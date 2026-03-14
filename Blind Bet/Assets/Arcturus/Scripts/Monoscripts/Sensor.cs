@@ -3,7 +3,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Sensor : MonoBehaviour
 {
-    [SerializeField] EnemyMovement enemyMovement;
+    [SerializeReference] EnemyMovement enemyMovement;
 	private void Update()
 	{
 		transform.position = enemyMovement.transform.position;

@@ -97,7 +97,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.suit != Player.Suit.blank)
         {
-            Debug.Log(playerStats.suit);
             buttonHeld = true;
             RaycastHit2D[] hits = MakeBoxCastAttack();
             // starts the axe combo timer

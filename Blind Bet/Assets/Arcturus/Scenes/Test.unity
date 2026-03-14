@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168d96bc66941e2439293cfb5bf67d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1998338953}
+  enemyMovement: {fileID: 1998338958}
 --- !u!58 &936423822
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -459,7 +459,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 3
+  m_Radius: 5
 --- !u!1 &1497527886
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +609,7 @@ Transform:
   m_GameObject: {fileID: 1600753482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 1998338954}
   - component: {fileID: 1998338956}
   - component: {fileID: 1998338955}
-  - component: {fileID: 1998338953}
+  - component: {fileID: 1998338958}
   m_Layer: 7
   m_Name: EnemyMovement
   m_TagString: Enemy
@@ -724,25 +724,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1998338953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998338952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9724a6b04d7f4b3439390eb9f59db634, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  rb2d: {fileID: 1998338955}
-  spriteRend: {fileID: 1998338954}
-  acceleration: 40
-  topSpeed: 2
-  friction: 8
-  knockbackTime: 0.15
 --- !u!212 &1998338954
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -876,6 +857,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1600753483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1998338958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998338952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d37ff3a24e9d0a43a39b887681ed3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  rb2d: {fileID: 1998338955}
+  spriteRend: {fileID: 1998338954}
+  acceleration: 40
+  topSpeed: 2
+  friction: 8
+  knockbackTime: 0.15
+  attackCooldown: 3
+  AttackRange: 4
+  dashForce: 10
 --- !u!1001 &2833576129669177058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -938,7 +941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4386654664542035037, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4386654664542035037, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_LocalPosition.z
