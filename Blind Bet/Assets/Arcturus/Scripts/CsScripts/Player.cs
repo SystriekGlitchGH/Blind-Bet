@@ -10,12 +10,14 @@ public class Player
     public Weapon weapon;
     public float baseSpeed;
     public float AttackSpeed;
-
+    public float dashDistance, dashCooldown;
     public Player()
     {
         suit = Suit.blank;
         weapon = new Weapon(suit);
         baseSpeed = 10;
         AttackSpeed = 100;
+        dashDistance = 20;
+        dashCooldown = 100;
     }
 }

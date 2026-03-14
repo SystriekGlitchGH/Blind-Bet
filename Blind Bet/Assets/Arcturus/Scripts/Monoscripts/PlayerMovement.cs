@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.Mathematics;
 using Unity.VisualScripting;
@@ -19,34 +20,32 @@ public class PlayerMovement : MonoBehaviour
     public Player playerStats;
 
 	[Header("Movement stats")]
-    // actual stats for how the player moves
-    public float acceleration;
-    public float friction;
-    // variables for direction when moving
-    private float directionX, directionY;
+    public float acceleration; // how quickly you go to top speed
+    public float friction; // controls air resistance
+    private float directionX, directionY; // variables for direction when moving
 
     [Header("Attack stats")]
-    //variables for which weapon you are holding
-    public float spearLungeForce;
-    private bool isLunging = false;
-    private bool inCombo = true;
-    public LayerMask boxLayer;
-    // tracks if you're attacking or not, and how you are attacking
-    private bool canAttack = true;
-    private bool buttonHeld;
-    private float attackAngle;
+    private bool isDashing, canDash = true; // checks if you are currently dashing and are allowed to dash
+    private bool isLunging; // checks if you are currently lunging and are allowed to lunge
+    private bool inCombo = true; // checks if you are currently in an axe combo
+    public LayerMask boxLayer; // the layers that your attack can hit
+    private bool canAttack = true; // checks if you can attack
+    private bool buttonHeld; // checks if the attack button is held for auto fire purposes
+    private float attackAngle; // the angle of your attack
+    // enum to make direction more readble
     private enum Direction
     {
         North, South, East, West, NorthEast, NorthWest, SouthEast, SouthWest
     }
-    private Direction playerDirection;
+    private Direction playerDirection; // the player's current direction
     private void Awake()
     {
-        playerStats = new Player();
+        playerStats = new Player(); // constructing player object
 	}
     private void FixedUpdate()
     {
-        if (isLunging)
+        // if you are currently lunging, your lineardamping should be 0 and regular movement shouldn't apply
+        if (isDashing || isLunging)
         {
             rb2d.linearDamping = 0;
             return;
@@ -65,9 +64,9 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        FindDirection();
-        FindAngle();
-        anchorTransform.eulerAngles = new Vector3(0,0,attackAngle);
+        FindDirection(); // gets the direction from the vector
+        FindAngle(); // gets the angle from the direction
+        anchorTransform.eulerAngles = new Vector3(0,0,attackAngle); // uses angle to change the achor transform
     }
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
     private void OnTriggerEnter2D(Collider2D collision)
@@ -85,19 +84,19 @@ public class PlayerMovement : MonoBehaviour
             playerStats.suit = Player.Suit.spade;
         }
         playerStats.weapon = new Weapon(playerStats.suit);
-        // playerStats.weapon.baseAttackSize *= 1; 
     }
+    // gives directions from inputs
     public void Move(InputAction.CallbackContext ctx)
     {
         // direction x takes left and right, direction y takes up and down
         directionX = ctx.ReadValue<Vector2>().x;
         directionY = ctx.ReadValue<Vector2>().y;
     }
+    // main input attacking script
     public void Attack(InputAction.CallbackContext ctx)
     {
         if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.suit != Player.Suit.blank)
         {
-            Debug.Log("Attacked");
             Debug.Log(playerStats.suit);
             buttonHeld = true;
             RaycastHit2D[] hits = MakeBoxCastAttack();
@@ -109,8 +108,7 @@ public class PlayerMovement : MonoBehaviour
             // makes the dash when attacking as spear
             if (playerStats.suit == Player.Suit.spade)
             {
-                StartCoroutine(SpearLunge());
-                rb2d.AddForce(DirectionToVector()*spearLungeForce, ForceMode2D.Impulse);
+                ActivateDash(1);
             }
             // detecting and delivering hits
             StartCoroutine(Attack());
@@ -128,34 +126,64 @@ public class PlayerMovement : MonoBehaviour
             buttonHeld = false;
         }
     }
-
+    // input for dashing
+    public void Dash(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed && canDash)
+        {
+            ActivateDash(0);
+        }
+    }
+    // makes a boxcastall that is the size of the weapon
     private RaycastHit2D[] MakeBoxCastAttack()
     {
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
 		return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize, attackAngle, Vector2.zero,0,boxLayer);
     }
+    // attacking script for melee attacks
+    private void ActivateDash(int type)
+    {
+        if(type == 0)
+            StartCoroutine(Dash());
+        if(type == 1)
+            StartCoroutine(Lunge());
+        rb2d.AddForce(DirectionToVector()*playerStats.dashDistance, ForceMode2D.Impulse);
+    }
     private IEnumerator Attack()
     {
         canAttack = false;
-        // all this code is purely for visual during presentation, will be replaced with animator sprites from here
+        // makes an attack visual sprite when using a melee attack
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
         attack.transform.localScale = playerStats.weapon.baseAttackSize;
-        // to here
         
         yield return new WaitForSeconds(0.1f);
         Destroy(attack);
-        yield return new WaitForSeconds(TimebetweenAttacks()-0.1f);
+        // amount of time before you can attack again - time lost on visual animation on previous waitforseconds
+        yield return new WaitForSeconds(TimeBetweenAttacks()-0.1f);
         canAttack = true;
     }
-    private IEnumerator SpearLunge()
+    // timer script for allowing the dash
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        yield return new WaitForSeconds(0.2f);
+        isDashing = false;
+        yield return new WaitForSeconds(TimeBetweenDashes());
+        canDash = true;
+    }
+    // this is needed to make sure the dash cooldown doesn't break
+    private IEnumerator Lunge()
     {
         isLunging = true;
         yield return new WaitForSeconds(0.2f);
         isLunging = false;
+        yield return new WaitForSeconds(TimeBetweenDashes());
     }
+    // timer script for the axe combo attack
     private IEnumerator Axe3Hit()
     {
         playerStats.weapon.baseAttackSpeed = 400;
@@ -167,6 +195,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(4);
         inCombo = true;
     }
+    // assigns attack angle from the corresponding direction
     private void FindAngle()
     {
         if(playerDirection == Direction.North) attackAngle = 0;
@@ -178,6 +207,7 @@ public class PlayerMovement : MonoBehaviour
         if(playerDirection == Direction.SouthEast) attackAngle = -135;
         if(playerDirection == Direction.SouthWest) attackAngle = 135;
     }
+    // assigns the playerdirection by taking the input directions
     private void FindDirection()
     {
         //north
@@ -197,6 +227,7 @@ public class PlayerMovement : MonoBehaviour
         //southwest
         if(directionX < 0 && directionY < 0) playerDirection = Direction.SouthWest;
     }
+    //takes current enum direction and returns the vector that is assigned to it
     public Vector2 DirectionToVector()
     {
         if(playerDirection == Direction.North) return new Vector2(0,1);
@@ -209,10 +240,16 @@ public class PlayerMovement : MonoBehaviour
         if(playerDirection == Direction.SouthWest) return new Vector2(-0.7071f,-0.7071f);
         return new Vector2(0,0);
     }
-    private float TimebetweenAttacks()
+    // equations for finding amount of time between singular attacks
+    private float TimeBetweenAttacks()
     {
         return 1/(1+(playerStats.AttackSpeed-100 + playerStats.weapon.baseAttackSpeed)/100);
     }
+    private float TimeBetweenDashes()
+    {
+        return 0.5f/(1+(playerStats.dashCooldown-100)/100);
+    }
+    // for debugging attack hitboxes
     private void OnDrawGizmos()
     {   
         if(playerStats != null)
