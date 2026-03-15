@@ -33,6 +33,6 @@ public class Weapon
             baseKnockback = 8;
             baseAttackSize = new Vector2(2f, 4);
         }
-        baseParrySize = new Vector2(2,0.5f);
+        baseParrySize = new Vector2(2,1f);
     }
 }

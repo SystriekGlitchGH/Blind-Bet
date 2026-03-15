@@ -57,6 +57,11 @@ public class PlayerMovement : MonoBehaviour
             rb2d.linearDamping = 0;
             return;
         }
+        if (isParrying)
+        {
+            rb2d.linearVelocity = Vector2.zero;
+            return;
+        }
         // adding acceleration to the directions
         Vector2 newVelocity = new Vector2(directionX * acceleration, directionY * acceleration);
         // adding the force to the rigidbody2d
@@ -138,7 +143,22 @@ public class PlayerMovement : MonoBehaviour
     {
         if (ctx.performed && canParry)
         {
+            RaycastHit2D hit = MakeBoxCast("parry");
             StartCoroutine(ParryTimer());
+            if(hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy) && enemy.IsAttacking())
+            {
+                enemy.setVelocity(Vector2.zero);
+                RaycastHit2D[] hits = MakeBoxCastAll("retaliate");
+                StartCoroutine(AttackTimer());
+                foreach (RaycastHit2D hit2 in hits)
+                {
+                    if (hit2 && hit2.rigidbody.TryGetComponent(out EnemyMovement enemies))
+                    {
+                        Debug.Log("attack succesful");
+                        enemies.GetHit(this, playerStats.weapon.baseKnockback*2);
+                    }
+                }
+            }
         }
     }
     
@@ -174,8 +194,10 @@ public class PlayerMovement : MonoBehaviour
         // makes an attack visual sprite when using a melee attack
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
+        if (isParrying) position = angleAsVector * (playerStats.weapon.baseAttackSize.y+1);
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
-        attack.transform.localScale = playerStats.weapon.baseAttackSize;
+        if (isParrying) attack.transform.localScale = playerStats.weapon.baseAttackSize*2;
+        else attack.transform.localScale = playerStats.weapon.baseAttackSize;
         
         yield return new WaitForSeconds(0.1f);
         Destroy(attack);
@@ -226,23 +248,16 @@ public class PlayerMovement : MonoBehaviour
     {
         canParry = false;
         isParrying = true;
-        // makes the parry object when parrying
+        // makes the parry visual when parrying
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (playerStats.weapon.baseParrySize.y/2+1);
         GameObject parry = Instantiate(parryObject, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
         parry.transform.localScale = playerStats.weapon.baseParrySize;
-        if(parry.TryGetComponent(out Parry p))
-        {
-            p.attackAngle = attackAngle;
-            p.playerStats = playerStats;
-            p.pm = this;
-            p.boxLayer = boxLayer;
-        }
-
-        
-        yield return new WaitForSeconds(playerStats.baseParryTime);
-        isParrying = false;
+        // to here
+        yield return new WaitForSeconds(0.1f);
         Destroy(parry);
+        yield return new WaitForSeconds(playerStats.baseParryTime-0.1f);
+        isParrying = false;
         yield return new WaitForSeconds(playerStats.parryCooldown);
         canParry = true;
     }
@@ -302,9 +317,27 @@ public class PlayerMovement : MonoBehaviour
            Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
            return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize, attackAngle, Vector2.zero,0,boxLayer); 
         }
+        if(type == "retaliate")
+        {
+           Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y+1);
+           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize*2, attackAngle, Vector2.zero,0,boxLayer); 
+        }
         else // dummy boxcast, does nothing
         {
             return Physics2D.BoxCastAll(transform.position, Vector3.zero, attackAngle, Vector2.zero);
+        }
+    }
+    private RaycastHit2D MakeBoxCast(string type)
+    {
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
+        if(type == "parry")
+        {
+           Vector2 position = angleAsVector * (playerStats.weapon.baseParrySize.y/2+1);
+           return Physics2D.BoxCast(transform.position + (Vector3)position, playerStats.weapon.baseParrySize, attackAngle, Vector2.zero,0,boxLayer); 
+        }
+        else // dummy boxcast, does nothing
+        {
+            return Physics2D.BoxCast(transform.position, Vector3.zero, attackAngle, Vector2.zero);
         }
     }
     // equations for finding amount of time between singular attacks
