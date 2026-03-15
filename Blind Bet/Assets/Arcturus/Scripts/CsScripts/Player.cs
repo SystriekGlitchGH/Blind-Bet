@@ -1,11 +1,23 @@
+using System;
 using UnityEngine;
 
 public class Player
 {
+    public enum HandType
+    {
+        none,high,pair,twopair,kind3,flush,straight,fullhouse,kind4,kind5,royalflush
+    }
+    public struct Hand
+    {
+        public Card[] cards;
+        public Card.Suit suit;
+        public bool suited;
+        public HandType type;
+    }
     public Card.Suit activeSuit;
-    public Card[] activeHand; 
-    public Card[] passiveHand1;
-    public Card[] passiveHand2;
+    public Hand activeHand; 
+    public Hand passiveHand1;
+    public Hand passiveHand2;
     public Weapon weapon;
     public float baseSpeed;
     public float AttackSpeed;
@@ -21,5 +33,42 @@ public class Player
         dashCooldown = 0.5f;
         baseParryTime = 0.2f;
         parryCooldown = 1;
+        activeHand = new Hand();
+        passiveHand1 = new Hand();
+        passiveHand2 = new Hand();
+    }
+
+    public bool IsSuited(Hand hand)
+    {
+        if(hand.type != HandType.none)
+        {
+            Card.Suit initialSuit = hand.cards[0].suit;
+            foreach(Card c in hand.cards)
+            {
+                if(c != null)
+                {
+                    if(initialSuit != c.suit)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public Card.Suit GetHandSuit(Hand hand)
+    {
+        if (IsSuited(hand))
+        {
+            return hand.cards[0].suit;
+        }
+        else
+        {
+            return Card.Suit.blank;
+        }
     }
 }
