@@ -85,17 +85,17 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.CompareTag("Diamond"))
         {
-            playerStats.suit = Player.Suit.diamond;
+            playerStats.activeSuit = Card.Suit.diamond;
         }
         if (collision.CompareTag("Club"))
         {
-            playerStats.suit = Player.Suit.club;
+            playerStats.activeSuit = Card.Suit.club;
         }
         if (collision.CompareTag("Spade"))
         {
-            playerStats.suit = Player.Suit.spade;
+            playerStats.activeSuit = Card.Suit.spade;
         }
-        playerStats.weapon = new Weapon(playerStats.suit);
+        playerStats.weapon = new Weapon(playerStats.activeSuit);
     }
     #region INPUTS
     // gives directions from inputs
@@ -108,17 +108,17 @@ public class PlayerMovement : MonoBehaviour
     // main input attacking script
     public void Attack(InputAction.CallbackContext ctx)
     {
-        if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.suit != Player.Suit.blank)
+        if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.activeSuit != Card.Suit.blank)
         {
             buttonHeld = true;
             RaycastHit2D[] hits = MakeBoxCastAll("attack");
             // starts the axe combo timer
-            if(playerStats.suit == Player.Suit.club && inCombo)
+            if(playerStats.activeSuit == Card.Suit.club && inCombo)
             {
                 StartCoroutine(Axe3HitTimer());
             }
             // makes the dash when attacking as spear
-            if (playerStats.suit == Player.Suit.spade)
+            if (playerStats.activeSuit == Card.Suit.spade)
             {
                 ActivateDash(1);
             }

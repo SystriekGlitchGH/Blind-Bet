@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class Player
 {
-    public enum Suit
-    {
-        blank,diamond,club,spade
-    }
-    public Suit suit;
+    public Card.Suit activeSuit;
+    public Card[] activeHand; 
+    public Card[] passiveHand1;
+    public Card[] passiveHand2;
     public Weapon weapon;
     public float baseSpeed;
     public float AttackSpeed;
@@ -14,8 +13,8 @@ public class Player
     public float baseParryTime, parryCooldown;
     public Player()
     {
-        suit = Suit.blank;
-        weapon = new Weapon(suit);
+        activeSuit = Card.Suit.blank;
+        weapon = new Weapon(activeSuit);
         baseSpeed = 10;
         AttackSpeed = 100;
         dashDistance = 20;

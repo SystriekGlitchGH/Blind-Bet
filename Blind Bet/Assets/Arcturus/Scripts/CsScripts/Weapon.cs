@@ -10,23 +10,23 @@ public class Weapon
     public Vector2 baseParrySize; // size of parry hitbox
 
 
-	public Weapon(Player.Suit s)
+	public Weapon(Card.Suit s)
     {
-        if(s == Player.Suit.diamond)
+        if(s == Card.Suit.diamond)
         {
             baseAttack = 6;
             baseAttackSpeed = 200;
             baseKnockback = 10;
             baseAttackSize = new Vector2(2.5f,3);
         }
-        else if(s == Player.Suit.club)
+        else if(s == Card.Suit.club)
         {
             baseAttack = 8;
             baseAttackSpeed = 0;
             baseKnockback = 20;
             baseAttackSize = new Vector2(3.5f, 2);
         }
-        else if(s == Player.Suit.spade)
+        else if(s == Card.Suit.spade)
         {
             baseAttack = 5;
             baseAttackSpeed = 100;
