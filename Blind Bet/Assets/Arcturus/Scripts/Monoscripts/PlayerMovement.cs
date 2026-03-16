@@ -48,7 +48,16 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerStats = new Player(); // constructing player object
-	}
+        playerStats.AddCard();
+        Debug.Log("cards: "+playerStats.activeHand.cards[0].rank+playerStats.activeHand.cards[0].suit+
+            ", "+playerStats.activeHand.cards[1] + 
+            ", " + playerStats.activeHand.cards[2] + 
+            ", " + playerStats.activeHand.cards[3] + 
+            ", " + playerStats.activeHand.cards[4]);
+        Debug.Log("suit of hand: "+playerStats.activeHand.suit);
+        Debug.Log("is suited: "+playerStats.activeHand.suited);
+        Debug.Log("hand type: "+playerStats.activeHand.type);
+    }
     private void FixedUpdate()
     {
         // if you are currently lunging, your lineardamping should be 0 and regular movement shouldn't apply

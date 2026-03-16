@@ -13,6 +13,14 @@ public class Player
         public Card.Suit suit;
         public bool suited;
         public HandType type;
+
+        public Hand(Card[] cards, Card.Suit suit, bool suited,HandType type)
+        {
+            this.cards = cards;
+            this.suit = suit;
+            this.suited = suited;
+            this.type = type;
+        }
     }
     public Card.Suit activeSuit;
     public Hand activeHand; 
@@ -33,7 +41,7 @@ public class Player
         dashCooldown = 0.5f;
         baseParryTime = 0.2f;
         parryCooldown = 1;
-        activeHand = new Hand();
+        activeHand = new Hand(new Card[5],Card.Suit.blank,false,HandType.none);
         passiveHand1 = new Hand();
         passiveHand2 = new Hand();
     }
@@ -70,5 +78,10 @@ public class Player
         {
             return Card.Suit.blank;
         }
+    }
+    public void AddCard()
+    {
+        Card card = new Card(2, Card.Suit.diamond);
+        activeHand.cards[0] = card;
     }
 }
