@@ -23,9 +23,13 @@ public class Player
         }
     }
     public Card.Suit activeSuit;
+
     public Hand activeHand; 
     public Hand passiveHand1;
     public Hand passiveHand2;
+
+    public readonly Card blankCard = new Card(0,Card.Suit.blank);
+
     public Weapon weapon;
     public float baseSpeed;
     public float AttackSpeed;
@@ -42,8 +46,19 @@ public class Player
         baseParryTime = 0.2f;
         parryCooldown = 1;
         activeHand = new Hand(new Card[5],Card.Suit.blank,false,HandType.none);
-        passiveHand1 = new Hand();
-        passiveHand2 = new Hand();
+        passiveHand1 = new Hand(new Card[5], Card.Suit.blank, false, HandType.none);
+        passiveHand2 = new Hand(new Card[5], Card.Suit.blank, false, HandType.none);
+        FillHandBlank(activeHand);
+        FillHandBlank(passiveHand1);
+        FillHandBlank(passiveHand2);
+    }
+
+    public void FillHandBlank(Hand hand)
+    {
+        for(int i = 0; i <hand.cards.Length; i++)
+        {
+            hand.cards[i] = blankCard;
+        }
     }
 
     public bool IsSuited(Hand hand)
@@ -53,7 +68,7 @@ public class Player
             Card.Suit initialSuit = hand.cards[0].suit;
             foreach(Card c in hand.cards)
             {
-                if(c != null)
+                if(c != blankCard)
                 {
                     if(initialSuit != c.suit)
                     {
@@ -83,5 +98,6 @@ public class Player
     {
         Card card = new Card(2, Card.Suit.diamond);
         activeHand.cards[0] = card;
+        activeHand.cards[1] = card;
     }
 }

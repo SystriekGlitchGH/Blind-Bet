@@ -50,12 +50,12 @@ public class PlayerMovement : MonoBehaviour
         playerStats = new Player(); // constructing player object
         playerStats.AddCard();
         Debug.Log("cards: "+playerStats.activeHand.cards[0].rank+playerStats.activeHand.cards[0].suit+
-            ", "+playerStats.activeHand.cards[1] + 
-            ", " + playerStats.activeHand.cards[2] + 
-            ", " + playerStats.activeHand.cards[3] + 
-            ", " + playerStats.activeHand.cards[4]);
-        Debug.Log("suit of hand: "+playerStats.activeHand.suit);
-        Debug.Log("is suited: "+playerStats.activeHand.suited);
+            ", "+playerStats.activeHand.cards[1].rank + playerStats.activeHand.cards[1].suit + 
+            ", " + playerStats.activeHand.cards[2].rank + playerStats.activeHand.cards[2].suit + 
+            ", " + playerStats.activeHand.cards[3].rank + playerStats.activeHand.cards[3].suit + 
+            ", " + playerStats.activeHand.cards[4].rank + playerStats.activeHand.cards[4].suit);
+        Debug.Log("suit of hand: "+playerStats.GetHandSuit(playerStats.activeHand));
+        Debug.Log("is suited: "+playerStats.IsSuited(playerStats.activeHand));
         Debug.Log("hand type: "+playerStats.activeHand.type);
     }
     private void FixedUpdate()
