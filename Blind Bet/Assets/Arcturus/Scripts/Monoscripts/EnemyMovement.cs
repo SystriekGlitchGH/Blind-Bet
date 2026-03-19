@@ -26,6 +26,7 @@ public class EnemyMovement : MonoBehaviour
     protected bool canAttack = true, isReadyingAttack, isAttacking;
     public float AttackRange;
     public float baseKnockback;
+    public float stopRange;
 
     //other
     protected float colliderPushForce = 8;
@@ -43,7 +44,7 @@ public class EnemyMovement : MonoBehaviour
                 return;
             }
             distance = PlayerDistance(target.transform.position);
-            if(distance > 2)
+            if(distance > stopRange)
             {
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = PlayerDirection(target.transform.position)*acceleration;
@@ -55,7 +56,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 StartCoroutine(AttackTimer());
             }
-            if(distance < 2 && !isAttacking)
+            if(distance < stopRange && !isAttacking)
             {
                 rb2d.linearDamping = friction;
             }
