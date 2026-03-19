@@ -90,7 +90,7 @@ public class EnemyMovement : MonoBehaviour
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
     }
 
-    protected IEnumerator GetHitTimer()
+    protected virtual IEnumerator GetHitTimer()
     {
         hasKnockback = true;
         spriteRend.color = new Color32(150,0,0,255);

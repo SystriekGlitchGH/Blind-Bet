@@ -35,6 +35,14 @@ public class GoopThatShoot1Movement : EnemyMovement
         yield return new WaitForSeconds(attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
+    protected override IEnumerator GetHitTimer()
+    {
+        hasKnockback = true;
+        spriteRend.color = new Color32(150, 0, 0, 255);
+        yield return new WaitForSeconds(knockbackTime);
+        spriteRend.color = new Color32(0, 160, 225, 255);
+        hasKnockback = false;
+    }
 
     private void SpawnBullet()
     {
