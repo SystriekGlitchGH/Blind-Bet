@@ -15,7 +15,7 @@ public class InfernalSkullMovement : EnemyMovement
         spriteRend.color = new Color32(210, 225, 0, 255);
         yield return new WaitForSeconds(0.5f); // amount of time to react to attack
         isReadyingAttack = false; // no longer readying attack
-        spriteRend.color = new Color32(0, 160, 225, 255);
+        spriteRend.color = new Color32(230, 80, 180, 255);
         isAttacking = true; // is now attacking
 
         Debug.Log("Enemy attacked");
@@ -37,7 +37,7 @@ public class InfernalSkullMovement : EnemyMovement
         hasKnockback = true;
         spriteRend.color = new Color32(150, 0, 0, 255);
         yield return new WaitForSeconds(knockbackTime);
-        spriteRend.color = new Color32(255, 255, 255, 255);
+        spriteRend.color = new Color32(230, 80, 180, 255);
         hasKnockback = false;
     }
     private RaycastHit2D MakeBoxCast()
