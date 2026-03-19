@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: ee614e6cbf9931848b03a6a75cf069a6
+guid: bead7fc8b7ecfbd4c928bc550e989096
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1167188941530069302
-    second: slime ballc_0
-  - first:
-      213: -3470209108309442456
-    second: slime ballc_1
+      213: -4967224230460190768
+    second: slime ballc number 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slime ballc_0
+      name: slime ballc number 2_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 67
-        width: 109
-        height: 79
+        x: 46
+        y: 64
+        width: 117
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,30 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac6065a77df4dcfe0800000000000000
-      internalID: -1167188941530069302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime ballc_1
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 146
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86004e2b33757dfc0800000000000000
-      internalID: -3470209108309442456
+      spriteID: 0df05bf31efd01bb0800000000000000
+      internalID: -4967224230460190768
       vertices: []
       indices: 
       edges: []
