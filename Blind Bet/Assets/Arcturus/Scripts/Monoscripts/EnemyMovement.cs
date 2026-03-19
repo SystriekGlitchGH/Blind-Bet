@@ -34,7 +34,7 @@ public class EnemyMovement : MonoBehaviour
     {
         rb2d.linearDamping = friction;
     }
-    protected void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         if(target != null)
         {

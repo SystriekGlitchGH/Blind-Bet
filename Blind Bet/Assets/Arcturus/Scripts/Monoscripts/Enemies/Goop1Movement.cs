@@ -7,6 +7,30 @@ using UnityEngine.Rendering;
 public class Goop1Movement : EnemyMovement
 {
     public float dashForce;
+    protected override void FixedUpdate()
+    {
+        if (target != null)
+        {
+            if (hasKnockback || isAttacking)
+            {
+                return;
+            }
+            if(distance < AttackRange && canAttack)
+            {
+                StartCoroutine(AttackTimer());
+            }
+            if(distance < 2 && !isAttacking)
+            {
+                rb2d.linearDamping = friction;
+            }
+            if(distance > 40)
+            {
+                target = null;
+                rb2d.linearDamping = friction;
+            }
+
+        }
+    }
     protected void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && isAttacking)

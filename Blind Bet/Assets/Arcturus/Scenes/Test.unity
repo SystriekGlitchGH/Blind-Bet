@@ -876,10 +876,10 @@ MonoBehaviour:
   topSpeed: 2
   friction: 8
   knockbackTime: 0.15
-  attackCooldown: 3
-  AttackRange: 4
+  attackCooldown: 1.25
+  AttackRange: 20
   baseKnockback: 5
-  dashForce: 16
+  dashForce: 32
 --- !u!1001 &2833576129669177058
 PrefabInstance:
   m_ObjectHideFlags: 0
