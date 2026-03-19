@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: ccb5773cda5345f4d9643d86ba92b284
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1873389304163244953
+    second: SLIME SIDE IDLE_0
+  - first:
+      213: 8428079861966854267
+    second: SLIME SIDE IDLE_1
+  - first:
+      213: -9130868831906842294
+    second: SLIME SIDE IDLE_2
+  - first:
+      213: 591302853834444354
+    second: SLIME SIDE IDLE_3
+  - first:
+      213: -6565902324539044981
+    second: SLIME SIDE IDLE_4
+  - first:
+      213: 3648534227969641463
+    second: SLIME SIDE IDLE_5
+  - first:
+      213: 929600723509362287
+    second: SLIME SIDE IDLE_6
+  - first:
+      213: -5000864465738804187
+    second: SLIME SIDE IDLE_7
+  - first:
+      213: -91413543981098833
+    second: SLIME SIDE IDLE_8
+  - first:
+      213: 8325084798976401351
+    second: SLIME SIDE IDLE_9
+  - first:
+      213: 78159692468334296
+    second: SLIME SIDE IDLE_10
+  - first:
+      213: -6064405323968419233
+    second: SLIME SIDE IDLE_11
+  - first:
+      213: -4514065418639283202
+    second: SLIME SIDE IDLE_12
+  - first:
+      213: 7736335198883198454
+    second: SLIME SIDE IDLE_13
+  - first:
+      213: 4694081278733369266
+    second: SLIME SIDE IDLE_14
+  - first:
+      213: 7357450460952451769
+    second: SLIME SIDE IDLE_15
+  - first:
+      213: 3916077801074529238
+    second: SLIME SIDE IDLE_16
+  - first:
+      213: -2901468233585338632
+    second: SLIME SIDE IDLE_17
+  - first:
+      213: 3147630985785087969
+    second: SLIME SIDE IDLE_18
+  - first:
+      213: 2814443057529682811
+    second: SLIME SIDE IDLE_19
+  - first:
+      213: -5146429668977200873
+    second: SLIME SIDE IDLE_20
+  - first:
+      213: 4551621792102667597
+    second: SLIME SIDE IDLE_21
+  - first:
+      213: 7086598964579527078
+    second: SLIME SIDE IDLE_22
+  - first:
+      213: -7637277719916051682
+    second: SLIME SIDE IDLE_23
+  - first:
+      213: 8329470054024659566
+    second: SLIME SIDE IDLE_24
+  - first:
+      213: -5879718439227999040
+    second: SLIME SIDE IDLE_25
+  - first:
+      213: -619048709241520644
+    second: SLIME SIDE IDLE_26
+  - first:
+      213: 2963473614354660447
+    second: SLIME SIDE IDLE_27
+  - first:
+      213: -8707521565777920005
+    second: SLIME SIDE IDLE_28
+  - first:
+      213: -3027633945604670758
+    second: SLIME SIDE IDLE_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 10096
+        width: 450
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b9aa085ad9ff910800000000000000
+      internalID: 1873389304163244953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 10096
+        width: 451
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7858270bfd86f470800000000000000
+      internalID: 8428079861966854267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 4569
+        y: 10097
+        width: 450
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49b18fbc23a84180800000000000000
+      internalID: -9130868831906842294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 8983
+        width: 464
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e0a7d00dab43800800000000000000
+      internalID: 591302853834444354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 8983
+        width: 474
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b40fb9f9a31e4a0800000000000000
+      internalID: -6565902324539044981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 8983
+        width: 469
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb0cf0bc8232a230800000000000000
+      internalID: 3648534227969641463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 7923
+        width: 478
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6eb8bbceea96ec00800000000000000
+      internalID: 929600723509362287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 7923
+        width: 479
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524d3cd934c599ab0800000000000000
+      internalID: -5000864465738804187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 4534
+        y: 7923
+        width: 485
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8d857bddb3bbef0800000000000000
+      internalID: -91413543981098833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 6798
+        width: 490
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf1ef73484a88370800000000000000
+      internalID: 8325084798976401351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 6798
+        width: 496
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de245183dda51100800000000000000
+      internalID: 78159692468334296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 4511
+        y: 6863
+        width: 491
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5aefda0d77e6dba0800000000000000
+      internalID: -6064405323968419233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 5740
+        width: 504
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb61251b61da51c0800000000000000
+      internalID: -4514065418639283202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 5740
+        width: 504
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5b8c0efdbfc5b60800000000000000
+      internalID: 7736335198883198454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 4514
+        y: 5740
+        width: 505
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfb6bd7d0ab42140800000000000000
+      internalID: 4694081278733369266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 4672
+        width: 508
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bada99763aea1660800000000000000
+      internalID: 7357450460952451769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 2595
+        y: 4672
+        width: 505
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d317d50304b85630800000000000000
+      internalID: 3916077801074529238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 4507
+        y: 4672
+        width: 512
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6d012a30aebb7d0800000000000000
+      internalID: -2901468233585338632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 3577
+        width: 498
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e79bb764b1aeab20800000000000000
+      internalID: 3147630985785087969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 3577
+        width: 496
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bfe9c9c09ee0720800000000000000
+      internalID: 2814443057529682811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 4519
+        y: 3577
+        width: 500
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7113517ab753498b0800000000000000
+      internalID: -5146429668977200873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 2513
+        width: 479
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45d43687eb9a2f30800000000000000
+      internalID: 4551621792102667597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 2637
+        y: 2513
+        width: 487
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9e96d3638a85260800000000000000
+      internalID: 7086598964579527078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 4534
+        y: 2513
+        width: 485
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e130665b060f20690800000000000000
+      internalID: -7637277719916051682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1423
+        width: 473
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62c469f1e8389370800000000000000
+      internalID: 8329470054024659566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_25
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 1423
+        width: 469
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc308a4b3b076ea0800000000000000
+      internalID: -5879718439227999040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_26
+      rect:
+        serializedVersion: 2
+        x: 4546
+        y: 1423
+        width: 473
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfdbef29a72b867f0800000000000000
+      internalID: -619048709241520644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_27
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 351
+        width: 446
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c3ad41d8f502920800000000000000
+      internalID: 2963473614354660447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_28
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 351
+        width: 450
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfff0c5354ba82780800000000000000
+      internalID: -8707521565777920005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME SIDE IDLE_29
+      rect:
+        serializedVersion: 2
+        x: 4573
+        y: 351
+        width: 446
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adab152b7feabf5d0800000000000000
+      internalID: -3027633945604670758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SLIME SIDE IDLE_0: 1873389304163244953
+      SLIME SIDE IDLE_1: 8428079861966854267
+      SLIME SIDE IDLE_10: 78159692468334296
+      SLIME SIDE IDLE_11: -6064405323968419233
+      SLIME SIDE IDLE_12: -4514065418639283202
+      SLIME SIDE IDLE_13: 7736335198883198454
+      SLIME SIDE IDLE_14: 4694081278733369266
+      SLIME SIDE IDLE_15: 7357450460952451769
+      SLIME SIDE IDLE_16: 3916077801074529238
+      SLIME SIDE IDLE_17: -2901468233585338632
+      SLIME SIDE IDLE_18: 3147630985785087969
+      SLIME SIDE IDLE_19: 2814443057529682811
+      SLIME SIDE IDLE_2: -9130868831906842294
+      SLIME SIDE IDLE_20: -5146429668977200873
+      SLIME SIDE IDLE_21: 4551621792102667597
+      SLIME SIDE IDLE_22: 7086598964579527078
+      SLIME SIDE IDLE_23: -7637277719916051682
+      SLIME SIDE IDLE_24: 8329470054024659566
+      SLIME SIDE IDLE_25: -5879718439227999040
+      SLIME SIDE IDLE_26: -619048709241520644
+      SLIME SIDE IDLE_27: 2963473614354660447
+      SLIME SIDE IDLE_28: -8707521565777920005
+      SLIME SIDE IDLE_29: -3027633945604670758
+      SLIME SIDE IDLE_3: 591302853834444354
+      SLIME SIDE IDLE_4: -6565902324539044981
+      SLIME SIDE IDLE_5: 3648534227969641463
+      SLIME SIDE IDLE_6: 929600723509362287
+      SLIME SIDE IDLE_7: -5000864465738804187
+      SLIME SIDE IDLE_8: -91413543981098833
+      SLIME SIDE IDLE_9: 8325084798976401351
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

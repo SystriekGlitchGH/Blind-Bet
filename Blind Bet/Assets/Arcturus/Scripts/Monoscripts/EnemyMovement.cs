@@ -123,6 +123,10 @@ public class EnemyMovement : MonoBehaviour
     {
         return isAttacking;
     }
+    public void FlipSpriteRend(bool yesorno)
+    {
+        spriteRend.flipX = yesorno;
+    }
     public void setVelocity(Vector2 velocity)
     {
         rb2d.linearVelocity = velocity;

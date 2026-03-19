@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 2e8e08e583d1bc64db0dc7a2faf88776
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6284028638650550847
+    second: SLIME IDLE FRONT_0
+  - first:
+      213: -8598380332151909118
+    second: SLIME IDLE FRONT_1
+  - first:
+      213: 7820576171439386576
+    second: SLIME IDLE FRONT_2
+  - first:
+      213: -4867239725353003016
+    second: SLIME IDLE FRONT_3
+  - first:
+      213: -3758395967712203003
+    second: SLIME IDLE FRONT_4
+  - first:
+      213: 6140782789466999727
+    second: SLIME IDLE FRONT_5
+  - first:
+      213: 4477062391624159986
+    second: SLIME IDLE FRONT_6
+  - first:
+      213: -7956377851444067556
+    second: SLIME IDLE FRONT_7
+  - first:
+      213: 1256401441264756558
+    second: SLIME IDLE FRONT_8
+  - first:
+      213: -1179310818937059454
+    second: SLIME IDLE FRONT_9
+  - first:
+      213: -5903219576174769043
+    second: SLIME IDLE FRONT_10
+  - first:
+      213: -2371840612688212727
+    second: SLIME IDLE FRONT_11
+  - first:
+      213: 3757757892681315232
+    second: SLIME IDLE FRONT_12
+  - first:
+      213: -1187057424764974262
+    second: SLIME IDLE FRONT_13
+  - first:
+      213: -107457482194027643
+    second: SLIME IDLE FRONT_14
+  - first:
+      213: 332265876904712509
+    second: SLIME IDLE FRONT_15
+  - first:
+      213: 8032326537821690205
+    second: SLIME IDLE FRONT_16
+  - first:
+      213: -9142053849364415551
+    second: SLIME IDLE FRONT_17
+  - first:
+      213: -5441548685863496278
+    second: SLIME IDLE FRONT_18
+  - first:
+      213: -2956593096044469528
+    second: SLIME IDLE FRONT_19
+  - first:
+      213: 8189790867552720465
+    second: SLIME IDLE FRONT_20
+  - first:
+      213: 3533719281994092795
+    second: SLIME IDLE FRONT_21
+  - first:
+      213: 1061385176595376031
+    second: SLIME IDLE FRONT_22
+  - first:
+      213: -922777330867079625
+    second: SLIME IDLE FRONT_23
+  - first:
+      213: 5019886553695713570
+    second: SLIME IDLE FRONT_24
+  - first:
+      213: -7966073845894691406
+    second: SLIME IDLE FRONT_25
+  - first:
+      213: -1142116728930071853
+    second: SLIME IDLE FRONT_26
+  - first:
+      213: 2166134156539432474
+    second: SLIME IDLE FRONT_27
+  - first:
+      213: 2162943586811292817
+    second: SLIME IDLE FRONT_28
+  - first:
+      213: 6230607311169243700
+    second: SLIME IDLE FRONT_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_0
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 10060
+        width: 422
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c53ad25f35aac8a0800000000000000
+      internalID: -6284028638650550847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_1
+      rect:
+        serializedVersion: 2
+        x: 2671
+        y: 10063
+        width: 419
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2055162e4aa6ca880800000000000000
+      internalID: -8598380332151909118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_2
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 10062
+        width: 420
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df678db794488c60800000000000000
+      internalID: 7820576171439386576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_3
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 8985
+        width: 446
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f71aade147147cb0800000000000000
+      internalID: -4867239725353003016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_4
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 8985
+        width: 451
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fe04bb7ce77dbc0800000000000000
+      internalID: -3758395967712203003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_5
+      rect:
+        serializedVersion: 2
+        x: 4571
+        y: 8985
+        width: 448
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab43096961783550800000000000000
+      internalID: 6140782789466999727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_6
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 7884
+        width: 445
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2d4025688b12e30800000000000000
+      internalID: 4477062391624159986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_7
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 7884
+        width: 448
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1304e1bf74459190800000000000000
+      internalID: -7956377851444067556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_8
+      rect:
+        serializedVersion: 2
+        x: 4567
+        y: 7884
+        width: 452
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47efd14472af6110800000000000000
+      internalID: 1256401441264756558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_9
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 6809
+        width: 447
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2874b75fe0f32afe0800000000000000
+      internalID: -1179310818937059454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_10
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 6809
+        width: 450
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c88f2721d831ea0800000000000000
+      internalID: -5903219576174769043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_11
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 6809
+        width: 459
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90dcfd08787851fd0800000000000000
+      internalID: -2371840612688212727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_12
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 5726
+        width: 467
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3b039d4ec362430800000000000000
+      internalID: 3757757892681315232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_13
+      rect:
+        serializedVersion: 2
+        x: 2644
+        y: 5726
+        width: 472
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bc4ecbf89b68fe0800000000000000
+      internalID: -1187057424764974262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_14
+      rect:
+        serializedVersion: 2
+        x: 4546
+        y: 5726
+        width: 473
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bfd514dfb328ef0800000000000000
+      internalID: -107457482194027643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_15
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 4647
+        width: 468
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3993ebfd027c9400800000000000000
+      internalID: 332265876904712509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_16
+      rect:
+        serializedVersion: 2
+        x: 2646
+        y: 4647
+        width: 469
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d591ec6dd6e887f60800000000000000
+      internalID: 8032326537821690205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_17
+      rect:
+        serializedVersion: 2
+        x: 4542
+        y: 4647
+        width: 477
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb342fe576e02180800000000000000
+      internalID: -9142053849364415551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_18
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 3569
+        width: 459
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5dc1ffc4cbb74b0800000000000000
+      internalID: -5441548685863496278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_19
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 3569
+        width: 457
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2a5ec6e3218f6d0800000000000000
+      internalID: -2956593096044469528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_20
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 3569
+        width: 462
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156d735176bf7a170800000000000000
+      internalID: 8189790867552720465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_21
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 2448
+        width: 454
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0d43be6fa4a0130800000000000000
+      internalID: 3533719281994092795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_22
+      rect:
+        serializedVersion: 2
+        x: 2657
+        y: 2448
+        width: 447
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9725d4d13ccabe00800000000000000
+      internalID: 1061385176595376031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_23
+      rect:
+        serializedVersion: 2
+        x: 4567
+        y: 2448
+        width: 452
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73672ea18e2a133f0800000000000000
+      internalID: -922777330867079625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_24
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1379
+        width: 452
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229facd59383aa540800000000000000
+      internalID: 5019886553695713570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_25
+      rect:
+        serializedVersion: 2
+        x: 2657
+        y: 1379
+        width: 447
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5cae01b02d27190800000000000000
+      internalID: -7966073845894691406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_26
+      rect:
+        serializedVersion: 2
+        x: 4574
+        y: 1380
+        width: 445
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da8710e2e26620f0800000000000000
+      internalID: -1142116728930071853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_27
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 290
+        width: 427
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e8f58e987af0e10800000000000000
+      internalID: 2166134156539432474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_28
+      rect:
+        serializedVersion: 2
+        x: 2671
+        y: 290
+        width: 427
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ca8118bb1540e10800000000000000
+      internalID: 2162943586811292817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLIME IDLE FRONT_29
+      rect:
+        serializedVersion: 2
+        x: 4593
+        y: 290
+        width: 426
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ac13d9650977650800000000000000
+      internalID: 6230607311169243700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SLIME IDLE FRONT_0: -6284028638650550847
+      SLIME IDLE FRONT_1: -8598380332151909118
+      SLIME IDLE FRONT_10: -5903219576174769043
+      SLIME IDLE FRONT_11: -2371840612688212727
+      SLIME IDLE FRONT_12: 3757757892681315232
+      SLIME IDLE FRONT_13: -1187057424764974262
+      SLIME IDLE FRONT_14: -107457482194027643
+      SLIME IDLE FRONT_15: 332265876904712509
+      SLIME IDLE FRONT_16: 8032326537821690205
+      SLIME IDLE FRONT_17: -9142053849364415551
+      SLIME IDLE FRONT_18: -5441548685863496278
+      SLIME IDLE FRONT_19: -2956593096044469528
+      SLIME IDLE FRONT_2: 7820576171439386576
+      SLIME IDLE FRONT_20: 8189790867552720465
+      SLIME IDLE FRONT_21: 3533719281994092795
+      SLIME IDLE FRONT_22: 1061385176595376031
+      SLIME IDLE FRONT_23: -922777330867079625
+      SLIME IDLE FRONT_24: 5019886553695713570
+      SLIME IDLE FRONT_25: -7966073845894691406
+      SLIME IDLE FRONT_26: -1142116728930071853
+      SLIME IDLE FRONT_27: 2166134156539432474
+      SLIME IDLE FRONT_28: 2162943586811292817
+      SLIME IDLE FRONT_29: 6230607311169243700
+      SLIME IDLE FRONT_3: -4867239725353003016
+      SLIME IDLE FRONT_4: -3758395967712203003
+      SLIME IDLE FRONT_5: 6140782789466999727
+      SLIME IDLE FRONT_6: 4477062391624159986
+      SLIME IDLE FRONT_7: -7956377851444067556
+      SLIME IDLE FRONT_8: 1256401441264756558
+      SLIME IDLE FRONT_9: -1179310818937059454
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

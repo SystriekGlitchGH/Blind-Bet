@@ -717,6 +717,8 @@ GameObject:
   - component: {fileID: 1998338956}
   - component: {fileID: 1998338955}
   - component: {fileID: 1998338958}
+  - component: {fileID: 1998338960}
+  - component: {fileID: 1998338959}
   m_Layer: 7
   m_Name: EnemyMovement
   m_TagString: Enemy
@@ -768,7 +770,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -6284028638650550847, guid: 2e8e08e583d1bc64db0dc7a2faf88776, type: 3}
   m_Color: {r: 0.15566052, g: 0.8820755, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -880,6 +882,42 @@ MonoBehaviour:
   AttackRange: 20
   baseKnockback: 5
   dashForce: 32
+--- !u!114 &1998338959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998338952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e3e62faa83ce3499f3e1134fe9b11d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1998338960}
+  em: {fileID: 1998338958}
+--- !u!95 &1998338960
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998338952}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 26333c175edade94cb3b43b5f875d196, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2833576129669177058
 PrefabInstance:
   m_ObjectHideFlags: 0

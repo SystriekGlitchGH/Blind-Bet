@@ -28,7 +28,7 @@ public class Goop1Movement : EnemyMovement
                 target = null;
                 rb2d.linearDamping = friction;
             }
-
+            Debug.Log(PlayerDirection(target.transform.position));
         }
     }
     protected void OnTriggerEnter2D(Collider2D collision)
