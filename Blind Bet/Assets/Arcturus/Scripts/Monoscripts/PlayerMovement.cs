@@ -137,8 +137,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
                 {
-                    Debug.Log("attack succesful");
-                    enemy.GetHit(this, playerStats.weapon.baseKnockback);
+                    enemy.GetHit(this, playerStats.weapon.baseKnockback,playerStats.weapon.baseAttack);
                 }
             }
         }
@@ -163,8 +162,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     if (hit2 && hit2.rigidbody.TryGetComponent(out EnemyMovement enemies))
                     {
-                        Debug.Log("attack succesful");
-                        enemies.GetHit(this, playerStats.weapon.baseKnockback*2);
+                        enemies.GetHit(this, playerStats.weapon.baseKnockback*2, playerStats.weapon.baseAttack*2);
                     }
                 }
             }
@@ -193,7 +191,7 @@ public class PlayerMovement : MonoBehaviour
     public void GetHit(EnemyMovement attacker, float knockback)
     {
         StartCoroutine(GetHitTimer());
-        rb2d.AddForce(attacker.PlayerDirection(transform.position)*knockback,ForceMode2D.Impulse);
+        rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
     }
     #endregion
     #region IENUMERATORS

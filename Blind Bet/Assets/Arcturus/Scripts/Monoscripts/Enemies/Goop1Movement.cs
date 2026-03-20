@@ -7,6 +7,11 @@ using UnityEngine.Rendering;
 public class Goop1Movement : EnemyMovement
 {
     public float dashForce;
+    protected override void Start()
+    {
+        rb2d.linearDamping = friction;
+        enemy = new Enemy(10,20,5,2,1.25f);
+    }
     protected override void FixedUpdate()
     {
         if (target != null)
@@ -35,7 +40,7 @@ public class Goop1Movement : EnemyMovement
         if (collision.CompareTag("Player") && isAttacking)
         {
             PlayerMovement pm = collision.GetComponent<PlayerMovement>();
-            pm.GetHit(this,baseKnockback);
+            pm.GetHit(this,enemy.baseKnockback);
         }
     }
 
@@ -49,10 +54,10 @@ public class Goop1Movement : EnemyMovement
         spriteRend.color = new Color32(40,225,0,255);
         isAttacking = true; // is now attacking
         Debug.Log("Enemy attacked");
-        rb2d.AddForce(PlayerDirection(target.transform.position)*dashForce, ForceMode2D.Impulse);
+        rb2d.AddForce(TargetDirection(target.transform.position)*dashForce, ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
-        yield return new WaitForSeconds(attackCooldown); // cooldown so the enemies don't spam attacks
+        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
 }

@@ -5,12 +5,17 @@ public class GoopThatShoot1Movement : EnemyMovement
 {
     [SerializeField] GameObject bullet;
     [SerializeField] Transform anchorTransform;
+    protected override void Start()
+    {
+        rb2d.linearDamping = friction;
+        enemy = new Enemy(10,20,5,2,2);
+    }
     private void Update()
     {
         if(target != null)
         {
             // find the angle from a normalised vector2
-            float angleRadians = Mathf.Atan2(PlayerDirection(target.transform.position).y,PlayerDirection(target.transform.position).x);
+            float angleRadians = Mathf.Atan2(TargetDirection(target.transform.position).y,TargetDirection(target.transform.position).x);
             //converts that angle to degrees, not radians
             float angleDegrees = angleRadians * Mathf.Rad2Deg; 
             angleDegrees -= 90; // sets the rotation correctly by 90 degrees
@@ -29,10 +34,9 @@ public class GoopThatShoot1Movement : EnemyMovement
         spriteRend.color = new Color32(0,160,225,255);
         isAttacking = true; // is now attacking
         SpawnBullet();
-        Debug.Log("Enemy attacked");
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
-        yield return new WaitForSeconds(attackCooldown); // cooldown so the enemies don't spam attacks
+        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
     protected override IEnumerator GetHitTimer()
@@ -46,12 +50,12 @@ public class GoopThatShoot1Movement : EnemyMovement
 
     private void SpawnBullet()
     {
-        GameObject shot = Instantiate(bullet, transform.position + (Vector3)PlayerDirection(target.transform.position), anchorTransform.rotation);
+        GameObject shot = Instantiate(bullet, transform.position + (Vector3)TargetDirection(target.transform.position), anchorTransform.rotation);
         if (shot.TryGetComponent(out Bullet bt))
         {
             bt.bulletType = "enemy";
             bt.em = this;
-            bt.direction = PlayerDirection(target.transform.position);
+            bt.direction = TargetDirection(target.transform.position);
             bt.rb2d.AddForce(bt.rb2d.transform.up * 1000);
         }
     }

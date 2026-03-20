@@ -113,7 +113,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -6284028638650550847, guid: 2e8e08e583d1bc64db0dc7a2faf88776, type: 3}
-  m_Color: {r: 0.9019608, g: 0.3137255, b: 0.7058824, a: 1}
+  m_Color: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -202,12 +202,9 @@ MonoBehaviour:
   rb2d: {fileID: 4401776757835178578}
   spriteRend: {fileID: 5565977838893995876}
   acceleration: 40
-  topSpeed: 3
   friction: 8
   knockbackTime: 0.15
-  attackCooldown: 3
   AttackRange: 5
-  baseKnockback: 5
   stopRange: 2
   attackVisual: {fileID: 3370402665360462549, guid: cabab736557a1684e98f73c9737d970b, type: 3}
   attackRadius: 2
@@ -295,4 +292,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168d96bc66941e2439293cfb5bf67d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 0}
+  enemyMovement: {fileID: 3667329435915851471}

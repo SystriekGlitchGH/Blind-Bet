@@ -8,13 +8,13 @@ public class EnemyAnim : MonoBehaviour
     {
         if(em.target != null)
         {
-            anim.SetFloat("moveX",em.PlayerDirection(em.target.transform.position).x);
-            anim.SetFloat("moveY",em.PlayerDirection(em.target.transform.position).y);
-            if(em.PlayerDirection(em.target.transform.position).x > 0)
+            anim.SetFloat("moveX",em.TargetDirection(em.target.transform.position).x);
+            anim.SetFloat("moveY",em.TargetDirection(em.target.transform.position).y);
+            if(em.TargetDirection(em.target.transform.position).x > 0)
             {
                 em.FlipSpriteRend(true);
             }
-            else if(em.PlayerDirection(em.target.transform.position).x < 0)
+            else if(em.TargetDirection(em.target.transform.position).x < 0)
             {
                 em.FlipSpriteRend(false);
             }

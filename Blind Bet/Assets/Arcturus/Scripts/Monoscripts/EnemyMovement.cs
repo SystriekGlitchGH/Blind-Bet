@@ -10,11 +10,10 @@ public class EnemyMovement : MonoBehaviour
     [Header("Components")]
     [SerializeField] protected Rigidbody2D rb2d;
     [SerializeField] protected SpriteRenderer spriteRend;
-    [SerializeField] protected Enemy enemy;
+    public Enemy enemy;
 
     [Header("Movement Stats")]
     public float acceleration;
-    public float topSpeed;
     public float friction;
     // variables to help with movement
     protected float distance;
@@ -22,18 +21,17 @@ public class EnemyMovement : MonoBehaviour
     public float knockbackTime;
 
     [Header("Attack stats")]
-    public float attackCooldown;
     protected bool canAttack = true, isReadyingAttack, isAttacking;
     public float AttackRange;
-    public float baseKnockback;
     public float stopRange;
 
     //other
     protected float colliderPushForce = 8;
 
-    protected void Start()
+    protected virtual void Start()
     {
         rb2d.linearDamping = friction;
+        enemy = new Enemy(10,20,5,2,3);
     }
     protected virtual void FixedUpdate()
     {
@@ -47,9 +45,9 @@ public class EnemyMovement : MonoBehaviour
             if(distance > stopRange)
             {
                 rb2d.linearDamping = 0;
-                Vector2 newVelocity = PlayerDirection(target.transform.position)*acceleration;
+                Vector2 newVelocity = TargetDirection(target.transform.position)*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
             if(distance < AttackRange && canAttack)
@@ -72,21 +70,24 @@ public class EnemyMovement : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerMovement pm = collision.GetComponent<PlayerMovement>();
-            pm.rb2d.AddForce(PlayerDirection(pm.transform.position)*colliderPushForce);
+            pm.rb2d.AddForce(TargetDirection(pm.transform.position)*colliderPushForce);
         }
         else if (collision.CompareTag("Enemy"))
         {
             EnemyMovement em = collision.GetComponent<EnemyMovement>();
-            em.rb2d.AddForce(PlayerDirection(em.transform.position)*colliderPushForce);
+            em.rb2d.AddForce(TargetDirection(em.transform.position)*colliderPushForce);
         }
     }
     public void Die()
     {
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
-    public void GetHit(PlayerMovement attacker, float knockback)
+    public void GetHit(PlayerMovement attacker, float knockback, float damage)
     {
         StartCoroutine(GetHitTimer());
+        enemy.TakeDamage(damage);
+        if(enemy.baseHealth <= 0)
+            Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
     }
 
@@ -107,7 +108,7 @@ public class EnemyMovement : MonoBehaviour
         isAttacking = true; // is now attacking
         yield return new WaitForSeconds(0.5f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
-        yield return new WaitForSeconds(attackCooldown); // cooldown so the enemies don't spam attacks
+        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
     //movement help methods
@@ -115,9 +116,9 @@ public class EnemyMovement : MonoBehaviour
     {
         return Vector2.Distance((Vector2)transform.position, playerPos);
     }
-    public Vector2 PlayerDirection(Vector2 playerPos)
+    public Vector2 TargetDirection(Vector2 targetPos)
     {
-        return (playerPos - (Vector2)transform.position).normalized;
+        return (targetPos - (Vector2)transform.position).normalized;
     }
     // get statements
     public bool IsAttacking()
