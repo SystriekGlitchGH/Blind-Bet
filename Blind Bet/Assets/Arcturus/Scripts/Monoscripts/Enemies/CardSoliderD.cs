@@ -82,6 +82,11 @@ public class CardSoliderD : EnemyMovement
             EnemyMovement em = collision.GetComponent<EnemyMovement>();
             rb2d.AddForce(-TargetDirection(em.transform.position)*colliderPushForce);
         }
+        //else if (collision.CompareTag("Soldier"))
+        //{
+        //    EnemyMovement em = collision.GetComponent<EnemyMovement>();
+        //    rb2d.AddForce(-TargetDirection(em.transform.position) * colliderPushForce);
+        //}
     }
     protected override IEnumerator AttackTimer()
     {
