@@ -8,7 +8,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public PlayerMovement target;
     [Header("Components")]
-    [SerializeField] protected Rigidbody2D rb2d;
+    public Rigidbody2D rb2d;
     [SerializeField] protected SpriteRenderer spriteRend;
     public Enemy enemy;
 
@@ -124,6 +124,10 @@ public class EnemyMovement : MonoBehaviour
     public bool IsAttacking()
     {
         return isAttacking;
+    }
+    public float GetColliderPushForce()
+    {
+        return colliderPushForce;
     }
     public void FlipSpriteRend(bool yesorno)
     {

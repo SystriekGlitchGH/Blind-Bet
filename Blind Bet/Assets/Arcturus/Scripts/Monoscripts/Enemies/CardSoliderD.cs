@@ -6,6 +6,7 @@ public class CardSoliderD : EnemyMovement
     public GameObject attackVisual;
     [SerializeField] Transform anchorTransform;
     public LayerMask boxLayer;
+    public Vector2 attackSize;
     protected bool isRetreating;
     protected override void Start()
     {
@@ -81,14 +82,14 @@ public class CardSoliderD : EnemyMovement
 
         Debug.Log("Enemy attacked");
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z), Mathf.Cos(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z));
-        Vector2 position = angleAsVector * (2.5f/2+1);
-        RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)position, new Vector2(2,2.5f), anchorTransform.rotation.z, Vector2.zero,0,boxLayer);
+        Vector2 position = angleAsVector * (attackSize.y/2+1);
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)position, attackSize, anchorTransform.rotation.z, Vector2.zero,0,boxLayer);
         if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
         {
             player.GetHit(this, enemy.baseKnockback);
         }
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
-        attack.transform.localScale = new Vector2(2,2.5f);
+        attack.transform.localScale = attackSize;
 
         yield return new WaitForSeconds(0.1f); // time where you can take damage/parry/get shot at
         Destroy(attack);
