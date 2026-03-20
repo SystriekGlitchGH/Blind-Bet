@@ -9,6 +9,7 @@ TagManager:
   - Club
   - Spade
   - Soldier
+  - Waypoint
   layers:
   - Default
   - TransparentFX

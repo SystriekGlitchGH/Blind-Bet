@@ -38,7 +38,7 @@ public class CardSoliderD : EnemyMovement
             {
                 return;
             }
-            distance = PlayerDistance(enemyTarget.transform.position);
+            distance = TargetDistance(enemyTarget.transform.position);
             if(distance > stopRange && !isRetreating)
             {
                 rb2d.linearDamping = 0;

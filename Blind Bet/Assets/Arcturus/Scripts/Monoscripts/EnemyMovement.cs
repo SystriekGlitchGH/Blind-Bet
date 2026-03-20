@@ -20,6 +20,7 @@ public class EnemyMovement : MonoBehaviour
     protected float distance;
     protected bool hasKnockback;
     public float knockbackTime;
+    public LayerMask hitLayer;
 
     [Header("Attack stats")]
     protected bool canAttack = true, isReadyingAttack, isAttacking;
@@ -38,16 +39,21 @@ public class EnemyMovement : MonoBehaviour
     {
         if(enemyTarget != null)
         {
-            
+            RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),2,hitLayer);
+            Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 2f, Color.red);
+            if(hit)
+            {
+                
+            }
             if (hasKnockback || isAttacking)
             {
                 return;
             }
-            distance = PlayerDistance(enemyTarget.transform.position);
+            distance = TargetDistance(enemyTarget.transform.position);
             if(distance > stopRange)
             {
                 rb2d.linearDamping = 0;
-                Vector2 newVelocity = TargetDirection(enemyTarget.transform.position)*acceleration;
+                Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
                 rb2d.AddForce(newVelocity);
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
                 rb2d.linearVelocity = velocity;
@@ -114,7 +120,7 @@ public class EnemyMovement : MonoBehaviour
         canAttack = true; // can attack again
     }
     //movement help methods
-    protected float PlayerDistance(Vector2 playerPos)
+    public float TargetDistance(Vector2 playerPos)
     {
         return Vector2.Distance((Vector2)transform.position, playerPos);
     }

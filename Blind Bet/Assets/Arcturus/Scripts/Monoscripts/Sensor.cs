@@ -14,6 +14,7 @@ public class Sensor : MonoBehaviour
 		if (collision.CompareTag("Player"))
 		{
 			enemyMovement.enemyTarget = collision.GetComponent<PlayerMovement>();
+			enemyMovement.movementTarget = collision.transform;
 		}
 	}
 }
