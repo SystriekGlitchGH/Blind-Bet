@@ -3,23 +3,26 @@ using UnityEngine;
 public class Enemy
 {
     public float baseDamage;
-    public float baseHealth;
+    public float maxHealth;
     public float baseKnockback;
     public float topSpeed;
 
     public float attackCooldown;
 
-    public Enemy(float baseDamage, float baseHealth, float baseKnockback, float topSpeed, float attackCooldown)
+    public float currentHealth;
+
+    public Enemy(float baseDamage, float maxHealth, float baseKnockback, float topSpeed, float attackCooldown)
     {
         this.baseDamage = baseDamage;
-        this.baseHealth = baseHealth;
+        this.maxHealth = maxHealth;
         this.baseKnockback = baseKnockback;
         this.topSpeed = topSpeed;
         this.attackCooldown = attackCooldown;
+        currentHealth = maxHealth;
     }
 
     public void TakeDamage(float damage)
     {
-        baseHealth -= damage;
+        currentHealth -= damage;
     }
 }

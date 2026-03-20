@@ -6,6 +6,7 @@ public class CardSoliderD : EnemyMovement
     public GameObject attackVisual;
     [SerializeField] Transform anchorTransform;
     public LayerMask boxLayer;
+    protected bool isRetreating;
     protected override void Start()
     {
         rb2d.linearDamping = friction;
@@ -22,6 +23,50 @@ public class CardSoliderD : EnemyMovement
             angleDegrees -= 90; // sets the rotation correctly by 90 degrees
             //anchorTransform.rotation = Quaternion.LookRotation(PlayerDirection(target.transform.position));
             anchorTransform.rotation = Quaternion.Euler(0,0,angleDegrees);
+        }
+        if(enemy.currentHealth <= enemy.maxHealth * 0.25)
+            isRetreating = true;
+        else if(enemy.currentHealth >= enemy.maxHealth * 0.75)
+            isRetreating = false;
+    }
+    protected override void FixedUpdate()
+    {
+        if(target != null)
+        {
+            if (hasKnockback || isAttacking)
+            {
+                return;
+            }
+            distance = PlayerDistance(target.transform.position);
+            if(distance > stopRange && !isRetreating)
+            {
+                rb2d.linearDamping = 0;
+                Vector2 newVelocity = TargetDirection(target.transform.position)*acceleration;
+                rb2d.AddForce(newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
+            }
+            if (isRetreating)
+            {
+                rb2d.linearDamping = 0;
+                Vector2 newVelocity = TargetDirection(target.transform.position)*acceleration;
+                rb2d.AddForce(-newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
+            }
+            if(distance < AttackRange && canAttack)
+            {
+                StartCoroutine(AttackTimer());
+            }
+            if(distance < stopRange && !isAttacking)
+            {
+                rb2d.linearDamping = friction;
+            }
+            if(distance > 40)
+            {
+                target = null;
+                rb2d.linearDamping = friction;
+            }
         }
     }
     protected override IEnumerator AttackTimer()

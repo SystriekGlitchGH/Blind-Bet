@@ -86,7 +86,7 @@ public class EnemyMovement : MonoBehaviour
     {
         StartCoroutine(GetHitTimer());
         enemy.TakeDamage(damage);
-        if(enemy.baseHealth <= 0)
+        if(enemy.currentHealth <= 0)
             Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
     }
