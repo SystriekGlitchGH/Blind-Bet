@@ -14,7 +14,7 @@ public class Goop1Movement : EnemyMovement
     }
     protected override void FixedUpdate()
     {
-        if (target != null)
+        if (enemyTarget != null)
         {
             if (hasKnockback || isAttacking)
             {
@@ -30,7 +30,7 @@ public class Goop1Movement : EnemyMovement
             }
             if(distance > 40)
             {
-                target = null;
+                enemyTarget = null;
                 rb2d.linearDamping = friction;
             }
         }
@@ -54,7 +54,7 @@ public class Goop1Movement : EnemyMovement
         spriteRend.color = new Color32(40,225,0,255);
         isAttacking = true; // is now attacking
         Debug.Log("Enemy attacked");
-        rb2d.AddForce(TargetDirection(target.transform.position)*dashForce, ForceMode2D.Impulse);
+        rb2d.AddForce(TargetDirection(enemyTarget.transform.position)*dashForce, ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
         yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks

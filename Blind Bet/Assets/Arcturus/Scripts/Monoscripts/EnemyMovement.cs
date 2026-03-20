@@ -6,7 +6,8 @@ using UnityEngine.UIElements;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public PlayerMovement target;
+    public PlayerMovement enemyTarget;
+    public Transform movementTarget;
     [Header("Components")]
     public Rigidbody2D rb2d;
     [SerializeField] protected SpriteRenderer spriteRend;
@@ -35,17 +36,18 @@ public class EnemyMovement : MonoBehaviour
     }
     protected virtual void FixedUpdate()
     {
-        if(target != null)
+        if(enemyTarget != null)
         {
+            
             if (hasKnockback || isAttacking)
             {
                 return;
             }
-            distance = PlayerDistance(target.transform.position);
+            distance = PlayerDistance(enemyTarget.transform.position);
             if(distance > stopRange)
             {
                 rb2d.linearDamping = 0;
-                Vector2 newVelocity = TargetDirection(target.transform.position)*acceleration;
+                Vector2 newVelocity = TargetDirection(enemyTarget.transform.position)*acceleration;
                 rb2d.AddForce(newVelocity);
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
                 rb2d.linearVelocity = velocity;
@@ -60,7 +62,7 @@ public class EnemyMovement : MonoBehaviour
             }
             if(distance > 40)
             {
-                target = null;
+                enemyTarget = null;
                 rb2d.linearDamping = friction;
             }
         }

@@ -15,10 +15,10 @@ public class CardSoliderD : EnemyMovement
     }
     protected void Update()
     {
-        if(target != null)
+        if(enemyTarget != null)
         {
             // find the angle from a normalised vector2
-            float angleRadians = Mathf.Atan2(TargetDirection(target.transform.position).y,TargetDirection(target.transform.position).x);
+            float angleRadians = Mathf.Atan2(TargetDirection(enemyTarget.transform.position).y,TargetDirection(enemyTarget.transform.position).x);
             //converts that angle to degrees, not radians
             float angleDegrees = angleRadians * Mathf.Rad2Deg; 
             angleDegrees -= 90; // sets the rotation correctly by 90 degrees
@@ -32,17 +32,17 @@ public class CardSoliderD : EnemyMovement
     }
     protected override void FixedUpdate()
     {
-        if(target != null)
+        if(enemyTarget != null)
         {
             if (hasKnockback || isAttacking)
             {
                 return;
             }
-            distance = PlayerDistance(target.transform.position);
+            distance = PlayerDistance(enemyTarget.transform.position);
             if(distance > stopRange && !isRetreating)
             {
                 rb2d.linearDamping = 0;
-                Vector2 newVelocity = TargetDirection(target.transform.position)*acceleration;
+                Vector2 newVelocity = TargetDirection(enemyTarget.transform.position)*acceleration;
                 rb2d.AddForce(newVelocity);
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
                 rb2d.linearVelocity = velocity;
@@ -50,7 +50,7 @@ public class CardSoliderD : EnemyMovement
             if (isRetreating)
             {
                 rb2d.linearDamping = 0;
-                Vector2 newVelocity = TargetDirection(target.transform.position)*acceleration;
+                Vector2 newVelocity = TargetDirection(enemyTarget.transform.position)*acceleration;
                 rb2d.AddForce(-newVelocity);
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
                 rb2d.linearVelocity = velocity;
@@ -65,7 +65,7 @@ public class CardSoliderD : EnemyMovement
             }
             if(distance > 40)
             {
-                target = null;
+                enemyTarget = null;
                 rb2d.linearDamping = friction;
             }
         }
@@ -77,16 +77,15 @@ public class CardSoliderD : EnemyMovement
             PlayerMovement pm = collision.GetComponent<PlayerMovement>();
             pm.rb2d.AddForce(TargetDirection(pm.transform.position)*colliderPushForce);
         }
-        else if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Soldier"))
+        {
+           rb2d.AddForce(-TargetDirection(collision.transform.position) * colliderPushForce*3);
+        }
+        if (collision.CompareTag("Enemy"))
         {
             EnemyMovement em = collision.GetComponent<EnemyMovement>();
             rb2d.AddForce(-TargetDirection(em.transform.position)*colliderPushForce);
         }
-        //else if (collision.CompareTag("Soldier"))
-        //{
-        //    EnemyMovement em = collision.GetComponent<EnemyMovement>();
-        //    rb2d.AddForce(-TargetDirection(em.transform.position) * colliderPushForce);
-        //}
     }
     protected override IEnumerator AttackTimer()
     {

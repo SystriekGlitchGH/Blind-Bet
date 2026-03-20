@@ -12,10 +12,10 @@ public class GoopThatShoot1Movement : EnemyMovement
     }
     private void Update()
     {
-        if(target != null)
+        if(enemyTarget != null)
         {
             // find the angle from a normalised vector2
-            float angleRadians = Mathf.Atan2(TargetDirection(target.transform.position).y,TargetDirection(target.transform.position).x);
+            float angleRadians = Mathf.Atan2(TargetDirection(enemyTarget.transform.position).y,TargetDirection(enemyTarget.transform.position).x);
             //converts that angle to degrees, not radians
             float angleDegrees = angleRadians * Mathf.Rad2Deg; 
             angleDegrees -= 90; // sets the rotation correctly by 90 degrees
@@ -50,12 +50,12 @@ public class GoopThatShoot1Movement : EnemyMovement
 
     private void SpawnBullet()
     {
-        GameObject shot = Instantiate(bullet, transform.position + (Vector3)TargetDirection(target.transform.position), anchorTransform.rotation);
+        GameObject shot = Instantiate(bullet, transform.position + (Vector3)TargetDirection(enemyTarget.transform.position), anchorTransform.rotation);
         if (shot.TryGetComponent(out Bullet bt))
         {
             bt.bulletType = "enemy";
             bt.em = this;
-            bt.direction = TargetDirection(target.transform.position);
+            bt.direction = TargetDirection(enemyTarget.transform.position);
             bt.rb2d.AddForce(bt.rb2d.transform.up * 1000);
         }
     }

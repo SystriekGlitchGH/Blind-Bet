@@ -13,7 +13,7 @@ public class Sensor : MonoBehaviour
 	{
 		if (collision.CompareTag("Player"))
 		{
-			enemyMovement.target = collision.GetComponent<PlayerMovement>();
+			enemyMovement.enemyTarget = collision.GetComponent<PlayerMovement>();
 		}
 	}
 }
