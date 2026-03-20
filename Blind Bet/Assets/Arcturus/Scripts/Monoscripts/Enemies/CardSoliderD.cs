@@ -70,6 +70,19 @@ public class CardSoliderD : EnemyMovement
             }
         }
     }
+    protected override void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            PlayerMovement pm = collision.GetComponent<PlayerMovement>();
+            pm.rb2d.AddForce(TargetDirection(pm.transform.position)*colliderPushForce);
+        }
+        else if (collision.CompareTag("Enemy"))
+        {
+            EnemyMovement em = collision.GetComponent<EnemyMovement>();
+            rb2d.AddForce(-TargetDirection(em.transform.position)*colliderPushForce);
+        }
+    }
     protected override IEnumerator AttackTimer()
     {
         canAttack = false; // make the enemy not duplicate attacks

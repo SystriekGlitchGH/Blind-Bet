@@ -65,7 +65,7 @@ public class EnemyMovement : MonoBehaviour
             }
         }
     }
-    protected void OnTriggerStay2D(Collider2D collision)
+    protected virtual void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
