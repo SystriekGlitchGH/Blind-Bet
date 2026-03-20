@@ -202,7 +202,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
         if (isParrying) position = angleAsVector * (playerStats.weapon.baseAttackSize.y+1);
-        GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
+        GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
         if (isParrying) attack.transform.localScale = playerStats.weapon.baseAttackSize*2;
         else attack.transform.localScale = playerStats.weapon.baseAttackSize;
         

@@ -5,10 +5,24 @@ public class CardSoliderD : EnemyMovement
 {
     public GameObject attackVisual;
     [SerializeField] Transform anchorTransform;
+    public LayerMask boxLayer;
     protected override void Start()
     {
         rb2d.linearDamping = friction;
         enemy = new Enemy(10,30,6,2,3);
+    }
+    protected void Update()
+    {
+        if(target != null)
+        {
+            // find the angle from a normalised vector2
+            float angleRadians = Mathf.Atan2(TargetDirection(target.transform.position).y,TargetDirection(target.transform.position).x);
+            //converts that angle to degrees, not radians
+            float angleDegrees = angleRadians * Mathf.Rad2Deg; 
+            angleDegrees -= 90; // sets the rotation correctly by 90 degrees
+            //anchorTransform.rotation = Quaternion.LookRotation(PlayerDirection(target.transform.position));
+            anchorTransform.rotation = Quaternion.Euler(0,0,angleDegrees);
+        }
     }
     protected override IEnumerator AttackTimer()
     {
@@ -17,10 +31,22 @@ public class CardSoliderD : EnemyMovement
         spriteRend.color = new Color32(210,225,0,255);
         yield return new WaitForSeconds(0.3f); // amount of time to react to attack
         isReadyingAttack = false; // no longer readying attack
-        spriteRend.color = new Color32(0,160,225,255);
+        spriteRend.color = new Color32(225,0,150,255);
         isAttacking = true; // is now attacking
+
         Debug.Log("Enemy attacked");
-        yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z), Mathf.Cos(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z));
+        Vector2 position = angleAsVector * (2.5f/2+1);
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)position, new Vector2(2,2.5f), anchorTransform.rotation.z, Vector2.zero,0,boxLayer);
+        if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
+        {
+            player.GetHit(this, enemy.baseKnockback);
+        }
+        GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        attack.transform.localScale = new Vector2(2,2.5f);
+
+        yield return new WaitForSeconds(0.1f); // time where you can take damage/parry/get shot at
+        Destroy(attack);
         isAttacking = false; // no longer attacking
         yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again

@@ -31,7 +31,6 @@ Transform:
   m_Children:
   - {fileID: 8648283243697072134}
   - {fileID: 7240594025072567186}
-  - {fileID: 7234518743451485385}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3082946522819116292
@@ -66,7 +65,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7234518743451485385}
   m_Father: {fileID: 3761003730259057455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5565977838893995876
@@ -203,12 +203,9 @@ MonoBehaviour:
   rb2d: {fileID: 4401776757835178578}
   spriteRend: {fileID: 5565977838893995876}
   acceleration: 40
-  topSpeed: 2
   friction: 8
   knockbackTime: 0.15
-  attackCooldown: 2
   AttackRange: 15
-  baseKnockback: 5
   stopRange: 6
   bullet: {fileID: 7721085805578197325, guid: a45101f1dc469534bbf8c7865ed406fb, type: 3}
   anchorTransform: {fileID: 7234518743451485385}
@@ -241,7 +238,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3761003730259057455}
+  m_Father: {fileID: 8648283243697072134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8968677368531162369
 GameObject:
