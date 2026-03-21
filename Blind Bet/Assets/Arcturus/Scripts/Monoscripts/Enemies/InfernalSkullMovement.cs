@@ -41,10 +41,14 @@ public class InfernalSkullMovement : EnemyMovement
             }
             if (distance > stopRange && !hit)
             {
-                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
-                rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
-                rb2d.linearVelocity = velocity;
+                if(path.Count != 0)
+                {
+                    Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
+                    rb2d.AddForce(newVelocity);
+                    Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                    rb2d.linearVelocity = velocity;
+                }
+                
             }
             if(distance < AttackRange && canAttack)
             {
