@@ -1363,6 +1363,10 @@ PrefabInstance:
       propertyPath: closestWaypoint
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3667329435915851471, guid: 340af4153fad458498d3015df833abb4, type: 3}
+      propertyPath: hitLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 3761003730259057455, guid: 340af4153fad458498d3015df833abb4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.99
@@ -1409,7 +1413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8968677368531162369, guid: 340af4153fad458498d3015df833abb4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18519,6 +18523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: currentNode
+      value: 
+      objectReference: {fileID: 349959188}
     - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: parryObject
       value: 

@@ -39,8 +39,8 @@ public class EnemyMovement : MonoBehaviour
     {
         if(enemyTarget != null)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),2,hitLayer);
-            Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 2f, Color.red);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
+            Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
             if (hasKnockback || isAttacking)
             {
                 return;

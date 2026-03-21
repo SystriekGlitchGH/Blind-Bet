@@ -21,6 +21,7 @@ public class InfernalSkullMovement : EnemyMovement
     }
     protected override void FixedUpdate()
     {
+        CreatePath();
         if(enemyTarget != null)
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
@@ -40,7 +41,10 @@ public class InfernalSkullMovement : EnemyMovement
             }
             if (distance > stopRange && !hit)
             {
-                CreatePath();
+                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
+                rb2d.AddForce(newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
             }
             if(distance < AttackRange && canAttack)
             {
@@ -94,8 +98,6 @@ public class InfernalSkullMovement : EnemyMovement
         if(path.Count > 0)
         {
             int x = 0;
-            transform.position= Vector2.MoveTowards(transform.position, new Vector2(path[x].transform.position.x,path[x].transform.position.y),3*Time.deltaTime);
-
             if(Vector2.Distance(transform.position,path[x].transform.position) < 0.1f)
             {
                 currentNode = path[x];
