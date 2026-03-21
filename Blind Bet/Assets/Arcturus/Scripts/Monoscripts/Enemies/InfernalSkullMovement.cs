@@ -60,6 +60,17 @@ public class InfernalSkullMovement : EnemyMovement
                 rb2d.linearDamping = friction;
             }
         }
+        else
+        {
+            if(path.Count != 0)
+            {
+                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
+                rb2d.AddForce(newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
+            }
+            
+        }
     }
     protected override IEnumerator AttackTimer()
     {
@@ -98,6 +109,10 @@ public class InfernalSkullMovement : EnemyMovement
         if(path.Count > 0)
         {
             int x = 0;
+            // if(path[path.Count -1] != enemyTarget.currentNode)
+            // {
+            //     path = AStarManager.instance.GeneratePath(currentNode, enemyTarget.currentNode);
+            // }
             if(Vector2.Distance(transform.position,path[x].transform.position) < 0.1f)
             {
                 currentNode = path[x];
