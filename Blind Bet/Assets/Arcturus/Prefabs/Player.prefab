@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 8451357699676093455}
   - component: {fileID: 5662594919883955688}
   - component: {fileID: 5576339891272612593}
+  - component: {fileID: 4543102744929762620}
   - component: {fileID: 9003751370500190273}
   - component: {fileID: 3508938354143582018}
   m_Layer: 6
@@ -325,6 +326,52 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!61 &4543102744929762620
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8453562600957011447}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!114 &9003751370500190273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,18 +385,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackVisual: {fileID: 3956911121127704462, guid: f8e26d177611f774f9d752c7f2cc82d8, type: 3}
+  parryObject: {fileID: 0}
   rb2d: {fileID: 5662594919883955688}
   spriteRend: {fileID: 8451357699676093455}
   anchorTransform: {fileID: 1119027603952637780}
   acceleration: 90
-  topSpeed: 10
   friction: 8
-  weaponName: sword
-  weaponType: blade
-  spearLungeForce: 20
   boxLayer:
     serializedVersion: 2
     m_Bits: 128
+  knockbackTime: 0.2
 --- !u!114 &3508938354143582018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,6 +452,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 736f04d2-fd26-4bf8-92c9-21c23b93b1df
     m_ActionName: 'Player/Attack[/Keyboard/z]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 023308f4-235e-48bb-b687-0c1bbfa21dc0
+    m_ActionName: 'Player/Dash[/Keyboard/c]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9d79e32a-a926-4808-a872-0dc85e91eaa2
+    m_ActionName: 'Player/Parry[/Keyboard/x]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

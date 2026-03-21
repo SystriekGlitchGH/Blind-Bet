@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Mathematics;
 using UnityEngine.UIElements;
+using Unity.VisualScripting;
 
 public class InfernalSkullMovement : EnemyMovement
 {
@@ -18,9 +19,43 @@ public class InfernalSkullMovement : EnemyMovement
         rb2d.linearDamping = friction;
         enemy = new Enemy(10,20,5,2,2);
     }
-    private void Update()
+    protected override void FixedUpdate()
     {
-        CreatePath();
+        if(enemyTarget != null)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
+            Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
+            if (hasKnockback || isAttacking)
+            {
+                return;
+            }
+            distance = TargetDistance(enemyTarget.transform.position);
+            if(distance > stopRange && hit)
+            {
+                rb2d.linearDamping = 0;
+                Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
+                rb2d.AddForce(newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
+            }
+            if (distance > stopRange && !hit)
+            {
+                CreatePath();
+            }
+            if(distance < AttackRange && canAttack)
+            {
+                StartCoroutine(AttackTimer());
+            }
+            if(distance < stopRange && !isAttacking)
+            {
+                rb2d.linearDamping = friction;
+            }
+            if(distance > 40)
+            {
+                enemyTarget = null;
+                rb2d.linearDamping = friction;
+            }
+        }
     }
     protected override IEnumerator AttackTimer()
     {
@@ -59,7 +94,7 @@ public class InfernalSkullMovement : EnemyMovement
         if(path.Count > 0)
         {
             int x = 0;
-            transform.position= Vector3.MoveTowards(transform.position, new Vector3(path[x].transform.position.x,path[x].transform.position.y,-2),3*Time.deltaTime);
+            transform.position= Vector2.MoveTowards(transform.position, new Vector2(path[x].transform.position.x,path[x].transform.position.y),3*Time.deltaTime);
 
             if(Vector2.Distance(transform.position,path[x].transform.position) < 0.1f)
             {
@@ -72,7 +107,12 @@ public class InfernalSkullMovement : EnemyMovement
             Node[] nodes = FindObjectsByType<Node>(FindObjectsSortMode.None);
             while(path == null || path.Count == 0)
             {
-                path = AStarManager.instance.GeneratePath(currentNode, nodes[UnityEngine.Random.Range(0,nodes.Length)]);
+                if(enemyTarget == null)
+                    path = AStarManager.instance.GeneratePath(currentNode, nodes[UnityEngine.Random.Range(0,nodes.Length)]);
+                else
+                {
+                    path = AStarManager.instance.GeneratePath(currentNode, enemyTarget.currentNode);
+                }
             }
         }
     }

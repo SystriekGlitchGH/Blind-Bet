@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public float acceleration; // how quickly you go to top speed
     public float friction; // controls air resistance
     private float directionX, directionY; // variables for direction when moving
+    public Node currentNode;
 
     [Header("Attack stats")]
     private bool isDashing, canDash = true; // checks if you are currently dashing and are allowed to dash
@@ -103,6 +104,10 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("Spade"))
         {
             playerStats.activeSuit = Card.Suit.spade;
+        }
+        if (collision.CompareTag("Waypoint"))
+        {
+            currentNode = collision.GetComponent<Node>();
         }
         playerStats.weapon = new Weapon(playerStats.activeSuit);
     }

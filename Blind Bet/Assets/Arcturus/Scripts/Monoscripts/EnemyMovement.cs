@@ -41,16 +41,12 @@ public class EnemyMovement : MonoBehaviour
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),2,hitLayer);
             Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 2f, Color.red);
-            if(hit)
-            {
-                
-            }
             if (hasKnockback || isAttacking)
             {
                 return;
             }
             distance = TargetDistance(enemyTarget.transform.position);
-            if(distance > stopRange)
+            if(distance > stopRange && hit)
             {
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
