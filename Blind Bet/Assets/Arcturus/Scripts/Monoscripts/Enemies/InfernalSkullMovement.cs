@@ -1,6 +1,7 @@
 using System.Collections;
-using Unity.Mathematics;
+using System.Collections.Generic;
 using UnityEngine;
+using Unity.Mathematics;
 using UnityEngine.UIElements;
 
 public class InfernalSkullMovement : EnemyMovement
@@ -8,10 +9,18 @@ public class InfernalSkullMovement : EnemyMovement
     public GameObject attackVisual;
     public float attackRadius;
     public LayerMask circleLayer;
+
+    public Node currentNode;
+    public List<Node> path = new List<Node>();
+
     protected override void Start()
     {
         rb2d.linearDamping = friction;
         enemy = new Enemy(10,20,5,2,2);
+    }
+    private void Update()
+    {
+        CreatePath();
     }
     protected override IEnumerator AttackTimer()
     {
@@ -43,5 +52,28 @@ public class InfernalSkullMovement : EnemyMovement
         yield return new WaitForSeconds(knockbackTime);
         spriteRend.color = new Color32(200, 200, 200, 255);
         hasKnockback = false;
+    }
+
+    public void CreatePath()
+    {
+        if(path.Count > 0)
+        {
+            int x = 0;
+            transform.position= Vector3.MoveTowards(transform.position, new Vector3(path[x].transform.position.x,path[x].transform.position.y,-2),3*Time.deltaTime);
+
+            if(Vector2.Distance(transform.position,path[x].transform.position) < 0.1f)
+            {
+                currentNode = path[x];
+                path.RemoveAt(x);
+            }
+        }
+        else
+        {
+            Node[] nodes = FindObjectsByType<Node>(FindObjectsSortMode.None);
+            while(path == null || path.Count == 0)
+            {
+                path = AStarManager.instance.GeneratePath(currentNode, nodes[UnityEngine.Random.Range(0,nodes.Length)]);
+            }
+        }
     }
 }
