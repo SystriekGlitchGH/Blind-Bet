@@ -46,7 +46,7 @@ public class EnemyMovement : MonoBehaviour
                 return;
             }
             distance = TargetDistance(enemyTarget.transform.position);
-            if(distance > stopRange && hit)
+            if(distance > stopRange)
             {
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;

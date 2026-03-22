@@ -142,7 +142,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
                 {
+                    Debug.Log(playerStats.weapon.baseAttack);
                     enemy.GetHit(this, playerStats.weapon.baseKnockback,playerStats.weapon.baseAttack);
+                    Debug.Log(enemy.enemy.currentHealth);
                 }
             }
         }

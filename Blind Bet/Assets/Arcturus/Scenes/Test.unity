@@ -1355,6 +1355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InfernalSkull1
       objectReference: {fileID: 0}
+    - target: {fileID: 1535248516464851881, guid: 340af4153fad458498d3015df833abb4, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3667329435915851471, guid: 340af4153fad458498d3015df833abb4, type: 3}
       propertyPath: currentNode
       value: 
@@ -1406,6 +1410,10 @@ PrefabInstance:
     - target: {fileID: 3761003730259057455, guid: 340af4153fad458498d3015df833abb4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086504308705454252, guid: 340af4153fad458498d3015df833abb4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5814968614016518674, guid: 340af4153fad458498d3015df833abb4, type: 3}
       propertyPath: m_Enabled

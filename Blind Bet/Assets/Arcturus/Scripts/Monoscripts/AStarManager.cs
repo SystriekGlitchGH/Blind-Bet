@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Data.Common;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 
 public class AStarManager : MonoBehaviour
@@ -70,5 +72,41 @@ public class AStarManager : MonoBehaviour
             }
         }
         return null;
+    }
+    public Node FindNearestNode(Vector2 position)
+    {
+        Node foundNode = null;
+        float minDistance = float.MaxValue;
+        foreach(Node node in NodesInScene())
+        {
+            float currentDistance = Vector2.Distance(position, node.transform.position);
+            if(currentDistance < minDistance)
+            {
+                minDistance = currentDistance;
+                foundNode = node;
+            }
+        }
+        return foundNode;
+    }
+
+    public Node FindFarthestNode(Vector2 position)
+    {
+        Node foundNode = null;
+        float maxDistance = 0;
+        foreach(Node node in NodesInScene())
+        {
+            float currentDistance = Vector2.Distance(position, node.transform.position);
+            if(currentDistance > maxDistance)
+            {
+                maxDistance = currentDistance;
+                foundNode = node;
+            }
+        }
+        return foundNode;
+    }
+
+    public Node[] NodesInScene()
+    {
+        return FindObjectsByType<Node>(FindObjectsSortMode.None);
     }
 }
