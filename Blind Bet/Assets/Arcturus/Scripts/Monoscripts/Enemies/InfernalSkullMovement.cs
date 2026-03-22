@@ -46,17 +46,20 @@ public class InfernalSkullMovement : EnemyMovement
             currentState = StateMachine.patrol;
             path.Clear();
         }
-        else if(enemyTarget != null && currentState != StateMachine.engage)
+        else if(enemyTarget != null && currentState != StateMachine.engage && enemy.currentHealth > enemy.maxHealth * 20/100)
         {
             currentState = StateMachine.engage;
             path.Clear();
         }
-        else if(enemyTarget != null && currentState != StateMachine.evade)
+        else if(enemyTarget != null && currentState != StateMachine.evade && enemy.currentHealth < enemy.maxHealth * 20/100)
         {
             currentState = StateMachine.evade;
             path.Clear();
         }
+
+        CreatePath();
     }
+
     protected override void FixedUpdate()
     {
         if(enemyTarget != null)
@@ -68,10 +71,18 @@ public class InfernalSkullMovement : EnemyMovement
                 return;
             }
             distance = TargetDistance(enemyTarget.transform.position);
-            if(distance > stopRange)
+            if(distance > stopRange && hit)
             {
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
+                rb2d.AddForce(newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
+            }
+            if(distance > stopRange && !hit && path.Count > 0)
+            {
+                rb2d.linearDamping = 0;
+                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
                 rb2d.linearVelocity = velocity;
@@ -125,18 +136,34 @@ public class InfernalSkullMovement : EnemyMovement
 
     private void CreatePath()
     {
-        
+        if(path.Count > 0)
+        {
+            if(Vector2.Distance(transform.position, path[0].transform.position) < 0.1f)
+            {
+                currentNode = path[0];
+                path.RemoveAt(0);
+            }
+        }
     }
     private void Patrol()
     {
-        
+        if(path.Count == 0)
+        {
+            path = AStarManager.instance.GeneratePath(currentNode,AStarManager.instance.NodesInScene()[UnityEngine.Random.Range(0,AStarManager.instance.NodesInScene().Length)]);
+        }
     }
     private void Engage()
     {
-        
+        if(path.Count == 0)
+        {
+            path = AStarManager.instance.GeneratePath(currentNode, AStarManager.instance.FindNearestNode(enemyTarget.transform.position));
+        }
     }
     private void Evade()
     {
-        
+        if(path.Count == 0)
+        {
+            path = AStarManager.instance.GeneratePath(currentNode, AStarManager.instance.FindFarthestNode(enemyTarget.transform.position));
+        }
     }
 }

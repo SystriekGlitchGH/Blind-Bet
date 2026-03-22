@@ -71,7 +71,7 @@ public class AStarManager : MonoBehaviour
                 }
             }
         }
-        return null;
+        return openSet;
     }
     public Node FindNearestNode(Vector2 position)
     {

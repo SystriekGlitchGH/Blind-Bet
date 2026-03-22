@@ -270,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -367,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -529,7 +529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -602,7 +602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -711,7 +711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -812,7 +812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -897,7 +897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1098,7 +1098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1203,7 +1203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1336,7 +1336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1726,7 +1726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1803,7 +1803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6211,7 +6211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6296,7 +6296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6385,7 +6385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6470,7 +6470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6551,7 +6551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6628,7 +6628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6725,7 +6725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6802,7 +6802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6875,7 +6875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16221,7 +16221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16363,7 +16363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16448,7 +16448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16670,7 +16670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16764,7 +16764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16857,7 +16857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16963,7 +16963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17224,7 +17224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17325,7 +17325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17450,7 +17450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17555,7 +17555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17668,7 +17668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17745,7 +17745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17826,7 +17826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17915,7 +17915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18016,7 +18016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18089,7 +18089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18190,7 +18190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18275,7 +18275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18384,7 +18384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4765632566948394326, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
       propertyPath: m_TagString
-      value: Waypoint
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
