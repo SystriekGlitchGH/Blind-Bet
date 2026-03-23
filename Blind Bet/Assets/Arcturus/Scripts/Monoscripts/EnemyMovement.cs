@@ -116,6 +116,9 @@ public class EnemyMovement : MonoBehaviour
         canAttack = true; // can attack again
     }
     //movement help methods
+
+
+    
     public float TargetDistance(Vector2 playerPos)
     {
         return Vector2.Distance((Vector2)transform.position, playerPos);

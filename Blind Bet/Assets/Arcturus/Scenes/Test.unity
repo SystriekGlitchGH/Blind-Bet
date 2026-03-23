@@ -1360,6 +1360,10 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3667329435915851471, guid: 340af4153fad458498d3015df833abb4, type: 3}
+      propertyPath: movedNode
+      value: 
+      objectReference: {fileID: 861226400}
+    - target: {fileID: 3667329435915851471, guid: 340af4153fad458498d3015df833abb4, type: 3}
       propertyPath: currentNode
       value: 
       objectReference: {fileID: 861226400}

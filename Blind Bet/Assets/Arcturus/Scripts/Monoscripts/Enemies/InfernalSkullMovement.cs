@@ -13,6 +13,7 @@ public class InfernalSkullMovement : EnemyMovement
 
     //Pathfinding
     public Node currentNode;
+    public Node movedNode;
     public List<Node> path;
 
     public enum StateMachine
@@ -57,6 +58,7 @@ public class InfernalSkullMovement : EnemyMovement
             path.Clear();
         }
         CreatePath();
+        movedNode = AStarManager.instance.FindNearestNode(transform.position);
     }
 
     protected override void FixedUpdate()
@@ -148,6 +150,10 @@ public class InfernalSkullMovement : EnemyMovement
     {
         if(path.Count > 0)
         {
+            if(movedNode != currentNode && movedNode != path[0] && currentState == StateMachine.engage)
+            {
+                path = AStarManager.instance.GeneratePath(movedNode, AStarManager.instance.FindNearestNode(enemyTarget.transform.position));
+            }
             if(Vector2.Distance(transform.position, path[0].transform.position) < 0.1f)
             {
                 currentNode = path[0];
