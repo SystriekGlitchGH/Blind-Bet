@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRend;
 	public Transform anchorTransform;
     public Player playerStats;
+    public Node currentNode;
 
 	[Header("Movement stats")]
     public float acceleration; // how quickly you go to top speed
@@ -88,6 +89,7 @@ public class PlayerMovement : MonoBehaviour
         FindDirection(); // gets the direction from the vector
         FindAngle(); // gets the angle from the direction
         anchorTransform.eulerAngles = new Vector3(0,0,attackAngle); // uses angle to change the achor transform
+        //currentNode = AStarManager.instance.FindNearestNode(transform.position);
     }
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
     private void OnTriggerEnter2D(Collider2D collision)

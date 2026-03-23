@@ -56,7 +56,6 @@ public class InfernalSkullMovement : EnemyMovement
             currentState = StateMachine.evade;
             path.Clear();
         }
-
         CreatePath();
     }
 
@@ -101,6 +100,18 @@ public class InfernalSkullMovement : EnemyMovement
                 rb2d.linearDamping = friction;
             }
         }
+        if(enemyTarget == null)
+        {
+            if(path.Count > 0)
+            {
+                rb2d.linearDamping = 0;
+                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
+                rb2d.AddForce(newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
+            }
+            
+        }
     }
     protected override IEnumerator AttackTimer()
     {
@@ -133,7 +144,6 @@ public class InfernalSkullMovement : EnemyMovement
         spriteRend.color = new Color32(200, 200, 200, 255);
         hasKnockback = false;
     }
-
     private void CreatePath()
     {
         if(path.Count > 0)
