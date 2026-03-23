@@ -9,8 +9,9 @@ public class GoopThatShoot1Movement : EnemyMovement
     {
         rb2d.linearDamping = friction;
         enemy = new Enemy(10,20,5,2,2);
+        currentState = StateMachine.patrol;
     }
-    private void Update()
+    protected override void Update()
     {
         if(enemyTarget != null)
         {
@@ -22,7 +23,27 @@ public class GoopThatShoot1Movement : EnemyMovement
             //anchorTransform.rotation = Quaternion.LookRotation(PlayerDirection(target.transform.position));
             anchorTransform.rotation = Quaternion.Euler(0,0,angleDegrees);
         }
-        
+        switch (currentState)
+        {
+            case StateMachine.patrol:
+                Patrol();
+                break;
+            case StateMachine.engage:
+                Engage();
+                break;
+        }
+        if(enemyTarget == null && currentState != StateMachine.patrol)
+        {
+            currentState = StateMachine.patrol;
+            path.Clear();
+        }
+        else if(enemyTarget != null && currentState != StateMachine.engage && enemy.currentHealth > enemy.maxHealth * 20/100)
+        {
+            currentState = StateMachine.engage;
+            path.Clear();
+        }
+        CreatePath();
+        movedNode = AStarManager.instance.FindNearestNode(transform.position);
     } 
     protected override IEnumerator AttackTimer()
     {

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -11,18 +12,50 @@ public class Goop1Movement : EnemyMovement
     {
         rb2d.linearDamping = friction;
         enemy = new Enemy(10,20,5,2,1.25f);
+        currentState = StateMachine.patrol;
+    }
+    protected override void Update()
+    {
+        switch (currentState)
+        {
+            case StateMachine.patrol:
+                Patrol();
+                break;
+            case StateMachine.engage:
+                Engage();
+                break;
+        }
+        if(enemyTarget == null && currentState != StateMachine.patrol)
+        {
+            currentState = StateMachine.patrol;
+            path.Clear();
+        }
+        else if(enemyTarget != null && currentState != StateMachine.engage && enemy.currentHealth > enemy.maxHealth * 20/100)
+        {
+            currentState = StateMachine.engage;
+            path.Clear();
+        }
+        CreatePath();
+        movedNode = AStarManager.instance.FindNearestNode(transform.position);
     }
     protected override void FixedUpdate()
     {
+        
         if (enemyTarget != null)
         {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
+            Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
             if (hasKnockback || isAttacking)
             {
                 return;
             }
-            if(distance < AttackRange && canAttack)
+            if(distance < AttackRange && canAttack && hit)
             {
-                StartCoroutine(AttackTimer());
+                StartCoroutine(AttackTimer("enemyTarget"));
+            }
+            if(distance < AttackRange && canAttack && !hit && path.Count > 0)
+            {
+                StartCoroutine(AttackTimer("node"));
             }
             if(distance < 2 && !isAttacking)
             {
@@ -34,6 +67,10 @@ public class Goop1Movement : EnemyMovement
                 rb2d.linearDamping = friction;
             }
         }
+        if(enemyTarget == null && canAttack)
+        {
+            StartCoroutine(AttackTimer("node"));
+        }
     }
     protected void OnTriggerEnter2D(Collider2D collision)
     {
@@ -44,7 +81,7 @@ public class Goop1Movement : EnemyMovement
         }
     }
 
-    protected override IEnumerator AttackTimer()
+    protected IEnumerator AttackTimer(string targetArea)
     {
         canAttack = false; // make the enemy not duplicate attacks
         isReadyingAttack = true; // small moment before attack to make it not instant
@@ -54,7 +91,14 @@ public class Goop1Movement : EnemyMovement
         spriteRend.color = new Color32(40,225,0,255);
         isAttacking = true; // is now attacking
         Debug.Log("Enemy attacked");
-        rb2d.AddForce(TargetDirection(enemyTarget.transform.position)*dashForce, ForceMode2D.Impulse);
+        if(targetArea == "enemyTarget")
+        {
+            rb2d.AddForce(TargetDirection(enemyTarget.transform.position)*dashForce, ForceMode2D.Impulse);
+        }
+        else if(targetArea == "node")
+        {
+            rb2d.AddForce(TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*dashForce, ForceMode2D.Impulse);
+        }
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
         yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks

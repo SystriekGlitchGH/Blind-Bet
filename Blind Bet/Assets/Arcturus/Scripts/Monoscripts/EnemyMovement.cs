@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -22,6 +23,16 @@ public class EnemyMovement : MonoBehaviour
     public float knockbackTime;
     public LayerMask hitLayer;
 
+    [Header("PathFinding")]
+    public Node currentNode;
+    public Node movedNode;
+    public List<Node> path;
+    public enum StateMachine
+    {
+        patrol,engage,evade
+    }
+    public StateMachine currentState;
+
     [Header("Attack stats")]
     protected bool canAttack = true, isReadyingAttack, isAttacking;
     public float AttackRange;
@@ -34,6 +45,39 @@ public class EnemyMovement : MonoBehaviour
     {
         rb2d.linearDamping = friction;
         enemy = new Enemy(10,20,5,2,3);
+        currentState = StateMachine.patrol;
+    }
+    protected virtual void Update()
+    {
+        switch (currentState)
+        {
+            case StateMachine.patrol:
+                Patrol();
+                break;
+            case StateMachine.engage:
+                Engage();
+                break;
+            case StateMachine.evade:
+                Evade();
+                break;
+        }
+        if(enemyTarget == null && currentState != StateMachine.patrol)
+        {
+            currentState = StateMachine.patrol;
+            path.Clear();
+        }
+        else if(enemyTarget != null && currentState != StateMachine.engage && enemy.currentHealth > enemy.maxHealth * 20/100)
+        {
+            currentState = StateMachine.engage;
+            path.Clear();
+        }
+        else if(enemyTarget != null && currentState != StateMachine.evade && enemy.currentHealth < enemy.maxHealth * 20/100)
+        {
+            currentState = StateMachine.evade;
+            path.Clear();
+        }
+        CreatePath();
+        movedNode = AStarManager.instance.FindNearestNode(transform.position);
     }
     protected virtual void FixedUpdate()
     {
@@ -46,10 +90,18 @@ public class EnemyMovement : MonoBehaviour
                 return;
             }
             distance = TargetDistance(enemyTarget.transform.position);
-            if(distance > stopRange)
+            if(distance > stopRange && hit)
             {
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
+                rb2d.AddForce(newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
+            }
+            if(distance > stopRange && !hit && path.Count > 0)
+            {
+                rb2d.linearDamping = 0;
+                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
                 rb2d.linearVelocity = velocity;
@@ -66,6 +118,17 @@ public class EnemyMovement : MonoBehaviour
             {
                 enemyTarget = null;
                 rb2d.linearDamping = friction;
+            }
+        }
+        if(enemyTarget == null)
+        {
+            if(path.Count > 0)
+            {
+                rb2d.linearDamping = 0;
+                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
+                rb2d.AddForce(newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
             }
         }
     }
@@ -117,7 +180,46 @@ public class EnemyMovement : MonoBehaviour
     }
     //movement help methods
 
-
+    protected void CreatePath()
+    {
+        if(path.Count > 0)
+        {
+            if(movedNode != currentNode && movedNode != path[0] && currentState == StateMachine.engage)
+            {
+                path = AStarManager.instance.GeneratePath(movedNode, AStarManager.instance.FindNearestNode(enemyTarget.transform.position));
+            }
+            if(path.Count > 0)
+            {
+                if(Vector2.Distance(transform.position, path[0].transform.position) < 0.1f)
+                {
+                    currentNode = path[0];
+                    path.RemoveAt(0);
+                }
+            }
+            
+        }
+    }
+    protected void Patrol()
+    {
+        if(path.Count == 0)
+        {
+            path = AStarManager.instance.GeneratePath(currentNode,AStarManager.instance.NodesInScene()[UnityEngine.Random.Range(0,AStarManager.instance.NodesInScene().Length)]);
+        }
+    }
+    protected void Engage()
+    {
+        if(path.Count == 0)
+        {
+            path = AStarManager.instance.GeneratePath(currentNode, AStarManager.instance.FindNearestNode(enemyTarget.transform.position));
+        }
+    }
+    protected void Evade()
+    {
+        if(path.Count == 0)
+        {
+            path = AStarManager.instance.GeneratePath(currentNode, AStarManager.instance.FindFarthestNode(enemyTarget.transform.position));
+        }
+    }
     
     public float TargetDistance(Vector2 playerPos)
     {

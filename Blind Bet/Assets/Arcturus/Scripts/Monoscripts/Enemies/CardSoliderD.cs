@@ -13,8 +13,9 @@ public class CardSoliderD : EnemyMovement
         rb2d.linearDamping = friction;
         enemy = new Enemy(10,30,6,2,3);
     }
-    protected void Update()
+    protected override void Update()
     {
+        base.Update();
         if(enemyTarget != null)
         {
             // find the angle from a normalised vector2
@@ -25,33 +26,39 @@ public class CardSoliderD : EnemyMovement
             //anchorTransform.rotation = Quaternion.LookRotation(PlayerDirection(target.transform.position));
             anchorTransform.rotation = Quaternion.Euler(0,0,angleDegrees);
         }
-        if(enemy.currentHealth <= enemy.maxHealth * 0.25)
-            isRetreating = true;
-        else if(enemy.currentHealth >= enemy.maxHealth * 0.75)
-            isRetreating = false;
     }
     protected override void FixedUpdate()
     {
         if(enemyTarget != null)
         {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
+            Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
             if (hasKnockback || isAttacking)
             {
                 return;
             }
             distance = TargetDistance(enemyTarget.transform.position);
-            if(distance > stopRange && !isRetreating)
+            if(distance > stopRange && hit && currentState == StateMachine.engage)
             {
                 rb2d.linearDamping = 0;
-                Vector2 newVelocity = TargetDirection(enemyTarget.transform.position)*acceleration;
+                Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
                 rb2d.AddForce(newVelocity);
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
-            if (isRetreating)
+            if(distance > stopRange && hit && currentState == StateMachine.evade)
             {
                 rb2d.linearDamping = 0;
-                Vector2 newVelocity = TargetDirection(enemyTarget.transform.position)*acceleration;
+                Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
                 rb2d.AddForce(-newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
+            }
+            if(distance > stopRange && !hit && path.Count > 0)
+            {
+                rb2d.linearDamping = 0;
+                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
+                rb2d.AddForce(newVelocity);
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
@@ -67,6 +74,17 @@ public class CardSoliderD : EnemyMovement
             {
                 enemyTarget = null;
                 rb2d.linearDamping = friction;
+            }
+        }
+        if(enemyTarget == null)
+        {
+            if(path.Count > 0)
+            {
+                rb2d.linearDamping = 0;
+                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
+                rb2d.AddForce(newVelocity);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                rb2d.linearVelocity = velocity;
             }
         }
     }

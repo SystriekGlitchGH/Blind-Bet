@@ -68,7 +68,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 5
+  m_Radius: 10
 --- !u!114 &6730409091267090236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,12 +282,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e29730e8131794598dd1e4334538c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  enemyTarget: {fileID: 0}
+  movementTarget: {fileID: 0}
   rb2d: {fileID: 5591057413083369273}
   spriteRend: {fileID: 4151534308051164709}
   acceleration: 50
   friction: 8
   knockbackTime: 0.1
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  currentNode: {fileID: 0}
+  movedNode: {fileID: 0}
+  path: []
+  currentState: 0
   AttackRange: 3
   stopRange: 3
   attackVisual: {fileID: 3956911121127704462, guid: f8e26d177611f774f9d752c7f2cc82d8, type: 3}

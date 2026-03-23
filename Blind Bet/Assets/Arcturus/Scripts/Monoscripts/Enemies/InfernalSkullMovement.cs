@@ -11,24 +11,13 @@ public class InfernalSkullMovement : EnemyMovement
     public float attackRadius;
     public LayerMask circleLayer;
 
-    //Pathfinding
-    public Node currentNode;
-    public Node movedNode;
-    public List<Node> path;
-
-    public enum StateMachine
-    {
-        patrol,engage,evade
-    }
-    public StateMachine currentState;
-
     protected override void Start()
     {
         rb2d.linearDamping = friction;
         enemy = new Enemy(10,20,5,2,2);
         currentState = StateMachine.patrol;
     }
-    private void Update()
+    protected override void Update()
     {
         switch (currentState)
         {
@@ -37,9 +26,6 @@ public class InfernalSkullMovement : EnemyMovement
                 break;
             case StateMachine.engage:
                 Engage();
-                break;
-            case StateMachine.evade:
-                Evade();
                 break;
         }
         if(enemyTarget == null && currentState != StateMachine.patrol)
@@ -52,68 +38,8 @@ public class InfernalSkullMovement : EnemyMovement
             currentState = StateMachine.engage;
             path.Clear();
         }
-        else if(enemyTarget != null && currentState != StateMachine.evade && enemy.currentHealth < enemy.maxHealth * 20/100)
-        {
-            currentState = StateMachine.evade;
-            path.Clear();
-        }
         CreatePath();
         movedNode = AStarManager.instance.FindNearestNode(transform.position);
-    }
-
-    protected override void FixedUpdate()
-    {
-        if(enemyTarget != null)
-        {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
-            Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
-            if (hasKnockback || isAttacking)
-            {
-                return;
-            }
-            distance = TargetDistance(enemyTarget.transform.position);
-            if(distance > stopRange && hit)
-            {
-                rb2d.linearDamping = 0;
-                Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
-                rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
-                rb2d.linearVelocity = velocity;
-            }
-            if(distance > stopRange && !hit && path.Count > 0)
-            {
-                rb2d.linearDamping = 0;
-                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
-                rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
-                rb2d.linearVelocity = velocity;
-            }
-            if(distance < AttackRange && canAttack)
-            {
-                StartCoroutine(AttackTimer());
-            }
-            if(distance < stopRange && !isAttacking)
-            {
-                rb2d.linearDamping = friction;
-            }
-            if(distance > 40)
-            {
-                enemyTarget = null;
-                rb2d.linearDamping = friction;
-            }
-        }
-        if(enemyTarget == null)
-        {
-            if(path.Count > 0)
-            {
-                rb2d.linearDamping = 0;
-                Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
-                rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
-                rb2d.linearVelocity = velocity;
-            }
-            
-        }
     }
     protected override IEnumerator AttackTimer()
     {
@@ -145,41 +71,5 @@ public class InfernalSkullMovement : EnemyMovement
         yield return new WaitForSeconds(knockbackTime);
         spriteRend.color = new Color32(200, 200, 200, 255);
         hasKnockback = false;
-    }
-    private void CreatePath()
-    {
-        if(path.Count > 0)
-        {
-            if(movedNode != currentNode && movedNode != path[0] && currentState == StateMachine.engage)
-            {
-                path = AStarManager.instance.GeneratePath(movedNode, AStarManager.instance.FindNearestNode(enemyTarget.transform.position));
-            }
-            if(Vector2.Distance(transform.position, path[0].transform.position) < 0.1f)
-            {
-                currentNode = path[0];
-                path.RemoveAt(0);
-            }
-        }
-    }
-    private void Patrol()
-    {
-        if(path.Count == 0)
-        {
-            path = AStarManager.instance.GeneratePath(currentNode,AStarManager.instance.NodesInScene()[UnityEngine.Random.Range(0,AStarManager.instance.NodesInScene().Length)]);
-        }
-    }
-    private void Engage()
-    {
-        if(path.Count == 0)
-        {
-            path = AStarManager.instance.GeneratePath(currentNode, AStarManager.instance.FindNearestNode(enemyTarget.transform.position));
-        }
-    }
-    private void Evade()
-    {
-        if(path.Count == 0)
-        {
-            path = AStarManager.instance.GeneratePath(currentNode, AStarManager.instance.FindFarthestNode(enemyTarget.transform.position));
-        }
     }
 }
