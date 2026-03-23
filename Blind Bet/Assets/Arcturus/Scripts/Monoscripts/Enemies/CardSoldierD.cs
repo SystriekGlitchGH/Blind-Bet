@@ -11,6 +11,7 @@ public class CardSoldierD : EnemyMovement
     {
         rb2d.linearDamping = friction;
         enemy = new Enemy(10,30,6,2,3);
+        currentState = StateMachine.patrol;
     }
     protected override void Update()
     {
