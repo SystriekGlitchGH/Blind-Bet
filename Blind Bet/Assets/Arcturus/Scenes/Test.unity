@@ -455,6 +455,10 @@ PrefabInstance:
       propertyPath: currentNode
       value: 
       objectReference: {fileID: 533288013}
+    - target: {fileID: 3667329435915851471, guid: 340af4153fad458498d3015df833abb4, type: 3}
+      propertyPath: hitLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 3761003730259057455, guid: 340af4153fad458498d3015df833abb4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.4115047
@@ -1628,71 +1632,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1878219926488843821, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
   m_PrefabInstance: {fileID: 1369695540}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &607003037
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1269963747402504840, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_Name
-      value: CardSoldierDiamond
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.4279695
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.574979
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177415508972745820, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8451526228411675150, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: movedNode
-      value: 
-      objectReference: {fileID: 2097481}
-    - target: {fileID: 8451526228411675150, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
-      propertyPath: currentNode
-      value: 
-      objectReference: {fileID: 2097481}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fb760e18c3b18b446aa713d51fd1531e, type: 3}
 --- !u!1001 &616241270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18608,5 +18547,4 @@ SceneRoots:
   - {fileID: 7444056}
   - {fileID: 1296813291}
   - {fileID: 1469459326}
-  - {fileID: 607003037}
   - {fileID: 78311419}

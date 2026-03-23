@@ -1,13 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
-public class CardSoliderD : EnemyMovement
+public class CardSoldierD : EnemyMovement
 {
     public GameObject attackVisual;
     [SerializeField] Transform anchorTransform;
     public LayerMask boxLayer;
     public Vector2 attackSize;
-    protected bool isRetreating;
     protected override void Start()
     {
         rb2d.linearDamping = friction;
