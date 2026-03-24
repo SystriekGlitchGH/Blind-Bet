@@ -90,7 +90,6 @@ public class Goop1Movement : EnemyMovement
         isReadyingAttack = false; // no longer readying attack
         spriteRend.color = new Color32(40,225,0,255);
         isAttacking = true; // is now attacking
-        Debug.Log("Enemy attacked");
         if(targetArea == "enemyTarget")
         {
             rb2d.AddForce(TargetDirection(enemyTarget.transform.position)*dashForce, ForceMode2D.Impulse);

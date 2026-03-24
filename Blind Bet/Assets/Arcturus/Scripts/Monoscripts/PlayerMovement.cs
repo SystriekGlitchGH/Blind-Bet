@@ -35,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     private bool canAttack = true; // checks if you can attack
     private bool buttonHeld; // checks if the attack button is held for auto fire purposes
     private float attackAngle; // the angle of your attack
+    public float iFrameTime;
+    private bool hasIFrames;
 
     [Header("Getting Attacked")]
     private bool hasKnockback;
@@ -191,8 +193,12 @@ public class PlayerMovement : MonoBehaviour
     // getting hit
     public void GetHit(EnemyMovement attacker, float knockback)
     {
-        StartCoroutine(GetHitTimer());
-        rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
+        if (!hasIFrames)
+        {
+            Debug.Log("got hit");
+            StartCoroutine(GetHitTimer());
+            rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
+        }
     }
     #endregion
     #region IENUMERATORS
@@ -248,9 +254,12 @@ public class PlayerMovement : MonoBehaviour
     {
         hasKnockback = true;
         spriteRend.color = new Color32(150,0,0,255);
+        hasIFrames = true;
         yield return new WaitForSeconds(knockbackTime);
         spriteRend.color = new Color32(255,255,255,255);
         hasKnockback = false;
+        yield return new WaitForSeconds(iFrameTime - knockbackTime);
+        hasIFrames = false;
     }
     private IEnumerator ParryTimer()
     {
