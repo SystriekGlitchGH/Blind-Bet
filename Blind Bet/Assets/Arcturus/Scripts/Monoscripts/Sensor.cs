@@ -16,5 +16,13 @@ public class Sensor : MonoBehaviour
 			enemyMovement.enemyTarget = collision.GetComponent<PlayerMovement>();
 			enemyMovement.movementTarget = collision.transform;
 		}
+		if (collision.CompareTag("Enemy"))
+		{
+			EnemyMovement em = collision.GetComponent<EnemyMovement>();
+			if(em.isHealer == true)
+			{
+				enemyMovement.healerTarget = em;
+			}
+		}
 	}
 }

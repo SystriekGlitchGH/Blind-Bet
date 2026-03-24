@@ -106,7 +106,7 @@ public class CardSoldierC : EnemyMovement
         spriteRend.color = new Color32(210,225,0,255);
         yield return new WaitForSeconds(0.3f); // amount of time to react to attack
         isReadyingAttack = false; // no longer readying attack
-        spriteRend.color = new Color32(225,0,150,255);
+        spriteRend.color = new Color32(0, 160, 225, 255);
         isAttacking = true; // is now attacking
         for(int i = 0; i < 3; i++)
         {

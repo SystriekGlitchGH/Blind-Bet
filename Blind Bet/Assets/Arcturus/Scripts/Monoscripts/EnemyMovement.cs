@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class EnemyMovement : MonoBehaviour
 {
     public PlayerMovement enemyTarget;
+    public EnemyMovement healerTarget;
     public Transform movementTarget;
     [Header("Components")]
     public Rigidbody2D rb2d;
@@ -32,6 +33,7 @@ public class EnemyMovement : MonoBehaviour
         patrol,engage,evade
     }
     public StateMachine currentState;
+    protected bool isRetreating;
 
     [Header("Attack stats")]
     protected bool canAttack = true, isReadyingAttack, isAttacking;
@@ -40,6 +42,7 @@ public class EnemyMovement : MonoBehaviour
 
     //other
     protected float colliderPushForce = 8;
+    public bool isHealer;
 
     protected virtual void Start()
     {
@@ -66,7 +69,7 @@ public class EnemyMovement : MonoBehaviour
             currentState = StateMachine.patrol;
             path.Clear();
         }
-        else if(enemyTarget != null && currentState != StateMachine.engage && enemy.currentHealth > enemy.maxHealth * 20/100)
+        else if(enemyTarget != null && currentState != StateMachine.engage && enemy.currentHealth > enemy.maxHealth * 20/100 && !isRetreating)
         {
             currentState = StateMachine.engage;
             path.Clear();
@@ -74,10 +77,18 @@ public class EnemyMovement : MonoBehaviour
         else if(enemyTarget != null && currentState != StateMachine.evade && enemy.currentHealth <= enemy.maxHealth * 20/100)
         {
             currentState = StateMachine.evade;
+            isRetreating = true;
             path.Clear();
         }
         CreatePath();
         movedNode = AStarManager.instance.FindNearestNode(transform.position);
+        if (isRetreating)
+        {
+            if(enemy.currentHealth >= enemy.maxHealth * 0.75)
+            {
+                isRetreating = false;
+            }
+        }
     }
     protected virtual void FixedUpdate()
     {
@@ -157,6 +168,17 @@ public class EnemyMovement : MonoBehaviour
             Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
     }
+    public void GetHealed(float amount)
+    {
+        StartCoroutine(GetHealedTimer());
+        enemy.Heal(amount);
+    }
+    public virtual IEnumerator GetHealedTimer()
+    {
+        spriteRend.color = new Color32(0,150,0,255);
+        yield return new WaitForSeconds(0.1f);
+        spriteRend.color = new Color32(90,215,0,255);
+    }
 
     protected virtual IEnumerator GetHitTimer()
     {
@@ -217,7 +239,14 @@ public class EnemyMovement : MonoBehaviour
     {
         if(path.Count == 0)
         {
-            path = AStarManager.instance.GeneratePath(currentNode, AStarManager.instance.FindFarthestNode(enemyTarget.transform.position));
+            if(healerTarget == null)
+            {
+                path = AStarManager.instance.GeneratePath(currentNode, AStarManager.instance.FindFarthestNode(enemyTarget.transform.position));
+            }
+            else
+            {
+                path = AStarManager.instance.GeneratePath(currentNode, healerTarget.movedNode);
+            }
         }
     }
     

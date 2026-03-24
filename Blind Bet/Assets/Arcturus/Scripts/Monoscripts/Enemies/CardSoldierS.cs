@@ -1,12 +1,14 @@
 using System.Collections;
 using UnityEngine;
 
-public class CardSoldierD : EnemyMovement
+public class CardSoldierS : EnemyMovement
 {
     public GameObject attackVisual;
     [SerializeField] Transform anchorTransform;
     public LayerMask boxLayer;
     public Vector2 attackSize;
+    public float lungeForce;
+
     protected override void Start()
     {
         rb2d.linearDamping = friction;
@@ -112,15 +114,17 @@ public class CardSoldierD : EnemyMovement
         spriteRend.color = new Color32(210,225,0,255);
         yield return new WaitForSeconds(0.3f); // amount of time to react to attack
         isReadyingAttack = false; // no longer readying attack
-        spriteRend.color = new Color32(225, 0, 150, 255);
+        spriteRend.color = new Color32(225,0,150,255);
         isAttacking = true; // is now attacking
 
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z), Mathf.Cos(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z));
         Vector2 position = angleAsVector * (attackSize.y/2+1);
         RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)position, attackSize, anchorTransform.rotation.z, Vector2.zero,0,boxLayer);
         if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
+        {
             player.GetHit(this, enemy.baseKnockback);
-        
+        }
+        rb2d.AddForce(TargetDirection(enemyTarget.transform.position)*lungeForce, ForceMode2D.Impulse);
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
         attack.transform.localScale = attackSize;
 
@@ -137,11 +141,5 @@ public class CardSoldierD : EnemyMovement
         yield return new WaitForSeconds(knockbackTime);
         spriteRend.color = new Color32(225, 0, 150, 255);
         hasKnockback = false;
-    }
-    public override IEnumerator GetHealedTimer()
-    {
-        spriteRend.color = new Color32(0,150,0,255);
-        yield return new WaitForSeconds(0.1f);
-        spriteRend.color = new Color32(225, 0, 150, 255);
     }
 }

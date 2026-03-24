@@ -208,7 +208,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 503
+    m_Bits: 192
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -254,7 +254,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3667329435915851471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTarget: {fileID: 0}
+  healerTarget: {fileID: 0}
   movementTarget: {fileID: 0}
   rb2d: {fileID: 4401776757835178578}
   spriteRend: {fileID: 5565977838893995876}
@@ -283,6 +284,7 @@ MonoBehaviour:
   currentState: 0
   AttackRange: 5
   stopRange: 2
+  isHealer: 0
   attackVisual: {fileID: 3370402665360462549, guid: cabab736557a1684e98f73c9737d970b, type: 3}
   attackRadius: 2
   circleLayer:

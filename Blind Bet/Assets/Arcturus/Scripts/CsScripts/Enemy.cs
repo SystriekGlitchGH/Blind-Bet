@@ -25,4 +25,10 @@ public class Enemy
     {
         currentHealth -= damage;
     }
+    public void Heal(float healAmount)
+    {
+        currentHealth += healAmount;
+        if(currentHealth > maxHealth)
+            currentHealth = maxHealth;
+    }
 }
