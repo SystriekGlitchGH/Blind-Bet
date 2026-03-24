@@ -224,8 +224,10 @@ public class PlayerMovement : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+        hasIFrames = true;
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
+        hasIFrames = false;
         yield return new WaitForSeconds(playerStats.dashCooldown);
         canDash = true;
     }
@@ -233,8 +235,10 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator LungeTimer()
     {
         isLunging = true;
+        hasIFrames = true;
         yield return new WaitForSeconds(0.2f);
         isLunging = false;
+        hasIFrames = false;
         yield return new WaitForSeconds(playerStats.dashCooldown);
     }
     // timer script for the axe combo attack
