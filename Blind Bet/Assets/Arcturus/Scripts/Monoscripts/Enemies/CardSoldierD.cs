@@ -102,7 +102,7 @@ public class CardSoldierD : EnemyMovement
         if (collision.CompareTag("Enemy"))
         {
             EnemyMovement em = collision.GetComponent<EnemyMovement>();
-            rb2d.AddForce(-TargetDirection(em.transform.position)*colliderPushForce);
+            em.rb2d.AddForce(TargetDirection(em.transform.position)*colliderPushForce);
         }
     }
     protected override IEnumerator AttackTimer()
@@ -115,7 +115,6 @@ public class CardSoldierD : EnemyMovement
         spriteRend.color = new Color32(225,0,150,255);
         isAttacking = true; // is now attacking
 
-        Debug.Log("Enemy attacked");
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z), Mathf.Cos(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z));
         Vector2 position = angleAsVector * (attackSize.y/2+1);
         RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)position, attackSize, anchorTransform.rotation.z, Vector2.zero,0,boxLayer);

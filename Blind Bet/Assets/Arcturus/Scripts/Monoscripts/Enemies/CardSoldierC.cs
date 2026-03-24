@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CardSoldierC : EnemyMovement
 {
@@ -97,6 +98,42 @@ public class CardSoldierC : EnemyMovement
             EnemyMovement em = collision.GetComponent<EnemyMovement>();
             rb2d.AddForce(-TargetDirection(em.transform.position) * colliderPushForce);
         }
+    }
+    protected override IEnumerator AttackTimer()
+    {
+        canAttack = false; // make the enemy not duplicate attacks
+        isReadyingAttack = true; // small moment before attack to make it not instant
+        spriteRend.color = new Color32(210,225,0,255);
+        yield return new WaitForSeconds(0.3f); // amount of time to react to attack
+        isReadyingAttack = false; // no longer readying attack
+        spriteRend.color = new Color32(225,0,150,255);
+        isAttacking = true; // is now attacking
+        for(int i = 0; i < 3; i++)
+        {
+            StartCoroutine(ThreeHitPart());
+            yield return new WaitForSeconds(0.3f); // time between attacks
+        }
+
+        isAttacking = false; // no longer attacking
+        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
+        canAttack = true; // can attack again
+    }
+    protected IEnumerator ThreeHitPart()
+    {
+        Vector2 position = HitPlayer();
+        GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        attack.transform.localScale = attackSize;
+        yield return new WaitForSeconds(0.1f); // time to parry 1st attack
+        Destroy(attack);
+    }
+    protected Vector2 HitPlayer()
+    {
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z), Mathf.Cos(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z));
+        Vector2 position = angleAsVector * (attackSize.y/2+1);
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)position, attackSize, anchorTransform.rotation.z, Vector2.zero,0,boxLayer);
+        if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
+            player.GetHit(this, enemy.baseKnockback);
+        return position;
     }
     protected override IEnumerator GetHitTimer()
     {

@@ -66,7 +66,7 @@ public class EnemyMovement : MonoBehaviour
             currentState = StateMachine.patrol;
             path.Clear();
         }
-        else if(enemyTarget != null && currentState != StateMachine.engage && enemy.currentHealth >= enemy.maxHealth * 20/100)
+        else if(enemyTarget != null && currentState != StateMachine.engage && enemy.currentHealth > enemy.maxHealth * 20/100)
         {
             currentState = StateMachine.engage;
             path.Clear();
