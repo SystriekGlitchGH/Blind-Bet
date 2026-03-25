@@ -20,7 +20,7 @@ public class Node : MonoBehaviour
         {
             for(int i = 0; i < connections.Count; i++)
             {
-                Gizmos.DrawLine(transform.position,connections[i].transform.position);
+                Gizmos.DrawLine(transform.position,(transform.position + connections[i].transform.position)/2);
             }
         }
     }
