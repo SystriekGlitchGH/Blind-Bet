@@ -77,7 +77,7 @@ public class GoopThatShoot1Movement : EnemyMovement
             bt.bulletType = "enemy";
             bt.em = this;
             bt.direction = TargetDirection(enemyTarget.transform.position);
-            bt.rb2d.AddForce(bt.rb2d.transform.up * 1000);
+            bt.rb2d.AddForce(bt.rb2d.transform.up * 750);
         }
     }
 }

@@ -169,6 +169,23 @@ public class PlayerMovement : MonoBehaviour
                     }
                 }
             }
+            if(hit && hit.rigidbody.TryGetComponent(out Bullet bullet))
+            {
+                Debug.Log("Parried");
+                bullet.bulletType = "player";
+                bullet.pm = this;
+                bullet.em = null;
+                bullet.rb2d.linearVelocity = -bullet.rb2d.linearVelocity;
+                RaycastHit2D[] hits = MakeBoxCastAll("retaliate");
+                StartCoroutine(AttackTimer());
+                foreach (RaycastHit2D hit2 in hits)
+                {
+                    if (hit2 && hit2.rigidbody.TryGetComponent(out EnemyMovement enemies))
+                    {
+                        enemies.GetHit(this, playerStats.weapon.baseKnockback * 2, playerStats.weapon.baseAttack * 2);
+                    }
+                }
+            }
         }
     }
     

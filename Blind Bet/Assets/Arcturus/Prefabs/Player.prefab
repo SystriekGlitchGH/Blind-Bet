@@ -417,7 +417,7 @@ MonoBehaviour:
   friction: 8
   boxLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 640
   iFrameTime: 0.5
   knockbackTime: 0.2
 --- !u!114 &3508938354143582018

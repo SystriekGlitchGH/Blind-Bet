@@ -36,7 +36,20 @@ public class Bullet : MonoBehaviour
         }
         else if(bulletType == "player")
         {
-            
+            if (collision.CompareTag("Enemy"))
+            {
+                EnemyMovement enemy = collision.GetComponent<EnemyMovement>();
+                enemy.GetHit(pm, pm.playerStats.weapon.baseKnockback, pm.playerStats.weapon.baseAttack);
+                enemiesHit++;
+                if(enemiesHit == 1)
+                {
+                    Destroy(gameObject);
+                }
+            }
+        }
+        if (collision.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
         }
     }
 }
