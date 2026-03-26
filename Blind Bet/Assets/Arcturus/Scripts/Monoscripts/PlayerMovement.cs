@@ -53,14 +53,15 @@ public class PlayerMovement : MonoBehaviour
     {
         playerStats = new Player(); // constructing player object
         playerStats.AddCard();
-        Debug.Log("cards: "+playerStats.activeHand.cards[0].rank+playerStats.activeHand.cards[0].suit+
+        playerStats.SetHandType(playerStats.activeHand,1);
+        Debug.Log("active hand: "+playerStats.activeHand.cards[0].rank+playerStats.activeHand.cards[0].suit+
             ", "+playerStats.activeHand.cards[1].rank + playerStats.activeHand.cards[1].suit + 
             ", " + playerStats.activeHand.cards[2].rank + playerStats.activeHand.cards[2].suit + 
             ", " + playerStats.activeHand.cards[3].rank + playerStats.activeHand.cards[3].suit + 
             ", " + playerStats.activeHand.cards[4].rank + playerStats.activeHand.cards[4].suit);
-        Debug.Log("suit of hand: "+playerStats.GetHandSuit(playerStats.activeHand));
+        Debug.Log("suit of active hand: "+playerStats.GetHandSuit(playerStats.activeHand));
         Debug.Log("is suited: "+playerStats.IsSuited(playerStats.activeHand));
-        Debug.Log("hand type: "+playerStats.activeHand.type);
+        Debug.Log("active hand type: "+playerStats.activeHand.type);
     }
     private void FixedUpdate()
     {
@@ -92,6 +93,9 @@ public class PlayerMovement : MonoBehaviour
         FindDirection(); // gets the direction from the vector
         FindAngle(); // gets the angle from the direction
         anchorTransform.eulerAngles = new Vector3(0,0,attackAngle); // uses angle to change the achor transform
+
+        // for cards
+
     }
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
     private void OnTriggerEnter2D(Collider2D collision)

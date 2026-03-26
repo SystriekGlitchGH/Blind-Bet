@@ -64,41 +64,68 @@ public class Player
     // checks if the hand is suited(all one suit)
     public bool IsSuited(Hand hand)
     {
-        if(hand.type != HandType.none)
+        Card.Suit initialSuit = hand.cards[0].suit;
+        foreach(Card c in hand.cards)
         {
-            Card.Suit initialSuit = hand.cards[0].suit;
-            foreach(Card c in hand.cards)
+            if(c != blankCard)
             {
-                if(c != blankCard)
+                if(initialSuit != c.suit)
                 {
-                    if(initialSuit != c.suit)
-                    {
-                        return false;
-                    }
+                    return false;
                 }
             }
-            return true;
         }
-        else
-            return false;
+        return true;
     }
     // returns the card suit of the hand
     public Card.Suit GetHandSuit(Hand hand)
     {
-        if (IsSuited(hand))
-        {
-            return hand.cards[0].suit;
-        }
-        else
-        {
-            return Card.Suit.blank;
-        }
+        return hand.cards[0].suit;
     }
 
+    public void SetHandType(Hand hand, int handNum)
+    {
+        if(hand.cards[0].rank == 10 && hand.cards[1].rank == 11 && hand.cards[2].rank == 12 && hand.cards[3].rank == 13 && hand.cards[4].rank == 14 && IsSuited(hand))
+            hand.type = HandType.royalflush;
+        else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[0].rank && hand.cards[4].rank == hand.cards[0].rank)
+            hand.type = HandType.kind5;
+        else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[0].rank)
+            hand.type = HandType.kind4;
+        else if(hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[4].rank == hand.cards[3].rank)
+            hand.type = HandType.fullhouse;
+        else if(hand.cards[1].rank == hand.cards[0].rank+1 && hand.cards[2].rank == hand.cards[1].rank+1 && hand.cards[3].rank == hand.cards[2].rank+1 && hand.cards[4].rank == hand.cards[3].rank+1)
+            hand.type = HandType.straight;
+        else if(hand.cards[1].suit == hand.cards[0].suit && hand.cards[2].suit == hand.cards[0].suit && hand.cards[3].suit == hand.cards[0].suit && hand.cards[4].suit == hand.cards[0].suit)
+            hand.type = HandType.flush;
+        else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank)
+            hand.type = HandType.kind3;
+        else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[2].rank)
+            hand.type = HandType.twopair;
+        else if (hand.cards[1].rank == hand.cards[0].rank)
+            hand.type = HandType.pair;
+        else if(hand.cards[0].rank != hand.cards[1].rank)
+            hand.type = HandType.high;
+        else
+            hand.type = HandType.none;
+        switch (handNum)
+        {
+            case 1:
+                activeHand.type = hand.type;
+                break;
+            case 2:
+                passiveHand1.type = hand.type;
+                break;
+            case 3:
+                passiveHand2.type = hand.type;
+                break;
+        }
+    }
     public void AddCard()
     {
-        Card card = new Card(2, Card.Suit.diamond);
-        activeHand.cards[0] = card;
-        activeHand.cards[1] = card;
+        activeHand.cards[0] = new Card(7, Card.Suit.spade);
+        activeHand.cards[1] = new Card(8, Card.Suit.spade);
+        activeHand.cards[2] = new Card(9, Card.Suit.spade);
+        activeHand.cards[3] = new Card(10, Card.Suit.spade);
+        activeHand.cards[4] = new Card(11, Card.Suit.spade);
     }
 }
