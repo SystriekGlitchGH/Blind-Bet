@@ -52,7 +52,8 @@ public class Player
         FillHandBlank(passiveHand1);
         FillHandBlank(passiveHand2);
     }
-
+    
+    // fills the selected hand with blank cards
     public void FillHandBlank(Hand hand)
     {
         for(int i = 0; i <hand.cards.Length; i++)
@@ -60,7 +61,7 @@ public class Player
             hand.cards[i] = blankCard;
         }
     }
-
+    // checks if the hand is suited(all one suit)
     public bool IsSuited(Hand hand)
     {
         if(hand.type != HandType.none)
@@ -79,10 +80,9 @@ public class Player
             return true;
         }
         else
-        {
             return false;
-        }
     }
+    // returns the card suit of the hand
     public Card.Suit GetHandSuit(Hand hand)
     {
         if (IsSuited(hand))
@@ -94,6 +94,7 @@ public class Player
             return Card.Suit.blank;
         }
     }
+
     public void AddCard()
     {
         Card card = new Card(2, Card.Suit.diamond);
