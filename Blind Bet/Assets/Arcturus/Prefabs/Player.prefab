@@ -415,7 +415,10 @@ MonoBehaviour:
   currentNode: {fileID: 0}
   acceleration: 90
   friction: 8
-  boxLayer:
+  attackLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  parryLayer:
     serializedVersion: 2
     m_Bits: 640
   iFrameTime: 0.5

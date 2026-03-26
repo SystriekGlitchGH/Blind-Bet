@@ -128,7 +128,7 @@ public class CardSoldierS : EnemyMovement
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
         attack.transform.localScale = attackSize;
 
-        yield return new WaitForSeconds(0.1f); // time where you can take damage/parry/get shot at
+        yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         Destroy(attack);
         isAttacking = false; // no longer attacking
         yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks

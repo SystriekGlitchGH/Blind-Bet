@@ -123,7 +123,7 @@ public class CardSoldierC : EnemyMovement
         Vector2 position = HitPlayer();
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
         attack.transform.localScale = attackSize;
-        yield return new WaitForSeconds(0.1f); // time to parry 1st attack
+        yield return new WaitForSeconds(0.2f); // time to parry 1st attack
         Destroy(attack);
     }
     protected Vector2 HitPlayer()

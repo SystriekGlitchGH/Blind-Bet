@@ -31,7 +31,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isParrying, canParry = true; // checks if you are parrying and if you can parry
     private bool isLunging; // checks if you are currently lunging and are allowed to lunge
     private bool inCombo = true; // checks if you are currently in an axe combo
-    public LayerMask boxLayer; // the layers that your attack can hit
+    public LayerMask attackLayer; // the layers that your attack can hit
+    public LayerMask parryLayer; // the layers that your parry can hit
     private bool canAttack = true; // checks if you can attack
     private bool buttonHeld; // checks if the attack button is held for auto fire purposes
     private float attackAngle; // the angle of your attack
@@ -353,12 +354,12 @@ public class PlayerMovement : MonoBehaviour
         if(type == "attack")
         {
            Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2+1);
-           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize, attackAngle, Vector2.zero,0,boxLayer); 
+           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize, attackAngle, Vector2.zero,0,attackLayer); 
         }
         if(type == "retaliate")
         {
            Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y+1);
-           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize*2, attackAngle, Vector2.zero,0,boxLayer); 
+           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize*2, attackAngle, Vector2.zero,0,attackLayer); 
         }
         else // dummy boxcast, does nothing
         {
@@ -371,7 +372,7 @@ public class PlayerMovement : MonoBehaviour
         if(type == "parry")
         {
            Vector2 position = angleAsVector * (playerStats.weapon.baseParrySize.y/2+1);
-           return Physics2D.BoxCast(transform.position + (Vector3)position, playerStats.weapon.baseParrySize, attackAngle, Vector2.zero,0,boxLayer); 
+           return Physics2D.BoxCast(transform.position + (Vector3)position, playerStats.weapon.baseParrySize, attackAngle, Vector2.zero,0,parryLayer); 
         }
         else // dummy boxcast, does nothing
         {
