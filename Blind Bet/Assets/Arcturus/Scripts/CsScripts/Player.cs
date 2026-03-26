@@ -32,19 +32,21 @@ public class Player
 
     public Weapon weapon;
     public float baseSpeed;
-    public float AttackSpeed;
-    public float dashDistance, dashCooldown;
-    public float baseParryTime, parryCooldown;
+    public float baseAttackSpeed;
+    public float baseDashDistance, baseDashCooldown;
+    public float baseParryTime, baseParryCooldown;
+
+    public float attackModifier;
     public Player()
     {
         activeSuit = Card.Suit.blank;
         weapon = new Weapon(activeSuit);
         baseSpeed = 10;
-        AttackSpeed = 100;
-        dashDistance = 20;
-        dashCooldown = 0.5f;
+        baseAttackSpeed = 100;
+        baseDashDistance = 20;
+        baseDashCooldown = 0.5f;
         baseParryTime = 0.2f;
-        parryCooldown = 1;
+        baseParryCooldown = 1;
         activeHand = new Hand(new Card[5],Card.Suit.blank,false,HandType.none);
         passiveHand1 = new Hand(new Card[5], Card.Suit.blank, false, HandType.none);
         passiveHand2 = new Hand(new Card[5], Card.Suit.blank, false, HandType.none);
@@ -122,10 +124,21 @@ public class Player
     }
     public void AddCard()
     {
-        activeHand.cards[0] = new Card(7, Card.Suit.spade);
-        activeHand.cards[1] = new Card(8, Card.Suit.spade);
-        activeHand.cards[2] = new Card(9, Card.Suit.spade);
-        activeHand.cards[3] = new Card(10, Card.Suit.spade);
+        activeHand.cards[0] = new Card(6, Card.Suit.spade);
+        activeHand.cards[1] = new Card(6, Card.Suit.spade);
+        activeHand.cards[2] = new Card(4, Card.Suit.spade);
+        activeHand.cards[3] = new Card(9, Card.Suit.spade);
         activeHand.cards[4] = new Card(11, Card.Suit.spade);
     }
+
+    // Abilities
+    public string GetActiveAbility(Hand hand)
+    {
+        if (hand.type == HandType.pair)
+        {
+            return "pair";
+        }
+        return "NA";
+    }
+    
 }

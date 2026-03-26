@@ -210,7 +210,7 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(DashTimer());
         if(type == 1)
             StartCoroutine(LungeTimer());
-        rb2d.AddForce(DirectionToVector()*playerStats.dashDistance, ForceMode2D.Impulse);
+        rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance, ForceMode2D.Impulse);
     }
     // getting hit
     public void GetHit(EnemyMovement attacker, float knockback)
@@ -250,7 +250,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
         hasIFrames = false;
-        yield return new WaitForSeconds(playerStats.dashCooldown);
+        yield return new WaitForSeconds(playerStats.baseDashCooldown);
         canDash = true;
     }
     // this is needed to make sure the dash cooldown doesn't break
@@ -261,7 +261,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         isLunging = false;
         hasIFrames = false;
-        yield return new WaitForSeconds(playerStats.dashCooldown);
+        yield return new WaitForSeconds(playerStats.baseDashCooldown);
     }
     // timer script for the axe combo attack
     private IEnumerator Axe3HitTimer()
@@ -301,7 +301,7 @@ public class PlayerMovement : MonoBehaviour
         Destroy(parry);
         yield return new WaitForSeconds(playerStats.baseParryTime-0.1f);
         isParrying = false;
-        yield return new WaitForSeconds(playerStats.parryCooldown);
+        yield return new WaitForSeconds(playerStats.baseParryCooldown);
         canParry = true;
     }
     #endregion
@@ -386,7 +386,7 @@ public class PlayerMovement : MonoBehaviour
     // equations for finding amount of time between singular attacks
     private float TimeBetweenAttacks()
     {
-        return 1/(1+(playerStats.AttackSpeed-100 + playerStats.weapon.baseAttackSpeed)/100);
+        return 1/(1+(playerStats.baseAttackSpeed-100 + playerStats.weapon.baseAttackSpeed)/100);
     }
 
     #endregion
