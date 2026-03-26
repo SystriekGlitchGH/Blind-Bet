@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 46bca35de5cb68e4a935836d553b1852
+guid: 33f19b13de8e0a040a2dda8ca2146c32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3454359136281552832
-    second: goop idle up_0
+      213: -8346496706763765186
+    second: SLIME IDLE TOP 3-4S SHEET_0
   - first:
-      213: -1825685565425905197
-    second: goop idle up_1
+      213: -808033835596912209
+    second: SLIME IDLE TOP 3-4S SHEET_1
   - first:
-      213: -7717487423979018932
-    second: goop idle up_2
+      213: -7419019485874105317
+    second: SLIME IDLE TOP 3-4S SHEET_2
   - first:
-      213: 2728357876627753198
-    second: goop idle up_3
+      213: -8725067367086966305
+    second: SLIME IDLE TOP 3-4S SHEET_3
   - first:
-      213: -8617725312993990411
-    second: goop idle up_4
+      213: -1785197039599175993
+    second: SLIME IDLE TOP 3-4S SHEET_4
   - first:
-      213: -5253626964869953246
-    second: goop idle up_5
+      213: -6894752236326679488
+    second: SLIME IDLE TOP 3-4S SHEET_5
   - first:
-      213: 853172600030424435
-    second: goop idle up_6
+      213: -2067552423185710249
+    second: SLIME IDLE TOP 3-4S SHEET_6
   - first:
-      213: 467180507309142851
-    second: goop idle up_7
+      213: 9217121540278926163
+    second: SLIME IDLE TOP 3-4S SHEET_7
   - first:
-      213: -1753574424453543521
-    second: goop idle up_8
+      213: -3464860050964985480
+    second: SLIME IDLE TOP 3-4S SHEET_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,43 +120,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: goop idle up_0
+      name: SLIME IDLE TOP 3-4S SHEET_0
       rect:
         serializedVersion: 2
-        x: 823
-        y: 3601
-        width: 267
-        height: 284
+        x: 733
+        y: 3525
+        width: 461
+        height: 422
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c7efac155950ff20800000000000000
-      internalID: 3454359136281552832
+      spriteID: e3ac06287794b2c80800000000000000
+      internalID: -8346496706763765186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop idle up_1
+      name: SLIME IDLE TOP 3-4S SHEET_1
       rect:
         serializedVersion: 2
-        x: 2743
-        y: 3597
-        width: 274
-        height: 288
+        x: 2644
+        y: 3525
+        width: 473
+        height: 429
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d11b31b6acd9a6e0800000000000000
-      internalID: -1825685565425905197
+      spriteID: fa9efb6f18949c4f0800000000000000
+      internalID: -808033835596912209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop idle up_2
+      name: SLIME IDLE TOP 3-4S SHEET_2
       rect:
         serializedVersion: 2
-        x: 4670
-        y: 3597
-        width: 280
-        height: 297
+        x: 4567
+        y: 3525
+        width: 482
+        height: 440
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c45af2fa31af5e490800000000000000
-      internalID: -7717487423979018932
+      spriteID: b14d5c2d5195a0990800000000000000
+      internalID: -7419019485874105317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop idle up_3
+      name: SLIME IDLE TOP 3-4S SHEET_3
       rect:
         serializedVersion: 2
-        x: 823
-        y: 2515
-        width: 289
-        height: 309
+        x: 733
+        y: 2472
+        width: 497
+        height: 453
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee8498888031dd520800000000000000
-      internalID: 2728357876627753198
+      spriteID: fd9bd6ff4755ae680800000000000000
+      internalID: -8725067367086966305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop idle up_4
+      name: SLIME IDLE TOP 3-4S SHEET_4
       rect:
         serializedVersion: 2
-        x: 2740
-        y: 2515
-        width: 294
-        height: 319
+        x: 2637
+        y: 2469
+        width: 506
+        height: 460
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f8e91b8c70b76880800000000000000
-      internalID: -8617725312993990411
+      spriteID: 7c6bc9830c4b937e0800000000000000
+      internalID: -1785197039599175993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop idle up_5
+      name: SLIME IDLE TOP 3-4S SHEET_5
       rect:
         serializedVersion: 2
-        x: 4658
-        y: 2515
-        width: 292
-        height: 312
+        x: 4553
+        y: 2474
+        width: 496
+        height: 451
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22943804c1e5717b0800000000000000
-      internalID: -5253626964869953246
+      spriteID: 04c0b6bfe5be050a0800000000000000
+      internalID: -6894752236326679488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop idle up_6
+      name: SLIME IDLE TOP 3-4S SHEET_6
       rect:
         serializedVersion: 2
-        x: 823
-        y: 1434
-        width: 281
-        height: 297
+        x: 722
+        y: 1343
+        width: 483
+        height: 442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37de8ec95f317db00800000000000000
-      internalID: 853172600030424435
+      spriteID: 753848586049e43e0800000000000000
+      internalID: -2067552423185710249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop idle up_7
+      name: SLIME IDLE TOP 3-4S SHEET_7
       rect:
         serializedVersion: 2
-        x: 2749
-        y: 1434
-        width: 276
-        height: 289
+        x: 2666
+        y: 1440
+        width: 477
+        height: 433
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,20 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 343f5283232cb7600800000000000000
-      internalID: 467180507309142851
+      spriteID: 35b3debd43bc9ef70800000000000000
+      internalID: 9217121540278926163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop idle up_8
+      name: SLIME IDLE TOP 3-4S SHEET_8
       rect:
         serializedVersion: 2
-        x: 4682
-        y: 1434
-        width: 268
-        height: 285
+        x: 4604
+        y: 1450
+        width: 463
+        height: 424
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,8 +315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f998c3f0a5d0aa7e0800000000000000
-      internalID: -1753574424453543521
+      spriteID: 8794ac924285aefc0800000000000000
+      internalID: -3464860050964985480
       vertices: []
       indices: 
       edges: []
@@ -361,15 +335,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      goop idle up_0: 3454359136281552832
-      goop idle up_1: -1825685565425905197
-      goop idle up_2: -7717487423979018932
-      goop idle up_3: 2728357876627753198
-      goop idle up_4: -8617725312993990411
-      goop idle up_5: -5253626964869953246
-      goop idle up_6: 853172600030424435
-      goop idle up_7: 467180507309142851
-      goop idle up_8: -1753574424453543521
+      SLIME IDLE TOP 3-4S SHEET_0: -8346496706763765186
+      SLIME IDLE TOP 3-4S SHEET_1: -808033835596912209
+      SLIME IDLE TOP 3-4S SHEET_2: -7419019485874105317
+      SLIME IDLE TOP 3-4S SHEET_3: -8725067367086966305
+      SLIME IDLE TOP 3-4S SHEET_4: -1785197039599175993
+      SLIME IDLE TOP 3-4S SHEET_5: -6894752236326679488
+      SLIME IDLE TOP 3-4S SHEET_6: -2067552423185710249
+      SLIME IDLE TOP 3-4S SHEET_7: 9217121540278926163
+      SLIME IDLE TOP 3-4S SHEET_8: -3464860050964985480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
