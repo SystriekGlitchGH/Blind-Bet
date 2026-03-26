@@ -132,13 +132,13 @@ public class Player
     }
 
     // Abilities
-    public string GetActiveAbility(Hand hand)
+    public Ability GetActiveAbility(Hand hand)
     {
         if (hand.type == HandType.pair)
         {
-            return "pair";
+            return new Ability(Ability.Type.active, "name", "code");
         }
-        return "NA";
+        return null;
     }
     
 }
