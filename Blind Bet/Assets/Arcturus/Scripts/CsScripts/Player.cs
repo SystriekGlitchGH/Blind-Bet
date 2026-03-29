@@ -28,6 +28,10 @@ public class Player
     public Hand passiveHand1;
     public Hand passiveHand2;
 
+    public Ability activeAbility;
+    public Ability passiveAbility1;
+    public Ability passiveability2;
+
     public readonly Card blankCard = new Card(0,Card.Suit.blank);
 
     public Weapon weapon;
@@ -124,20 +128,36 @@ public class Player
     }
     public void AddCard()
     {
-        activeHand.cards[0] = new Card(6, Card.Suit.spade);
-        activeHand.cards[1] = new Card(6, Card.Suit.spade);
-        activeHand.cards[2] = new Card(4, Card.Suit.spade);
-        activeHand.cards[3] = new Card(9, Card.Suit.spade);
-        activeHand.cards[4] = new Card(11, Card.Suit.spade);
+        activeHand.cards[0] = new Card(5, Card.Suit.spade);
+        activeHand.cards[1] = new Card(5, Card.Suit.spade);
+        activeHand.cards[2] = new Card(5, Card.Suit.spade);
+        activeHand.cards[3] = new Card(8, Card.Suit.spade);
+        activeHand.cards[4] = new Card(9, Card.Suit.diamond);
     }
 
     // Abilities
-    public Ability GetActiveAbility(Hand hand)
+    public Ability SetActiveAbility(Hand hand)
     {
-        if (hand.type == HandType.pair)
-        {
-            return new Ability(Ability.Type.active, "name", "code");
-        }
+        if (hand.type == HandType.high)
+            activeAbility = new Ability(Ability.Type.active, "", "a1");
+        else if(hand.type == HandType.pair)
+            activeAbility = new Ability(Ability.Type.active, "Sharp Edge", "a2");
+        else if(hand.type == HandType.twopair)
+            activeAbility = new Ability(Ability.Type.active, "Swift Strike", "a3");
+        else if(hand.type == HandType.kind3)
+            activeAbility = new Ability(Ability.Type.active, "Sized Attack", "a4");
+        else if(hand.type == HandType.flush)
+            activeAbility = new Ability(Ability.Type.active, "Whirl Winds", "a5");
+        else if(hand.type == HandType.straight)
+            activeAbility = new Ability(Ability.Type.active, "Continuous Blade", "a6");
+        else if(hand.type == HandType.fullhouse)
+            activeAbility = new Ability(Ability.Type.active, "Echo slash", "a7");
+        else if(hand.type == HandType.kind4)
+            activeAbility = new Ability(Ability.Type.active, "Bi-Strike Blade", "a8");
+        else if(hand.type == HandType.kind5)
+            activeAbility = new Ability(Ability.Type.active, "Tri-Strike Blade", "a9");
+        else if(hand.type == HandType.royalflush)
+            activeAbility = new Ability(Ability.Type.active, "Explosive Sender", "a10");
         return null;
     }
     
