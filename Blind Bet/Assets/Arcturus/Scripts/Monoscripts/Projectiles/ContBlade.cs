@@ -9,7 +9,7 @@ public class ContBlade : Bullet
     protected override void Update()
     {
         elapsedTime += Time.deltaTime;
-        if(elapsedTime > 1)
+        if(elapsedTime >= 0.5)
         {
             Destroy(gameObject);
         }

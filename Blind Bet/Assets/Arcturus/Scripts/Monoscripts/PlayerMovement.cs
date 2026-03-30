@@ -194,7 +194,7 @@ public class PlayerMovement : MonoBehaviour
     // active abilities:
     private void ActivateContinuousBlade()
     {
-        GameObject shot = Instantiate(ContinuousBlade, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
+        GameObject shot = Instantiate(ContinuousBlade, transform.position + (Vector3)DirectionToVector()* (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod()), anchorTransform.rotation);
         if (shot.TryGetComponent(out ContBlade ct))
         {
             ct.bulletType = "player";
