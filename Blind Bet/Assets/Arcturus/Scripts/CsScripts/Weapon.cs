@@ -21,10 +21,10 @@ public class Weapon
         }
         else if(s == Card.Suit.club)
         {
-            baseAttack = 8;
-            baseAttackSpeed = 400;
-            baseKnockback = 6;
-            baseAttackSize = new Vector2(3.5f, 2);
+            baseAttack = 12;
+            baseAttackSpeed = 0;
+            baseKnockback = 12;
+            baseAttackSize = new Vector2(4.5f, 3);
         }
         else if(s == Card.Suit.spade)
         {

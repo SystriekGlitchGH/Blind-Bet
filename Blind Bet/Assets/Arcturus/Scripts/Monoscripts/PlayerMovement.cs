@@ -33,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing, canDash = true; // checks if you are currently dashing and are allowed to dash
     private bool isParrying, canParry = true; // checks if you are parrying and if you can parry
     private bool isLunging; // checks if you are currently lunging and are allowed to lunge
-    private bool canCombo = true; // checks if you are currently in an axe combo
     public LayerMask attackLayer; // the layers that your attack can hit
     public LayerMask parryLayer; // the layers that your parry can hit
     private bool canAttack = true; // checks if you can attack
@@ -211,9 +210,6 @@ public class PlayerMovement : MonoBehaviour
     {
         canAttack = false;
         RaycastHit2D[] hits = MakeBoxCastAll("attack");
-        // starts the axe combo timer
-        if(playerStats.activeSuit == Card.Suit.club && canCombo)
-            StartCoroutine(Axe3HitTimer());
         // makes the dash when attacking as spear
         if (playerStats.activeSuit == Card.Suit.spade)
             ActivateDash(1);
@@ -301,22 +297,6 @@ public class PlayerMovement : MonoBehaviour
         isLunging = false;
         hasIFrames = false;
         yield return new WaitForSeconds(playerStats.baseDashCooldown);
-    }
-    // timer script for the axe combo attack
-    private IEnumerator Axe3HitTimer()
-    {
-        canCombo = false;
-        Debug.Log("Activated1");
-        yield return new WaitForSeconds(0.6f);
-        Debug.Log("Activated2");
-        playerStats.weapon.baseAttackSpeed = 0;
-        playerStats.weapon.baseKnockback = 20;
-        yield return new WaitForSeconds(4);
-        Debug.Log(playerStats.weapon.baseAttackSpeed);
-        Debug.Log("Activated3");
-        playerStats.weapon.baseAttackSpeed = 400;
-        playerStats.weapon.baseKnockback = 6;
-        canCombo = true;
     }
     // timer script for getting hit by anything
     private IEnumerator GetHitTimer()
