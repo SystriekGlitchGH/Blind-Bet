@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,8 +9,9 @@ using Random = System.Random;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //Non-Permanant components
-    public GameObject attackVisual;
+    //Visuals
+    [SerializeField] GameObject attackVisual;
+    [SerializeField] GameObject WhirlWindsVisual;
     [SerializeField] GameObject parryObject;
 
     //Permanent components
@@ -95,9 +97,6 @@ public class PlayerMovement : MonoBehaviour
         FindDirection(); // gets the direction from the vector
         FindAngle(); // gets the angle from the direction
         anchorTransform.eulerAngles = new Vector3(0,0,attackAngle); // uses angle to change the achor transform
-
-        // for what abilities you have\/ \/ \/ \/ \/
-
     }
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
     private void OnTriggerEnter2D(Collider2D collision)
@@ -130,14 +129,9 @@ public class PlayerMovement : MonoBehaviour
         if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.activeSuit != Card.Suit.blank)
         {
             buttonHeld = true;
-            if(playerStats.activeAbility.code == "a1")
-                ActivateAttack(1,1);
-            if(playerStats.activeAbility.code == "a2")
-                ActivateAttack(1.2f,1);
-            if(playerStats.activeAbility.code == "a3") // unfinished
-                ActivateAttack(1.2f,1);
-            if(playerStats.activeAbility.code == "a4")
-                ActivateAttack(1,1.3f);
+            StartCoroutine(AttackTimer());
+            if(playerStats.activeAbility.code == "a5")
+                StartCoroutine(WhirlWindsTimer());
         }
         if (ctx.ReadValue<float>() == 0)
         {
@@ -154,7 +148,7 @@ public class PlayerMovement : MonoBehaviour
             if(hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy) && enemy.IsAttacking())
             {
                 enemy.setVelocity(Vector2.zero);
-                ActivateRetaliation(1,1);
+                ActivateRetaliation();
             }
             if(hit && hit.rigidbody.TryGetComponent(out Bullet bullet))
             {
@@ -163,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
                 bullet.pm = this;
                 bullet.em = null;
                 bullet.rb2d.linearVelocity = -bullet.rb2d.linearVelocity;
-                ActivateRetaliation(1,1);
+                ActivateRetaliation();
             }
         }
     }
@@ -184,7 +178,6 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(DashTimer());
         if(type == 1)
             StartCoroutine(LungeTimer());
-        rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance, ForceMode2D.Impulse);
     }
     // getting hit
     public void GetHit(EnemyMovement attacker, float knockback)
@@ -196,9 +189,25 @@ public class PlayerMovement : MonoBehaviour
             rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
         }
     }
-    public void ActivateAttack(float attackDamageMult,float attackSizeMult)
+    // active abilities
+    public void ActivateRetaliation()
     {
-        RaycastHit2D[] hits = MakeBoxCastAll("attack",attackSizeMult);
+        RaycastHit2D[] hits = MakeBoxCastAll("retaliate");
+        StartCoroutine(AttackTimer());
+        foreach (RaycastHit2D hit2 in hits)
+        {
+            if (hit2 && hit2.rigidbody.TryGetComponent(out EnemyMovement enemies))
+            {
+                enemies.GetHit(this, playerStats.weapon.baseKnockback*2, playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod()*2);
+            }
+        }
+    }
+    #endregion
+    #region IENUMERATORS
+    private IEnumerator AttackTimer()
+    {
+        canAttack = false;
+        RaycastHit2D[] hits = MakeBoxCastAll("attack");
         // starts the axe combo timer
         if(playerStats.activeSuit == Card.Suit.club && inCombo)
             StartCoroutine(Axe3HitTimer());
@@ -206,37 +215,19 @@ public class PlayerMovement : MonoBehaviour
         if (playerStats.activeSuit == Card.Suit.spade)
             ActivateDash(1);
         // detecting and delivering hits
-        StartCoroutine(AttackTimer(attackSizeMult));
         foreach (RaycastHit2D hit in hits)
         {
             if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
-                enemy.GetHit(this, playerStats.weapon.baseKnockback,playerStats.weapon.baseAttack*attackDamageMult);
+                enemy.GetHit(this, playerStats.weapon.baseKnockback,playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod());
+            Debug.Log(playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod());
         }
-    }
-    public void ActivateRetaliation(float attackDamageMult,float attackSizeMult)
-    {
-        RaycastHit2D[] hits = MakeBoxCastAll("retaliate",attackSizeMult);
-        StartCoroutine(AttackTimer(attackSizeMult));
-        foreach (RaycastHit2D hit2 in hits)
-        {
-            if (hit2 && hit2.rigidbody.TryGetComponent(out EnemyMovement enemies))
-            {
-                enemies.GetHit(this, playerStats.weapon.baseKnockback*2, playerStats.weapon.baseAttack*2*attackDamageMult);
-            }
-        }
-    }
-    #endregion
-    #region IENUMERATORS
-    private IEnumerator AttackTimer(float attackSizeMult)
-    {
-        canAttack = false;
         // makes an attack visual sprite when using a melee attack
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
-        Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2*attackSizeMult+1);
-        if (isParrying) position = angleAsVector * (playerStats.weapon.baseAttackSize.y*attackSizeMult+1);
+        Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()/2+1);
+        if (isParrying) position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()+1);
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
-        if (isParrying) attack.transform.localScale = playerStats.weapon.baseAttackSize*attackSizeMult*2;
-        else attack.transform.localScale = playerStats.weapon.baseAttackSize*attackSizeMult;
+        if (isParrying) attack.transform.localScale = playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod()*2;
+        else attack.transform.localScale = playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod();
         
         yield return new WaitForSeconds(0.1f);
         Destroy(attack);
@@ -244,12 +235,29 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(TimeBetweenAttacks()-0.1f);
         canAttack = true;
     }
+    private IEnumerator WhirlWindsTimer()
+    {
+        RaycastHit2D[] hits = MakeCircleCastAll("whirlwinds");
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+                enemy.GetHit(this, playerStats.weapon.baseKnockback,playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod()*0.8f);
+            Debug.Log(playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod()*0.8f);
+        }
+        // makes an attack visual sprite when using a melee attack
+        GameObject attack = Instantiate(WhirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        attack.transform.localScale = new Vector2(6,6)*playerStats.GetAttackSizeMod();
+
+        yield return new WaitForSeconds(0.3f);
+        Destroy(attack);
+    }
     // timer script for allowing the dash
     private IEnumerator DashTimer()
     {
         canDash = false;
         isDashing = true;
         hasIFrames = true;
+        rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance, ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
         hasIFrames = false;
@@ -261,6 +269,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isLunging = true;
         hasIFrames = true;
+        rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance, ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.2f);
         isLunging = false;
         hasIFrames = false;
@@ -355,24 +364,25 @@ public class PlayerMovement : MonoBehaviour
         return new Vector2(0,0);
     }
     // makes a boxcastAll that is the size of the weapon
-    private RaycastHit2D[] MakeBoxCastAll(string type, float attackSizeMult)
+    private RaycastHit2D[] MakeBoxCastAll(string type)
     {
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         if(type == "attack")
         {
-           Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y/2*attackSizeMult+1);
-           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize*attackSizeMult, attackAngle, Vector2.zero,0,attackLayer); 
+           Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()/2+1);
+           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod(), attackAngle, Vector2.zero,0,attackLayer); 
         }
         if(type == "retaliate")
         {
-           Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y*attackSizeMult+1);
-           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize*2*attackSizeMult, attackAngle, Vector2.zero,0,attackLayer); 
+           Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()+1);
+           return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod()*2, attackAngle, Vector2.zero,0,attackLayer); 
         }
         else // dummy boxcast, does nothing
         {
             return Physics2D.BoxCastAll(transform.position, Vector3.zero, attackAngle, Vector2.zero);
         }
     }
+
     private RaycastHit2D MakeBoxCast(string type)
     {
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
@@ -386,10 +396,19 @@ public class PlayerMovement : MonoBehaviour
             return Physics2D.BoxCast(transform.position, Vector3.zero, attackAngle, Vector2.zero);
         }
     }
+    
+    private RaycastHit2D[] MakeCircleCastAll(string type)
+    {
+        if(type == "whirlwinds")
+        {
+            return Physics2D.CircleCastAll(transform.position, 3*playerStats.GetAttackSizeMod(), Vector2.zero, 0, attackLayer); 
+        }
+        return null;
+    }
     // equations for finding amount of time between singular attacks
     private float TimeBetweenAttacks()
     {
-        return 1/(1+(playerStats.baseAttackSpeed-100 + playerStats.weapon.baseAttackSpeed)/100);
+        return 1/(1+(playerStats.weapon.baseAttackSpeed/100)+playerStats.GetAttackSpeedMod());
     }
 
     #endregion
@@ -399,10 +418,7 @@ public class PlayerMovement : MonoBehaviour
         if(playerStats != null)
         {
             Gizmos.matrix = anchorTransform.localToWorldMatrix;
-            if(playerStats.activeAbility.code == "a4")
-                Gizmos.DrawWireCube(new Vector2(0,playerStats.weapon.baseAttackSize.y/2*1.3f+1), playerStats.weapon.baseAttackSize*1.3f);
-            else
-                Gizmos.DrawWireCube(new Vector2(0,playerStats.weapon.baseAttackSize.y/2+1), playerStats.weapon.baseAttackSize);
+            Gizmos.DrawWireCube(new Vector2(0,playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()/2+1), playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod());
         }
     }
 }

@@ -408,7 +408,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackVisual: {fileID: 3956911121127704462, guid: f8e26d177611f774f9d752c7f2cc82d8, type: 3}
-  parryObject: {fileID: 0}
+  WhirlWindsVisual: {fileID: 1321799850685346842, guid: 0accdef67c64b8b4a8ea348e31c86d8a, type: 3}
+  parryObject: {fileID: 2512939790457252142, guid: 1417442bbfc44164d829b909d2654f6c, type: 3}
   rb2d: {fileID: 5662594919883955688}
   spriteRend: {fileID: 8451357699676093455}
   anchorTransform: {fileID: 1119027603952637780}
@@ -488,6 +489,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9d79e32a-a926-4808-a872-0dc85e91eaa2
     m_ActionName: 'Player/Parry[/Keyboard/x]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f9bcba3d-460c-47ba-a63c-e64c5291ac45
+    m_ActionName: 'Player/ActivateAbility1[/Keyboard/a]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ec5c5785-48e8-4e4d-8ede-80e96a66d1b1
+    m_ActionName: 'Player/ActivateAbility2[/Keyboard/s]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

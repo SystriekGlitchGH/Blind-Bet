@@ -36,7 +36,6 @@ public class Player
 
     public Weapon weapon;
     public float baseSpeed;
-    public float baseAttackSpeed;
     public float baseDashDistance, baseDashCooldown;
     public float baseParryTime, baseParryCooldown;
 
@@ -46,7 +45,6 @@ public class Player
         activeSuit = Card.Suit.blank;
         weapon = new Weapon(activeSuit);
         baseSpeed = 10;
-        baseAttackSpeed = 100;
         baseDashDistance = 20;
         baseDashCooldown = 0.5f;
         baseParryTime = 0.2f;
@@ -131,8 +129,8 @@ public class Player
         activeHand.cards[0] = new Card(5, Card.Suit.spade);
         activeHand.cards[1] = new Card(5, Card.Suit.spade);
         activeHand.cards[2] = new Card(5, Card.Suit.spade);
-        activeHand.cards[3] = new Card(8, Card.Suit.spade);
-        activeHand.cards[4] = new Card(9, Card.Suit.diamond);
+        activeHand.cards[3] = new Card(6, Card.Suit.spade);
+        activeHand.cards[4] = new Card(9, Card.Suit.spade);
     }
 
     // Abilities
@@ -161,4 +159,26 @@ public class Player
         return null;
     }
     
+    // modifiers
+    public float GetAttackDamageMod()
+    {
+        float mod = 1;
+        if(activeAbility.code == "a2" || activeAbility.code == "a3")
+            mod += 0.3f;
+        return mod;
+    }
+    public float GetAttackSpeedMod()
+    {
+        float mod = 1;
+        if(activeAbility.code == "a3")
+            mod += 0.2f;
+        return mod;
+    }
+    public float GetAttackSizeMod()
+    {
+        float mod = 1;
+        if(activeAbility.code == "a4")
+            mod += 0.3f;
+        return mod;
+    }
 }
