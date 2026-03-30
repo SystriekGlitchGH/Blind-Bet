@@ -409,6 +409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackVisual: {fileID: 3956911121127704462, guid: f8e26d177611f774f9d752c7f2cc82d8, type: 3}
   WhirlWindsVisual: {fileID: 1321799850685346842, guid: 0accdef67c64b8b4a8ea348e31c86d8a, type: 3}
+  ContinuousBlade: {fileID: 8947139249350368435, guid: 7c317834e97144744a6c377999803542, type: 3}
   parryObject: {fileID: 2512939790457252142, guid: 1417442bbfc44164d829b909d2654f6c, type: 3}
   rb2d: {fileID: 5662594919883955688}
   spriteRend: {fileID: 8451357699676093455}

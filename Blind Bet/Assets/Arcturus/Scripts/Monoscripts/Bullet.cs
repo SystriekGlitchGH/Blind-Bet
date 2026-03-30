@@ -8,10 +8,10 @@ public class Bullet : MonoBehaviour
     public string bulletType;
 
     public Vector2 direction;
-    private int enemiesHit;
-    private float elapsedTime;
+    protected int enemiesHit;
+    protected float elapsedTime;
 
-    private void Update()
+    protected virtual void Update()
     {
         elapsedTime += Time.deltaTime;
         if(elapsedTime > 3)
@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected void OnTriggerEnter2D(Collider2D collision)
     {
         if(bulletType == "enemy")
         {
@@ -39,7 +39,7 @@ public class Bullet : MonoBehaviour
             if (collision.CompareTag("Enemy"))
             {
                 EnemyMovement enemy = collision.GetComponent<EnemyMovement>();
-                enemy.GetHit(pm, pm.playerStats.weapon.baseKnockback, pm.playerStats.weapon.baseAttack);
+                enemy.GetHit(pm, pm.playerStats.weapon.baseKnockback, pm.playerStats.weapon.baseAttack*pm.playerStats.GetAttackDamageMod());
                 enemiesHit++;
                 if(enemiesHit == 1)
                 {

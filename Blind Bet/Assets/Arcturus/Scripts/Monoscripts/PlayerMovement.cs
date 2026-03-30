@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     //Visuals
     [SerializeField] GameObject attackVisual;
     [SerializeField] GameObject WhirlWindsVisual;
+    [SerializeField] GameObject ContinuousBlade;
     [SerializeField] GameObject parryObject;
 
     //Permanent components
@@ -32,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing, canDash = true; // checks if you are currently dashing and are allowed to dash
     private bool isParrying, canParry = true; // checks if you are parrying and if you can parry
     private bool isLunging; // checks if you are currently lunging and are allowed to lunge
-    private bool inCombo = true; // checks if you are currently in an axe combo
+    private bool canCombo = true; // checks if you are currently in an axe combo
     public LayerMask attackLayer; // the layers that your attack can hit
     public LayerMask parryLayer; // the layers that your parry can hit
     private bool canAttack = true; // checks if you can attack
@@ -132,6 +133,8 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(AttackTimer());
             if(playerStats.activeAbility.code == "a5")
                 StartCoroutine(WhirlWindsTimer());
+            if(playerStats.activeAbility.code == "a6")
+                ActivateContinuousBlade();
         }
         if (ctx.ReadValue<float>() == 0)
         {
@@ -148,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
             if(hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy) && enemy.IsAttacking())
             {
                 enemy.setVelocity(Vector2.zero);
-                ActivateRetaliation();
+                StartCoroutine(RetaliationTimer());
             }
             if(hit && hit.rigidbody.TryGetComponent(out Bullet bullet))
             {
@@ -157,7 +160,7 @@ public class PlayerMovement : MonoBehaviour
                 bullet.pm = this;
                 bullet.em = null;
                 bullet.rb2d.linearVelocity = -bullet.rb2d.linearVelocity;
-                ActivateRetaliation();
+                StartCoroutine(RetaliationTimer());
             }
         }
     }
@@ -189,27 +192,27 @@ public class PlayerMovement : MonoBehaviour
             rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
         }
     }
-    // active abilities
-    public void ActivateRetaliation()
+    // active abilities:
+    private void ActivateContinuousBlade()
     {
-        RaycastHit2D[] hits = MakeBoxCastAll("retaliate");
-        StartCoroutine(AttackTimer());
-        foreach (RaycastHit2D hit2 in hits)
+        GameObject shot = Instantiate(ContinuousBlade, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
+        if (shot.TryGetComponent(out ContBlade ct))
         {
-            if (hit2 && hit2.rigidbody.TryGetComponent(out EnemyMovement enemies))
-            {
-                enemies.GetHit(this, playerStats.weapon.baseKnockback*2, playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod()*2);
-            }
+            ct.bulletType = "player";
+            ct.pm = this;
+            ct.direction = DirectionToVector();
+            ct.rb2d.AddForce(ct.rb2d.transform.up * 750);
         }
     }
     #endregion
     #region IENUMERATORS
+    // active abilities
     private IEnumerator AttackTimer()
     {
         canAttack = false;
         RaycastHit2D[] hits = MakeBoxCastAll("attack");
         // starts the axe combo timer
-        if(playerStats.activeSuit == Card.Suit.club && inCombo)
+        if(playerStats.activeSuit == Card.Suit.club && canCombo)
             StartCoroutine(Axe3HitTimer());
         // makes the dash when attacking as spear
         if (playerStats.activeSuit == Card.Suit.spade)
@@ -222,6 +225,30 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log(playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod());
         }
         // makes an attack visual sprite when using a melee attack
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
+        Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()/2+1);
+        if (isParrying) position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()+1);
+        GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        if (isParrying) attack.transform.localScale = playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod()*2;
+        else attack.transform.localScale = playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod();
+        
+        yield return new WaitForSeconds(0.1f);
+        Destroy(attack);
+        // amount of time before you can attack again - time lost on visual animation on previous waitforseconds
+        yield return new WaitForSeconds(TimeBetweenAttacks()-0.1f);
+        canAttack = true;
+    }
+    private IEnumerator RetaliationTimer()
+    {
+        canAttack = false;
+        RaycastHit2D[] hits = MakeBoxCastAll("retaliate");
+        foreach (RaycastHit2D hit2 in hits)
+        {
+            if (hit2 && hit2.rigidbody.TryGetComponent(out EnemyMovement enemies))
+            {
+                enemies.GetHit(this, playerStats.weapon.baseKnockback*2, playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod()*2);
+            }
+        }
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()/2+1);
         if (isParrying) position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()+1);
@@ -278,14 +305,18 @@ public class PlayerMovement : MonoBehaviour
     // timer script for the axe combo attack
     private IEnumerator Axe3HitTimer()
     {
-        playerStats.weapon.baseAttackSpeed = 400;
-        playerStats.weapon.baseKnockback = 6;
+        canCombo = false;
+        Debug.Log("Activated1");
         yield return new WaitForSeconds(0.6f);
-        inCombo = false;
-        playerStats.weapon.baseAttackSpeed = 2;
+        Debug.Log("Activated2");
+        playerStats.weapon.baseAttackSpeed = 0;
         playerStats.weapon.baseKnockback = 20;
         yield return new WaitForSeconds(4);
-        inCombo = true;
+        Debug.Log(playerStats.weapon.baseAttackSpeed);
+        Debug.Log("Activated3");
+        playerStats.weapon.baseAttackSpeed = 400;
+        playerStats.weapon.baseKnockback = 6;
+        canCombo = true;
     }
     // timer script for getting hit by anything
     private IEnumerator GetHitTimer()
@@ -408,7 +439,7 @@ public class PlayerMovement : MonoBehaviour
     // equations for finding amount of time between singular attacks
     private float TimeBetweenAttacks()
     {
-        return 1/(1+(playerStats.weapon.baseAttackSpeed/100)+playerStats.GetAttackSpeedMod());
+        return 1/(1+playerStats.weapon.baseAttackSpeed/100*playerStats.GetAttackSpeedMod());
     }
 
     #endregion
