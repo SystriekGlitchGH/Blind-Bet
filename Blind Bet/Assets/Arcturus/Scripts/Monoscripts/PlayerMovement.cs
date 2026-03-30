@@ -5,6 +5,7 @@ using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 using Random = System.Random;
 
 public class PlayerMovement : MonoBehaviour
@@ -134,6 +135,9 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(WhirlWindsTimer());
             if(playerStats.activeAbility.code == "a6")
                 ActivateContinuousBlade();
+            if (playerStats.activeAbility.code == "a7")
+                StartCoroutine(EchoAttackTimer());
+            
         }
         if (ctx.ReadValue<float>() == 0)
         {
@@ -206,6 +210,48 @@ public class PlayerMovement : MonoBehaviour
     #endregion
     #region IENUMERATORS
     // active abilities
+    private IEnumerator WhirlWindsTimer()
+    {
+        yield return new WaitForSeconds(0.2f);
+        RaycastHit2D[] hits = MakeCircleCastAll("whirlwinds");
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+                enemy.GetHit(this, playerStats.weapon.baseKnockback, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
+            Debug.Log(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
+        }
+        // makes an attack visual sprite when using a melee attack
+        GameObject attack = Instantiate(WhirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        attack.transform.localScale = new Vector2(6, 6) * playerStats.GetAttackSizeMod();
+
+        yield return new WaitForSeconds(0.3f);
+        Destroy(attack);
+    }
+    private IEnumerator EchoAttackTimer()
+    {
+        Vector3 pos = transform.position;
+        float rot = attackAngle;
+        yield return new WaitForSeconds(0.6f);
+        RaycastHit2D[] hits = MakeBoxCastAll("echo", pos, rot);
+        // makes the dash when attacking as spear
+        if (playerStats.activeSuit == Card.Suit.spade)
+            ActivateDash(1);
+        // detecting and delivering hits
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+                enemy.GetHit(this, playerStats.weapon.baseKnockback, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod());
+            Debug.Log(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod());
+        }
+        // makes an attack visual sprite when using a melee attack
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * rot), Mathf.Cos(Mathf.Deg2Rad * rot));
+        Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod() / 2 + 1);
+        GameObject attack = Instantiate(attackVisual, pos + (Vector3)position, Quaternion.Euler(0,0,rot));
+        attack.transform.localScale = playerStats.weapon.baseAttackSize * playerStats.GetAttackSizeMod();
+
+        yield return new WaitForSeconds(0.1f);
+        Destroy(attack);
+    }
     private IEnumerator AttackTimer()
     {
         canAttack = false;
@@ -257,22 +303,6 @@ public class PlayerMovement : MonoBehaviour
         // amount of time before you can attack again - time lost on visual animation on previous waitforseconds
         yield return new WaitForSeconds(TimeBetweenAttacks()-0.1f);
         canAttack = true;
-    }
-    private IEnumerator WhirlWindsTimer()
-    {
-        RaycastHit2D[] hits = MakeCircleCastAll("whirlwinds");
-        foreach (RaycastHit2D hit in hits)
-        {
-            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
-                enemy.GetHit(this, playerStats.weapon.baseKnockback,playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod()*0.8f);
-            Debug.Log(playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod()*0.8f);
-        }
-        // makes an attack visual sprite when using a melee attack
-        GameObject attack = Instantiate(WhirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
-        attack.transform.localScale = new Vector2(6,6)*playerStats.GetAttackSizeMod();
-
-        yield return new WaitForSeconds(0.3f);
-        Destroy(attack);
     }
     // timer script for allowing the dash
     private IEnumerator DashTimer()
@@ -388,6 +418,24 @@ public class PlayerMovement : MonoBehaviour
            Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()+1);
            return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod()*2, attackAngle, Vector2.zero,0,attackLayer); 
         }
+        if(type == "echo")
+        {
+            Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod() / 2 + 1);
+            return Physics2D.BoxCastAll(transform.position + (Vector3)position, playerStats.weapon.baseAttackSize * playerStats.GetAttackSizeMod(), attackAngle, Vector2.zero, 0, attackLayer);
+        }
+        else // dummy boxcast, does nothing
+        {
+            return Physics2D.BoxCastAll(transform.position, Vector3.zero, attackAngle, Vector2.zero);
+        }
+    }
+    private RaycastHit2D[] MakeBoxCastAll(string type, Vector3 pos, float rot)
+    {
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * rot), Mathf.Cos(Mathf.Deg2Rad * rot));
+        if (type == "echo")
+        {
+            Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod() / 2 + 1);
+            return Physics2D.BoxCastAll(pos + (Vector3)position, playerStats.weapon.baseAttackSize * playerStats.GetAttackSizeMod(), rot, Vector2.zero, 0, attackLayer);
+        }
         else // dummy boxcast, does nothing
         {
             return Physics2D.BoxCastAll(transform.position, Vector3.zero, attackAngle, Vector2.zero);
@@ -424,12 +472,12 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
     // for debugging attack hitboxes
-    private void OnDrawGizmos()
-    {   
-        if(playerStats != null)
-        {
-            Gizmos.matrix = anchorTransform.localToWorldMatrix;
-            Gizmos.DrawWireCube(new Vector2(0,playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()/2+1), playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod());
-        }
-    }
+    //private void OnDrawGizmos()
+    //{   
+    //    if(playerStats != null)
+    //    {
+    //        Gizmos.matrix = anchorTransform.localToWorldMatrix;
+    //        Gizmos.DrawWireCube(new Vector2(0,playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()/2+1), playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod());
+    //    }
+    //}
 }
