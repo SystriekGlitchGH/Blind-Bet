@@ -63,11 +63,23 @@ public class PlayerMovement : MonoBehaviour
             ", " + playerStats.activeHand.cards[2].rank + playerStats.activeHand.cards[2].suit + 
             ", " + playerStats.activeHand.cards[3].rank + playerStats.activeHand.cards[3].suit + 
             ", " + playerStats.activeHand.cards[4].rank + playerStats.activeHand.cards[4].suit);
-        Debug.Log("suit of active hand: "+playerStats.GetHandSuit(playerStats.activeHand));
-        Debug.Log("is suited: "+playerStats.IsSuited(playerStats.activeHand));
+        // Debug.Log("suit of active hand: "+playerStats.GetHandSuit(playerStats.activeHand));
+        // Debug.Log("is suited: "+playerStats.IsSuited(playerStats.activeHand));
         Debug.Log("active hand type: "+playerStats.activeHand.type);
         playerStats.SetActiveAbility(playerStats.activeHand);
         Debug.Log("active ability: "+playerStats.activeAbility.name);
+        
+        playerStats.SetHandType(playerStats.passiveHand1,2);
+        Debug.Log("passive hand 1: "+playerStats.passiveHand1.cards[0].rank+playerStats.passiveHand1.cards[0].suit+
+            ", "+playerStats.passiveHand1.cards[1].rank + playerStats.passiveHand1.cards[1].suit + 
+            ", " + playerStats.passiveHand1.cards[2].rank + playerStats.passiveHand1.cards[2].suit + 
+            ", " + playerStats.passiveHand1.cards[3].rank + playerStats.passiveHand1.cards[3].suit + 
+            ", " + playerStats.passiveHand1.cards[4].rank + playerStats.passiveHand1.cards[4].suit);
+        // Debug.Log("suit of passive hand 1: "+playerStats.GetHandSuit(playerStats.passiveHand1));
+        // Debug.Log("is suited: "+playerStats.IsSuited(playerStats.passiveHand1));
+        Debug.Log("passive hand type 1: "+playerStats.passiveHand1.type);
+        playerStats.SetPassiveAbility1(playerStats.passiveHand1);
+        Debug.Log("passive ability 1: "+playerStats.passiveAbility1.name);
     }
     private void FixedUpdate()
     {
@@ -87,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
         // adding the force to the rigidbody2d
         rb2d.AddForce(newVelocity);
         // maxing the velocity of the player to the playerStats.baseSpeed variable
-        Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), playerStats.baseSpeed);
+        Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), playerStats.baseSpeed*playerStats.GetSpeedMod());
         // applying clamped velocity to rigidbody2d
         rb2d.linearVelocity = velocity;
         // when both direction inputs are 0, add linear damping to slow down player quickly

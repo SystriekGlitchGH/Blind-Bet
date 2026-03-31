@@ -10,14 +10,12 @@ public class Player
     public struct Hand
     {
         public Card[] cards;
-        public Card.Suit suit;
         public bool suited;
         public HandType type;
 
         public Hand(Card[] cards, Card.Suit suit, bool suited,HandType type)
         {
             this.cards = cards;
-            this.suit = suit;
             this.suited = suited;
             this.type = type;
         }
@@ -30,7 +28,7 @@ public class Player
 
     public Ability activeAbility;
     public Ability passiveAbility1;
-    public Ability passiveability2;
+    public Ability passiveAbility2;
 
     public readonly Card blankCard = new Card(0,Card.Suit.blank);
 
@@ -126,39 +124,68 @@ public class Player
     }
     public void AddCard()
     {
-        activeHand.cards[0] = new Card(10, Card.Suit.spade);
-        activeHand.cards[1] = new Card(11, Card.Suit.spade);
-        activeHand.cards[2] = new Card(12, Card.Suit.spade);
-        activeHand.cards[3] = new Card(13, Card.Suit.spade);
-        activeHand.cards[4] = new Card(14, Card.Suit.spade);
+        activeHand.cards[0] = new Card(4, Card.Suit.diamond);
+        activeHand.cards[1] = new Card(5, Card.Suit.diamond);
+        activeHand.cards[2] = new Card(6, Card.Suit.diamond);
+        activeHand.cards[3] = new Card(7, Card.Suit.diamond);
+        activeHand.cards[4] = new Card(8, Card.Suit.spade);
+
+        passiveHand1.cards[0] = new Card(3, Card.Suit.diamond);
+        passiveHand1.cards[1] = new Card(3, Card.Suit.diamond);
+        passiveHand1.cards[2] = new Card(5, Card.Suit.diamond);
+        passiveHand1.cards[3] = new Card(6, Card.Suit.diamond);
+        passiveHand1.cards[4] = new Card(7, Card.Suit.heart);
     }
 
     // Abilities
     public Ability SetActiveAbility(Hand hand)
     {
         if (hand.type == HandType.high)
-            activeAbility = new Ability(Ability.Type.active, "", "a1");
+            activeAbility = new Ability("", "a1");
         else if(hand.type == HandType.pair)
-            activeAbility = new Ability(Ability.Type.active, "Sharp Edge", "a2");
+            activeAbility = new Ability("Sharp Edge", "a2");
         else if(hand.type == HandType.twopair)
-            activeAbility = new Ability(Ability.Type.active, "Swift Strike", "a3");
+            activeAbility = new Ability("Swift Strike", "a3");
         else if(hand.type == HandType.kind3)
-            activeAbility = new Ability(Ability.Type.active, "Sized Attack", "a4");
+            activeAbility = new Ability("Sized Attack", "a4");
         else if(hand.type == HandType.flush)
-            activeAbility = new Ability(Ability.Type.active, "Whirl Winds", "a5");
+            activeAbility = new Ability("Whirl Winds", "a5");
         else if(hand.type == HandType.straight)
-            activeAbility = new Ability(Ability.Type.active, "Continuous Blade", "a6");
+            activeAbility = new Ability("Continuous Blade", "a6");
         else if(hand.type == HandType.fullhouse)
-            activeAbility = new Ability(Ability.Type.active, "Echo slash", "a7");
+            activeAbility = new Ability("Echo slash", "a7");
         else if(hand.type == HandType.kind4)
-            activeAbility = new Ability(Ability.Type.active, "Bi-Strike Blade", "a8");
+            activeAbility = new Ability("Bi-Strike Blade", "a8");
         else if(hand.type == HandType.kind5)
-            activeAbility = new Ability(Ability.Type.active, "Tri-Strike Blade", "a9");
+            activeAbility = new Ability("Tri-Strike Blade", "a9");
         else if(hand.type == HandType.royalflush)
-            activeAbility = new Ability(Ability.Type.active, "Explosive Sender", "a10");
+            activeAbility = new Ability("Explosive Sender", "a10");
         return null;
     }
-    
+    public Ability SetPassiveAbility1(Hand hand)
+    {
+        if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("", "n1d");
+        else if(hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("Swift Footing", "n2d");
+        else if(hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("Chilling Burst", "b3d");
+        else if(hand.type == HandType.kind3 && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("Flashbang", "b4d");
+        else if(hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("Toxic Jynx", "n5d");
+        else if(hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("Splinter Carbine", "b6d");
+        else if(hand.type == HandType.fullhouse && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("Piercing Duet", "b7d");
+        else if(hand.type == HandType.kind4 && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("Shocking Wheel", "n8d");
+        else if(hand.type == HandType.kind5 && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("Freezing Wheel", "n9d");
+        else if(hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility1 = new Ability("Combustion Carbine", "b10d");
+        return null;
+    }
     // modifiers
     public float GetAttackDamageMod()
     {
@@ -179,6 +206,13 @@ public class Player
         float mod = 1;
         if(activeAbility.code == "a4")
             mod += 0.3f;
+        return mod;
+    }
+    public float GetSpeedMod()
+    {
+        float mod = 1;
+        if(passiveAbility1.code == "n2d" || passiveAbility2.code == "n2d")
+            mod += 0.2f;
         return mod;
     }
 }
