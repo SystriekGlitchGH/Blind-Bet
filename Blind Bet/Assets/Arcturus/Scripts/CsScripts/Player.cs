@@ -36,8 +36,6 @@ public class Player
     public float baseSpeed;
     public float baseDashDistance, baseDashCooldown;
     public float baseParryTime, baseParryCooldown;
-
-    public float attackModifier;
     public Player()
     {
         activeSuit = Card.Suit.blank;
@@ -84,7 +82,6 @@ public class Player
     {
         return hand.cards[0].suit;
     }
-
     public void SetHandType(Hand hand, int handNum)
     {
         if(hand.cards[0].rank == 10 && hand.cards[1].rank == 11 && hand.cards[2].rank == 12 && hand.cards[3].rank == 13 && hand.cards[4].rank == 14 && IsSuited(hand))
@@ -136,7 +133,6 @@ public class Player
         passiveHand1.cards[3] = new Card(6, Card.Suit.diamond);
         passiveHand1.cards[4] = new Card(7, Card.Suit.heart);
     }
-
     // Abilities
     public Ability SetActiveAbility(Hand hand)
     {
