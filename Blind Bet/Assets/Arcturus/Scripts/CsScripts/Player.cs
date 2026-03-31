@@ -126,11 +126,11 @@ public class Player
     }
     public void AddCard()
     {
-        activeHand.cards[0] = new Card(4, Card.Suit.spade);
-        activeHand.cards[1] = new Card(4, Card.Suit.spade);
-        activeHand.cards[2] = new Card(4, Card.Suit.spade);
-        activeHand.cards[3] = new Card(4, Card.Suit.spade);
-        activeHand.cards[4] = new Card(4, Card.Suit.spade);
+        activeHand.cards[0] = new Card(10, Card.Suit.spade);
+        activeHand.cards[1] = new Card(11, Card.Suit.spade);
+        activeHand.cards[2] = new Card(12, Card.Suit.spade);
+        activeHand.cards[3] = new Card(13, Card.Suit.spade);
+        activeHand.cards[4] = new Card(14, Card.Suit.spade);
     }
 
     // Abilities

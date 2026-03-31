@@ -1,25 +1,8 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class RoyalBomb : Bullet
 {
-    public Rigidbody2D rb2d;
-    public PlayerMovement pm;
-    public EnemyMovement em;
-    public string bulletType;
-
-    public Vector2 direction;
-    protected int enemiesHit;
-    protected float elapsedTime;
-
-    protected virtual void Update()
-    {
-        elapsedTime += Time.deltaTime;
-        if(elapsedTime > 3)
-        {
-            Destroy(gameObject);
-        }
-    }
-    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         if(bulletType == "enemy")
         {
@@ -51,5 +34,9 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void Explode()
+    {
+        
     }
 }

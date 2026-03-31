@@ -18646,6 +18646,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: RoyalBomb
+      value: 
+      objectReference: {fileID: 3466137760039807345, guid: 12b7e8f22eba7614587ccf3e38bdaec8, type: 3}
+    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: currentNode
       value: 
       objectReference: {fileID: 349959188}

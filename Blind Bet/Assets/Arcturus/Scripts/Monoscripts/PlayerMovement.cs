@@ -12,8 +12,9 @@ public class PlayerMovement : MonoBehaviour
 {
     //Visuals
     [SerializeField] GameObject attackVisual;
-    [SerializeField] GameObject WhirlWindsVisual;
-    [SerializeField] GameObject ContinuousBlade;
+    [SerializeField] GameObject whirlWindsVisual;
+    [SerializeField] GameObject continuousBlade;
+    [SerializeField] GameObject royalBomb;
     [SerializeField] GameObject parryObject;
 
     //Permanent components
@@ -144,7 +145,8 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(ExtraAttackTimer());
                 StartCoroutine(ExtraAttackTimer());
             }
-                
+            if (playerStats.activeAbility.code == "a10")
+                ActivateRoyalBomb();
         }
         if (ctx.ReadValue<float>() == 0)
         {
@@ -204,13 +206,24 @@ public class PlayerMovement : MonoBehaviour
     // active abilities:
     private void ActivateContinuousBlade()
     {
-        GameObject shot = Instantiate(ContinuousBlade, transform.position + (Vector3)DirectionToVector()* (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod()), anchorTransform.rotation);
+        GameObject shot = Instantiate(continuousBlade, transform.position + (Vector3)DirectionToVector()* (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod()), anchorTransform.rotation);
         if (shot.TryGetComponent(out ContBlade ct))
         {
             ct.bulletType = "player";
             ct.pm = this;
             ct.direction = DirectionToVector();
             ct.rb2d.AddForce(ct.rb2d.transform.up * 750);
+        }
+    }
+    private void ActivateRoyalBomb()
+    {
+        GameObject shot = Instantiate(royalBomb, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
+        if (shot.TryGetComponent(out RoyalBomb rb))
+        {
+            rb.bulletType = "player";
+            rb.pm = this;
+            rb.direction = DirectionToVector();
+            rb.rb2d.AddForce(rb.rb2d.transform.up * 1000);
         }
     }
     #endregion
@@ -227,7 +240,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
         }
         // makes an attack visual sprite when using a melee attack
-        GameObject attack = Instantiate(WhirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        GameObject attack = Instantiate(whirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale = new Vector2(6, 6) * playerStats.GetAttackSizeMod();
 
         yield return new WaitForSeconds(0.3f);
