@@ -168,6 +168,14 @@ public class EnemyMovement : MonoBehaviour
             Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
     }
+    public void GetHit(Bullet bullet, float knockback, float damage)
+    {
+        StartCoroutine(GetHitTimer());
+        enemy.TakeDamage(damage);
+        if(enemy.currentHealth <= 0)
+            Die();
+        rb2d.AddForce(-TargetDirection(bullet.transform.position)*knockback,ForceMode2D.Impulse);
+    }
     public void GetHealed(float amount)
     {
         StartCoroutine(GetHealedTimer());
