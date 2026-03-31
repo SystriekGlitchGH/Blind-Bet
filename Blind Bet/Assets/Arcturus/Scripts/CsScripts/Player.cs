@@ -130,7 +130,7 @@ public class Player
         activeHand.cards[1] = new Card(4, Card.Suit.spade);
         activeHand.cards[2] = new Card(4, Card.Suit.spade);
         activeHand.cards[3] = new Card(4, Card.Suit.spade);
-        activeHand.cards[4] = new Card(7, Card.Suit.spade);
+        activeHand.cards[4] = new Card(4, Card.Suit.spade);
     }
 
     // Abilities

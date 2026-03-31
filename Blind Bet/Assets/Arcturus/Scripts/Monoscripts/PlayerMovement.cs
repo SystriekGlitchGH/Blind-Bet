@@ -138,9 +138,13 @@ public class PlayerMovement : MonoBehaviour
             if (playerStats.activeAbility.code == "a7")
                 StartCoroutine(EchoAttackTimer());
             if (playerStats.activeAbility.code == "a8")
+                StartCoroutine(ExtraAttackTimer());
+            if (playerStats.activeAbility.code == "a9")
             {
-                
+                StartCoroutine(ExtraAttackTimer());
+                StartCoroutine(ExtraAttackTimer());
             }
+                
         }
         if (ctx.ReadValue<float>() == 0)
         {
@@ -262,6 +266,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
                 enemy.GetHit(this, 0, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod());
+            Debug.Log(playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod());
         }
     }
     private IEnumerator AttackTimer()
