@@ -137,7 +137,10 @@ public class PlayerMovement : MonoBehaviour
                 ActivateContinuousBlade();
             if (playerStats.activeAbility.code == "a7")
                 StartCoroutine(EchoAttackTimer());
-            
+            if (playerStats.activeAbility.code == "a8")
+            {
+                
+            }
         }
         if (ctx.ReadValue<float>() == 0)
         {
@@ -167,7 +170,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-    
     // input for dashing
     public void Dash(InputAction.CallbackContext ctx)
     {
@@ -251,6 +253,16 @@ public class PlayerMovement : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
         Destroy(attack);
+    }
+    private IEnumerator ExtraAttackTimer()
+    {
+        yield return new WaitForSeconds(0.05f);
+        RaycastHit2D[] hits = MakeBoxCastAll("attack");
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+                enemy.GetHit(this, 0, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod());
+        }
     }
     private IEnumerator AttackTimer()
     {
