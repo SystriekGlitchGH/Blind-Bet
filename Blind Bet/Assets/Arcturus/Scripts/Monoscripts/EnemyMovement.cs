@@ -89,6 +89,7 @@ public class EnemyMovement : MonoBehaviour
                 isRetreating = false;
             }
         }
+        enemy.CheckEffects();
     }
     protected virtual void FixedUpdate()
     {
@@ -106,7 +107,7 @@ public class EnemyMovement : MonoBehaviour
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed * enemy.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if(distance > stopRange && !hit && path.Count > 0)
@@ -114,7 +115,7 @@ public class EnemyMovement : MonoBehaviour
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed * enemy.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if(distance < AttackRange && canAttack)
@@ -138,7 +139,7 @@ public class EnemyMovement : MonoBehaviour
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed * enemy.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
         }
@@ -163,7 +164,7 @@ public class EnemyMovement : MonoBehaviour
     public void GetHit(PlayerMovement attacker, float knockback, float damage)
     {
         StartCoroutine(GetHitTimer());
-        enemy.TakeDamage(damage);
+        enemy.TakeDamage(damage * enemy.GetDamageMod());
         if(enemy.currentHealth <= 0)
             Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
@@ -171,7 +172,7 @@ public class EnemyMovement : MonoBehaviour
     public void GetHit(Bullet bullet, float knockback, float damage)
     {
         StartCoroutine(GetHitTimer());
-        enemy.TakeDamage(damage);
+        enemy.TakeDamage(damage * enemy.GetDamageMod());
         if(enemy.currentHealth <= 0)
             Die();
         rb2d.AddForce(-TargetDirection(bullet.transform.position)*knockback,ForceMode2D.Impulse);

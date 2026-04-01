@@ -130,7 +130,7 @@ public class Player
         passiveHand1.cards[0] = new Card(3, Card.Suit.diamond);
         passiveHand1.cards[1] = new Card(3, Card.Suit.diamond);
         passiveHand1.cards[2] = new Card(5, Card.Suit.diamond);
-        passiveHand1.cards[3] = new Card(6, Card.Suit.diamond);
+        passiveHand1.cards[3] = new Card(5, Card.Suit.diamond);
         passiveHand1.cards[4] = new Card(7, Card.Suit.heart);
     }
     // Abilities
@@ -207,7 +207,7 @@ public class Player
     public float GetSpeedMod()
     {
         float mod = 1;
-        if(passiveAbility1.code == "n2d" || passiveAbility2.code == "n2d")
+        if(passiveAbility1.code == "n2d")
             mod += 0.2f;
         return mod;
     }

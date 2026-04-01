@@ -43,6 +43,9 @@ public class PlayerMovement : MonoBehaviour
     public float iFrameTime;
     private bool hasIFrames;
 
+    [Header("Ability stats")]
+    private bool canUseAbility1 = true;
+
     [Header("Getting Attacked")]
     private bool hasKnockback;
     public float knockbackTime = 0.2f;
@@ -196,6 +199,14 @@ public class PlayerMovement : MonoBehaviour
             ActivateDash(0);
         }
     }
+    public void PassiveAbility1(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed && canUseAbility1)
+        {
+            if (playerStats.passiveAbility1.code == "b3d")
+                StartCoroutine(ChillingBurstTimer());
+        }
+    }
     #endregion
     #region ACTIVATION METHODS
     private void ActivateDash(int type)
@@ -294,6 +305,25 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log(playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod());
         }
     }
+    // passive abilities Diamond
+    private IEnumerator ChillingBurstTimer()
+    {
+        canAttack = false;
+        RaycastHit2D[] hits = MakeCircleCastAll("chillingburst");
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+                enemy.GetHit(this, playerStats.weapon.baseKnockback, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
+            Debug.Log(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
+        }
+        GameObject attack = Instantiate(whirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        attack.transform.localScale = new Vector2(7, 7) * playerStats.GetAttackSizeMod();
+        yield return new WaitForSeconds(0.3f);
+        Destroy(attack);
+        yield return new WaitForSeconds(2);
+        canAttack = true;
+    }
+    
     private IEnumerator AttackTimer()
     {
         canAttack = false;
@@ -503,6 +533,10 @@ public class PlayerMovement : MonoBehaviour
         if(type == "whirlwinds")
         {
             return Physics2D.CircleCastAll(transform.position, 3*playerStats.GetAttackSizeMod(), Vector2.zero, 0, attackLayer); 
+        }
+        if (type == "chillingburst")
+        {
+            return Physics2D.CircleCastAll(transform.position, 3.5f, Vector2.zero, 0, attackLayer);
         }
         return null;
     }

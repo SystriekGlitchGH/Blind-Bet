@@ -21,7 +21,7 @@ public class Enemy
         this.attackCooldown = attackCooldown;
         currentHealth = maxHealth;
     }
-    private void CheckEffects()
+    public void CheckEffects()
     {
         if(effectManager.effects.FindIndex(x => x.name == "stun") != -1)
             hasStun = true;
@@ -50,5 +50,20 @@ public class Enemy
         currentHealth += healAmount;
         if(currentHealth > maxHealth)
             currentHealth = maxHealth;
+    }
+
+    public float GetSpeedMod()
+    {
+        float mod = 1;
+        if (hasChill)
+            mod -= 0.3f;
+        return mod;
+    }
+    public float GetDamageMod()
+    {
+        float mod = 1;
+        if (hasChill)
+            mod += 0.2f;
+        return mod;
     }
 }
