@@ -122,10 +122,10 @@ public class Player
     public void AddCard()
     {
         activeHand.cards[0] = new Card(4, Card.Suit.diamond);
-        activeHand.cards[1] = new Card(6, Card.Suit.diamond);
-        activeHand.cards[2] = new Card(7, Card.Suit.diamond);
-        activeHand.cards[3] = new Card(8, Card.Suit.diamond);
-        activeHand.cards[4] = new Card(10, Card.Suit.spade);
+        activeHand.cards[1] = new Card(4, Card.Suit.diamond);
+        activeHand.cards[2] = new Card(4, Card.Suit.diamond);
+        activeHand.cards[3] = new Card(4, Card.Suit.diamond);
+        activeHand.cards[4] = new Card(4, Card.Suit.diamond);
 
         passiveHand1.cards[0] = new Card(3, Card.Suit.diamond);
         passiveHand1.cards[1] = new Card(3, Card.Suit.diamond);

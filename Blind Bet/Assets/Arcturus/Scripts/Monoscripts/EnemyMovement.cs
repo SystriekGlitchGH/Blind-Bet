@@ -24,6 +24,10 @@ public class EnemyMovement : MonoBehaviour
     public float knockbackTime;
     public LayerMask hitLayer;
 
+    [Header("Feedback Colors")]
+    public Color32 baseColor;
+    public Color32 currentColor;
+
     [Header("PathFinding")]
     public Node currentNode;
     public Node movedNode;

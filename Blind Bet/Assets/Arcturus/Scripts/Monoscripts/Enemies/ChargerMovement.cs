@@ -120,4 +120,12 @@ public class ChargerMovement : EnemyMovement
             pm.GetHit(this, enemyStats.baseKnockback);
         }
     }
+    protected override IEnumerator GetHitTimer()
+    {
+        hasKnockback = true;
+        spriteRend.color = new Color32(150, 0, 0, 255);
+        yield return new WaitForSeconds(knockbackTime);
+        spriteRend.color = new Color32(200, 200, 200, 255);
+        hasKnockback = false;
+    }
 }

@@ -312,7 +312,7 @@ public class PlayerMovement : MonoBehaviour
     // passive abilities Diamond
     private IEnumerator ChillingBurstTimer()
     {
-        canAttack = false;
+        canUseAbility1 = false;
         RaycastHit2D[] hits = MakeCircleCastAll("chillingburst");
         foreach (RaycastHit2D hit in hits)
         {
@@ -331,7 +331,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         Destroy(attack);
         yield return new WaitForSeconds(2);
-        canAttack = true;
+        canUseAbility1 = true;
     }
     
     private IEnumerator AttackTimer()
