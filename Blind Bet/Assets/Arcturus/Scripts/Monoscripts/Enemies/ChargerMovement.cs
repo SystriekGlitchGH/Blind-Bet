@@ -9,7 +9,7 @@ public class ChargerMovement : EnemyMovement
     protected override void Start()
     {
         rb2d.linearDamping = friction;
-        enemy = new Enemy(10, 20, 5, 2, 6);
+        enemyStats = new Enemy(10, 20, 5, 2, 6);
         currentState = StateMachine.patrol;
     }
     protected override void Update()
@@ -49,7 +49,7 @@ public class ChargerMovement : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position) * chargeAcceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
                 return;
             }
@@ -59,7 +59,7 @@ public class ChargerMovement : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position) * acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
             if (distance > stopRange && !hit && path.Count > 0)
@@ -67,7 +67,7 @@ public class ChargerMovement : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x, path[0].transform.position.y)) * acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
             if (distance < AttackRange && canAttack)
@@ -91,7 +91,7 @@ public class ChargerMovement : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x, path[0].transform.position.y)) * acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
         }
@@ -105,11 +105,11 @@ public class ChargerMovement : EnemyMovement
         isReadyingAttack = false; // no longer readying attack
         spriteRend.color = new Color32(200, 200, 200, 255);
         isAttacking = true; // is now attacking
-        enemy.topSpeed = 6;
+        enemyStats.topSpeed = 6;
         yield return new WaitForSeconds(chargeTime); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
-        enemy.topSpeed = 2;
-        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
+        enemyStats.topSpeed = 2;
+        yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
     protected void OnTriggerEnter2D(Collider2D collision)
@@ -117,7 +117,7 @@ public class ChargerMovement : EnemyMovement
         if (collision.CompareTag("Player") && isAttacking)
         {
             PlayerMovement pm = collision.GetComponent<PlayerMovement>();
-            pm.GetHit(this, enemy.baseKnockback);
+            pm.GetHit(this, enemyStats.baseKnockback);
         }
     }
 }

@@ -12,7 +12,7 @@ public class CardSoldierS : EnemyMovement
     protected override void Start()
     {
         rb2d.linearDamping = friction;
-        enemy = new Enemy(10,30,6,2,3);
+        enemyStats = new Enemy(10,30,6,2,3);
         currentState = StateMachine.patrol;
     }
     protected override void Update()
@@ -45,7 +45,7 @@ public class CardSoldierS : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
             if(distance > stopRange && hit && currentState == StateMachine.evade)
@@ -53,7 +53,7 @@ public class CardSoldierS : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
                 rb2d.AddForce(-newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
             if(distance > stopRange && !hit && path.Count > 0)
@@ -61,7 +61,7 @@ public class CardSoldierS : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
             if(distance < AttackRange && canAttack)
@@ -85,7 +85,7 @@ public class CardSoldierS : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
         }
@@ -122,7 +122,7 @@ public class CardSoldierS : EnemyMovement
         RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)position, attackSize, anchorTransform.rotation.z, Vector2.zero,0,boxLayer);
         if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
         {
-            player.GetHit(this, enemy.baseKnockback);
+            player.GetHit(this, enemyStats.baseKnockback);
         }
         rb2d.AddForce(TargetDirection(enemyTarget.transform.position)*lungeForce, ForceMode2D.Impulse);
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
@@ -131,7 +131,7 @@ public class CardSoldierS : EnemyMovement
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         Destroy(attack);
         isAttacking = false; // no longer attacking
-        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
+        yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
     protected override IEnumerator GetHitTimer()

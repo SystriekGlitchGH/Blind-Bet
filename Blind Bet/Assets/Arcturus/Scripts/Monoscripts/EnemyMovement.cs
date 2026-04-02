@@ -13,7 +13,7 @@ public class EnemyMovement : MonoBehaviour
     [Header("Components")]
     public Rigidbody2D rb2d;
     [SerializeField] protected SpriteRenderer spriteRend;
-    public Enemy enemy;
+    public Enemy enemyStats;
 
     [Header("Movement Stats")]
     public float acceleration;
@@ -47,7 +47,7 @@ public class EnemyMovement : MonoBehaviour
     protected virtual void Start()
     {
         rb2d.linearDamping = friction;
-        enemy = new Enemy(10,20,5,2,3);
+        enemyStats = new Enemy(10,20,5,2,3);
         currentState = StateMachine.patrol;
     }
     protected virtual void Update()
@@ -69,12 +69,12 @@ public class EnemyMovement : MonoBehaviour
             currentState = StateMachine.patrol;
             path.Clear();
         }
-        else if(enemyTarget != null && currentState != StateMachine.engage && enemy.currentHealth > enemy.maxHealth * 20/100 && !isRetreating)
+        else if(enemyTarget != null && currentState != StateMachine.engage && enemyStats.currentHealth > enemyStats.maxHealth * 20/100 && !isRetreating)
         {
             currentState = StateMachine.engage;
             path.Clear();
         }
-        else if(enemyTarget != null && currentState != StateMachine.evade && enemy.currentHealth <= enemy.maxHealth * 20/100)
+        else if(enemyTarget != null && currentState != StateMachine.evade && enemyStats.currentHealth <= enemyStats.maxHealth * 20/100)
         {
             currentState = StateMachine.evade;
             isRetreating = true;
@@ -84,12 +84,19 @@ public class EnemyMovement : MonoBehaviour
         movedNode = AStarManager.instance.FindNearestNode(transform.position);
         if (isRetreating)
         {
-            if(enemy.currentHealth >= enemy.maxHealth * 0.75)
+            if(enemyStats.currentHealth >= enemyStats.maxHealth * 0.75)
             {
                 isRetreating = false;
             }
         }
-        enemy.CheckEffects();
+        enemyStats.CheckEffects();
+        if(enemyStats.effectManager.effects.Count != 0)
+        {
+            for(int i = 0; i < enemyStats.effectManager.effects.Count; i++)
+            {
+                enemyStats.effectManager.effects[i].elapsedTime += Time.deltaTime;
+            }
+        }
     }
     protected virtual void FixedUpdate()
     {
@@ -107,7 +114,7 @@ public class EnemyMovement : MonoBehaviour
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed * enemy.GetSpeedMod());
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if(distance > stopRange && !hit && path.Count > 0)
@@ -115,7 +122,7 @@ public class EnemyMovement : MonoBehaviour
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed * enemy.GetSpeedMod());
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if(distance < AttackRange && canAttack)
@@ -139,7 +146,7 @@ public class EnemyMovement : MonoBehaviour
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed * enemy.GetSpeedMod());
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
         }
@@ -164,23 +171,31 @@ public class EnemyMovement : MonoBehaviour
     public void GetHit(PlayerMovement attacker, float knockback, float damage)
     {
         StartCoroutine(GetHitTimer());
-        enemy.TakeDamage(damage * enemy.GetDamageMod());
-        if(enemy.currentHealth <= 0)
+        enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
+        if(enemyStats.currentHealth <= 0)
             Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
+    }
+    public void GetHitAway(PlayerMovement attacker, float knockback, float damage)
+    {
+        StartCoroutine(GetHitTimer());
+        enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
+        if(enemyStats.currentHealth <= 0)
+            Die();
+        rb2d.AddForce(-TargetDirection(attacker.transform.position)*knockback,ForceMode2D.Impulse);
     }
     public void GetHit(Bullet bullet, float knockback, float damage)
     {
         StartCoroutine(GetHitTimer());
-        enemy.TakeDamage(damage * enemy.GetDamageMod());
-        if(enemy.currentHealth <= 0)
+        enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
+        if(enemyStats.currentHealth <= 0)
             Die();
         rb2d.AddForce(-TargetDirection(bullet.transform.position)*knockback,ForceMode2D.Impulse);
     }
     public void GetHealed(float amount)
     {
         StartCoroutine(GetHealedTimer());
-        enemy.Heal(amount);
+        enemyStats.Heal(amount);
     }
     public virtual IEnumerator GetHealedTimer()
     {
@@ -206,7 +221,7 @@ public class EnemyMovement : MonoBehaviour
         isAttacking = true; // is now attacking
         yield return new WaitForSeconds(0.5f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
-        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
+        yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
     //movement help methods

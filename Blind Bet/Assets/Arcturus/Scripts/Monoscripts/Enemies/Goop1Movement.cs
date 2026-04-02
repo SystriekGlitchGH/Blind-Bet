@@ -11,7 +11,7 @@ public class Goop1Movement : EnemyMovement
     protected override void Start()
     {
         rb2d.linearDamping = friction;
-        enemy = new Enemy(10,20,5,2,1.25f);
+        enemyStats = new Enemy(10,20,5,2,1.25f);
         currentState = StateMachine.patrol;
     }
     protected override void Update()
@@ -77,7 +77,7 @@ public class Goop1Movement : EnemyMovement
         if (collision.CompareTag("Player") && isAttacking)
         {
             PlayerMovement pm = collision.GetComponent<PlayerMovement>();
-            pm.GetHit(this,enemy.baseKnockback);
+            pm.GetHit(this,enemyStats.baseKnockback);
         }
     }
 
@@ -100,7 +100,7 @@ public class Goop1Movement : EnemyMovement
         }
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
-        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
+        yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
 }

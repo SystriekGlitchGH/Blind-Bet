@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject whirlWindsVisual;
     [SerializeField] GameObject continuousBlade;
     [SerializeField] GameObject royalBomb;
+    // ability sprites
+    [SerializeField] GameObject chillingBurstVisual;
     [SerializeField] GameObject parryObject;
 
     //Permanent components
@@ -259,8 +261,10 @@ public class PlayerMovement : MonoBehaviour
         foreach (RaycastHit2D hit in hits)
         {
             if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
-                enemy.GetHit(this, playerStats.weapon.baseKnockback, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
-            Debug.Log(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
+            {
+                enemy.GetHitAway(this, playerStats.weapon.baseKnockback/2, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.2f);
+                enemy.enemyStats.AddEffect("chill",5);
+            }
         }
         // makes an attack visual sprite when using a melee attack
         GameObject attack = Instantiate(whirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
@@ -282,7 +286,7 @@ public class PlayerMovement : MonoBehaviour
         foreach (RaycastHit2D hit in hits)
         {
             if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
-                enemy.GetHit(this, playerStats.weapon.baseKnockback, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod());
+                enemy.GetHitAway(this, playerStats.weapon.baseKnockback, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod());
             Debug.Log(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod());
         }
         // makes an attack visual sprite when using a melee attack
@@ -313,10 +317,9 @@ public class PlayerMovement : MonoBehaviour
         foreach (RaycastHit2D hit in hits)
         {
             if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
-                enemy.GetHit(this, playerStats.weapon.baseKnockback, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
-            Debug.Log(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
+                enemy.GetHitAway(this, playerStats.weapon.baseKnockback, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
         }
-        GameObject attack = Instantiate(whirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        GameObject attack = Instantiate(chillingBurstVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale = new Vector2(7, 7) * playerStats.GetAttackSizeMod();
         yield return new WaitForSeconds(0.3f);
         Destroy(attack);

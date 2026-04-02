@@ -29,18 +29,21 @@ public class Enemy
             hasBurn = true;
         if(effectManager.effects.FindIndex(x => x.name == "poison") != -1)
             hasPoison = true;
-        if(effectManager.effects.FindIndex(x => x.name == "Slow") != -1)
+        if(effectManager.effects.FindIndex(x => x.name == "slow") != -1)
             hasSlow = true;
-        if(effectManager.effects.FindIndex(x => x.name == "Chill") != -1)
+        if(effectManager.effects.FindIndex(x => x.name == "chill") != -1)
             hasChill = true;
-        if(effectManager.effects.FindIndex(x => x.name == "Frozen") != -1)
+        if(effectManager.effects.FindIndex(x => x.name == "frozen") != -1)
             hasFrozen = true;
-        if(effectManager.effects.FindIndex(x => x.name == "Recall") != -1)
+        if(effectManager.effects.FindIndex(x => x.name == "recall") != -1)
             hasRecall = true;
-        if(effectManager.effects.FindIndex(x => x.name == "Charm") != -1)
+        if(effectManager.effects.FindIndex(x => x.name == "charm") != -1)
             hasBurn = true;
     }
-
+    public void AddEffect(string name, float time)
+    {
+        effectManager.effects.Add(new Effect(name,time));
+    }
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;

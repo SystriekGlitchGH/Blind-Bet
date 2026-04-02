@@ -13,7 +13,7 @@ public class CardSoldierH : EnemyMovement
     protected override void Start()
     {
         rb2d.linearDamping = friction;
-        enemy = new Enemy(10,20,6,2,3);
+        enemyStats = new Enemy(10,20,6,2,3);
         currentState = StateMachine.patrol;
         isHealer = true;
     }
@@ -31,7 +31,7 @@ public class CardSoldierH : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
             if(canHeal)
@@ -44,7 +44,7 @@ public class CardSoldierH : EnemyMovement
                 if(distance < stopRange - 1)
                 {
                     rb2d.AddForce(-TargetDirection(enemyTarget.transform.position)*acceleration/4);
-                    Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                    Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                     rb2d.linearVelocity = velocity;
                 }
                 
@@ -62,7 +62,7 @@ public class CardSoldierH : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemy.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
                 rb2d.linearVelocity = velocity;
             }
         }
@@ -92,8 +92,8 @@ public class CardSoldierH : EnemyMovement
         {
             if(hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
             {
-                enemy.GetHealed(enemy.enemy.maxHealth*(healPercent/100));
-                Debug.Log(enemy.enemy.currentHealth);
+                enemy.GetHealed(enemy.enemyStats.maxHealth*(healPercent/100));
+                Debug.Log(enemy.enemyStats.currentHealth);
             }
         }
         GameObject attack = Instantiate(healVisual, transform.position, quaternion.Euler(Vector3.zero), transform);

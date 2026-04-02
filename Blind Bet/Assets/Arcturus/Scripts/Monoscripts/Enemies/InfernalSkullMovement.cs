@@ -14,7 +14,7 @@ public class InfernalSkullMovement : EnemyMovement
     protected override void Start()
     {
         rb2d.linearDamping = friction;
-        enemy = new Enemy(10,20,5,2,2);
+        enemyStats = new Enemy(10,20,5,2,2);
         currentState = StateMachine.patrol;
     }
     protected override void Update()
@@ -54,14 +54,14 @@ public class InfernalSkullMovement : EnemyMovement
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, attackRadius, Vector2.zero, 0, circleLayer);
         if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
         {
-            player.GetHit(this, enemy.baseKnockback);
+            player.GetHit(this, enemyStats.baseKnockback);
         }
         GameObject attack = Instantiate(attackVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale *= attackRadius*2;
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         Destroy(attack);
         isAttacking = false; // no longer attacking
-        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
+        yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
     protected override IEnumerator GetHitTimer()

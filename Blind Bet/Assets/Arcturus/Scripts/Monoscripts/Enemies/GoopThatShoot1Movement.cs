@@ -8,7 +8,7 @@ public class GoopThatShoot1Movement : EnemyMovement
     protected override void Start()
     {
         rb2d.linearDamping = friction;
-        enemy = new Enemy(10,20,5,2,2);
+        enemyStats = new Enemy(10,20,5,2,2);
         currentState = StateMachine.patrol;
     }
     protected override void Update()
@@ -57,7 +57,7 @@ public class GoopThatShoot1Movement : EnemyMovement
         SpawnBullet();
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
-        yield return new WaitForSeconds(enemy.attackCooldown); // cooldown so the enemies don't spam attacks
+        yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
     protected override IEnumerator GetHitTimer()
