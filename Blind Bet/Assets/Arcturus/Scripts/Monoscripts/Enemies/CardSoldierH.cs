@@ -31,7 +31,7 @@ public class CardSoldierH : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if(canHeal)
@@ -44,7 +44,7 @@ public class CardSoldierH : EnemyMovement
                 if(distance < stopRange - 1)
                 {
                     rb2d.AddForce(-TargetDirection(enemyTarget.transform.position)*acceleration/4);
-                    Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                    Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                     rb2d.linearVelocity = velocity;
                 }
                 
@@ -62,7 +62,7 @@ public class CardSoldierH : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
         }

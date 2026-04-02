@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy
 {
-    public EffectManager effectManager;
+    public EffectManager effectManager = new EffectManager();
     public bool hasStun, hasBurn, hasPoison, hasSlow, hasChill, hasFrozen, hasRecall, hasCharm;
     public float baseDamage;
     public float maxHealth;
@@ -23,22 +23,30 @@ public class Enemy
     }
     public void CheckEffects()
     {
-        if(effectManager.effects.FindIndex(x => x.name == "stun") != -1)
+        if (effectManager.effects.FindIndex(x => x.name == "stun") != -1)
             hasStun = true;
-        if(effectManager.effects.FindIndex(x => x.name == "burn") != -1)
+        else hasStun = false;
+        if (effectManager.effects.FindIndex(x => x.name == "burn") != -1)
             hasBurn = true;
-        if(effectManager.effects.FindIndex(x => x.name == "poison") != -1)
+        else hasBurn = false;
+        if (effectManager.effects.FindIndex(x => x.name == "poison") != -1)
             hasPoison = true;
-        if(effectManager.effects.FindIndex(x => x.name == "slow") != -1)
+        else hasPoison = false;
+        if (effectManager.effects.FindIndex(x => x.name == "slow") != -1)
             hasSlow = true;
+        else hasSlow = false;
         if(effectManager.effects.FindIndex(x => x.name == "chill") != -1)
             hasChill = true;
+        else hasChill = false;
         if(effectManager.effects.FindIndex(x => x.name == "frozen") != -1)
             hasFrozen = true;
+        else hasFrozen = false;
         if(effectManager.effects.FindIndex(x => x.name == "recall") != -1)
             hasRecall = true;
+        else hasRecall = false;
         if(effectManager.effects.FindIndex(x => x.name == "charm") != -1)
-            hasBurn = true;
+            hasCharm = true;
+        else hasCharm = false;
     }
     public void AddEffect(string name, float time)
     {
