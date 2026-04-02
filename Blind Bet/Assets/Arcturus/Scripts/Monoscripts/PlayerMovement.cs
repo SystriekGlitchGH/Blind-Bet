@@ -317,7 +317,14 @@ public class PlayerMovement : MonoBehaviour
         foreach (RaycastHit2D hit in hits)
         {
             if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
                 enemy.GetHitAway(this, playerStats.weapon.baseKnockback, playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.8f);
+                if (!enemy.enemyStats.hasChill)
+                {
+                    enemy.enemyStats.AddEffect("chill", 5);
+                }
+            }
+                
         }
         GameObject attack = Instantiate(chillingBurstVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale = new Vector2(7, 7) * playerStats.GetAttackSizeMod();
@@ -339,7 +346,6 @@ public class PlayerMovement : MonoBehaviour
         {
             if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
                 enemy.GetHit(this, playerStats.weapon.baseKnockback,playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod());
-            Debug.Log(playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod());
         }
         // makes an attack visual sprite when using a melee attack
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));

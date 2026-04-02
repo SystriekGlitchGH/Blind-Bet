@@ -43,7 +43,7 @@ public class CardSoldierD : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if(distance > stopRange && hit && currentState == StateMachine.evade)
@@ -51,7 +51,7 @@ public class CardSoldierD : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
                 rb2d.AddForce(-newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if(distance > stopRange && !hit && path.Count > 0)
@@ -59,7 +59,7 @@ public class CardSoldierD : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if(distance < AttackRange && canAttack)
@@ -83,7 +83,7 @@ public class CardSoldierD : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x,path[0].transform.position.y))*acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
         }

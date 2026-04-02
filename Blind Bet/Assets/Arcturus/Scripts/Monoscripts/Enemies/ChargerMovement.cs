@@ -49,7 +49,7 @@ public class ChargerMovement : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position) * chargeAcceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
                 return;
             }
@@ -59,7 +59,7 @@ public class ChargerMovement : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(movementTarget.position) * acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if (distance > stopRange && !hit && path.Count > 0)
@@ -67,7 +67,7 @@ public class ChargerMovement : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x, path[0].transform.position.y)) * acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
             if (distance < AttackRange && canAttack)
@@ -91,7 +91,7 @@ public class ChargerMovement : EnemyMovement
                 rb2d.linearDamping = 0;
                 Vector2 newVelocity = TargetDirection(new Vector2(path[0].transform.position.x, path[0].transform.position.y)) * acceleration;
                 rb2d.AddForce(newVelocity);
-                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed);
+                Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
         }
