@@ -106,7 +106,7 @@ public class CardSoldierC : EnemyMovement
         spriteRend.color = new Color32(210,225,0,255);
         yield return new WaitForSeconds(0.3f); // amount of time to react to attack
         isReadyingAttack = false; // no longer readying attack
-        spriteRend.color = new Color32(0, 160, 225, 255);
+        spriteRend.color = currentColor;
         isAttacking = true; // is now attacking
         for(int i = 0; i < 3; i++)
         {
@@ -134,13 +134,5 @@ public class CardSoldierC : EnemyMovement
         if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
             player.GetHit(this, enemyStats.baseKnockback);
         return position;
-    }
-    protected override IEnumerator GetHitTimer()
-    {
-        hasKnockback = true;
-        spriteRend.color = new Color32(150, 0, 0, 255);
-        yield return new WaitForSeconds(knockbackTime);
-        spriteRend.color = new Color32(0, 160, 225, 255);
-        hasKnockback = false;
     }
 }

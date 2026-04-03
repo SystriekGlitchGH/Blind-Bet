@@ -44,6 +44,19 @@ public class GoopThatShoot1Movement : EnemyMovement
         }
         CreatePath();
         movedNode = AStarManager.instance.FindNearestNode(transform.position);
+        enemyStats.CheckEffects();
+        if (enemyStats.effectManager.effects.Count != 0)
+        {
+            for (int i = 0; i < enemyStats.effectManager.effects.Count; i++)
+            {
+                enemyStats.effectManager.effects[i].elapsedTime += Time.deltaTime;
+                if (enemyStats.effectManager.effects[i].elapsedTime >= enemyStats.effectManager.effects[i].duration)
+                {
+                    enemyStats.effectManager.effects.Remove(enemyStats.effectManager.effects[i]);
+                }
+            }
+        }
+        CheckCurrentColor();
     } 
     protected override IEnumerator AttackTimer()
     {
@@ -52,21 +65,13 @@ public class GoopThatShoot1Movement : EnemyMovement
         spriteRend.color = new Color32(210,225,0,255);
         yield return new WaitForSeconds(0.5f); // amount of time to react to attack
         isReadyingAttack = false; // no longer readying attack
-        spriteRend.color = new Color32(0,160,225,255);
+        spriteRend.color = currentColor;
         isAttacking = true; // is now attacking
         SpawnBullet();
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
         yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
-    }
-    protected override IEnumerator GetHitTimer()
-    {
-        hasKnockback = true;
-        spriteRend.color = new Color32(150, 0, 0, 255);
-        yield return new WaitForSeconds(knockbackTime);
-        spriteRend.color = new Color32(0, 160, 225, 255);
-        hasKnockback = false;
     }
 
     private void SpawnBullet()

@@ -294,6 +294,12 @@ MonoBehaviour:
   hitLayer:
     serializedVersion: 2
     m_Bits: 64
+  baseColor:
+    serializedVersion: 2
+    rgba: 4292976640
+  currentColor:
+    serializedVersion: 2
+    rgba: 4292976640
   currentNode: {fileID: 0}
   movedNode: {fileID: 0}
   path: []

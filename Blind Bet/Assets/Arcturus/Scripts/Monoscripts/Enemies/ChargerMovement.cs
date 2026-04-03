@@ -35,6 +35,19 @@ public class ChargerMovement : EnemyMovement
         }
         CreatePath();
         movedNode = AStarManager.instance.FindNearestNode(transform.position);
+        enemyStats.CheckEffects();
+        if (enemyStats.effectManager.effects.Count != 0)
+        {
+            for (int i = 0; i < enemyStats.effectManager.effects.Count; i++)
+            {
+                enemyStats.effectManager.effects[i].elapsedTime += Time.deltaTime;
+                if (enemyStats.effectManager.effects[i].elapsedTime >= enemyStats.effectManager.effects[i].duration)
+                {
+                    enemyStats.effectManager.effects.Remove(enemyStats.effectManager.effects[i]);
+                }
+            }
+        }
+        CheckCurrentColor();
     }
     protected override void FixedUpdate()
     {
@@ -103,7 +116,7 @@ public class ChargerMovement : EnemyMovement
         spriteRend.color = new Color32(230, 80, 180, 255);
         yield return new WaitForSeconds(0.5f); // amount of time to react to attack
         isReadyingAttack = false; // no longer readying attack
-        spriteRend.color = new Color32(200, 200, 200, 255);
+        spriteRend.color = currentColor;
         isAttacking = true; // is now attacking
         enemyStats.topSpeed = 6;
         yield return new WaitForSeconds(chargeTime); // time where you can take damage/parry/get shot at
@@ -119,13 +132,5 @@ public class ChargerMovement : EnemyMovement
             PlayerMovement pm = collision.GetComponent<PlayerMovement>();
             pm.GetHit(this, enemyStats.baseKnockback);
         }
-    }
-    protected override IEnumerator GetHitTimer()
-    {
-        hasKnockback = true;
-        spriteRend.color = new Color32(150, 0, 0, 255);
-        yield return new WaitForSeconds(knockbackTime);
-        spriteRend.color = new Color32(200, 200, 200, 255);
-        hasKnockback = false;
     }
 }

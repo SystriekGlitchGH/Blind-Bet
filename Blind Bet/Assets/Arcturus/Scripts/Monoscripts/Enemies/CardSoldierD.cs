@@ -29,6 +29,8 @@ public class CardSoldierD : EnemyMovement
     }
     protected override void FixedUpdate()
     {
+        Debug.Log(enemyStats.hasChill);
+        Debug.Log(currentColor);
         if(enemyTarget != null)
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
@@ -112,7 +114,7 @@ public class CardSoldierD : EnemyMovement
         spriteRend.color = new Color32(210,225,0,255);
         yield return new WaitForSeconds(0.3f); // amount of time to react to attack
         isReadyingAttack = false; // no longer readying attack
-        spriteRend.color = new Color32(225, 0, 150, 255);
+        spriteRend.color = currentColor;
         isAttacking = true; // is now attacking
 
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z), Mathf.Cos(Mathf.Deg2Rad * anchorTransform.rotation.eulerAngles.z));
@@ -129,19 +131,5 @@ public class CardSoldierD : EnemyMovement
         isAttacking = false; // no longer attacking
         yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
-    }
-    protected override IEnumerator GetHitTimer()
-    {
-        hasKnockback = true;
-        spriteRend.color = new Color32(150, 0, 0, 255);
-        yield return new WaitForSeconds(knockbackTime);
-        spriteRend.color = new Color32(225, 0, 150, 255);
-        hasKnockback = false;
-    }
-    public override IEnumerator GetHealedTimer()
-    {
-        spriteRend.color = new Color32(0,150,0,255);
-        yield return new WaitForSeconds(0.1f);
-        spriteRend.color = new Color32(225, 0, 150, 255);
     }
 }

@@ -105,6 +105,7 @@ public class EnemyMovement : MonoBehaviour
                 }
             }
         }
+        CheckCurrentColor();
     }
     protected virtual void FixedUpdate()
     {
@@ -180,7 +181,7 @@ public class EnemyMovement : MonoBehaviour
     {
         StartCoroutine(GetHitTimer());
         enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
-        Debug.Log(enemyStats.currentHealth);
+        //Debug.Log(enemyStats.currentHealth);
         if(enemyStats.currentHealth <= 0)
             Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
@@ -210,7 +211,7 @@ public class EnemyMovement : MonoBehaviour
     {
         spriteRend.color = new Color32(0,150,0,255);
         yield return new WaitForSeconds(0.1f);
-        spriteRend.color = new Color32(90,215,0,255);
+        spriteRend.color = currentColor;
     }
 
     protected virtual IEnumerator GetHitTimer()
@@ -218,7 +219,7 @@ public class EnemyMovement : MonoBehaviour
         hasKnockback = true;
         spriteRend.color = new Color32(150,0,0,255);
         yield return new WaitForSeconds(knockbackTime);
-        spriteRend.color = new Color32(90,215,0,255);
+        spriteRend.color = currentColor;
         hasKnockback = false;
     }
     protected virtual IEnumerator AttackTimer()
@@ -232,6 +233,28 @@ public class EnemyMovement : MonoBehaviour
         isAttacking = false; // no longer attacking
         yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
+    }
+
+    protected void CheckCurrentColor()
+    {
+        Color32 setColor = baseColor;
+        if (enemyStats.hasCharm)
+            setColor = CombineColors(setColor, new Color32(255,70,190,255));
+        if (enemyStats.hasChill)
+            setColor = CombineColors(setColor, new Color32(80,190,255,255));
+        if (enemyStats.hasFrozen)
+            setColor = CombineColors(setColor, new Color32(170, 220, 255, 255));
+        if (enemyStats.hasPoison)
+            setColor = CombineColors(setColor, new Color32(50, 220, 70, 255));
+        currentColor = setColor;
+        spriteRend.color = currentColor;
+    }
+    protected Color32 CombineColors(Color32 color1, Color32 color2)
+    {
+        int r = (color1.r + color2.r) / 2;
+        int g = (color1.g + color2.g) / 2;
+        int b = (color1.b + color2.b) / 2;
+        return new Color32((byte)r, (byte)g, (byte)b, 255);
     }
     //movement help methods
 

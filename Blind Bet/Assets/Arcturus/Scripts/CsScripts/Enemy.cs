@@ -67,7 +67,7 @@ public class Enemy
     {
         float mod = 1;
         if (hasChill)
-            mod -= 0.3f;
+            mod -= 1.3f;
         return mod;
     }
     public float GetDamageMod()

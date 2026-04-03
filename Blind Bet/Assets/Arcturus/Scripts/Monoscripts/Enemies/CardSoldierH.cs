@@ -104,18 +104,4 @@ public class CardSoldierH : EnemyMovement
         yield return new WaitForSeconds(healCooldown-0.1f); // cooldown so the enemies don't spam attacks
         canHeal = true; // can attack again
     }
-    protected override IEnumerator GetHitTimer()
-    {
-        hasKnockback = true;
-        spriteRend.color = new Color32(150, 0, 0, 255);
-        yield return new WaitForSeconds(knockbackTime);
-        spriteRend.color = new Color32(225, 0, 150, 255);
-        hasKnockback = false;
-    }
-    public override IEnumerator GetHealedTimer()
-    {
-        spriteRend.color = new Color32(0,150,0,255);
-        yield return new WaitForSeconds(0.1f);
-        spriteRend.color = new Color32(225, 0, 150, 255);
-    }
 }
