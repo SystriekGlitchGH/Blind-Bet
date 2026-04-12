@@ -12,7 +12,10 @@ public class Node : MonoBehaviour
     {
         return gScore+hScore;
     }
-
+    private void OnValidate()
+    {
+        connections.RemoveAll(item => item == null);
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
