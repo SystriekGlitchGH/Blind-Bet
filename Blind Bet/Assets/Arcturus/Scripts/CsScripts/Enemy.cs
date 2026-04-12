@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Enemy
 {
@@ -67,7 +68,9 @@ public class Enemy
     {
         float mod = 1;
         if (hasChill)
-            mod -= 1.3f;
+            mod -= 0.5f;
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetDamageMod()
@@ -75,6 +78,18 @@ public class Enemy
         float mod = 1;
         if (hasChill)
             mod += 0.2f;
+        return mod;
+    }
+    public float GetAttackDamageMod()
+    {
+        float mod = 1;
+        if (hasPoison)
+            mod -= 0.3f;
+        return mod;
+    }
+    public float GetAttackSpeedMod()
+    {
+        float mod = 1;
         return mod;
     }
 }

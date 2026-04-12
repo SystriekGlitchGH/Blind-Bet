@@ -43,6 +43,7 @@ public class EnemyMovement : MonoBehaviour
     protected bool canAttack = true, isReadyingAttack, isAttacking;
     public float AttackRange;
     public float stopRange;
+    private bool canGetPoison = true;
 
     //other
     protected float colliderPushForce = 8;
@@ -102,8 +103,15 @@ public class EnemyMovement : MonoBehaviour
                 if(enemyStats.effectManager.effects[i].elapsedTime >= enemyStats.effectManager.effects[i].duration)
                 {
                     enemyStats.effectManager.effects.Remove(enemyStats.effectManager.effects[i]);
+                    enemyStats.CheckEffects();
+                    CheckCurrentColor();
+                    spriteRend.color = currentColor;
                 }
             }
+        }
+        if (enemyStats.hasPoison && canGetPoison)
+        {
+            StartCoroutine(PoisonTimer());
         }
         CheckCurrentColor();
     }
@@ -173,6 +181,7 @@ public class EnemyMovement : MonoBehaviour
             em.rb2d.AddForce(TargetDirection(em.transform.position)*colliderPushForce);
         }
     }
+    #region ACTIVATION METHODS
     public void Die()
     {
         Destroy(transform.parent.gameObject);
@@ -207,13 +216,14 @@ public class EnemyMovement : MonoBehaviour
         StartCoroutine(GetHealedTimer());
         enemyStats.Heal(amount);
     }
+    #endregion
+    #region IENUMERATORS
     public virtual IEnumerator GetHealedTimer()
     {
         spriteRend.color = new Color32(0,150,0,255);
         yield return new WaitForSeconds(0.1f);
         spriteRend.color = currentColor;
     }
-
     protected virtual IEnumerator GetHitTimer()
     {
         hasKnockback = true;
@@ -234,7 +244,18 @@ public class EnemyMovement : MonoBehaviour
         yield return new WaitForSeconds(enemyStats.attackCooldown); // cooldown so the enemies don't spam attacks
         canAttack = true; // can attack again
     }
+    protected IEnumerator PoisonTimer()
+    {
+        canGetPoison = false;
+        enemyStats.TakeDamage(5);
+        spriteRend.color = new Color32(0,120,0,255);
+        yield return new WaitForSeconds(0.1f);
+        spriteRend.color = currentColor;
+        yield return new WaitForSeconds(1f);
+        canGetPoison = true;
 
+    }
+    #endregion
     protected void CheckCurrentColor()
     {
         Color32 setColor = baseColor;
@@ -247,7 +268,6 @@ public class EnemyMovement : MonoBehaviour
         if (enemyStats.hasPoison)
             setColor = CombineColors(setColor, new Color32(50, 220, 70, 255));
         currentColor = setColor;
-        spriteRend.color = currentColor;
     }
     protected Color32 CombineColors(Color32 color1, Color32 color2)
     {

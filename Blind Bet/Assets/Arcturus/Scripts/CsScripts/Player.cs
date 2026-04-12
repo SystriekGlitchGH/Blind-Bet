@@ -36,6 +36,7 @@ public class Player
     public float baseSpeed;
     public float baseDashDistance, baseDashCooldown;
     public float baseParryTime, baseParryCooldown;
+    public float baseAbilityDamage, baseAbilityKnockback, baseAbilityCooldown;
     public Player()
     {
         activeSuit = Card.Suit.blank;
@@ -45,6 +46,8 @@ public class Player
         baseDashCooldown = 0.5f;
         baseParryTime = 0.2f;
         baseParryCooldown = 1;
+        baseAbilityDamage = 10;
+        baseAbilityKnockback = 10;
         activeHand = new Hand(new Card[5],Card.Suit.blank,false,HandType.none);
         passiveHand1 = new Hand(new Card[5], Card.Suit.blank, false, HandType.none);
         passiveHand2 = new Hand(new Card[5], Card.Suit.blank, false, HandType.none);
@@ -128,10 +131,10 @@ public class Player
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
         passiveHand1.cards[0] = new Card(3, Card.Suit.diamond);
-        passiveHand1.cards[1] = new Card(3, Card.Suit.diamond);
+        passiveHand1.cards[1] = new Card(4, Card.Suit.diamond);
         passiveHand1.cards[2] = new Card(5, Card.Suit.diamond);
-        passiveHand1.cards[3] = new Card(5, Card.Suit.diamond);
-        passiveHand1.cards[4] = new Card(7, Card.Suit.heart);
+        passiveHand1.cards[3] = new Card(6, Card.Suit.diamond);
+        passiveHand1.cards[4] = new Card(7, Card.Suit.club);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -204,11 +207,41 @@ public class Player
             mod += 0.3f;
         return mod;
     }
+    public float GetAttackKnockbackMod()
+    {
+        float mod = 1;
+        return mod;
+    }
     public float GetSpeedMod()
     {
         float mod = 1;
         if(passiveAbility1.code == "n2d")
             mod += 0.2f;
+        return mod;
+    }
+    public float GetAbilityDamageMod()
+    {
+        float mod = 1;
+        return mod;
+    }
+    public float GetAbilityKnockbackMod()
+    {
+        float mod = 1;
+        return mod;
+    }
+    public float GetAbilitySizeMod()
+    {
+        float mod = 1;
+        return mod;
+    }
+    public float GetAbilityCooldownMod()
+    {
+        float mod = 1;
+        return mod;
+    }
+    public float GetAbilityEffectDurationMod()
+    {
+        float mod = 1;
         return mod;
     }
 }

@@ -29,8 +29,6 @@ public class CardSoldierD : EnemyMovement
     }
     protected override void FixedUpdate()
     {
-        Debug.Log(enemyStats.hasChill);
-        Debug.Log(currentColor);
         if(enemyTarget != null)
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
