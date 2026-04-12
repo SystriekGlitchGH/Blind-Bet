@@ -113,6 +113,8 @@ public class EnemyMovement : MonoBehaviour
         {
             StartCoroutine(PoisonTimer());
         }
+        if(enemyStats.hasStun)
+            rb2d.linearVelocity = Vector2.zero;
         CheckCurrentColor();
     }
     protected virtual void FixedUpdate()
@@ -121,7 +123,7 @@ public class EnemyMovement : MonoBehaviour
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
             Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
-            if (hasKnockback || isAttacking)
+            if (hasKnockback || isAttacking || enemyStats.hasStun)
             {
                 return;
             }

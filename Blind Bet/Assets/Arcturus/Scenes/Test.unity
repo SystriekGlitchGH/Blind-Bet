@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6d4d85e4e8bccdd4ba71d6481603c9f3, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -10355,14 +10355,6 @@ PrefabInstance:
       propertyPath: m_projectionMatrixMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3356795498786898444, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: m_RendererIndex
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3356795498786898444, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4176316303073008701, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 0
@@ -10417,10 +10409,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8979299407256152112, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8979299407256152112, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: m_OcclusionCulling
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}

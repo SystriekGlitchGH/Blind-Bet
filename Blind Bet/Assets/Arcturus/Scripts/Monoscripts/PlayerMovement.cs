@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject chillingBurstVisual;
     [SerializeField] GameObject flashbangvisual;
     [SerializeField] GameObject spectralBullet;
+    [SerializeField] GameObject soundWave;
     [SerializeField] GameObject parryObject;
 
     //Permanent components
@@ -214,6 +215,8 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(FlashBangTimer());
             else if(playerStats.passiveAbility1.code == "b6d")
                 StartCoroutine(SplinterCarbineTimer());
+            else if(playerStats.passiveAbility1.code == "b7d")
+                StartCoroutine(PiercingDuetTimer());
         }
     }
     #endregion
@@ -271,6 +274,17 @@ public class PlayerMovement : MonoBehaviour
             sb.pm = this;
             sb.direction = DirectionToVector();
             sb.rb2d.AddForce(sb.rb2d.transform.up * 1300);
+        }
+    }
+    private void ActivatePiercingDuet()
+    {
+        GameObject shot = Instantiate(soundWave, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
+        if (shot.TryGetComponent(out SoundWave sw))
+        {
+            sw.bulletType = "player";
+            sw.pm = this;
+            sw.direction = DirectionToVector();
+            sw.rb2d.AddForce(sw.rb2d.transform.up * 1000);
         }
     }
     
@@ -386,6 +400,18 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod());
         canUseAbility1 = true;
     }
+    private IEnumerator PiercingDuetTimer()
+    {
+        canUseAbility1 = false;
+        float timeBetweenBullets = 0.15f;
+        for(int i = 0; i < 33; i++)
+        {
+            ActivatePiercingDuet();
+            yield return new WaitForSeconds(timeBetweenBullets);
+        }
+        yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod());
+        canUseAbility1 = true;
+    }
     private IEnumerator AttackTimer()
     {
         canAttack = false;
@@ -428,7 +454,8 @@ public class PlayerMovement : MonoBehaviour
         {
             if (hit2 && hit2.rigidbody.TryGetComponent(out EnemyMovement enemies))
             {
-                enemies.GetHit(this, playerStats.weapon.baseKnockback*2, playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod()*2);
+                enemies.GetHit(this, 0, playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod()*2);
+                enemies.enemyStats.AddEffect("stun",3);
             }
         }
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
