@@ -133,8 +133,8 @@ public class Player
         passiveHand1.cards[0] = new Card(3, Card.Suit.diamond);
         passiveHand1.cards[1] = new Card(3, Card.Suit.diamond);
         passiveHand1.cards[2] = new Card(3, Card.Suit.diamond);
-        passiveHand1.cards[3] = new Card(5, Card.Suit.diamond);
-        passiveHand1.cards[4] = new Card(5, Card.Suit.club);
+        passiveHand1.cards[3] = new Card(3, Card.Suit.diamond);
+        passiveHand1.cards[4] = new Card(5, Card.Suit.diamond);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)

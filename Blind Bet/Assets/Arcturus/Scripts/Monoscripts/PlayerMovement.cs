@@ -20,7 +20,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject flashbangvisual;
     [SerializeField] GameObject spectralBullet;
     [SerializeField] GameObject soundWave;
+    [SerializeField] GameObject shockingWheelVisual;
     [SerializeField] GameObject parryObject;
+    
 
     //Permanent components
 
@@ -43,7 +45,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask attackLayer; // the layers that your attack can hit
     public LayerMask parryLayer; // the layers that your parry can hit
     private bool canAttack = true; // checks if you can attack
-    private bool buttonHeld; // checks if the attack button is held for auto fire purposes
+    private bool buttonHeld; // checks if the attack button is held for hold abiliies
+    private float buttonHeldTime;
     private float attackAngle; // the angle of your attack
     public float iFrameTime;
     private bool hasIFrames;
@@ -120,6 +123,10 @@ public class PlayerMovement : MonoBehaviour
         FindDirection(); // gets the direction from the vector
         FindAngle(); // gets the angle from the direction
         anchorTransform.eulerAngles = new Vector3(0,0,attackAngle); // uses angle to change the achor transform
+        if (buttonHeld)
+        {
+            buttonHeldTime += Time.deltaTime;
+        }
     }
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
     private void OnTriggerEnter2D(Collider2D collision)
@@ -172,6 +179,11 @@ public class PlayerMovement : MonoBehaviour
         if (ctx.ReadValue<float>() == 0)
         {
             buttonHeld = false;
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8d")
+            {
+                buttonHeldTime = 0;
+                StartCoroutine(ShockingWheelTimer());
+            }
         }
     }
     // input for parrying
@@ -412,6 +424,23 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod());
         canUseAbility1 = true;
     }
+    private IEnumerator ShockingWheelTimer()
+    {
+        canUseAbility1 = false;
+        RaycastHit2D[] hits = MakeCircleCastAll("shockingwheel");
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod(), playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod() * 1.5f);
+            }  
+        }
+        GameObject attack = Instantiate(shockingWheelVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        attack.transform.localScale = new Vector2(8, 8) * playerStats.GetAbilitySizeMod();
+        yield return new WaitForSeconds(0.3f);
+        Destroy(attack);
+    }
+    // not abilities
     private IEnumerator AttackTimer()
     {
         canAttack = false;
@@ -637,6 +666,10 @@ public class PlayerMovement : MonoBehaviour
         else if (type == "chillingburst")
         {
             return Physics2D.CircleCastAll(transform.position, 3.5f, Vector2.zero, 0, attackLayer);
+        }
+        else if (type == "shockingwheel")
+        {
+            return Physics2D.CircleCastAll(transform.position, 4f, Vector2.zero, 0, attackLayer);
         }
         return null;
     }
