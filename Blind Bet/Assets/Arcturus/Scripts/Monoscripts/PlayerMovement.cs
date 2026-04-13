@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject spectralBullet;
     [SerializeField] GameObject soundWave;
     [SerializeField] GameObject shockingWheelVisual;
+    [SerializeField] GameObject freezingWheelVisual;
     [SerializeField] GameObject parryObject;
     [SerializeField] GameObject diamondIndicator;
     
@@ -193,6 +194,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 buttonHeldTime = 0;
                 StartCoroutine(ShockingWheelTimer());
+            }
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9d")
+            {
+                buttonHeldTime = 0;
+                StartCoroutine(FreezingWheelTimer());
             }
         }
     }
@@ -446,6 +452,23 @@ public class PlayerMovement : MonoBehaviour
             }  
         }
         GameObject attack = Instantiate(shockingWheelVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        attack.transform.localScale = new Vector2(8, 8) * playerStats.GetAbilitySizeMod();
+        yield return new WaitForSeconds(0.3f);
+        Destroy(attack);
+    }
+    private IEnumerator FreezingWheelTimer()
+    {
+        canUseAbility1 = false;
+        RaycastHit2D[] hits = MakeCircleCastAll("shockingwheel");
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod(), playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod() * 1.5f);
+                enemy.enemyStats.AddEffect("frozen", 3);
+            }  
+        }
+        GameObject attack = Instantiate(freezingWheelVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale = new Vector2(8, 8) * playerStats.GetAbilitySizeMod();
         yield return new WaitForSeconds(0.3f);
         Destroy(attack);

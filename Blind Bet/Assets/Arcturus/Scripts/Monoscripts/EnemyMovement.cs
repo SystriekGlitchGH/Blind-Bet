@@ -113,7 +113,7 @@ public class EnemyMovement : MonoBehaviour
         {
             StartCoroutine(PoisonTimer());
         }
-        if(enemyStats.hasStun)
+        if(enemyStats.hasStun || enemyStats.hasFrozen)
             rb2d.linearVelocity = Vector2.zero;
         CheckCurrentColor();
     }

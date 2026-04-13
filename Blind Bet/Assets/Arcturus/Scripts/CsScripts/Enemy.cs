@@ -78,6 +78,8 @@ public class Enemy
         float mod = 1;
         if (hasChill)
             mod += 0.2f;
+        if(hasFrozen)
+            mod += 2;
         return mod;
     }
     public float GetAttackDamageMod()
