@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject soundWave;
     [SerializeField] GameObject shockingWheelVisual;
     [SerializeField] GameObject parryObject;
+    [SerializeField] GameObject diamondIndicator;
     
 
     //Permanent components
@@ -45,11 +46,14 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask attackLayer; // the layers that your attack can hit
     public LayerMask parryLayer; // the layers that your parry can hit
     private bool canAttack = true; // checks if you can attack
-    private bool buttonHeld; // checks if the attack button is held for hold abiliies
-    private float buttonHeldTime;
     private float attackAngle; // the angle of your attack
     public float iFrameTime;
     private bool hasIFrames;
+
+    // for holding abilities
+    private bool buttonHeld; // checks if the attack button is held for hold abiliies
+    private float buttonHeldTime;
+    private bool indicatorShown;
 
     [Header("Ability stats")]
     private bool canUseAbility1 = true;
@@ -126,6 +130,11 @@ public class PlayerMovement : MonoBehaviour
         if (buttonHeld)
         {
             buttonHeldTime += Time.deltaTime;
+            if(buttonHeldTime >= 3 && !indicatorShown)
+            {
+                StartCoroutine(DiamondIndicatorTimer());
+                indicatorShown = true;
+            }
         }
     }
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
@@ -179,6 +188,7 @@ public class PlayerMovement : MonoBehaviour
         if (ctx.ReadValue<float>() == 0)
         {
             buttonHeld = false;
+            indicatorShown = false;
             if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8d")
             {
                 buttonHeldTime = 0;
@@ -552,6 +562,12 @@ public class PlayerMovement : MonoBehaviour
         isParrying = false;
         yield return new WaitForSeconds(playerStats.baseParryCooldown);
         canParry = true;
+    }
+    private IEnumerator DiamondIndicatorTimer()
+    {
+        GameObject indicator = Instantiate(diamondIndicator, transform.position, diamondIndicator.transform.rotation, transform);
+        yield return new WaitForSeconds(0.3f);
+        Destroy(indicator);
     }
     #endregion
     #region HELP METHODS

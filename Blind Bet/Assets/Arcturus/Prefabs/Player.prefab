@@ -415,7 +415,9 @@ MonoBehaviour:
   flashbangvisual: {fileID: 3738371165062611216, guid: 04b9c2d9f577451459e38c94f2db9f2e, type: 3}
   spectralBullet: {fileID: 4824476325367056225, guid: ed69d1f06382cf44db5b36f7ccd8b659, type: 3}
   soundWave: {fileID: 4059275071187259775, guid: 94fd72d067d8dd245bc360800dd55aee, type: 3}
+  shockingWheelVisual: {fileID: 2530724799537935841, guid: a89ea67383eb4d841a4526cfa2211fa9, type: 3}
   parryObject: {fileID: 2512939790457252142, guid: 1417442bbfc44164d829b909d2654f6c, type: 3}
+  diamondIndicator: {fileID: 4461802826959256870, guid: f5aad4c3cdeafb7448904115b8bafcdb, type: 3}
   rb2d: {fileID: 5662594919883955688}
   spriteRend: {fileID: 8451357699676093455}
   anchorTransform: {fileID: 1119027603952637780}

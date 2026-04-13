@@ -10415,10 +10415,6 @@ PrefabInstance:
       propertyPath: currentNode
       value: 
       objectReference: {fileID: 381069776}
-    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: shockingWheelVisual
-      value: 
-      objectReference: {fileID: 2530724799537935841, guid: a89ea67383eb4d841a4526cfa2211fa9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
