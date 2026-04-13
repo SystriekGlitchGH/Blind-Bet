@@ -20128,7 +20128,7 @@ GameObject:
   - component: {fileID: 1049152495}
   - component: {fileID: 1049152494}
   m_Layer: 0
-  m_Name: Particle System (2)
+  m_Name: burn effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21158,7 +21158,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
+      scalar: 0
       minScalar: 1
       maxCurve:
         serializedVersion: 2
