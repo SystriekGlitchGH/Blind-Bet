@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
             if (collision.CompareTag("Player"))
             {
                 PlayerMovement player = collision.GetComponent<PlayerMovement>();
-                player.GetHit(em, em.enemyStats.baseKnockback);
+                player.GetHit(em, em.enemyStats.baseKnockback, em.enemyStats.baseDamage * em.enemyStats.GetAttackDamageMod());
                 enemiesHit++;
                 if(enemiesHit == 1)
                 {

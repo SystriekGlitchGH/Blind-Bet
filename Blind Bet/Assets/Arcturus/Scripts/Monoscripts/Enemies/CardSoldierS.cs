@@ -122,7 +122,7 @@ public class CardSoldierS : EnemyMovement
         RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)position, attackSize, anchorTransform.rotation.z, Vector2.zero,0,boxLayer);
         if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
         {
-            player.GetHit(this, enemyStats.baseKnockback);
+            player.GetHit(this, enemyStats.baseKnockback, enemyStats.baseDamage * enemyStats.GetAttackDamageMod());
         }
         rb2d.AddForce(TargetDirection(enemyTarget.transform.position)*lungeForce, ForceMode2D.Impulse);
         GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);

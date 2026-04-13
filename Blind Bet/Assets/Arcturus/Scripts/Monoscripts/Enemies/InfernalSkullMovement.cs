@@ -67,7 +67,7 @@ public class InfernalSkullMovement : EnemyMovement
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, attackRadius, Vector2.zero, 0, circleLayer);
         if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
         {
-            player.GetHit(this, enemyStats.baseKnockback);
+            player.GetHit(this, enemyStats.baseKnockback, enemyStats.baseDamage * enemyStats.GetAttackDamageMod());
         }
         GameObject attack = Instantiate(attackVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale *= attackRadius*2;

@@ -90,7 +90,7 @@ public class Goop1Movement : EnemyMovement
         if (collision.CompareTag("Player") && isAttacking)
         {
             PlayerMovement pm = collision.GetComponent<PlayerMovement>();
-            pm.GetHit(this,enemyStats.baseKnockback);
+            pm.GetHit(this,enemyStats.baseKnockback, enemyStats.baseDamage * enemyStats.GetAttackDamageMod());
         }
     }
 

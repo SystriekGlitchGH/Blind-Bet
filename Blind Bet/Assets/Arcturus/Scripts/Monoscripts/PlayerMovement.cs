@@ -118,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
             buttonHeldTime += Time.deltaTime;
             if(buttonHeldTime >= 3 && !indicatorShown)
             {
+                if(playerStats.passiveAbility1.code == "n8d" || playerStats.passiveAbility1.code == "n9d")
                 StartCoroutine(DiamondIndicatorTimer());
                 indicatorShown = true;
             }
@@ -232,6 +233,7 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(PiercingDuetTimer());
             else if(playerStats.passiveAbility1.code == "b10d")
                 StartCoroutine(CombustionCarbineTimer());
+            StartCoroutine(Ability1Timer());
         }
     }
     #endregion
@@ -244,12 +246,13 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(LungeTimer());
     }
     // getting hit
-    public void GetHit(EnemyMovement attacker, float knockback)
+    public void GetHit(EnemyMovement attacker, float knockback, float damage)
     {
         if (!hasIFrames)
         {
-            Debug.Log("got hit");
+            Debug.Log("got hit for: "+ damage * playerStats.GetDamageMod());
             StartCoroutine(GetHitTimer());
+            playerStats.TakeDamage(damage * playerStats.GetDamageMod());
             rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
         }
     }
@@ -379,7 +382,6 @@ public class PlayerMovement : MonoBehaviour
     // passive abilities Diamond
     private IEnumerator ChillingBurstTimer()
     {
-        canUseAbility1 = false;
         RaycastHit2D[] hits = MakeCircleCastAll("chillingburst");
         foreach (RaycastHit2D hit in hits)
         {
@@ -396,12 +398,9 @@ public class PlayerMovement : MonoBehaviour
         attack.transform.localScale = new Vector2(7, 7) * playerStats.GetAbilitySizeMod();
         yield return new WaitForSeconds(0.3f);
         Destroy(attack);
-        yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod()-0.3f);
-        canUseAbility1 = true;
     }
     private IEnumerator FlashBangTimer()
     {
-        canUseAbility1 = false;
         RaycastHit2D[] hits = MakeBoxCastAll("flashbang");
         foreach (RaycastHit2D hit in hits)
         {
@@ -416,32 +415,24 @@ public class PlayerMovement : MonoBehaviour
         attack.transform.localScale = new Vector2(1, 1) * playerStats.GetAbilitySizeMod();
         yield return new WaitForSeconds(0.2f);
         Destroy(attack);
-        yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod()-0.2f);
-        canUseAbility1 = true;
     }
     private IEnumerator SplinterCarbineTimer()
     {
-        canUseAbility1 = false;
         float timeBetweenBullets = 0.15f;
         for(int i = 0; i < 5; i++)
         {
             ActivateSplinterCarbine();
             yield return new WaitForSeconds(timeBetweenBullets);
         }
-        yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod());
-        canUseAbility1 = true;
     }
     private IEnumerator PiercingDuetTimer()
     {
-        canUseAbility1 = false;
         float timeBetweenBullets = 0.15f;
         for(int i = 0; i < 33; i++)
         {
             ActivatePiercingDuet();
             yield return new WaitForSeconds(timeBetweenBullets);
         }
-        yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod());
-        canUseAbility1 = true;
     }
     private IEnumerator ShockingWheelTimer()
     {
@@ -478,18 +469,23 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator CombustionCarbineTimer()
     {
-        canUseAbility1 = false;
         float timeBetweenBullets = 0.15f;
         for(int i = 0; i < 5; i++)
         {
             ActivateCombustionCarbine();
             yield return new WaitForSeconds(timeBetweenBullets);
         }
-        yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod());
-        canUseAbility1 = true;
     }
     #endregion
     // not abilities
+    private IEnumerator Ability1Timer()
+    {
+        canUseAbility1 = false;
+        yield return new WaitForSeconds(6*playerStats.GetAbilityCooldownMod());
+        if(playerStats.passiveAbility1.code == "b7d")
+            yield return new WaitForSeconds(5);
+        canUseAbility1 = true;
+    }
     private IEnumerator AttackTimer()
     {
         canAttack = false;

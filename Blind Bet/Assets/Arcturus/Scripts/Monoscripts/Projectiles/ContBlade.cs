@@ -16,20 +16,7 @@ public class ContBlade : Bullet
     }
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
-        if(bulletType == "enemy")
-        {
-            if (collision.CompareTag("Player"))
-            {
-                PlayerMovement player = collision.GetComponent<PlayerMovement>();
-                player.GetHit(em, em.enemyStats.baseKnockback);
-                enemiesHit++;
-                if(enemiesHit == 2)
-                {
-                    Destroy(gameObject);
-                }
-            }
-        }
-        else if(bulletType == "player")
+        if(bulletType == "player")
         {
             if (collision.CompareTag("Enemy"))
             {
