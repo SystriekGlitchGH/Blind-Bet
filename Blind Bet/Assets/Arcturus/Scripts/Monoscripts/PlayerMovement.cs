@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject soundWave;
     [SerializeField] GameObject shockingWheelVisual;
     [SerializeField] GameObject freezingWheelVisual;
+    [SerializeField] GameObject royalBombAbility;
     [SerializeField] GameObject parryObject;
     [SerializeField] GameObject diamondIndicator;
     
@@ -245,6 +246,8 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(SplinterCarbineTimer());
             else if(playerStats.passiveAbility1.code == "b7d")
                 StartCoroutine(PiercingDuetTimer());
+            else if(playerStats.passiveAbility1.code == "b10d")
+                StartCoroutine(CombustionCarbineTimer());
         }
     }
     #endregion
@@ -302,6 +305,20 @@ public class PlayerMovement : MonoBehaviour
             sb.pm = this;
             sb.direction = DirectionToVector();
             sb.rb2d.AddForce(sb.rb2d.transform.up * 1300);
+        }
+    }
+    private void ActivateCombustionCarbine()
+    {
+        float extraRotation = -10/2;
+        extraRotation += 10 / (6 - 1) * rand.Next(1,6);
+        Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,extraRotation);
+        GameObject shot = Instantiate(royalBombAbility, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
+        if (shot.TryGetComponent(out RoyalBombAbility rb))
+        {
+            rb.bulletType = "player";
+            rb.pm = this;
+            rb.direction = DirectionToVector();
+            rb.rb2d.AddForce(rb.rb2d.transform.up * 1000);
         }
     }
     private void ActivatePiercingDuet()
@@ -472,6 +489,18 @@ public class PlayerMovement : MonoBehaviour
         attack.transform.localScale = new Vector2(8, 8) * playerStats.GetAbilitySizeMod();
         yield return new WaitForSeconds(0.3f);
         Destroy(attack);
+    }
+    private IEnumerator CombustionCarbineTimer()
+    {
+        canUseAbility1 = false;
+        float timeBetweenBullets = 0.15f;
+        for(int i = 0; i < 5; i++)
+        {
+            ActivateCombustionCarbine();
+            yield return new WaitForSeconds(timeBetweenBullets);
+        }
+        yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod());
+        canUseAbility1 = true;
     }
     // not abilities
     private IEnumerator AttackTimer()
