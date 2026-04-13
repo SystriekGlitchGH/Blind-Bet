@@ -132,7 +132,7 @@ public class CardSoldierC : EnemyMovement
         Vector2 position = angleAsVector * (attackSize.y/2+1);
         RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)position, attackSize, anchorTransform.rotation.z, Vector2.zero,0,boxLayer);
         if(hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
-            player.GetHit(this, enemyStats.baseKnockback);
+            player.GetHit(this, enemyStats.baseKnockback, enemyStats.baseDamage * enemyStats.GetAttackDamageMod());
         return position;
     }
 }

@@ -10355,6 +10355,10 @@ PrefabInstance:
       propertyPath: m_projectionMatrixMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3356795498786898444, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4176316303073008701, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 0

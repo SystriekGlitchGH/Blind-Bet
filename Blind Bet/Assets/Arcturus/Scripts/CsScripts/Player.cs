@@ -34,6 +34,7 @@ public class Player
 
     public Weapon weapon;
     public float baseSpeed;
+    public float maxHealth, currentHealth;
     public float baseDashDistance, baseDashCooldown;
     public float baseParryTime, baseParryCooldown;
     public float baseAbilityDamage, baseAbilityKnockback, baseAbilityCooldown;
@@ -42,6 +43,8 @@ public class Player
         activeSuit = Card.Suit.blank;
         weapon = new Weapon(activeSuit);
         baseSpeed = 10;
+        maxHealth = 100;
+        currentHealth = maxHealth;
         baseDashDistance = 20;
         baseDashCooldown = 0.5f;
         baseParryTime = 0.2f;
@@ -183,7 +186,15 @@ public class Player
             passiveAbility1 = new Ability("Freezing Wheel", "n9d");
         else if(hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.diamond)
             passiveAbility1 = new Ability("Combustion Carbine", "b10d");
+        
+        
+
         return null;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
     }
     // modifiers
     public float GetAttackDamageMod()
@@ -217,6 +228,11 @@ public class Player
         float mod = 1;
         if(passiveAbility1.code == "n2d")
             mod += 0.2f;
+        return mod;
+    }
+    public float GetDamageMod()
+    {
+        float mod = 1;
         return mod;
     }
     public float GetAbilityDamageMod()
