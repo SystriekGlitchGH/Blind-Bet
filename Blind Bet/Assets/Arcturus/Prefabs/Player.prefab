@@ -98,7 +98,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
+  m_Size: {x: 1, y: 2}
   m_Direction: 0
 --- !u!1 &6771577383965539076
 GameObject:
@@ -407,22 +407,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d2e0a5d2d79984c86a64d16f925d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackVisual: {fileID: 3956911121127704462, guid: f8e26d177611f774f9d752c7f2cc82d8, type: 3}
-  whirlWindsVisual: {fileID: 1321799850685346842, guid: 0accdef67c64b8b4a8ea348e31c86d8a, type: 3}
-  continuousBlade: {fileID: 8947139249350368435, guid: 7c317834e97144744a6c377999803542, type: 3}
-  royalBomb: {fileID: 3466137760039807345, guid: 12b7e8f22eba7614587ccf3e38bdaec8, type: 3}
-  chillingBurstVisual: {fileID: 6601256298012924920, guid: 66a6d58c98ea8ce49950e52b364c0fcd, type: 3}
-  flashbangvisual: {fileID: 3738371165062611216, guid: 04b9c2d9f577451459e38c94f2db9f2e, type: 3}
-  spectralBullet: {fileID: 4824476325367056225, guid: ed69d1f06382cf44db5b36f7ccd8b659, type: 3}
-  soundWave: {fileID: 4059275071187259775, guid: 94fd72d067d8dd245bc360800dd55aee, type: 3}
-  shockingWheelVisual: {fileID: 2530724799537935841, guid: a89ea67383eb4d841a4526cfa2211fa9, type: 3}
-  freezingWheelVisual: {fileID: 6601256298012924920, guid: af9bc6ef80eff6b4fac2ae11a67faf56, type: 3}
-  royalBombAbility: {fileID: 3466137760039807345, guid: 03e32f085d7e26f499da2711a97aaba0, type: 3}
-  parryObject: {fileID: 2512939790457252142, guid: 1417442bbfc44164d829b909d2654f6c, type: 3}
-  diamondIndicator: {fileID: 4461802826959256870, guid: f5aad4c3cdeafb7448904115b8bafcdb, type: 3}
   rb2d: {fileID: 5662594919883955688}
   spriteRend: {fileID: 8451357699676093455}
   anchorTransform: {fileID: 1119027603952637780}
+  prefabLib: {fileID: -3836121528770696468, guid: 47cb42360dc3c0f418f814238e101ee9, type: 3}
   currentNode: {fileID: 0}
   acceleration: 90
   friction: 8

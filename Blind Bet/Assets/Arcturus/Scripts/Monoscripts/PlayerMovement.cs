@@ -10,23 +10,6 @@ using Random = System.Random;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //Visuals
-    [SerializeField] GameObject attackVisual;
-    [SerializeField] GameObject whirlWindsVisual;
-    [SerializeField] GameObject continuousBlade;
-    [SerializeField] GameObject royalBomb;
-    // ability sprites
-    [SerializeField] GameObject chillingBurstVisual;
-    [SerializeField] GameObject flashbangvisual;
-    [SerializeField] GameObject spectralBullet;
-    [SerializeField] GameObject soundWave;
-    [SerializeField] GameObject shockingWheelVisual;
-    [SerializeField] GameObject freezingWheelVisual;
-    [SerializeField] GameObject royalBombAbility;
-    [SerializeField] GameObject parryObject;
-    [SerializeField] GameObject diamondIndicator;
-    
-
     //Permanent components
 
     [Header("Components")]
@@ -34,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRend;
 	public Transform anchorTransform;
     public Player playerStats;
+    public PrefabLibrary prefabLib;
     public Node currentNode;
 
 	[Header("Movement stats")]
@@ -270,9 +254,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     // active abilities:
+    #region ABILITIES
     private void ActivateContinuousBlade()
     {
-        GameObject shot = Instantiate(continuousBlade, transform.position + (Vector3)DirectionToVector()* (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod()), anchorTransform.rotation);
+        GameObject shot = Instantiate(prefabLib.continuousBlade, transform.position + (Vector3)DirectionToVector()* (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod()), anchorTransform.rotation);
         if (shot.TryGetComponent(out ContBlade ct))
         {
             ct.bulletType = "player";
@@ -283,7 +268,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void ActivateRoyalBomb()
     {
-        GameObject shot = Instantiate(royalBomb, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
+        GameObject shot = Instantiate(prefabLib.royalBomb, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
         if (shot.TryGetComponent(out RoyalBomb rb))
         {
             rb.bulletType = "player";
@@ -298,7 +283,7 @@ public class PlayerMovement : MonoBehaviour
         float extraRotation = -10/2;
         extraRotation += 10 / (6 - 1) * rand.Next(1,6);
         Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,extraRotation);
-        GameObject shot = Instantiate(spectralBullet, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
+        GameObject shot = Instantiate(prefabLib.spectralBullet, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
         if (shot.TryGetComponent(out SpecSplinterBullet sb))
         {
             sb.bulletType = "player";
@@ -312,7 +297,7 @@ public class PlayerMovement : MonoBehaviour
         float extraRotation = -10/2;
         extraRotation += 10 / (6 - 1) * rand.Next(1,6);
         Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,extraRotation);
-        GameObject shot = Instantiate(royalBombAbility, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
+        GameObject shot = Instantiate(prefabLib.royalBombAbility, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
         if (shot.TryGetComponent(out RoyalBombAbility rb))
         {
             rb.bulletType = "player";
@@ -323,7 +308,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void ActivatePiercingDuet()
     {
-        GameObject shot = Instantiate(soundWave, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
+        GameObject shot = Instantiate(prefabLib.soundWave, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
         if (shot.TryGetComponent(out SoundWave sw))
         {
             sw.bulletType = "player";
@@ -332,10 +317,11 @@ public class PlayerMovement : MonoBehaviour
             sw.rb2d.AddForce(sw.rb2d.transform.up * 1000);
         }
     }
-    
+    #endregion
     #endregion
     #region IENUMERATORS
     // active abilities
+    #region ACTIVE AND DIAMOND
     private IEnumerator WhirlWindsTimer()
     {
         yield return new WaitForSeconds(0.2f);
@@ -348,7 +334,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         // makes an attack visual sprite when using a melee attack
-        GameObject attack = Instantiate(whirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        GameObject attack = Instantiate(prefabLib.whirlWindsVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale = new Vector2(6, 6) * playerStats.GetAttackSizeMod();
 
         yield return new WaitForSeconds(0.3f);
@@ -373,7 +359,7 @@ public class PlayerMovement : MonoBehaviour
         // makes an attack visual sprite when using a melee attack
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * rot), Mathf.Cos(Mathf.Deg2Rad * rot));
         Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod() / 2 + 1);
-        GameObject attack = Instantiate(attackVisual, pos + (Vector3)position, Quaternion.Euler(0,0,rot));
+        GameObject attack = Instantiate(prefabLib.attackVisual, pos + (Vector3)position, Quaternion.Euler(0,0,rot));
         attack.transform.localScale = playerStats.weapon.baseAttackSize * playerStats.GetAttackSizeMod();
 
         yield return new WaitForSeconds(0.1f);
@@ -406,7 +392,7 @@ public class PlayerMovement : MonoBehaviour
                 }
             }  
         }
-        GameObject attack = Instantiate(chillingBurstVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        GameObject attack = Instantiate(prefabLib.chillingBurstVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale = new Vector2(7, 7) * playerStats.GetAbilitySizeMod();
         yield return new WaitForSeconds(0.3f);
         Destroy(attack);
@@ -426,7 +412,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
-        GameObject attack = Instantiate(flashbangvisual, transform.position + (Vector3)angleAsVector, anchorTransform.rotation, transform);
+        GameObject attack = Instantiate(prefabLib.flashbangvisual, transform.position + (Vector3)angleAsVector, anchorTransform.rotation, transform);
         attack.transform.localScale = new Vector2(1, 1) * playerStats.GetAbilitySizeMod();
         yield return new WaitForSeconds(0.2f);
         Destroy(attack);
@@ -468,7 +454,7 @@ public class PlayerMovement : MonoBehaviour
                 enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod(), playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod() * 1.5f);
             }  
         }
-        GameObject attack = Instantiate(shockingWheelVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        GameObject attack = Instantiate(prefabLib.shockingWheelVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale = new Vector2(8, 8) * playerStats.GetAbilitySizeMod();
         yield return new WaitForSeconds(0.3f);
         Destroy(attack);
@@ -485,7 +471,7 @@ public class PlayerMovement : MonoBehaviour
                 enemy.enemyStats.AddEffect("frozen", 3);
             }  
         }
-        GameObject attack = Instantiate(freezingWheelVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
+        GameObject attack = Instantiate(prefabLib.freezingWheelVisual, transform.position, quaternion.Euler(Vector3.zero), transform);
         attack.transform.localScale = new Vector2(8, 8) * playerStats.GetAbilitySizeMod();
         yield return new WaitForSeconds(0.3f);
         Destroy(attack);
@@ -502,6 +488,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(2*playerStats.GetAbilityCooldownMod());
         canUseAbility1 = true;
     }
+    #endregion
     // not abilities
     private IEnumerator AttackTimer()
     {
@@ -527,7 +514,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()/2+1);
         if (isParrying) position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()+1);
-        GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        GameObject attack = Instantiate(prefabLib.attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
         if (isParrying) attack.transform.localScale = playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod()*2;
         else attack.transform.localScale = playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod();
         
@@ -552,7 +539,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()/2+1);
         if (isParrying) position = angleAsVector * (playerStats.weapon.baseAttackSize.y*playerStats.GetAttackSizeMod()+1);
-        GameObject attack = Instantiate(attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        GameObject attack = Instantiate(prefabLib.attackVisual, transform.position + (Vector3)position, anchorTransform.rotation, transform);
         if (isParrying) attack.transform.localScale = playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod()*2;
         else attack.transform.localScale = playerStats.weapon.baseAttackSize*playerStats.GetAttackSizeMod();
         
@@ -605,7 +592,7 @@ public class PlayerMovement : MonoBehaviour
         // makes the parry visual when parrying
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (playerStats.weapon.baseParrySize.y/2+1);
-        GameObject parry = Instantiate(parryObject, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
+        GameObject parry = Instantiate(prefabLib.parryObject, transform.position + (Vector3)position, anchorTransform.rotation, anchorTransform);
         parry.transform.localScale = playerStats.weapon.baseParrySize;
         // to here
         yield return new WaitForSeconds(0.1f);
@@ -617,7 +604,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator DiamondIndicatorTimer()
     {
-        GameObject indicator = Instantiate(diamondIndicator, transform.position, diamondIndicator.transform.rotation, transform);
+        GameObject indicator = Instantiate(prefabLib.diamondIndicator, transform.position, prefabLib.diamondIndicator.transform.rotation, transform);
         yield return new WaitForSeconds(0.3f);
         Destroy(indicator);
     }
