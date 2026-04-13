@@ -133,11 +133,11 @@ public class Player
         activeHand.cards[3] = new Card(8, Card.Suit.diamond);
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
-        passiveHand1.cards[0] = new Card(10, Card.Suit.diamond);
-        passiveHand1.cards[1] = new Card(10, Card.Suit.diamond);
-        passiveHand1.cards[2] = new Card(10, Card.Suit.diamond);
-        passiveHand1.cards[3] = new Card(14, Card.Suit.diamond);
-        passiveHand1.cards[4] = new Card(14, Card.Suit.diamond);
+        passiveHand1.cards[0] = new Card(4, Card.Suit.heart);
+        passiveHand1.cards[1] = new Card(4, Card.Suit.heart);
+        passiveHand1.cards[2] = new Card(7, Card.Suit.heart);
+        passiveHand1.cards[3] = new Card(8, Card.Suit.heart);
+        passiveHand1.cards[4] = new Card(9, Card.Suit.spade);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -166,6 +166,7 @@ public class Player
     }
     public Ability SetPassiveAbility1(Hand hand)
     {
+        // diamond
         if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.diamond)
             passiveAbility1 = new Ability("", "n1d");
         else if(hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.diamond)
@@ -186,8 +187,28 @@ public class Player
             passiveAbility1 = new Ability("Freezing Wheel", "n9d");
         else if(hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.diamond)
             passiveAbility1 = new Ability("Combustion Carbine", "b10d");
-        
-        
+        // heart
+        else if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("", "n1h");
+        else if (hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("Dash Jack", "n2h");
+        else if (hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("Hyper Dash", "b3h");
+        else if (hand.type == HandType.kind3 && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("Healing Sigil", "b4h");
+        else if (hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("Parasite Blade", "n5h");
+        else if (hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("Suggestive Charm", "b6h");
+        else if (hand.type == HandType.fullhouse && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("Accult Sacrifice", "b7h");
+        else if (hand.type == HandType.kind4 && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("Shielding Ward", "n8h");
+        else if (hand.type == HandType.kind5 && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("Flash Ward", "n9h");
+        else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility1 = new Ability("Draining Charm", "b10h");
+
 
         return null;
     }
@@ -258,6 +279,13 @@ public class Player
     public float GetAbilityEffectDurationMod()
     {
         float mod = 1;
+        return mod;
+    }
+    public float GetDashCooldownMod()
+    {
+        float mod = 1;
+        if (passiveAbility1.code == "n2h")
+            mod -= 0.25f;
         return mod;
     }
 }

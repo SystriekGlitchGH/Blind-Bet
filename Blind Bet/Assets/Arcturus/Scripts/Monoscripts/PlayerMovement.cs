@@ -555,7 +555,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
         hasIFrames = false;
-        yield return new WaitForSeconds(playerStats.baseDashCooldown);
+        yield return new WaitForSeconds(playerStats.baseDashCooldown * playerStats.GetDashCooldownMod());
         canDash = true;
     }
     // this is needed to make sure the dash cooldown doesn't break
