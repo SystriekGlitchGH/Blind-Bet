@@ -10419,6 +10419,14 @@ PrefabInstance:
       propertyPath: currentNode
       value: 
       objectReference: {fileID: 381069776}
+    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: baseColor.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: currentColor.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

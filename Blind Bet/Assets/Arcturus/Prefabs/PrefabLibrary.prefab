@@ -56,4 +56,5 @@ MonoBehaviour:
   spectralBullet: {fileID: 4824476325367056225, guid: ed69d1f06382cf44db5b36f7ccd8b659, type: 3}
   soundWave: {fileID: 4059275071187259775, guid: 94fd72d067d8dd245bc360800dd55aee, type: 3}
   royalBombAbility: {fileID: 3466137760039807345, guid: 03e32f085d7e26f499da2711a97aaba0, type: 3}
+  charmingBullet: {fileID: 4824476325367056225, guid: ee0f73f0d7e02954e947295bc24d7ab6, type: 3}
   diamondIndicator: {fileID: 4461802826959256870, guid: f5aad4c3cdeafb7448904115b8bafcdb, type: 3}

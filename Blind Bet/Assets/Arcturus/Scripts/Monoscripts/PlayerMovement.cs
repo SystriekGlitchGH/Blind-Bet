@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Attack stats")]
     private bool isDashing, canDash = true; // checks if you are currently dashing and are allowed to dash
+    private bool hyperDash;
+
     private bool isParrying, canParry = true; // checks if you are parrying and if you can parry
     private bool isLunging; // checks if you are currently lunging and are allowed to lunge
     public LayerMask attackLayer; // the layers that your attack can hit
@@ -40,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
     private bool buttonHeld; // checks if the attack button is held for hold abiliies
     private float buttonHeldTime;
     private bool indicatorShown;
+
+    [Header("Feedback Colors")]
+    public Color32 baseColor;
+    public Color32 currentColor;
 
     [Header("Ability stats")]
     private bool canUseAbility1 = true;
@@ -110,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log(playerStats.currentHealth);
         FindDirection(); // gets the direction from the vector
         FindAngle(); // gets the angle from the direction
         anchorTransform.eulerAngles = new Vector3(0,0,attackAngle); // uses angle to change the achor transform
@@ -123,6 +130,22 @@ public class PlayerMovement : MonoBehaviour
                 indicatorShown = true;
             }
         }
+        playerStats.CheckEffects();
+        if (playerStats.effectManager.effects.Count != 0)
+        {
+            for (int i = 0; i < playerStats.effectManager.effects.Count; i++)
+            {
+                playerStats.effectManager.effects[i].elapsedTime += Time.deltaTime;
+                if (playerStats.effectManager.effects[i].elapsedTime >= playerStats.effectManager.effects[i].duration)
+                {
+                    playerStats.effectManager.effects.Remove(playerStats.effectManager.effects[i]);
+                    playerStats.CheckEffects();
+                    CheckCurrentColor();
+                    spriteRend.color = currentColor;
+                }
+            }
+        }
+        CheckCurrentColor();
     }
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
     private void OnTriggerEnter2D(Collider2D collision)
@@ -223,16 +246,24 @@ public class PlayerMovement : MonoBehaviour
     {
         if (ctx.performed && canUseAbility1)
         {
+            // diamonds
             if (playerStats.passiveAbility1.code == "b3d")
                 StartCoroutine(ChillingBurstTimer());
-            else if(playerStats.passiveAbility1.code == "b4d")
+            else if (playerStats.passiveAbility1.code == "b4d")
                 StartCoroutine(FlashBangTimer());
-            else if(playerStats.passiveAbility1.code == "b6d")
+            else if (playerStats.passiveAbility1.code == "b6d")
                 StartCoroutine(SplinterCarbineTimer());
-            else if(playerStats.passiveAbility1.code == "b7d")
+            else if (playerStats.passiveAbility1.code == "b7d")
                 StartCoroutine(PiercingDuetTimer());
-            else if(playerStats.passiveAbility1.code == "b10d")
+            else if (playerStats.passiveAbility1.code == "b10d")
                 StartCoroutine(CombustionCarbineTimer());
+            // hearts
+            else if (playerStats.passiveAbility1.code == "b3h")
+                StartCoroutine(HyperDashTimer());
+            else if (playerStats.passiveAbility1.code == "b4h")
+                StartCoroutine(HealingSigilTimer());
+            else if (playerStats.passiveAbility1.code == "b6h")
+                ActivateSuggestiveCharm();
             StartCoroutine(Ability1Timer());
         }
     }
@@ -319,6 +350,24 @@ public class PlayerMovement : MonoBehaviour
             sw.direction = DirectionToVector();
             sw.rb2d.AddForce(sw.rb2d.transform.up * 1000);
         }
+    }
+    private void ActivateSuggestiveCharm()
+    {
+        float extraRotation = -15 / 2;
+        for (int i = 0; i < 2; i++)
+        {
+            Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0, 0, extraRotation);
+            GameObject shot = Instantiate(prefabLib.charmingBullet, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
+            if (shot.TryGetComponent(out CharmingBullet cb))
+            {
+                cb.bulletType = "player";
+                cb.pm = this;
+                cb.direction = DirectionToVector();
+                cb.rb2d.AddForce(cb.rb2d.transform.up * 1300);
+            }
+            extraRotation += 15 / (2 - 1);
+        }
+        
     }
     #endregion
     #endregion
@@ -477,6 +526,24 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     #endregion
+    // hearts
+    private IEnumerator HyperDashTimer()
+    {
+        hyperDash = true;
+        yield return new WaitForSeconds(3);
+        hyperDash = false;
+    }
+    private IEnumerator HealingSigilTimer()
+    {
+        playerStats.Heal(30);
+        spriteRend.color = new Color32(0, 150, 0, 255);
+        yield return new WaitForSeconds(0.1f);
+        spriteRend.color = currentColor;
+    }
+    //private IEnumerator SuggestiveCharmTimer()
+    //{
+
+    //}
     // not abilities
     private IEnumerator Ability1Timer()
     {
@@ -484,6 +551,8 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(6*playerStats.GetAbilityCooldownMod());
         if(playerStats.passiveAbility1.code == "b7d")
             yield return new WaitForSeconds(5);
+        if (playerStats.passiveAbility1.code == "b3h")
+            yield return new WaitForSeconds(3);
         canUseAbility1 = true;
     }
     private IEnumerator AttackTimer()
@@ -502,6 +571,10 @@ public class PlayerMovement : MonoBehaviour
                 if (!enemy.enemyStats.hasPoison && playerStats.passiveAbility1.code == "n5d")
                 {
                     enemy.enemyStats.AddEffect("poison", 6 * playerStats.GetAbilityEffectDurationMod());
+                }
+                if(playerStats.passiveAbility1.code == "n5h")
+                {
+                    playerStats.Heal(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.1f);
                 }
             }
             
@@ -555,7 +628,8 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
         hasIFrames = false;
-        yield return new WaitForSeconds(playerStats.baseDashCooldown * playerStats.GetDashCooldownMod());
+        if(hyperDash) yield return new WaitForSeconds(playerStats.baseDashCooldown * playerStats.GetDashCooldownMod() *0.2f);
+        else yield return new WaitForSeconds(playerStats.baseDashCooldown * playerStats.GetDashCooldownMod());
         canDash = true;
     }
     // this is needed to make sure the dash cooldown doesn't break
@@ -651,7 +725,26 @@ public class PlayerMovement : MonoBehaviour
         if(playerDirection == Direction.SouthWest) return new Vector2(-0.7071f,-0.7071f);
         return new Vector2(0,0);
     }
-    // makes a boxcastAll that is the size of the weapon
+    private void CheckCurrentColor()
+    {
+        Color32 setColor = baseColor;
+        if (playerStats.hasCharm)
+            setColor = CombineColors(setColor, new Color32(255, 70, 190, 255));
+        if (playerStats.hasChill)
+            setColor = CombineColors(setColor, new Color32(80, 190, 255, 255));
+        if (playerStats.hasFrozen)
+            setColor = CombineColors(setColor, new Color32(170, 220, 255, 255));
+        if (playerStats.hasPoison)
+            setColor = CombineColors(setColor, new Color32(50, 220, 70, 255));
+        currentColor = setColor;
+    }
+    private Color32 CombineColors(Color32 color1, Color32 color2)
+    {
+        int r = (color1.r + color2.r) / 2;
+        int g = (color1.g + color2.g) / 2;
+        int b = (color1.b + color2.b) / 2;
+        return new Color32((byte)r, (byte)g, (byte)b, 255);
+    }
     private RaycastHit2D[] MakeBoxCastAll(string type)
     {
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));

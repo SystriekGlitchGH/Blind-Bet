@@ -32,6 +32,9 @@ public class Player
 
     public readonly Card blankCard = new Card(0,Card.Suit.blank);
 
+    public EffectManager effectManager = new EffectManager();
+    public bool hasStun, hasBurn, hasPoison, hasSlow, hasChill, hasFrozen, hasRecall, hasCharm;
+    
     public Weapon weapon;
     public float baseSpeed;
     public float maxHealth, currentHealth;
@@ -58,7 +61,38 @@ public class Player
         FillHandBlank(passiveHand1);
         FillHandBlank(passiveHand2);
     }
-    
+    public void CheckEffects()
+    {
+        if (effectManager.effects.FindIndex(x => x.name == "stun") != -1)
+            hasStun = true;
+        else hasStun = false;
+        if (effectManager.effects.FindIndex(x => x.name == "burn") != -1)
+            hasBurn = true;
+        else hasBurn = false;
+        if (effectManager.effects.FindIndex(x => x.name == "poison") != -1)
+            hasPoison = true;
+        else hasPoison = false;
+        if (effectManager.effects.FindIndex(x => x.name == "slow") != -1)
+            hasSlow = true;
+        else hasSlow = false;
+        if (effectManager.effects.FindIndex(x => x.name == "chill") != -1)
+            hasChill = true;
+        else hasChill = false;
+        if (effectManager.effects.FindIndex(x => x.name == "frozen") != -1)
+            hasFrozen = true;
+        else hasFrozen = false;
+        if (effectManager.effects.FindIndex(x => x.name == "recall") != -1)
+            hasRecall = true;
+        else hasRecall = false;
+        if (effectManager.effects.FindIndex(x => x.name == "charm") != -1)
+            hasCharm = true;
+        else hasCharm = false;
+    }
+    public void AddEffect(string name, float time)
+    {
+        effectManager.effects.Add(new Effect(name, time));
+    }
+
     // fills the selected hand with blank cards
     public void FillHandBlank(Hand hand)
     {
@@ -134,10 +168,10 @@ public class Player
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
         passiveHand1.cards[0] = new Card(4, Card.Suit.heart);
-        passiveHand1.cards[1] = new Card(4, Card.Suit.heart);
-        passiveHand1.cards[2] = new Card(7, Card.Suit.heart);
-        passiveHand1.cards[3] = new Card(8, Card.Suit.heart);
-        passiveHand1.cards[4] = new Card(9, Card.Suit.spade);
+        passiveHand1.cards[1] = new Card(5, Card.Suit.heart);
+        passiveHand1.cards[2] = new Card(6, Card.Suit.heart);
+        passiveHand1.cards[3] = new Card(7, Card.Suit.heart);
+        passiveHand1.cards[4] = new Card(8, Card.Suit.heart);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -216,6 +250,14 @@ public class Player
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+    }
+    public void Heal(float heal)
+    {
+        currentHealth += heal;
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
     }
     // modifiers
     public float GetAttackDamageMod()
