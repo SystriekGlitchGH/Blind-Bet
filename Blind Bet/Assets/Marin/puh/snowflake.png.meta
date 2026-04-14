@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: b7b39514bc5979842bc50f9e50e8768e
+guid: d63eca612a794674a970aca7b01743e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5472073491291733340
-    second: slime ballc - Copy_0
+      213: -7167651861497909295
+    second: snowflake_0
+  - first:
+      213: 1339180213199906772
+    second: snowflake_1
+  - first:
+      213: -5030258138914453756
+    second: snowflake_2
+  - first:
+      213: 220824626710525803
+    second: snowflake_3
+  - first:
+      213: -6735826701225231319
+    second: snowflake_4
+  - first:
+      213: -5080533027576656934
+    second: snowflake_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,10 +87,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slime ballc - Copy_0
+      name: snowflake_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 61
-        width: 116
-        height: 85
+        x: 33
+        y: 132
+        width: 23
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +156,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5d764919d5b0fb40800000000000000
-      internalID: 5472073491291733340
+      spriteID: 1dfefb99b92678c90800000000000000
+      internalID: -7167651861497909295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowflake_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 68
+        width: 89
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d723020f49b59210800000000000000
+      internalID: 1339180213199906772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowflake_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 119
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4078c75cfdee03ab0800000000000000
+      internalID: -5030258138914453756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowflake_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 98
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b673db8f3d6801300800000000000000
+      internalID: 220824626710525803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowflake_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 60
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cf0ec9d498582a0800000000000000
+      internalID: -6735826701225231319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowflake_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 45
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb47a511225e79b0800000000000000
+      internalID: -5080533027576656934
       vertices: []
       indices: 
       edges: []
@@ -160,8 +285,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      slime ballc - Copy_0: 5472073491291733340
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
