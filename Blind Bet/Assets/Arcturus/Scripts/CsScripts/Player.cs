@@ -38,7 +38,7 @@ public class Player
     public Weapon weapon;
     public float baseSpeed;
     public float maxHealth, currentHealth;
-    public float baseDashDistance, baseDashCooldown;
+    public float baseDashDistance, baseDashCooldown, baseDashDamage;
     public float baseParryTime, baseParryCooldown;
     public float baseAbilityDamage, baseAbilityKnockback, baseAbilityCooldown;
 
@@ -52,6 +52,7 @@ public class Player
         currentHealth = maxHealth;
         baseDashDistance = 20;
         baseDashCooldown = 0.5f;
+        baseDashDamage = 5;
         baseParryTime = 0.2f;
         baseParryCooldown = 1;
         baseAbilityDamage = 10;
@@ -169,11 +170,11 @@ public class Player
         activeHand.cards[3] = new Card(8, Card.Suit.diamond);
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
-        passiveHand1.cards[0] = new Card(4, Card.Suit.heart);
-        passiveHand1.cards[1] = new Card(4, Card.Suit.heart);
-        passiveHand1.cards[2] = new Card(4, Card.Suit.heart);
-        passiveHand1.cards[3] = new Card(4, Card.Suit.heart);
-        passiveHand1.cards[4] = new Card(5, Card.Suit.heart);
+        passiveHand1.cards[0] = new Card(4, Card.Suit.club);
+        passiveHand1.cards[1] = new Card(4, Card.Suit.club);
+        passiveHand1.cards[2] = new Card(6, Card.Suit.club);
+        passiveHand1.cards[3] = new Card(6, Card.Suit.club);
+        passiveHand1.cards[4] = new Card(8, Card.Suit.spade);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -235,7 +236,7 @@ public class Player
         else if (hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.heart)
             passiveAbility1 = new Ability("Parasite Blade", "n5h");
         else if (hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.heart)
-            passiveAbility1 = new Ability("Suggestive Charm", "b6h");
+            passiveAbility1 = new Ability("Withering Pistol", "b6h");
         else if (hand.type == HandType.fullhouse && GetHandSuit(hand) == Card.Suit.heart)
             passiveAbility1 = new Ability("Accult Sacrifice", "b7h");
         else if (hand.type == HandType.kind4 && GetHandSuit(hand) == Card.Suit.heart)
@@ -243,7 +244,28 @@ public class Player
         else if (hand.type == HandType.kind5 && GetHandSuit(hand) == Card.Suit.heart)
             passiveAbility1 = new Ability("Flash Ward", "n9h");
         else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.heart)
-            passiveAbility1 = new Ability("Draining Charm", "b10h");
+            passiveAbility1 = new Ability("Draining Mortar", "b10h");
+        // club
+        else if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("", "n1h");
+        else if (hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("Slicing Body", "n2c");
+        else if (hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("Unyielding Charge", "b3c");
+        else if (hand.type == HandType.kind3 && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("Earth Break", "b4c");
+        else if (hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("Halting Blade", "n5c");
+        else if (hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("Roaring Shotgun", "b6c");
+        else if (hand.type == HandType.fullhouse && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("Hit and Run", "b7c");
+        else if (hand.type == HandType.kind4 && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("Tectonic Assault", "n8c");
+        else if (hand.type == HandType.kind5 && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("Tectonic Charge", "n9c");
+        else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility1 = new Ability("Holy Shotgun", "b10c");
 
 
         return null;
@@ -338,6 +360,13 @@ public class Player
         float mod = 1;
         if (passiveAbility1.code == "n2h")
             mod -= 0.25f;
+        return mod;
+    }
+    public float GetDashDamageMod()
+    {
+        float mod = 1;
+        if (passiveAbility1.code == "n2c")
+            mod += 0.2f;
         return mod;
     }
 }

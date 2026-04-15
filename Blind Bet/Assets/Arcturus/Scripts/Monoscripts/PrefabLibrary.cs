@@ -30,7 +30,8 @@ public class PrefabLibrary : MonoBehaviour
     public GameObject spectralBullet;
     public GameObject soundWave;
     public GameObject royalBombAbility;
-    public GameObject charmingBullet;
+    public GameObject witheringBullet;
+    public GameObject witheringBomb;
 
     [Header("Indicators")]
     public GameObject diamondIndicator;

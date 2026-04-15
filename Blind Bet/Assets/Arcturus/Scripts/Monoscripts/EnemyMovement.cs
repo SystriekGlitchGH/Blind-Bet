@@ -193,8 +193,8 @@ public class EnemyMovement : MonoBehaviour
     {
         StartCoroutine(GetHitTimer());
         enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
-        //Debug.Log(enemyStats.currentHealth);
-        if(enemyStats.currentHealth <= 0)
+        Debug.Log(enemyStats.currentHealth);
+        if (enemyStats.currentHealth <= 0)
             Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
     }
