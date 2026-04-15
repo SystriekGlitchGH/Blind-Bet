@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Ability stats")]
     private bool canUseAbility1 = true;
+    private bool isCharging;
 
     [Header("Getting Attacked")]
     private bool hasKnockback;
@@ -103,6 +104,15 @@ public class PlayerMovement : MonoBehaviour
             rb2d.linearVelocity = Vector2.zero;
             return;
         }
+        if (isCharging)
+        {
+            rb2d.linearVelocity = rb2d.linearVelocity * 5;
+            Vector2 newChargeVelocity = new Vector2(directionX * acceleration, directionY * acceleration/2);
+            rb2d.AddForce(newChargeVelocity);
+            Vector2 chargeVelocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), playerStats.baseSpeed * playerStats.GetSpeedMod()*1.5f);
+            rb2d.linearVelocity = chargeVelocity;
+            return;
+        }
         // adding acceleration to the directions
         Vector2 newVelocity = new Vector2(directionX * acceleration, directionY * acceleration);
         // adding the force to the rigidbody2d
@@ -117,7 +127,6 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(playerStats.currentHealth);
         FindDirection(); // gets the direction from the vector
         FindAngle(); // gets the angle from the direction
         anchorTransform.eulerAngles = new Vector3(0,0,attackAngle); // uses angle to change the achor transform
@@ -162,6 +171,18 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("Spade"))
         {
             playerStats.activeSuit = Card.Suit.spade;
+        }
+        if (collision.CompareTag("Enemy"))
+        {
+            EnemyMovement enemy = collision.GetComponent<EnemyMovement>();
+            if (isDashing)
+            {
+                enemy.GetHit(this,0,playerStats.baseDashDamage*playerStats.GetDashDamageMod());
+            }
+            if (isCharging)
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback / 2, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod());
+            }
         }
         playerStats.weapon = new Weapon(playerStats.activeSuit);
     }
@@ -275,9 +296,15 @@ public class PlayerMovement : MonoBehaviour
             else if (playerStats.passiveAbility1.code == "b4h")
                 ActivateHealingSigil();
             else if (playerStats.passiveAbility1.code == "b6h")
-                ActivateWitheringMortar();
+                ActivateWitheringPistol();
             else if (playerStats.passiveAbility1.code == "b7h")
                 StartCoroutine(AccultSacrificeTimer());
+            else if (playerStats.passiveAbility1.code == "b10h")
+                ActivateDrainingMortar();
+            // clubs
+            else if (playerStats.passiveAbility1.code == "b3c")
+                StartCoroutine(UnyieldingChargeTimer());
+
             StartCoroutine(Ability1Timer());
         }
     }
@@ -370,13 +397,13 @@ public class PlayerMovement : MonoBehaviour
             sw.rb2d.AddForce(sw.rb2d.transform.up * 1000);
         }
     }
-    private void ActivateWitheringMortar()
+    private void ActivateWitheringPistol()
     {
         float extraRotation = -15 / 2;
         for (int i = 0; i < 2; i++)
         {
             Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0, 0, extraRotation);
-            GameObject shot = Instantiate(prefabLib.charmingBullet, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
+            GameObject shot = Instantiate(prefabLib.witheringBullet, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
             if (shot.TryGetComponent(out CharmingBullet cb))
             {
                 cb.bulletType = "player";
@@ -387,6 +414,24 @@ public class PlayerMovement : MonoBehaviour
             extraRotation += 15 / (2 - 1);
         }
         
+    }
+    private void ActivateDrainingMortar()
+    {
+        float extraRotation = -15 / 2;
+        for (int i = 0; i < 2; i++)
+        {
+            Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0, 0, extraRotation);
+            GameObject shot = Instantiate(prefabLib.witheringBomb, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
+            if (shot.TryGetComponent(out WitheringBomb wb))
+            {
+                wb.bulletType = "player";
+                wb.pm = this;
+                wb.direction = DirectionToVector();
+                wb.rb2d.AddForce(wb.rb2d.transform.up * 1300);
+            }
+            extraRotation += 15 / (2 - 1);
+        }
+
     }
     private void ActivateHealingSigil()
     {
@@ -571,6 +616,13 @@ public class PlayerMovement : MonoBehaviour
         playerStats.UpdateMaxHealth(-30);
         playerStats.TakeDamage(15);
     }
+    // clubs
+    private IEnumerator UnyieldingChargeTimer()
+    {
+        isCharging = true;
+        yield return new WaitForSeconds(4);
+        isCharging = false;
+    }
     // not abilities
     private IEnumerator Ability1Timer()
     {
@@ -584,6 +636,9 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(6);
         if(playerStats.passiveAbility1.code == "n8h")
             yield return new WaitForSeconds(10);
+        if (playerStats.passiveAbility1.code == "b8c")
+            yield return new WaitForSeconds(4);
+
         canUseAbility1 = true;
     }
     private IEnumerator AttackTimer()

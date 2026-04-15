@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4790816985903867142}
   - component: {fileID: -731935805028956094}
   m_Layer: 0
-  m_Name: Charming Bullet
+  m_Name: WitheringBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
