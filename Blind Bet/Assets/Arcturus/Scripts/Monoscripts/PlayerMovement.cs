@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -209,6 +210,17 @@ public class PlayerMovement : MonoBehaviour
                 buttonHeldTime = 0;
                 StartCoroutine(FreezingWheelTimer());
             }
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8h")
+            {
+                buttonHeldTime = 0;
+                StartCoroutine(ShieldingWardTimer());
+            }
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9h")
+            {
+                buttonHeldTime = 0;
+                StartCoroutine(ShieldingWardTimer());
+                StartCoroutine(HyperDashTimer());
+            }
         }
     }
     // input for parrying
@@ -261,9 +273,11 @@ public class PlayerMovement : MonoBehaviour
             else if (playerStats.passiveAbility1.code == "b3h")
                 StartCoroutine(HyperDashTimer());
             else if (playerStats.passiveAbility1.code == "b4h")
-                StartCoroutine(HealingSigilTimer());
+                ActivateHealingSigil();
             else if (playerStats.passiveAbility1.code == "b6h")
-                ActivateSuggestiveCharm();
+                ActivateWitheringMortar();
+            else if (playerStats.passiveAbility1.code == "b7h")
+                StartCoroutine(AccultSacrificeTimer());
             StartCoroutine(Ability1Timer());
         }
     }
@@ -286,6 +300,11 @@ public class PlayerMovement : MonoBehaviour
             playerStats.TakeDamage(damage * playerStats.GetDamageMod());
             rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
         }
+    }
+    public void GetHealed(float healAmount)
+    {
+        StartCoroutine(GetHealedTimer());
+        playerStats.Heal(healAmount);
     }
     // active abilities:
     #region ABILITIES
@@ -351,7 +370,7 @@ public class PlayerMovement : MonoBehaviour
             sw.rb2d.AddForce(sw.rb2d.transform.up * 1000);
         }
     }
-    private void ActivateSuggestiveCharm()
+    private void ActivateWitheringMortar()
     {
         float extraRotation = -15 / 2;
         for (int i = 0; i < 2; i++)
@@ -368,6 +387,10 @@ public class PlayerMovement : MonoBehaviour
             extraRotation += 15 / (2 - 1);
         }
         
+    }
+    private void ActivateHealingSigil()
+    {
+        GetHealed(20);
     }
     #endregion
     #endregion
@@ -533,17 +556,21 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(3);
         hyperDash = false;
     }
-    private IEnumerator HealingSigilTimer()
+    private IEnumerator AccultSacrificeTimer()
     {
-        playerStats.Heal(30);
-        spriteRend.color = new Color32(0, 150, 0, 255);
-        yield return new WaitForSeconds(0.1f);
-        spriteRend.color = currentColor;
+        int initialKills = playerStats.kills;
+        yield return new WaitForSeconds(6);
+        int finalKills = playerStats.kills;
+        GetHealed(10*(finalKills-initialKills));
     }
-    //private IEnumerator SuggestiveCharmTimer()
-    //{
-
-    //}
+    private IEnumerator ShieldingWardTimer()
+    {
+        playerStats.UpdateMaxHealth(30);
+        playerStats.Heal(30);
+        yield return new WaitForSeconds(10);
+        playerStats.UpdateMaxHealth(-30);
+        playerStats.TakeDamage(15);
+    }
     // not abilities
     private IEnumerator Ability1Timer()
     {
@@ -553,6 +580,10 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(5);
         if (playerStats.passiveAbility1.code == "b3h")
             yield return new WaitForSeconds(3);
+        if(playerStats.passiveAbility1.code == "b7h")
+            yield return new WaitForSeconds(6);
+        if(playerStats.passiveAbility1.code == "n8h")
+            yield return new WaitForSeconds(10);
         canUseAbility1 = true;
     }
     private IEnumerator AttackTimer()
@@ -654,6 +685,12 @@ public class PlayerMovement : MonoBehaviour
         hasKnockback = false;
         yield return new WaitForSeconds(iFrameTime - knockbackTime);
         hasIFrames = false;
+    }
+    private IEnumerator GetHealedTimer()
+    {
+        spriteRend.color = new Color32(0,150,0,255);
+        yield return new WaitForSeconds(0.1f);
+        spriteRend.color = currentColor;
     }
     private IEnumerator ParryTimer()
     {

@@ -57,6 +57,10 @@ public class Enemy
     {
         currentHealth -= damage;
     }
+    public void TakeMaxDamage(float damage)
+    {
+        maxHealth -= damage;
+    }
     public void Heal(float healAmount)
     {
         currentHealth += healAmount;

@@ -186,6 +186,7 @@ public class EnemyMovement : MonoBehaviour
     #region ACTIVATION METHODS
     public void Die()
     {
+        enemyTarget.playerStats.kills++;
         Destroy(transform.parent.gameObject);
     }
     public void GetHit(PlayerMovement attacker, float knockback, float damage)

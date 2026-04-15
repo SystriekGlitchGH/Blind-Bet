@@ -9,8 +9,8 @@ public class CharmingBullet : Bullet
             if (collision.CompareTag("Enemy"))
             {
                 EnemyMovement enemy = collision.GetComponent<EnemyMovement>();
-                enemy.GetHit(pm, 0, pm.playerStats.baseAbilityDamage * pm.playerStats.GetAbilityDamageMod() * 0.6f);
-                enemy.enemyStats.AddEffect("charm", 3 * pm.playerStats.GetAbilityEffectDurationMod());
+                enemy.GetHit(pm, 0, pm.playerStats.baseAbilityDamage * pm.playerStats.GetAbilityDamageMod() * 2f);
+                enemy.enemyStats.TakeMaxDamage(pm.playerStats.baseAbilityDamage * pm.playerStats.GetAbilityDamageMod());
                 enemiesHit++;
                 if (enemiesHit == 1)
                 {

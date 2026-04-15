@@ -41,6 +41,8 @@ public class Player
     public float baseDashDistance, baseDashCooldown;
     public float baseParryTime, baseParryCooldown;
     public float baseAbilityDamage, baseAbilityKnockback, baseAbilityCooldown;
+
+    public int kills;
     public Player()
     {
         activeSuit = Card.Suit.blank;
@@ -168,10 +170,10 @@ public class Player
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
         passiveHand1.cards[0] = new Card(4, Card.Suit.heart);
-        passiveHand1.cards[1] = new Card(5, Card.Suit.heart);
-        passiveHand1.cards[2] = new Card(6, Card.Suit.heart);
-        passiveHand1.cards[3] = new Card(7, Card.Suit.heart);
-        passiveHand1.cards[4] = new Card(8, Card.Suit.heart);
+        passiveHand1.cards[1] = new Card(4, Card.Suit.heart);
+        passiveHand1.cards[2] = new Card(4, Card.Suit.heart);
+        passiveHand1.cards[3] = new Card(4, Card.Suit.heart);
+        passiveHand1.cards[4] = new Card(5, Card.Suit.heart);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -250,6 +252,10 @@ public class Player
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
     }
     public void Heal(float heal)
     {
@@ -258,6 +264,10 @@ public class Player
         {
             currentHealth = maxHealth;
         }
+    }
+    public void UpdateMaxHealth(float amount)
+    {
+        maxHealth += amount;
     }
     // modifiers
     public float GetAttackDamageMod()
