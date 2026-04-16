@@ -51,6 +51,7 @@ MonoBehaviour:
   flashbangvisual: {fileID: 3738371165062611216, guid: 04b9c2d9f577451459e38c94f2db9f2e, type: 3}
   shockingWheelVisual: {fileID: 2530724799537935841, guid: a89ea67383eb4d841a4526cfa2211fa9, type: 3}
   freezingWheelVisual: {fileID: 6601256298012924920, guid: af9bc6ef80eff6b4fac2ae11a67faf56, type: 3}
+  groundRupture: {fileID: 4446395614748682493, guid: f5bdd153eadc9ee42a7ad14d252d0f2f, type: 3}
   continuousBlade: {fileID: 8947139249350368435, guid: 7c317834e97144744a6c377999803542, type: 3}
   royalBomb: {fileID: 3466137760039807345, guid: 12b7e8f22eba7614587ccf3e38bdaec8, type: 3}
   spectralBullet: {fileID: 4824476325367056225, guid: ed69d1f06382cf44db5b36f7ccd8b659, type: 3}

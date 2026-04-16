@@ -304,6 +304,8 @@ public class PlayerMovement : MonoBehaviour
             // clubs
             else if (playerStats.passiveAbility1.code == "b3c")
                 StartCoroutine(UnyieldingChargeTimer());
+            else if (playerStats.passiveAbility1.code == "b4c")
+                StartCoroutine(EarthBreakTimer());
 
             StartCoroutine(Ability1Timer());
         }
@@ -623,6 +625,53 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(4);
         isCharging = false;
     }
+    private IEnumerator EarthBreakTimer()
+    {
+        RaycastHit2D[] hits1 = MakeBoxCastAll("rupture",Vector3.zero,0);
+        RaycastHit2D[] hits2 = MakeBoxCastAll("rupture", Vector3.zero,45);
+        RaycastHit2D[] hits3 = MakeBoxCastAll("rupture", Vector3.zero,-45);
+        foreach (RaycastHit2D hit in hits1)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod() * 2, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod());
+            }
+        }
+        foreach (RaycastHit2D hit in hits2)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod() * 2, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod());
+            }
+        }
+        foreach (RaycastHit2D hit in hits3)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod() * 2, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod());
+            }
+        }
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
+        Vector2 position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        GameObject attack1 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        attack1.transform.localScale = new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod();
+
+        //angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle+45)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle + 45)));
+        //position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        //GameObject attack2 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        //attack2.transform.localScale = new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod();
+
+        //angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle - 45)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle - 45)));
+        //position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        //GameObject attack3 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        //attack3.transform.localScale = new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod();
+        
+        yield return new WaitForSeconds(0.1f);
+        Destroy(attack1);
+        //Destroy(attack2);
+        //Destroy(attack3);
+
+    }
     // not abilities
     private IEnumerator Ability1Timer()
     {
@@ -872,6 +921,12 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector2 position = angleAsVector * (playerStats.weapon.baseAttackSize.y * playerStats.GetAttackSizeMod() / 2 + 1);
             return Physics2D.BoxCastAll(pos + (Vector3)position, playerStats.weapon.baseAttackSize * playerStats.GetAttackSizeMod(), rot, Vector2.zero, 0, attackLayer);
+        }
+        else if (type == "rupture")
+        {
+            Vector2 position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
+            return Physics2D.BoxCastAll(transform.position + (Vector3)position, new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod(), attackAngle + rot, Vector2.zero, 0, attackLayer);
+
         }
         else // dummy boxcast, does nothing
         {

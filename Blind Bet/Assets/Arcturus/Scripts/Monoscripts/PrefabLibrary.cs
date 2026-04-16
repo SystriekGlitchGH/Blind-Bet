@@ -20,8 +20,9 @@ public class PrefabLibrary : MonoBehaviour
     public GameObject shockingWheelVisual;
     public GameObject freezingWheelVisual;
 
-    [Header("Heart Ability Visuals")]
     [Header("Club Ability Visuals")]
+    public GameObject groundRupture;
+
     [Header("Spade Ability Visuals")]
 
     [Header("Bullets")]
