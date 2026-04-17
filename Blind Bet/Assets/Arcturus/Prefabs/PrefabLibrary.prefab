@@ -60,3 +60,6 @@ MonoBehaviour:
   witheringBullet: {fileID: 4824476325367056225, guid: ee0f73f0d7e02954e947295bc24d7ab6, type: 3}
   witheringBomb: {fileID: 3466137760039807345, guid: a70fe9e72966aa84db9f53d8db29e2ad, type: 3}
   diamondIndicator: {fileID: 4461802826959256870, guid: f5aad4c3cdeafb7448904115b8bafcdb, type: 3}
+  heartIndicator: {fileID: 7899143621835208050, guid: c4d7a304f4bc20240b72896cbef3a7a7, type: 3}
+  clubIndicator: {fileID: 5905200110543497619, guid: 8e07cee8e3a218a478438f8169577d39, type: 3}
+  spadeIndicator: {fileID: 4779351223870598906, guid: a8d8ec19cc40bb1468d918031335a215, type: 3}

@@ -33,7 +33,7 @@ public class Player
     public readonly Card blankCard = new Card(0,Card.Suit.blank);
 
     public EffectManager effectManager = new EffectManager();
-    public bool hasStun, hasBurn, hasPoison, hasSlow, hasChill, hasFrozen, hasRecall, hasCharm;
+    public bool hasStun, hasBurn, hasPoison, hasSlow, hasChill, hasFrozen, hasRecall, hasCharm, hasEnrage;
     
     public Weapon weapon;
     public float baseSpeed;
@@ -90,6 +90,9 @@ public class Player
         if (effectManager.effects.FindIndex(x => x.name == "charm") != -1)
             hasCharm = true;
         else hasCharm = false;
+        if(effectManager.effects.FindIndex(x => x.name == "enrage") != -1)
+            hasEnrage = true;
+        else hasEnrage = false;
     }
     public void AddEffect(string name, float time)
     {
@@ -170,11 +173,11 @@ public class Player
         activeHand.cards[3] = new Card(8, Card.Suit.diamond);
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
-        passiveHand1.cards[0] = new Card(4, Card.Suit.club);
-        passiveHand1.cards[1] = new Card(4, Card.Suit.club);
-        passiveHand1.cards[2] = new Card(4, Card.Suit.club);
-        passiveHand1.cards[3] = new Card(6, Card.Suit.club);
-        passiveHand1.cards[4] = new Card(8, Card.Suit.spade);
+        passiveHand1.cards[0] = new Card(10, Card.Suit.club);
+        passiveHand1.cards[1] = new Card(11, Card.Suit.club);
+        passiveHand1.cards[2] = new Card(12, Card.Suit.club);
+        passiveHand1.cards[3] = new Card(13, Card.Suit.club);
+        passiveHand1.cards[4] = new Card(14, Card.Suit.club);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -297,6 +300,8 @@ public class Player
         float mod = 1;
         if(activeAbility.code == "a2" || activeAbility.code == "a3")
             mod += 0.3f;
+        if(hasEnrage)
+            mod += 1;
         return mod;
     }
     public float GetAttackSpeedMod()

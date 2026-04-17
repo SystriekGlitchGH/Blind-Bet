@@ -36,4 +36,7 @@ public class PrefabLibrary : MonoBehaviour
 
     [Header("Indicators")]
     public GameObject diamondIndicator;
+    public GameObject heartIndicator;
+    public GameObject clubIndicator;
+    public GameObject spadeIndicator;
 }

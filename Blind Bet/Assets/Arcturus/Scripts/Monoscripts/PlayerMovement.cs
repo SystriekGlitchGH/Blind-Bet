@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Ability stats")]
     private bool canUseAbility1 = true;
     private bool isCharging;
+    private bool inTectonicCharge;
 
     [Header("Getting Attacked")]
     private bool hasKnockback;
@@ -104,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
             rb2d.linearVelocity = Vector2.zero;
             return;
         }
-        if (isCharging)
+        if (isCharging || inTectonicCharge)
         {
             rb2d.linearVelocity = rb2d.linearVelocity * 5;
             Vector2 newChargeVelocity = new Vector2(directionX * acceleration, directionY * acceleration/2);
@@ -136,7 +137,11 @@ public class PlayerMovement : MonoBehaviour
             if(buttonHeldTime >= 3 && !indicatorShown)
             {
                 if(playerStats.passiveAbility1.code == "n8d" || playerStats.passiveAbility1.code == "n9d")
-                StartCoroutine(DiamondIndicatorTimer());
+                    StartCoroutine(DiamondIndicatorTimer());
+                if(playerStats.passiveAbility1.code == "n8h" || playerStats.passiveAbility1.code == "n9h")
+                    StartCoroutine(HeartIndicatorTimer());
+                if(playerStats.passiveAbility1.code == "n8c" || playerStats.passiveAbility1.code == "n9c")
+                    StartCoroutine(ClubIndicatorTimer());
                 indicatorShown = true;
             }
         }
@@ -182,6 +187,10 @@ public class PlayerMovement : MonoBehaviour
             if (isCharging)
             {
                 enemy.GetHitAway(this, playerStats.baseAbilityKnockback / 2, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod());
+            }
+            if (inTectonicCharge)
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod()*2);
             }
         }
         playerStats.weapon = new Weapon(playerStats.activeSuit);
@@ -241,6 +250,17 @@ public class PlayerMovement : MonoBehaviour
                 buttonHeldTime = 0;
                 StartCoroutine(ShieldingWardTimer());
                 StartCoroutine(HyperDashTimer());
+            }
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8c")
+            {
+                buttonHeldTime = 0;
+                StartCoroutine(TectonicAssaultTimer());
+            }
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9c")
+            {
+                buttonHeldTime = 0;
+                StartCoroutine(TectonicAssaultTimer());
+                StartCoroutine(TectonicChargeTimer());
             }
         }
     }
@@ -306,6 +326,12 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(UnyieldingChargeTimer());
             else if (playerStats.passiveAbility1.code == "b4c")
                 StartCoroutine(EarthBreakTimer());
+            else if (playerStats.passiveAbility1.code == "b6c")
+                ActivateRoaringShotgun();
+            else if (playerStats.passiveAbility1.code == "b7c")
+                StartCoroutine(HitAndRunTimer());
+            else if (playerStats.passiveAbility1.code == "b10c")
+                ActivateHolyShotgun();
 
             StartCoroutine(Ability1Timer());
         }
@@ -433,11 +459,44 @@ public class PlayerMovement : MonoBehaviour
             }
             extraRotation += 15 / (2 - 1);
         }
-
     }
     private void ActivateHealingSigil()
     {
         GetHealed(20);
+    }
+    private void ActivateRoaringShotgun()
+    {
+        float extraRotation = -30 / 2;
+        for (int i = 0; i < 5; i++)
+        {
+            Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0, 0, extraRotation);
+            GameObject shot = Instantiate(prefabLib.spectralBullet, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
+            if (shot.TryGetComponent(out SpecSplinterBullet sb))
+            {
+                sb.bulletType = "player";
+                sb.pm = this;
+                sb.direction = DirectionToVector();
+                sb.rb2d.AddForce(sb.rb2d.transform.up * 1300);
+            }
+            extraRotation += 30 / (5-1);
+        }
+    }
+    private void ActivateHolyShotgun()
+    {
+        float extraRotation = -30 / 2;
+        for (int i = 0; i < 5; i++)
+        {
+            Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0, 0, extraRotation);
+            GameObject shot = Instantiate(prefabLib.royalBombAbility, transform.position + (Vector3)DirectionToVector(), Quaternion.Euler(rotation));
+            if (shot.TryGetComponent(out RoyalBombAbility rb))
+            {
+                rb.bulletType = "player";
+                rb.pm = this;
+                rb.direction = DirectionToVector();
+                rb.rb2d.AddForce(rb.rb2d.transform.up * 1300);
+            }
+            extraRotation += 30 / (5-1);
+        }
     }
     #endregion
     #endregion
@@ -555,7 +614,6 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator ShockingWheelTimer()
     {
-        canUseAbility1 = false;
         RaycastHit2D[] hits = MakeCircleCastAll("shockingwheel");
         foreach (RaycastHit2D hit in hits)
         {
@@ -673,7 +731,91 @@ public class PlayerMovement : MonoBehaviour
         Destroy(attack1);
         Destroy(attack2);
         Destroy(attack3);
+    }
+    private IEnumerator HitAndRunTimer()
+    {
+        playerStats.AddEffect("enrage",10);
+        RaycastHit2D[] hits = MakeCircleCastAll("hitandrun");
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.enemyStats.AddEffect("enrage",10);
+                enemy.GetHitAway(this, 0.1f, 1);
+            }  
+        }
+        yield return new WaitForSeconds(0);
+        // will add when enraged volume is done
+    }
+    private IEnumerator TectonicAssaultTimer()
+    {
+        RaycastHit2D[] hits1 = MakeBoxCastAll("rupture2",Vector3.zero,60);
+        RaycastHit2D[] hits2 = MakeBoxCastAll("rupture2", Vector3.zero,20);
+        RaycastHit2D[] hits3 = MakeBoxCastAll("rupture2", Vector3.zero,-20);
+        RaycastHit2D[] hits4 = MakeBoxCastAll("rupture2", Vector3.zero,-60);
+        foreach (RaycastHit2D hit in hits1)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod() * 2, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod()*1.5f);
+            }
+        }
+        foreach (RaycastHit2D hit in hits2)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod() * 2, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod()*1.5f);
+            }
+        }
+        foreach (RaycastHit2D hit in hits3)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod() * 2, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod()*1.5f);
+            }
+        }
+        foreach (RaycastHit2D hit in hits4)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod() * 2, playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod()*1.5f);
+            }
+        }
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle+60)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle+60)));
+        Vector2 position = angleAsVector * (6 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,60);
+        GameObject attack1 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, Quaternion.Euler(rotation), transform);
+        attack1.transform.localScale = new Vector2(2.25f, 6) * playerStats.GetAbilitySizeMod();
 
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle+20)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle + 20)));
+        position = angleAsVector * (6 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,20);
+        GameObject attack2 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, Quaternion.Euler(rotation), transform);
+        attack2.transform.localScale = new Vector2(2.25f, 6) * playerStats.GetAbilitySizeMod();
+
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle - 20)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle - 20)));
+        position = angleAsVector * (6 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,-20);
+        GameObject attack3 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, Quaternion.Euler(rotation), transform);
+        attack3.transform.localScale = new Vector2(2.25f, 6) * playerStats.GetAbilitySizeMod();
+
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle - 60)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle - 60)));
+        position = angleAsVector * (6 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,-60);
+        GameObject attack4 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, Quaternion.Euler(rotation), transform);
+        attack4.transform.localScale = new Vector2(2.25f, 6) * playerStats.GetAbilitySizeMod();
+        
+        yield return new WaitForSeconds(0.1f);
+        Destroy(attack1);
+        Destroy(attack2);
+        Destroy(attack3);
+        Destroy(attack4);
+    }
+    private IEnumerator TectonicChargeTimer()
+    {
+        inTectonicCharge = true;
+        yield return new WaitForSeconds(5);
+        inTectonicCharge = false;
     }
     // not abilities
     private IEnumerator Ability1Timer()
@@ -688,8 +830,10 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(6);
         if(playerStats.passiveAbility1.code == "n8h")
             yield return new WaitForSeconds(10);
-        if (playerStats.passiveAbility1.code == "b8c")
+        if (playerStats.passiveAbility1.code == "b3c")
             yield return new WaitForSeconds(4);
+        if (playerStats.passiveAbility1.code == "b7c")
+            yield return new WaitForSeconds(10);
 
         canUseAbility1 = true;
     }
@@ -713,6 +857,10 @@ public class PlayerMovement : MonoBehaviour
                 if(playerStats.passiveAbility1.code == "n5h")
                 {
                     playerStats.Heal(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.1f);
+                }
+                if(!enemy.enemyStats.hasSlow && playerStats.passiveAbility1.code == "n5c")
+                {
+                    enemy.enemyStats.AddEffect("slow", 5 * playerStats.GetAbilityEffectDurationMod());
                 }
             }
             
@@ -822,6 +970,18 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         Destroy(indicator);
     }
+    private IEnumerator HeartIndicatorTimer()
+    {
+        GameObject indicator = Instantiate(prefabLib.heartIndicator, transform.position, prefabLib.heartIndicator.transform.rotation, transform);
+        yield return new WaitForSeconds(0.3f);
+        Destroy(indicator);
+    }
+    private IEnumerator ClubIndicatorTimer()
+    {
+        GameObject indicator = Instantiate(prefabLib.clubIndicator, transform.position, prefabLib.clubIndicator.transform.rotation, transform);
+        yield return new WaitForSeconds(0.3f);
+        Destroy(indicator);
+    }
     #endregion
     #region HELP METHODS
     // assigns attack angle from the corresponding direction
@@ -927,10 +1087,15 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (type == "rupture")
         {
-            angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle + rot), Mathf.Cos(Mathf.Deg2Rad * attackAngle + rot));
+            angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle + rot)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle + rot)));
             Vector2 position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
             return Physics2D.BoxCastAll(transform.position + (Vector3)position, new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod(), attackAngle + rot, Vector2.zero, 0, attackLayer);
-
+        }
+        else if (type == "rupture2")
+        {
+            angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle + rot)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle + rot)));
+            Vector2 position = angleAsVector * (6 * playerStats.GetAbilitySizeMod() / 2 + 1);
+            return Physics2D.BoxCastAll(transform.position + (Vector3)position, new Vector2(2.25f, 6) * playerStats.GetAbilitySizeMod(), attackAngle + rot, Vector2.zero, 0, attackLayer);
         }
         else // dummy boxcast, does nothing
         {
@@ -965,6 +1130,10 @@ public class PlayerMovement : MonoBehaviour
         else if (type == "shockingwheel")
         {
             return Physics2D.CircleCastAll(transform.position, 4f, Vector2.zero, 0, attackLayer);
+        }
+        else if(type == "hitandrun")
+        {
+            return Physics2D.CircleCastAll(transform.position, 10f, Vector2.zero, 0, attackLayer);
         }
         return null;
     }

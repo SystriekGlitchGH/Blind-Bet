@@ -271,6 +271,8 @@ public class EnemyMovement : MonoBehaviour
             setColor = CombineColors(setColor, new Color32(170, 220, 255, 255));
         if (enemyStats.hasPoison)
             setColor = CombineColors(setColor, new Color32(50, 220, 70, 255));
+        if(enemyStats.hasEnrage)
+            setColor = CombineColors(setColor, new Color32(240, 100, 0, 255));
         currentColor = setColor;
     }
     protected Color32 CombineColors(Color32 color1, Color32 color2)

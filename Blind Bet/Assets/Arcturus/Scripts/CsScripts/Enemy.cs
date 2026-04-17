@@ -4,7 +4,7 @@ using UnityEngine.Rendering;
 public class Enemy
 {
     public EffectManager effectManager = new EffectManager();
-    public bool hasStun, hasBurn, hasPoison, hasSlow, hasChill, hasFrozen, hasRecall, hasCharm;
+    public bool hasStun, hasBurn, hasPoison, hasSlow, hasChill, hasFrozen, hasRecall, hasCharm, hasEnrage;
     public float baseDamage;
     public float maxHealth;
     public float baseKnockback;
@@ -48,6 +48,9 @@ public class Enemy
         if(effectManager.effects.FindIndex(x => x.name == "charm") != -1)
             hasCharm = true;
         else hasCharm = false;
+        if(effectManager.effects.FindIndex(x => x.name == "enrage") != -1)
+            hasEnrage = true;
+        else hasEnrage = false;
     }
     public void AddEffect(string name, float time)
     {
@@ -73,6 +76,10 @@ public class Enemy
         float mod = 1;
         if (hasChill)
             mod -= 0.5f;
+        if(hasSlow)
+            mod -= 0.3f;
+        if(hasEnrage)
+            mod += 1;
         if(mod <= 0)
             mod = 0.05f;
         return mod;
