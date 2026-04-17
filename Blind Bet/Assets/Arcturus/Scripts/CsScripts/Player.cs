@@ -173,11 +173,11 @@ public class Player
         activeHand.cards[3] = new Card(8, Card.Suit.diamond);
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
-        passiveHand1.cards[0] = new Card(10, Card.Suit.club);
-        passiveHand1.cards[1] = new Card(11, Card.Suit.club);
-        passiveHand1.cards[2] = new Card(12, Card.Suit.club);
-        passiveHand1.cards[3] = new Card(13, Card.Suit.club);
-        passiveHand1.cards[4] = new Card(14, Card.Suit.club);
+        passiveHand1.cards[0] = new Card(5, Card.Suit.spade);
+        passiveHand1.cards[1] = new Card(5, Card.Suit.spade);
+        passiveHand1.cards[2] = new Card(7, Card.Suit.spade);
+        passiveHand1.cards[3] = new Card(8, Card.Suit.spade);
+        passiveHand1.cards[4] = new Card(9, Card.Suit.club);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -250,7 +250,7 @@ public class Player
             passiveAbility1 = new Ability("Draining Mortar", "b10h");
         // club
         else if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.club)
-            passiveAbility1 = new Ability("", "n1h");
+            passiveAbility1 = new Ability("", "n1c");
         else if (hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.club)
             passiveAbility1 = new Ability("Slicing Body", "n2c");
         else if (hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.club)
@@ -269,7 +269,27 @@ public class Player
             passiveAbility1 = new Ability("Tectonic Charge", "n9c");
         else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.club)
             passiveAbility1 = new Ability("Holy Shotgun", "b10c");
-
+        // spade
+        else if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("", "n1s");
+        else if (hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("Crossing Rush", "n2s");
+        else if (hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("Shade Steps", "b3s");
+        else if (hand.type == HandType.kind3 && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("Wicked Rush", "b4s");
+        else if (hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("Rememberance", "n5s");
+        else if (hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("Piercing Rifle", "b6s");
+        else if (hand.type == HandType.fullhouse && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("Radio Prism", "b7s");
+        else if (hand.type == HandType.kind4 && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("Reaping Bayonette", "n8s");
+        else if (hand.type == HandType.kind5 && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("Reaping Steps", "n9s");
+        else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility1 = new Ability("Chain Rifle", "b10s");
 
         return null;
     }
@@ -371,6 +391,13 @@ public class Player
     {
         float mod = 1;
         if (passiveAbility1.code == "n2c")
+            mod += 0.2f;
+        return mod;
+    }
+    public float GetDashdistanceMod()
+    {
+        float mod = 1;
+        if(passiveAbility1.code == "n2s")
             mod += 0.2f;
         return mod;
     }

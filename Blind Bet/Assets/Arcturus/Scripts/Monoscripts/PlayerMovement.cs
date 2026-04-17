@@ -910,7 +910,7 @@ public class PlayerMovement : MonoBehaviour
         canDash = false;
         isDashing = true;
         hasIFrames = true;
-        rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance, ForceMode2D.Impulse);
+        rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance*playerStats.GetDashdistanceMod(), ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
         hasIFrames = false;
