@@ -24,6 +24,7 @@ public class PrefabLibrary : MonoBehaviour
     public GameObject groundRupture;
 
     [Header("Spade Ability Visuals")]
+    public GameObject shadeStep;
 
     [Header("Bullets")]
     public GameObject continuousBlade;

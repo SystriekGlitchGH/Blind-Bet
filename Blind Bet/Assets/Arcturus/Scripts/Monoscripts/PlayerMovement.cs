@@ -180,7 +180,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             EnemyMovement enemy = collision.GetComponent<EnemyMovement>();
-            if (isDashing)
+            if (isDashing && playerStats.passiveAbility1.code != "b3s")
             {
                 enemy.GetHit(this,0,playerStats.baseDashDamage*playerStats.GetDashDamageMod());
             }
@@ -332,6 +332,8 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(HitAndRunTimer());
             else if (playerStats.passiveAbility1.code == "b10c")
                 ActivateHolyShotgun();
+            // spades
+
 
             StartCoroutine(Ability1Timer());
         }
@@ -655,6 +657,7 @@ public class PlayerMovement : MonoBehaviour
     }
     #endregion
     // hearts
+    #region HEARTS AND CLUBS
     private IEnumerator HyperDashTimer()
     {
         hyperDash = true;
@@ -817,6 +820,24 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(5);
         inTectonicCharge = false;
     }
+    #endregion
+    // spades
+    private IEnumerator ShadeStepsTimer()
+    {
+        RaycastHit2D[] hits = MakeCircleCastAll("shadestep");
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback / 2 * playerStats.GetAbilityKnockbackMod(), playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod());
+            }
+        }
+        GameObject attack = Instantiate(prefabLib.shadeStep, transform.position, quaternion.Euler(Vector3.zero), transform);
+        attack.transform.localScale = new Vector2(4, 4) * playerStats.GetAbilitySizeMod();
+
+        yield return new WaitForSeconds(0.1f);
+        Destroy(attack);
+    }
     // not abilities
     private IEnumerator Ability1Timer()
     {
@@ -911,9 +932,19 @@ public class PlayerMovement : MonoBehaviour
         isDashing = true;
         hasIFrames = true;
         rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance*playerStats.GetDashdistanceMod(), ForceMode2D.Impulse);
+        if(playerStats.passiveAbility1.code == "b3s")
+        {
+            StartCoroutine(ShadeStepsTimer());
+            spriteRend.color = new Color32(0,0,0,0);
+        }
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
         hasIFrames = false;
+        if (playerStats.passiveAbility1.code == "b3s")
+        {
+            StartCoroutine(ShadeStepsTimer());
+            spriteRend.color = currentColor;
+        }
         if(hyperDash) yield return new WaitForSeconds(playerStats.baseDashCooldown * playerStats.GetDashCooldownMod() *0.2f);
         else yield return new WaitForSeconds(playerStats.baseDashCooldown * playerStats.GetDashCooldownMod());
         canDash = true;
@@ -1135,7 +1166,11 @@ public class PlayerMovement : MonoBehaviour
         {
             return Physics2D.CircleCastAll(transform.position, 10f, Vector2.zero, 0, attackLayer);
         }
-        return null;
+        else if(type == "shadestep")
+        {
+            return Physics2D.CircleCastAll(transform.position, 2f, Vector2.zero, 0, attackLayer);
+        }
+            return null;
     }
     // equations for finding amount of time between singular attacks
     private float TimeBetweenAttacks()
