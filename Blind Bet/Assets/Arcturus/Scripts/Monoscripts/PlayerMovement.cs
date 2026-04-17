@@ -653,30 +653,33 @@ public class PlayerMovement : MonoBehaviour
         }
         Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
         Vector2 position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
-        GameObject attack1 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,0);
+        GameObject attack1 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, Quaternion.Euler(rotation), transform);
         attack1.transform.localScale = new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod();
 
-        //angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle+45)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle + 45)));
-        //position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
-        //GameObject attack2 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, anchorTransform.rotation, transform);
-        //attack2.transform.localScale = new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod();
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle+45)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle + 45)));
+        position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,45);
+        GameObject attack2 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, Quaternion.Euler(rotation), transform);
+        attack2.transform.localScale = new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod();
 
-        //angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle - 45)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle - 45)));
-        //position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
-        //GameObject attack3 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, anchorTransform.rotation, transform);
-        //attack3.transform.localScale = new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod();
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle - 45)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle - 45)));
+        position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        rotation = anchorTransform.rotation.eulerAngles + new Vector3(0,0,-45);
+        GameObject attack3 = Instantiate(prefabLib.groundRupture, transform.position + (Vector3)position, Quaternion.Euler(rotation), transform);
+        attack3.transform.localScale = new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod();
         
         yield return new WaitForSeconds(0.1f);
         Destroy(attack1);
-        //Destroy(attack2);
-        //Destroy(attack3);
+        Destroy(attack2);
+        Destroy(attack3);
 
     }
     // not abilities
     private IEnumerator Ability1Timer()
     {
         canUseAbility1 = false;
-        yield return new WaitForSeconds(6*playerStats.GetAbilityCooldownMod());
+        yield return new WaitForSeconds(1*playerStats.GetAbilityCooldownMod());
         if(playerStats.passiveAbility1.code == "b7d")
             yield return new WaitForSeconds(5);
         if (playerStats.passiveAbility1.code == "b3h")
@@ -924,6 +927,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (type == "rupture")
         {
+            angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle + rot), Mathf.Cos(Mathf.Deg2Rad * attackAngle + rot));
             Vector2 position = angleAsVector * (4 * playerStats.GetAbilitySizeMod() / 2 + 1);
             return Physics2D.BoxCastAll(transform.position + (Vector3)position, new Vector2(1.5f, 4) * playerStats.GetAbilitySizeMod(), attackAngle + rot, Vector2.zero, 0, attackLayer);
 
