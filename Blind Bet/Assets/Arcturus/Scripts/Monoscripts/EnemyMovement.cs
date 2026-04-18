@@ -207,6 +207,16 @@ public class EnemyMovement : MonoBehaviour
             Die();
         rb2d.AddForce(-TargetDirection(attacker.transform.position)*knockback,ForceMode2D.Impulse);
     }
+    public IEnumerator GetHitDelay(PlayerMovement attacker, float knockback, float damage, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        StartCoroutine(GetHitTimer());
+        enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
+        Debug.Log(enemyStats.currentHealth);
+        if(enemyStats.currentHealth <= 0)
+            Die();
+        rb2d.AddForce(-TargetDirection(attacker.transform.position)*knockback,ForceMode2D.Impulse);
+    }
     public void GetHit(Bullet bullet, float knockback, float damage)
     {
         StartCoroutine(GetHitTimer());

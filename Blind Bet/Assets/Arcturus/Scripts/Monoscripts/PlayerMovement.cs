@@ -49,13 +49,15 @@ public class PlayerMovement : MonoBehaviour
     public Color32 currentColor;
 
     [Header("Ability stats")]
+    public LineRenderer lineRenderer;
+    public LayerMask beamLayer;
     private bool canUseAbility1 = true;
     private bool isCharging;
     private bool inTectonicCharge;
 
     [Header("Getting Attacked")]
-    private bool hasKnockback;
     public float knockbackTime = 0.2f;
+    private bool hasKnockback;
 
     // enum to make direction more readble
     private enum Direction
@@ -161,6 +163,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         CheckCurrentColor();
+        RadioPrismTimer();
     }
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
     private void OnTriggerEnter2D(Collider2D collision)
@@ -333,7 +336,10 @@ public class PlayerMovement : MonoBehaviour
             else if (playerStats.passiveAbility1.code == "b10c")
                 ActivateHolyShotgun();
             // spades
-
+            else if (playerStats.passiveAbility1.code == "b4s")
+                ActivateStunningShockWave();
+            else if (playerStats.passiveAbility1.code == "b6s")
+                ActivatePiercingRifle();
 
             StartCoroutine(Ability1Timer());
         }
@@ -498,6 +504,28 @@ public class PlayerMovement : MonoBehaviour
                 rb.rb2d.AddForce(rb.rb2d.transform.up * 1300);
             }
             extraRotation += 30 / (5-1);
+        }
+    }
+    private void ActivateStunningShockWave()
+    {
+        GameObject shot = Instantiate(prefabLib.shockWave, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
+        if (shot.TryGetComponent(out ShockWave sw))
+        {
+            sw.bulletType = "player";
+            sw.pm = this;
+            sw.direction = DirectionToVector();
+            sw.rb2d.AddForce(sw.rb2d.transform.up * 1000);
+        }
+    }
+    private void ActivatePiercingRifle()
+    {
+        GameObject shot = Instantiate(prefabLib.sniperBullet, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
+        if (shot.TryGetComponent(out SpecSniperBullet ss))
+        {
+            ss.bulletType = "player";
+            ss.pm = this;
+            ss.direction = DirectionToVector();
+            ss.rb2d.AddForce(ss.rb2d.transform.up * 1500);
         }
     }
     #endregion
@@ -838,6 +866,16 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         Destroy(attack);
     }
+    // hold this to be timed or not
+    private void RadioPrismTimer()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(anchorTransform.position, anchorTransform.up,10,beamLayer);
+        lineRenderer.SetPosition(0, anchorTransform.position);
+        if (hit)
+            lineRenderer.SetPosition(1, hit.point);
+        else
+            lineRenderer.SetPosition(1, anchorTransform.position + anchorTransform.up * 10);
+    }
     // not abilities
     private IEnumerator Ability1Timer()
     {
@@ -882,6 +920,10 @@ public class PlayerMovement : MonoBehaviour
                 if(!enemy.enemyStats.hasSlow && playerStats.passiveAbility1.code == "n5c")
                 {
                     enemy.enemyStats.AddEffect("slow", 5 * playerStats.GetAbilityEffectDurationMod());
+                }
+                if(playerStats.passiveAbility1.code == "n5s")
+                {
+                    StartCoroutine(enemy.GetHitDelay(this, 2, playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod(), 2f));
                 }
             }
             

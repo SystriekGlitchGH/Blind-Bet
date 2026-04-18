@@ -34,6 +34,8 @@ public class PrefabLibrary : MonoBehaviour
     public GameObject royalBombAbility;
     public GameObject witheringBullet;
     public GameObject witheringBomb;
+    public GameObject shockWave;
+    public GameObject sniperBullet;
 
     [Header("Indicators")]
     public GameObject diamondIndicator;

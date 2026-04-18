@@ -174,10 +174,10 @@ public class Player
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
         passiveHand1.cards[0] = new Card(5, Card.Suit.spade);
-        passiveHand1.cards[1] = new Card(5, Card.Suit.spade);
+        passiveHand1.cards[1] = new Card(6, Card.Suit.spade);
         passiveHand1.cards[2] = new Card(7, Card.Suit.spade);
-        passiveHand1.cards[3] = new Card(7, Card.Suit.spade);
-        passiveHand1.cards[4] = new Card(9, Card.Suit.club);
+        passiveHand1.cards[3] = new Card(8, Card.Suit.spade);
+        passiveHand1.cards[4] = new Card(9, Card.Suit.spade);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -277,7 +277,7 @@ public class Player
         else if (hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.spade)
             passiveAbility1 = new Ability("Shade Steps", "b3s");
         else if (hand.type == HandType.kind3 && GetHandSuit(hand) == Card.Suit.spade)
-            passiveAbility1 = new Ability("Wicked Rush", "b4s");
+            passiveAbility1 = new Ability("Stunning Shockwave", "b4s");
         else if (hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.spade)
             passiveAbility1 = new Ability("Rememberance", "n5s");
         else if (hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.spade)
