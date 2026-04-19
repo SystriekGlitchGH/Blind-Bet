@@ -20,7 +20,7 @@ public class EnemyMovement : MonoBehaviour
     public float friction;
     // variables to help with movement
     protected float distance;
-    protected bool hasKnockback;
+    public bool hasKnockback;
     public float knockbackTime;
     public LayerMask hitLayer;
 

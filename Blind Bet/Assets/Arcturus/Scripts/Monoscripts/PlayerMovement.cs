@@ -869,12 +869,31 @@ public class PlayerMovement : MonoBehaviour
     // hold this to be timed or not
     private void RadioPrismTimer()
     {
-        RaycastHit2D hit = Physics2D.Raycast(anchorTransform.position, anchorTransform.up,10,beamLayer);
+        bool hitsWall = false;
+        RaycastHit2D[] hits = Physics2D.RaycastAll(anchorTransform.position, anchorTransform.up,10,beamLayer);
         lineRenderer.SetPosition(0, anchorTransform.position);
-        if (hit)
-            lineRenderer.SetPosition(1, hit.point);
-        else
+        foreach(RaycastHit2D hit in hits)
+        {
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+            {
+                if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+                {
+                    if(!enemy.hasKnockback)
+                        enemy.GetHitAway(this, 1,playerStats.baseAbilityDamage*playerStats.GetAbilityDamageMod()*0.2f);
+                }
+                continue;
+            }
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+            {
+                hitsWall = true;
+                lineRenderer.SetPosition(1, hit.point);
+                break;
+            }
+        }
+        if (!hitsWall)
+        {
             lineRenderer.SetPosition(1, anchorTransform.position + anchorTransform.up * 10);
+        }
     }
     // not abilities
     private IEnumerator Ability1Timer()
