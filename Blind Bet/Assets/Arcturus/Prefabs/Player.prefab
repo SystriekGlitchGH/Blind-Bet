@@ -421,6 +421,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 640
   iFrameTime: 0.5
+  baseColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  currentColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  lineRenderer: {fileID: 7275212597245883165, guid: cb95042415b32de479d479220e749bef, type: 3}
+  beamLayer:
+    serializedVersion: 2
+    m_Bits: 136
   knockbackTime: 0.2
 --- !u!114 &3508938354143582018
 MonoBehaviour:

@@ -50,10 +50,12 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Ability stats")]
     public LineRenderer lineRenderer;
+    private LineRenderer lr1, lr2, lr3;
     public LayerMask beamLayer;
     private bool canUseAbility1 = true;
     private bool isCharging;
     private bool inTectonicCharge;
+    private bool inRadioPrism;
 
     [Header("Getting Attacked")]
     public float knockbackTime = 0.2f;
@@ -163,7 +165,8 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         CheckCurrentColor();
-        RadioPrismTimer();
+        if(inRadioPrism)
+            ActivateRadioPrism();
     }
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
     private void OnTriggerEnter2D(Collider2D collision)
@@ -340,6 +343,8 @@ public class PlayerMovement : MonoBehaviour
                 ActivateStunningShockWave();
             else if (playerStats.passiveAbility1.code == "b6s")
                 ActivatePiercingRifle();
+            else if (playerStats.passiveAbility1.code == "b7s")
+                StartCoroutine(RadioPrismTimer());
 
             StartCoroutine(Ability1Timer());
         }
@@ -526,6 +531,89 @@ public class PlayerMovement : MonoBehaviour
             ss.pm = this;
             ss.direction = DirectionToVector();
             ss.rb2d.AddForce(ss.rb2d.transform.up * 1500);
+        }
+    }
+    private void ActivateRadioPrism()
+    {
+        bool hitsWall1 = false;
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
+        RaycastHit2D[] hits1 = Physics2D.RaycastAll(anchorTransform.position + (Vector3)angleAsVector*2, angleAsVector,10,beamLayer);
+        lr1.SetPosition(0, anchorTransform.position + (Vector3)angleAsVector*2);
+        foreach(RaycastHit2D hit in hits1)
+        {
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+            {
+                if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+                {
+                    if(!enemy.hasKnockback)
+                        enemy.GetHitAway(this, 0.1f,playerStats.baseAbilityDamage*playerStats.GetAbilityDamageMod()*0.5f);
+                }
+                continue;
+            }
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+            {
+                hitsWall1 = true;
+                lr1.SetPosition(1, hit.point);
+                break;
+            }
+        }
+        if (!hitsWall1)
+        {
+            lr1.SetPosition(1, anchorTransform.position + (Vector3)angleAsVector*2 * 10);
+        }
+        
+        bool hitsWall2 = false;
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle+20)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle+20)));
+        RaycastHit2D[] hits2 = Physics2D.RaycastAll(anchorTransform.position + (Vector3)angleAsVector*2, angleAsVector,10,beamLayer);
+        lr2.SetPosition(0, anchorTransform.position + (Vector3)angleAsVector*2);
+        foreach(RaycastHit2D hit in hits2)
+        {
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+            {
+                if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+                {
+                    if(!enemy.hasKnockback)
+                        enemy.GetHitAway(this, 0.1f,playerStats.baseAbilityDamage*playerStats.GetAbilityDamageMod()*0.5f);
+                }
+                continue;
+            }
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+            {
+                hitsWall2 = true;
+                lr2.SetPosition(1, hit.point);
+                break;
+            }
+        }
+        if (!hitsWall2)
+        {
+            lr2.SetPosition(1, anchorTransform.position + (Vector3)angleAsVector*2 * 10);
+        }
+
+        bool hitsWall3 = false;
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (attackAngle-20)), Mathf.Cos(Mathf.Deg2Rad * (attackAngle-20)));
+        RaycastHit2D[] hits3 = Physics2D.RaycastAll(anchorTransform.position + (Vector3)angleAsVector*2, angleAsVector,10,beamLayer);
+        lr3.SetPosition(0, anchorTransform.position + (Vector3)angleAsVector*2);
+        foreach(RaycastHit2D hit in hits3)
+        {
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+            {
+                if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+                {
+                    if(!enemy.hasKnockback)
+                        enemy.GetHitAway(this, 0.1f,playerStats.baseAbilityDamage*playerStats.GetAbilityDamageMod()*0.5f);
+                }
+                continue;
+            }
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+            {
+                hitsWall3 = true;
+                lr3.SetPosition(1, hit.point);
+                break;
+            }
+        }
+        if (!hitsWall3)
+        {
+            lr3.SetPosition(1, anchorTransform.position + (Vector3)angleAsVector*2 * 10);
         }
     }
     #endregion
@@ -867,33 +955,17 @@ public class PlayerMovement : MonoBehaviour
         Destroy(attack);
     }
     // hold this to be timed or not
-    private void RadioPrismTimer()
+    private IEnumerator RadioPrismTimer()
     {
-        bool hitsWall = false;
-        RaycastHit2D[] hits = Physics2D.RaycastAll(anchorTransform.position, anchorTransform.up,10,beamLayer);
-        lineRenderer.SetPosition(0, anchorTransform.position);
-        foreach(RaycastHit2D hit in hits)
-        {
-            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
-            {
-                if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
-                {
-                    if(!enemy.hasKnockback)
-                        enemy.GetHitAway(this, 1,playerStats.baseAbilityDamage*playerStats.GetAbilityDamageMod()*0.2f);
-                }
-                continue;
-            }
-            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
-            {
-                hitsWall = true;
-                lineRenderer.SetPosition(1, hit.point);
-                break;
-            }
-        }
-        if (!hitsWall)
-        {
-            lineRenderer.SetPosition(1, anchorTransform.position + anchorTransform.up * 10);
-        }
+        inRadioPrism = true;
+        lr1 = Instantiate(lineRenderer);
+        lr2 = Instantiate(lineRenderer);
+        lr3 = Instantiate(lineRenderer);
+        yield return new WaitForSeconds(6);
+        inRadioPrism = false;
+        Destroy(lr1);
+        Destroy(lr2);
+        Destroy(lr3);
     }
     // not abilities
     private IEnumerator Ability1Timer()
@@ -912,6 +984,8 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(4);
         if (playerStats.passiveAbility1.code == "b7c")
             yield return new WaitForSeconds(10);
+        if (playerStats.passiveAbility1.code == "b7s")
+            yield return new WaitForSeconds(6);
 
         canUseAbility1 = true;
     }
