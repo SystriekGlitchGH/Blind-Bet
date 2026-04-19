@@ -25,6 +25,7 @@ public class PrefabLibrary : MonoBehaviour
 
     [Header("Spade Ability Visuals")]
     public GameObject shadeStep;
+    public GameObject reap;
 
     [Header("Bullets")]
     public GameObject continuousBlade;
@@ -36,6 +37,8 @@ public class PrefabLibrary : MonoBehaviour
     public GameObject witheringBomb;
     public GameObject shockWave;
     public GameObject sniperBullet;
+    public GameObject royalChainBullet;
+    public GameObject miniRoyalBomb;
 
     [Header("Indicators")]
     public GameObject diamondIndicator;

@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isCharging;
     private bool inTectonicCharge;
     private bool inRadioPrism;
+    private bool inReapStep;
 
     [Header("Getting Attacked")]
     public float knockbackTime = 0.2f;
@@ -99,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // if you are currently lunging, your lineardamping should be 0 and regular movement shouldn't apply
-        if (isDashing || isLunging || hasKnockback)
+        if (isDashing || isLunging || inReapStep || hasKnockback) 
         {
             rb2d.linearDamping = 0;
             return;
@@ -146,6 +147,8 @@ public class PlayerMovement : MonoBehaviour
                     StartCoroutine(HeartIndicatorTimer());
                 if(playerStats.passiveAbility1.code == "n8c" || playerStats.passiveAbility1.code == "n9c")
                     StartCoroutine(ClubIndicatorTimer());
+                if(playerStats.passiveAbility1.code == "n8s" || playerStats.passiveAbility1.code == "n9s")
+                    StartCoroutine(SpadeIndicatorTimer());
                 indicatorShown = true;
             }
         }
@@ -238,36 +241,39 @@ public class PlayerMovement : MonoBehaviour
             indicatorShown = false;
             if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8d")
             {
-                buttonHeldTime = 0;
                 StartCoroutine(ShockingWheelTimer());
             }
             if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9d")
             {
-                buttonHeldTime = 0;
                 StartCoroutine(FreezingWheelTimer());
             }
             if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8h")
             {
-                buttonHeldTime = 0;
                 StartCoroutine(ShieldingWardTimer());
             }
             if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9h")
             {
-                buttonHeldTime = 0;
                 StartCoroutine(ShieldingWardTimer());
                 StartCoroutine(HyperDashTimer());
             }
             if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8c")
             {
-                buttonHeldTime = 0;
                 StartCoroutine(TectonicAssaultTimer());
             }
             if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9c")
             {
-                buttonHeldTime = 0;
                 StartCoroutine(TectonicAssaultTimer());
                 StartCoroutine(TectonicChargeTimer());
             }
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8s")
+            {
+                StartCoroutine(ReapingBayonetTimer());
+            }
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9s")
+            {
+                StartCoroutine(ReapingBayonetTimer());
+            }
+            buttonHeldTime = 0;
         }
     }
     // input for parrying
@@ -967,6 +973,44 @@ public class PlayerMovement : MonoBehaviour
         Destroy(lr2);
         Destroy(lr3);
     }
+    private IEnumerator ReapingBayonetTimer()
+    {
+        StartCoroutine(reapStepTimer());
+        RaycastHit2D[] hits = MakeBoxCastAll("reap");
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
+            {
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback * playerStats.GetAbilityKnockbackMod(), playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod());
+            }
+        }
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * attackAngle), Mathf.Cos(Mathf.Deg2Rad * attackAngle));
+        Vector2 position = angleAsVector * (7 * playerStats.GetAbilitySizeMod() / 2 + 1);
+        GameObject attack = Instantiate(prefabLib.reap, transform.position + (Vector3)position, anchorTransform.rotation, transform);
+        attack.transform.localScale = new Vector2(5, 7) * playerStats.GetAbilitySizeMod();
+        yield return new WaitForSeconds(0.2f);
+        Destroy(attack);
+    }
+    private IEnumerator reapStepTimer()
+    {
+        inReapStep = true;
+        hasIFrames = true;
+        rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance*playerStats.GetDashdistanceMod(), ForceMode2D.Impulse);
+        if(playerStats.passiveAbility1.code == "n9s")
+        {
+            StartCoroutine(ShadeStepsTimer());
+            spriteRend.color = new Color32(0,0,0,0);
+        }
+        yield return new WaitForSeconds(0.2f);
+        inReapStep = false;
+        hasIFrames = false;
+        if (playerStats.passiveAbility1.code == "n9s")
+        {
+            StartCoroutine(ShadeStepsTimer());
+            spriteRend.color = currentColor;
+        }
+    }
+    
     // not abilities
     private IEnumerator Ability1Timer()
     {
@@ -1148,6 +1192,12 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         Destroy(indicator);
     }
+    private IEnumerator SpadeIndicatorTimer()
+    {
+        GameObject indicator = Instantiate(prefabLib.spadeIndicator, transform.position, prefabLib.clubIndicator.transform.rotation, transform);
+        yield return new WaitForSeconds(0.3f);
+        Destroy(indicator);
+    }
     #endregion
     #region HELP METHODS
     // assigns attack angle from the corresponding direction
@@ -1237,6 +1287,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector2 position = angleAsVector * (5 * playerStats.GetAbilitySizeMod() / 2 + 1);
             return Physics2D.BoxCastAll(transform.position + (Vector3)position, new Vector2(8,5) * playerStats.GetAbilitySizeMod(), attackAngle, Vector2.zero, 0, attackLayer);
+        }
+        else if (type == "reap")
+        {
+            Vector2 position = angleAsVector * (7*playerStats.GetAbilitySizeMod()/2+1);
+            return Physics2D.BoxCastAll(transform.position + (Vector3)position, new Vector2(5,7) * playerStats.GetAttackSizeMod(), attackAngle, Vector2.zero,0,attackLayer); 
         }
         else // dummy boxcast, does nothing
         {
