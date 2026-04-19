@@ -63,8 +63,8 @@ MonoBehaviour:
   witheringBomb: {fileID: 3466137760039807345, guid: a70fe9e72966aa84db9f53d8db29e2ad, type: 3}
   shockWave: {fileID: 1440537656799653062, guid: f9ed2000d61321b409fa0d4bd8bfae2a, type: 3}
   sniperBullet: {fileID: 4824476325367056225, guid: 89fc8f8e2b1f040479812b22944c8867, type: 3}
-  royalChainBullet: {fileID: 0}
-  miniRoyalBomb: {fileID: 0}
+  royalChainBullet: {fileID: 3888515703437660432, guid: 3733b2f34b88ca9449f9425d4fd8d77d, type: 3}
+  miniRoyalBomb: {fileID: 943149518541084185, guid: 909ad7b3b8a3f7745b1ee0a3794ce47c, type: 3}
   diamondIndicator: {fileID: 4461802826959256870, guid: f5aad4c3cdeafb7448904115b8bafcdb, type: 3}
   heartIndicator: {fileID: 7899143621835208050, guid: c4d7a304f4bc20240b72896cbef3a7a7, type: 3}
   clubIndicator: {fileID: 5905200110543497619, guid: 8e07cee8e3a218a478438f8169577d39, type: 3}

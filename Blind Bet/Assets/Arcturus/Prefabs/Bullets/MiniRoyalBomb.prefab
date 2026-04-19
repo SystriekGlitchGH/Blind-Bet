@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5800038117388135740}
   - component: {fileID: 3377848979740460059}
+  - component: {fileID: 5550686015379124121}
   m_Layer: 0
   m_Name: MiniRoyalBomb
   m_TagString: Untagged
@@ -87,3 +88,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5550686015379124121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943149518541084185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 445921bc85f6b2940888acecc93e6271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionVisual: {fileID: 1810197912710594706, guid: d690e5e47c499774f8a630e9b23f2bcc, type: 3}
+  spriteRend: {fileID: 3377848979740460059}
+  pm: {fileID: 0}

@@ -351,6 +351,8 @@ public class PlayerMovement : MonoBehaviour
                 ActivatePiercingRifle();
             else if (playerStats.passiveAbility1.code == "b7s")
                 StartCoroutine(RadioPrismTimer());
+            else if (playerStats.passiveAbility1.code == "b10s")
+                ActivateChainRifle();
 
             StartCoroutine(Ability1Timer());
         }
@@ -620,6 +622,17 @@ public class PlayerMovement : MonoBehaviour
         if (!hitsWall3)
         {
             lr3.SetPosition(1, anchorTransform.position + (Vector3)angleAsVector*2 * 10);
+        }
+    }
+    private void ActivateChainRifle()
+    {
+        GameObject shot = Instantiate(prefabLib.royalChainBullet, transform.position + (Vector3)DirectionToVector(), anchorTransform.rotation);
+        if (shot.TryGetComponent(out ChainSniperBullet cb))
+        {
+            cb.bulletType = "player";
+            cb.pm = this;
+            cb.direction = DirectionToVector();
+            cb.rb2d.AddForce(cb.rb2d.transform.up * 1500);
         }
     }
     #endregion
