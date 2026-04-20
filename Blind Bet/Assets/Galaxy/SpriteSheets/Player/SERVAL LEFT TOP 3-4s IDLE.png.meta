@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: f1dce1c6b51b49141a64c57b6483e0d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1854101665263314969
+    second: SERVAL LEFT TOP 3-4s IDLE_0
+  - first:
+      213: -1008486206277036636
+    second: SERVAL LEFT TOP 3-4s IDLE_1
+  - first:
+      213: 6390238158692034371
+    second: SERVAL LEFT TOP 3-4s IDLE_2
+  - first:
+      213: -2951504970061613372
+    second: SERVAL LEFT TOP 3-4s IDLE_3
+  - first:
+      213: -427154731668971436
+    second: SERVAL LEFT TOP 3-4s IDLE_4
+  - first:
+      213: 5738194772399125265
+    second: SERVAL LEFT TOP 3-4s IDLE_5
+  - first:
+      213: 6106333526755540344
+    second: SERVAL LEFT TOP 3-4s IDLE_6
+  - first:
+      213: 1970511670542057499
+    second: SERVAL LEFT TOP 3-4s IDLE_7
+  - first:
+      213: 6154183272108161295
+    second: SERVAL LEFT TOP 3-4s IDLE_8
+  - first:
+      213: -2136876274505328255
+    second: SERVAL LEFT TOP 3-4s IDLE_9
+  - first:
+      213: -2415312230450852132
+    second: SERVAL LEFT TOP 3-4s IDLE_10
+  - first:
+      213: -94262000532348953
+    second: SERVAL LEFT TOP 3-4s IDLE_11
+  - first:
+      213: 848205078751920028
+    second: SERVAL LEFT TOP 3-4s IDLE_12
+  - first:
+      213: -2550735410435835044
+    second: SERVAL LEFT TOP 3-4s IDLE_13
+  - first:
+      213: 5915087975104829976
+    second: SERVAL LEFT TOP 3-4s IDLE_14
+  - first:
+      213: -4304010987595892062
+    second: SERVAL LEFT TOP 3-4s IDLE_15
+  - first:
+      213: -8640360578395373057
+    second: SERVAL LEFT TOP 3-4s IDLE_16
+  - first:
+      213: -7687934032979058114
+    second: SERVAL LEFT TOP 3-4s IDLE_17
+  - first:
+      213: 453291003275655770
+    second: SERVAL LEFT TOP 3-4s IDLE_18
+  - first:
+      213: -779070008242823927
+    second: SERVAL LEFT TOP 3-4s IDLE_19
+  - first:
+      213: 6579618614531937942
+    second: SERVAL LEFT TOP 3-4s IDLE_20
+  - first:
+      213: 2737316483943930436
+    second: SERVAL LEFT TOP 3-4s IDLE_21
+  - first:
+      213: 6628493229120333281
+    second: SERVAL LEFT TOP 3-4s IDLE_22
+  - first:
+      213: 4477235049900385355
+    second: SERVAL LEFT TOP 3-4s IDLE_23
+  - first:
+      213: -7671335294490642309
+    second: SERVAL LEFT TOP 3-4s IDLE_24
+  - first:
+      213: 3695055530409065040
+    second: SERVAL LEFT TOP 3-4s IDLE_25
+  - first:
+      213: -5042475363289583404
+    second: SERVAL LEFT TOP 3-4s IDLE_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 8714
+        width: 342
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e71580eb58e446e0800000000000000
+      internalID: -1854101665263314969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 8715
+        width: 342
+        height: 913
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5d9f973232102f0800000000000000
+      internalID: -1008486206277036636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 4628
+        y: 8711
+        width: 343
+        height: 915
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3472cf69fbfaea850800000000000000
+      internalID: 6390238158692034371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 7631
+        width: 343
+        height: 913
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c67da21ed52a07d0800000000000000
+      internalID: -2951504970061613372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 7633
+        width: 342
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4506eb2e801721af0800000000000000
+      internalID: -427154731668971436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 4628
+        y: 7632
+        width: 343
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1137ad44eb922af40800000000000000
+      internalID: 5738194772399125265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 6548
+        width: 343
+        height: 912
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d72566dfd0eb450800000000000000
+      internalID: 6106333526755540344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 6552
+        width: 342
+        height: 909
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10cb649ce9a85b10800000000000000
+      internalID: 1970511670542057499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 4628
+        y: 6551
+        width: 342
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0978a8641d086550800000000000000
+      internalID: 6154183272108161295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 5470
+        width: 343
+        height: 907
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1895629995a4852e0800000000000000
+      internalID: -2136876274505328255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 5470
+        width: 344
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde0252c2561b7ed0800000000000000
+      internalID: -2415312230450852132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 4626
+        y: 5466
+        width: 345
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef937eb53d11bef0800000000000000
+      internalID: -94262000532348953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 4387
+        width: 346
+        height: 907
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9fb0bf660e65cb00800000000000000
+      internalID: 848205078751920028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 4389
+        width: 345
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b36f898a7f99cd0800000000000000
+      internalID: -2550735410435835044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 4623
+        y: 4389
+        width: 347
+        height: 904
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ade438c2d961250800000000000000
+      internalID: 5915087975104829976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 3305
+        width: 346
+        height: 907
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aaf7f67fc41544c0800000000000000
+      internalID: -4304010987595892062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 3306
+        width: 345
+        height: 906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1847125d5471880800000000000000
+      internalID: -8640360578395373057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 4626
+        y: 3305
+        width: 344
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32a5abbab8fe4590800000000000000
+      internalID: -7687934032979058114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 2223
+        width: 343
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a302e04c96a4600800000000000000
+      internalID: 453291003275655770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2224
+        width: 342
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d968784ff2035f0800000000000000
+      internalID: -779070008242823927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 2221
+        width: 343
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69659b405408f4b50800000000000000
+      internalID: 6579618614531937942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1141
+        width: 342
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a9c47d6d6ecf520800000000000000
+      internalID: 2737316483943930436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 1140
+        width: 343
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5accdf8732dfb50800000000000000
+      internalID: 6628493229120333281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 1139
+        width: 343
+        height: 913
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44ad357e85522e30800000000000000
+      internalID: 4477235049900385355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 56
+        width: 342
+        height: 912
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78f7f2b131f98590800000000000000
+      internalID: -7671335294490642309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_25
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 55
+        width: 342
+        height: 913
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05aff5b7d69774330800000000000000
+      internalID: 3695055530409065040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT TOP 3-4s IDLE_26
+      rect:
+        serializedVersion: 2
+        x: 4628
+        y: 54
+        width: 343
+        height: 915
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0377e8f57850ab0800000000000000
+      internalID: -5042475363289583404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SERVAL LEFT TOP 3-4s IDLE_0: -1854101665263314969
+      SERVAL LEFT TOP 3-4s IDLE_1: -1008486206277036636
+      SERVAL LEFT TOP 3-4s IDLE_10: -2415312230450852132
+      SERVAL LEFT TOP 3-4s IDLE_11: -94262000532348953
+      SERVAL LEFT TOP 3-4s IDLE_12: 848205078751920028
+      SERVAL LEFT TOP 3-4s IDLE_13: -2550735410435835044
+      SERVAL LEFT TOP 3-4s IDLE_14: 5915087975104829976
+      SERVAL LEFT TOP 3-4s IDLE_15: -4304010987595892062
+      SERVAL LEFT TOP 3-4s IDLE_16: -8640360578395373057
+      SERVAL LEFT TOP 3-4s IDLE_17: -7687934032979058114
+      SERVAL LEFT TOP 3-4s IDLE_18: 453291003275655770
+      SERVAL LEFT TOP 3-4s IDLE_19: -779070008242823927
+      SERVAL LEFT TOP 3-4s IDLE_2: 6390238158692034371
+      SERVAL LEFT TOP 3-4s IDLE_20: 6579618614531937942
+      SERVAL LEFT TOP 3-4s IDLE_21: 2737316483943930436
+      SERVAL LEFT TOP 3-4s IDLE_22: 6628493229120333281
+      SERVAL LEFT TOP 3-4s IDLE_23: 4477235049900385355
+      SERVAL LEFT TOP 3-4s IDLE_24: -7671335294490642309
+      SERVAL LEFT TOP 3-4s IDLE_25: 3695055530409065040
+      SERVAL LEFT TOP 3-4s IDLE_26: -5042475363289583404
+      SERVAL LEFT TOP 3-4s IDLE_3: -2951504970061613372
+      SERVAL LEFT TOP 3-4s IDLE_4: -427154731668971436
+      SERVAL LEFT TOP 3-4s IDLE_5: 5738194772399125265
+      SERVAL LEFT TOP 3-4s IDLE_6: 6106333526755540344
+      SERVAL LEFT TOP 3-4s IDLE_7: 1970511670542057499
+      SERVAL LEFT TOP 3-4s IDLE_8: 6154183272108161295
+      SERVAL LEFT TOP 3-4s IDLE_9: -2136876274505328255
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

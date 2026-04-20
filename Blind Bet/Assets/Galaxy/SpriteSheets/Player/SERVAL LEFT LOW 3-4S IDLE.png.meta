@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 68d386a58797dd34da64670a7045a2b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8725680963223721544
+    second: SERVAL LEFT LOW 3-4S IDLE_0
+  - first:
+      213: 3150046976573998542
+    second: SERVAL LEFT LOW 3-4S IDLE_1
+  - first:
+      213: 7999146742256100075
+    second: SERVAL LEFT LOW 3-4S IDLE_2
+  - first:
+      213: 5561342758609415259
+    second: SERVAL LEFT LOW 3-4S IDLE_3
+  - first:
+      213: -6559435125309249525
+    second: SERVAL LEFT LOW 3-4S IDLE_4
+  - first:
+      213: -2900219197621240952
+    second: SERVAL LEFT LOW 3-4S IDLE_5
+  - first:
+      213: -3383897647977465959
+    second: SERVAL LEFT LOW 3-4S IDLE_6
+  - first:
+      213: 8871819445969050850
+    second: SERVAL LEFT LOW 3-4S IDLE_7
+  - first:
+      213: -3616809461053623483
+    second: SERVAL LEFT LOW 3-4S IDLE_8
+  - first:
+      213: -7483924587321776102
+    second: SERVAL LEFT LOW 3-4S IDLE_9
+  - first:
+      213: -2922227058944597309
+    second: SERVAL LEFT LOW 3-4S IDLE_10
+  - first:
+      213: -2525965897334158599
+    second: SERVAL LEFT LOW 3-4S IDLE_11
+  - first:
+      213: -4555727132213417225
+    second: SERVAL LEFT LOW 3-4S IDLE_12
+  - first:
+      213: -4991827660914750272
+    second: SERVAL LEFT LOW 3-4S IDLE_13
+  - first:
+      213: -2673871953728704293
+    second: SERVAL LEFT LOW 3-4S IDLE_14
+  - first:
+      213: -274714282805995519
+    second: SERVAL LEFT LOW 3-4S IDLE_15
+  - first:
+      213: 6879249269502143097
+    second: SERVAL LEFT LOW 3-4S IDLE_16
+  - first:
+      213: 1695675865359886481
+    second: SERVAL LEFT LOW 3-4S IDLE_17
+  - first:
+      213: 5553553409462846431
+    second: SERVAL LEFT LOW 3-4S IDLE_18
+  - first:
+      213: -7216808341579991894
+    second: SERVAL LEFT LOW 3-4S IDLE_19
+  - first:
+      213: 4835001855422166610
+    second: SERVAL LEFT LOW 3-4S IDLE_20
+  - first:
+      213: 3535638828340048264
+    second: SERVAL LEFT LOW 3-4S IDLE_21
+  - first:
+      213: 1965347547969630663
+    second: SERVAL LEFT LOW 3-4S IDLE_22
+  - first:
+      213: -6040857033069089823
+    second: SERVAL LEFT LOW 3-4S IDLE_23
+  - first:
+      213: 878486084635717867
+    second: SERVAL LEFT LOW 3-4S IDLE_24
+  - first:
+      213: 3745310343432930966
+    second: SERVAL LEFT LOW 3-4S IDLE_25
+  - first:
+      213: -2141306175475895646
+    second: SERVAL LEFT LOW 3-4S IDLE_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 8688
+        width: 500
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b969a3056728e680800000000000000
+      internalID: -8725680963223721544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 8686
+        width: 502
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec58c78190737bb20800000000000000
+      internalID: 3150046976573998542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 4460
+        y: 8686
+        width: 506
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2e56ea49da20f60800000000000000
+      internalID: 7999146742256100075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 7601
+        width: 493
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5cea1116cbdd2d40800000000000000
+      internalID: 5561342758609415259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 7601
+        width: 465
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08e8b4c18438f4a0800000000000000
+      internalID: -6559435125309249525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 7601
+        width: 464
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b740b710a50c7d0800000000000000
+      internalID: -2900219197621240952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 6519
+        width: 461
+        height: 896
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997f500940bf901d0800000000000000
+      internalID: -3383897647977465959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 6518
+        width: 456
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec536cf7c80f1b70800000000000000
+      internalID: 8871819445969050850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 4511
+        y: 6516
+        width: 458
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54370a535f28ecdc0800000000000000
+      internalID: -3616809461053623483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 5436
+        width: 456
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18afd64d32c32890800000000000000
+      internalID: -7483924587321776102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 5436
+        width: 457
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2a296f8f92277d0800000000000000
+      internalID: -2922227058944597309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 4513
+        y: 5435
+        width: 457
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa85a64667f1fcd0800000000000000
+      internalID: -2525965897334158599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 4353
+        width: 456
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa6fce7f4ec6c0c0800000000000000
+      internalID: -4555727132213417225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 2587
+        y: 4354
+        width: 455
+        height: 892
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc0533b03779bab0800000000000000
+      internalID: -4991827660914750272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 4515
+        y: 4354
+        width: 452
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0fe17ff9f74ead0800000000000000
+      internalID: -2673871953728704293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 3272
+        width: 456
+        height: 893
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1085f96b0d4003cf0800000000000000
+      internalID: -274714282805995519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 3273
+        width: 456
+        height: 893
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a6a0643c0087f50800000000000000
+      internalID: 6879249269502143097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 4512
+        y: 3272
+        width: 457
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198aaf82730488710800000000000000
+      internalID: 1695675865359886481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 2190
+        width: 457
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd34134e66f221d40800000000000000
+      internalID: 5553553409462846431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 2191
+        width: 457
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa47c04bc0fb8db90800000000000000
+      internalID: -7216808341579991894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 4512
+        y: 2190
+        width: 457
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256fac01290691340800000000000000
+      internalID: 4835001855422166610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1110
+        width: 460
+        height: 896
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881794128cc111130800000000000000
+      internalID: 3535638828340048264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 1110
+        width: 463
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c13ae89e21564b10800000000000000
+      internalID: 1965347547969630663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 4505
+        y: 1109
+        width: 466
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb2ff4c8809a2ca0800000000000000
+      internalID: -6040857033069089823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 26
+        width: 494
+        height: 899
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0f5d68072013c00800000000000000
+      internalID: 878486084635717867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_25
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 29
+        width: 507
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6968ae1f9e30af330800000000000000
+      internalID: 3745310343432930966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL LEFT LOW 3-4S IDLE_26
+      rect:
+        serializedVersion: 2
+        x: 4471
+        y: 29
+        width: 503
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2b867e06d8842e0800000000000000
+      internalID: -2141306175475895646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SERVAL LEFT LOW 3-4S IDLE_0: -8725680963223721544
+      SERVAL LEFT LOW 3-4S IDLE_1: 3150046976573998542
+      SERVAL LEFT LOW 3-4S IDLE_10: -2922227058944597309
+      SERVAL LEFT LOW 3-4S IDLE_11: -2525965897334158599
+      SERVAL LEFT LOW 3-4S IDLE_12: -4555727132213417225
+      SERVAL LEFT LOW 3-4S IDLE_13: -4991827660914750272
+      SERVAL LEFT LOW 3-4S IDLE_14: -2673871953728704293
+      SERVAL LEFT LOW 3-4S IDLE_15: -274714282805995519
+      SERVAL LEFT LOW 3-4S IDLE_16: 6879249269502143097
+      SERVAL LEFT LOW 3-4S IDLE_17: 1695675865359886481
+      SERVAL LEFT LOW 3-4S IDLE_18: 5553553409462846431
+      SERVAL LEFT LOW 3-4S IDLE_19: -7216808341579991894
+      SERVAL LEFT LOW 3-4S IDLE_2: 7999146742256100075
+      SERVAL LEFT LOW 3-4S IDLE_20: 4835001855422166610
+      SERVAL LEFT LOW 3-4S IDLE_21: 3535638828340048264
+      SERVAL LEFT LOW 3-4S IDLE_22: 1965347547969630663
+      SERVAL LEFT LOW 3-4S IDLE_23: -6040857033069089823
+      SERVAL LEFT LOW 3-4S IDLE_24: 878486084635717867
+      SERVAL LEFT LOW 3-4S IDLE_25: 3745310343432930966
+      SERVAL LEFT LOW 3-4S IDLE_26: -2141306175475895646
+      SERVAL LEFT LOW 3-4S IDLE_3: 5561342758609415259
+      SERVAL LEFT LOW 3-4S IDLE_4: -6559435125309249525
+      SERVAL LEFT LOW 3-4S IDLE_5: -2900219197621240952
+      SERVAL LEFT LOW 3-4S IDLE_6: -3383897647977465959
+      SERVAL LEFT LOW 3-4S IDLE_7: 8871819445969050850
+      SERVAL LEFT LOW 3-4S IDLE_8: -3616809461053623483
+      SERVAL LEFT LOW 3-4S IDLE_9: -7483924587321776102
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
