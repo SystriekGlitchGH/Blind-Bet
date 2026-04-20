@@ -43,7 +43,7 @@ public class EnemyMovement : MonoBehaviour
     protected bool canAttack = true, isReadyingAttack, isAttacking;
     public float AttackRange;
     public float stopRange;
-    private bool canGetPoison = true;
+    protected bool canGetPoison = true;
 
     //other
     protected float colliderPushForce = 8;
@@ -123,7 +123,7 @@ public class EnemyMovement : MonoBehaviour
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
             Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
-            if (hasKnockback || isAttacking || enemyStats.hasStun)
+            if (hasKnockback || isAttacking || enemyStats.hasStun || enemyStats.hasFrozen)
             {
                 return;
             }

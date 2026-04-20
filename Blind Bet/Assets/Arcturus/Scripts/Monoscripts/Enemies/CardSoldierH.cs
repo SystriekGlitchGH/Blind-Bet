@@ -21,7 +21,7 @@ public class CardSoldierH : EnemyMovement
     {
         if(enemyTarget != null)
         {
-            if (hasKnockback)
+            if (hasKnockback || enemyStats.hasStun || enemyStats.hasFrozen)
             {
                 return;
             }

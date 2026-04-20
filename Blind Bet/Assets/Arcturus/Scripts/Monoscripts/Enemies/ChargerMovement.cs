@@ -36,17 +36,26 @@ public class ChargerMovement : EnemyMovement
         CreatePath();
         movedNode = AStarManager.instance.FindNearestNode(transform.position);
         enemyStats.CheckEffects();
-        if (enemyStats.effectManager.effects.Count != 0)
+        if(enemyStats.effectManager.effects.Count != 0)
         {
-            for (int i = 0; i < enemyStats.effectManager.effects.Count; i++)
+            for(int i = 0; i < enemyStats.effectManager.effects.Count; i++)
             {
                 enemyStats.effectManager.effects[i].elapsedTime += Time.deltaTime;
-                if (enemyStats.effectManager.effects[i].elapsedTime >= enemyStats.effectManager.effects[i].duration)
+                if(enemyStats.effectManager.effects[i].elapsedTime >= enemyStats.effectManager.effects[i].duration)
                 {
                     enemyStats.effectManager.effects.Remove(enemyStats.effectManager.effects[i]);
+                    enemyStats.CheckEffects();
+                    CheckCurrentColor();
+                    spriteRend.color = currentColor;
                 }
             }
         }
+        if (enemyStats.hasPoison && canGetPoison)
+        {
+            StartCoroutine(PoisonTimer());
+        }
+        if(enemyStats.hasStun || enemyStats.hasFrozen)
+            rb2d.linearVelocity = Vector2.zero;
         CheckCurrentColor();
     }
     protected override void FixedUpdate()
@@ -55,7 +64,7 @@ public class ChargerMovement : EnemyMovement
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, TargetDirection(enemyTarget.transform.position), 3, hitLayer);
             Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
-            if (hasKnockback)
+            if (hasKnockback || enemyStats.hasStun || enemyStats.hasFrozen)
                 return;
             if (isAttacking)
             {

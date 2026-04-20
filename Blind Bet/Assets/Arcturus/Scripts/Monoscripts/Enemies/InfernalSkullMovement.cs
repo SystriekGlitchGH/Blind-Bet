@@ -41,17 +41,26 @@ public class InfernalSkullMovement : EnemyMovement
         CreatePath();
         movedNode = AStarManager.instance.FindNearestNode(transform.position);
         enemyStats.CheckEffects();
-        if (enemyStats.effectManager.effects.Count != 0)
+        if(enemyStats.effectManager.effects.Count != 0)
         {
-            for (int i = 0; i < enemyStats.effectManager.effects.Count; i++)
+            for(int i = 0; i < enemyStats.effectManager.effects.Count; i++)
             {
                 enemyStats.effectManager.effects[i].elapsedTime += Time.deltaTime;
-                if (enemyStats.effectManager.effects[i].elapsedTime >= enemyStats.effectManager.effects[i].duration)
+                if(enemyStats.effectManager.effects[i].elapsedTime >= enemyStats.effectManager.effects[i].duration)
                 {
                     enemyStats.effectManager.effects.Remove(enemyStats.effectManager.effects[i]);
+                    enemyStats.CheckEffects();
+                    CheckCurrentColor();
+                    spriteRend.color = currentColor;
                 }
             }
         }
+        if (enemyStats.hasPoison && canGetPoison)
+        {
+            StartCoroutine(PoisonTimer());
+        }
+        if(enemyStats.hasStun || enemyStats.hasFrozen)
+            rb2d.linearVelocity = Vector2.zero;
         CheckCurrentColor();
     }
     protected override IEnumerator AttackTimer()
