@@ -74,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerStats = new Player(); // constructing player object
         playerStats.AddCard();
+        playerStats.SortHandCards(playerStats.activeHand,1);
         playerStats.SetHandType(playerStats.activeHand,1);
         Debug.Log("active hand: "+playerStats.activeHand.cards[0].rank+playerStats.activeHand.cards[0].suit+
             ", "+playerStats.activeHand.cards[1].rank + playerStats.activeHand.cards[1].suit + 
@@ -86,6 +87,7 @@ public class PlayerMovement : MonoBehaviour
         playerStats.SetActiveAbility(playerStats.activeHand);
         Debug.Log("active ability: "+playerStats.activeAbility.name);
         
+        playerStats.SortHandCards(playerStats.passiveHand1,2);
         playerStats.SetHandType(playerStats.passiveHand1,2);
         Debug.Log("passive hand 1: "+playerStats.passiveHand1.cards[0].rank+playerStats.passiveHand1.cards[0].suit+
             ", "+playerStats.passiveHand1.cards[1].rank + playerStats.passiveHand1.cards[1].suit + 
@@ -98,6 +100,7 @@ public class PlayerMovement : MonoBehaviour
         playerStats.SetPassiveAbility1(playerStats.passiveHand1);
         Debug.Log("passive ability 1: "+playerStats.passiveAbility1.name);
 
+        playerStats.SortHandCards(playerStats.passiveHand2,3);
         playerStats.SetHandType(playerStats.passiveHand2,3);
         Debug.Log("passive hand 2: "+playerStats.passiveHand2.cards[0].rank+playerStats.passiveHand2.cards[0].suit+
             ", "+playerStats.passiveHand2.cards[1].rank + playerStats.passiveHand2.cards[1].suit + 

@@ -21,7 +21,7 @@ public class Player
         }
     }
     public Card.Suit activeSuit;
-
+    
     public Hand activeHand; 
     public Hand passiveHand1;
     public Hand passiveHand2;
@@ -165,6 +165,42 @@ public class Player
                 break;
         }
     }
+    // unfinished
+    public void SortHandCards(Hand hand, int handNum)
+    {
+        Hand sortedHand = new Hand(new Card[5], Card.Suit.blank,false, HandType.none);
+        Card temp;
+        bool swapped;
+        for(int i = 0; i < hand.cards.Length; i++)
+        {
+            swapped = false;
+            for(int j = 0; j < hand.cards.Length - i - 1; j++)
+            {
+                if(hand.cards[j].rank > hand.cards[j + 1].rank)
+                {
+                    temp = hand.cards[j];
+                    hand.cards[j] = hand.cards[j+1];
+                    hand.cards[j+1] = temp;
+                    swapped = true;
+                }
+            }
+            if (swapped == false)
+                break;
+        }
+        sortedHand = hand;
+        switch (handNum)
+        {
+            case 1:
+                activeHand = sortedHand;
+                break;
+            case 2:
+                passiveHand1 = sortedHand;
+                break;
+            case 3:
+                passiveHand2 = sortedHand;
+                break;
+        }
+    }
     public void AddCard()
     {
         activeHand.cards[0] = new Card(4, Card.Suit.diamond);
@@ -173,11 +209,11 @@ public class Player
         activeHand.cards[3] = new Card(8, Card.Suit.diamond);
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
-        passiveHand1.cards[0] = new Card(10, Card.Suit.spade);
-        passiveHand1.cards[1] = new Card(11, Card.Suit.spade);
-        passiveHand1.cards[2] = new Card(12, Card.Suit.spade);
-        passiveHand1.cards[3] = new Card(13, Card.Suit.spade);
-        passiveHand1.cards[4] = new Card(14, Card.Suit.spade);
+        passiveHand1.cards[0] = new Card(11, Card.Suit.spade);
+        passiveHand1.cards[1] = new Card(12, Card.Suit.spade);
+        passiveHand1.cards[2] = new Card(10, Card.Suit.spade);
+        passiveHand1.cards[3] = new Card(14, Card.Suit.spade);
+        passiveHand1.cards[4] = new Card(13, Card.Suit.spade);
 
         passiveHand2.cards[0] = new Card(4, Card.Suit.diamond);
         passiveHand2.cards[1] = new Card(5, Card.Suit.diamond);
