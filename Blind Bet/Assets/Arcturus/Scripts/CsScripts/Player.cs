@@ -178,6 +178,12 @@ public class Player
         passiveHand1.cards[2] = new Card(12, Card.Suit.spade);
         passiveHand1.cards[3] = new Card(13, Card.Suit.spade);
         passiveHand1.cards[4] = new Card(14, Card.Suit.spade);
+
+        passiveHand2.cards[0] = new Card(4, Card.Suit.diamond);
+        passiveHand2.cards[1] = new Card(5, Card.Suit.diamond);
+        passiveHand2.cards[2] = new Card(6, Card.Suit.diamond);
+        passiveHand2.cards[3] = new Card(7, Card.Suit.diamond);
+        passiveHand2.cards[4] = new Card(8, Card.Suit.diamond);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -293,7 +299,95 @@ public class Player
 
         return null;
     }
+    public Ability SetPassiveAbility2(Hand hand)
+    {
+        // diamond
+        if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("", "n1d");
+        else if(hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("Swift Footing", "n2d");
+        else if(hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("Chilling Burst", "b3d");
+        else if(hand.type == HandType.kind3 && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("Flashbang", "b4d");
+        else if(hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("Toxic Jynx", "n5d");
+        else if(hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("Splinter Carbine", "b6d");
+        else if(hand.type == HandType.fullhouse && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("Piercing Duet", "b7d");
+        else if(hand.type == HandType.kind4 && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("Shocking Wheel", "n8d");
+        else if(hand.type == HandType.kind5 && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("Freezing Wheel", "n9d");
+        else if(hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.diamond)
+            passiveAbility2 = new Ability("Combustion Carbine", "b10d");
+        // heart
+        else if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("", "n1h");
+        else if (hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("Dash Jack", "n2h");
+        else if (hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("Hyper Dash", "b3h");
+        else if (hand.type == HandType.kind3 && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("Healing Sigil", "b4h");
+        else if (hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("Parasite Blade", "n5h");
+        else if (hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("Withering Pistol", "b6h");
+        else if (hand.type == HandType.fullhouse && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("Accult Sacrifice", "b7h");
+        else if (hand.type == HandType.kind4 && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("Shielding Ward", "n8h");
+        else if (hand.type == HandType.kind5 && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("Flash Ward", "n9h");
+        else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.heart)
+            passiveAbility2 = new Ability("Draining Mortar", "b10h");
+        // club
+        else if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("", "n1c");
+        else if (hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("Slicing Body", "n2c");
+        else if (hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("Unyielding Charge", "b3c");
+        else if (hand.type == HandType.kind3 && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("Earth Break", "b4c");
+        else if (hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("Halting Blade", "n5c");
+        else if (hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("Roaring Shotgun", "b6c");
+        else if (hand.type == HandType.fullhouse && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("Hit and Run", "b7c");
+        else if (hand.type == HandType.kind4 && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("Tectonic Assault", "n8c");
+        else if (hand.type == HandType.kind5 && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("Tectonic Charge", "n9c");
+        else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.club)
+            passiveAbility2 = new Ability("Holy Shotgun", "b10c");
+        // spade
+        else if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("", "n1s");
+        else if (hand.type == HandType.pair && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("Crossing Rush", "n2s");
+        else if (hand.type == HandType.twopair && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("Shade Steps", "b3s");
+        else if (hand.type == HandType.kind3 && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("Stunning Shockwave", "b4s");
+        else if (hand.type == HandType.flush && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("Rememberance", "n5s");
+        else if (hand.type == HandType.straight && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("Piercing Rifle", "b6s");
+        else if (hand.type == HandType.fullhouse && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("Radio Prism", "b7s");
+        else if (hand.type == HandType.kind4 && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("Reaping Bayonette", "n8s");
+        else if (hand.type == HandType.kind5 && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("Reaping Steps", "n9s");
+        else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.spade)
+            passiveAbility2 = new Ability("Chain Rifle", "b10s");
 
+        return null;
+    }
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
@@ -346,7 +440,7 @@ public class Player
     public float GetSpeedMod()
     {
         float mod = 1;
-        if(passiveAbility1.code == "n2d")
+        if(passiveAbility1.code == "n2d" || passiveAbility2.code == "n2d")
             mod += 0.2f;
         return mod;
     }
@@ -383,21 +477,21 @@ public class Player
     public float GetDashCooldownMod()
     {
         float mod = 1;
-        if (passiveAbility1.code == "n2h")
+        if (passiveAbility1.code == "n2h" || passiveAbility2.code == "n2h")
             mod -= 0.25f;
         return mod;
     }
     public float GetDashDamageMod()
     {
         float mod = 1;
-        if (passiveAbility1.code == "n2c")
+        if (passiveAbility1.code == "n2c" || passiveAbility2.code == "n2c")
             mod += 0.2f;
         return mod;
     }
     public float GetDashdistanceMod()
     {
         float mod = 1;
-        if(passiveAbility1.code == "n2s")
+        if(passiveAbility1.code == "n2s" || passiveAbility2.code == "n2s")
             mod += 0.2f;
         return mod;
     }

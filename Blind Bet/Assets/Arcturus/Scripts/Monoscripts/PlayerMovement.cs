@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
     private LineRenderer lr1, lr2, lr3;
     public LayerMask beamLayer;
     private bool canUseAbility1 = true;
+    private bool canUseAbility2 = true;
     private bool isCharging;
     private bool inTectonicCharge;
     private bool inRadioPrism;
@@ -96,6 +97,18 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("passive hand type 1: "+playerStats.passiveHand1.type);
         playerStats.SetPassiveAbility1(playerStats.passiveHand1);
         Debug.Log("passive ability 1: "+playerStats.passiveAbility1.name);
+
+        playerStats.SetHandType(playerStats.passiveHand2,3);
+        Debug.Log("passive hand 2: "+playerStats.passiveHand2.cards[0].rank+playerStats.passiveHand2.cards[0].suit+
+            ", "+playerStats.passiveHand2.cards[1].rank + playerStats.passiveHand2.cards[1].suit + 
+            ", " + playerStats.passiveHand2.cards[2].rank + playerStats.passiveHand2.cards[2].suit + 
+            ", " + playerStats.passiveHand2.cards[3].rank + playerStats.passiveHand2.cards[3].suit + 
+            ", " + playerStats.passiveHand2.cards[4].rank + playerStats.passiveHand2.cards[4].suit);
+        // Debug.Log("suit of passive hand 1: "+playerStats.GetHandSuit(playerStats.passiveHand1));
+        // Debug.Log("is suited: "+playerStats.IsSuited(playerStats.passiveHand1));
+        Debug.Log("passive hand type 2: "+playerStats.passiveHand2.type);
+        playerStats.SetPassiveAbility2(playerStats.passiveHand2);
+        Debug.Log("passive ability 2: "+playerStats.passiveAbility2.name);
     }
     private void FixedUpdate()
     {
@@ -239,37 +252,37 @@ public class PlayerMovement : MonoBehaviour
         {
             buttonHeld = false;
             indicatorShown = false;
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8d")
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8d" || playerStats.passiveAbility2.code == "n8d")
             {
                 StartCoroutine(ShockingWheelTimer());
             }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9d")
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9d" || playerStats.passiveAbility2.code == "n9d")
             {
                 StartCoroutine(FreezingWheelTimer());
             }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8h")
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8h" || playerStats.passiveAbility2.code == "n8h")
             {
                 StartCoroutine(ShieldingWardTimer());
             }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9h")
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9h" || playerStats.passiveAbility2.code == "n9h")
             {
                 StartCoroutine(ShieldingWardTimer());
                 StartCoroutine(HyperDashTimer());
             }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8c")
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8c" || playerStats.passiveAbility2.code == "n8c")
             {
                 StartCoroutine(TectonicAssaultTimer());
             }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9c")
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9c" || playerStats.passiveAbility2.code == "n9c")
             {
                 StartCoroutine(TectonicAssaultTimer());
                 StartCoroutine(TectonicChargeTimer());
             }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8s")
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8s" || playerStats.passiveAbility2.code == "n8s")
             {
                 StartCoroutine(ReapingBayonetTimer());
             }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9s")
+            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9s" || playerStats.passiveAbility2.code == "n9s")
             {
                 StartCoroutine(ReapingBayonetTimer());
             }
@@ -355,6 +368,55 @@ public class PlayerMovement : MonoBehaviour
                 ActivateChainRifle();
 
             StartCoroutine(Ability1Timer());
+        }
+    }
+    public void PassiveAbility2(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed && canUseAbility2)
+        {
+            // diamonds
+            if (playerStats.passiveAbility2.code == "b3d")
+                StartCoroutine(ChillingBurstTimer());
+            else if (playerStats.passiveAbility2.code == "b4d")
+                StartCoroutine(FlashBangTimer());
+            else if (playerStats.passiveAbility2.code == "b6d")
+                StartCoroutine(SplinterCarbineTimer());
+            else if (playerStats.passiveAbility2.code == "b7d")
+                StartCoroutine(PiercingDuetTimer());
+            else if (playerStats.passiveAbility2.code == "b10d")
+                StartCoroutine(CombustionCarbineTimer());
+            // hearts
+            else if (playerStats.passiveAbility2.code == "b3h")
+                StartCoroutine(HyperDashTimer());
+            else if (playerStats.passiveAbility2.code == "b4h")
+                ActivateHealingSigil();
+            else if (playerStats.passiveAbility2.code == "b6h")
+                ActivateWitheringPistol();
+            else if (playerStats.passiveAbility2.code == "b7h")
+                StartCoroutine(AccultSacrificeTimer());
+            else if (playerStats.passiveAbility2.code == "b10h")
+                ActivateDrainingMortar();
+            // clubs
+            else if (playerStats.passiveAbility2.code == "b3c")
+                StartCoroutine(UnyieldingChargeTimer());
+            else if (playerStats.passiveAbility2.code == "b4c")
+                StartCoroutine(EarthBreakTimer());
+            else if (playerStats.passiveAbility2.code == "b6c")
+                ActivateRoaringShotgun();
+            else if (playerStats.passiveAbility2.code == "b7c")
+                StartCoroutine(HitAndRunTimer());
+            else if (playerStats.passiveAbility2.code == "b10c")
+                ActivateHolyShotgun();
+            // spades
+            else if (playerStats.passiveAbility2.code == "b4s")
+                ActivateStunningShockWave();
+            else if (playerStats.passiveAbility2.code == "b6s")
+                ActivatePiercingRifle();
+            else if (playerStats.passiveAbility2.code == "b7s")
+                StartCoroutine(RadioPrismTimer());
+            else if (playerStats.passiveAbility2.code == "b10s")
+                ActivateChainRifle();
+            StartCoroutine(Ability2Timer());
         }
     }
     #endregion
@@ -1009,7 +1071,7 @@ public class PlayerMovement : MonoBehaviour
         inReapStep = true;
         hasIFrames = true;
         rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance*playerStats.GetDashdistanceMod(), ForceMode2D.Impulse);
-        if(playerStats.passiveAbility1.code == "n9s")
+        if(playerStats.passiveAbility1.code == "n9s" || playerStats.passiveAbility2.code == "n9s")
         {
             StartCoroutine(ShadeStepsTimer());
             spriteRend.color = new Color32(0,0,0,0);
@@ -1017,7 +1079,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         inReapStep = false;
         hasIFrames = false;
-        if (playerStats.passiveAbility1.code == "n9s")
+        if (playerStats.passiveAbility1.code == "n9s" || playerStats.passiveAbility2.code == "n9s")
         {
             StartCoroutine(ShadeStepsTimer());
             spriteRend.color = currentColor;
@@ -1046,6 +1108,27 @@ public class PlayerMovement : MonoBehaviour
 
         canUseAbility1 = true;
     }
+    private IEnumerator Ability2Timer()
+    {
+        canUseAbility2 = false;
+        yield return new WaitForSeconds(1*playerStats.GetAbilityCooldownMod());
+        if(playerStats.passiveAbility2.code == "b7d")
+            yield return new WaitForSeconds(5);
+        if (playerStats.passiveAbility2.code == "b3h")
+            yield return new WaitForSeconds(3);
+        if(playerStats.passiveAbility2.code == "b7h")
+            yield return new WaitForSeconds(6);
+        if(playerStats.passiveAbility2.code == "n8h")
+            yield return new WaitForSeconds(10);
+        if (playerStats.passiveAbility2.code == "b3c")
+            yield return new WaitForSeconds(4);
+        if (playerStats.passiveAbility2.code == "b7c")
+            yield return new WaitForSeconds(10);
+        if (playerStats.passiveAbility2.code == "b7s")
+            yield return new WaitForSeconds(6);
+
+        canUseAbility2 = true;
+    }
     private IEnumerator AttackTimer()
     {
         canAttack = false;
@@ -1059,19 +1142,19 @@ public class PlayerMovement : MonoBehaviour
             if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
             {
                 enemy.GetHit(this, playerStats.weapon.baseKnockback,playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod());
-                if (!enemy.enemyStats.hasPoison && playerStats.passiveAbility1.code == "n5d")
+                if (!enemy.enemyStats.hasPoison && playerStats.passiveAbility1.code == "n5d" || playerStats.passiveAbility2.code == "n5d")
                 {
                     enemy.enemyStats.AddEffect("poison", 6 * playerStats.GetAbilityEffectDurationMod());
                 }
-                if(playerStats.passiveAbility1.code == "n5h")
+                if(playerStats.passiveAbility1.code == "n5h" || playerStats.passiveAbility2.code == "n5h")
                 {
                     playerStats.Heal(playerStats.weapon.baseAttack * playerStats.GetAttackDamageMod() * 0.1f);
                 }
-                if(!enemy.enemyStats.hasSlow && playerStats.passiveAbility1.code == "n5c")
+                if(!enemy.enemyStats.hasSlow && playerStats.passiveAbility1.code == "n5c" || playerStats.passiveAbility2.code == "n5c")
                 {
                     enemy.enemyStats.AddEffect("slow", 5 * playerStats.GetAbilityEffectDurationMod());
                 }
-                if(playerStats.passiveAbility1.code == "n5s")
+                if(playerStats.passiveAbility1.code == "n5s" || playerStats.passiveAbility2.code == "n5s")
                 {
                     StartCoroutine(enemy.GetHitDelay(this, 2, playerStats.weapon.baseAttack*playerStats.GetAttackDamageMod(), 2f));
                 }
