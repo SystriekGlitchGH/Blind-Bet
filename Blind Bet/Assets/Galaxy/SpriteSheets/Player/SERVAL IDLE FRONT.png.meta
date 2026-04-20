@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 51676f09a0246724b80063b7306180d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2386878134157341141
+    second: SERVAL IDLE FRONT_0
+  - first:
+      213: 8098952303782107930
+    second: SERVAL IDLE FRONT_1
+  - first:
+      213: -3717006224231819220
+    second: SERVAL IDLE FRONT_2
+  - first:
+      213: -1537725379342825540
+    second: SERVAL IDLE FRONT_3
+  - first:
+      213: 8427619519676802443
+    second: SERVAL IDLE FRONT_4
+  - first:
+      213: -1422970361766970168
+    second: SERVAL IDLE FRONT_5
+  - first:
+      213: -2157814008243115895
+    second: SERVAL IDLE FRONT_6
+  - first:
+      213: -6377433990110009986
+    second: SERVAL IDLE FRONT_7
+  - first:
+      213: -1988684972027174336
+    second: SERVAL IDLE FRONT_8
+  - first:
+      213: -7937498881093530284
+    second: SERVAL IDLE FRONT_9
+  - first:
+      213: 3055873505921456209
+    second: SERVAL IDLE FRONT_10
+  - first:
+      213: 4483349266450997814
+    second: SERVAL IDLE FRONT_11
+  - first:
+      213: 4212168319354158110
+    second: SERVAL IDLE FRONT_12
+  - first:
+      213: 2049633198969603092
+    second: SERVAL IDLE FRONT_13
+  - first:
+      213: -6886951624247733298
+    second: SERVAL IDLE FRONT_14
+  - first:
+      213: 9140028243502702376
+    second: SERVAL IDLE FRONT_15
+  - first:
+      213: -5670939243579018425
+    second: SERVAL IDLE FRONT_16
+  - first:
+      213: -1373159014886498681
+    second: SERVAL IDLE FRONT_17
+  - first:
+      213: -3123003551362529668
+    second: SERVAL IDLE FRONT_18
+  - first:
+      213: 3561566191243078774
+    second: SERVAL IDLE FRONT_19
+  - first:
+      213: 8700084105980153976
+    second: SERVAL IDLE FRONT_20
+  - first:
+      213: 1495674450664920913
+    second: SERVAL IDLE FRONT_21
+  - first:
+      213: 950757432497100879
+    second: SERVAL IDLE FRONT_22
+  - first:
+      213: -3621800027780329403
+    second: SERVAL IDLE FRONT_23
+  - first:
+      213: 8919963034011408104
+    second: SERVAL IDLE FRONT_24
+  - first:
+      213: 845052981456276888
+    second: SERVAL IDLE FRONT_25
+  - first:
+      213: -7364341050251518690
+    second: SERVAL IDLE FRONT_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_0
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 8748
+        width: 507
+        height: 791
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1789c4405ef1120800000000000000
+      internalID: 2386878134157341141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_1
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 8749
+        width: 512
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b93cfc532456070800000000000000
+      internalID: 8098952303782107930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_2
+      rect:
+        serializedVersion: 2
+        x: 4485
+        y: 8754
+        width: 510
+        height: 781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c281fb8588a8a6cc0800000000000000
+      internalID: -3717006224231819220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 7667
+        width: 506
+        height: 785
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb70b2a2ae6e8aae0800000000000000
+      internalID: -1537725379342825540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_4
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 7667
+        width: 503
+        height: 783
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85eb7c3d4be4f470800000000000000
+      internalID: 8427619519676802443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_5
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 7665
+        width: 501
+        height: 780
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc78f4cef7904ce0800000000000000
+      internalID: -1422970361766970168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_6
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 6587
+        width: 500
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988ae439797ed02e0800000000000000
+      internalID: -2157814008243115895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_7
+      rect:
+        serializedVersion: 2
+        x: 2580
+        y: 6587
+        width: 495
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75adf8339dce77a0800000000000000
+      internalID: -6377433990110009986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_8
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 6585
+        width: 488
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042a920fd85c664e0800000000000000
+      internalID: -1988684972027174336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_9
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 5503
+        width: 483
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d0c5382d658d190800000000000000
+      internalID: -7937498881093530284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_10
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 5503
+        width: 481
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158d9fe43c4a86a20800000000000000
+      internalID: 3055873505921456209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_11
+      rect:
+        serializedVersion: 2
+        x: 4513
+        y: 5508
+        width: 479
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632e1de676e083e30800000000000000
+      internalID: 4483349266450997814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_12
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 4422
+        width: 481
+        height: 773
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c3249f4c0a47a30800000000000000
+      internalID: 4212168319354158110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_13
+      rect:
+        serializedVersion: 2
+        x: 2587
+        y: 4424
+        width: 482
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4144e68f882c17c10800000000000000
+      internalID: 2049633198969603092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_14
+      rect:
+        serializedVersion: 2
+        x: 4511
+        y: 4428
+        width: 482
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec31a638cf1ac60a0800000000000000
+      internalID: -6886951624247733298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_15
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 3342
+        width: 479
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f1403f247e7de70800000000000000
+      internalID: 9140028243502702376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_16
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 3337
+        width: 480
+        height: 773
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74376abcdc6cc41b0800000000000000
+      internalID: -5670939243579018425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_17
+      rect:
+        serializedVersion: 2
+        x: 4513
+        y: 3342
+        width: 477
+        height: 773
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e9099b62f81fce0800000000000000
+      internalID: -1373159014886498681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_18
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 2258
+        width: 483
+        height: 775
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76c0c001dcd8a4d0800000000000000
+      internalID: -3123003551362529668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_19
+      rect:
+        serializedVersion: 2
+        x: 2580
+        y: 2258
+        width: 489
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ca519b4993d6130800000000000000
+      internalID: 3561566191243078774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_20
+      rect:
+        serializedVersion: 2
+        x: 4497
+        y: 2260
+        width: 493
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87018fc3668ecb870800000000000000
+      internalID: 8700084105980153976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_21
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1178
+        width: 498
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157928b0df3b1c410800000000000000
+      internalID: 1495674450664920913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_22
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 1173
+        width: 503
+        height: 783
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f485d87f8d4c13d00800000000000000
+      internalID: 950757432497100879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_23
+      rect:
+        serializedVersion: 2
+        x: 4492
+        y: 1171
+        width: 505
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54057a85018ccbdc0800000000000000
+      internalID: -3621800027780329403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_24
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 91
+        width: 505
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e69dd39e131acb70800000000000000
+      internalID: 8919963034011408104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_25
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 91
+        width: 513
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d0618953b3abb00800000000000000
+      internalID: 845052981456276888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL IDLE FRONT_26
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 89
+        width: 513
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d5eee25da9cc990800000000000000
+      internalID: -7364341050251518690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 16edad1fb0c46384e995d40c5a0dc47c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SERVAL IDLE FRONT_0: 2386878134157341141
+      SERVAL IDLE FRONT_1: 8098952303782107930
+      SERVAL IDLE FRONT_10: 3055873505921456209
+      SERVAL IDLE FRONT_11: 4483349266450997814
+      SERVAL IDLE FRONT_12: 4212168319354158110
+      SERVAL IDLE FRONT_13: 2049633198969603092
+      SERVAL IDLE FRONT_14: -6886951624247733298
+      SERVAL IDLE FRONT_15: 9140028243502702376
+      SERVAL IDLE FRONT_16: -5670939243579018425
+      SERVAL IDLE FRONT_17: -1373159014886498681
+      SERVAL IDLE FRONT_18: -3123003551362529668
+      SERVAL IDLE FRONT_19: 3561566191243078774
+      SERVAL IDLE FRONT_2: -3717006224231819220
+      SERVAL IDLE FRONT_20: 8700084105980153976
+      SERVAL IDLE FRONT_21: 1495674450664920913
+      SERVAL IDLE FRONT_22: 950757432497100879
+      SERVAL IDLE FRONT_23: -3621800027780329403
+      SERVAL IDLE FRONT_24: 8919963034011408104
+      SERVAL IDLE FRONT_25: 845052981456276888
+      SERVAL IDLE FRONT_26: -7364341050251518690
+      SERVAL IDLE FRONT_3: -1537725379342825540
+      SERVAL IDLE FRONT_4: 8427619519676802443
+      SERVAL IDLE FRONT_5: -1422970361766970168
+      SERVAL IDLE FRONT_6: -2157814008243115895
+      SERVAL IDLE FRONT_7: -6377433990110009986
+      SERVAL IDLE FRONT_8: -1988684972027174336
+      SERVAL IDLE FRONT_9: -7937498881093530284
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
