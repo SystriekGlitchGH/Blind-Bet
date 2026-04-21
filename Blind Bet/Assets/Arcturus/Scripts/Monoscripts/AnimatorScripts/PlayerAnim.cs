@@ -6,7 +6,7 @@ public class PlayerAnim : MonoBehaviour
     [SerializeField] PlayerMovement pm;
     void Update()
     {
-        anim.SetFloat("moveX", pm.rb2d.linearVelocity.normalized.x);
-        anim.SetFloat("moveY", pm.rb2d.linearVelocity.normalized.y);
+        anim.SetFloat("moveX", pm.DirectionToVector().x);
+        anim.SetFloat("moveY", pm.DirectionToVector().y);
     }
 }

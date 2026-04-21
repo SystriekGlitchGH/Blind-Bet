@@ -38,6 +38,7 @@ public class Player
     public Weapon weapon;
     public float baseSpeed;
     public float maxHealth, currentHealth;
+    public float maxChips, currentChips, chipLowThreshold;
     public float baseDashDistance, baseDashCooldown, baseDashDamage;
     public float baseParryTime, baseParryCooldown;
     public float baseAbilityDamage, baseAbilityKnockback, baseAbilityCooldown;
@@ -50,6 +51,9 @@ public class Player
         baseSpeed = 10;
         maxHealth = 100;
         currentHealth = maxHealth;
+        maxChips = 5000;
+        currentChips = maxChips * 0.2f;
+        chipLowThreshold = maxChips / 10;
         baseDashDistance = 20;
         baseDashCooldown = 0.5f;
         baseDashDamage = 5;
@@ -210,9 +214,9 @@ public class Player
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
         passiveHand1.cards[0] = new Card(11, Card.Suit.spade);
-        passiveHand1.cards[1] = new Card(12, Card.Suit.spade);
-        passiveHand1.cards[2] = new Card(10, Card.Suit.spade);
-        passiveHand1.cards[3] = new Card(14, Card.Suit.spade);
+        passiveHand1.cards[1] = new Card(11, Card.Suit.spade);
+        passiveHand1.cards[2] = new Card(11, Card.Suit.spade);
+        passiveHand1.cards[3] = new Card(11, Card.Suit.spade);
         passiveHand1.cards[4] = new Card(13, Card.Suit.spade);
 
         passiveHand2.cards[0] = new Card(4, Card.Suit.diamond);
@@ -424,6 +428,91 @@ public class Player
 
         return null;
     }
+    
+    //chip stuff
+    public int GetAttackChipUse()
+    {
+        float currentMin = 5;
+        if(activeAbility.code == "a2")
+            currentMin *= 2;
+        else if(activeAbility.code == "a3")
+            currentMin *= 3;
+        else if(activeAbility.code == "a4")
+            currentMin *= 4;
+        else if(activeAbility.code == "a5")
+            currentMin *= 5;
+        else if(activeAbility.code == "a6")
+            currentMin *= 6;
+        else if(activeAbility.code == "a7")
+            currentMin *= 7;
+        else if(activeAbility.code == "a8")
+            currentMin *= 8;
+        else if(activeAbility.code == "a9")
+            currentMin *= 9;
+        else if(activeAbility.code == "a10")
+            currentMin *= 10;
+        return (int)currentMin;
+    }
+    public int GetAbility1ChipUse()
+    {
+        float currentMin = 20;
+        if(passiveHand1.type == HandType.twopair)
+            currentMin *= 3;
+        else if(passiveHand1.type == HandType.kind3)
+            currentMin *= 4;
+        else if(passiveHand1.type == HandType.straight)
+            currentMin *= 5;
+        else if(passiveHand1.type == HandType.fullhouse)
+            currentMin *= 8;
+        else if(passiveHand1.type == HandType.kind4)
+            currentMin *= 0;
+        else if(passiveHand1.type == HandType.kind5)
+            currentMin *= 0;
+        else if(passiveHand1.type == HandType.royalflush)
+            currentMin *= 15;
+        if(passiveAbility1.code == "b3s")
+        {
+            currentMin = 0;
+        }
+        return (int)currentMin;
+    }
+    public int GetAbility2ChipUse()
+    {
+        float currentMin = 20;
+        if(passiveHand2.type == HandType.twopair)
+            currentMin *= 3;
+        else if(passiveHand2.type == HandType.kind3)
+            currentMin *= 4;
+        else if(passiveHand2.type == HandType.straight)
+            currentMin *= 5;
+        else if(passiveHand2.type == HandType.fullhouse)
+            currentMin *= 8;
+        else if(passiveHand2.type == HandType.kind4)
+            currentMin *= 0;
+        else if(passiveHand2.type == HandType.kind5)
+            currentMin *= 0;
+        else if(passiveHand2.type == HandType.royalflush)
+            currentMin *= 15;
+        if(passiveAbility2.code == "b3s")
+        {
+            currentMin = 0;
+        }
+        return (int)currentMin;
+    }
+    public int GetHoldAbilityChipUse()
+    {
+        float currentMin = 0;
+        if(passiveHand1.type == HandType.kind4)
+            currentMin += 200;
+        else if(passiveHand1.type == HandType.kind5)
+            currentMin += 240;
+        if(passiveHand2.type == HandType.kind4)
+            currentMin += 200;
+        else if(passiveHand2.type == HandType.kind5)
+            currentMin += 240;
+        return (int)currentMin;
+    }
+    // help methods
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
@@ -478,6 +567,8 @@ public class Player
         float mod = 1;
         if(passiveAbility1.code == "n2d" || passiveAbility2.code == "n2d")
             mod += 0.2f;
+        if(currentChips <= chipLowThreshold)
+            mod /= 2;
         return mod;
     }
     public float GetDamageMod()

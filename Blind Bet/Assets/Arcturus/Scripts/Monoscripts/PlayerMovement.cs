@@ -152,7 +152,7 @@ public class PlayerMovement : MonoBehaviour
         FindDirection(); // gets the direction from the vector
         FindAngle(); // gets the angle from the direction
         anchorTransform.eulerAngles = new Vector3(0,0,attackAngle); // uses angle to change the achor transform
-        if (buttonHeld)
+        if (buttonHeld && playerStats.currentChips >= playerStats.GetHoldAbilityChipUse())
         {
             buttonHeldTime += Time.deltaTime;
             if(buttonHeldTime >= 3 && !indicatorShown)
@@ -231,9 +231,10 @@ public class PlayerMovement : MonoBehaviour
     // main input attacking script
     public void Attack(InputAction.CallbackContext ctx)
     {
-        if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.activeSuit != Card.Suit.blank)
+        if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.activeSuit != Card.Suit.blank && playerStats.currentChips >= playerStats.GetAttackChipUse())
         {
             buttonHeld = true;
+            playerStats.currentChips -= playerStats.GetAttackChipUse();
             StartCoroutine(AttackTimer());
             if(playerStats.activeAbility.code == "a5")
                 StartCoroutine(WhirlWindsTimer());
@@ -255,40 +256,45 @@ public class PlayerMovement : MonoBehaviour
         {
             buttonHeld = false;
             indicatorShown = false;
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8d" || playerStats.passiveAbility2.code == "n8d")
+            if(buttonHeldTime >= 3)
             {
-                StartCoroutine(ShockingWheelTimer());
+                if(playerStats.passiveAbility1.code == "n8d" || playerStats.passiveAbility2.code == "n8d")
+                {
+                    StartCoroutine(ShockingWheelTimer());
+                }
+                if(playerStats.passiveAbility1.code == "n9d" || playerStats.passiveAbility2.code == "n9d")
+                {
+                    StartCoroutine(FreezingWheelTimer());
+                }
+                if(playerStats.passiveAbility1.code == "n8h" || playerStats.passiveAbility2.code == "n8h")
+                {
+                    StartCoroutine(ShieldingWardTimer());
+                }
+                if(playerStats.passiveAbility1.code == "n9h" || playerStats.passiveAbility2.code == "n9h")
+                {
+                    StartCoroutine(ShieldingWardTimer());
+                    StartCoroutine(HyperDashTimer());
+                }
+                if(playerStats.passiveAbility1.code == "n8c" || playerStats.passiveAbility2.code == "n8c")
+                {
+                    StartCoroutine(TectonicAssaultTimer());
+                }
+                if(playerStats.passiveAbility1.code == "n9c" || playerStats.passiveAbility2.code == "n9c")
+                {
+                    StartCoroutine(TectonicAssaultTimer());
+                    StartCoroutine(TectonicChargeTimer());
+                }
+                if(playerStats.passiveAbility1.code == "n8s" || playerStats.passiveAbility2.code == "n8s")
+                {
+                    StartCoroutine(ReapingBayonetTimer());
+                }
+                if(playerStats.passiveAbility1.code == "n9s" || playerStats.passiveAbility2.code == "n9s")
+                {
+                    StartCoroutine(ReapingBayonetTimer());
+                }
+                playerStats.currentChips -= playerStats.GetHoldAbilityChipUse();
             }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9d" || playerStats.passiveAbility2.code == "n9d")
-            {
-                StartCoroutine(FreezingWheelTimer());
-            }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8h" || playerStats.passiveAbility2.code == "n8h")
-            {
-                StartCoroutine(ShieldingWardTimer());
-            }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9h" || playerStats.passiveAbility2.code == "n9h")
-            {
-                StartCoroutine(ShieldingWardTimer());
-                StartCoroutine(HyperDashTimer());
-            }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8c" || playerStats.passiveAbility2.code == "n8c")
-            {
-                StartCoroutine(TectonicAssaultTimer());
-            }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9c" || playerStats.passiveAbility2.code == "n9c")
-            {
-                StartCoroutine(TectonicAssaultTimer());
-                StartCoroutine(TectonicChargeTimer());
-            }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n8s" || playerStats.passiveAbility2.code == "n8s")
-            {
-                StartCoroutine(ReapingBayonetTimer());
-            }
-            if(buttonHeldTime >= 3 && playerStats.passiveAbility1.code == "n9s" || playerStats.passiveAbility2.code == "n9s")
-            {
-                StartCoroutine(ReapingBayonetTimer());
-            }
+            
             buttonHeldTime = 0;
         }
     }
@@ -325,7 +331,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void PassiveAbility1(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed && canUseAbility1)
+        if (ctx.performed && canUseAbility1 && playerStats.currentChips >= playerStats.GetAbility1ChipUse())
         {
             // diamonds
             if (playerStats.passiveAbility1.code == "b3d")
@@ -369,13 +375,13 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(RadioPrismTimer());
             else if (playerStats.passiveAbility1.code == "b10s")
                 ActivateChainRifle();
-
+            playerStats.currentChips -= playerStats.GetAbility1ChipUse();
             StartCoroutine(Ability1Timer());
         }
     }
     public void PassiveAbility2(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed && canUseAbility2)
+        if (ctx.performed && canUseAbility2 && playerStats.currentChips >= playerStats.GetAbility2ChipUse())
         {
             // diamonds
             if (playerStats.passiveAbility2.code == "b3d")
@@ -419,6 +425,7 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(RadioPrismTimer());
             else if (playerStats.passiveAbility2.code == "b10s")
                 ActivateChainRifle();
+            playerStats.currentChips -= playerStats.GetAbility2ChipUse();
             StartCoroutine(Ability2Timer());
         }
     }
