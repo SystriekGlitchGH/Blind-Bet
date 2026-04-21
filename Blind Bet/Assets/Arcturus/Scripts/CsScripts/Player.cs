@@ -214,10 +214,10 @@ public class Player
         activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
         passiveHand1.cards[0] = new Card(11, Card.Suit.spade);
-        passiveHand1.cards[1] = new Card(11, Card.Suit.spade);
-        passiveHand1.cards[2] = new Card(13, Card.Suit.spade);
-        passiveHand1.cards[3] = new Card(14, Card.Suit.spade);
-        passiveHand1.cards[4] = new Card(15, Card.Suit.spade);
+        passiveHand1.cards[1] = new Card(11, Card.Suit.club);
+        passiveHand1.cards[2] = new Card(11, Card.Suit.club);
+        passiveHand1.cards[3] = new Card(14, Card.Suit.club);
+        passiveHand1.cards[4] = new Card(14, Card.Suit.club);
 
         passiveHand2.cards[0] = new Card(11, Card.Suit.diamond);
         passiveHand2.cards[1] = new Card(11, Card.Suit.diamond);
