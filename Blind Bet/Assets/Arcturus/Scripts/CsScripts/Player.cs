@@ -215,15 +215,15 @@ public class Player
 
         passiveHand1.cards[0] = new Card(11, Card.Suit.spade);
         passiveHand1.cards[1] = new Card(11, Card.Suit.spade);
-        passiveHand1.cards[2] = new Card(11, Card.Suit.spade);
-        passiveHand1.cards[3] = new Card(11, Card.Suit.spade);
-        passiveHand1.cards[4] = new Card(13, Card.Suit.spade);
+        passiveHand1.cards[2] = new Card(13, Card.Suit.spade);
+        passiveHand1.cards[3] = new Card(14, Card.Suit.spade);
+        passiveHand1.cards[4] = new Card(15, Card.Suit.spade);
 
-        passiveHand2.cards[0] = new Card(4, Card.Suit.diamond);
-        passiveHand2.cards[1] = new Card(5, Card.Suit.diamond);
-        passiveHand2.cards[2] = new Card(6, Card.Suit.diamond);
-        passiveHand2.cards[3] = new Card(7, Card.Suit.diamond);
-        passiveHand2.cards[4] = new Card(8, Card.Suit.diamond);
+        passiveHand2.cards[0] = new Card(11, Card.Suit.diamond);
+        passiveHand2.cards[1] = new Card(11, Card.Suit.diamond);
+        passiveHand2.cards[2] = new Card(12, Card.Suit.diamond);
+        passiveHand2.cards[3] = new Card(12, Card.Suit.diamond);
+        passiveHand2.cards[4] = new Card(13, Card.Suit.diamond);
     }
     // Abilities
     public Ability SetActiveAbility(Hand hand)
@@ -451,6 +451,10 @@ public class Player
             currentMin *= 9;
         else if(activeAbility.code == "a10")
             currentMin *= 10;
+        if(passiveHand1.type == HandType.flush)
+            currentMin += 15;
+        if(passiveHand2.type == HandType.flush)
+            currentMin += 15;
         return (int)currentMin;
     }
     public int GetAbility1ChipUse()
@@ -460,6 +464,8 @@ public class Player
             currentMin *= 3;
         else if(passiveHand1.type == HandType.kind3)
             currentMin *= 4;
+        else if(passiveHand1.type == HandType.flush)
+            currentMin *= 0;
         else if(passiveHand1.type == HandType.straight)
             currentMin *= 5;
         else if(passiveHand1.type == HandType.fullhouse)
@@ -483,6 +489,8 @@ public class Player
             currentMin *= 3;
         else if(passiveHand2.type == HandType.kind3)
             currentMin *= 4;
+        else if(passiveHand2.type == HandType.flush)
+            currentMin *= 0;
         else if(passiveHand2.type == HandType.straight)
             currentMin *= 5;
         else if(passiveHand2.type == HandType.fullhouse)
@@ -510,6 +518,24 @@ public class Player
             currentMin += 200;
         else if(passiveHand2.type == HandType.kind5)
             currentMin += 240;
+        return (int)currentMin;
+    }
+    public int GetDashChipUse()
+    {
+        float currentMin = 2;
+        if(passiveHand1.type == HandType.pair)
+            currentMin += 3;
+        if(passiveHand2.type == HandType.pair)
+            currentMin += 3;
+        if(passiveAbility1.code == "b3s")
+            currentMin += 5;
+        if(passiveAbility2.code == "b3s")
+            currentMin += 5;
+        return (int)currentMin;
+    }
+    public int GetParryChipUse()
+    {
+        float currentMin = 20;
         return (int)currentMin;
     }
     // help methods

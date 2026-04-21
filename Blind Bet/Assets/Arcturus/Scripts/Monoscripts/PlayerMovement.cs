@@ -301,7 +301,7 @@ public class PlayerMovement : MonoBehaviour
     // input for parrying
     public void Parry(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed && canParry)
+        if (ctx.performed && canParry && playerStats.currentChips >= playerStats.GetParryChipUse())
         {
             RaycastHit2D hit = MakeBoxCast("parry");
             StartCoroutine(ParryTimer());
@@ -319,14 +319,16 @@ public class PlayerMovement : MonoBehaviour
                 bullet.rb2d.linearVelocity = -bullet.rb2d.linearVelocity;
                 StartCoroutine(RetaliationTimer());
             }
+            playerStats.currentChips -= playerStats.GetParryChipUse();
         }
     }
     // input for dashing
     public void Dash(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed && canDash)
+        if (ctx.performed && canDash && playerStats.currentChips >= playerStats.GetDashChipUse())
         {
             ActivateDash(0);
+            playerStats.currentChips -= playerStats.GetDashChipUse();
         }
     }
     public void PassiveAbility1(InputAction.CallbackContext ctx)
@@ -1217,7 +1219,7 @@ public class PlayerMovement : MonoBehaviour
         isDashing = true;
         hasIFrames = true;
         rb2d.AddForce(DirectionToVector()*playerStats.baseDashDistance*playerStats.GetDashdistanceMod(), ForceMode2D.Impulse);
-        if(playerStats.passiveAbility1.code == "b3s")
+        if(playerStats.passiveAbility1.code == "b3s" || playerStats.passiveAbility2.code == "b3s")
         {
             StartCoroutine(ShadeStepsTimer());
             spriteRend.color = new Color32(0,0,0,0);
@@ -1225,7 +1227,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         isDashing = false;
         hasIFrames = false;
-        if (playerStats.passiveAbility1.code == "b3s")
+        if (playerStats.passiveAbility1.code == "b3s" || playerStats.passiveAbility2.code == "b3s")
         {
             StartCoroutine(ShadeStepsTimer());
             spriteRend.color = currentColor;
