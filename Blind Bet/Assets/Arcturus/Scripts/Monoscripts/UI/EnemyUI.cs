@@ -1,16 +1,15 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public EnemyMovement em;
+    public Slider healthbarSlider;
     void Update()
     {
-        
+        if(healthbarSlider.value != em.enemyStats.currentHealth / em.enemyStats.maxHealth)
+        {
+            healthbarSlider.value = Mathf.MoveTowards(healthbarSlider.value, em.enemyStats.currentHealth / em.enemyStats.maxHealth, 2f * Time.deltaTime);
+        }
     }
 }

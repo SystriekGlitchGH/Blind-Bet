@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour
@@ -44,6 +45,13 @@ public class PlayerUI : MonoBehaviour
             SwitchChipPicture(1);
         else if(chipbarSlider.value >= 0 && chipbarSlider.value <= 0.1f && chips[0].sprite != currentChip.sprite)
             SwitchChipPicture(0);
+    }
+    public void OpenCardMenu(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            
+        }
     }
 
     private void SwitchChipPicture(int chipIndex)
