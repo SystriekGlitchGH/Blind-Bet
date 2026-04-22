@@ -7213,45 +7213,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426088843}
   m_CullTransparentMesh: 1
---- !u!1 &473549825 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8453562600957011447, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+--- !u!114 &473549828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
   m_PrefabInstance: {fileID: 1586444115}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &473549828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473549825}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 565b91e52358155468d7ab930a053a76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pm: {fileID: 473549830}
-  healthbarSlider: {fileID: 963069865}
-  healthbarText: {fileID: 166519106}
-  chipbarSlider: {fileID: 247138647}
-  chipbarText: {fileID: 1461193274}
-  chips:
-  - {fileID: 1662787699}
-  - {fileID: 787572743}
-  - {fileID: 658517673}
-  - {fileID: 1731535507}
-  - {fileID: 529155417}
-  - {fileID: 1726868130}
-  currentChip: {fileID: 216494387}
---- !u!114 &473549830 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-  m_PrefabInstance: {fileID: 1586444115}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473549825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8d2e0a5d2d79984c86a64d16f925d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &501602878 stripped
@@ -15784,6 +15754,50 @@ PrefabInstance:
       propertyPath: m_projectionMatrixMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: chipbarText
+      value: 
+      objectReference: {fileID: 1461193274}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: currentChip
+      value: 
+      objectReference: {fileID: 216494387}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: chipbarSlider
+      value: 
+      objectReference: {fileID: 247138647}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: healthbarText
+      value: 
+      objectReference: {fileID: 166519106}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: healthbarSlider
+      value: 
+      objectReference: {fileID: 963069865}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: 'chips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1662787699}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: 'chips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 787572743}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: 'chips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 658517673}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: 'chips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1731535507}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: 'chips.Array.data[4]'
+      value: 
+      objectReference: {fileID: 529155417}
+    - target: {fileID: 1542396519381130473, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: 'chips.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1726868130}
     - target: {fileID: 3356795498786898444, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
@@ -15903,10 +15917,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8453562600957011447, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 473549828}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
 --- !u!1001 &1628254230
 PrefabInstance:

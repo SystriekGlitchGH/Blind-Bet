@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 5576339891272612593}
   - component: {fileID: 9003751370500190273}
   - component: {fileID: 2255689613270921403}
+  - component: {fileID: 1542396519381130473}
   - component: {fileID: 3508938354143582018}
   - component: {fileID: 8597462316448543853}
   m_Layer: 6
@@ -448,6 +449,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 8597462316448543853}
   pm: {fileID: 9003751370500190273}
+--- !u!114 &1542396519381130473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8453562600957011447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565b91e52358155468d7ab930a053a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pm: {fileID: 9003751370500190273}
+  healthbarSlider: {fileID: 0}
+  healthbarText: {fileID: 0}
+  chipbarSlider: {fileID: 0}
+  chipbarText: {fileID: 0}
+  chips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentChip: {fileID: 0}
 --- !u!114 &3508938354143582018
 MonoBehaviour:
   m_ObjectHideFlags: 0
