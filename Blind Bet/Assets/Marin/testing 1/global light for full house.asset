@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   shadows:
-    m_OverrideState: 1
-    m_Value: {x: 1, y: 0.60227054, z: 0, w: 0.15418501}
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 0.90197176, z: 0.92153835, w: 0.15418501}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.7657121, z: 0.43828195, w: 0.41850227}
+    m_Value: {x: 0.96790844, y: 1, z: 0.9893002, w: -0.14450876}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 0.94572836, y: 1, z: 0.96924096, w: -0.11013217}
+    m_Value: {x: 0.94572836, y: 1, z: 0.96924096, w: 1}
   shadowsStart:
     m_OverrideState: 1
     m_Value: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0a6e343ff77276b4cac102cf0cbe1090
+guid: ac2eadb14c8a54f48bc3d990a8f69c97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2428609352480742723
-    second: sound wave part 5_0
+      213: -5904914228222756610
+    second: HIT_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sound wave part 5_0
+      name: HIT_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 9
-        width: 98
-        height: 190
+        x: 17
+        y: 0
+        width: 180
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db2a13749a8db4ed0800000000000000
-      internalID: -2428609352480742723
+      spriteID: ef8f1a58bc78d0ea0800000000000000
+      internalID: -5904914228222756610
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      sound wave part 5_0: -2428609352480742723
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

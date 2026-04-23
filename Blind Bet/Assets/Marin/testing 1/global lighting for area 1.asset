@@ -15,65 +15,31 @@ MonoBehaviour:
   active: 1
   redOutRedIn:
     m_OverrideState: 1
-    m_Value: 79
+    m_Value: 149
   redOutGreenIn:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: -24
   redOutBlueIn:
     m_OverrideState: 1
-    m_Value: -13
+    m_Value: 15
   greenOutRedIn:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 51
   greenOutGreenIn:
     m_OverrideState: 1
-    m_Value: 85
+    m_Value: 102
   greenOutBlueIn:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: -9
   blueOutRedIn:
     m_OverrideState: 1
-    m_Value: -118
+    m_Value: 84
   blueOutGreenIn:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 36
   blueOutBlueIn:
     m_OverrideState: 1
-    m_Value: 200
---- !u!114 &-7150535335460007716
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
-  m_Name: ShadowsMidtonesHighlights
-  m_EditorClassIdentifier: 
-  active: 1
-  shadows:
-    m_OverrideState: 1
-    m_Value: {x: 0.8337234, y: 0.8816412, z: 1, w: 0}
-  midtones:
-    m_OverrideState: 1
-    m_Value: {x: 0.8310182, y: 1, z: 0.6710174, w: 0}
-  highlights:
-    m_OverrideState: 1
-    m_Value: {x: 0.69092345, y: 0.06759554, z: 1, w: 1}
-  shadowsStart:
-    m_OverrideState: 1
-    m_Value: 0
-  shadowsEnd:
-    m_OverrideState: 1
-    m_Value: 0.3
-  highlightsStart:
-    m_OverrideState: 1
-    m_Value: 0.55
-  highlightsEnd:
-    m_OverrideState: 1
-    m_Value: 1
+    m_Value: 84
 --- !u!114 &-6922447996506309314
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -89,19 +55,41 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.4
   contrast:
     m_OverrideState: 1
-    m_Value: 86
+    m_Value: 36
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_Value: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
   hueShift:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 17
   saturation:
     m_OverrideState: 1
-    m_Value: 51
+    m_Value: 5
+--- !u!114 &-5649099239321661094
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0.14450864}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0.028901644}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 0.45771635, y: 0.9370213, z: 1, w: 0.11560692}
 --- !u!114 &-368541908944727424
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -164,4 +152,24 @@ MonoBehaviour:
   - {fileID: -368541908944727424}
   - {fileID: -8582107004077573872}
   - {fileID: -6922447996506309314}
-  - {fileID: -7150535335460007716}
+  - {fileID: 5752217344935055204}
+  - {fileID: -5649099239321661094}
+--- !u!114 &5752217344935055204
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
+  m_Name: WhiteBalance
+  m_EditorClassIdentifier: 
+  active: 1
+  temperature:
+    m_OverrideState: 1
+    m_Value: -18
+  tint:
+    m_OverrideState: 1
+    m_Value: 7
