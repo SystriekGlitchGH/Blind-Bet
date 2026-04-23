@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 1392a6f7f81b9c648aa6cfd53d769044
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4489905921547750742
+    second: SERVAL_RUN_TOP 3-4s LEFT_0
+  - first:
+      213: -156119923076728614
+    second: SERVAL_RUN_TOP 3-4s LEFT_1
+  - first:
+      213: -5686308857507807922
+    second: SERVAL_RUN_TOP 3-4s LEFT_2
+  - first:
+      213: 5023078846471182666
+    second: SERVAL_RUN_TOP 3-4s LEFT_3
+  - first:
+      213: -1588888282081771559
+    second: SERVAL_RUN_TOP 3-4s LEFT_4
+  - first:
+      213: 4004228734563832828
+    second: SERVAL_RUN_TOP 3-4s LEFT_5
+  - first:
+      213: 2901642209040977763
+    second: SERVAL_RUN_TOP 3-4s LEFT_6
+  - first:
+      213: -2933436738180482269
+    second: SERVAL_RUN_TOP 3-4s LEFT_7
+  - first:
+      213: -3982047249035580926
+    second: SERVAL_RUN_TOP 3-4s LEFT_8
+  - first:
+      213: -8760026486525358035
+    second: SERVAL_RUN_TOP 3-4s LEFT_9
+  - first:
+      213: 425426484373023972
+    second: SERVAL_RUN_TOP 3-4s LEFT_10
+  - first:
+      213: 5288804036527092588
+    second: SERVAL_RUN_TOP 3-4s LEFT_11
+  - first:
+      213: -3567655756254614706
+    second: SERVAL_RUN_TOP 3-4s LEFT_12
+  - first:
+      213: 7666577557075212079
+    second: SERVAL_RUN_TOP 3-4s LEFT_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_0
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 4513
+        width: 876
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa239375a56a0b1c0800000000000000
+      internalID: -4489905921547750742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_1
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 4525
+        width: 591
+        height: 819
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad876a2d1c955ddf0800000000000000
+      internalID: -156119923076728614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_2
+      rect:
+        serializedVersion: 2
+        x: 4637
+        y: 4537
+        width: 536
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4df611b83c2611b0800000000000000
+      internalID: -5686308857507807922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_3
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 3445
+        width: 518
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4991b2f89f85b540800000000000000
+      internalID: 5023078846471182666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_4
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 3436
+        width: 472
+        height: 792
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df3cb6968223f9e0800000000000000
+      internalID: -1588888282081771559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_5
+      rect:
+        serializedVersion: 2
+        x: 4614
+        y: 3405
+        width: 366
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3d61b91d0e19730800000000000000
+      internalID: 4004228734563832828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_6
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 2292
+        width: 428
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36fca2f2734b44820800000000000000
+      internalID: 2901642209040977763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_7
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 2289
+        width: 440
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32bfba124d65a47d0800000000000000
+      internalID: -2933436738180482269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_8
+      rect:
+        serializedVersion: 2
+        x: 4617
+        y: 2299
+        width: 486
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20aa962ff1decb8c0800000000000000
+      internalID: -3982047249035580926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_9
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1308
+        width: 420
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2094a7b2522e6680800000000000000
+      internalID: -8760026486525358035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_10
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 1320
+        width: 389
+        height: 722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ece81f222b67e500800000000000000
+      internalID: 425426484373023972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_11
+      rect:
+        serializedVersion: 2
+        x: 4630
+        y: 1305
+        width: 389
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6379dbff3b956940800000000000000
+      internalID: 5288804036527092588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_12
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 188
+        width: 458
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4be09fedf32d7ec0800000000000000
+      internalID: -3567655756254614706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL_RUN_TOP 3-4s LEFT_13
+      rect:
+        serializedVersion: 2
+        x: 2641
+        y: 170
+        width: 607
+        height: 816
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27337c3ba7256a60800000000000000
+      internalID: 7666577557075212079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SERVAL_RUN_TOP 3-4s LEFT_0: -4489905921547750742
+      SERVAL_RUN_TOP 3-4s LEFT_1: -156119923076728614
+      SERVAL_RUN_TOP 3-4s LEFT_10: 425426484373023972
+      SERVAL_RUN_TOP 3-4s LEFT_11: 5288804036527092588
+      SERVAL_RUN_TOP 3-4s LEFT_12: -3567655756254614706
+      SERVAL_RUN_TOP 3-4s LEFT_13: 7666577557075212079
+      SERVAL_RUN_TOP 3-4s LEFT_2: -5686308857507807922
+      SERVAL_RUN_TOP 3-4s LEFT_3: 5023078846471182666
+      SERVAL_RUN_TOP 3-4s LEFT_4: -1588888282081771559
+      SERVAL_RUN_TOP 3-4s LEFT_5: 4004228734563832828
+      SERVAL_RUN_TOP 3-4s LEFT_6: 2901642209040977763
+      SERVAL_RUN_TOP 3-4s LEFT_7: -2933436738180482269
+      SERVAL_RUN_TOP 3-4s LEFT_8: -3982047249035580926
+      SERVAL_RUN_TOP 3-4s LEFT_9: -8760026486525358035
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

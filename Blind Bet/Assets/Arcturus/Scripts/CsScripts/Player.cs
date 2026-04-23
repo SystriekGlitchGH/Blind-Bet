@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class Player
@@ -25,10 +27,11 @@ public class Player
     public Hand activeHand; 
     public Hand passiveHand1;
     public Hand passiveHand2;
+    public List<Card> bench;
 
-    public Ability activeAbility;
-    public Ability passiveAbility1;
-    public Ability passiveAbility2;
+    public Ability activeAbility = new Ability("Nothing", "na");
+    public Ability passiveAbility1 = new Ability("Nothing", "na");
+    public Ability passiveAbility2 = new Ability("Nothing", "na");
 
     public readonly Card blankCard = new Card(0,Card.Suit.blank);
 
@@ -64,6 +67,7 @@ public class Player
         activeHand = new Hand(new Card[5],Card.Suit.blank,false,HandType.none);
         passiveHand1 = new Hand(new Card[5], Card.Suit.blank, false, HandType.none);
         passiveHand2 = new Hand(new Card[5], Card.Suit.blank, false, HandType.none);
+        bench = new List<Card>();
         FillHandBlank(activeHand);
         FillHandBlank(passiveHand1);
         FillHandBlank(passiveHand2);
@@ -134,7 +138,9 @@ public class Player
     }
     public void SetHandType(Hand hand, int handNum)
     {
-        if(hand.cards[0].rank == 10 && hand.cards[1].rank == 11 && hand.cards[2].rank == 12 && hand.cards[3].rank == 13 && hand.cards[4].rank == 14 && IsSuited(hand))
+        if(hand.cards[0].rank == 0 && hand.cards[1].rank == 0 && hand.cards[2].rank == 0 && hand.cards[3].rank == 0 && hand.cards[4].rank == 0)
+            hand.type = HandType.none;
+        else if(hand.cards[0].rank == 10 && hand.cards[1].rank == 11 && hand.cards[2].rank == 12 && hand.cards[3].rank == 13 && hand.cards[4].rank == 14 && IsSuited(hand))
             hand.type = HandType.royalflush;
         else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[0].rank && hand.cards[4].rank == hand.cards[0].rank)
             hand.type = HandType.kind5;
@@ -172,7 +178,6 @@ public class Player
     // unfinished
     public void SortHandCards(Hand hand, int handNum)
     {
-        Hand sortedHand = new Hand(new Card[5], Card.Suit.blank,false, HandType.none);
         Card temp;
         bool swapped;
         for(int i = 0; i < hand.cards.Length; i++)
@@ -180,7 +185,17 @@ public class Player
             swapped = false;
             for(int j = 0; j < hand.cards.Length - i - 1; j++)
             {
-                if(hand.cards[j].rank > hand.cards[j + 1].rank)
+                if(hand.cards[j+1].rank != 0)
+                {
+                    if(hand.cards[j].rank > hand.cards[j + 1].rank)
+                    {
+                        temp = hand.cards[j];
+                        hand.cards[j] = hand.cards[j+1];
+                        hand.cards[j+1] = temp;
+                        swapped = true;
+                    }
+                }
+                if(hand.cards[j].rank == 0)
                 {
                     temp = hand.cards[j];
                     hand.cards[j] = hand.cards[j+1];
@@ -191,42 +206,61 @@ public class Player
             if (swapped == false)
                 break;
         }
-        sortedHand = hand;
         switch (handNum)
         {
             case 1:
-                activeHand = sortedHand;
+                activeHand = hand;
                 break;
             case 2:
-                passiveHand1 = sortedHand;
+                passiveHand1 = hand;
                 break;
             case 3:
-                passiveHand2 = sortedHand;
+                passiveHand2 = hand;
                 break;
         }
     }
-    public void AddCard()
+    public void AddCard(Card addedCard, int handNum)
     {
-        activeHand.cards[0] = new Card(4, Card.Suit.diamond);
-        activeHand.cards[1] = new Card(6, Card.Suit.diamond);
-        activeHand.cards[2] = new Card(7, Card.Suit.diamond);
-        activeHand.cards[3] = new Card(8, Card.Suit.diamond);
-        activeHand.cards[4] = new Card(9, Card.Suit.diamond);
+        if(handNum == 1)
+        {
+            activeHand.cards[4] = addedCard;
+            SortHandCards(activeHand,1);
+        }
+        else if(handNum == 2)
+        {
+            passiveHand1.cards[4] = addedCard;
+            SortHandCards(passiveHand1,1);
+        }
+        else if(handNum == 3)
+        {
+            passiveHand2.cards[4] = addedCard;
+            SortHandCards(passiveHand2,1);
+        }
+        else if(handNum == 4)
+        {
+            bench.Add(addedCard);
+        }
+        // old code
+        // activeHand.cards[0] = new Card(4, Card.Suit.diamond);
+        // activeHand.cards[1] = new Card(6, Card.Suit.diamond);
+        // activeHand.cards[2] = new Card(7, Card.Suit.diamond);
+        // activeHand.cards[3] = new Card(8, Card.Suit.diamond);
+        // activeHand.cards[4] = new Card(9, Card.Suit.diamond);
 
-        passiveHand1.cards[0] = new Card(11, Card.Suit.spade);
-        passiveHand1.cards[1] = new Card(11, Card.Suit.club);
-        passiveHand1.cards[2] = new Card(11, Card.Suit.club);
-        passiveHand1.cards[3] = new Card(14, Card.Suit.club);
-        passiveHand1.cards[4] = new Card(14, Card.Suit.club);
+        // passiveHand1.cards[0] = new Card(11, Card.Suit.spade);
+        // passiveHand1.cards[1] = new Card(11, Card.Suit.club);
+        // passiveHand1.cards[2] = new Card(11, Card.Suit.club);
+        // passiveHand1.cards[3] = new Card(14, Card.Suit.club);
+        // passiveHand1.cards[4] = new Card(14, Card.Suit.club);
 
-        passiveHand2.cards[0] = new Card(11, Card.Suit.diamond);
-        passiveHand2.cards[1] = new Card(11, Card.Suit.diamond);
-        passiveHand2.cards[2] = new Card(12, Card.Suit.diamond);
-        passiveHand2.cards[3] = new Card(12, Card.Suit.diamond);
-        passiveHand2.cards[4] = new Card(13, Card.Suit.diamond);
+        // passiveHand2.cards[0] = new Card(11, Card.Suit.diamond);
+        // passiveHand2.cards[1] = new Card(11, Card.Suit.diamond);
+        // passiveHand2.cards[2] = new Card(12, Card.Suit.diamond);
+        // passiveHand2.cards[3] = new Card(12, Card.Suit.diamond);
+        // passiveHand2.cards[4] = new Card(13, Card.Suit.diamond);
     }
     // Abilities
-    public Ability SetActiveAbility(Hand hand)
+    public void SetActiveAbility(Hand hand)
     {
         if (hand.type == HandType.high)
             activeAbility = new Ability("", "a1");
@@ -248,9 +282,10 @@ public class Player
             activeAbility = new Ability("Tri-Strike Blade", "a9");
         else if(hand.type == HandType.royalflush)
             activeAbility = new Ability("Explosive Sender", "a10");
-        return null;
+        else
+            activeAbility = new Ability("Nothing", "na");
     }
-    public Ability SetPassiveAbility1(Hand hand)
+    public void SetPassiveAbility1(Hand hand)
     {
         // diamond
         if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.diamond)
@@ -336,10 +371,10 @@ public class Player
             passiveAbility1 = new Ability("Reaping Steps", "n9s");
         else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.spade)
             passiveAbility1 = new Ability("Chain Rifle", "b10s");
-
-        return null;
+        else
+            passiveAbility1 = new Ability("Nothing", "na");
     }
-    public Ability SetPassiveAbility2(Hand hand)
+    public void SetPassiveAbility2(Hand hand)
     {
         // diamond
         if (hand.type == HandType.high && GetHandSuit(hand) == Card.Suit.diamond)
@@ -425,8 +460,8 @@ public class Player
             passiveAbility2 = new Ability("Reaping Steps", "n9s");
         else if (hand.type == HandType.royalflush && GetHandSuit(hand) == Card.Suit.spade)
             passiveAbility2 = new Ability("Chain Rifle", "b10s");
-
-        return null;
+        else
+            passiveAbility2 = new Ability("Nothing", "na");
     }
     
     //chip stuff

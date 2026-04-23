@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 87626f7ee6d54a6418ec78c2a6407208
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3474123533146695725
+    second: SERVAL RUN LOW 3-4s LEFT_0
+  - first:
+      213: 644796927093899105
+    second: SERVAL RUN LOW 3-4s LEFT_1
+  - first:
+      213: -3950946636625512454
+    second: SERVAL RUN LOW 3-4s LEFT_2
+  - first:
+      213: 1396367338746972279
+    second: SERVAL RUN LOW 3-4s LEFT_3
+  - first:
+      213: -656635033581707028
+    second: SERVAL RUN LOW 3-4s LEFT_4
+  - first:
+      213: 2647449163434133806
+    second: SERVAL RUN LOW 3-4s LEFT_5
+  - first:
+      213: -7563032527300409615
+    second: SERVAL RUN LOW 3-4s LEFT_6
+  - first:
+      213: 3148185689841820709
+    second: SERVAL RUN LOW 3-4s LEFT_7
+  - first:
+      213: 7624654235427176201
+    second: SERVAL RUN LOW 3-4s LEFT_8
+  - first:
+      213: -5253381527921325552
+    second: SERVAL RUN LOW 3-4s LEFT_9
+  - first:
+      213: 5555476405555556624
+    second: SERVAL RUN LOW 3-4s LEFT_10
+  - first:
+      213: 2431218096437935372
+    second: SERVAL RUN LOW 3-4s LEFT_11
+  - first:
+      213: -5209844183427450352
+    second: SERVAL RUN LOW 3-4s LEFT_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d757f4ad0f69cfc0800000000000000
+      internalID: -3474123533146695725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ff1bf8367c2f800800000000000000
+      internalID: 644796927093899105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7796d87fa6b29c0800000000000000
+      internalID: -3950946636625512454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77888f142b4e06310800000000000000
+      internalID: 1396367338746972279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0294c7ae923e6f0800000000000000
+      internalID: -656635033581707028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e298563ccf0adb420800000000000000
+      internalID: 2647449163434133806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6c881bcf5ba0790800000000000000
+      internalID: -7563032527300409615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5246df1843a90bb20800000000000000
+      internalID: 3148185689841820709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f70d541a630d960800000000000000
+      internalID: 7624654235427176201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a86ae755d3817b0800000000000000
+      internalID: -5253381527921325552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011f33f4b54091d40800000000000000
+      internalID: 5555476405555556624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d3fa14afb6db120800000000000000
+      internalID: 2431218096437935372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SERVAL RUN LOW 3-4s LEFT_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01afbaf615ae2b7b0800000000000000
+      internalID: -5209844183427450352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d54207ec407f036409fc208231d4ac73
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SERVAL RUN LOW 3-4s LEFT_0: -3474123533146695725
+      SERVAL RUN LOW 3-4s LEFT_1: 644796927093899105
+      SERVAL RUN LOW 3-4s LEFT_10: 5555476405555556624
+      SERVAL RUN LOW 3-4s LEFT_11: 2431218096437935372
+      SERVAL RUN LOW 3-4s LEFT_12: -5209844183427450352
+      SERVAL RUN LOW 3-4s LEFT_2: -3950946636625512454
+      SERVAL RUN LOW 3-4s LEFT_3: 1396367338746972279
+      SERVAL RUN LOW 3-4s LEFT_4: -656635033581707028
+      SERVAL RUN LOW 3-4s LEFT_5: 2647449163434133806
+      SERVAL RUN LOW 3-4s LEFT_6: -7563032527300409615
+      SERVAL RUN LOW 3-4s LEFT_7: 3148185689841820709
+      SERVAL RUN LOW 3-4s LEFT_8: 7624654235427176201
+      SERVAL RUN LOW 3-4s LEFT_9: -5253381527921325552
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

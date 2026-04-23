@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -16,6 +17,9 @@ public class PlayerUI : MonoBehaviour
     public TMP_Text chipbarText;
     public Image[] chips = new Image[6];
     public Image currentChip;
+
+    [Header("Hands")]
+    public Transform bench;
 
 
     private void Update()

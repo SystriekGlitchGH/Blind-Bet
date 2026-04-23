@@ -11,6 +11,7 @@ TagManager:
   - Soldier
   - Waypoint
   - Wall
+  - Card
   layers:
   - Default
   - TransparentFX
