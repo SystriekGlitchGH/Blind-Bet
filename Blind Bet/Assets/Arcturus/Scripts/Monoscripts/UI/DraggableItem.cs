@@ -10,11 +10,18 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public Card card;
     public void OnBeginDrag(PointerEventData eventData)
     {
+        MenuField menuField = GetComponentInParent<MenuField>();
+        if (menuField)
+        {
+            menuField.InvokeOnExit(card, menuField.handNum);
+        }
+
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
         image.raycastTarget = false;
         transform.localScale = transform.localScale*1.1f;
+
     }
 
     public void OnDrag(PointerEventData eventData)

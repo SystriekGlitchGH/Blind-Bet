@@ -62,4 +62,14 @@ public class PlayerUI : MonoBehaviour
     {
         currentChip.sprite = chips[chipIndex].sprite;
     }
+
+    public void AddCardToHand(Card card, int handNum)
+    {
+        pm.playerStats.AddCard(card, handNum);
+    }
+
+    public void RemoveCardFromHand(Card card, int handNum)
+    {
+        pm.playerStats.RemoveCard(card, handNum);
+    }
 }

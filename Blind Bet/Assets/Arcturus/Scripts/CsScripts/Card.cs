@@ -1,6 +1,8 @@
+using System;
 using UnityEngine;
 
-public class Card
+[CreateAssetMenu(fileName = "New Card", menuName = "Scriptable Objects/Cards")]
+public class Card : ScriptableObject
 {
     public enum Suit
     {
@@ -8,10 +10,4 @@ public class Card
     }
     public int rank;
     public Suit suit;
-
-    public Card(int rank, Suit suit)
-    {
-        this.rank = rank;
-        this.suit = suit;
-    }
 }
