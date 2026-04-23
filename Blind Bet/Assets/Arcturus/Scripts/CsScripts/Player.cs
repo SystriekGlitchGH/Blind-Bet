@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
+[Serializable]
 public class Player
 {
     public enum HandType
     {
         none,high,pair,twopair,kind3,flush,straight,fullhouse,kind4,kind5,royalflush
     }
+    [Serializable]
     public struct Hand
     {
         public Card[] cards;
@@ -33,7 +35,7 @@ public class Player
     public Ability passiveAbility1 = new Ability("Nothing", "na");
     public Ability passiveAbility2 = new Ability("Nothing", "na");
 
-    public readonly Card blankCard = new Card(0,Card.Suit.blank);
+    public Card blankCard;
 
     public EffectManager effectManager = new EffectManager();
     public bool hasStun, hasBurn, hasPoison, hasSlow, hasChill, hasFrozen, hasRecall, hasCharm, hasEnrage;
@@ -229,12 +231,12 @@ public class Player
         else if(handNum == 2)
         {
             passiveHand1.cards[4] = addedCard;
-            SortHandCards(passiveHand1,1);
+            SortHandCards(passiveHand1,2);
         }
         else if(handNum == 3)
         {
             passiveHand2.cards[4] = addedCard;
-            SortHandCards(passiveHand2,1);
+            SortHandCards(passiveHand2,3);
         }
         else if(handNum == 4)
         {
@@ -258,6 +260,56 @@ public class Player
         // passiveHand2.cards[2] = new Card(12, Card.Suit.diamond);
         // passiveHand2.cards[3] = new Card(12, Card.Suit.diamond);
         // passiveHand2.cards[4] = new Card(13, Card.Suit.diamond);
+    }
+    public void RemoveCard(Card removedCard, int handNum)
+    {
+        if (handNum == 1)
+        {
+            for(int i = 0; i < activeHand.cards.Length; i++)
+            {
+                if (activeHand.cards[i] == removedCard)
+                {
+                    activeHand.cards[i] = blankCard;
+                    break;
+                }
+            }
+            SortHandCards(activeHand, 1);
+        }
+        else if (handNum == 2)
+        {
+            for (int i = 0; i < passiveHand1.cards.Length; i++)
+            {
+                if (passiveHand1.cards[i] == removedCard)
+                {
+                    passiveHand1.cards[i] = blankCard;
+                    break;
+                }
+            }
+            SortHandCards(passiveHand1, 2);
+        }
+        else if (handNum == 3)
+        {
+            for (int i = 0; i < passiveHand2.cards.Length; i++)
+            {
+                if (passiveHand2.cards[i] == removedCard)
+                {
+                    passiveHand2.cards[i] = blankCard;
+                    break;
+                }
+            }
+            SortHandCards(passiveHand2, 3);
+        }
+        else if (handNum == 4)
+        {
+            for (int i = 0; i < bench.Count; i++)
+            {
+                if (bench[i] == removedCard)
+                {
+                    bench.Remove(removedCard);
+                    break;
+                }
+            }
+        }
     }
     // Abilities
     public void SetActiveAbility(Hand hand)

@@ -6,10 +6,7 @@ public class CardPickup : MonoBehaviour
     private bool shrinking;
     public GameObject uiCard;
     public Card card;
-    private void Awake()
-    {
-        card = new Card(10,Card.Suit.diamond);
-    }
+
     void Update()
     {
         if(growing)
@@ -33,10 +30,10 @@ public class CardPickup : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.TryGetComponent(out PlayerMovement pm))
         {
-            PlayerMovement pm = collision.GetComponent<PlayerMovement>();
             pm.playerStats.AddCard(card,4);
+            uiCard.GetComponent<DraggableItem>().card = card;
             Instantiate(uiCard,pm.playerUI.bench);
             // Debug.Log(pm.playerStats.bench[0].rank);
             Destroy(gameObject);
