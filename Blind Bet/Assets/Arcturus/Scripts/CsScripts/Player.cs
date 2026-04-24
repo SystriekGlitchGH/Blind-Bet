@@ -149,7 +149,7 @@ public class Player
             hand.type = HandType.kind5;
         else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[0].rank)
             hand.type = HandType.kind4;
-        else if(hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[4].rank == hand.cards[3].rank)
+        else if(hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[4].rank == hand.cards[3].rank && hand.cards[4].rank != 0 && hand.cards[3].rank != 0)
             hand.type = HandType.fullhouse;
         else if(hand.cards[1].rank == hand.cards[0].rank+1 && hand.cards[2].rank == hand.cards[1].rank+1 && hand.cards[3].rank == hand.cards[2].rank+1 && hand.cards[4].rank == hand.cards[3].rank+1)
             hand.type = HandType.straight;
@@ -157,7 +157,7 @@ public class Player
             hand.type = HandType.flush;
         else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank)
             hand.type = HandType.kind3;
-        else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[2].rank)
+        else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[2].rank && hand.cards[2].rank != 0)
             hand.type = HandType.twopair;
         else if (hand.cards[1].rank == hand.cards[0].rank)
             hand.type = HandType.pair;
@@ -227,19 +227,20 @@ public class Player
             SortHandCards(activeHand,1);
             SetHandType(activeHand, handNum);
             SetActiveAbility(activeHand);
+            activeSuit = GetHandSuit(activeHand);
         }
         else if(handNum == 2)
         {
             passiveHand1.cards[4] = addedCard;
             SortHandCards(passiveHand1,2);
-            SetHandType(activeHand, handNum);
+            SetHandType(passiveHand1, handNum);
             SetPassiveAbility1(passiveHand1);
         }
         else if(handNum == 3)
         {
             passiveHand2.cards[4] = addedCard;
             SortHandCards(passiveHand2,3);
-            SetHandType(activeHand, handNum);
+            SetHandType(passiveHand2, handNum);
             SetPassiveAbility2(passiveHand2);
         }
         else if(handNum == 4)
@@ -278,6 +279,9 @@ public class Player
                 }
             }
             SortHandCards(activeHand, 1);
+            SetHandType(activeHand, handNum);
+            SetActiveAbility(activeHand);
+            activeSuit = GetHandSuit(activeHand);
         }
         else if (handNum == 2)
         {
@@ -289,7 +293,9 @@ public class Player
                     break;
                 }
             }
-            SortHandCards(passiveHand1, 2);
+            SortHandCards(passiveHand1,2);
+            SetHandType(passiveHand1, handNum);
+            SetPassiveAbility1(passiveHand1);
         }
         else if (handNum == 3)
         {
@@ -301,7 +307,9 @@ public class Player
                     break;
                 }
             }
-            SortHandCards(passiveHand2, 3);
+            SortHandCards(passiveHand2,3);
+            SetHandType(passiveHand2, handNum);
+            SetPassiveAbility2(passiveHand2);
         }
         else if (handNum == 4)
         {

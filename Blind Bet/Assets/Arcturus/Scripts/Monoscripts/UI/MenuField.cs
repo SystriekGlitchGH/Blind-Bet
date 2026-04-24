@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 public class MenuField : MonoBehaviour, IDropHandler
 {
     [SerializeField] private UnityEvent<Field> _onCardEnter;
@@ -22,8 +23,8 @@ public class MenuField : MonoBehaviour, IDropHandler
             this.handNum = handNum;
         }
     }
+    public GridLayoutGroup gridLayoutGroup;
     public int handNum;
-
     private void Awake()
     {
         foreach (var card in GetComponentsInChildren<DraggableItem>())
@@ -34,10 +35,14 @@ public class MenuField : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        GameObject dropped = eventData.pointerDrag;
-        DraggableItem item = dropped.GetComponent<DraggableItem>();
-        item.parentAfterDrag = transform;
+        if(transform.childCount < gridLayoutGroup.constraintCount)
+        {
+            GameObject dropped = eventData.pointerDrag;
+            DraggableItem item = dropped.GetComponent<DraggableItem>();
+            item.parentAfterDrag = transform;
+            
+            InvokeOnEnter(new Field(item.card, handNum));
+        }
         
-        InvokeOnEnter(new Field(item.card, handNum));
     }
 }
