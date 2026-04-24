@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class PlayerUI : MonoBehaviour
 {
     public PlayerMovement pm;
+    public GameObject cardManager;
     [Header("Health")]
     public Slider healthbarSlider;
     public TMP_Text healthbarText;
@@ -20,6 +21,8 @@ public class PlayerUI : MonoBehaviour
 
     [Header("Hands")]
     public Transform bench;
+    public bool cardManagerOpen;
+    
 
 
     private void Update()
@@ -54,7 +57,16 @@ public class PlayerUI : MonoBehaviour
     {
         if (ctx.performed)
         {
-            
+            if (!cardManager.activeInHierarchy)
+            {
+                cardManager.SetActive(true);
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                cardManager.SetActive(false);
+                Time.timeScale = 1f;
+            }
         }
     }
 
