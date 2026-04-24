@@ -17041,14 +17041,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5576339891272612593, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: m_Size.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5576339891272612593, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: m_Size.y
-      value: 2.2
-      objectReference: {fileID: 0}
     - target: {fileID: 8451357699676093455, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -17062,21 +17054,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: playerUI
-      value: 
-      objectReference: {fileID: 473549828}
-    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: blankCard
-      value: 
-      objectReference: {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
-    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: currentNode
       value: 
       objectReference: {fileID: 381069776}
-    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: playerStats.maxChips
-      value: 6000
-      objectReference: {fileID: 0}
     - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: playerStats.blankCard
       value: 

@@ -396,7 +396,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.2, y: 2.2}
   m_Direction: 0
 --- !u!114 &9003751370500190273
 MonoBehaviour:
@@ -468,11 +468,12 @@ MonoBehaviour:
     baseAbilityKnockback: 10
     baseAbilityCooldown: 0
     kills: 0
-  playerUI: {fileID: 0}
+  playerUI: {fileID: 1542396519381130473}
   prefabLib: {fileID: -3836121528770696468, guid: 47cb42360dc3c0f418f814238e101ee9, type: 3}
   currentNode: {fileID: 0}
   acceleration: 90
   friction: 8
+  blankCard: {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
   attackLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -518,6 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 9003751370500190273}
+  cardManager: {fileID: 0}
   healthbarSlider: {fileID: 0}
   healthbarText: {fileID: 0}
   chipbarSlider: {fileID: 0}
@@ -531,6 +533,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentChip: {fileID: 0}
   bench: {fileID: 0}
+  cardManagerOpen: 0
 --- !u!114 &3508938354143582018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,6 +655,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: ec5c5785-48e8-4e4d-8ede-80e96a66d1b1
     m_ActionName: 'Player/ActivateAbility2[/Keyboard/s]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1542396519381130473}
+        m_TargetAssemblyTypeName: PlayerUI, Assembly-CSharp
+        m_MethodName: OpenCardMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d8a7287b-c230-4038-b54a-46e5e3bc5f01
+    m_ActionName: 'Player/OpenCardMenu[/Keyboard/tab]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
