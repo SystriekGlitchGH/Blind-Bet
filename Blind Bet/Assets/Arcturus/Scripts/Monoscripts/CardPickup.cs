@@ -5,7 +5,6 @@ public class CardPickup : MonoBehaviour
     private bool growing = true;
     private bool shrinking;
     public GameObject uiCard;
-    public Card card;
 
     void Update()
     {
@@ -32,8 +31,7 @@ public class CardPickup : MonoBehaviour
     {
         if (collision.TryGetComponent(out PlayerMovement pm))
         {
-            pm.playerStats.AddCard(card,4);
-            uiCard.GetComponent<DraggableItem>().card = card;
+            pm.playerStats.AddCard(uiCard.GetComponent<DraggableItem>().card,4);
             Instantiate(uiCard,pm.playerUI.bench);
             // Debug.Log(pm.playerStats.bench[0].rank);
             Destroy(gameObject);

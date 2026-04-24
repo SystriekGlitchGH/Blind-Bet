@@ -178,7 +178,7 @@ public class Player
                 break;
         }
     }
-    // unfinished
+
     public void SortHandCards(Hand hand, int handNum)
     {
         Card temp;
@@ -225,16 +225,22 @@ public class Player
         {
             activeHand.cards[4] = addedCard;
             SortHandCards(activeHand,1);
+            SetHandType(activeHand, handNum);
+            SetActiveAbility(activeHand);
         }
         else if(handNum == 2)
         {
             passiveHand1.cards[4] = addedCard;
             SortHandCards(passiveHand1,2);
+            SetHandType(activeHand, handNum);
+            SetPassiveAbility1(passiveHand1);
         }
         else if(handNum == 3)
         {
             passiveHand2.cards[4] = addedCard;
             SortHandCards(passiveHand2,3);
+            SetHandType(activeHand, handNum);
+            SetPassiveAbility2(passiveHand2);
         }
         else if(handNum == 4)
         {

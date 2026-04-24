@@ -13970,17 +13970,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1878219926488843821, guid: c520056922a58d04eab8c1d7ad7cc7c3, type: 3}
   m_PrefabInstance: {fileID: 950873163}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &862607826 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-  m_PrefabInstance: {fileID: 1586444115}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8d2e0a5d2d79984c86a64d16f925d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &876450958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14396,21 +14385,25 @@ PrefabInstance:
       value: Passive Hand Field 2
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: handNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 862607826}
+      objectReference: {fileID: 473549828}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 862607826}
+      objectReference: {fileID: 473549828}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -14421,19 +14414,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Help1
+      value: RemoveCardFromHand
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Help3
+      value: AddCardToHand
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerMovement, Assembly-CSharp
+      value: PlayerUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerMovement, Assembly-CSharp
+      value: PlayerUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -15092,21 +15085,25 @@ PrefabInstance:
       value: Passive Hand Field 1
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: handNum
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 862607826}
+      objectReference: {fileID: 473549828}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 862607826}
+      objectReference: {fileID: 473549828}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -15117,19 +15114,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Help3
+      value: RemoveCardFromHand
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Help2
+      value: AddCardToHand
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerMovement, Assembly-CSharp
+      value: PlayerUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerMovement, Assembly-CSharp
+      value: PlayerUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -16259,13 +16256,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 473549828}
     - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: blankCard
+      value: 
+      objectReference: {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: currentNode
       value: 
       objectReference: {fileID: 381069776}
     - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: playerStats.maxChips
+      value: 6000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: playerStats.blankCard
       value: 
-      objectReference: {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20356,6 +20361,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bench
       objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: handNum
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 473549828}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 473549828}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RemoveCardFromHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddCardToHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: _onCardEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21145,6 +21202,10 @@ PrefabInstance:
       value: Active Hand Field
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: handNum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -21420,7 +21481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiCard: {fileID: 972271749832306140, guid: 412cd8aa8e7a47548ac87f48f6f334c8, type: 3}
-  card: {fileID: 11400000, guid: ea4320935ff155f4f9d5ee84527bb889, type: 2}
 --- !u!61 &2103701458
 BoxCollider2D:
   m_ObjectHideFlags: 0

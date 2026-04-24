@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8786438745482258223}
   - component: {fileID: 1308878950910487555}
   m_Layer: 5
-  m_Name: 10d
+  m_Name: qd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,4 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentAfterDrag: {fileID: 0}
   image: {fileID: 8786438745482258223}
-  card: {fileID: 11400000, guid: 60f94328e4fe1c842ad0a8df9b04270b, type: 2}
+  card: {fileID: 11400000, guid: b50d37490c210b641be41c93fd728740, type: 2}

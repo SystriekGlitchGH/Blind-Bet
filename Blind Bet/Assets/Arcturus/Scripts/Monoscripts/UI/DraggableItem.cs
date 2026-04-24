@@ -32,6 +32,15 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnEndDrag(PointerEventData eventData)
     {
         transform.SetParent(parentAfterDrag);
+        for(int i = 0; i < parentAfterDrag.childCount; i++)
+        {
+            DraggableItem childCard = parentAfterDrag.GetChild(i).GetComponent<DraggableItem>();
+            if(childCard.card.rank > card.rank)
+            {
+                transform.SetSiblingIndex(i);
+                break;
+            }
+        }
         image.raycastTarget = true;
         transform.localScale = transform.localScale/1.1f;
     }
