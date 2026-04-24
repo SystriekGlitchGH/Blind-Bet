@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8786438745482258223}
   - component: {fileID: 1308878950910487555}
   m_Layer: 5
-  m_Name: kd
+  m_Name: jd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2889957587833063727, guid: 58d521b7b356d7c4ca21a89308fb82b7, type: 3}
+  m_Sprite: {fileID: 6563369259882281109, guid: 23c01ad57b1e1324e83784a82245e283, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,4 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentAfterDrag: {fileID: 0}
   image: {fileID: 8786438745482258223}
-  card: {fileID: 11400000, guid: d2a1ff2a5428c3d4b8afc82040bc6967, type: 2}
+  card: {fileID: 11400000, guid: 50342f801ab72b841b3c9886590f7d10, type: 2}
