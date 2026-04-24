@@ -1,20 +1,32 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 public class MenuField : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private UnityEvent<Card> _onCardEnter;
-    public void InvokeOnEnter(Card card) => _onCardEnter?.Invoke(card);
+    [SerializeField] private UnityEvent<Field> _onCardEnter;
+    public void InvokeOnEnter(Field field) => _onCardEnter?.Invoke(field);
 
-    [SerializeField] private UnityEvent<Card> _onCardExit;
-    public void InvokeOnExit(Card card) => _onCardExit?.Invoke(card);
+    [SerializeField] private UnityEvent<Field> _onCardExit;
+    public void InvokeOnExit(Field field) => _onCardExit?.Invoke(field);
+    [Serializable]
+    public struct Field
+    {
+        public Card card;
+        public int handNum;
+        public Field(Card card, int handNum)
+        {
+            this.card = card;
+            this.handNum = handNum;
+        }
+    }
     public int handNum;
 
     private void Awake()
     {
         foreach (var card in GetComponentsInChildren<DraggableItem>())
         {
-            InvokeOnEnter(card.card);
+            InvokeOnEnter(new Field(card.card,handNum));
         }
     }
 
@@ -24,6 +36,6 @@ public class MenuField : MonoBehaviour, IDropHandler
         DraggableItem item = dropped.GetComponent<DraggableItem>();
         item.parentAfterDrag = transform;
 
-        InvokeOnEnter(item.card);
+        InvokeOnEnter(new Field(item.card, handNum));
     }
 }

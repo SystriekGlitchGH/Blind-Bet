@@ -413,6 +413,62 @@ MonoBehaviour:
   rb2d: {fileID: 5662594919883955688}
   spriteRend: {fileID: 8451357699676093455}
   anchorTransform: {fileID: 1119027603952637780}
+  playerStats:
+    activeSuit: 0
+    activeHand:
+      cards:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      suited: 0
+      type: 0
+    passiveHand1:
+      cards:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      suited: 0
+      type: 0
+    passiveHand2:
+      cards:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      suited: 0
+      type: 0
+    bench: []
+    blankCard: {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    hasStun: 0
+    hasBurn: 0
+    hasPoison: 0
+    hasSlow: 0
+    hasChill: 0
+    hasFrozen: 0
+    hasRecall: 0
+    hasCharm: 0
+    hasEnrage: 0
+    baseSpeed: 10
+    maxHealth: 100
+    currentHealth: 100
+    maxChips: 5000
+    currentChips: 1000
+    chipLowThreshold: 500
+    baseDashDistance: 20
+    baseDashCooldown: 0.5
+    baseDashDamage: 5
+    baseParryTime: 0.2
+    baseParryCooldown: 1
+    baseAbilityDamage: 10
+    baseAbilityKnockback: 10
+    baseAbilityCooldown: 0
+    kills: 0
+  playerUI: {fileID: 0}
   prefabLib: {fileID: -3836121528770696468, guid: 47cb42360dc3c0f418f814238e101ee9, type: 3}
   currentNode: {fileID: 0}
   acceleration: 90
@@ -474,6 +530,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentChip: {fileID: 0}
+  bench: {fileID: 0}
 --- !u!114 &3508938354143582018
 MonoBehaviour:
   m_ObjectHideFlags: 0

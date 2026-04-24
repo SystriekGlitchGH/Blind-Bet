@@ -49,8 +49,9 @@ public class Player
     public float baseAbilityDamage, baseAbilityKnockback, baseAbilityCooldown;
 
     public int kills;
-    public Player()
+    public Player(Card blankCard)
     {
+        this.blankCard = blankCard;
         activeSuit = Card.Suit.blank;
         weapon = new Weapon(activeSuit);
         baseSpeed = 10;
@@ -187,15 +188,12 @@ public class Player
             swapped = false;
             for(int j = 0; j < hand.cards.Length - i - 1; j++)
             {
-                if(hand.cards[j+1].rank != 0)
+                if(hand.cards[j].rank > hand.cards[j + 1].rank)
                 {
-                    if(hand.cards[j].rank > hand.cards[j + 1].rank)
-                    {
-                        temp = hand.cards[j];
-                        hand.cards[j] = hand.cards[j+1];
-                        hand.cards[j+1] = temp;
-                        swapped = true;
-                    }
+                    temp = hand.cards[j];
+                    hand.cards[j] = hand.cards[j+1];
+                    hand.cards[j+1] = temp;
+                    swapped = true;
                 }
                 if(hand.cards[j].rank == 0)
                 {

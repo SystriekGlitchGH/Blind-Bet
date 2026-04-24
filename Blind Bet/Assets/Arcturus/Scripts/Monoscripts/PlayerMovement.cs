@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private float directionX, directionY; // variables for direction when moving
 
     [Header("Attack stats")]
+    public Card blankCard;
     private bool isDashing, canDash = true; // checks if you are currently dashing and are allowed to dash
     private bool hyperDash;
 
@@ -73,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
     Random rand = new Random();
     private void Awake()
     {
-        playerStats = new Player(); // constructing player object
+        playerStats = new Player(blankCard); // constructing player object
         // playerStats.AddCard();
         // playerStats.SortHandCards(playerStats.activeHand,1);
         // playerStats.SetHandType(playerStats.activeHand,1);

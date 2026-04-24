@@ -13,7 +13,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         MenuField menuField = GetComponentInParent<MenuField>();
         if (menuField)
         {
-            menuField.InvokeOnExit(card, menuField.handNum);
+            menuField.InvokeOnExit(new MenuField.Field(card, menuField.handNum));
         }
 
         parentAfterDrag = transform.parent;
