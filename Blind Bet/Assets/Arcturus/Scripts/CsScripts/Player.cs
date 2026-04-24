@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
-[Serializable]
-public class Player
+[CreateAssetMenu(fileName = "New Player", menuName = "Scriptable Objects/Player")]
+public class Player : ScriptableObject
 {
     public enum HandType
     {
@@ -228,6 +228,7 @@ public class Player
             SetHandType(activeHand, handNum);
             SetActiveAbility(activeHand);
             activeSuit = GetHandSuit(activeHand);
+            weapon = new Weapon(activeSuit);
         }
         else if(handNum == 2)
         {
@@ -690,7 +691,7 @@ public class Player
     public float GetSpeedMod()
     {
         float mod = 1;
-        if(passiveAbility1.code == "n2d" || passiveAbility2.code == "n2d")
+        if((passiveAbility1 != null && passiveAbility1.code == "n2d") || (passiveAbility2 != null && passiveAbility2.code == "n2d"))
             mod += 0.2f;
         if(currentChips <= chipLowThreshold)
             mod /= 2;

@@ -27,6 +27,12 @@ public class MenuField : MonoBehaviour, IDropHandler
     public int handNum;
     private void Awake()
     {
+        //Player player = FindFirstObjectByType<PlayerMovement>().playerStats;
+        //foreach (var card in player.bench)
+        //{
+
+        //}
+
         foreach (var card in GetComponentsInChildren<DraggableItem>())
         {
             InvokeOnEnter(new Field(card.card,handNum));
