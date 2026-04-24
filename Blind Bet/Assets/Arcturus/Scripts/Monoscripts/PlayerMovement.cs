@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public PlayerUI playerUI;
     public PrefabLibrary prefabLib;
     public Node currentNode;
+    public GameStats gamestats;
 
 	[Header("Movement stats")]
     public float acceleration; // how quickly you go to top speed
@@ -74,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
     Random rand = new Random();
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         playerStats = new Player(blankCard); // constructing player object
         // playerStats.AddCard();
         // playerStats.SortHandCards(playerStats.activeHand,1);

@@ -12,46 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3eb65ba43bbcb43b0a617c3fc7b138, type: 3}
   m_Name: GameStats
   m_EditorClassIdentifier: 
-  savedPlayerStats:
-    activeSuit: 0
-    activeHand:
-      cards: []
-      suited: 0
-      type: 0
-    passiveHand1:
-      cards: []
-      suited: 0
-      type: 0
-    passiveHand2:
-      cards: []
-      suited: 0
-      type: 0
-    bench: []
-    blankCard: {fileID: 0}
-    hasStun: 0
-    hasBurn: 0
-    hasPoison: 0
-    hasSlow: 0
-    hasChill: 0
-    hasFrozen: 0
-    hasRecall: 0
-    hasCharm: 0
-    hasEnrage: 0
-    baseSpeed: 0
-    maxHealth: 0
-    currentHealth: 0
-    maxChips: 0
-    currentChips: 0
-    chipLowThreshold: 0
-    baseDashDistance: 0
-    baseDashCooldown: 0
-    baseDashDamage: 0
-    baseParryTime: 0
-    baseParryCooldown: 0
-    baseAbilityDamage: 0
-    baseAbilityKnockback: 0
-    baseAbilityCooldown: 0
-    kills: 0
   level: 1
   kills: 0
   enemies: 0
