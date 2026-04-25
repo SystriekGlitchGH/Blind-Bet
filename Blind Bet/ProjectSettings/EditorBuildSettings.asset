@@ -17,6 +17,33 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Helvetic/Scenes/Map000.unity
     guid: 6d46180dce47eb148a041f96bf24fd44
+  - enabled: 1
+    path: Assets/Helvetic/Scenes/Map0.unity
+    guid: d42bd5e827a66dd4180b30b701c422e4
+  - enabled: 1
+    path: Assets/Helvetic/Scenes/Map1.unity
+    guid: ded567a5381c3494890d0e347cab8665
+  - enabled: 1
+    path: Assets/Helvetic/Scenes/Map2.unity
+    guid: 22ee4327ae5079d4ea156a57ed33e85d
+  - enabled: 1
+    path: Assets/Helvetic/Scenes/Map3.unity
+    guid: 5ce1ab48ac7024d4a988e95423733c08
+  - enabled: 1
+    path: Assets/Helvetic/Scenes/Map4.unity
+    guid: 5e92e5c8502fea442ab2039c47a0360b
+  - enabled: 1
+    path: Assets/Helvetic/Scenes/Map5.unity
+    guid: 027fde28a96241f4c825e1dc8a40b0ed
+  - enabled: 1
+    path: Assets/Helvetic/Scenes/Map6.unity
+    guid: e9c3999d7674233429d9556c7467b4b5
+  - enabled: 1
+    path: Assets/Helvetic/Scenes/Map7.unity
+    guid: 1a79cd4783662734b9adb608e3d6819f
+  - enabled: 1
+    path: Assets/Helvetic/Scenes/Map8.unity
+    guid: d99e0f3844a7c1f4298ee90690d7ddc9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7667cd40305d4a54f8aa28688f428dd9, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
