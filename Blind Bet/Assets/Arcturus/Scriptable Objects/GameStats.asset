@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3eb65ba43bbcb43b0a617c3fc7b138, type: 3}
   m_Name: GameStats
   m_EditorClassIdentifier: 
-  level: 1
+  level: 0
   kills: 0
   enemies: 0
