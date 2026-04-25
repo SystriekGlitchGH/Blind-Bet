@@ -455,6 +455,7 @@ MonoBehaviour:
   movementTarget: {fileID: 0}
   rb2d: {fileID: 5591057413083369273}
   spriteRend: {fileID: 4151534308051164709}
+  gameStats: {fileID: 11400000, guid: d5b99a2fb29eb7f4f9c607d98f56ff24, type: 2}
   acceleration: 40
   friction: 8
   hasKnockback: 0

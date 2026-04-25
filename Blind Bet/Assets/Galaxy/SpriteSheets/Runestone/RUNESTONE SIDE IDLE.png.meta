@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: ace1a92c939fedb4f8bb8c94dda9c9f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3326917719698284861
+    second: RUNESTONE SIDE IDLE_0
+  - first:
+      213: -3992321153858285739
+    second: RUNESTONE SIDE IDLE_1
+  - first:
+      213: 1053385788141454526
+    second: RUNESTONE SIDE IDLE_2
+  - first:
+      213: -3691528389468951416
+    second: RUNESTONE SIDE IDLE_3
+  - first:
+      213: -2763409966404203146
+    second: RUNESTONE SIDE IDLE_4
+  - first:
+      213: 3885550292746701428
+    second: RUNESTONE SIDE IDLE_5
+  - first:
+      213: -7660776375001517743
+    second: RUNESTONE SIDE IDLE_6
+  - first:
+      213: 4282162864341915712
+    second: RUNESTONE SIDE IDLE_7
+  - first:
+      213: -5252042794349475386
+    second: RUNESTONE SIDE IDLE_8
+  - first:
+      213: 5965810749911546175
+    second: RUNESTONE SIDE IDLE_9
+  - first:
+      213: -5205654613772011508
+    second: RUNESTONE SIDE IDLE_10
+  - first:
+      213: -6963423639290958846
+    second: RUNESTONE SIDE IDLE_11
+  - first:
+      213: 2783918340105220865
+    second: RUNESTONE SIDE IDLE_12
+  - first:
+      213: 4663942028851046040
+    second: RUNESTONE SIDE IDLE_13
+  - first:
+      213: -7508740944926111437
+    second: RUNESTONE SIDE IDLE_14
+  - first:
+      213: 4430171553748289798
+    second: RUNESTONE SIDE IDLE_15
+  - first:
+      213: 4503931582431147355
+    second: RUNESTONE SIDE IDLE_16
+  - first:
+      213: 2296036768045930512
+    second: RUNESTONE SIDE IDLE_17
+  - first:
+      213: 6518666844717267242
+    second: RUNESTONE SIDE IDLE_18
+  - first:
+      213: -1762862009283493240
+    second: RUNESTONE SIDE IDLE_19
+  - first:
+      213: 7000582388252183428
+    second: RUNESTONE SIDE IDLE_20
+  - first:
+      213: -4535208710268612456
+    second: RUNESTONE SIDE IDLE_21
+  - first:
+      213: -9206396174955948818
+    second: RUNESTONE SIDE IDLE_22
+  - first:
+      213: 8086488881628943126
+    second: RUNESTONE SIDE IDLE_23
+  - first:
+      213: 1397722262107736721
+    second: RUNESTONE SIDE IDLE_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 8821
+        width: 519
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d31a19f0a069b2e20800000000000000
+      internalID: 3326917719698284861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 8833
+        width: 518
+        height: 773
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fcff2101d6898c0800000000000000
+      internalID: -3992321153858285739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 4531
+        y: 8844
+        width: 519
+        height: 741
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4cd911bc06e9e00800000000000000
+      internalID: 1053385788141454526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 7772
+        width: 520
+        height: 714
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cee630d7e05ccc0800000000000000
+      internalID: -3691528389468951416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 7786
+        width: 518
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d04b7d64566a9d0800000000000000
+      internalID: -2763409966404203146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 4536
+        y: 7780
+        width: 520
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a051c976f3ce530800000000000000
+      internalID: 3885550292746701428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 6696
+        width: 519
+        height: 666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1517458b9747fa590800000000000000
+      internalID: -7660776375001517743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 6692
+        width: 519
+        height: 658
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048187fef6c4d6b30800000000000000
+      internalID: 4282162864341915712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 4537
+        y: 6685
+        width: 519
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c946a1b7eefc17b0800000000000000
+      internalID: -5252042794349475386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 5598
+        width: 519
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f393fa1d441dac250800000000000000
+      internalID: 5965810749911546175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 5594
+        width: 519
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08feb2a5bcc1c7b0800000000000000
+      internalID: -5205654613772011508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 4536
+        y: 5589
+        width: 520
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c21870813fc5f90800000000000000
+      internalID: -6963423639290958846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 4507
+        width: 519
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103baa10bf672a620800000000000000
+      internalID: 2783918340105220865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 4507
+        width: 520
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8966eaa8096a9b040800000000000000
+      internalID: 4663942028851046040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 4537
+        y: 4511
+        width: 519
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3398f33c4e79bc790800000000000000
+      internalID: -7508740944926111437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 3435
+        width: 519
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609053b5e812b7d30800000000000000
+      internalID: 4430171553748289798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 3442
+        width: 518
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55b87f49ed218e30800000000000000
+      internalID: 4503931582431147355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 4537
+        y: 3443
+        width: 520
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0181d9e86492ddf10800000000000000
+      internalID: 2296036768045930512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 2368
+        width: 519
+        height: 666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a293d7835f4f67a50800000000000000
+      internalID: 6518666844717267242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 2371
+        width: 519
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88240a4b75e0987e0800000000000000
+      internalID: -1762862009283493240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 4537
+        y: 2373
+        width: 520
+        height: 689
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b80a86790172160800000000000000
+      internalID: 7000582388252183428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1281
+        width: 520
+        height: 714
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8909e22e4b3bf01c0800000000000000
+      internalID: -4535208710268612456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 1269
+        width: 518
+        height: 742
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee45c3ad47f4c3080800000000000000
+      internalID: -9206396174955948818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 4536
+        y: 1257
+        width: 519
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61393a53bcaf83070800000000000000
+      internalID: 8086488881628943126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE SIDE IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 163
+        width: 520
+        height: 801
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a469fedf4b56310800000000000000
+      internalID: 1397722262107736721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RUNESTONE SIDE IDLE_0: 3326917719698284861
+      RUNESTONE SIDE IDLE_1: -3992321153858285739
+      RUNESTONE SIDE IDLE_10: -5205654613772011508
+      RUNESTONE SIDE IDLE_11: -6963423639290958846
+      RUNESTONE SIDE IDLE_12: 2783918340105220865
+      RUNESTONE SIDE IDLE_13: 4663942028851046040
+      RUNESTONE SIDE IDLE_14: -7508740944926111437
+      RUNESTONE SIDE IDLE_15: 4430171553748289798
+      RUNESTONE SIDE IDLE_16: 4503931582431147355
+      RUNESTONE SIDE IDLE_17: 2296036768045930512
+      RUNESTONE SIDE IDLE_18: 6518666844717267242
+      RUNESTONE SIDE IDLE_19: -1762862009283493240
+      RUNESTONE SIDE IDLE_2: 1053385788141454526
+      RUNESTONE SIDE IDLE_20: 7000582388252183428
+      RUNESTONE SIDE IDLE_21: -4535208710268612456
+      RUNESTONE SIDE IDLE_22: -9206396174955948818
+      RUNESTONE SIDE IDLE_23: 8086488881628943126
+      RUNESTONE SIDE IDLE_24: 1397722262107736721
+      RUNESTONE SIDE IDLE_3: -3691528389468951416
+      RUNESTONE SIDE IDLE_4: -2763409966404203146
+      RUNESTONE SIDE IDLE_5: 3885550292746701428
+      RUNESTONE SIDE IDLE_6: -7660776375001517743
+      RUNESTONE SIDE IDLE_7: 4282162864341915712
+      RUNESTONE SIDE IDLE_8: -5252042794349475386
+      RUNESTONE SIDE IDLE_9: 5965810749911546175
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -182,7 +182,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: -389806149427488572, guid: 355c3ff5b3068d04aae536f0c6edeee1, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 0.88235295, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -273,8 +273,10 @@ MonoBehaviour:
   movementTarget: {fileID: 0}
   rb2d: {fileID: 4401776757835178578}
   spriteRend: {fileID: 5565977838893995876}
+  gameStats: {fileID: 11400000, guid: d5b99a2fb29eb7f4f9c607d98f56ff24, type: 2}
   acceleration: 40
   friction: 8
+  hasKnockback: 0
   knockbackTime: 0.15
   hitLayer:
     serializedVersion: 2

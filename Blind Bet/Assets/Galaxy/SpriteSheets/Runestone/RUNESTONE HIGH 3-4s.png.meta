@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 61b7d273f6fcf3f4d9188949409fcc8c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8324510654172188179
+    second: RUNESTONE HIGH 3-4s_0
+  - first:
+      213: -1784142854229713511
+    second: RUNESTONE HIGH 3-4s_1
+  - first:
+      213: -7329115769142065849
+    second: RUNESTONE HIGH 3-4s_2
+  - first:
+      213: -5882379149439922070
+    second: RUNESTONE HIGH 3-4s_3
+  - first:
+      213: -7304623094114556007
+    second: RUNESTONE HIGH 3-4s_4
+  - first:
+      213: 3661328985169605670
+    second: RUNESTONE HIGH 3-4s_5
+  - first:
+      213: -3887006673242866478
+    second: RUNESTONE HIGH 3-4s_6
+  - first:
+      213: -1860075225511926589
+    second: RUNESTONE HIGH 3-4s_7
+  - first:
+      213: -1222431645230188299
+    second: RUNESTONE HIGH 3-4s_8
+  - first:
+      213: -727988067468289190
+    second: RUNESTONE HIGH 3-4s_9
+  - first:
+      213: 6452548054802302529
+    second: RUNESTONE HIGH 3-4s_10
+  - first:
+      213: 9048812162250988808
+    second: RUNESTONE HIGH 3-4s_11
+  - first:
+      213: 846945163051271291
+    second: RUNESTONE HIGH 3-4s_12
+  - first:
+      213: -4139091934770734638
+    second: RUNESTONE HIGH 3-4s_13
+  - first:
+      213: -3939355846811262769
+    second: RUNESTONE HIGH 3-4s_14
+  - first:
+      213: 3910706361602985892
+    second: RUNESTONE HIGH 3-4s_15
+  - first:
+      213: -6823154409392812678
+    second: RUNESTONE HIGH 3-4s_16
+  - first:
+      213: 8054983943519413229
+    second: RUNESTONE HIGH 3-4s_17
+  - first:
+      213: -6271866215768811337
+    second: RUNESTONE HIGH 3-4s_18
+  - first:
+      213: 2433876648881932319
+    second: RUNESTONE HIGH 3-4s_19
+  - first:
+      213: -3391081983181121471
+    second: RUNESTONE HIGH 3-4s_20
+  - first:
+      213: 5968848036279358883
+    second: RUNESTONE HIGH 3-4s_21
+  - first:
+      213: 3797131383199155261
+    second: RUNESTONE HIGH 3-4s_22
+  - first:
+      213: -1080088474793353392
+    second: RUNESTONE HIGH 3-4s_23
+  - first:
+      213: -3239905118380909386
+    second: RUNESTONE HIGH 3-4s_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_0
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 8881
+        width: 483
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1bc194aa5697c80800000000000000
+      internalID: -8324510654172188179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_1
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 8880
+        width: 482
+        height: 727
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d1611e6837d37e0800000000000000
+      internalID: -1784142854229713511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_2
+      rect:
+        serializedVersion: 2
+        x: 4549
+        y: 8874
+        width: 483
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745c29e0a00c94a90800000000000000
+      internalID: -7329115769142065849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_3
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 7788
+        width: 483
+        height: 696
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60187b64579d5ea0800000000000000
+      internalID: -5882379149439922070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_4
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 7785
+        width: 481
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997ef295ff3c0aa90800000000000000
+      internalID: -7304623094114556007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_5
+      rect:
+        serializedVersion: 2
+        x: 4548
+        y: 7777
+        width: 483
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62430ee3057afc230800000000000000
+      internalID: 3661328985169605670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_6
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 6694
+        width: 483
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc39c166049e0ac0800000000000000
+      internalID: -3887006673242866478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_7
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 6690
+        width: 483
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c46bdfff6faf26e0800000000000000
+      internalID: -1860075225511926589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_8
+      rect:
+        serializedVersion: 2
+        x: 4544
+        y: 6686
+        width: 481
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8bbd735ec090fe0800000000000000
+      internalID: -1222431645230188299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_9
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 5597
+        width: 482
+        height: 619
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b54dda5baa5e5f0800000000000000
+      internalID: -727988067468289190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_10
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 5595
+        width: 482
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14601aec44e0c8950800000000000000
+      internalID: 6452548054802302529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_11
+      rect:
+        serializedVersion: 2
+        x: 4548
+        y: 5591
+        width: 483
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d543a08b6d39d70800000000000000
+      internalID: 9048812162250988808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_12
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 4511
+        width: 482
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7408e37324f0cb00800000000000000
+      internalID: 846945163051271291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_13
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 4511
+        width: 482
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d95e4fa0ddfe86c0800000000000000
+      internalID: -4139091934770734638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_14
+      rect:
+        serializedVersion: 2
+        x: 4549
+        y: 4507
+        width: 484
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0e4fa9ab89459c0800000000000000
+      internalID: -3939355846811262769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_15
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 3432
+        width: 483
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afc43057be954630800000000000000
+      internalID: 3910706361602985892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_16
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 3440
+        width: 481
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d408c17394f41a0800000000000000
+      internalID: -6823154409392812678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_17
+      rect:
+        serializedVersion: 2
+        x: 4547
+        y: 3443
+        width: 483
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de323f0383d09cf60800000000000000
+      internalID: 8054983943519413229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_18
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 2365
+        width: 484
+        height: 653
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8935218ead5f8a0800000000000000
+      internalID: -6271866215768811337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_19
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 2368
+        width: 483
+        height: 669
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18c9bbbaedd6c120800000000000000
+      internalID: 2433876648881932319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_20
+      rect:
+        serializedVersion: 2
+        x: 4548
+        y: 2372
+        width: 483
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148134c27e470f0d0800000000000000
+      internalID: -3391081983181121471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_21
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1295
+        width: 483
+        height: 696
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a518b82aab95d250800000000000000
+      internalID: 5968848036279358883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_22
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 1302
+        width: 482
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34c21dffde12b430800000000000000
+      internalID: 3797131383199155261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_23
+      rect:
+        serializedVersion: 2
+        x: 4548
+        y: 1304
+        width: 482
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fd2f53141c201f0800000000000000
+      internalID: -1080088474793353392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE HIGH 3-4s_24
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 226
+        width: 482
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc9fe8e57b8903d0800000000000000
+      internalID: -3239905118380909386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RUNESTONE HIGH 3-4s_0: -8324510654172188179
+      RUNESTONE HIGH 3-4s_1: -1784142854229713511
+      RUNESTONE HIGH 3-4s_10: 6452548054802302529
+      RUNESTONE HIGH 3-4s_11: 9048812162250988808
+      RUNESTONE HIGH 3-4s_12: 846945163051271291
+      RUNESTONE HIGH 3-4s_13: -4139091934770734638
+      RUNESTONE HIGH 3-4s_14: -3939355846811262769
+      RUNESTONE HIGH 3-4s_15: 3910706361602985892
+      RUNESTONE HIGH 3-4s_16: -6823154409392812678
+      RUNESTONE HIGH 3-4s_17: 8054983943519413229
+      RUNESTONE HIGH 3-4s_18: -6271866215768811337
+      RUNESTONE HIGH 3-4s_19: 2433876648881932319
+      RUNESTONE HIGH 3-4s_2: -7329115769142065849
+      RUNESTONE HIGH 3-4s_20: -3391081983181121471
+      RUNESTONE HIGH 3-4s_21: 5968848036279358883
+      RUNESTONE HIGH 3-4s_22: 3797131383199155261
+      RUNESTONE HIGH 3-4s_23: -1080088474793353392
+      RUNESTONE HIGH 3-4s_24: -3239905118380909386
+      RUNESTONE HIGH 3-4s_3: -5882379149439922070
+      RUNESTONE HIGH 3-4s_4: -7304623094114556007
+      RUNESTONE HIGH 3-4s_5: 3661328985169605670
+      RUNESTONE HIGH 3-4s_6: -3887006673242866478
+      RUNESTONE HIGH 3-4s_7: -1860075225511926589
+      RUNESTONE HIGH 3-4s_8: -1222431645230188299
+      RUNESTONE HIGH 3-4s_9: -727988067468289190
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

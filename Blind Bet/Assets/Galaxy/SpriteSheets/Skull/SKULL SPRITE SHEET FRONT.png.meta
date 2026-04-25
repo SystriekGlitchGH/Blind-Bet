@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: 79cc22889983b3d42bdbad7d120dfedf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8831803593050985568
+    second: SKULL SPRITE SHEET FRONT_0
+  - first:
+      213: 7856823271150724544
+    second: SKULL SPRITE SHEET FRONT_1
+  - first:
+      213: -2989283244190875089
+    second: SKULL SPRITE SHEET FRONT_2
+  - first:
+      213: -247857238998382528
+    second: SKULL SPRITE SHEET FRONT_3
+  - first:
+      213: -5183732623853105478
+    second: SKULL SPRITE SHEET FRONT_4
+  - first:
+      213: -4221748700181392027
+    second: SKULL SPRITE SHEET FRONT_5
+  - first:
+      213: -9036987412548604738
+    second: SKULL SPRITE SHEET FRONT_6
+  - first:
+      213: -976195953693850135
+    second: SKULL SPRITE SHEET FRONT_7
+  - first:
+      213: -8402778631021489422
+    second: SKULL SPRITE SHEET FRONT_8
+  - first:
+      213: 7780220957100190834
+    second: SKULL SPRITE SHEET FRONT_9
+  - first:
+      213: 223135643096719528
+    second: SKULL SPRITE SHEET FRONT_10
+  - first:
+      213: -5009150775315750202
+    second: SKULL SPRITE SHEET FRONT_11
+  - first:
+      213: 8111764863223347338
+    second: SKULL SPRITE SHEET FRONT_12
+  - first:
+      213: 6597293968966457916
+    second: SKULL SPRITE SHEET FRONT_13
+  - first:
+      213: 9146016662280887045
+    second: SKULL SPRITE SHEET FRONT_14
+  - first:
+      213: -8552223236550529798
+    second: SKULL SPRITE SHEET FRONT_15
+  - first:
+      213: 3811400942279580090
+    second: SKULL SPRITE SHEET FRONT_16
+  - first:
+      213: 2056971118941725874
+    second: SKULL SPRITE SHEET FRONT_17
+  - first:
+      213: 6333600467929740494
+    second: SKULL SPRITE SHEET FRONT_18
+  - first:
+      213: -5293664936453627140
+    second: SKULL SPRITE SHEET FRONT_19
+  - first:
+      213: 239640114727980393
+    second: SKULL SPRITE SHEET FRONT_20
+  - first:
+      213: 4817774490530069315
+    second: SKULL SPRITE SHEET FRONT_21
+  - first:
+      213: -1131059914851558147
+    second: SKULL SPRITE SHEET FRONT_22
+  - first:
+      213: 5063853072550633644
+    second: SKULL SPRITE SHEET FRONT_23
+  - first:
+      213: -1301772340516874922
+    second: SKULL SPRITE SHEET FRONT_24
+  - first:
+      213: -4544060524003816856
+    second: SKULL SPRITE SHEET FRONT_25
+  - first:
+      213: -1257082746299374097
+    second: SKULL SPRITE SHEET FRONT_26
+  - first:
+      213: 579434511420969695
+    second: SKULL SPRITE SHEET FRONT_27
+  - first:
+      213: 8260122362522534
+    second: SKULL SPRITE SHEET FRONT_28
+  - first:
+      213: 3214963959939644390
+    second: SKULL SPRITE SHEET FRONT_29
+  - first:
+      213: -9024718965189161755
+    second: SKULL SPRITE SHEET FRONT_30
+  - first:
+      213: 1339481515752970065
+    second: SKULL SPRITE SHEET FRONT_31
+  - first:
+      213: 5837042234261133770
+    second: SKULL SPRITE SHEET FRONT_32
+  - first:
+      213: 4303141593178558283
+    second: SKULL SPRITE SHEET FRONT_33
+  - first:
+      213: 1051263029790132855
+    second: SKULL SPRITE SHEET FRONT_34
+  - first:
+      213: 3845595609538364669
+    second: SKULL SPRITE SHEET FRONT_35
+  - first:
+      213: 3771947499229262886
+    second: SKULL SPRITE SHEET FRONT_36
+  - first:
+      213: 9080980750642103934
+    second: SKULL SPRITE SHEET FRONT_37
+  - first:
+      213: -7252378669331880796
+    second: SKULL SPRITE SHEET FRONT_38
+  - first:
+      213: -8486122868947566443
+    second: SKULL SPRITE SHEET FRONT_39
+  - first:
+      213: 8030406570292282662
+    second: SKULL SPRITE SHEET FRONT_40
+  - first:
+      213: 4296381000187153281
+    second: SKULL SPRITE SHEET FRONT_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9618
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06492d1339ed09a70800000000000000
+      internalID: 8831803593050985568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 9618
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c526fb432b090d60800000000000000
+      internalID: 7856823271150724544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 9618
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22c9f03abee386d0800000000000000
+      internalID: -2989283244190875089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8416
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0480e72872f6f8cf0800000000000000
+      internalID: -247857238998382528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8416
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abec1a8a4aeaf08b0800000000000000
+      internalID: -5183732623853105478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8416
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56598bacce55965c0800000000000000
+      internalID: -4221748700181392027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7214
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc2d5b04db269280800000000000000
+      internalID: -9036987412548604738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7214
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e587e4c3fad372f0800000000000000
+      internalID: -976195953693850135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7214
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f298bbda55536b80800000000000000
+      internalID: -8402778631021489422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6012
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ca1063db5e8fb60800000000000000
+      internalID: 7780220957100190834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6012
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a022876facb81300800000000000000
+      internalID: 223135643096719528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6012
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2aee2d8ebeb7ab0800000000000000
+      internalID: -5009150775315750202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4810
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a883ce54a27c29070800000000000000
+      internalID: 8111764863223347338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4810
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a921b29eb4e8b50800000000000000
+      internalID: 6597293968966457916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4810
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b5e0952bd2dee70800000000000000
+      internalID: 9146016662280887045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3608
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc60992746605980800000000000000
+      internalID: -8552223236550529798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3608
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9d92d96f0d4e430800000000000000
+      internalID: 3811400942279580090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3608
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b462c99554db8c10800000000000000
+      internalID: 2056971118941725874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2406
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec43338911875e750800000000000000
+      internalID: 6333600467929740494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2406
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2adbe89cf1986b0800000000000000
+      internalID: -5293664936453627140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2406
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d8b482a6f535300800000000000000
+      internalID: 239640114727980393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1204
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bbbfb9f5c2cd240800000000000000
+      internalID: 4817774490530069315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1204
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfcd693000bad40f0800000000000000
+      internalID: -1131059914851558147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1204
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0a6204a8b664640800000000000000
+      internalID: 5063853072550633644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655101114fc2fede0800000000000000
+      internalID: -1301772340516874922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a80e4670140f0c0800000000000000
+      internalID: -4544060524003816856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKULL SPRITE SHEET FRONT_26
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2
+        width: 1906
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5ad8d07e1fd8ee0800000000000000
+      internalID: -1257082746299374097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 39a3d6583638e874d8388993a56469b9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SKULL SPRITE SHEET FRONT_0: 8831803593050985568
+      SKULL SPRITE SHEET FRONT_1: 7856823271150724544
+      SKULL SPRITE SHEET FRONT_10: 223135643096719528
+      SKULL SPRITE SHEET FRONT_11: -5009150775315750202
+      SKULL SPRITE SHEET FRONT_12: 8111764863223347338
+      SKULL SPRITE SHEET FRONT_13: 6597293968966457916
+      SKULL SPRITE SHEET FRONT_14: 9146016662280887045
+      SKULL SPRITE SHEET FRONT_15: -8552223236550529798
+      SKULL SPRITE SHEET FRONT_16: 3811400942279580090
+      SKULL SPRITE SHEET FRONT_17: 2056971118941725874
+      SKULL SPRITE SHEET FRONT_18: 6333600467929740494
+      SKULL SPRITE SHEET FRONT_19: -5293664936453627140
+      SKULL SPRITE SHEET FRONT_2: -2989283244190875089
+      SKULL SPRITE SHEET FRONT_20: 239640114727980393
+      SKULL SPRITE SHEET FRONT_21: 4817774490530069315
+      SKULL SPRITE SHEET FRONT_22: -1131059914851558147
+      SKULL SPRITE SHEET FRONT_23: 5063853072550633644
+      SKULL SPRITE SHEET FRONT_24: -1301772340516874922
+      SKULL SPRITE SHEET FRONT_25: -4544060524003816856
+      SKULL SPRITE SHEET FRONT_26: -1257082746299374097
+      SKULL SPRITE SHEET FRONT_3: -247857238998382528
+      SKULL SPRITE SHEET FRONT_4: -5183732623853105478
+      SKULL SPRITE SHEET FRONT_5: -4221748700181392027
+      SKULL SPRITE SHEET FRONT_6: -9036987412548604738
+      SKULL SPRITE SHEET FRONT_7: -976195953693850135
+      SKULL SPRITE SHEET FRONT_8: -8402778631021489422
+      SKULL SPRITE SHEET FRONT_9: 7780220957100190834
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

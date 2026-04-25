@@ -67,7 +67,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.7
 --- !u!1 &1535248516464851881
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,8 +181,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+  m_Sprite: {fileID: 4274420489594024547, guid: b225a57738924b949972b6b1c6ea8929, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -227,7 +227,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.51
+  m_Radius: 0.7
 --- !u!50 &4401776757835178578
 Rigidbody2D:
   serializedVersion: 5
@@ -272,18 +272,20 @@ MonoBehaviour:
   movementTarget: {fileID: 0}
   rb2d: {fileID: 4401776757835178578}
   spriteRend: {fileID: 5565977838893995876}
+  gameStats: {fileID: 11400000, guid: d5b99a2fb29eb7f4f9c607d98f56ff24, type: 2}
   acceleration: 40
   friction: 8
+  hasKnockback: 0
   knockbackTime: 0.15
   hitLayer:
     serializedVersion: 2
     m_Bits: 64
   baseColor:
     serializedVersion: 2
-    rgba: 4291348680
+    rgba: 4294967295
   currentColor:
     serializedVersion: 2
-    rgba: 4291348680
+    rgba: 4294967295
   currentNode: {fileID: 0}
   movedNode: {fileID: 0}
   path: []

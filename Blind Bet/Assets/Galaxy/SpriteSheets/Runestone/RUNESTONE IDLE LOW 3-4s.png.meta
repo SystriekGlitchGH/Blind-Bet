@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: c7598c86bb4ef7b42ad1c2dfe29789f8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -216128602392913449
+    second: RUNESTONE IDLE LOW 3-4s_0
+  - first:
+      213: 8451210437312512555
+    second: RUNESTONE IDLE LOW 3-4s_1
+  - first:
+      213: -1454940037092809582
+    second: RUNESTONE IDLE LOW 3-4s_2
+  - first:
+      213: -1675151818678277903
+    second: RUNESTONE IDLE LOW 3-4s_3
+  - first:
+      213: -5329345306103216941
+    second: RUNESTONE IDLE LOW 3-4s_4
+  - first:
+      213: 3985139012666692305
+    second: RUNESTONE IDLE LOW 3-4s_5
+  - first:
+      213: 5318235002652110590
+    second: RUNESTONE IDLE LOW 3-4s_6
+  - first:
+      213: -4752062754419588393
+    second: RUNESTONE IDLE LOW 3-4s_7
+  - first:
+      213: -3576673364313112929
+    second: RUNESTONE IDLE LOW 3-4s_8
+  - first:
+      213: -4465928329668531542
+    second: RUNESTONE IDLE LOW 3-4s_9
+  - first:
+      213: 6303665685959295774
+    second: RUNESTONE IDLE LOW 3-4s_10
+  - first:
+      213: 5851697127376021574
+    second: RUNESTONE IDLE LOW 3-4s_11
+  - first:
+      213: -9134819889603078486
+    second: RUNESTONE IDLE LOW 3-4s_12
+  - first:
+      213: -1811796330420785504
+    second: RUNESTONE IDLE LOW 3-4s_13
+  - first:
+      213: -2763306763094893353
+    second: RUNESTONE IDLE LOW 3-4s_14
+  - first:
+      213: 1268895837925999445
+    second: RUNESTONE IDLE LOW 3-4s_15
+  - first:
+      213: 5060541030386647441
+    second: RUNESTONE IDLE LOW 3-4s_16
+  - first:
+      213: 4123341879973932990
+    second: RUNESTONE IDLE LOW 3-4s_17
+  - first:
+      213: -7071645438784893548
+    second: RUNESTONE IDLE LOW 3-4s_18
+  - first:
+      213: -2312692479584569868
+    second: RUNESTONE IDLE LOW 3-4s_19
+  - first:
+      213: 8806172347289346622
+    second: RUNESTONE IDLE LOW 3-4s_20
+  - first:
+      213: 4855577347917336862
+    second: RUNESTONE IDLE LOW 3-4s_21
+  - first:
+      213: 427666014823062233
+    second: RUNESTONE IDLE LOW 3-4s_22
+  - first:
+      213: 8461431733066943300
+    second: RUNESTONE IDLE LOW 3-4s_23
+  - first:
+      213: -3500670445111117357
+    second: RUNESTONE IDLE LOW 3-4s_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_0
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 8839
+        width: 518
+        height: 781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d991946e28200df0800000000000000
+      internalID: -216128602392913449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_1
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 8857
+        width: 516
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b220616cd1bb84570800000000000000
+      internalID: 8451210437312512555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_2
+      rect:
+        serializedVersion: 2
+        x: 4548
+        y: 8868
+        width: 516
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294e69faeb30fcbe0800000000000000
+      internalID: -1454940037092809582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_3
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 7790
+        width: 516
+        height: 698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8e4d6db4aa0c8e0800000000000000
+      internalID: -1675151818678277903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_4
+      rect:
+        serializedVersion: 2
+        x: 2607
+        y: 7787
+        width: 516
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d482502eac5a06b0800000000000000
+      internalID: -5329345306103216941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_5
+      rect:
+        serializedVersion: 2
+        x: 4553
+        y: 7783
+        width: 516
+        height: 671
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d29c8e51de0e4730800000000000000
+      internalID: 3985139012666692305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_6
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 6699
+        width: 514
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efea025ce8a2ec940800000000000000
+      internalID: 5318235002652110590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_7
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 6694
+        width: 516
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2c4743a184d0eb0800000000000000
+      internalID: -4752062754419588393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_8
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 6685
+        width: 517
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ef382768a1d5ec0800000000000000
+      internalID: -3576673364313112929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_9
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 5600
+        width: 515
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaae0cd78d5d502c0800000000000000
+      internalID: -4465928329668531542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_10
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 5595
+        width: 516
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e134c6a0b8e1b7750800000000000000
+      internalID: 6303665685959295774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_11
+      rect:
+        serializedVersion: 2
+        x: 4549
+        y: 5591
+        width: 515
+        height: 615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648eb62a887653150800000000000000
+      internalID: 5851697127376021574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_12
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 4509
+        width: 516
+        height: 615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6190175b99a3180800000000000000
+      internalID: -9134819889603078486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_13
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 4508
+        width: 516
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aea9e736d43bd6e0800000000000000
+      internalID: -1811796330420785504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_14
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 4512
+        width: 517
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc5b4cb323c6a9d0800000000000000
+      internalID: -2763306763094893353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_15
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 3436
+        width: 515
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5530d8caa060c9110800000000000000
+      internalID: 1268895837925999445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_16
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 3441
+        width: 516
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1914c775147aa3640800000000000000
+      internalID: 5060541030386647441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_17
+      rect:
+        serializedVersion: 2
+        x: 4552
+        y: 3451
+        width: 514
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf665be79d093930800000000000000
+      internalID: 4123341879973932990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_18
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2370
+        width: 515
+        height: 657
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d07bbc0f77cdd90800000000000000
+      internalID: -7071645438784893548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_19
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 2373
+        width: 516
+        height: 671
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5f4a7617aa7efd0800000000000000
+      internalID: -2312692479584569868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_20
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 2378
+        width: 516
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32ac0fb71fc53a70800000000000000
+      internalID: 8806172347289346622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_21
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1299
+        width: 516
+        height: 698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11db0a3fd9726340800000000000000
+      internalID: 4855577347917336862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_22
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 1295
+        width: 516
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da190089ff5fe500800000000000000
+      internalID: 427666014823062233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_23
+      rect:
+        serializedVersion: 2
+        x: 4549
+        y: 1283
+        width: 516
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b4ca4a45b0d6570800000000000000
+      internalID: 8461431733066943300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RUNESTONE IDLE LOW 3-4s_24
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 187
+        width: 515
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9717b07ce1b6fc0800000000000000
+      internalID: -3500670445111117357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RUNESTONE IDLE LOW 3-4s_0: -216128602392913449
+      RUNESTONE IDLE LOW 3-4s_1: 8451210437312512555
+      RUNESTONE IDLE LOW 3-4s_10: 6303665685959295774
+      RUNESTONE IDLE LOW 3-4s_11: 5851697127376021574
+      RUNESTONE IDLE LOW 3-4s_12: -9134819889603078486
+      RUNESTONE IDLE LOW 3-4s_13: -1811796330420785504
+      RUNESTONE IDLE LOW 3-4s_14: -2763306763094893353
+      RUNESTONE IDLE LOW 3-4s_15: 1268895837925999445
+      RUNESTONE IDLE LOW 3-4s_16: 5060541030386647441
+      RUNESTONE IDLE LOW 3-4s_17: 4123341879973932990
+      RUNESTONE IDLE LOW 3-4s_18: -7071645438784893548
+      RUNESTONE IDLE LOW 3-4s_19: -2312692479584569868
+      RUNESTONE IDLE LOW 3-4s_2: -1454940037092809582
+      RUNESTONE IDLE LOW 3-4s_20: 8806172347289346622
+      RUNESTONE IDLE LOW 3-4s_21: 4855577347917336862
+      RUNESTONE IDLE LOW 3-4s_22: 427666014823062233
+      RUNESTONE IDLE LOW 3-4s_23: 8461431733066943300
+      RUNESTONE IDLE LOW 3-4s_24: -3500670445111117357
+      RUNESTONE IDLE LOW 3-4s_3: -1675151818678277903
+      RUNESTONE IDLE LOW 3-4s_4: -5329345306103216941
+      RUNESTONE IDLE LOW 3-4s_5: 3985139012666692305
+      RUNESTONE IDLE LOW 3-4s_6: 5318235002652110590
+      RUNESTONE IDLE LOW 3-4s_7: -4752062754419588393
+      RUNESTONE IDLE LOW 3-4s_8: -3576673364313112929
+      RUNESTONE IDLE LOW 3-4s_9: -4465928329668531542
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,6 +15,7 @@ public class EnemyMovement : MonoBehaviour
     public Rigidbody2D rb2d;
     [SerializeField] protected SpriteRenderer spriteRend;
     public Enemy enemyStats;
+    public GameStats gameStats;
 
     [Header("Movement Stats")]
     public float acceleration;
