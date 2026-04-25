@@ -73,48 +73,22 @@ public class PlayerMovement : MonoBehaviour
     }
     private Direction playerDirection; // the player's current direction
     Random rand = new Random();
+    // private void OnValidate()
+    // {
+    //     for(int i = 0; i < 5; i++)
+    //     {
+    //         playerStats.activeHand.cards[i] = playerStats.blankCard;
+    //         playerStats.passiveHand1.cards[i] = playerStats.blankCard;
+    //         playerStats.passiveHand1.cards[i] = playerStats.blankCard;
+    //         playerStats.bench.Clear();
+    //         playerStats.currentChips = 1000;
+    //         playerStats.currentHealth = 100;
+    //         playerStats.activeSuit = Card.Suit.blank;
+    //     }
+    // }
     private void Awake()
     {
-        //playerStats = new Player(blankCard); // constructing player object
-        // playerStats.AddCard();
-        // playerStats.SortHandCards(playerStats.activeHand,1);
-        // playerStats.SetHandType(playerStats.activeHand,1);
-        // Debug.Log("active hand: "+playerStats.activeHand.cards[0].rank+playerStats.activeHand.cards[0].suit+
-        //     ", "+playerStats.activeHand.cards[1].rank + playerStats.activeHand.cards[1].suit + 
-        //     ", " + playerStats.activeHand.cards[2].rank + playerStats.activeHand.cards[2].suit + 
-        //     ", " + playerStats.activeHand.cards[3].rank + playerStats.activeHand.cards[3].suit + 
-        //     ", " + playerStats.activeHand.cards[4].rank + playerStats.activeHand.cards[4].suit);
-        // // Debug.Log("suit of active hand: "+playerStats.GetHandSuit(playerStats.activeHand)); n
-        // // Debug.Log("is suited: "+playerStats.IsSuited(playerStats.activeHand)); n 
-        // Debug.Log("active hand type: "+playerStats.activeHand.type);
-        // playerStats.SetActiveAbility(playerStats.activeHand);
-        // Debug.Log("active ability: "+playerStats.activeAbility.name);
         
-        // playerStats.SortHandCards(playerStats.passiveHand1,2);
-        // playerStats.SetHandType(playerStats.passiveHand1,2);
-        // Debug.Log("passive hand 1: "+playerStats.passiveHand1.cards[0].rank+playerStats.passiveHand1.cards[0].suit+
-        //     ", "+playerStats.passiveHand1.cards[1].rank + playerStats.passiveHand1.cards[1].suit + 
-        //     ", " + playerStats.passiveHand1.cards[2].rank + playerStats.passiveHand1.cards[2].suit + 
-        //     ", " + playerStats.passiveHand1.cards[3].rank + playerStats.passiveHand1.cards[3].suit + 
-        //     ", " + playerStats.passiveHand1.cards[4].rank + playerStats.passiveHand1.cards[4].suit);
-        // // Debug.Log("suit of passive hand 1: "+playerStats.GetHandSuit(playerStats.passiveHand1)); n
-        // // Debug.Log("is suited: "+playerStats.IsSuited(playerStats.passiveHand1)); n
-        // Debug.Log("passive hand type 1: "+playerStats.passiveHand1.type);
-        // playerStats.SetPassiveAbility1(playerStats.passiveHand1);
-        // Debug.Log("passive ability 1: "+playerStats.passiveAbility1.name);
-
-        // playerStats.SortHandCards(playerStats.passiveHand2,3);
-        // playerStats.SetHandType(playerStats.passiveHand2,3);
-        // Debug.Log("passive hand 2: "+playerStats.passiveHand2.cards[0].rank+playerStats.passiveHand2.cards[0].suit+
-        //     ", "+playerStats.passiveHand2.cards[1].rank + playerStats.passiveHand2.cards[1].suit + 
-        //     ", " + playerStats.passiveHand2.cards[2].rank + playerStats.passiveHand2.cards[2].suit + 
-        //     ", " + playerStats.passiveHand2.cards[3].rank + playerStats.passiveHand2.cards[3].suit + 
-        //     ", " + playerStats.passiveHand2.cards[4].rank + playerStats.passiveHand2.cards[4].suit);
-        // // Debug.Log("suit of passive hand 1: "+playerStats.GetHandSuit(playerStats.passiveHand1)); n
-        // // Debug.Log("is suited: "+playerStats.IsSuited(playerStats.passiveHand1)); n
-        // Debug.Log("passive hand type 2: "+playerStats.passiveHand2.type);
-        // playerStats.SetPassiveAbility2(playerStats.passiveHand2);
-        // Debug.Log("passive ability 2: "+playerStats.passiveAbility2.name);
     }
     private void FixedUpdate()
     {

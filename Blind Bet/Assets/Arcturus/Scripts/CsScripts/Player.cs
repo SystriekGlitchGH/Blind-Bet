@@ -31,9 +31,9 @@ public class Player : ScriptableObject
     public Hand passiveHand2;
     public List<Card> bench;
 
-    public Ability activeAbility = new Ability("Nothing", "na");
-    public Ability passiveAbility1 = new Ability("Nothing", "na");
-    public Ability passiveAbility2 = new Ability("Nothing", "na");
+    public Ability activeAbility;
+    public Ability passiveAbility1;
+    public Ability passiveAbility2;
 
     public Card blankCard;
 

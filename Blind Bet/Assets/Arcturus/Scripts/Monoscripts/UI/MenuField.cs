@@ -33,10 +33,10 @@ public class MenuField : MonoBehaviour, IDropHandler
 
         //}
 
-        foreach (var card in GetComponentsInChildren<DraggableItem>())
-        {
-            InvokeOnEnter(new Field(card.card,handNum));
-        }
+        // foreach (var card in GetComponentsInChildren<DraggableItem>())
+        // {
+        //     InvokeOnEnter(new Field(card.card,handNum));
+        // }
     }
 
     public void OnDrop(PointerEventData eventData)

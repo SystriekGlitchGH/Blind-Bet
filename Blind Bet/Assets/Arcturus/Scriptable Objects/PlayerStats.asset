@@ -12,53 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73259922de1e381499dbac0274e3f230, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  activeSuit: 4
+  activeSuit: 0
   activeHand:
     cards:
-    - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
-    - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
-    - {fileID: 11400000, guid: 6d78dd929654cd94383de1247da45ac2, type: 2}
-    - {fileID: 11400000, guid: 60f94328e4fe1c842ad0a8df9b04270b, type: 2}
-    - {fileID: 11400000, guid: 6d78dd929654cd94383de1247da45ac2, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     suited: 0
-    type: 3
+    type: 0
   passiveHand1:
-    cards: []
+    cards:
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     suited: 0
-    type: 2
+    type: 0
   passiveHand2:
-    cards: []
+    cards:
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     suited: 0
-    type: 1
-  bench:
-  - {fileID: 11400000, guid: 3ed116ee3848c0d45a0280af8aedf405, type: 2}
-  - {fileID: 11400000, guid: 3ed116ee3848c0d45a0280af8aedf405, type: 2}
-  - {fileID: 11400000, guid: e1cf49266540ad848bb537abc30729c5, type: 2}
-  - {fileID: 11400000, guid: e1cf49266540ad848bb537abc30729c5, type: 2}
-  - {fileID: 11400000, guid: 60f94328e4fe1c842ad0a8df9b04270b, type: 2}
-  - {fileID: 11400000, guid: 6d78dd929654cd94383de1247da45ac2, type: 2}
-  - {fileID: 11400000, guid: e1cf49266540ad848bb537abc30729c5, type: 2}
-  - {fileID: 11400000, guid: 3ed116ee3848c0d45a0280af8aedf405, type: 2}
-  - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
-  - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
-  - {fileID: 11400000, guid: 60f94328e4fe1c842ad0a8df9b04270b, type: 2}
-  - {fileID: 11400000, guid: 6d78dd929654cd94383de1247da45ac2, type: 2}
-  - {fileID: 11400000, guid: e1cf49266540ad848bb537abc30729c5, type: 2}
-  - {fileID: 11400000, guid: 3ed116ee3848c0d45a0280af8aedf405, type: 2}
-  - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
-  - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
-  - {fileID: 11400000, guid: 60f94328e4fe1c842ad0a8df9b04270b, type: 2}
-  - {fileID: 11400000, guid: 6d78dd929654cd94383de1247da45ac2, type: 2}
-  - {fileID: 11400000, guid: e1cf49266540ad848bb537abc30729c5, type: 2}
-  - {fileID: 11400000, guid: 3ed116ee3848c0d45a0280af8aedf405, type: 2}
-  - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
-  - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
-  - {fileID: 11400000, guid: 60f94328e4fe1c842ad0a8df9b04270b, type: 2}
-  - {fileID: 11400000, guid: 6d78dd929654cd94383de1247da45ac2, type: 2}
-  - {fileID: 11400000, guid: e1cf49266540ad848bb537abc30729c5, type: 2}
-  - {fileID: 11400000, guid: 3ed116ee3848c0d45a0280af8aedf405, type: 2}
-  - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
-  - {fileID: 11400000, guid: c84c9c6e1549c5941a4688a212222f78, type: 2}
+    type: 0
+  bench: []
+  activeAbility:
+    name: Nothing
+    code: na
+  passiveAbility1:
+    name: Nothing
+    code: na
+  passiveAbility2:
+    name: Nothing
+    code: na
   blankCard: {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
   effectManager:
     effects: []
@@ -73,9 +64,9 @@ MonoBehaviour:
   hasEnrage: 0
   baseSpeed: 10
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   maxChips: 5000
-  currentChips: 477
+  currentChips: 1000
   chipLowThreshold: 500
   baseDashDistance: 20
   baseDashCooldown: 0.5
