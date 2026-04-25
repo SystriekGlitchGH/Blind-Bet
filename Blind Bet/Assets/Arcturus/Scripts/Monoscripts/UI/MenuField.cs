@@ -25,18 +25,50 @@ public class MenuField : MonoBehaviour, IDropHandler
     }
     public GridLayoutGroup gridLayoutGroup;
     public int handNum;
+    public CardDeck cardDeck;
     private void Awake()
     {
-        //Player player = FindFirstObjectByType<PlayerMovement>().playerStats;
-        //foreach (var card in player.bench)
-        //{
-
-        //}
-
-        // foreach (var card in GetComponentsInChildren<DraggableItem>())
-        // {
-        //     InvokeOnEnter(new Field(card.card,handNum));
-        // }
+        Player player = FindFirstObjectByType<PlayerMovement>().playerStats;
+        if(handNum == 1)
+        {
+            for(int i = 0; i < player.activeHand.cards.Length; i++)
+            {
+                if(player.activeHand.cards[i] != player.blankCard)
+                {
+                    Instantiate(cardDeck.GetUIObjectFromCard(player.activeHand.cards[i]),transform);
+                }
+            }
+        }
+        if(handNum == 2)
+        {
+            for(int i = 0; i < player.passiveHand1.cards.Length; i++)
+            {
+                if(player.passiveHand1.cards[i] != player.blankCard)
+                {
+                    Instantiate(cardDeck.GetUIObjectFromCard(player.passiveHand1.cards[i]),transform);
+                }
+            }
+        }
+        if(handNum == 3)
+        {
+            for(int i = 0; i < player.passiveHand2.cards.Length; i++)
+            {
+                if(player.passiveHand2.cards[i] != player.blankCard)
+                {
+                    Instantiate(cardDeck.GetUIObjectFromCard(player.passiveHand2.cards[i]),transform);
+                }
+            }
+        }
+        if(handNum == 4)
+        {
+            for(int i = 0; i < player.bench.Count; i++)
+            {
+                if(player.bench[i] != player.blankCard)
+                {
+                    Instantiate(cardDeck.GetUIObjectFromCard(player.bench[i]),transform);
+                }
+            }
+        }
     }
 
     public void OnDrop(PointerEventData eventData)

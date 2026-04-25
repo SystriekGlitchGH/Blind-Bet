@@ -145,3 +145,4 @@ MonoBehaviour:
         m_CallState: 2
   gridLayoutGroup: {fileID: 5751482123348877231}
   handNum: 0
+  cardDeck: {fileID: 11400000, guid: 20e5d9a6fd1287b4baf5b54a97a594a4, type: 2}

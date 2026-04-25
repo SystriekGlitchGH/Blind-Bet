@@ -17,44 +17,36 @@ public class CardDeck : ScriptableObject
         {
             for(int i = 0; i < diamonds.Count; i++)
             {
-                if(diamonds[i].TryGetComponent(out Card attachedCard))
-                {
-                    if(attachedCard == card)
-                        return diamonds[i];
-                }
+                Card attachedCard = diamonds[i].GetComponent<DraggableItem>().card;
+                if(attachedCard == card)
+                    return diamonds[i];
             }
         }
         else if(card.suit == Card.Suit.heart)
         {
             for(int i = 0; i < hearts.Count; i++)
             {
-                if(hearts[i].TryGetComponent(out Card attachedCard))
-                {
-                    if(attachedCard == card)
-                        return hearts[i];
-                }
+                Card attachedCard = hearts[i].GetComponent<DraggableItem>().card;
+                if(attachedCard == card)
+                    return hearts[i];
             }
         }
         else if(card.suit == Card.Suit.club)
         {
             for(int i = 0; i < clubs.Count; i++)
             {
-                if(clubs[i].TryGetComponent(out Card attachedCard))
-                {
-                    if(attachedCard == card)
-                        return clubs[i];
-                }
+                Card attachedCard = clubs[i].GetComponent<DraggableItem>().card;
+                if(attachedCard == card)
+                    return clubs[i];
             }
         }
         else if(card.suit == Card.Suit.spade)
         {
             for(int i = 0; i < spades.Count; i++)
             {
-                if(spades[i].TryGetComponent(out Card attachedCard))
-                {
-                    if(attachedCard == card)
-                        return spades[i];
-                }
+                Card attachedCard = spades[i].GetComponent<DraggableItem>().card;
+                if(attachedCard == card)
+                    return spades[i];
             }
         }
         return blankCard;

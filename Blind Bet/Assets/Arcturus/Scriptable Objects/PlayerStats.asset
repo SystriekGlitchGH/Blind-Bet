@@ -76,4 +76,4 @@ MonoBehaviour:
   baseAbilityDamage: 10
   baseAbilityKnockback: 10
   baseAbilityCooldown: 1
-  kills: 1
+  kills: 5

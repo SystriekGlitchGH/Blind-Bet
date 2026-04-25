@@ -15035,6 +15035,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: cardDeck
+      value: 
+      objectReference: {fileID: 11400000, guid: 20e5d9a6fd1287b4baf5b54a97a594a4, type: 2}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: gridLayoutGroup
       value: 
       objectReference: {fileID: 969377387}
@@ -15918,6 +15922,10 @@ PrefabInstance:
       propertyPath: handNum
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: cardDeck
+      value: 
+      objectReference: {fileID: 11400000, guid: 20e5d9a6fd1287b4baf5b54a97a594a4, type: 2}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: gridLayoutGroup
       value: 
@@ -17220,6 +17228,10 @@ PrefabInstance:
       propertyPath: playerUI
       value: 
       objectReference: {fileID: 389308361}
+    - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: currentNode
       value: 
@@ -21324,6 +21336,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: cardDeck
+      value: 
+      objectReference: {fileID: 11400000, guid: 20e5d9a6fd1287b4baf5b54a97a594a4, type: 2}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: gridLayoutGroup
       value: 
       objectReference: {fileID: 2117356652}
@@ -22135,6 +22151,10 @@ PrefabInstance:
       propertyPath: handNum
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
+      propertyPath: cardDeck
+      value: 
+      objectReference: {fileID: 11400000, guid: 20e5d9a6fd1287b4baf5b54a97a594a4, type: 2}
     - target: {fileID: 7973334413093531005, guid: 9a2c597d0a7e97b4cbf2aad1fe3925ae, type: 3}
       propertyPath: _onCardExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

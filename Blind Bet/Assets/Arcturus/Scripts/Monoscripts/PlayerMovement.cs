@@ -73,19 +73,19 @@ public class PlayerMovement : MonoBehaviour
     }
     private Direction playerDirection; // the player's current direction
     Random rand = new Random();
-    // private void OnValidate()
-    // {
-    //     for(int i = 0; i < 5; i++)
-    //     {
-    //         playerStats.activeHand.cards[i] = playerStats.blankCard;
-    //         playerStats.passiveHand1.cards[i] = playerStats.blankCard;
-    //         playerStats.passiveHand1.cards[i] = playerStats.blankCard;
-    //         playerStats.bench.Clear();
-    //         playerStats.currentChips = 1000;
-    //         playerStats.currentHealth = 100;
-    //         playerStats.activeSuit = Card.Suit.blank;
-    //     }
-    // }
+    private void OnValidate()
+    {
+        // for(int i = 0; i < 5; i++)
+        // {
+        //     playerStats.activeHand.cards[i] = playerStats.blankCard;
+        //     playerStats.passiveHand1.cards[i] = playerStats.blankCard;
+        //     playerStats.passiveHand2.cards[i] = playerStats.blankCard;
+        //     playerStats.bench.Clear();
+        //     playerStats.currentChips = 1000;
+        //     playerStats.currentHealth = 100;
+        //     playerStats.activeSuit = Card.Suit.blank;
+        // }
+    }
     private void Awake()
     {
         
