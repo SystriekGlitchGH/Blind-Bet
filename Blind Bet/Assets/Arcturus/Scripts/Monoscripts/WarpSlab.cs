@@ -13,7 +13,7 @@ public class WarpSlab : MonoBehaviour
         if(collision.TryGetComponent(out PlayerMovement pm))
         {
             gameStats.level++;
-            int levelIndex = rand.Next(0,gameStats.levelsAvailable.Count()-1);
+            int levelIndex = rand.Next(0,gameStats.levelsAvailable.Count());
             string scenePickedName = gameStats.levelsAvailable[levelIndex];
             gameStats.levelsAvailable.Remove(scenePickedName);
             SceneManager.LoadScene(scenePickedName);

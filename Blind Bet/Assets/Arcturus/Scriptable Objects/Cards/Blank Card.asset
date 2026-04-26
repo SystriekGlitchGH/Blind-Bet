@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfa62f9bdd08184a8b0d100f60c6176, type: 3}
   m_Name: Blank Card
   m_EditorClassIdentifier: 
-  rank: 0
-  suit: 0
+  rank: 3
+  suit: 3

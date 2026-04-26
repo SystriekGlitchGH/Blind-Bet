@@ -10,7 +10,7 @@ public class ChargerMovement : EnemyMovement
     {
         currentNode = AStarManager.instance.FindNearestNode(transform.position);
         rb2d.linearDamping = friction;
-        enemyStats = new Enemy(8, 50, 8, 2, 6);
+        enemyStats = new Enemy(8, 40, 8, 2, 6);
         currentState = StateMachine.patrol;
     }
     protected override void Update()

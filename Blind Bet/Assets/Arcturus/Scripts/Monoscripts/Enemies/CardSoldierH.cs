@@ -14,7 +14,7 @@ public class CardSoldierH : EnemyMovement
     {
         currentNode = AStarManager.instance.FindNearestNode(transform.position);
         rb2d.linearDamping = friction;
-        enemyStats = new Enemy(0,60,6,2,3);
+        enemyStats = new Enemy(0,35,6,2,3);
         currentState = StateMachine.patrol;
         isHealer = true;
     }

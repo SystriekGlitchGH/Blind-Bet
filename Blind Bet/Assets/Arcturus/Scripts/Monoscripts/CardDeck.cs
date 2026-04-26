@@ -4,51 +4,102 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CardDeck", menuName = "Scriptable Objects/CardDeck")]
 public class CardDeck : ScriptableObject
 {
+    [Header("Card Object Arrays")]
+    public List<GameObject> diamondsObject;
+    public List<GameObject> heartsObject;
+    public List<GameObject> clubsObject;
+    public List<GameObject> spadesObject;
+    public GameObject blankCardObject;
+
     [Header("Card Arrays")]
-    public List<GameObject> diamonds;
-    public List<GameObject> hearts;
-    public List<GameObject> clubs;
-    public List<GameObject> spades;
-    public GameObject blankCard;
+    public List<Card> diamondsCard;
+    public List<Card> heartsCard;
+    public List<Card> clubsCard;
+    public List<Card> spadesCard;
+    public Card blankCardCard;
 
     public GameObject GetUIObjectFromCard(Card card)
     {
         if(card.suit == Card.Suit.diamond)
         {
-            for(int i = 0; i < diamonds.Count; i++)
+            for(int i = 0; i < diamondsObject.Count; i++)
             {
-                Card attachedCard = diamonds[i].GetComponent<DraggableItem>().card;
+                Card attachedCard = diamondsObject[i].GetComponent<DraggableItem>().card;
                 if(attachedCard == card)
-                    return diamonds[i];
+                    return diamondsObject[i];
             }
         }
         else if(card.suit == Card.Suit.heart)
         {
-            for(int i = 0; i < hearts.Count; i++)
+            for(int i = 0; i < heartsObject.Count; i++)
             {
-                Card attachedCard = hearts[i].GetComponent<DraggableItem>().card;
+                Card attachedCard = heartsObject[i].GetComponent<DraggableItem>().card;
                 if(attachedCard == card)
-                    return hearts[i];
+                    return heartsObject[i];
             }
         }
         else if(card.suit == Card.Suit.club)
         {
-            for(int i = 0; i < clubs.Count; i++)
+            for(int i = 0; i < clubsObject.Count; i++)
             {
-                Card attachedCard = clubs[i].GetComponent<DraggableItem>().card;
+                Card attachedCard = clubsObject[i].GetComponent<DraggableItem>().card;
                 if(attachedCard == card)
-                    return clubs[i];
+                    return clubsObject[i];
             }
         }
         else if(card.suit == Card.Suit.spade)
         {
-            for(int i = 0; i < spades.Count; i++)
+            for(int i = 0; i < spadesObject.Count; i++)
             {
-                Card attachedCard = spades[i].GetComponent<DraggableItem>().card;
+                Card attachedCard = spadesObject[i].GetComponent<DraggableItem>().card;
                 if(attachedCard == card)
-                    return spades[i];
+                    return spadesObject[i];
             }
         }
-        return blankCard;
+        return blankCardObject;
+    }
+    public Card GetCardFromComponents(int rank, Card.Suit suit)
+    {
+        if(suit == Card.Suit.diamond)
+        {
+            for(int i = 0; i < diamondsCard.Count; i++)
+            {
+                if(rank == i + 2)
+                {
+                    return diamondsCard[i];
+                }
+            }
+        }
+        else if(suit == Card.Suit.heart)
+        {
+            for(int i = 0; i < heartsCard.Count; i++)
+            {
+                if(rank == i + 2)
+                {
+                    return heartsCard[i];
+                }
+            }
+        }
+        else if(suit == Card.Suit.club)
+        {
+            for(int i = 0; i < clubsCard.Count; i++)
+            {
+                if(rank == i + 2)
+                {
+                    return clubsCard[i];
+                }
+            }
+        }
+        else if(suit == Card.Suit.spade)
+        {
+            for(int i = 0; i < spadesCard.Count; i++)
+            {
+                if(rank == i + 2)
+                {
+                    return spadesCard[i];
+                }
+            }
+        }
+        return blankCardCard;
     }
 }
