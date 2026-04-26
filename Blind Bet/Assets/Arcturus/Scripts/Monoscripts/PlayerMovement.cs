@@ -1015,7 +1015,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy))
             {
-                enemy.GetHitAway(this, playerStats.baseAbilityKnockback / 2 * playerStats.GetAbilityKnockbackMod(), playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod());
+                enemy.GetHitAway(this, playerStats.baseAbilityKnockback / 2 * playerStats.GetAbilityKnockbackMod(), playerStats.baseAbilityDamage * playerStats.GetAbilityDamageMod()/2);
             }
         }
         GameObject attack = Instantiate(prefabLib.shadeStep, transform.position, quaternion.Euler(Vector3.zero), transform);

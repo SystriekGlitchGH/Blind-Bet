@@ -9,8 +9,9 @@ public class CardSoldierD : EnemyMovement
     public Vector2 attackSize;
     protected override void Start()
     {
+        currentNode = AStarManager.instance.FindNearestNode(transform.position);
         rb2d.linearDamping = friction;
-        enemyStats = new Enemy(10,30,6,2,3);
+        enemyStats = new Enemy(8,100,6,2,3);
         currentState = StateMachine.patrol;
     }
     protected override void Update()

@@ -12,8 +12,9 @@ public class CardSoldierH : EnemyMovement
     public float healCooldown;
     protected override void Start()
     {
+        currentNode = AStarManager.instance.FindNearestNode(transform.position);
         rb2d.linearDamping = friction;
-        enemyStats = new Enemy(10,20,6,2,3);
+        enemyStats = new Enemy(0,60,6,2,3);
         currentState = StateMachine.patrol;
         isHealer = true;
     }

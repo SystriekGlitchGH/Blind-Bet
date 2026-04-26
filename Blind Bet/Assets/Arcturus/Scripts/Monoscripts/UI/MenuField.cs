@@ -28,6 +28,7 @@ public class MenuField : MonoBehaviour, IDropHandler
     public CardDeck cardDeck;
     private void Awake()
     {
+        Debug.Log("awake done");
         Player player = FindFirstObjectByType<PlayerMovement>().playerStats;
         if(handNum == 1)
         {

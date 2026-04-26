@@ -31,10 +31,14 @@ public class CardPickup : MonoBehaviour
     {
         if (collision.TryGetComponent(out PlayerMovement pm))
         {
-            pm.playerStats.AddCard(uiCard.GetComponent<DraggableItem>().card,4);
-            Instantiate(uiCard,pm.playerUI.bench);
-            // Debug.Log(pm.playerStats.bench[0].rank);
-            Destroy(gameObject);
+            if(pm.playerStats.bench.Count < 7)
+            {
+                pm.playerStats.AddCard(uiCard.GetComponent<DraggableItem>().card,4);
+                Instantiate(uiCard,pm.playerUI.bench);
+                // Debug.Log(pm.playerStats.bench[0].rank);
+                Destroy(gameObject);
+            }
+            
         }
     }
 }

@@ -50,7 +50,6 @@ public class EnemyMovement : MonoBehaviour
     //other
     protected float colliderPushForce = 8;
     public bool isHealer;
-
     protected virtual void Start()
     {
         rb2d.linearDamping = friction;
@@ -171,7 +170,7 @@ public class EnemyMovement : MonoBehaviour
                 rb2d.linearVelocity = velocity;
             }
         }
-    }
+    }    
     protected virtual void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -188,7 +187,13 @@ public class EnemyMovement : MonoBehaviour
     #region ACTIVATION METHODS
     public void Die()
     {
-        enemyTarget.playerStats.kills++;
+        if (enemyTarget != null)
+        {
+            enemyTarget.playerStats.kills++;
+            enemyTarget.playerStats.AddChips(10);
+            gameStats.kills++;
+        }
+        
         Destroy(transform.parent.gameObject);
     }
     public void GetHit(PlayerMovement attacker, float knockback, float damage)

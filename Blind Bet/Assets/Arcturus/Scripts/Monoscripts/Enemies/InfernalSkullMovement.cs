@@ -13,8 +13,9 @@ public class InfernalSkullMovement : EnemyMovement
 
     protected override void Start()
     {
+        currentNode = AStarManager.instance.FindNearestNode(transform.position);
         rb2d.linearDamping = friction;
-        enemyStats = new Enemy(10,20,5,2,2);
+        enemyStats = new Enemy(2,40,5,2,2);
         currentState = StateMachine.patrol;
     }
     protected override void Update()

@@ -659,6 +659,12 @@ public class Player : ScriptableObject
     {
         maxHealth += amount;
     }
+    public void AddChips(float chips)
+    {
+        currentChips += chips;
+        if(currentChips > maxChips)
+            currentChips = maxChips;
+    }
     // modifiers
     public float GetAttackDamageMod()
     {

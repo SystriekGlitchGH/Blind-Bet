@@ -10,8 +10,9 @@ public class Goop1Movement : EnemyMovement
     public float dashForce;
     protected override void Start()
     {
+        currentNode = AStarManager.instance.FindNearestNode(transform.position);
         rb2d.linearDamping = friction;
-        enemyStats = new Enemy(10,20,5,2,1.25f);
+        enemyStats = new Enemy(2,25,5,2,1.25f);
         currentState = StateMachine.patrol;
     }
     protected override void Update()

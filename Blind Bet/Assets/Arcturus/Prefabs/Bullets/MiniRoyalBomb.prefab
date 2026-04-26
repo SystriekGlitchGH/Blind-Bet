@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 5830870703733664753, guid: e28e19c39522df74993c379728d0761a, type: 3}
   m_Color: {r: 0.6392157, g: 0.2901961, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,4 +102,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionVisual: {fileID: 1810197912710594706, guid: d690e5e47c499774f8a630e9b23f2bcc, type: 3}
   spriteRend: {fileID: 3377848979740460059}
+  followTransform: {fileID: 0}
   pm: {fileID: 0}

@@ -11,8 +11,9 @@ public class CardSoldierS : EnemyMovement
 
     protected override void Start()
     {
+        currentNode = AStarManager.instance.FindNearestNode(transform.position);
         rb2d.linearDamping = friction;
-        enemyStats = new Enemy(10,30,6,2,3);
+        enemyStats = new Enemy(7,80,5,2,3);
         currentState = StateMachine.patrol;
     }
     protected override void Update()

@@ -70,10 +70,10 @@ MonoBehaviour:
   chipLowThreshold: 500
   baseDashDistance: 20
   baseDashCooldown: 0.5
-  baseDashDamage: 5
+  baseDashDamage: 10
   baseParryTime: 0.2
   baseParryCooldown: 1
-  baseAbilityDamage: 10
+  baseAbilityDamage: 60
   baseAbilityKnockback: 10
   baseAbilityCooldown: 1
-  kills: 5
+  kills: 139

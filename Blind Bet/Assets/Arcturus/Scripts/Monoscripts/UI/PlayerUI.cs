@@ -22,9 +22,12 @@ public class PlayerUI : MonoBehaviour
     [Header("Hands")]
     public Transform bench;
     public bool cardManagerOpen;
-    
 
 
+    private void Awake()
+    {
+        cardManager.SetActive(false);
+    }
     private void Update()
     {
         // health

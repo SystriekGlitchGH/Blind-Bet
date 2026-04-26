@@ -14,21 +14,21 @@ public class Weapon
     {
         if(s == Card.Suit.diamond)
         {
-            baseAttack = 6;
+            baseAttack = 30;
             baseAttackSpeed = 200;
             baseKnockback = 10;
             baseAttackSize = new Vector2(2.5f,3);
         }
         else if(s == Card.Suit.club)
         {
-            baseAttack = 12;
+            baseAttack = 40;
             baseAttackSpeed = 0;
             baseKnockback = 12;
             baseAttackSize = new Vector2(4.5f, 3);
         }
         else if(s == Card.Suit.spade)
         {
-            baseAttack = 5;
+            baseAttack = 25;
             baseAttackSpeed = 100;
             baseKnockback = 8;
             baseAttackSize = new Vector2(2f, 4);
