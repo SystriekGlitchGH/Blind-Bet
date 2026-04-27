@@ -7,6 +7,13 @@ public class CardPickup : MonoBehaviour
     public GameStats gameStats;
     public CardDeck cardDeck;
     Random rand = new Random();
+    void Awake()
+    {
+        if(rand.Next(1,101) < 20)
+        {
+            Destroy(gameObject);
+        }
+    }
     void Update()
     {
         if(growing)
