@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
     {
         North, South, East, West, NorthEast, NorthWest, SouthEast, SouthWest
     }
-    private Direction playerDirection; // the player's current direction
+    private Direction playerDirection = Direction.South; // the player's current direction
     Random rand = new Random();
     private void OnValidate()
     {
