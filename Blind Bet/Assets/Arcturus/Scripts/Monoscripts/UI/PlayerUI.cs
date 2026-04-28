@@ -27,7 +27,7 @@ public class PlayerUI : MonoBehaviour
     public AbilityShowcase abilityShowcase3;
 
 
-    private void Awake()
+    private void Start()
     {
         cardManager.SetActive(false);
     }
