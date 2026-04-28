@@ -202,7 +202,6 @@ public class Player : ScriptableObject
                     hand.cards[j+1] = temp;
                     // swapped = true;
                 }
-                Debug.Log(hand.cards[0].rank+"|"+hand.cards[1].rank+"|"+hand.cards[2].rank+"|"+hand.cards[3].rank+"|"+hand.cards[4].rank);
             }
             // if (swapped == false)
             //     break;

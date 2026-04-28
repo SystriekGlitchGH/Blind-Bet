@@ -27,7 +27,10 @@ public class AbilityShowcase : MonoBehaviour
             abilityDesc.text = "";
             icon.color = Color.clear;
         }
-        else if(abilityCode == "a2")
+        else
+            icon.color = Color.white;
+        
+        if(abilityCode == "a2")
         {
             abilityTitle.text = "Pair - "+abilityName;
             abilityDesc.text = "Increases attack damage modifier by 20%";
