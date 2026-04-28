@@ -188,14 +188,14 @@ public class Player : ScriptableObject
             swapped = false;
             for(int j = 0; j < hand.cards.Length - i - 1; j++)
             {
-                if(hand.cards[j].rank > hand.cards[j + 1].rank)
+                if(hand.cards[j].rank == 0)
                 {
                     temp = hand.cards[j];
                     hand.cards[j] = hand.cards[j+1];
                     hand.cards[j+1] = temp;
                     swapped = true;
                 }
-                if(hand.cards[j].rank == 0)
+                else if(hand.cards[j].rank > hand.cards[j + 1].rank)
                 {
                     temp = hand.cards[j];
                     hand.cards[j] = hand.cards[j+1];
@@ -248,24 +248,6 @@ public class Player : ScriptableObject
         {
             bench.Add(addedCard);
         }
-        // old code
-        // activeHand.cards[0] = new Card(4, Card.Suit.diamond);
-        // activeHand.cards[1] = new Card(6, Card.Suit.diamond);
-        // activeHand.cards[2] = new Card(7, Card.Suit.diamond);
-        // activeHand.cards[3] = new Card(8, Card.Suit.diamond);
-        // activeHand.cards[4] = new Card(9, Card.Suit.diamond);
-
-        // passiveHand1.cards[0] = new Card(11, Card.Suit.spade);
-        // passiveHand1.cards[1] = new Card(11, Card.Suit.club);
-        // passiveHand1.cards[2] = new Card(11, Card.Suit.club);
-        // passiveHand1.cards[3] = new Card(14, Card.Suit.club);
-        // passiveHand1.cards[4] = new Card(14, Card.Suit.club);
-
-        // passiveHand2.cards[0] = new Card(11, Card.Suit.diamond);
-        // passiveHand2.cards[1] = new Card(11, Card.Suit.diamond);
-        // passiveHand2.cards[2] = new Card(12, Card.Suit.diamond);
-        // passiveHand2.cards[3] = new Card(12, Card.Suit.diamond);
-        // passiveHand2.cards[4] = new Card(13, Card.Suit.diamond);
     }
     public void RemoveCard(Card removedCard, int handNum)
     {

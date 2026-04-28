@@ -63,9 +63,9 @@ public class PlayerUI : MonoBehaviour
     {
         if (ctx.performed)
         {
-            abilityShowcase1.UpdateShowcase(pm.playerStats.activeAbility.code, pm.playerStats.activeAbility.name, pm.playerStats.GetHandSuit(pm.playerStats.activeHand));
-            abilityShowcase2.UpdateShowcase(pm.playerStats.passiveAbility1.code, pm.playerStats.passiveAbility1.name, pm.playerStats.GetHandSuit(pm.playerStats.passiveHand1));
-            abilityShowcase3.UpdateShowcase(pm.playerStats.passiveAbility2.code, pm.playerStats.passiveAbility2.name, pm.playerStats.GetHandSuit(pm.playerStats.passiveHand2));
+            abilityShowcase1.UpdateShowcase(pm.playerStats.activeAbility.code, pm.playerStats.activeAbility.name);
+            abilityShowcase2.UpdateShowcase(pm.playerStats.passiveAbility1.code, pm.playerStats.passiveAbility1.name);
+            abilityShowcase3.UpdateShowcase(pm.playerStats.passiveAbility2.code, pm.playerStats.passiveAbility2.name);
             if (!cardManager.activeInHierarchy)
             {
                 cardManager.SetActive(true);
@@ -87,10 +87,16 @@ public class PlayerUI : MonoBehaviour
     public void AddCardToHand(MenuField.Field field)
     {
         pm.playerStats.AddCard(field.card, field.handNum);
+        // abilityShowcase1.UpdateShowcase(pm.playerStats.activeAbility.code, pm.playerStats.activeAbility.name);
+        // abilityShowcase2.UpdateShowcase(pm.playerStats.passiveAbility1.code, pm.playerStats.passiveAbility1.name);
+        // abilityShowcase3.UpdateShowcase(pm.playerStats.passiveAbility2.code, pm.playerStats.passiveAbility2.name);
     }
 
     public void RemoveCardFromHand(MenuField.Field field)
     {
         pm.playerStats.RemoveCard(field.card, field.handNum);
+        // abilityShowcase1.UpdateShowcase(pm.playerStats.activeAbility.code, pm.playerStats.activeAbility.name);
+        // abilityShowcase2.UpdateShowcase(pm.playerStats.passiveAbility1.code, pm.playerStats.passiveAbility1.name);
+        // abilityShowcase3.UpdateShowcase(pm.playerStats.passiveAbility2.code, pm.playerStats.passiveAbility2.name);
     }
 }

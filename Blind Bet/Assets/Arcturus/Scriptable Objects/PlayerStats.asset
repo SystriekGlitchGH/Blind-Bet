@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73259922de1e381499dbac0274e3f230, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  activeSuit: 1
+  activeSuit: 3
   activeHand:
     cards:
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
@@ -21,7 +21,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     suited: 0
-    type: 0
+    type: 8
   passiveHand1:
     cards:
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
