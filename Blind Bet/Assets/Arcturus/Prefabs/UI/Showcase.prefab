@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &159189374177724057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3525539562199253461}
+  - component: {fileID: 395325229202115448}
+  - component: {fileID: 2111758233613377482}
+  - component: {fileID: 493721399543085604}
+  m_Layer: 5
+  m_Name: Showcase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3525539562199253461
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159189374177724057}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &395325229202115448
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159189374177724057}
+  m_CullTransparentMesh: 1
+--- !u!114 &2111758233613377482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159189374177724057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 707831198676715256, guid: 7eabaf7cb9fd9464b96e38149099ff9d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &493721399543085604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159189374177724057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd25082cff9e7e04f91392de76b01d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityTitle: {fileID: 0}
+  abilityDesc: {fileID: 0}
+  suit: {fileID: 0}
+  icon: {fileID: 0}
+  icons:
+  - {fileID: 21300000, guid: 59f93cb7ff18dab4fa36a5b2bae94cae, type: 3}
+  - {fileID: 21300000, guid: a8bb09e2c6b080241b6e8008257bfe4c, type: 3}
+  - {fileID: 21300000, guid: ed30cb2b1767e1b499df0601b27e503c, type: 3}
+  - {fileID: 21300000, guid: adf2491994dfb0d4f9d9cff7ade72089, type: 3}
+  - {fileID: 21300000, guid: d6c322861b1a37349acb97dcb57811c3, type: 3}
+  - {fileID: 21300000, guid: aa76fa65f94d73244a3a501644e34f67, type: 3}
+  - {fileID: 21300000, guid: 17a0fab41d454a64cb92c0c354d93a90, type: 3}
+  - {fileID: 21300000, guid: 0a6f43b7ed6cbca418f04e6881084722, type: 3}
+  - {fileID: 21300000, guid: 14470ce007ec58143a4b5d23ebb03d7d, type: 3}
+  - {fileID: 21300000, guid: 269952d76a0e2f14ab8e51309270f1b9, type: 3}
+  - {fileID: 21300000, guid: 063d39c0148796e4495f1a9b9200991d, type: 3}
+  - {fileID: 21300000, guid: 352b22beb0f563d47a9909394f4673a8, type: 3}
+  - {fileID: 21300000, guid: 027db4bf8267048419d399aeb63b2286, type: 3}
+  - {fileID: 21300000, guid: 5f983ea5812beb14e8e451ec1f862658, type: 3}
+  - {fileID: 21300000, guid: 306c9c2ca39c8724fb086d20763a5503, type: 3}
+  - {fileID: 21300000, guid: b62035b8f0d5932468443c07f4c21686, type: 3}
+  - {fileID: 21300000, guid: 761d3c323d89e4f46b2075963dcc4be7, type: 3}
+  - {fileID: 21300000, guid: 88ff6f25948d1d2469ce2d7911cce9da, type: 3}
+  - {fileID: 21300000, guid: 1a4b9cec2341b2444af554f0ad38bd7d, type: 3}
+  - {fileID: 21300000, guid: 081ebd2660e0b3f42bff24eb1e2f9228, type: 3}
+  - {fileID: 21300000, guid: bae143b3da58117469237549548c4cb5, type: 3}
+  - {fileID: 21300000, guid: 1d208381e6a1b32488708daebb5ad8fe, type: 3}
+  - {fileID: 21300000, guid: 211b9b23d25525c49b7a17dcf169e53d, type: 3}
+  - {fileID: 21300000, guid: 02581cc6c8f80bb4e9a1014895fc88d6, type: 3}
+  - {fileID: 21300000, guid: b3f1f04865f52df40b1de56b5619b453, type: 3}
+  - {fileID: 21300000, guid: 91a59bfaee1207a46aacca58d30b0f16, type: 3}
+  - {fileID: 21300000, guid: 016ccf66619c2b44fa4042c428d319a1, type: 3}
+  - {fileID: 21300000, guid: 30866d665afb23748862c09a06859072, type: 3}
+  - {fileID: 21300000, guid: 033f2cc9caec41d41aaf8c50dec8773f, type: 3}
+  - {fileID: 21300000, guid: c56927fbc553ed444898b6a2c65687ea, type: 3}
+  - {fileID: 21300000, guid: 3a263bd221017724291b50291f0dac38, type: 3}
+  - {fileID: 21300000, guid: 1c94a960216885e46b65f2597fab8c13, type: 3}
+  - {fileID: 21300000, guid: 44fe03c8d12839e4aaa1754def990603, type: 3}
+  - {fileID: 21300000, guid: 959678382b4c4b84c9135dbb63f4721b, type: 3}
+  - {fileID: 21300000, guid: 08f6b85854629f84aa89069db12c8717, type: 3}
+  - {fileID: 21300000, guid: e84eeda574302a545979f85b1f66d415, type: 3}
+  - {fileID: 21300000, guid: 6a2494fdaf2dbf8419316b01044b56d2, type: 3}
+  - {fileID: 21300000, guid: c9306d775b2bbf442b143bab47180545, type: 3}
+  - {fileID: 21300000, guid: 6727f3fc055a4734d96eb1e3eddedf42, type: 3}
+  - {fileID: 21300000, guid: d731971acd7f6d74e92a51f8adf0e1a3, type: 3}
+  - {fileID: 21300000, guid: e65e19b6be3395c45a566d1cd4694074, type: 3}
+  - {fileID: 21300000, guid: f32563c1336822e44b5d5c3f5b5002a6, type: 3}
+  - {fileID: 21300000, guid: 5b12baa2cc93d9b4398dae875bb3aeb7, type: 3}
+  - {fileID: 21300000, guid: 284699ca4faac5d4bb2e2bc23419e99b, type: 3}
+  - {fileID: 21300000, guid: 78b96a9c2729d4346a00e0cbddcd6363, type: 3}

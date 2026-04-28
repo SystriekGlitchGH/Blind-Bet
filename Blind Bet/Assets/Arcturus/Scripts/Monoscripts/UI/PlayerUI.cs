@@ -22,6 +22,9 @@ public class PlayerUI : MonoBehaviour
     [Header("Hands")]
     public Transform bench;
     public bool cardManagerOpen;
+    public AbilityShowcase abilityShowcase1;
+    public AbilityShowcase abilityShowcase2;
+    public AbilityShowcase abilityShowcase3;
 
 
     private void Awake()
@@ -60,6 +63,9 @@ public class PlayerUI : MonoBehaviour
     {
         if (ctx.performed)
         {
+            abilityShowcase1.UpdateShowcase(pm.playerStats.activeAbility.code, pm.playerStats.activeAbility.name, pm.playerStats.GetHandSuit(pm.playerStats.activeHand));
+            abilityShowcase2.UpdateShowcase(pm.playerStats.passiveAbility1.code, pm.playerStats.passiveAbility1.name, pm.playerStats.GetHandSuit(pm.playerStats.passiveHand1));
+            abilityShowcase3.UpdateShowcase(pm.playerStats.passiveAbility2.code, pm.playerStats.passiveAbility2.name, pm.playerStats.GetHandSuit(pm.playerStats.passiveHand2));
             if (!cardManager.activeInHierarchy)
             {
                 cardManager.SetActive(true);
