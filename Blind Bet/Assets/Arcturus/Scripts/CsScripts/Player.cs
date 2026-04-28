@@ -182,29 +182,30 @@ public class Player : ScriptableObject
     public void SortHandCards(Hand hand, int handNum)
     {
         Card temp;
-        bool swapped;
-        for(int i = 0; i < hand.cards.Length; i++)
+        // bool swapped;
+        for(int i = 0; i < hand.cards.Length-1; i++)
         {
-            swapped = false;
+            // swapped = false;
             for(int j = 0; j < hand.cards.Length - i - 1; j++)
             {
+                if(hand.cards[j].rank > hand.cards[j + 1].rank && hand.cards[j+1].rank != 0)
+                {
+                    temp = hand.cards[j];
+                    hand.cards[j] = hand.cards[j+1];
+                    hand.cards[j+1] = temp;
+                    // swapped = true;
+                }
                 if(hand.cards[j].rank == 0)
                 {
                     temp = hand.cards[j];
                     hand.cards[j] = hand.cards[j+1];
                     hand.cards[j+1] = temp;
-                    swapped = true;
+                    // swapped = true;
                 }
-                else if(hand.cards[j].rank > hand.cards[j + 1].rank)
-                {
-                    temp = hand.cards[j];
-                    hand.cards[j] = hand.cards[j+1];
-                    hand.cards[j+1] = temp;
-                    swapped = true;
-                }
+                Debug.Log(hand.cards[0].rank+"|"+hand.cards[1].rank+"|"+hand.cards[2].rank+"|"+hand.cards[3].rank+"|"+hand.cards[4].rank);
             }
-            if (swapped == false)
-                break;
+            // if (swapped == false)
+            //     break;
         }
         switch (handNum)
         {

@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73259922de1e381499dbac0274e3f230, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  activeSuit: 3
+  activeSuit: 1
   activeHand:
     cards:
-    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
-    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
-    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
-    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
-    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 3196926ee1a981143a014de0e4519a65, type: 2}
+    - {fileID: 11400000, guid: c2061e2bf10e5bf4f81628992da9a4a6, type: 2}
+    - {fileID: 11400000, guid: e8d6dc62bc47f884a8a19a1ce75067d9, type: 2}
+    - {fileID: 11400000, guid: 54f95cfffecb9854bb48a70e8e19f809, type: 2}
+    - {fileID: 11400000, guid: e55af433a6427214aa521a84a539ff7f, type: 2}
     suited: 0
-    type: 8
+    type: 2
   passiveHand1:
     cards:
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
@@ -42,8 +42,8 @@ MonoBehaviour:
     type: 0
   bench: []
   activeAbility:
-    name: Nothing
-    code: na
+    name: Sharp Edge
+    code: a2
   passiveAbility1:
     name: Nothing
     code: na
