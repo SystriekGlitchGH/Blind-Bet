@@ -19,8 +19,8 @@ public class SliderInteraction : MonoBehaviour
     public void HandleSliderValueChanged(float value)
     {
         if (showDecimalPoints)
-            textField.SetText(value.ToString(format:"F2"));
+            textField.SetText(value.ToString(format: "F2") + "%");
         else
-            textField.SetText(value.ToString(format:"F0"));
+            textField.SetText(value.ToString(format: "F0"));
     }
 }
