@@ -1,0 +1,1003 @@
+fileFormatVersion: 2
+guid: 47ce097abc4a09043a58eaa0cbeacd57
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2417772507899144420
+    second: Club Front Idle_0
+  - first:
+      213: 9071859841302585784
+    second: Club Front Idle_1
+  - first:
+      213: 4549443381126775394
+    second: Club Front Idle_2
+  - first:
+      213: -708269772797085171
+    second: Club Front Idle_3
+  - first:
+      213: -6386437856873269884
+    second: Club Front Idle_4
+  - first:
+      213: 2373382880258209716
+    second: Club Front Idle_5
+  - first:
+      213: -1919092282601398169
+    second: Club Front Idle_6
+  - first:
+      213: -5800522859060450640
+    second: Club Front Idle_7
+  - first:
+      213: 8072990668462255290
+    second: Club Front Idle_8
+  - first:
+      213: -508877279895039452
+    second: Club Front Idle_9
+  - first:
+      213: -280366054193607133
+    second: Club Front Idle_10
+  - first:
+      213: -6848191996410648423
+    second: Club Front Idle_11
+  - first:
+      213: 6348301779615447896
+    second: Club Front Idle_12
+  - first:
+      213: -7242483115946401682
+    second: Club Front Idle_13
+  - first:
+      213: -1480877765594370381
+    second: Club Front Idle_14
+  - first:
+      213: 486017993856210397
+    second: Club Front Idle_15
+  - first:
+      213: -3866453425138217754
+    second: Club Front Idle_16
+  - first:
+      213: -4226455925124504392
+    second: Club Front Idle_17
+  - first:
+      213: -6523197756512603905
+    second: Club Front Idle_18
+  - first:
+      213: -6361824988215782553
+    second: Club Front Idle_19
+  - first:
+      213: -9094233601558486577
+    second: Club Front Idle_20
+  - first:
+      213: -4586450248878277220
+    second: Club Front Idle_21
+  - first:
+      213: 1879190887380014777
+    second: Club Front Idle_22
+  - first:
+      213: -3269202356833097611
+    second: Club Front Idle_23
+  - first:
+      213: 9120130552561958740
+    second: Club Front Idle_24
+  - first:
+      213: -1562397682452598773
+    second: Club Front Idle_25
+  - first:
+      213: -6485713335650877034
+    second: Club Front Idle_26
+  - first:
+      213: 6522095580617251954
+    second: Club Front Idle_27
+  - first:
+      213: -5483688076115212071
+    second: Club Front Idle_28
+  - first:
+      213: 1807062329074860647
+    second: Club Front Idle_29
+  - first:
+      213: 460741418518800178
+    second: Club Front Idle_30
+  - first:
+      213: -5278733545362510370
+    second: Club Front Idle_31
+  - first:
+      213: 7869735978038478829
+    second: Club Front Idle_32
+  - first:
+      213: -5902335160186024086
+    second: Club Front Idle_33
+  - first:
+      213: 5252476916324451112
+    second: Club Front Idle_34
+  - first:
+      213: 1680678000403937912
+    second: Club Front Idle_35
+  - first:
+      213: 2225813974662348031
+    second: Club Front Idle_36
+  - first:
+      213: 245117797688263613
+    second: Club Front Idle_37
+  - first:
+      213: -5795621883873630365
+    second: Club Front Idle_38
+  - first:
+      213: 2107638490782104466
+    second: Club Front Idle_39
+  - first:
+      213: 2443923855792969336
+    second: Club Front Idle_40
+  - first:
+      213: 8470091924124119844
+    second: Club Front Idle_41
+  - first:
+      213: 1727098447257518204
+    second: Club Front Idle_42
+  - first:
+      213: -1701468788245496149
+    second: Club Front Idle_43
+  - first:
+      213: -2205008131018166528
+    second: Club Front Idle_44
+  - first:
+      213: -6179470891780487564
+    second: Club Front Idle_45
+  - first:
+      213: -6956269429694448567
+    second: Club Front Idle_46
+  - first:
+      213: -7194668346667919759
+    second: Club Front Idle_47
+  - first:
+      213: 7395556427279263616
+    second: Club Front Idle_48
+  - first:
+      213: -1718784535625382593
+    second: Club Front Idle_49
+  - first:
+      213: 1266456127919830416
+    second: Club Front Idle_50
+  - first:
+      213: -2260137151857462322
+    second: Club Front Idle_51
+  - first:
+      213: -1348220904976831181
+    second: Club Front Idle_52
+  - first:
+      213: 2219197980726841310
+    second: Club Front Idle_53
+  - first:
+      213: 419210798836723011
+    second: Club Front Idle_54
+  - first:
+      213: -5458308595720515506
+    second: Club Front Idle_55
+  - first:
+      213: 6174196867713117417
+    second: Club Front Idle_56
+  - first:
+      213: -5405868284132673570
+    second: Club Front Idle_57
+  - first:
+      213: 6473076837309902873
+    second: Club Front Idle_58
+  - first:
+      213: 6124731696198741943
+    second: Club Front Idle_59
+  - first:
+      213: 2902253526539637143
+    second: Club Front Idle_60
+  - first:
+      213: -470936331698167075
+    second: Club Front Idle_61
+  - first:
+      213: 6077641505538905935
+    second: Club Front Idle_62
+  - first:
+      213: 2248475975057136279
+    second: Club Front Idle_63
+  - first:
+      213: 4318627812743062588
+    second: Club Front Idle_64
+  - first:
+      213: -1776726032701763705
+    second: Club Front Idle_65
+  - first:
+      213: -6911108318455857227
+    second: Club Front Idle_66
+  - first:
+      213: 6382134989773821374
+    second: Club Front Idle_67
+  - first:
+      213: 1701330257511464803
+    second: Club Front Idle_68
+  - first:
+      213: 34040423796324908
+    second: Club Front Idle_69
+  - first:
+      213: 1312601298931882026
+    second: Club Front Idle_70
+  - first:
+      213: 6989000914888821874
+    second: Club Front Idle_71
+  - first:
+      213: -2911537138179464946
+    second: Club Front Idle_72
+  - first:
+      213: 7533941572049477063
+    second: Club Front Idle_73
+  - first:
+      213: -1406092639266035163
+    second: Club Front Idle_74
+  - first:
+      213: -5431613073271702349
+    second: Club Front Idle_75
+  - first:
+      213: 2454903078202051191
+    second: Club Front Idle_76
+  - first:
+      213: 254115597395266236
+    second: Club Front Idle_77
+  - first:
+      213: -32661503312178770
+    second: Club Front Idle_78
+  - first:
+      213: -5063057991398499296
+    second: Club Front Idle_79
+  - first:
+      213: -434644432309872854
+    second: Club Front Idle_80
+  - first:
+      213: 3983023167500269643
+    second: Club Front Idle_81
+  - first:
+      213: -1117425901876064288
+    second: Club Front Idle_82
+  - first:
+      213: 1218479706137223614
+    second: Club Front Idle_83
+  - first:
+      213: -7949369071539138179
+    second: Club Front Idle_84
+  - first:
+      213: 2255662521195599850
+    second: Club Front Idle_85
+  - first:
+      213: 673366847361704152
+    second: Club Front Idle_86
+  - first:
+      213: -8730981050098286094
+    second: Club Front Idle_87
+  - first:
+      213: -3503814639463717177
+    second: Club Front Idle_88
+  - first:
+      213: 8808881531206851792
+    second: Club Front Idle_89
+  - first:
+      213: -7113209634656314065
+    second: Club Front Idle_90
+  - first:
+      213: -1959364617787301635
+    second: Club Front Idle_91
+  - first:
+      213: 7659371480457049693
+    second: Club Front Idle_92
+  - first:
+      213: 2245435067377328741
+    second: Club Front Idle_93
+  - first:
+      213: 1337988224388112654
+    second: Club Front Idle_94
+  - first:
+      213: 7566119280709374781
+    second: Club Front Idle_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Club Front Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8a8093947ad8120800000000000000
+      internalID: 2417772507899144420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1e8fcf578b5ed70800000000000000
+      internalID: 9071859841302585784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26240d1b6aed22f30800000000000000
+      internalID: 4549443381126775394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a784be468bb26f0800000000000000
+      internalID: -708269772797085171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48536f02b90de57a0800000000000000
+      internalID: -6386437856873269884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7b8c5a723ffe020800000000000000
+      internalID: 2373382880258209716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760a95c9cb30e55e0800000000000000
+      internalID: -1919092282601398169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba2b223137608fa0800000000000000
+      internalID: -5800522859060450640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc6cbc8d36090070800000000000000
+      internalID: 8072990668462255290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422d6916fca10f8f0800000000000000
+      internalID: -508877279895039452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e46b42f80fb1cf0800000000000000
+      internalID: -280366054193607133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998254c99a556f0a0800000000000000
+      internalID: -6848191996410648423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b75f475d2b91850800000000000000
+      internalID: 6348301779615447896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6020467af78d7b90800000000000000
+      internalID: -7242483115946401682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be29f9a48dd27be0800000000000000
+      internalID: -1480877765594370381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd55f365aceaeb600800000000000000
+      internalID: 486017993856210397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec4b0e5819975ac0800000000000000
+      internalID: -3866453425138217754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4eb149abc9855c0800000000000000
+      internalID: -4226455925124504392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0f07ba332f875a0800000000000000
+      internalID: -6523197756512603905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763d13e21e146b7a0800000000000000
+      internalID: -6361824988215782553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc16fa209bacac180800000000000000
+      internalID: -9094233601558486577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9dbb977cc7a950c0800000000000000
+      internalID: -4586450248878277220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6df6bd72a341a10800000000000000
+      internalID: 1879190887380014777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578e71607c571a2d0800000000000000
+      internalID: -3269202356833097611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f74a2ca66319e70800000000000000
+      internalID: 9120130552561958740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club Front Idle_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00f483f59f315ae0800000000000000
+      internalID: -1562397682452598773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4d392720c2754f14eb6e75ec7e447a89
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Club Front Idle_0: 2417772507899144420
+      Club Front Idle_1: 9071859841302585784
+      Club Front Idle_10: -280366054193607133
+      Club Front Idle_11: -6848191996410648423
+      Club Front Idle_12: 6348301779615447896
+      Club Front Idle_13: -7242483115946401682
+      Club Front Idle_14: -1480877765594370381
+      Club Front Idle_15: 486017993856210397
+      Club Front Idle_16: -3866453425138217754
+      Club Front Idle_17: -4226455925124504392
+      Club Front Idle_18: -6523197756512603905
+      Club Front Idle_19: -6361824988215782553
+      Club Front Idle_2: 4549443381126775394
+      Club Front Idle_20: -9094233601558486577
+      Club Front Idle_21: -4586450248878277220
+      Club Front Idle_22: 1879190887380014777
+      Club Front Idle_23: -3269202356833097611
+      Club Front Idle_24: 9120130552561958740
+      Club Front Idle_25: -1562397682452598773
+      Club Front Idle_3: -708269772797085171
+      Club Front Idle_4: -6386437856873269884
+      Club Front Idle_5: 2373382880258209716
+      Club Front Idle_6: -1919092282601398169
+      Club Front Idle_7: -5800522859060450640
+      Club Front Idle_8: 8072990668462255290
+      Club Front Idle_9: -508877279895039452
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

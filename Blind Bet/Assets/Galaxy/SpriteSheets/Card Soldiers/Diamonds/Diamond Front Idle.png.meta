@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 9814037371e82fd4ab0261cf77678118
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -892838695868147330
+    second: Diamond Front Idle_0
+  - first:
+      213: 3304950781237392736
+    second: Diamond Front Idle_1
+  - first:
+      213: 6030948948154835186
+    second: Diamond Front Idle_2
+  - first:
+      213: 6631807291477549232
+    second: Diamond Front Idle_3
+  - first:
+      213: -7639690615240545426
+    second: Diamond Front Idle_4
+  - first:
+      213: -7469897195036656466
+    second: Diamond Front Idle_5
+  - first:
+      213: -4354474211777874206
+    second: Diamond Front Idle_6
+  - first:
+      213: 703420573812807680
+    second: Diamond Front Idle_7
+  - first:
+      213: -3260022149708677388
+    second: Diamond Front Idle_8
+  - first:
+      213: 3786172682445219745
+    second: Diamond Front Idle_9
+  - first:
+      213: 1195333312477862971
+    second: Diamond Front Idle_10
+  - first:
+      213: -6211200531388948738
+    second: Diamond Front Idle_11
+  - first:
+      213: -7502361576406440567
+    second: Diamond Front Idle_12
+  - first:
+      213: 2992663380752346434
+    second: Diamond Front Idle_13
+  - first:
+      213: 2982306606006380082
+    second: Diamond Front Idle_14
+  - first:
+      213: 6791861878635920560
+    second: Diamond Front Idle_15
+  - first:
+      213: -5789491637197362047
+    second: Diamond Front Idle_16
+  - first:
+      213: -8723333696512312450
+    second: Diamond Front Idle_17
+  - first:
+      213: -8458083470041291196
+    second: Diamond Front Idle_18
+  - first:
+      213: 4278004008165068774
+    second: Diamond Front Idle_19
+  - first:
+      213: -8786857332837326114
+    second: Diamond Front Idle_20
+  - first:
+      213: -5636925608176076052
+    second: Diamond Front Idle_21
+  - first:
+      213: 6143404513774873114
+    second: Diamond Front Idle_22
+  - first:
+      213: 3576758368838910505
+    second: Diamond Front Idle_23
+  - first:
+      213: -517260856742005359
+    second: Diamond Front Idle_24
+  - first:
+      213: -3237325793293610076
+    second: Diamond Front Idle_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Diamond Front Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e795e03cfeffb93f0800000000000000
+      internalID: -892838695868147330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065fdc3a93b8ddd20800000000000000
+      internalID: 3304950781237392736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0e8417d1c32b350800000000000000
+      internalID: 6030948948154835186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b06d534899e80c50800000000000000
+      internalID: 6631807291477549232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ba3bcbcdd5af590800000000000000
+      internalID: -7639690615240545426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac372d0418955890800000000000000
+      internalID: -7469897195036656466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6716f76ccc193c0800000000000000
+      internalID: -4354474211777874206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00850d5f84d03c900800000000000000
+      internalID: 703420573812807680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe75be802312c2d0800000000000000
+      internalID: -3260022149708677388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a76f63aeff2b8430800000000000000
+      internalID: 3786172682445219745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c1f66805da69010800000000000000
+      internalID: 1195333312477862971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe18d966026dc9a0800000000000000
+      internalID: -6211200531388948738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98521cd35e142e790800000000000000
+      internalID: -7502361576406440567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d201e2d73188920800000000000000
+      internalID: 2992663380752346434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236af46ae08436920800000000000000
+      internalID: 2982306606006380082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc7c9fc46a814e50800000000000000
+      internalID: 6791861878635920560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ca1cea70897afa0800000000000000
+      internalID: -5789491637197362047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b3032a83e70f680800000000000000
+      internalID: -8723333696512312450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446e59795e9de9a80800000000000000
+      internalID: -8458083470041291196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef4066caf58e5b30800000000000000
+      internalID: 4278004008165068774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2e1308fcfce0680800000000000000
+      internalID: -8786857332837326114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceabc5b660e95c1b0800000000000000
+      internalID: -5636925608176076052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a251b2bd1c14550800000000000000
+      internalID: 6143404513774873114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9228c0639c233a130800000000000000
+      internalID: 3576758368838910505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195bda9cdf152d8f0800000000000000
+      internalID: -517260856742005359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond Front Idle_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a35684d755b213d0800000000000000
+      internalID: -3237325793293610076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 24dd98ed28cb2864281142ad71aea6da
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Diamond Front Idle_0: -892838695868147330
+      Diamond Front Idle_1: 3304950781237392736
+      Diamond Front Idle_10: 1195333312477862971
+      Diamond Front Idle_11: -6211200531388948738
+      Diamond Front Idle_12: -7502361576406440567
+      Diamond Front Idle_13: 2992663380752346434
+      Diamond Front Idle_14: 2982306606006380082
+      Diamond Front Idle_15: 6791861878635920560
+      Diamond Front Idle_16: -5789491637197362047
+      Diamond Front Idle_17: -8723333696512312450
+      Diamond Front Idle_18: -8458083470041291196
+      Diamond Front Idle_19: 4278004008165068774
+      Diamond Front Idle_2: 6030948948154835186
+      Diamond Front Idle_20: -8786857332837326114
+      Diamond Front Idle_21: -5636925608176076052
+      Diamond Front Idle_22: 6143404513774873114
+      Diamond Front Idle_23: 3576758368838910505
+      Diamond Front Idle_24: -517260856742005359
+      Diamond Front Idle_25: -3237325793293610076
+      Diamond Front Idle_3: 6631807291477549232
+      Diamond Front Idle_4: -7639690615240545426
+      Diamond Front Idle_5: -7469897195036656466
+      Diamond Front Idle_6: -4354474211777874206
+      Diamond Front Idle_7: 703420573812807680
+      Diamond Front Idle_8: -3260022149708677388
+      Diamond Front Idle_9: 3786172682445219745
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

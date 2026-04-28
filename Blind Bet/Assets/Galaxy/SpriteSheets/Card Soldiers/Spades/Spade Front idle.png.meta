@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 04d6e0754bdfa9c44a260bde68110705
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4789245457753448928
+    second: Spade Front idle_0
+  - first:
+      213: -5587614334655574541
+    second: Spade Front idle_1
+  - first:
+      213: -8411409454461010213
+    second: Spade Front idle_2
+  - first:
+      213: -5814805347847950532
+    second: Spade Front idle_3
+  - first:
+      213: 1270070559171771388
+    second: Spade Front idle_4
+  - first:
+      213: 5099130331296241410
+    second: Spade Front idle_5
+  - first:
+      213: -4626136130849105680
+    second: Spade Front idle_6
+  - first:
+      213: -239649045505494137
+    second: Spade Front idle_7
+  - first:
+      213: -3347935359875658809
+    second: Spade Front idle_8
+  - first:
+      213: -4082719969115541007
+    second: Spade Front idle_9
+  - first:
+      213: -2217913966133577229
+    second: Spade Front idle_10
+  - first:
+      213: 8636610488087382008
+    second: Spade Front idle_11
+  - first:
+      213: 2839871307360640238
+    second: Spade Front idle_12
+  - first:
+      213: -1909197177898975463
+    second: Spade Front idle_13
+  - first:
+      213: 4773614163939085029
+    second: Spade Front idle_14
+  - first:
+      213: 664983782210177576
+    second: Spade Front idle_15
+  - first:
+      213: 8827859740287911568
+    second: Spade Front idle_16
+  - first:
+      213: 5557090177782794860
+    second: Spade Front idle_17
+  - first:
+      213: -6069753994753140840
+    second: Spade Front idle_18
+  - first:
+      213: 4145397910150905557
+    second: Spade Front idle_19
+  - first:
+      213: 7020011695025920153
+    second: Spade Front idle_20
+  - first:
+      213: -9108983146989604061
+    second: Spade Front idle_21
+  - first:
+      213: -1771736194448403516
+    second: Spade Front idle_22
+  - first:
+      213: 3019344028620031239
+    second: Spade Front idle_23
+  - first:
+      213: -8544653132222549123
+    second: Spade Front idle_24
+  - first:
+      213: -6953539063485481948
+    second: Spade Front idle_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spade Front idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e12c8b8e51d67240800000000000000
+      internalID: 4789245457753448928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd49f8fd5ec472b0800000000000000
+      internalID: -5587614334655574541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde3d7eaaaba44b80800000000000000
+      internalID: -8411409454461010213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f2b732859ad4fa0800000000000000
+      internalID: -5814805347847950532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb7d17c17230a110800000000000000
+      internalID: 1270070559171771388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207155c1500c3c640800000000000000
+      internalID: 5099130331296241410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8932603b9accfb0800000000000000
+      internalID: -4626136130849105680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78332eb76789cacf0800000000000000
+      internalID: -239649045505494137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb44af378eb981d0800000000000000
+      internalID: -3347935359875658809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1797bb1d34757c0800000000000000
+      internalID: -4082719969115541007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9fa32bff26831e0800000000000000
+      internalID: -2217913966133577229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f78cddea776bd770800000000000000
+      internalID: 8636610488087382008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec1e0368ef396720800000000000000
+      internalID: 2839871307360640238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f3725384b2185e0800000000000000
+      internalID: -1909197177898975463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eacc585ac84f3240800000000000000
+      internalID: 4773614163939085029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a88080a3f7a3900800000000000000
+      internalID: 664983782210177576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09645da69abd28a70800000000000000
+      internalID: 8827859740287911568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a4e8fe210ce1d40800000000000000
+      internalID: 5557090177782794860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8971bb496e6e3cba0800000000000000
+      internalID: -6069753994753140840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5def03f9f69678930800000000000000
+      internalID: 4145397910150905557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9989b1961771c6160800000000000000
+      internalID: 7020011695025920153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3233aaad614669180800000000000000
+      internalID: -9108983146989604061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3533671578967e0800000000000000
+      internalID: -1771736194448403516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7050898956dd6e920800000000000000
+      internalID: 3019344028620031239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7332fc6f3b4b6980800000000000000
+      internalID: -8544653132222549123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spade Front idle_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c352d2011108f90800000000000000
+      internalID: -6953539063485481948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 214edd57dfbdabe48b69da783f3c709f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Spade Front idle_0: 4789245457753448928
+      Spade Front idle_1: -5587614334655574541
+      Spade Front idle_10: -2217913966133577229
+      Spade Front idle_11: 8636610488087382008
+      Spade Front idle_12: 2839871307360640238
+      Spade Front idle_13: -1909197177898975463
+      Spade Front idle_14: 4773614163939085029
+      Spade Front idle_15: 664983782210177576
+      Spade Front idle_16: 8827859740287911568
+      Spade Front idle_17: 5557090177782794860
+      Spade Front idle_18: -6069753994753140840
+      Spade Front idle_19: 4145397910150905557
+      Spade Front idle_2: -8411409454461010213
+      Spade Front idle_20: 7020011695025920153
+      Spade Front idle_21: -9108983146989604061
+      Spade Front idle_22: -1771736194448403516
+      Spade Front idle_23: 3019344028620031239
+      Spade Front idle_24: -8544653132222549123
+      Spade Front idle_25: -6953539063485481948
+      Spade Front idle_3: -5814805347847950532
+      Spade Front idle_4: 1270070559171771388
+      Spade Front idle_5: 5099130331296241410
+      Spade Front idle_6: -4626136130849105680
+      Spade Front idle_7: -239649045505494137
+      Spade Front idle_8: -3347935359875658809
+      Spade Front idle_9: -4082719969115541007
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
