@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   color:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {r: 1, g: 0.36320752, b: 0.36320752, a: 1}
   center:
     m_OverrideState: 1
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   postExposure:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.09
   contrast:
     m_OverrideState: 1
@@ -220,10 +220,10 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {r: 1, g: 0.9481132, b: 0.9481132, a: 1}
   hueShift:
-    m_OverrideState: 1
-    m_Value: -2
+    m_OverrideState: 0
+    m_Value: 5
   saturation:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: -3
 --- !u!114 &8203904782598241924
 MonoBehaviour:
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
   m_Name: WhiteBalance
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   temperature:
     m_OverrideState: 1
     m_Value: 9
