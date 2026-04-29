@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using System.Linq;
 
 [CreateAssetMenu(fileName = "New Player", menuName = "Scriptable Objects/Player")]
 public class Player : ScriptableObject
@@ -40,6 +41,7 @@ public class Player : ScriptableObject
     public EffectManager effectManager = new EffectManager();
     public bool hasStun, hasBurn, hasPoison, hasSlow, hasChill, hasFrozen, hasRecall, hasCharm, hasEnrage;
     
+    public List<string> buffDebuffs = new List<string>();
     public Weapon weapon;
     public float baseSpeed;
     public float maxHealth, currentHealth;
@@ -653,8 +655,14 @@ public class Player : ScriptableObject
         float mod = 1;
         if(activeAbility.code == "a2" || activeAbility.code == "a3")
             mod += 0.3f;
+        if(buffDebuffs.Contains("sharp"))
+            mod += 0.3f * buffDebuffs.Count(x => x == "sharp");
+        if(buffDebuffs.Contains("dull"))
+            mod -= 0.3f * buffDebuffs.Count(x => x == "dull");
         if(hasEnrage)
             mod += 1;
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetAttackSpeedMod()
@@ -662,6 +670,12 @@ public class Player : ScriptableObject
         float mod = 1;
         if(activeAbility.code == "a3")
             mod += 0.2f;
+        if(buffDebuffs.Contains("agile"))
+            mod += 0.3f * buffDebuffs.Count(x => x == "agile");
+        if(buffDebuffs.Contains("clumsy"))
+            mod -= 0.5f * buffDebuffs.Count(x => x == "clumsy");
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetAttackSizeMod()
@@ -669,11 +683,23 @@ public class Player : ScriptableObject
         float mod = 1;
         if(activeAbility.code == "a4")
             mod += 0.3f;
+        if(buffDebuffs.Contains("sweeping"))
+            mod += 0.3f * buffDebuffs.Count(x => x == "sweeping");
+        if(buffDebuffs.Contains("reserved"))
+            mod -= 0.3f * buffDebuffs.Count(x => x == "reserved");
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetAttackKnockbackMod()
     {
         float mod = 1;
+        if(buffDebuffs.Contains("sending"))
+            mod += 0.5f * buffDebuffs.Count(x => x == "sending");
+        if(buffDebuffs.Contains("tapping"))
+            mod -= 0.7f * buffDebuffs.Count(x => x == "tapping");
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetSpeedMod()
@@ -681,23 +707,47 @@ public class Player : ScriptableObject
         float mod = 1;
         if((passiveAbility1 != null && passiveAbility1.code == "n2d") || (passiveAbility2 != null && passiveAbility2.code == "n2d"))
             mod += 0.2f;
+        if(buffDebuffs.Contains("swift"))
+            mod += 0.3f * buffDebuffs.Count(x => x == "swift");
+        if(buffDebuffs.Contains("crawling"))
+            mod -= 0.5f * buffDebuffs.Count(x => x == "crawling");
         if(currentChips <= chipLowThreshold)
             mod /= 2;
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetDamageMod()
     {
         float mod = 1;
+        if(buffDebuffs.Contains("hardened"))
+            mod -= 0.2f * buffDebuffs.Count(x => x == "hardened");
+        if(buffDebuffs.Contains("fragile"))
+            mod += 0.3f * buffDebuffs.Count(x => x == "fragile");
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetAbilityDamageMod()
     {
         float mod = 1;
+        if(buffDebuffs.Contains("arcane"))
+            mod += 0.3f * buffDebuffs.Count(x => x == "arcane");
+        if(buffDebuffs.Contains("oblivious"))
+            mod -= 0.3f * buffDebuffs.Count(x => x == "oblivious");
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetAbilityKnockbackMod()
     {
         float mod = 1;
+        if(buffDebuffs.Contains("forceful"))
+            mod += 0.5f * buffDebuffs.Count(x => x == "forceful");
+        if(buffDebuffs.Contains("passive"))
+            mod -= 0.7f * buffDebuffs.Count(x => x == "passive");
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetAbilitySizeMod()
@@ -720,6 +770,12 @@ public class Player : ScriptableObject
         float mod = 1;
         if (passiveAbility1.code == "n2h" || passiveAbility2.code == "n2h")
             mod -= 0.25f;
+        if(buffDebuffs.Contains("untiring"))
+            mod -= 0.5f * buffDebuffs.Count(x => x == "untiring");
+        if(buffDebuffs.Contains("exhausted"))
+            mod += 0.8f * buffDebuffs.Count(x => x == "exhausted");
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetDashDamageMod()
@@ -727,6 +783,12 @@ public class Player : ScriptableObject
         float mod = 1;
         if (passiveAbility1.code == "n2c" || passiveAbility2.code == "n2c")
             mod += 0.2f;
+        if(buffDebuffs.Contains("slicing"))
+            mod += 0.8f * buffDebuffs.Count(x => x == "slicing");
+        if(buffDebuffs.Contains("padded"))
+            mod -= 0.9f * buffDebuffs.Count(x => x == "padded");
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
     public float GetDashdistanceMod()
@@ -734,6 +796,12 @@ public class Player : ScriptableObject
         float mod = 1;
         if(passiveAbility1.code == "n2s" || passiveAbility2.code == "n2s")
             mod += 0.2f;
+        if(buffDebuffs.Contains("leaping"))
+            mod += 0.5f * buffDebuffs.Count(x => x == "leaping");
+        if(buffDebuffs.Contains("lumbering"))
+            mod -= 0.5f * buffDebuffs.Count(x => x == "lumbering");
+        if(mod <= 0)
+            mod = 0.05f;
         return mod;
     }
 }
