@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4436170651056298978}
   - component: {fileID: 7535482262006345331}
   - component: {fileID: 8072398672255600763}
-  - component: {fileID: 4794193470971026715}
+  - component: {fileID: 5673531724895364533}
   - component: {fileID: 3771215069817752871}
   m_Layer: 10
-  m_Name: WarpExit
+  m_Name: StartingWarpExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,7 +126,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
---- !u!114 &4794193470971026715
+--- !u!114 &5673531724895364533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1954292645912156698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 424a225a64159ff4f8a016065c21cb68, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cfc3623320e083469c477dd94758d22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameStats: {fileID: 11400000, guid: d5b99a2fb29eb7f4f9c607d98f56ff24, type: 2}
@@ -154,9 +154,9 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4794193470971026715}
-        m_TargetAssemblyTypeName: WarpSlab, Assembly-CSharp
-        m_MethodName: ChangeScene
+      - m_Target: {fileID: 5673531724895364533}
+        m_TargetAssemblyTypeName: StartingWarpSlab, Assembly-CSharp
+        m_MethodName: SummonCardPicker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

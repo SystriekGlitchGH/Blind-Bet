@@ -59,6 +59,8 @@ public class CardPickup : MonoBehaviour
                 else if(suitNum == 4)
                     suit = Card.Suit.spade;
                 // adding to player
+                Debug.Log(suit);
+                Debug.Log(rank);
                 pm.playerStats.bench.Add(cardDeck.GetCardFromComponents(rank,suit));
                 Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(rank,suit)),pm.playerUI.bench);
                 Destroy(gameObject);

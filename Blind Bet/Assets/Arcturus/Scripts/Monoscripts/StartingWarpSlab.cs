@@ -1,10 +1,10 @@
+using UnityEngine;
 using System.Collections;
 using System.Linq;
 using Unity.VisualScripting;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = System.Random;
-public class WarpSlab : MonoBehaviour
+public class StartingWarpSlab : MonoBehaviour
 {
     [SerializeField] GameStats gameStats;
     Random rand = new Random();
@@ -15,5 +15,11 @@ public class WarpSlab : MonoBehaviour
         string scenePickedName = gameStats.levelsAvailable[levelIndex];
         gameStats.levelsAvailable.Remove(scenePickedName);
         SceneManager.LoadScene(scenePickedName);
+    }
+    public void SummonCardPicker()
+    {
+        PlayerMovement pm = FindFirstObjectByType<PlayerMovement>();
+        pm.playerUI.cardPicker.SetActive(true);
+        Time.timeScale = 0;
     }
 }

@@ -25,6 +25,8 @@ public class PlayerUI : MonoBehaviour
     public AbilityShowcase abilityShowcase1;
     public AbilityShowcase abilityShowcase2;
     public AbilityShowcase abilityShowcase3;
+    [Header("Starting Cards")]
+    public GameObject cardPicker;
 
 
     private void Start()

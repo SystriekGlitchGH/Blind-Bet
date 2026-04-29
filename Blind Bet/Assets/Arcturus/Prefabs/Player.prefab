@@ -438,6 +438,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 136
   knockbackTime: 0.2
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &2255689613270921403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,9 +578,9 @@ MonoBehaviour:
     m_ActionName: 'Player/ActivateAbility2[/Keyboard/s]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerUI, Assembly-CSharp
-        m_MethodName: OpenCardMenu
+      - m_Target: {fileID: 9003751370500190273}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: Interact
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -589,6 +592,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: d8a7287b-c230-4038-b54a-46e5e3bc5f01
     m_ActionName: 'Player/OpenCardMenu[/Keyboard/tab]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9003751370500190273}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: dfde30b4-8896-4d32-a539-429a3c3824d6
+    m_ActionName: 'Player/Interact[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

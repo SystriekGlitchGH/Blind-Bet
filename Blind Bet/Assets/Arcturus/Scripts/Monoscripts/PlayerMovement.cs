@@ -73,6 +73,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private Direction playerDirection = Direction.South; // the player's current direction
     Random rand = new Random();
+    [Header("Misc.")]
+    public LayerMask interactLayer;
     private void OnValidate()
     {
         // for(int i = 0; i < 5; i++)
@@ -167,18 +169,6 @@ public class PlayerMovement : MonoBehaviour
     //TEMP CODE, DELETE WHEN CARD PICKING IS MADE
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Diamond"))
-        {
-            playerStats.activeSuit = Card.Suit.diamond;
-        }
-        if (collision.CompareTag("Club"))
-        {
-            playerStats.activeSuit = Card.Suit.club;
-        }
-        if (collision.CompareTag("Spade"))
-        {
-            playerStats.activeSuit = Card.Suit.spade;
-        }
         if (collision.CompareTag("Enemy"))
         {
             EnemyMovement enemy = collision.GetComponent<EnemyMovement>();
@@ -406,6 +396,19 @@ public class PlayerMovement : MonoBehaviour
                 ActivateChainRifle();
             playerStats.currentChips -= playerStats.GetAbility2ChipUse();
             StartCoroutine(Ability2Timer());
+        }
+    }
+    public void Interact(InputAction.CallbackContext ctx)
+    {
+        if (ctx.ReadValue<float>() == 0)
+            return;
+        else if(ctx.performed)
+        {
+            RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(2.5f,2.5f), 0, Vector2.zero, 1, interactLayer);
+            if (hit && hit.collider.TryGetComponent(out Interactable interactable))
+            {
+                interactable.onInteract.Invoke();
+            }
         }
     }
     #endregion

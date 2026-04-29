@@ -23,6 +23,6 @@ MonoBehaviour:
   - Map6
   - Map7
   - Map8
-  level: 1
+  level: 0
   kills: 0
   enemies: 0
