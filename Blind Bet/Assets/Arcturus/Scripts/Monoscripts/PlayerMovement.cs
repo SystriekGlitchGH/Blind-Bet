@@ -90,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Awake()
     {
-        
+        playerStats.weapon = new Weapon(playerStats.activeSuit);
     }
     private void FixedUpdate()
     {

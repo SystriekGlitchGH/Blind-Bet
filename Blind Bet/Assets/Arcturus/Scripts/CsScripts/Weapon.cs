@@ -1,6 +1,7 @@
+using System;
 using NUnit.Framework.Internal;
 using UnityEngine;
-
+[Serializable]
 public class Weapon
 {
 	public float baseAttack; // base attack of weapon
@@ -9,7 +10,7 @@ public class Weapon
     public Vector2 baseAttackSize; // size of melee weapon hitbox
     public Vector2 baseParrySize; // size of parry hitbox
 
-
+    
 	public Weapon(Card.Suit s)
     {
         if(s == Card.Suit.diamond)
@@ -21,9 +22,9 @@ public class Weapon
         }
         else if(s == Card.Suit.club)
         {
-            baseAttack = 40;
-            baseAttackSpeed = 0;
-            baseKnockback = 12;
+            baseAttack = 30;
+            baseAttackSpeed = 10;
+            baseKnockback = 14;
             baseAttackSize = new Vector2(4.5f, 3);
         }
         else if(s == Card.Suit.spade)

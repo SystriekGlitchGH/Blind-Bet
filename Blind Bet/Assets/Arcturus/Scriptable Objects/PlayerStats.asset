@@ -62,6 +62,13 @@ MonoBehaviour:
   hasRecall: 0
   hasCharm: 0
   hasEnrage: 0
+  buffDebuffs: []
+  weapon:
+    baseAttack: 30
+    baseAttackSpeed: 10
+    baseKnockback: 14
+    baseAttackSize: {x: 4.5, y: 3}
+    baseParrySize: {x: 2, y: 1}
   baseSpeed: 10
   maxHealth: 100
   currentHealth: 100
@@ -76,4 +83,4 @@ MonoBehaviour:
   baseAbilityDamage: 60
   baseAbilityKnockback: 10
   baseAbilityCooldown: 1
-  kills: 154
+  kills: 0
