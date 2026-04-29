@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   color:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 0.36320752, b: 0.36320752, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0, b: 0, a: 1}
   center:
     m_OverrideState: 1
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.143
+    m_Value: 0.17
   smoothness:
     m_OverrideState: 1
     m_Value: 0.41
@@ -90,10 +90,10 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 0.9760787, y: 0.9703348, z: 1, w: 0.20542942}
+    m_Value: {x: 1, y: 0.8746082, z: 0.9302359, w: 0.14778325}
   midtones:
-    m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9981113, z: 0.91090626, w: 0.071326666}
+    m_OverrideState: 0
+    m_Value: {x: 0.86451393, y: 0.9834541, z: 1, w: -0.13370857}
   highlights:
     m_OverrideState: 0
     m_Value: {x: 0.9415636, y: 0.9980803, z: 1, w: 0.042796224}
@@ -190,13 +190,13 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.06896552}
+    m_Value: {x: 1, y: 0.9420708, z: 0.99396175, w: -0.021111893}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.8826054, z: 0.8708994, w: 0.0862069}
+    m_Value: {x: 1, y: 0.9145449, z: 0.9236934, w: 0.06333579}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9408632, z: 0.9408632, w: 0.5862069}
+    m_Value: {x: 0.872177, y: 0.89995044, z: 1, w: 0.049261086}
 --- !u!114 &6954971198863298899
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -211,19 +211,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   postExposure:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.09
   contrast:
     m_OverrideState: 1
     m_Value: 1
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.9481132, b: 0.9481132, a: 1}
+    m_Value: {r: 0.9528302, g: 0.86743504, b: 0.86743504, a: 1}
   hueShift:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 5
   saturation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: -3
 --- !u!114 &8203904782598241924
 MonoBehaviour:
