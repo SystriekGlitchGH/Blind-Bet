@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: cefde59d28662ad48a06349627a341db
+guid: 45c0be7156ff58441b17e149faaee89e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8726904330242532414
-    second: rocks2_0
-  - first:
-      213: 49461173754034318
-    second: rocks2_1
+      213: -7628532831276956817
+    second: flower5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rocks2_0
+      name: flower5_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 187
-        width: 470
-        height: 284
+        x: 73
+        y: 43
+        width: 130
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,30 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cb531fafbec3e680800000000000000
-      internalID: -8726904330242532414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rocks2_1
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 0
-        width: 274
-        height: 198
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e8878cbeca8bfa000800000000000000
-      internalID: 49461173754034318
+      spriteID: f630552cec1022690800000000000000
+      internalID: -7628532831276956817
       vertices: []
       indices: 
       edges: []
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      rocks2_0: -8726904330242532414
-      rocks2_1: 49461173754034318
+      flower5_0: -7628532831276956817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
