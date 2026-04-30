@@ -5689,6 +5689,7 @@ MonoBehaviour:
   abilityShowcase2: {fileID: 5696309338141203399}
   abilityShowcase3: {fileID: 3584883181705472234}
   cardPicker: {fileID: 3318310231994784900}
+  kharonMenu: {fileID: 2616927505154180112}
 --- !u!1 &6448251579065465576
 GameObject:
   m_ObjectHideFlags: 0
