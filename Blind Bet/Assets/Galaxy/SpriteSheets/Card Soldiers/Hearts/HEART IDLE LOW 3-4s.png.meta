@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 07302cc98ce834144a02c1ea032fca20
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2831677837104658107
+    second: HEART IDLE LOW 3-4s_0
+  - first:
+      213: -4658583168224488317
+    second: HEART IDLE LOW 3-4s_1
+  - first:
+      213: 4700833507198942192
+    second: HEART IDLE LOW 3-4s_2
+  - first:
+      213: 2526603467681002818
+    second: HEART IDLE LOW 3-4s_3
+  - first:
+      213: 8715233583029635574
+    second: HEART IDLE LOW 3-4s_4
+  - first:
+      213: 6042136456448480841
+    second: HEART IDLE LOW 3-4s_5
+  - first:
+      213: -3743119695424015591
+    second: HEART IDLE LOW 3-4s_6
+  - first:
+      213: 8352935016320297856
+    second: HEART IDLE LOW 3-4s_7
+  - first:
+      213: -4327214358912110151
+    second: HEART IDLE LOW 3-4s_8
+  - first:
+      213: 7458340302169729110
+    second: HEART IDLE LOW 3-4s_9
+  - first:
+      213: 7517451782260958995
+    second: HEART IDLE LOW 3-4s_10
+  - first:
+      213: -7420377180119442386
+    second: HEART IDLE LOW 3-4s_11
+  - first:
+      213: -1022585580025021756
+    second: HEART IDLE LOW 3-4s_12
+  - first:
+      213: -8871569404798533680
+    second: HEART IDLE LOW 3-4s_13
+  - first:
+      213: 5765189369173101028
+    second: HEART IDLE LOW 3-4s_14
+  - first:
+      213: 4560182190315743115
+    second: HEART IDLE LOW 3-4s_15
+  - first:
+      213: 2797573781905537442
+    second: HEART IDLE LOW 3-4s_16
+  - first:
+      213: 5049335581608004038
+    second: HEART IDLE LOW 3-4s_17
+  - first:
+      213: 5869760316530188989
+    second: HEART IDLE LOW 3-4s_18
+  - first:
+      213: 700260164671582649
+    second: HEART IDLE LOW 3-4s_19
+  - first:
+      213: 3944125663288979366
+    second: HEART IDLE LOW 3-4s_20
+  - first:
+      213: 6324072593577323367
+    second: HEART IDLE LOW 3-4s_21
+  - first:
+      213: -8248345622517555956
+    second: HEART IDLE LOW 3-4s_22
+  - first:
+      213: 8133357054030527709
+    second: HEART IDLE LOW 3-4s_23
+  - first:
+      213: 5813085690917109621
+    second: HEART IDLE LOW 3-4s_24
+  - first:
+      213: 3489896201174747432
+    second: HEART IDLE LOW 3-4s_25
+  - first:
+      213: 8378117572494424528
+    second: HEART IDLE LOW 3-4s_26
+  - first:
+      213: -8436093495819608079
+    second: HEART IDLE LOW 3-4s_27
+  - first:
+      213: 7518328653146777950
+    second: HEART IDLE LOW 3-4s_28
+  - first:
+      213: -7344243093326457912
+    second: HEART IDLE LOW 3-4s_29
+  - first:
+      213: -8570107959771481816
+    second: HEART IDLE LOW 3-4s_30
+  - first:
+      213: -1590735561213636676
+    second: HEART IDLE LOW 3-4s_31
+  - first:
+      213: 3469889931433715833
+    second: HEART IDLE LOW 3-4s_32
+  - first:
+      213: -3621162367541820407
+    second: HEART IDLE LOW 3-4s_33
+  - first:
+      213: -8725535958850160556
+    second: HEART IDLE LOW 3-4s_34
+  - first:
+      213: -1293043543920932795
+    second: HEART IDLE LOW 3-4s_35
+  - first:
+      213: 488078170495932006
+    second: HEART IDLE LOW 3-4s_36
+  - first:
+      213: 2913920855724414856
+    second: HEART IDLE LOW 3-4s_37
+  - first:
+      213: 7352641633110585375
+    second: HEART IDLE LOW 3-4s_38
+  - first:
+      213: -1482259504332286716
+    second: HEART IDLE LOW 3-4s_39
+  - first:
+      213: 1927540333860247864
+    second: HEART IDLE LOW 3-4s_40
+  - first:
+      213: -3960244659250851888
+    second: HEART IDLE LOW 3-4s_41
+  - first:
+      213: -5730421658720318172
+    second: HEART IDLE LOW 3-4s_42
+  - first:
+      213: 7309196600115903114
+    second: HEART IDLE LOW 3-4s_43
+  - first:
+      213: -8750238422315912645
+    second: HEART IDLE LOW 3-4s_44
+  - first:
+      213: 4935795063184113223
+    second: HEART IDLE LOW 3-4s_45
+  - first:
+      213: 2891535567025147664
+    second: HEART IDLE LOW 3-4s_46
+  - first:
+      213: -2237061770060093270
+    second: HEART IDLE LOW 3-4s_47
+  - first:
+      213: 4017636436004295355
+    second: HEART IDLE LOW 3-4s_48
+  - first:
+      213: 1146365274332869862
+    second: HEART IDLE LOW 3-4s_49
+  - first:
+      213: -5813185731015375621
+    second: HEART IDLE LOW 3-4s_50
+  - first:
+      213: 5988257556730850933
+    second: HEART IDLE LOW 3-4s_51
+  - first:
+      213: 8471876274221097883
+    second: HEART IDLE LOW 3-4s_52
+  - first:
+      213: 1499551154104857806
+    second: HEART IDLE LOW 3-4s_53
+  - first:
+      213: 2668234297977290983
+    second: HEART IDLE LOW 3-4s_54
+  - first:
+      213: -7094083073273448054
+    second: HEART IDLE LOW 3-4s_55
+  - first:
+      213: 1358498043769899817
+    second: HEART IDLE LOW 3-4s_56
+  - first:
+      213: 3122719645499005234
+    second: HEART IDLE LOW 3-4s_57
+  - first:
+      213: -4249926460595163145
+    second: HEART IDLE LOW 3-4s_58
+  - first:
+      213: -1328304253204062831
+    second: HEART IDLE LOW 3-4s_59
+  - first:
+      213: -964744898711654225
+    second: HEART IDLE LOW 3-4s_60
+  - first:
+      213: 1205709998639068405
+    second: HEART IDLE LOW 3-4s_61
+  - first:
+      213: 3883580298350667446
+    second: HEART IDLE LOW 3-4s_62
+  - first:
+      213: -1366049101697743392
+    second: HEART IDLE LOW 3-4s_63
+  - first:
+      213: -6312934435090564164
+    second: HEART IDLE LOW 3-4s_64
+  - first:
+      213: -2507588305582681419
+    second: HEART IDLE LOW 3-4s_65
+  - first:
+      213: -5019804633373219171
+    second: HEART IDLE LOW 3-4s_66
+  - first:
+      213: -4048742788756401076
+    second: HEART IDLE LOW 3-4s_67
+  - first:
+      213: -1997868542066146333
+    second: HEART IDLE LOW 3-4s_68
+  - first:
+      213: -276862298871463210
+    second: HEART IDLE LOW 3-4s_69
+  - first:
+      213: -2908207656433103894
+    second: HEART IDLE LOW 3-4s_70
+  - first:
+      213: 3912534492993431769
+    second: HEART IDLE LOW 3-4s_71
+  - first:
+      213: 1045815191541268484
+    second: HEART IDLE LOW 3-4s_72
+  - first:
+      213: 9071354357771607262
+    second: HEART IDLE LOW 3-4s_73
+  - first:
+      213: -3358883495191230310
+    second: HEART IDLE LOW 3-4s_74
+  - first:
+      213: 8116893413427601357
+    second: HEART IDLE LOW 3-4s_75
+  - first:
+      213: -1266341154887091426
+    second: HEART IDLE LOW 3-4s_76
+  - first:
+      213: -7343065030209075830
+    second: HEART IDLE LOW 3-4s_77
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df628aa8612c1254097f7432900d2222
+      internalID: 800531070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1de3865e00bdf43839b09fbd4b5893
+      internalID: -1903804291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54f48b7479a9e6498e65f9143cd5772
+      internalID: 448407834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16e2b117ef8d554e9ac633ce2ddbc6b
+      internalID: 1562013389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4b0668626869b42bc5f131a7b549ac
+      internalID: -1233319703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cf39812c4e8e14981abda703066b8b
+      internalID: -1212641933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ea493e17b497a46b8b29afb4162384
+      internalID: -71405332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece4eecf8ecf0874e98042f14c8d6c3f
+      internalID: 268369276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8ea12dfada9e94ea598f9720794a52
+      internalID: 743961179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6df1a9ad0be7314db6b397e8788437e
+      internalID: -871315074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2345989ab4ad44ab6d9fada915b9eb
+      internalID: -1168981263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8978780c0a919884fb75780fea41f8e4
+      internalID: -1146707723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8ff63e08b0a824e9125d45f8b17dea
+      internalID: 2143186451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9496ac16788cfa4e91fbd1f5f1b70c5
+      internalID: -1252326871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec6abbf3dc9fda409e6a0e0efa5b815
+      internalID: -1935588892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729061253c22a4a4b9501f467fc3b831
+      internalID: 510670736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ce75a98cc817d47ba07ee65edc29a7
+      internalID: -634526611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2c1b286e1e1a34bbc0774113d137ea
+      internalID: 560671758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db9a00b7cc546b45ae578fb68e4afc7
+      internalID: -1558378394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab398d0a2428b649bdc6b048c91c8a5
+      internalID: 1254416284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59c20d5789971541aff04a708d5c708
+      internalID: -2137751056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3131e7c882dcfc47bac6ef582b4a414
+      internalID: 1492648960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aac0a110217f6a44a8acf45cc563080
+      internalID: -1507048218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d6e1013394e564cb27751f6040473e
+      internalID: 651085771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1622e8fff1c9047bd7f1448c73e0e0
+      internalID: -212266536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE LOW 3-4s_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9450d2559627b4e8262850192877c2
+      internalID: 329706610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: da417cb6547a2264cb1513613df4bdb2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HEART IDLE LOW 3-4s_0: 800531070
+      HEART IDLE LOW 3-4s_1: -1903804291
+      HEART IDLE LOW 3-4s_10: -1168981263
+      HEART IDLE LOW 3-4s_11: -1146707723
+      HEART IDLE LOW 3-4s_12: 2143186451
+      HEART IDLE LOW 3-4s_13: -1252326871
+      HEART IDLE LOW 3-4s_14: -1935588892
+      HEART IDLE LOW 3-4s_15: 510670736
+      HEART IDLE LOW 3-4s_16: -634526611
+      HEART IDLE LOW 3-4s_17: 560671758
+      HEART IDLE LOW 3-4s_18: -1558378394
+      HEART IDLE LOW 3-4s_19: 1254416284
+      HEART IDLE LOW 3-4s_2: 448407834
+      HEART IDLE LOW 3-4s_20: -2137751056
+      HEART IDLE LOW 3-4s_21: 1492648960
+      HEART IDLE LOW 3-4s_22: -1507048218
+      HEART IDLE LOW 3-4s_23: 651085771
+      HEART IDLE LOW 3-4s_24: -212266536
+      HEART IDLE LOW 3-4s_25: 329706610
+      HEART IDLE LOW 3-4s_3: 1562013389
+      HEART IDLE LOW 3-4s_4: -1233319703
+      HEART IDLE LOW 3-4s_5: -1212641933
+      HEART IDLE LOW 3-4s_6: -71405332
+      HEART IDLE LOW 3-4s_7: 268369276
+      HEART IDLE LOW 3-4s_8: 743961179
+      HEART IDLE LOW 3-4s_9: -871315074
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

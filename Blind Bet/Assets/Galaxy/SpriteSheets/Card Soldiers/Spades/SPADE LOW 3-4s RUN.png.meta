@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: bdb206d2681b6904886072c49d73dada
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4912631256389738826
+    second: SPADE LOW 3-4s RUN_0
+  - first:
+      213: 1858615722684217196
+    second: SPADE LOW 3-4s RUN_1
+  - first:
+      213: 1797735091322348053
+    second: SPADE LOW 3-4s RUN_2
+  - first:
+      213: 135572357221806767
+    second: SPADE LOW 3-4s RUN_3
+  - first:
+      213: 8525027364662607091
+    second: SPADE LOW 3-4s RUN_4
+  - first:
+      213: -7669316139139339683
+    second: SPADE LOW 3-4s RUN_5
+  - first:
+      213: 2134273784524281513
+    second: SPADE LOW 3-4s RUN_6
+  - first:
+      213: -5979124537634318105
+    second: SPADE LOW 3-4s RUN_7
+  - first:
+      213: 4999849480639825023
+    second: SPADE LOW 3-4s RUN_8
+  - first:
+      213: 3127329496345538824
+    second: SPADE LOW 3-4s RUN_9
+  - first:
+      213: 3973278386461640457
+    second: SPADE LOW 3-4s RUN_10
+  - first:
+      213: -8587592404640682292
+    second: SPADE LOW 3-4s RUN_11
+  - first:
+      213: -1351806593117753016
+    second: SPADE LOW 3-4s RUN_12
+  - first:
+      213: -2686978145534149536
+    second: SPADE LOW 3-4s RUN_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be986a86e3d2dbb0800000000000000
+      internalID: -4912631256389738826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c677c8407212bc910800000000000000
+      internalID: 1858615722684217196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512e58e6a86d2f810800000000000000
+      internalID: 1797735091322348053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa271913756a1e100800000000000000
+      internalID: 135572357221806767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fcf23b783bfe4670800000000000000
+      internalID: 8525027364662607091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5aed60fa9d119590800000000000000
+      internalID: -7669316139139339683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a69ffbf2b67e9d10800000000000000
+      internalID: 2134273784524281513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e81c7a69e1e50da0800000000000000
+      internalID: -5979124537634318105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7445ffbc98036540800000000000000
+      internalID: 4999849480639825023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801f64d8b91866b20800000000000000
+      internalID: 3127329496345538824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90788c224abe32730800000000000000
+      internalID: 3973278386461640457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cceac8df43eb2d880800000000000000
+      internalID: -8587592404640682292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8417f24d01b6d3de0800000000000000
+      internalID: -1351806593117753016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE LOW 3-4s RUN_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cf234ec9fe5bad0800000000000000
+      internalID: -2686978145534149536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d1658e0ea238e744cb13efc46043c564
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPADE LOW 3-4s RUN_0: -4912631256389738826
+      SPADE LOW 3-4s RUN_1: 1858615722684217196
+      SPADE LOW 3-4s RUN_10: 3973278386461640457
+      SPADE LOW 3-4s RUN_11: -8587592404640682292
+      SPADE LOW 3-4s RUN_12: -1351806593117753016
+      SPADE LOW 3-4s RUN_13: -2686978145534149536
+      SPADE LOW 3-4s RUN_2: 1797735091322348053
+      SPADE LOW 3-4s RUN_3: 135572357221806767
+      SPADE LOW 3-4s RUN_4: 8525027364662607091
+      SPADE LOW 3-4s RUN_5: -7669316139139339683
+      SPADE LOW 3-4s RUN_6: 2134273784524281513
+      SPADE LOW 3-4s RUN_7: -5979124537634318105
+      SPADE LOW 3-4s RUN_8: 4999849480639825023
+      SPADE LOW 3-4s RUN_9: 3127329496345538824
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

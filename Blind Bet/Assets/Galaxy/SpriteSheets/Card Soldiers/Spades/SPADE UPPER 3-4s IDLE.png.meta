@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: a95b6772ba8613149bb9e74bc76cb22b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4951228751915023734
+    second: SPADE UPPER 3-4s IDLE_0
+  - first:
+      213: -2577328431442291822
+    second: SPADE UPPER 3-4s IDLE_1
+  - first:
+      213: 6655025311925917317
+    second: SPADE UPPER 3-4s IDLE_2
+  - first:
+      213: -4109338971102596
+    second: SPADE UPPER 3-4s IDLE_3
+  - first:
+      213: 3055862214634373222
+    second: SPADE UPPER 3-4s IDLE_4
+  - first:
+      213: 4435054700141891537
+    second: SPADE UPPER 3-4s IDLE_5
+  - first:
+      213: -4754509080021932845
+    second: SPADE UPPER 3-4s IDLE_6
+  - first:
+      213: -4673257166977454190
+    second: SPADE UPPER 3-4s IDLE_7
+  - first:
+      213: 7789301325558789546
+    second: SPADE UPPER 3-4s IDLE_8
+  - first:
+      213: -5533371344308300866
+    second: SPADE UPPER 3-4s IDLE_9
+  - first:
+      213: 5933180921674955528
+    second: SPADE UPPER 3-4s IDLE_10
+  - first:
+      213: 856866256507515996
+    second: SPADE UPPER 3-4s IDLE_11
+  - first:
+      213: 3702114414435453891
+    second: SPADE UPPER 3-4s IDLE_12
+  - first:
+      213: 4550038525630811322
+    second: SPADE UPPER 3-4s IDLE_13
+  - first:
+      213: -2616774134199013175
+    second: SPADE UPPER 3-4s IDLE_14
+  - first:
+      213: -2798030910614666788
+    second: SPADE UPPER 3-4s IDLE_15
+  - first:
+      213: -2695282864795055555
+    second: SPADE UPPER 3-4s IDLE_16
+  - first:
+      213: -6980225522629009447
+    second: SPADE UPPER 3-4s IDLE_17
+  - first:
+      213: 5873583398785733671
+    second: SPADE UPPER 3-4s IDLE_18
+  - first:
+      213: 6324078938293395683
+    second: SPADE UPPER 3-4s IDLE_19
+  - first:
+      213: -5720991884231942412
+    second: SPADE UPPER 3-4s IDLE_20
+  - first:
+      213: -930970937117626250
+    second: SPADE UPPER 3-4s IDLE_21
+  - first:
+      213: -1518549143835643125
+    second: SPADE UPPER 3-4s IDLE_22
+  - first:
+      213: -2828873163946027231
+    second: SPADE UPPER 3-4s IDLE_23
+  - first:
+      213: 5901835154805040770
+    second: SPADE UPPER 3-4s IDLE_24
+  - first:
+      213: -2296460829153668133
+    second: SPADE UPPER 3-4s IDLE_25
+  - first:
+      213: 3219796477190698305
+    second: SPADE UPPER 3-4s IDLE_26
+  - first:
+      213: -6270868262071096037
+    second: SPADE UPPER 3-4s IDLE_27
+  - first:
+      213: -308841385236251830
+    second: SPADE UPPER 3-4s IDLE_28
+  - first:
+      213: -7904062081874331656
+    second: SPADE UPPER 3-4s IDLE_29
+  - first:
+      213: 1411525443086114495
+    second: SPADE UPPER 3-4s IDLE_30
+  - first:
+      213: 4489727895887886241
+    second: SPADE UPPER 3-4s IDLE_31
+  - first:
+      213: 4414557236483013662
+    second: SPADE UPPER 3-4s IDLE_32
+  - first:
+      213: -5766793605044983421
+    second: SPADE UPPER 3-4s IDLE_33
+  - first:
+      213: 561480500334295255
+    second: SPADE UPPER 3-4s IDLE_34
+  - first:
+      213: 8524866193463160210
+    second: SPADE UPPER 3-4s IDLE_35
+  - first:
+      213: 2989071766286224317
+    second: SPADE UPPER 3-4s IDLE_36
+  - first:
+      213: 7427226872301135810
+    second: SPADE UPPER 3-4s IDLE_37
+  - first:
+      213: -3830699459639504991
+    second: SPADE UPPER 3-4s IDLE_38
+  - first:
+      213: 5116507951952275180
+    second: SPADE UPPER 3-4s IDLE_39
+  - first:
+      213: -5302947356200915902
+    second: SPADE UPPER 3-4s IDLE_40
+  - first:
+      213: 3934342027028869579
+    second: SPADE UPPER 3-4s IDLE_41
+  - first:
+      213: 5748373016730563272
+    second: SPADE UPPER 3-4s IDLE_42
+  - first:
+      213: 7389796086121818905
+    second: SPADE UPPER 3-4s IDLE_43
+  - first:
+      213: -5333991059412011496
+    second: SPADE UPPER 3-4s IDLE_44
+  - first:
+      213: -4180598262647514142
+    second: SPADE UPPER 3-4s IDLE_45
+  - first:
+      213: 3194993150500516554
+    second: SPADE UPPER 3-4s IDLE_46
+  - first:
+      213: -2845242127640077881
+    second: SPADE UPPER 3-4s IDLE_47
+  - first:
+      213: 4807463287283452037
+    second: SPADE UPPER 3-4s IDLE_48
+  - first:
+      213: 6970831661092483201
+    second: SPADE UPPER 3-4s IDLE_49
+  - first:
+      213: -5396797242200730192
+    second: SPADE UPPER 3-4s IDLE_50
+  - first:
+      213: -537555152819606131
+    second: SPADE UPPER 3-4s IDLE_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a828760dea3b94bb0800000000000000
+      internalID: -4951228751915023734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2931e56627d7b3cd0800000000000000
+      internalID: -2577328431442291822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586d398e2466b5c50800000000000000
+      internalID: 6655025311925917317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72ad56f39661fff0800000000000000
+      internalID: -4109338971102596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66002d95e7a986a20800000000000000
+      internalID: 3055862214634373222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df426970ca7c8d30800000000000000
+      internalID: 4435054700141891537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d46ce3ae27940eb0800000000000000
+      internalID: -4754509080021932845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fa24add51452fb0800000000000000
+      internalID: -4673257166977454190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5396e3948291c60800000000000000
+      internalID: 7789301325558789546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb39d2454148533b0800000000000000
+      internalID: -5533371344308300866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b7f88ec94e65250800000000000000
+      internalID: 5933180921674955528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c543627025334eb00800000000000000
+      internalID: 856866256507515996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb474ef17d806330800000000000000
+      internalID: 3702114414435453891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc01929eebf42f30800000000000000
+      internalID: 4550038525630811322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c033a90ac95fabd0800000000000000
+      internalID: -2616774134199013175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1004e16b56b29d0800000000000000
+      internalID: -2798030910614666788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a81b2c38e689ad0800000000000000
+      internalID: -2695282864795055555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df1597bed1412f90800000000000000
+      internalID: -6980225522629009447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724514b4bf8238150800000000000000
+      internalID: 5873583398785733671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0e188b944a3c750800000000000000
+      internalID: 6324078938293395683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe56714134fa90b0800000000000000
+      internalID: -5720991884231942412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67034ec7dd68413f0800000000000000
+      internalID: -930970937117626250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03f3bb69970deae0800000000000000
+      internalID: -1518549143835643125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1279c5c68d2ddb8d0800000000000000
+      internalID: -2828873163946027231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2862115ddc787e150800000000000000
+      internalID: 5901835154805040770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE UPPER 3-4s IDLE_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd352b50b055120e0800000000000000
+      internalID: -2296460829153668133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c8e3cc33737c43545a09b3f948f71d06
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPADE UPPER 3-4s IDLE_0: -4951228751915023734
+      SPADE UPPER 3-4s IDLE_1: -2577328431442291822
+      SPADE UPPER 3-4s IDLE_10: 5933180921674955528
+      SPADE UPPER 3-4s IDLE_11: 856866256507515996
+      SPADE UPPER 3-4s IDLE_12: 3702114414435453891
+      SPADE UPPER 3-4s IDLE_13: 4550038525630811322
+      SPADE UPPER 3-4s IDLE_14: -2616774134199013175
+      SPADE UPPER 3-4s IDLE_15: -2798030910614666788
+      SPADE UPPER 3-4s IDLE_16: -2695282864795055555
+      SPADE UPPER 3-4s IDLE_17: -6980225522629009447
+      SPADE UPPER 3-4s IDLE_18: 5873583398785733671
+      SPADE UPPER 3-4s IDLE_19: 6324078938293395683
+      SPADE UPPER 3-4s IDLE_2: 6655025311925917317
+      SPADE UPPER 3-4s IDLE_20: -5720991884231942412
+      SPADE UPPER 3-4s IDLE_21: -930970937117626250
+      SPADE UPPER 3-4s IDLE_22: -1518549143835643125
+      SPADE UPPER 3-4s IDLE_23: -2828873163946027231
+      SPADE UPPER 3-4s IDLE_24: 5901835154805040770
+      SPADE UPPER 3-4s IDLE_25: -2296460829153668133
+      SPADE UPPER 3-4s IDLE_3: -4109338971102596
+      SPADE UPPER 3-4s IDLE_4: 3055862214634373222
+      SPADE UPPER 3-4s IDLE_5: 4435054700141891537
+      SPADE UPPER 3-4s IDLE_6: -4754509080021932845
+      SPADE UPPER 3-4s IDLE_7: -4673257166977454190
+      SPADE UPPER 3-4s IDLE_8: 7789301325558789546
+      SPADE UPPER 3-4s IDLE_9: -5533371344308300866
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

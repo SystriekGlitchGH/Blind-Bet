@@ -1,0 +1,531 @@
+fileFormatVersion: 2
+guid: bf4eb5866137ce7448af1dacd9f24d36
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4248039221844026926
+    second: SPADE SIDE RUN_0
+  - first:
+      213: 1402294642297098584
+    second: SPADE SIDE RUN_1
+  - first:
+      213: -1090470243870521993
+    second: SPADE SIDE RUN_2
+  - first:
+      213: -3342603802431409989
+    second: SPADE SIDE RUN_3
+  - first:
+      213: 3996883337059852493
+    second: SPADE SIDE RUN_4
+  - first:
+      213: 8260555592876039129
+    second: SPADE SIDE RUN_5
+  - first:
+      213: 6674290328570635641
+    second: SPADE SIDE RUN_6
+  - first:
+      213: -4223606301184656831
+    second: SPADE SIDE RUN_7
+  - first:
+      213: -3693844508557489136
+    second: SPADE SIDE RUN_8
+  - first:
+      213: -1752581426202842205
+    second: SPADE SIDE RUN_9
+  - first:
+      213: 1104887880405163342
+    second: SPADE SIDE RUN_10
+  - first:
+      213: 1387201025263793885
+    second: SPADE SIDE RUN_11
+  - first:
+      213: -4117780671350357016
+    second: SPADE SIDE RUN_12
+  - first:
+      213: -5416614596680400159
+    second: SPADE SIDE RUN_13
+  - first:
+      213: -5961270741111968485
+    second: SPADE SIDE RUN_14
+  - first:
+      213: 946540894278847366
+    second: SPADE SIDE RUN_15
+  - first:
+      213: -4462226084499835055
+    second: SPADE SIDE RUN_16
+  - first:
+      213: 802352659865507583
+    second: SPADE SIDE RUN_17
+  - first:
+      213: 5695727595302772314
+    second: SPADE SIDE RUN_18
+  - first:
+      213: 2668246051089572075
+    second: SPADE SIDE RUN_19
+  - first:
+      213: -7502952252268691849
+    second: SPADE SIDE RUN_20
+  - first:
+      213: -340462799121885312
+    second: SPADE SIDE RUN_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d95f06b5deeb05c0800000000000000
+      internalID: -4248039221844026926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8515d882c83f57310800000000000000
+      internalID: 1402294642297098584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775c6fb371fddd0f0800000000000000
+      internalID: -1090470243870521993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0b4333d8fac91d0800000000000000
+      internalID: -3342603802431409989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0612af738c77730800000000000000
+      internalID: 3996883337059852493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db1eb0ab8363a270800000000000000
+      internalID: 8260555592876039129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975274221b7df9c50800000000000000
+      internalID: 6674290328570635641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a79ca527cb265c0800000000000000
+      internalID: -4223606301184656831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c47e38df3dcbcc0800000000000000
+      internalID: -3693844508557489136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab6b3b7a749da7e0800000000000000
+      internalID: -1752581426202842205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d1f2c5ca9555f00800000000000000
+      internalID: 1104887880405163342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6f7e69bf3504310800000000000000
+      internalID: 1387201025263793885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3413ddb44bad6c0800000000000000
+      internalID: -4117780671350357016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPADE SIDE RUN_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e24ba709b154d4b0800000000000000
+      internalID: -5416614596680400159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b8e9fad5b57572d44992301bbc86328e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPADE SIDE RUN_0: -4248039221844026926
+      SPADE SIDE RUN_1: 1402294642297098584
+      SPADE SIDE RUN_10: 1104887880405163342
+      SPADE SIDE RUN_11: 1387201025263793885
+      SPADE SIDE RUN_12: -4117780671350357016
+      SPADE SIDE RUN_13: -5416614596680400159
+      SPADE SIDE RUN_2: -1090470243870521993
+      SPADE SIDE RUN_3: -3342603802431409989
+      SPADE SIDE RUN_4: 3996883337059852493
+      SPADE SIDE RUN_5: 8260555592876039129
+      SPADE SIDE RUN_6: 6674290328570635641
+      SPADE SIDE RUN_7: -4223606301184656831
+      SPADE SIDE RUN_8: -3693844508557489136
+      SPADE SIDE RUN_9: -1752581426202842205
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

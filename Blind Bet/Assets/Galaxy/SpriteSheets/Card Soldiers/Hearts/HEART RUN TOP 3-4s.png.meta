@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: 410af52095255a54983839e351e27503
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3122979987543301634
+    second: HEART RUN TOP 3-4s_0
+  - first:
+      213: -3347889833901206560
+    second: HEART RUN TOP 3-4s_1
+  - first:
+      213: 3133651349548113545
+    second: HEART RUN TOP 3-4s_2
+  - first:
+      213: -5791311810784348605
+    second: HEART RUN TOP 3-4s_3
+  - first:
+      213: 5638637421869065696
+    second: HEART RUN TOP 3-4s_4
+  - first:
+      213: -1309032656766288595
+    second: HEART RUN TOP 3-4s_5
+  - first:
+      213: 5860276587253201268
+    second: HEART RUN TOP 3-4s_6
+  - first:
+      213: -3296135809109257514
+    second: HEART RUN TOP 3-4s_7
+  - first:
+      213: -863787624512306794
+    second: HEART RUN TOP 3-4s_8
+  - first:
+      213: -9097877797507352646
+    second: HEART RUN TOP 3-4s_9
+  - first:
+      213: 3356072543456171597
+    second: HEART RUN TOP 3-4s_10
+  - first:
+      213: -5874647610911488459
+    second: HEART RUN TOP 3-4s_11
+  - first:
+      213: 3006675798480992527
+    second: HEART RUN TOP 3-4s_12
+  - first:
+      213: 220410147849402326
+    second: HEART RUN TOP 3-4s_13
+  - first:
+      213: -112833190550147102
+    second: HEART RUN TOP 3-4s_14
+  - first:
+      213: 5633193436581928948
+    second: HEART RUN TOP 3-4s_15
+  - first:
+      213: 2201541143296473815
+    second: HEART RUN TOP 3-4s_16
+  - first:
+      213: -7798161647385906802
+    second: HEART RUN TOP 3-4s_17
+  - first:
+      213: 5383140445422574979
+    second: HEART RUN TOP 3-4s_18
+  - first:
+      213: -6540426423141609353
+    second: HEART RUN TOP 3-4s_19
+  - first:
+      213: -1901808138679740220
+    second: HEART RUN TOP 3-4s_20
+  - first:
+      213: -7175910257682006095
+    second: HEART RUN TOP 3-4s_21
+  - first:
+      213: -7687928955100462360
+    second: HEART RUN TOP 3-4s_22
+  - first:
+      213: 5424947710094177874
+    second: HEART RUN TOP 3-4s_23
+  - first:
+      213: 428943149815979607
+    second: HEART RUN TOP 3-4s_24
+  - first:
+      213: 853889280446141922
+    second: HEART RUN TOP 3-4s_25
+  - first:
+      213: 1369427237976654250
+    second: HEART RUN TOP 3-4s_26
+  - first:
+      213: -5368544224418043013
+    second: HEART RUN TOP 3-4s_27
+  - first:
+      213: 8462430408931621133
+    second: HEART RUN TOP 3-4s_28
+  - first:
+      213: 6818368886000148400
+    second: HEART RUN TOP 3-4s_29
+  - first:
+      213: 4551846138292051243
+    second: HEART RUN TOP 3-4s_30
+  - first:
+      213: -8660308274343498905
+    second: HEART RUN TOP 3-4s_31
+  - first:
+      213: 7250217144198390691
+    second: HEART RUN TOP 3-4s_32
+  - first:
+      213: -4687984422889673674
+    second: HEART RUN TOP 3-4s_33
+  - first:
+      213: -3545397415011243981
+    second: HEART RUN TOP 3-4s_34
+  - first:
+      213: 2596104356985032220
+    second: HEART RUN TOP 3-4s_35
+  - first:
+      213: -1011457513234734333
+    second: HEART RUN TOP 3-4s_36
+  - first:
+      213: 3738062797304001729
+    second: HEART RUN TOP 3-4s_37
+  - first:
+      213: -7863295165693587006
+    second: HEART RUN TOP 3-4s_38
+  - first:
+      213: -1122638842729409472
+    second: HEART RUN TOP 3-4s_39
+  - first:
+      213: 9188281904357188243
+    second: HEART RUN TOP 3-4s_40
+  - first:
+      213: -7346712642861502136
+    second: HEART RUN TOP 3-4s_41
+  - first:
+      213: 1529821665216550077
+    second: HEART RUN TOP 3-4s_42
+  - first:
+      213: 3897214282652690772
+    second: HEART RUN TOP 3-4s_43
+  - first:
+      213: 1143804542609231802
+    second: HEART RUN TOP 3-4s_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f8843e5bb7e774194cd065a8f7f2ab
+      internalID: 915077210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546c4d9a864cb75459b27765a67beb21
+      internalID: -450690006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123d7dd4c8a6a15458f9644cd57d9e8c
+      internalID: -1963082923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300cc856803880040a0fc088d4753eed
+      internalID: 1861490474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fced4d5401ad9ed4cbe8582ff998594c
+      internalID: 1712896848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573811cbfaac21440adaf8180fea7233
+      internalID: 1660988766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39719f06371c4de42a44005cec41d271
+      internalID: 1264068048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3938ddf41443bf542b787da420f990b2
+      internalID: -1391662306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31796e2c341a8894699b4470cf0aed7e
+      internalID: 853154166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6371be0c8955e148824e095da7e4ec8
+      internalID: -1227361512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aeeed3bf666c834d8988f22bbb3b65a
+      internalID: -405155305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7555aefeb1d90ee418face08a8c158d7
+      internalID: 1128188919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7aa941ab8d7814abbd4e60e3239439
+      internalID: -1738918369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART RUN TOP 3-4s_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594b0bff6ff470a47b0bee162a401031
+      internalID: 881672126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f154035cf74287149ac7d45fd38ca68f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HEART RUN TOP 3-4s_0: 915077210
+      HEART RUN TOP 3-4s_1: -450690006
+      HEART RUN TOP 3-4s_10: -405155305
+      HEART RUN TOP 3-4s_11: 1128188919
+      HEART RUN TOP 3-4s_12: -1738918369
+      HEART RUN TOP 3-4s_13: 881672126
+      HEART RUN TOP 3-4s_2: -1963082923
+      HEART RUN TOP 3-4s_3: 1861490474
+      HEART RUN TOP 3-4s_4: 1712896848
+      HEART RUN TOP 3-4s_5: 1660988766
+      HEART RUN TOP 3-4s_6: 1264068048
+      HEART RUN TOP 3-4s_7: -1391662306
+      HEART RUN TOP 3-4s_8: 853154166
+      HEART RUN TOP 3-4s_9: -1227361512
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

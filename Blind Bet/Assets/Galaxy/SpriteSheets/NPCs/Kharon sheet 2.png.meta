@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: 761720a1c0483aa488c358b01c935e5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2107207272453225705
+    second: Kharon sheet 2_0
+  - first:
+      213: -3777840044366582795
+    second: Kharon sheet 2_1
+  - first:
+      213: -6187289430686501827
+    second: Kharon sheet 2_2
+  - first:
+      213: 27476459379999464
+    second: Kharon sheet 2_3
+  - first:
+      213: 2579459788632162804
+    second: Kharon sheet 2_4
+  - first:
+      213: 7604900894299782654
+    second: Kharon sheet 2_5
+  - first:
+      213: 4658996964257852906
+    second: Kharon sheet 2_6
+  - first:
+      213: 6334385738087747866
+    second: Kharon sheet 2_7
+  - first:
+      213: 1752952910651176446
+    second: Kharon sheet 2_8
+  - first:
+      213: -6173156838363746331
+    second: Kharon sheet 2_9
+  - first:
+      213: 2556645311694277636
+    second: Kharon sheet 2_10
+  - first:
+      213: -3474211318519943278
+    second: Kharon sheet 2_11
+  - first:
+      213: 6535595622453127493
+    second: Kharon sheet 2_12
+  - first:
+      213: 1025742274175517625
+    second: Kharon sheet 2_13
+  - first:
+      213: -3089178837105750964
+    second: Kharon sheet 2_14
+  - first:
+      213: -2702353237506199248
+    second: Kharon sheet 2_15
+  - first:
+      213: 4831546480925267405
+    second: Kharon sheet 2_16
+  - first:
+      213: -376982725656671422
+    second: Kharon sheet 2_17
+  - first:
+      213: -943545638784266658
+    second: Kharon sheet 2_18
+  - first:
+      213: -1301578301186046042
+    second: Kharon sheet 2_19
+  - first:
+      213: -1253860416444842576
+    second: Kharon sheet 2_20
+  - first:
+      213: 3845318237681974395
+    second: Kharon sheet 2_21
+  - first:
+      213: -6863735053768685109
+    second: Kharon sheet 2_22
+  - first:
+      213: -678061592947395382
+    second: Kharon sheet 2_23
+  - first:
+      213: 5174871079775355490
+    second: Kharon sheet 2_24
+  - first:
+      213: -3948235900546131504
+    second: Kharon sheet 2_25
+  - first:
+      213: 6137099423722295991
+    second: Kharon sheet 2_26
+  - first:
+      213: 7498316475613135688
+    second: Kharon sheet 2_27
+  - first:
+      213: -7900353941129261836
+    second: Kharon sheet 2_28
+  - first:
+      213: -3150531284214703309
+    second: Kharon sheet 2_29
+  - first:
+      213: 3982545802147099159
+    second: Kharon sheet 2_30
+  - first:
+      213: -8140781750969704753
+    second: Kharon sheet 2_31
+  - first:
+      213: 4453631949119553248
+    second: Kharon sheet 2_32
+  - first:
+      213: -3207705672622667883
+    second: Kharon sheet 2_33
+  - first:
+      213: 721996558881384849
+    second: Kharon sheet 2_34
+  - first:
+      213: -8183970558568638391
+    second: Kharon sheet 2_35
+  - first:
+      213: -1608175140070346629
+    second: Kharon sheet 2_36
+  - first:
+      213: -3347312983677159708
+    second: Kharon sheet 2_37
+  - first:
+      213: 1790970690656259360
+    second: Kharon sheet 2_38
+  - first:
+      213: -5523162967843482433
+    second: Kharon sheet 2_39
+  - first:
+      213: -4389483222861817044
+    second: Kharon sheet 2_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kharon sheet 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2178
+        width: 1906
+        height: 1068
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7134e417622b1c2e0800000000000000
+      internalID: -2107207272453225705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 2_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2178
+        width: 1906
+        height: 1068
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fba849de7a629bc0800000000000000
+      internalID: -3777840044366582795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 2_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2178
+        width: 1906
+        height: 1068
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34f6616b05522aa0800000000000000
+      internalID: -6187289430686501827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 2_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1090
+        width: 1906
+        height: 1068
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2c709b1bd916000800000000000000
+      internalID: 27476459379999464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 2_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1090
+        width: 1906
+        height: 1068
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f103ddd2051cc320800000000000000
+      internalID: 2579459788632162804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 2_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1090
+        width: 1906
+        height: 1068
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efdf9c422190a8960800000000000000
+      internalID: 7604900894299782654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1068
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed6638fd0518a040800000000000000
+      internalID: 4658996964257852906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e6060487fdb766a48901ac37c9c2abb3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kharon sheet 2_0: -2107207272453225705
+      Kharon sheet 2_1: -3777840044366582795
+      Kharon sheet 2_2: -6187289430686501827
+      Kharon sheet 2_3: 27476459379999464
+      Kharon sheet 2_4: 2579459788632162804
+      Kharon sheet 2_5: 7604900894299782654
+      Kharon sheet 2_6: 4658996964257852906
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

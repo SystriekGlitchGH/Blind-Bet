@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 530d7ac788aff7748b1a2c30437a8fe1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5481780558690951153
+    second: Club low 3-4s idle_0
+  - first:
+      213: 9013002170129705230
+    second: Club low 3-4s idle_1
+  - first:
+      213: -5857833903000044458
+    second: Club low 3-4s idle_2
+  - first:
+      213: -7053069238458639600
+    second: Club low 3-4s idle_3
+  - first:
+      213: -3598159667421834608
+    second: Club low 3-4s idle_4
+  - first:
+      213: 2845583627452791209
+    second: Club low 3-4s idle_5
+  - first:
+      213: 2010401220406347989
+    second: Club low 3-4s idle_6
+  - first:
+      213: 8368303334347606883
+    second: Club low 3-4s idle_7
+  - first:
+      213: -3052193664137411994
+    second: Club low 3-4s idle_8
+  - first:
+      213: 5901452443320693785
+    second: Club low 3-4s idle_9
+  - first:
+      213: -1940621662829589476
+    second: Club low 3-4s idle_10
+  - first:
+      213: -3610423028138154295
+    second: Club low 3-4s idle_11
+  - first:
+      213: 857225430111352336
+    second: Club low 3-4s idle_12
+  - first:
+      213: 4020501904636987330
+    second: Club low 3-4s idle_13
+  - first:
+      213: -6514057664254379617
+    second: Club low 3-4s idle_14
+  - first:
+      213: 1041964375235757226
+    second: Club low 3-4s idle_15
+  - first:
+      213: 3603175634712421643
+    second: Club low 3-4s idle_16
+  - first:
+      213: -1242106066837621764
+    second: Club low 3-4s idle_17
+  - first:
+      213: -7615977385203309670
+    second: Club low 3-4s idle_18
+  - first:
+      213: 114821585586110384
+    second: Club low 3-4s idle_19
+  - first:
+      213: 803613344698314719
+    second: Club low 3-4s idle_20
+  - first:
+      213: 2358491669269002965
+    second: Club low 3-4s idle_21
+  - first:
+      213: -2547752864257134958
+    second: Club low 3-4s idle_22
+  - first:
+      213: 631125308434093457
+    second: Club low 3-4s idle_23
+  - first:
+      213: -360423920131205330
+    second: Club low 3-4s idle_24
+  - first:
+      213: 4779193559705986922
+    second: Club low 3-4s idle_25
+  - first:
+      213: 1842014667213268826
+    second: Club low 3-4s idle_26
+  - first:
+      213: 4067651896540086591
+    second: Club low 3-4s idle_27
+  - first:
+      213: 3810669179513720988
+    second: Club low 3-4s idle_28
+  - first:
+      213: 7002277447570073289
+    second: Club low 3-4s idle_29
+  - first:
+      213: 4659887060328404898
+    second: Club low 3-4s idle_30
+  - first:
+      213: 2257108348306197445
+    second: Club low 3-4s idle_31
+  - first:
+      213: 3765726671361652792
+    second: Club low 3-4s idle_32
+  - first:
+      213: 7117904747303557811
+    second: Club low 3-4s idle_33
+  - first:
+      213: -484911394609855462
+    second: Club low 3-4s idle_34
+  - first:
+      213: 6633041644829505599
+    second: Club low 3-4s idle_35
+  - first:
+      213: -7693061571851695935
+    second: Club low 3-4s idle_36
+  - first:
+      213: -9167334690260326234
+    second: Club low 3-4s idle_37
+  - first:
+      213: 5844643241240079490
+    second: Club low 3-4s idle_38
+  - first:
+      213: 1607847422716865547
+    second: Club low 3-4s idle_39
+  - first:
+      213: 8103652013033806502
+    second: Club low 3-4s idle_40
+  - first:
+      213: 2235701314241178276
+    second: Club low 3-4s idle_41
+  - first:
+      213: -8780353259438353746
+    second: Club low 3-4s idle_42
+  - first:
+      213: 4266705266161725692
+    second: Club low 3-4s idle_43
+  - first:
+      213: 2656108833660059403
+    second: Club low 3-4s idle_44
+  - first:
+      213: -2514851078621450527
+    second: Club low 3-4s idle_45
+  - first:
+      213: -3164654546911089909
+    second: Club low 3-4s idle_46
+  - first:
+      213: 7976742301768019516
+    second: Club low 3-4s idle_47
+  - first:
+      213: 3218039647586467994
+    second: Club low 3-4s idle_48
+  - first:
+      213: 6680292107638279898
+    second: Club low 3-4s idle_49
+  - first:
+      213: 1748301078936572668
+    second: Club low 3-4s idle_50
+  - first:
+      213: 8694485317535024340
+    second: Club low 3-4s idle_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Club low 3-4s idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7cc3c9c6f26214eb8af8fd8a330c69
+      internalID: -676603564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca886a6479760840b7bfe7b9f40e2ac
+      internalID: -1323044532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d9d90363aa48946b19a373815b3262
+      internalID: 710432043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75578f3bec4d858449e96a42591f01f7
+      internalID: -443682716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2b8fd2f6ffcd84c8b9a61d354bd687
+      internalID: 1275409211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060b7983a4804c040b604fe4a153b46e
+      internalID: -1739830800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29c590cbfec9154a94f9e5957a32504
+      internalID: -1117133915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b577b4e105462d4bb2dc2e345339ef6
+      internalID: -406111462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b255258a3799a2347b000dd0f1787bb2
+      internalID: 1108433984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810be978ab9ab084382c308cd78e39d8
+      internalID: -999114312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d82776fdfdd64b42aeac65937eccc77
+      internalID: 1017003777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74879501c86c6b4682812748c51a9e6
+      internalID: -1797716114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82364280640115444b0272b1699061bd
+      internalID: -558845236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854ec48b81cafc14c8cbb830baac211d
+      internalID: 524989911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee5f9cb8698f73419a001742535acf0
+      internalID: -1010032958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b5112d813829d4f913e4f734fa7e06
+      internalID: 525599117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340c7755d349870459d803afa0f43868
+      internalID: -182605231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b549ed7f542925840a0739b39a944448
+      internalID: -14455261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f662fdcf0aad93644a4f98bf2a8a8774
+      internalID: -184379771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9234a2260457bcc42b9db95271ec96d7
+      internalID: -427977200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb215be72f3cd14880ade7f546aed04
+      internalID: -1343549583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa393ade2f2a774a86a8ae9c2f16efa
+      internalID: -342907094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9682a10b4e2b1f24596e063acbe0b47e
+      internalID: -508801804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fe1052e8f4bd443abb15eb9e3be978
+      internalID: 831509427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e059d74bc0041489b7edc4cc9fe073
+      internalID: 562122412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club low 3-4s idle_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1921de4f8cd7244f8995fce7b227bd8
+      internalID: -931701200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ce6439dfa95f1884ebd6ac7768f6fec9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Club low 3-4s idle_0: -676603564
+      Club low 3-4s idle_1: -1323044532
+      Club low 3-4s idle_10: 1017003777
+      Club low 3-4s idle_11: -1797716114
+      Club low 3-4s idle_12: -558845236
+      Club low 3-4s idle_13: 524989911
+      Club low 3-4s idle_14: -1010032958
+      Club low 3-4s idle_15: 525599117
+      Club low 3-4s idle_16: -182605231
+      Club low 3-4s idle_17: -14455261
+      Club low 3-4s idle_18: -184379771
+      Club low 3-4s idle_19: -427977200
+      Club low 3-4s idle_2: 710432043
+      Club low 3-4s idle_20: -1343549583
+      Club low 3-4s idle_21: -342907094
+      Club low 3-4s idle_22: -508801804
+      Club low 3-4s idle_23: 831509427
+      Club low 3-4s idle_24: 562122412
+      Club low 3-4s idle_25: -931701200
+      Club low 3-4s idle_3: -443682716
+      Club low 3-4s idle_4: 1275409211
+      Club low 3-4s idle_5: -1739830800
+      Club low 3-4s idle_6: -1117133915
+      Club low 3-4s idle_7: -406111462
+      Club low 3-4s idle_8: 1108433984
+      Club low 3-4s idle_9: -999114312
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

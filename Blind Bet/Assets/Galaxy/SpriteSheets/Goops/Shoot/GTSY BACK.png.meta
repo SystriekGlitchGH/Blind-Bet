@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: cecd56661c31293439d33f5e3e581785
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5305113659633172571
+    second: GTSY BACK_0
+  - first:
+      213: -901525606027462114
+    second: GTSY BACK_1
+  - first:
+      213: -6050557989600785174
+    second: GTSY BACK_2
+  - first:
+      213: 8405681496946651551
+    second: GTSY BACK_3
+  - first:
+      213: 6392007502128306111
+    second: GTSY BACK_4
+  - first:
+      213: 2364032632070224957
+    second: GTSY BACK_5
+  - first:
+      213: 6506731313814735548
+    second: GTSY BACK_6
+  - first:
+      213: -2188842526015888823
+    second: GTSY BACK_7
+  - first:
+      213: 5602966813150144388
+    second: GTSY BACK_8
+  - first:
+      213: -8330938961665423137
+    second: GTSY BACK_9
+  - first:
+      213: -4230047866210876108
+    second: GTSY BACK_10
+  - first:
+      213: -6456358143729136078
+    second: GTSY BACK_11
+  - first:
+      213: 6806674200841017650
+    second: GTSY BACK_12
+  - first:
+      213: 6662955309493633252
+    second: GTSY BACK_13
+  - first:
+      213: 5268525498061543324
+    second: GTSY BACK_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GTSY BACK_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4358
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5affd78fb337066b0800000000000000
+      internalID: -5305113659633172571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4358
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a70d0ec332d73f0800000000000000
+      internalID: -901525606027462114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4358
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec81f0d099180ca0800000000000000
+      internalID: -6050557989600785174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3269
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91349849caf6a470800000000000000
+      internalID: 8405681496946651551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3269
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb75df5f4f8f4b850800000000000000
+      internalID: 6392007502128306111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3269
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c3af7572bbec020800000000000000
+      internalID: 2364032632070224957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2180
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba86d0e7ad8c4a50800000000000000
+      internalID: 6506731313814735548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2180
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942ed8fc15baf91e0800000000000000
+      internalID: -2188842526015888823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2180
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487ed1a71acb1cd40800000000000000
+      internalID: 5602966813150144388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1091
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd88870572f826c80800000000000000
+      internalID: -8330938961665423137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1091
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4350a9f90e9db45c0800000000000000
+      internalID: -4230047866210876108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1091
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e035cb9786666a0800000000000000
+      internalID: -6456358143729136078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239d1f25f1a267e50800000000000000
+      internalID: 6806674200841017650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0cba85d82977c50800000000000000
+      internalID: 6662955309493633252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY BACK_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97db02d6009d1940800000000000000
+      internalID: 5268525498061543324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6ebcf9eed52720548bf1f0bac7060d52
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GTSY BACK_0: -5305113659633172571
+      GTSY BACK_1: -901525606027462114
+      GTSY BACK_10: -4230047866210876108
+      GTSY BACK_11: -6456358143729136078
+      GTSY BACK_12: 6806674200841017650
+      GTSY BACK_13: 6662955309493633252
+      GTSY BACK_14: 5268525498061543324
+      GTSY BACK_2: -6050557989600785174
+      GTSY BACK_3: 8405681496946651551
+      GTSY BACK_4: 6392007502128306111
+      GTSY BACK_5: 2364032632070224957
+      GTSY BACK_6: 6506731313814735548
+      GTSY BACK_7: -2188842526015888823
+      GTSY BACK_8: 5602966813150144388
+      GTSY BACK_9: -8330938961665423137
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

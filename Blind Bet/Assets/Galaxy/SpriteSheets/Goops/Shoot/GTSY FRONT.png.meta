@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 791976c2b10d66144a2294d49083d432
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7770604492441141342
+    second: GTSY FRONT_0
+  - first:
+      213: 7857251792519811483
+    second: GTSY FRONT_1
+  - first:
+      213: 4503565140987847988
+    second: GTSY FRONT_2
+  - first:
+      213: -3108325590819515640
+    second: GTSY FRONT_3
+  - first:
+      213: 4848489653579484686
+    second: GTSY FRONT_4
+  - first:
+      213: -7316748236359664475
+    second: GTSY FRONT_5
+  - first:
+      213: 5858560561908884428
+    second: GTSY FRONT_6
+  - first:
+      213: 6913115746466777304
+    second: GTSY FRONT_7
+  - first:
+      213: -1211713084349924340
+    second: GTSY FRONT_8
+  - first:
+      213: -2118097201005131750
+    second: GTSY FRONT_9
+  - first:
+      213: -3390366910973274383
+    second: GTSY FRONT_10
+  - first:
+      213: 4465374388673367519
+    second: GTSY FRONT_11
+  - first:
+      213: 3289584975728532312
+    second: GTSY FRONT_12
+  - first:
+      213: -3521949275208549161
+    second: GTSY FRONT_13
+  - first:
+      213: -4039636596827646867
+    second: GTSY FRONT_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GTSY FRONT_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4358
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50420e8d9bb6db60800000000000000
+      internalID: 7770604492441141342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4358
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91d1f330e09a0d60800000000000000
+      internalID: 7857251792519811483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4358
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435a96382a0ef7e30800000000000000
+      internalID: 4503565140987847988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3269
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80352f008520dd4d0800000000000000
+      internalID: -3108325590819515640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3269
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e03cac6ab494340800000000000000
+      internalID: 4848489653579484686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3269
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acf0dcae30b57a90800000000000000
+      internalID: -7316748236359664475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2180
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc321b38ac9cd4150800000000000000
+      internalID: 5858560561908884428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2180
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8cf47e42250ff50800000000000000
+      internalID: 6913115746466777304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2180
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c31a5ae512f2fe0800000000000000
+      internalID: -1211713084349924340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1091
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18075e51d10b92e0800000000000000
+      internalID: -2118097201005131750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1091
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f61335e14ff2f0d0800000000000000
+      internalID: -3390366910973274383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1091
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddc002195238fd30800000000000000
+      internalID: 4465374388673367519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bd2c04b14f6ad20800000000000000
+      internalID: 3289584975728532312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dcff365bc58f1fc0800000000000000
+      internalID: -3521949275208549161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GTSY FRONT_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d649b680be350f7c0800000000000000
+      internalID: -4039636596827646867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bee37426408ebf942b966775292fb9f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GTSY FRONT_0: 7770604492441141342
+      GTSY FRONT_1: 7857251792519811483
+      GTSY FRONT_10: -3390366910973274383
+      GTSY FRONT_11: 4465374388673367519
+      GTSY FRONT_12: 3289584975728532312
+      GTSY FRONT_13: -3521949275208549161
+      GTSY FRONT_14: -4039636596827646867
+      GTSY FRONT_2: 4503565140987847988
+      GTSY FRONT_3: -3108325590819515640
+      GTSY FRONT_4: 4848489653579484686
+      GTSY FRONT_5: -7316748236359664475
+      GTSY FRONT_6: 5858560561908884428
+      GTSY FRONT_7: 6913115746466777304
+      GTSY FRONT_8: -1211713084349924340
+      GTSY FRONT_9: -2118097201005131750
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1050 @@
+fileFormatVersion: 2
+guid: de551fb87caa77a46b54d3e89f709c9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8997642839712180726
+    second: CLUB BACK IDLE_0
+  - first:
+      213: 1471476246888801897
+    second: CLUB BACK IDLE_1
+  - first:
+      213: -4927740439518280336
+    second: CLUB BACK IDLE_2
+  - first:
+      213: 8759583627929795202
+    second: CLUB BACK IDLE_3
+  - first:
+      213: 6655178272718108130
+    second: CLUB BACK IDLE_4
+  - first:
+      213: 7394374651582086132
+    second: CLUB BACK IDLE_5
+  - first:
+      213: 2337837182626201425
+    second: CLUB BACK IDLE_6
+  - first:
+      213: -2438706632896959676
+    second: CLUB BACK IDLE_7
+  - first:
+      213: -1197739855765531780
+    second: CLUB BACK IDLE_8
+  - first:
+      213: -7937465576551963585
+    second: CLUB BACK IDLE_9
+  - first:
+      213: 632147879485329062
+    second: CLUB BACK IDLE_10
+  - first:
+      213: 1148369392356699196
+    second: CLUB BACK IDLE_11
+  - first:
+      213: -330483649020796140
+    second: CLUB BACK IDLE_12
+  - first:
+      213: 8903261449005870311
+    second: CLUB BACK IDLE_13
+  - first:
+      213: -5255359193730489374
+    second: CLUB BACK IDLE_14
+  - first:
+      213: 8934968063472653203
+    second: CLUB BACK IDLE_15
+  - first:
+      213: 1713871003344783705
+    second: CLUB BACK IDLE_16
+  - first:
+      213: -9190931467424734811
+    second: CLUB BACK IDLE_17
+  - first:
+      213: -8429264943278570729
+    second: CLUB BACK IDLE_18
+  - first:
+      213: -6246475420429830683
+    second: CLUB BACK IDLE_19
+  - first:
+      213: 291542928333895662
+    second: CLUB BACK IDLE_20
+  - first:
+      213: 1676219456035291334
+    second: CLUB BACK IDLE_21
+  - first:
+      213: -4405539554898745093
+    second: CLUB BACK IDLE_22
+  - first:
+      213: -7368347410004618715
+    second: CLUB BACK IDLE_23
+  - first:
+      213: 5628618479535058715
+    second: CLUB BACK IDLE_24
+  - first:
+      213: -5692075703061865268
+    second: CLUB BACK IDLE_25
+  - first:
+      213: -1910322632160024290
+    second: CLUB BACK IDLE_26
+  - first:
+      213: -5527034325876419489
+    second: CLUB BACK IDLE_27
+  - first:
+      213: 4029655154536376714
+    second: CLUB BACK IDLE_28
+  - first:
+      213: -2143276252750261584
+    second: CLUB BACK IDLE_29
+  - first:
+      213: -1343945690216609594
+    second: CLUB BACK IDLE_30
+  - first:
+      213: 7598257010381735232
+    second: CLUB BACK IDLE_31
+  - first:
+      213: -7142279103512928969
+    second: CLUB BACK IDLE_32
+  - first:
+      213: 212028883117109247
+    second: CLUB BACK IDLE_33
+  - first:
+      213: 364305161819618558
+    second: CLUB BACK IDLE_34
+  - first:
+      213: -6840204976199144510
+    second: CLUB BACK IDLE_35
+  - first:
+      213: 5727566562921326150
+    second: CLUB BACK IDLE_36
+  - first:
+      213: 5462643077168237676
+    second: CLUB BACK IDLE_37
+  - first:
+      213: 6046400904174543333
+    second: CLUB BACK IDLE_38
+  - first:
+      213: -4227790920780121024
+    second: CLUB BACK IDLE_39
+  - first:
+      213: -8088254104756048536
+    second: CLUB BACK IDLE_40
+  - first:
+      213: -4951027967257627147
+    second: CLUB BACK IDLE_41
+  - first:
+      213: 7029755297232055496
+    second: CLUB BACK IDLE_42
+  - first:
+      213: 5147051772227478714
+    second: CLUB BACK IDLE_43
+  - first:
+      213: -428460404036079632
+    second: CLUB BACK IDLE_44
+  - first:
+      213: 1085080066345107802
+    second: CLUB BACK IDLE_45
+  - first:
+      213: -4546628902058839344
+    second: CLUB BACK IDLE_46
+  - first:
+      213: -7523006293347022490
+    second: CLUB BACK IDLE_47
+  - first:
+      213: 4267878870169531694
+    second: CLUB BACK IDLE_48
+  - first:
+      213: 2545430298586988174
+    second: CLUB BACK IDLE_49
+  - first:
+      213: -5002948439900318544
+    second: CLUB BACK IDLE_50
+  - first:
+      213: 887137106185625665
+    second: CLUB BACK IDLE_51
+  - first:
+      213: -1366578068679804192
+    second: CLUB BACK IDLE_52
+  - first:
+      213: 8068371171834103268
+    second: CLUB BACK IDLE_53
+  - first:
+      213: 3557736838985313681
+    second: CLUB BACK IDLE_54
+  - first:
+      213: -4091764750248260453
+    second: CLUB BACK IDLE_55
+  - first:
+      213: 8680088735646918743
+    second: CLUB BACK IDLE_56
+  - first:
+      213: -6851374068634353386
+    second: CLUB BACK IDLE_57
+  - first:
+      213: -747340678250643601
+    second: CLUB BACK IDLE_58
+  - first:
+      213: 455187052895302151
+    second: CLUB BACK IDLE_59
+  - first:
+      213: 2438611513926095849
+    second: CLUB BACK IDLE_60
+  - first:
+      213: 6689960216528298247
+    second: CLUB BACK IDLE_61
+  - first:
+      213: -17847384270747490
+    second: CLUB BACK IDLE_62
+  - first:
+      213: 6893188993090786465
+    second: CLUB BACK IDLE_63
+  - first:
+      213: 7109665357387531783
+    second: CLUB BACK IDLE_64
+  - first:
+      213: -5950040436004792079
+    second: CLUB BACK IDLE_65
+  - first:
+      213: 4376426242906682907
+    second: CLUB BACK IDLE_66
+  - first:
+      213: -6171262106099471202
+    second: CLUB BACK IDLE_67
+  - first:
+      213: 3064144326552278640
+    second: CLUB BACK IDLE_68
+  - first:
+      213: -3523461282781848280
+    second: CLUB BACK IDLE_69
+  - first:
+      213: -5004582497062347455
+    second: CLUB BACK IDLE_70
+  - first:
+      213: 5911575890265680381
+    second: CLUB BACK IDLE_71
+  - first:
+      213: 2874683669054110874
+    second: CLUB BACK IDLE_72
+  - first:
+      213: 1895041628982329172
+    second: CLUB BACK IDLE_73
+  - first:
+      213: 3027382135686488389
+    second: CLUB BACK IDLE_74
+  - first:
+      213: 655903955898986463
+    second: CLUB BACK IDLE_75
+  - first:
+      213: 6055327979401306758
+    second: CLUB BACK IDLE_76
+  - first:
+      213: 154912109513901065
+    second: CLUB BACK IDLE_77
+  - first:
+      213: 1230745086280560537
+    second: CLUB BACK IDLE_78
+  - first:
+      213: -8807367360014055163
+    second: CLUB BACK IDLE_79
+  - first:
+      213: 1971222014566638146
+    second: CLUB BACK IDLE_80
+  - first:
+      213: 4144124826832702548
+    second: CLUB BACK IDLE_81
+  - first:
+      213: 4429710696060491527
+    second: CLUB BACK IDLE_82
+  - first:
+      213: -6223151981661514901
+    second: CLUB BACK IDLE_83
+  - first:
+      213: 8913614028578160508
+    second: CLUB BACK IDLE_84
+  - first:
+      213: -2940619733740169255
+    second: CLUB BACK IDLE_85
+  - first:
+      213: -7080673298929995087
+    second: CLUB BACK IDLE_86
+  - first:
+      213: -4738380679642932492
+    second: CLUB BACK IDLE_87
+  - first:
+      213: 2595636575032396865
+    second: CLUB BACK IDLE_88
+  - first:
+      213: 7685060334340123581
+    second: CLUB BACK IDLE_89
+  - first:
+      213: -2273492739876075942
+    second: CLUB BACK IDLE_90
+  - first:
+      213: -2365608897174531974
+    second: CLUB BACK IDLE_91
+  - first:
+      213: 4050980991970880
+    second: CLUB BACK IDLE_92
+  - first:
+      213: 4110714561136522453
+    second: CLUB BACK IDLE_93
+  - first:
+      213: -4830396054573288120
+    second: CLUB BACK IDLE_94
+  - first:
+      213: 3195123746966175030
+    second: CLUB BACK IDLE_95
+  - first:
+      213: 3959885511112854719
+    second: CLUB BACK IDLE_96
+  - first:
+      213: -8614556373826708739
+    second: CLUB BACK IDLE_97
+  - first:
+      213: 5504069317286065744
+    second: CLUB BACK IDLE_98
+  - first:
+      213: 4098885343367707758
+    second: CLUB BACK IDLE_99
+  - first:
+      213: -1800030033076479821
+    second: CLUB BACK IDLE_100
+  - first:
+      213: 8132780669518986470
+    second: CLUB BACK IDLE_101
+  - first:
+      213: 5005031237776223111
+    second: CLUB BACK IDLE_102
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607ebc6df44d83e45a4f711664d6a015
+      internalID: 1478062670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc633ba629599a540a8e835829da6992
+      internalID: 1864163404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c95620f61f03145b67a2cbaa7c9031
+      internalID: -290894744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72815417bf06b4b4c835759759128bdb
+      internalID: -950503927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbf9d85fe571da49993ce04a5b5e76f
+      internalID: 733349839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913b1175da28a7246bda5ca736d8d86d
+      internalID: 474686341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b750f7202d221342a77cc24f523e06a
+      internalID: -286401343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3602d6e8d77149440ac84247e238a030
+      internalID: 860647364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425695caad3f15745bd3194523e0f975
+      internalID: 1695950741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e47fa790106aa42970f853befe0ef5
+      internalID: -1396600792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0438d4d03d208d4996bd44ae9ea2a16
+      internalID: -189578264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a0c7f83b6980f42bc1f862f7f6d48a
+      internalID: 1438488409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab9f9a4922a9674ab2171ef82fe6b8a
+      internalID: 1716062512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82235963f60f15c4d86af818a942d21d
+      internalID: 2079872036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123d683756837d14384d1c6decf394bd
+      internalID: 1801884769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7472f9d0bfa604aae73ce5ff58ce95
+      internalID: 422866748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b18398f8c6d58e449993b0814d9edb9
+      internalID: -859227306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1471f04bc9bbf499b879c295477eac
+      internalID: -1740404601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b102c993dd55a140a621e6dbd9a3de8
+      internalID: 1928683488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91c32a9b823eb045b3e9ad87a8d2db5
+      internalID: -1544366831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95362da53937f2144b3fe19b4d4b0b5d
+      internalID: -1024513290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8358f73d36ee9f748b842f3b77ed0fa9
+      internalID: 1526364780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2400f63c7908994a8ca36532c06eddc
+      internalID: -972843769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3713ce751e9af142b424f6ac4b8581e
+      internalID: -1275997732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4029794fcc8e7e44b5adfba54ea5654
+      internalID: -1820704287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB BACK IDLE_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec6f23b941c2894da9beaaebc9facdb
+      internalID: 776677327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ee0ca3e9c5fbb344094c008f3938c023
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CLUB BACK IDLE_0: 1478062670
+      CLUB BACK IDLE_1: 1864163404
+      CLUB BACK IDLE_10: -189578264
+      CLUB BACK IDLE_11: 1438488409
+      CLUB BACK IDLE_12: 1716062512
+      CLUB BACK IDLE_13: 2079872036
+      CLUB BACK IDLE_14: 1801884769
+      CLUB BACK IDLE_15: 422866748
+      CLUB BACK IDLE_16: -859227306
+      CLUB BACK IDLE_17: -1740404601
+      CLUB BACK IDLE_18: 1928683488
+      CLUB BACK IDLE_19: -1544366831
+      CLUB BACK IDLE_2: -290894744
+      CLUB BACK IDLE_20: -1024513290
+      CLUB BACK IDLE_21: 1526364780
+      CLUB BACK IDLE_22: -972843769
+      CLUB BACK IDLE_23: -1275997732
+      CLUB BACK IDLE_24: -1820704287
+      CLUB BACK IDLE_25: 776677327
+      CLUB BACK IDLE_3: -950503927
+      CLUB BACK IDLE_4: 733349839
+      CLUB BACK IDLE_5: 474686341
+      CLUB BACK IDLE_6: -286401343
+      CLUB BACK IDLE_7: 860647364
+      CLUB BACK IDLE_8: 1695950741
+      CLUB BACK IDLE_9: -1396600792
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

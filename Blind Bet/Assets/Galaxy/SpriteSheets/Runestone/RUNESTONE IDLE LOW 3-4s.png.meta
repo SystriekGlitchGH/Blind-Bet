@@ -123,7 +123,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 550
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -168,6 +168,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -175,10 +201,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_0
       rect:
         serializedVersion: 2
-        x: 692
-        y: 8839
-        width: 518
-        height: 781
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +223,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_1
       rect:
         serializedVersion: 2
-        x: 2617
-        y: 8857
-        width: 516
-        height: 752
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +245,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_2
       rect:
         serializedVersion: 2
-        x: 4548
-        y: 8868
-        width: 516
-        height: 721
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +267,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_3
       rect:
         serializedVersion: 2
-        x: 692
-        y: 7790
-        width: 516
-        height: 698
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +289,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_4
       rect:
         serializedVersion: 2
-        x: 2607
-        y: 7787
-        width: 516
-        height: 683
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +311,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_5
       rect:
         serializedVersion: 2
-        x: 4553
-        y: 7783
-        width: 516
-        height: 671
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +333,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_6
       rect:
         serializedVersion: 2
-        x: 691
-        y: 6699
-        width: 514
-        height: 656
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +355,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_7
       rect:
         serializedVersion: 2
-        x: 2622
-        y: 6694
-        width: 516
-        height: 646
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +377,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_8
       rect:
         serializedVersion: 2
-        x: 4550
-        y: 6685
-        width: 517
-        height: 639
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +399,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_9
       rect:
         serializedVersion: 2
-        x: 691
-        y: 5600
-        width: 515
-        height: 632
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +421,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_10
       rect:
         serializedVersion: 2
-        x: 2611
-        y: 5595
-        width: 516
-        height: 625
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,10 +443,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_11
       rect:
         serializedVersion: 2
-        x: 4549
-        y: 5591
-        width: 515
-        height: 615
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +465,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_12
       rect:
         serializedVersion: 2
-        x: 692
-        y: 4509
-        width: 516
-        height: 615
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,10 +487,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_13
       rect:
         serializedVersion: 2
-        x: 2615
-        y: 4508
-        width: 516
-        height: 616
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +509,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_14
       rect:
         serializedVersion: 2
-        x: 4550
-        y: 4512
-        width: 517
-        height: 626
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +531,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_15
       rect:
         serializedVersion: 2
-        x: 691
-        y: 3436
-        width: 515
-        height: 632
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,10 +553,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_16
       rect:
         serializedVersion: 2
-        x: 2622
-        y: 3441
-        width: 516
-        height: 637
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +575,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_17
       rect:
         serializedVersion: 2
-        x: 4552
-        y: 3451
-        width: 514
-        height: 644
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,10 +597,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_18
       rect:
         serializedVersion: 2
-        x: 692
-        y: 2370
-        width: 515
-        height: 657
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +619,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_19
       rect:
         serializedVersion: 2
-        x: 2618
-        y: 2373
-        width: 516
-        height: 671
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,10 +641,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_20
       rect:
         serializedVersion: 2
-        x: 4550
-        y: 2378
-        width: 516
-        height: 682
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,10 +663,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_21
       rect:
         serializedVersion: 2
-        x: 691
-        y: 1299
-        width: 516
-        height: 698
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +685,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_22
       rect:
         serializedVersion: 2
-        x: 2623
-        y: 1295
-        width: 516
-        height: 721
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -681,10 +707,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_23
       rect:
         serializedVersion: 2
-        x: 4549
-        y: 1283
-        width: 516
-        height: 752
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -703,10 +729,10 @@ TextureImporter:
       name: RUNESTONE IDLE LOW 3-4s_24
       rect:
         serializedVersion: 2
-        x: 691
-        y: 187
-        width: 515
-        height: 778
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,7 +751,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fb89f5d357ebdc44f90fc1fd25c9fa37
     internalID: 0
     vertices: []
     indices: 

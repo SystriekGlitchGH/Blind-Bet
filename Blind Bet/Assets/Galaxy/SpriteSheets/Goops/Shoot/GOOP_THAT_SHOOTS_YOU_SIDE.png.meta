@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 71267d005e6d83d4e9a7df4214bb4f5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6299856686801841244
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_0
+  - first:
+      213: -254311379308516273
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_1
+  - first:
+      213: 1264198392913937949
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_2
+  - first:
+      213: -5109812952094497183
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_3
+  - first:
+      213: -7412889229492937618
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_4
+  - first:
+      213: 2585834307371176923
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_5
+  - first:
+      213: 8633062666137430015
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_6
+  - first:
+      213: -7513155940489885831
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_7
+  - first:
+      213: 7974353944592627648
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_8
+  - first:
+      213: -7580842279632655811
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_9
+  - first:
+      213: 4525648245045683949
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_10
+  - first:
+      213: 3806057086573208271
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_11
+  - first:
+      213: -3596810300988695361
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_12
+  - first:
+      213: 7768378569915467748
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_13
+  - first:
+      213: -5392940801349506897
+    second: GOOP_THAT_SHOOTS_YOU_SIDE_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4358
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a39e4fa8b96298a0800000000000000
+      internalID: -6299856686801841244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4358
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ce9fdd521887cf0800000000000000
+      internalID: -254311379308516273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4358
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1641478db55b8110800000000000000
+      internalID: 1264198392913937949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3269
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166a7b9613c4619b0800000000000000
+      internalID: -5109812952094497183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3269
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c11cc5580202990800000000000000
+      internalID: -7412889229492937618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3269
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd390ea2a9ab2e320800000000000000
+      internalID: 2585834307371176923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2180
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7eec241cccec770800000000000000
+      internalID: 8633062666137430015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2180
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9770cf08a78ebb790800000000000000
+      internalID: -7513155940489885831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2180
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7bda4a9a89aae60800000000000000
+      internalID: 7974353944592627648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1091
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3aab389c107bc690800000000000000
+      internalID: -7580842279632655811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1091
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de66158d9155ece30800000000000000
+      internalID: 4525648245045683949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1091
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2ed0041c4d1d430800000000000000
+      internalID: 3806057086573208271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc5a158610951ec0800000000000000
+      internalID: -3596810300988695361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e781949623decb60800000000000000
+      internalID: 7768378569915467748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GOOP_THAT_SHOOTS_YOU_SIDE_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2
+        width: 1906
+        height: 1069
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa82ad80aec6825b0800000000000000
+      internalID: -5392940801349506897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 43b8e54fbd477d6499421bd2aba95828
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GOOP_THAT_SHOOTS_YOU_SIDE_0: -6299856686801841244
+      GOOP_THAT_SHOOTS_YOU_SIDE_1: -254311379308516273
+      GOOP_THAT_SHOOTS_YOU_SIDE_10: 4525648245045683949
+      GOOP_THAT_SHOOTS_YOU_SIDE_11: 3806057086573208271
+      GOOP_THAT_SHOOTS_YOU_SIDE_12: -3596810300988695361
+      GOOP_THAT_SHOOTS_YOU_SIDE_13: 7768378569915467748
+      GOOP_THAT_SHOOTS_YOU_SIDE_14: -5392940801349506897
+      GOOP_THAT_SHOOTS_YOU_SIDE_2: 1264198392913937949
+      GOOP_THAT_SHOOTS_YOU_SIDE_3: -5109812952094497183
+      GOOP_THAT_SHOOTS_YOU_SIDE_4: -7412889229492937618
+      GOOP_THAT_SHOOTS_YOU_SIDE_5: 2585834307371176923
+      GOOP_THAT_SHOOTS_YOU_SIDE_6: 8633062666137430015
+      GOOP_THAT_SHOOTS_YOU_SIDE_7: -7513155940489885831
+      GOOP_THAT_SHOOTS_YOU_SIDE_8: 7974353944592627648
+      GOOP_THAT_SHOOTS_YOU_SIDE_9: -7580842279632655811
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

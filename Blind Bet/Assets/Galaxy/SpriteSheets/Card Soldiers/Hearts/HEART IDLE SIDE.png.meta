@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: bb41f3f29663dac47adc6ffdaa86cac8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -150482681692157059
+    second: HEART IDLE SIDE_0
+  - first:
+      213: 725410528188050602
+    second: HEART IDLE SIDE_1
+  - first:
+      213: 5918025909137241647
+    second: HEART IDLE SIDE_2
+  - first:
+      213: -6709740365986435230
+    second: HEART IDLE SIDE_3
+  - first:
+      213: 8145959611472805974
+    second: HEART IDLE SIDE_4
+  - first:
+      213: 6601945278972076513
+    second: HEART IDLE SIDE_5
+  - first:
+      213: 7566430771172598815
+    second: HEART IDLE SIDE_6
+  - first:
+      213: -2505402984495112668
+    second: HEART IDLE SIDE_7
+  - first:
+      213: 3675074396137885354
+    second: HEART IDLE SIDE_8
+  - first:
+      213: -455846573689327045
+    second: HEART IDLE SIDE_9
+  - first:
+      213: 446178479730228234
+    second: HEART IDLE SIDE_10
+  - first:
+      213: -3759694198198082122
+    second: HEART IDLE SIDE_11
+  - first:
+      213: 8969537723240914880
+    second: HEART IDLE SIDE_12
+  - first:
+      213: 835027713412818039
+    second: HEART IDLE SIDE_13
+  - first:
+      213: 8992476568982492552
+    second: HEART IDLE SIDE_14
+  - first:
+      213: -8810295438775198906
+    second: HEART IDLE SIDE_15
+  - first:
+      213: 3683198983304832687
+    second: HEART IDLE SIDE_16
+  - first:
+      213: 8235938858085105136
+    second: HEART IDLE SIDE_17
+  - first:
+      213: 6427935671066408772
+    second: HEART IDLE SIDE_18
+  - first:
+      213: 9189999947203608977
+    second: HEART IDLE SIDE_19
+  - first:
+      213: -1372141866765747850
+    second: HEART IDLE SIDE_20
+  - first:
+      213: 896337460972884176
+    second: HEART IDLE SIDE_21
+  - first:
+      213: 8272641848891217941
+    second: HEART IDLE SIDE_22
+  - first:
+      213: 4271533602028702612
+    second: HEART IDLE SIDE_23
+  - first:
+      213: -3592040988625944288
+    second: HEART IDLE SIDE_24
+  - first:
+      213: -4630507569498343805
+    second: HEART IDLE SIDE_25
+  - first:
+      213: 3479816515846113908
+    second: HEART IDLE SIDE_26
+  - first:
+      213: 5301870021873301102
+    second: HEART IDLE SIDE_27
+  - first:
+      213: -3239749268079007405
+    second: HEART IDLE SIDE_28
+  - first:
+      213: 3512292109180210757
+    second: HEART IDLE SIDE_29
+  - first:
+      213: -1015133352845420094
+    second: HEART IDLE SIDE_30
+  - first:
+      213: 209851415196625850
+    second: HEART IDLE SIDE_31
+  - first:
+      213: -1712376552566023827
+    second: HEART IDLE SIDE_32
+  - first:
+      213: 1085656920696875911
+    second: HEART IDLE SIDE_33
+  - first:
+      213: 9205190940734344906
+    second: HEART IDLE SIDE_34
+  - first:
+      213: -3765837429609250575
+    second: HEART IDLE SIDE_35
+  - first:
+      213: 8860093159174474770
+    second: HEART IDLE SIDE_36
+  - first:
+      213: 5788866662594635130
+    second: HEART IDLE SIDE_37
+  - first:
+      213: 3438021251062566602
+    second: HEART IDLE SIDE_38
+  - first:
+      213: -3084013025649287280
+    second: HEART IDLE SIDE_39
+  - first:
+      213: -7205213919653256714
+    second: HEART IDLE SIDE_40
+  - first:
+      213: -4820730287632864215
+    second: HEART IDLE SIDE_41
+  - first:
+      213: 6728908443133026890
+    second: HEART IDLE SIDE_42
+  - first:
+      213: -1297761356374592031
+    second: HEART IDLE SIDE_43
+  - first:
+      213: 7388932808659335877
+    second: HEART IDLE SIDE_44
+  - first:
+      213: -2085897766834512001
+    second: HEART IDLE SIDE_45
+  - first:
+      213: -4872387863755425976
+    second: HEART IDLE SIDE_46
+  - first:
+      213: -5839669498546446241
+    second: HEART IDLE SIDE_47
+  - first:
+      213: 1582217643849308510
+    second: HEART IDLE SIDE_48
+  - first:
+      213: -8879944546590580091
+    second: HEART IDLE SIDE_49
+  - first:
+      213: -4443418049588621723
+    second: HEART IDLE SIDE_50
+  - first:
+      213: -2428297840344950162
+    second: HEART IDLE SIDE_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2d62919f35ee143bd9d411f8f75b20
+      internalID: 1136259337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628b91e67f9d64b4a808f9cd0ffac1ea
+      internalID: 108774515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067d4325d3a8ed64fb1a12cf67b1541a
+      internalID: 45296696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f028b860950f849b26e91dd8d0d6d6
+      internalID: -851056200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc9c42d4c8a29149b71f0aef9fa52f8
+      internalID: -966145039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5f4fa3bfaf23641ac950578e6f8a08
+      internalID: 175630329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76025e41350826409bbd17e69cf13bc
+      internalID: 433856221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d85ccc6a81e9b409fb0bdc5168dddb
+      internalID: 239029845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3238f9f2dacfff43a491eb750fe0bb1
+      internalID: -477955292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5d93b71d9c7584e9bbc24fba13a4b3
+      internalID: -602504756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8d862fcb64ba847bae54656ba77381
+      internalID: -708780586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1226513f621a7944a804ced6d0cb049e
+      internalID: -1008702644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6ea66e102e29640aac3ac52c46769c
+      internalID: 1750858469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e458f4f061da45459ea293dfbec784c
+      internalID: 1374954473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5a3946bf88b2e44acc6025d6794183
+      internalID: 1990118795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a755d3f96c6f19e49b2aff7aabb537e2
+      internalID: 908107011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fbe12a7181a154b820fd08f272f1f0
+      internalID: -732773067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13db9e14b711644b9734265b5a48956
+      internalID: -1659913967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6704024bdcfc247ae948f8fcb41828
+      internalID: -1457410637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e39ae93350a824d982760b883f1bde
+      internalID: -251540601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8525ed0f81ebd4e9389c25674bddcb
+      internalID: 1868000067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b67188536bb71544bfb4b870fa4e3c7
+      internalID: 1785816127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e8aabaed5fccf429d6d6271d03b42b
+      internalID: 1458849915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47a6714618fe50459f3fb2cfed1c6a7
+      internalID: 1111406194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069738437bdd2ed469514579d802110e
+      internalID: 822486100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE SIDE_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432b0565ec7f123448058bca897be429
+      internalID: -1596339658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e2c5830567ad4734aa6e4ddcc8cd489c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HEART IDLE SIDE_0: 1136259337
+      HEART IDLE SIDE_1: 108774515
+      HEART IDLE SIDE_10: -708780586
+      HEART IDLE SIDE_11: -1008702644
+      HEART IDLE SIDE_12: 1750858469
+      HEART IDLE SIDE_13: 1374954473
+      HEART IDLE SIDE_14: 1990118795
+      HEART IDLE SIDE_15: 908107011
+      HEART IDLE SIDE_16: -732773067
+      HEART IDLE SIDE_17: -1659913967
+      HEART IDLE SIDE_18: -1457410637
+      HEART IDLE SIDE_19: -251540601
+      HEART IDLE SIDE_2: 45296696
+      HEART IDLE SIDE_20: 1868000067
+      HEART IDLE SIDE_21: 1785816127
+      HEART IDLE SIDE_22: 1458849915
+      HEART IDLE SIDE_23: 1111406194
+      HEART IDLE SIDE_24: 822486100
+      HEART IDLE SIDE_25: -1596339658
+      HEART IDLE SIDE_3: -851056200
+      HEART IDLE SIDE_4: -966145039
+      HEART IDLE SIDE_5: 175630329
+      HEART IDLE SIDE_6: 433856221
+      HEART IDLE SIDE_7: 239029845
+      HEART IDLE SIDE_8: -477955292
+      HEART IDLE SIDE_9: -602504756
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
