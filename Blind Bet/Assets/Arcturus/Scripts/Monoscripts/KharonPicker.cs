@@ -12,6 +12,5 @@ public class KharonPicker : MonoBehaviour
             Time.timeScale = 0;
             interactedWith = true;
         }
-        
     }
 }
