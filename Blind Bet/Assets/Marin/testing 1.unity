@@ -10058,7 +10058,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d3667e1bcb23f3648842f9dfae3e0a90, type: 2}
+  - {fileID: 2100000, guid: 1d3d0913e951bbd45b2acf67801719af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24585,7 +24585,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d3667e1bcb23f3648842f9dfae3e0a90, type: 2}
+  - {fileID: 2100000, guid: 1d3d0913e951bbd45b2acf67801719af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24680,7 +24680,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d3667e1bcb23f3648842f9dfae3e0a90, type: 2}
+  - {fileID: 2100000, guid: 1d3d0913e951bbd45b2acf67801719af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43913,7 +43913,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d3667e1bcb23f3648842f9dfae3e0a90, type: 2}
+  - {fileID: 2100000, guid: 1d3d0913e951bbd45b2acf67801719af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -63248,7 +63248,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d3667e1bcb23f3648842f9dfae3e0a90, type: 2}
+  - {fileID: 2100000, guid: 1d3d0913e951bbd45b2acf67801719af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -63602,8 +63602,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 1, b: 1, a: 0.49803922}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.74509805}
+      minColor: {r: 1, g: 1, b: 1, a: 0.28235295}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.3254902}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -66226,7 +66226,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     separateAxes: 0
-    frequency: 0.5
+    frequency: 0.74
     damping: 1
     octaves: 1
     octaveMultiplier: 0.5
@@ -77820,7 +77820,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d3667e1bcb23f3648842f9dfae3e0a90, type: 2}
+  - {fileID: 2100000, guid: 1d3d0913e951bbd45b2acf67801719af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
