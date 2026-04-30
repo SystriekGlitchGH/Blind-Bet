@@ -64,10 +64,10 @@ MonoBehaviour:
   hasEnrage: 0
   buffDebuffs: []
   weapon:
-    baseAttack: 30
-    baseAttackSpeed: 10
-    baseKnockback: 14
-    baseAttackSize: {x: 4.5, y: 3}
+    baseAttack: 0
+    baseAttackSpeed: 0
+    baseKnockback: 0
+    baseAttackSize: {x: 0, y: 0}
     baseParrySize: {x: 2, y: 1}
   baseSpeed: 10
   maxHealth: 100
