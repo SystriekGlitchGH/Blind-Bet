@@ -141,3 +141,49 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 1b72369f24ab6e94e8243891352adf3e, type: 2}
     - {fileID: 11400000, guid: 442052e87a01cbe4fa1d609f3cb27022, type: 2}
     - {fileID: 11400000, guid: fbf871ea0cd31f84ca3a510fecf494d9, type: 2}
+  buffs:
+  - name: sharp
+    effect: Attack Damage +30%
+  - name: agile
+    effect: Attack Speed +30%
+  - name: sweeping
+    effect: Attack Size +30%
+  - name: sending
+    effect: Attack Knockback +50%
+  - name: swift
+    effect: Run Speed +30%
+  - name: arcane
+    effect: Ability Damage +30%
+  - name: forceful
+    effect: Ability Knockback +50%
+  - name: untiring
+    effect: Dash Cooldown -50%
+  - name: slicing
+    effect: Dash Damage +80%
+  - name: leaping
+    effect: Dash Distance +50%
+  - name: hardened
+    effect: Damage Taken -20%
+  debuffs:
+  - name: dull
+    effect: Attack Damage -30%
+  - name: clumsy
+    effect: Attack Speed -50%
+  - name: reserved
+    effect: Attack Size -30%
+  - name: tapping
+    effect: Attack Knockback -70%
+  - name: crawling
+    effect: Run Speed -50%
+  - name: oblivious
+    effect: Ability Damage -30%
+  - name: passive
+    effect: Ability Knockback -70%
+  - name: exhausted
+    effect: Dash Cooldown +80%
+  - name: padded
+    effect: Dash Damage -90%
+  - name: lumbering
+    effect: Dash Distance -50%
+  - name: fragile
+    effect: Damage Taken +30%

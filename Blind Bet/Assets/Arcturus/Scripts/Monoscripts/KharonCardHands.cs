@@ -7,9 +7,18 @@ using System.Collections.Generic;
 public class KharonCardHands : ScriptableObject
 {
     [Serializable]
-    public struct KharonHands
+    public struct KharonHand
     {
         public Card[] hand;
     }
-    public List<KharonHands> cardHands = new List<KharonHands>();
+    [Serializable]
+    public struct KharonBuffDebuff
+    {
+        public string name;
+        public string effect;
+    }
+    public List<KharonHand> cardHands = new List<KharonHand>();
+    public List<KharonBuffDebuff> buffs = new List<KharonBuffDebuff>();
+    public List<KharonBuffDebuff> debuffs = new List<KharonBuffDebuff>();
+
 }
