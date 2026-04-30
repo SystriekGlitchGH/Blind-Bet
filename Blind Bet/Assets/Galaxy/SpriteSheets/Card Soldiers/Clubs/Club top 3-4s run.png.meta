@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: f83e984d5e50da243b8e80406ebae69a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8178585291341787819
+    second: Club top 3-4s run_0
+  - first:
+      213: 1948551867938892105
+    second: Club top 3-4s run_1
+  - first:
+      213: 2314415546293226862
+    second: Club top 3-4s run_2
+  - first:
+      213: -681508051077381311
+    second: Club top 3-4s run_3
+  - first:
+      213: 8210464821072322741
+    second: Club top 3-4s run_4
+  - first:
+      213: -6881215834136843140
+    second: Club top 3-4s run_5
+  - first:
+      213: 3318559192912530316
+    second: Club top 3-4s run_6
+  - first:
+      213: 869811583410995427
+    second: Club top 3-4s run_7
+  - first:
+      213: 4596402264843818815
+    second: Club top 3-4s run_8
+  - first:
+      213: 3950968343895537031
+    second: Club top 3-4s run_9
+  - first:
+      213: -7083170118216844976
+    second: Club top 3-4s run_10
+  - first:
+      213: -647787547991548584
+    second: Club top 3-4s run_11
+  - first:
+      213: 8988130133414672965
+    second: Club top 3-4s run_12
+  - first:
+      213: 7502472214129603668
+    second: Club top 3-4s run_13
+  - first:
+      213: -2044840118085620651
+    second: Club top 3-4s run_14
+  - first:
+      213: -5508326095204199905
+    second: Club top 3-4s run_15
+  - first:
+      213: -8164530109979137360
+    second: Club top 3-4s run_16
+  - first:
+      213: 4667594391350592097
+    second: Club top 3-4s run_17
+  - first:
+      213: 4806777269449184905
+    second: Club top 3-4s run_18
+  - first:
+      213: -587924738456406832
+    second: Club top 3-4s run_19
+  - first:
+      213: 1174214390937248527
+    second: Club top 3-4s run_20
+  - first:
+      213: 4699933526138700131
+    second: Club top 3-4s run_21
+  - first:
+      213: 6328296833399634730
+    second: Club top 3-4s run_22
+  - first:
+      213: -3254971192586567491
+    second: Club top 3-4s run_23
+  - first:
+      213: -8945650546183868312
+    second: Club top 3-4s run_24
+  - first:
+      213: -6192862827020842702
+    second: Club top 3-4s run_25
+  - first:
+      213: -3975390716200981302
+    second: Club top 3-4s run_26
+  - first:
+      213: -3069311875764926517
+    second: Club top 3-4s run_27
+  - first:
+      213: -3905702723885184591
+    second: Club top 3-4s run_28
+  - first:
+      213: -4759793297018061605
+    second: Club top 3-4s run_29
+  - first:
+      213: 2148430614917224119
+    second: Club top 3-4s run_30
+  - first:
+      213: -2573386471187761506
+    second: Club top 3-4s run_31
+  - first:
+      213: -7370196000914132646
+    second: Club top 3-4s run_32
+  - first:
+      213: 6973543721024693360
+    second: Club top 3-4s run_33
+  - first:
+      213: -8184508217044382976
+    second: Club top 3-4s run_34
+  - first:
+      213: -1197722388090688026
+    second: Club top 3-4s run_35
+  - first:
+      213: -3012373838821252681
+    second: Club top 3-4s run_36
+  - first:
+      213: 3775118332381064465
+    second: Club top 3-4s run_37
+  - first:
+      213: -9081706620849025621
+    second: Club top 3-4s run_38
+  - first:
+      213: 3237687030010611945
+    second: Club top 3-4s run_39
+  - first:
+      213: -1828224021726613521
+    second: Club top 3-4s run_40
+  - first:
+      213: -1513753330341248523
+    second: Club top 3-4s run_41
+  - first:
+      213: -3054745760387346739
+    second: Club top 3-4s run_42
+  - first:
+      213: -2098056848558315417
+    second: Club top 3-4s run_43
+  - first:
+      213: 3823464893753724279
+    second: Club top 3-4s run_44
+  - first:
+      213: 2767750853699572385
+    second: Club top 3-4s run_45
+  - first:
+      213: -3788035592109779214
+    second: Club top 3-4s run_46
+  - first:
+      213: 3799125763846269971
+    second: Club top 3-4s run_47
+  - first:
+      213: 5071814083254480504
+    second: Club top 3-4s run_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Club top 3-4s run_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b76ead9c5f7b6447af72c95eafe919c
+      internalID: 1362621670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14de65677965f5c42b5cfb83df443cda
+      internalID: -883756963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f9c6e78aa208849a0bf93acef6bd27
+      internalID: -1512101538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3083e66421d3ba5478b8195d29085e16
+      internalID: -2143221460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db94b4e039e58848bb748469d648048
+      internalID: -2006795639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee210743b11630746a87d809ee09eea9
+      internalID: -485240019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08226da984c2bc4eaa280b34662789b
+      internalID: -877031016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4849ce3432d08e149955d5164b9f537c
+      internalID: 765193150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246008323810aa34481e358f38ad3263
+      internalID: -1446593778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6feacab215001ed41ae3c3fa00804fda
+      internalID: 1355135834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477974ff98936a44481d104b213af381
+      internalID: 615557307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0382f0e06ebcd4eb90ddb2d02ab73f
+      internalID: 53198226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70f8a043f86bbd40990b5f6d1a312f6
+      internalID: -1229656809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Club top 3-4s run_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff76b4d919aa97a4aaef24728e80f417
+      internalID: 2082643576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e0ae17927ee1f648a11e1361be77b0a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Club top 3-4s run_0: 1362621670
+      Club top 3-4s run_1: -883756963
+      Club top 3-4s run_10: 615557307
+      Club top 3-4s run_11: 53198226
+      Club top 3-4s run_12: -1229656809
+      Club top 3-4s run_13: 2082643576
+      Club top 3-4s run_2: -1512101538
+      Club top 3-4s run_3: -2143221460
+      Club top 3-4s run_4: -2006795639
+      Club top 3-4s run_5: -485240019
+      Club top 3-4s run_6: -877031016
+      Club top 3-4s run_7: 765193150
+      Club top 3-4s run_8: -1446593778
+      Club top 3-4s run_9: 1355135834
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

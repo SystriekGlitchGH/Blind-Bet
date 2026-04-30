@@ -68,15 +68,6 @@ TextureImporter:
   - first:
       213: -4535208710268612456
     second: RUNESTONE SIDE IDLE_21
-  - first:
-      213: -9206396174955948818
-    second: RUNESTONE SIDE IDLE_22
-  - first:
-      213: 8086488881628943126
-    second: RUNESTONE SIDE IDLE_23
-  - first:
-      213: 1397722262107736721
-    second: RUNESTONE SIDE IDLE_24
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -123,7 +114,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 550
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -168,6 +159,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -175,10 +192,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_0
       rect:
         serializedVersion: 2
-        x: 681
-        y: 8821
-        width: 519
-        height: 799
+        x: 0
+        y: 7592
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +214,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_1
       rect:
         serializedVersion: 2
-        x: 2608
-        y: 8833
-        width: 518
-        height: 773
+        x: 1926
+        y: 7592
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +236,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_2
       rect:
         serializedVersion: 2
-        x: 4531
-        y: 8844
-        width: 519
-        height: 741
+        x: 3852
+        y: 7592
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +258,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_3
       rect:
         serializedVersion: 2
-        x: 683
-        y: 7772
-        width: 520
-        height: 714
+        x: 0
+        y: 6508
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +280,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_4
       rect:
         serializedVersion: 2
-        x: 2608
-        y: 7786
-        width: 518
-        height: 687
+        x: 1926
+        y: 6508
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +302,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_5
       rect:
         serializedVersion: 2
-        x: 4536
-        y: 7780
-        width: 520
-        height: 680
+        x: 3852
+        y: 6508
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +324,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_6
       rect:
         serializedVersion: 2
-        x: 682
-        y: 6696
-        width: 519
-        height: 666
+        x: 0
+        y: 5424
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +346,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_7
       rect:
         serializedVersion: 2
-        x: 2608
-        y: 6692
-        width: 519
-        height: 658
+        x: 1926
+        y: 5424
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +368,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_8
       rect:
         serializedVersion: 2
-        x: 4537
-        y: 6685
-        width: 519
-        height: 650
+        x: 3852
+        y: 5424
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +390,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_9
       rect:
         serializedVersion: 2
-        x: 682
-        y: 5598
-        width: 519
-        height: 637
+        x: 0
+        y: 4340
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +412,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_10
       rect:
         serializedVersion: 2
-        x: 2609
-        y: 5594
-        width: 519
-        height: 630
+        x: 1926
+        y: 4340
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,10 +434,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_11
       rect:
         serializedVersion: 2
-        x: 4536
-        y: 5589
-        width: 520
-        height: 609
+        x: 3852
+        y: 4340
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +456,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_12
       rect:
         serializedVersion: 2
-        x: 683
-        y: 4507
-        width: 519
-        height: 609
+        x: 0
+        y: 3256
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,10 +478,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_13
       rect:
         serializedVersion: 2
-        x: 2609
-        y: 4507
-        width: 520
-        height: 609
+        x: 1926
+        y: 3256
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +500,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_14
       rect:
         serializedVersion: 2
-        x: 4537
-        y: 4511
-        width: 519
-        height: 631
+        x: 3852
+        y: 3256
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +522,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_15
       rect:
         serializedVersion: 2
-        x: 682
-        y: 3435
-        width: 519
-        height: 636
+        x: 0
+        y: 2172
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,10 +544,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_16
       rect:
         serializedVersion: 2
-        x: 2608
-        y: 3442
-        width: 518
-        height: 647
+        x: 1926
+        y: 2172
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +566,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_17
       rect:
         serializedVersion: 2
-        x: 4537
-        y: 3443
-        width: 520
-        height: 660
+        x: 3852
+        y: 2172
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,10 +588,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_18
       rect:
         serializedVersion: 2
-        x: 682
-        y: 2368
-        width: 519
-        height: 666
+        x: 0
+        y: 1088
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +610,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_19
       rect:
         serializedVersion: 2
-        x: 2609
-        y: 2371
-        width: 519
-        height: 680
+        x: 1926
+        y: 1088
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,10 +632,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_20
       rect:
         serializedVersion: 2
-        x: 4537
-        y: 2373
-        width: 520
-        height: 689
+        x: 3852
+        y: 1088
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,10 +654,10 @@ TextureImporter:
       name: RUNESTONE SIDE IDLE_21
       rect:
         serializedVersion: 2
-        x: 682
-        y: 1281
-        width: 520
-        height: 714
+        x: 0
+        y: 4
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -655,77 +672,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: RUNESTONE SIDE IDLE_22
-      rect:
-        serializedVersion: 2
-        x: 2608
-        y: 1269
-        width: 518
-        height: 742
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee45c3ad47f4c3080800000000000000
-      internalID: -9206396174955948818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RUNESTONE SIDE IDLE_23
-      rect:
-        serializedVersion: 2
-        x: 4536
-        y: 1257
-        width: 519
-        height: 774
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 61393a53bcaf83070800000000000000
-      internalID: 8086488881628943126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RUNESTONE SIDE IDLE_24
-      rect:
-        serializedVersion: 2
-        x: 684
-        y: 163
-        width: 520
-        height: 801
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19a469fedf4b56310800000000000000
-      internalID: 1397722262107736721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 64c568cad9d766a45974b1a32ab898b6
     internalID: 0
     vertices: []
     indices: 
@@ -750,9 +701,6 @@ TextureImporter:
       RUNESTONE SIDE IDLE_2: 1053385788141454526
       RUNESTONE SIDE IDLE_20: 7000582388252183428
       RUNESTONE SIDE IDLE_21: -4535208710268612456
-      RUNESTONE SIDE IDLE_22: -9206396174955948818
-      RUNESTONE SIDE IDLE_23: 8086488881628943126
-      RUNESTONE SIDE IDLE_24: 1397722262107736721
       RUNESTONE SIDE IDLE_3: -3691528389468951416
       RUNESTONE SIDE IDLE_4: -2763409966404203146
       RUNESTONE SIDE IDLE_5: 3885550292746701428

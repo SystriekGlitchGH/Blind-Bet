@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b225a57738924b949972b6b1c6ea8929
+guid: 64ce4bcb0b8c61b4db77a361b4d13c14
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -173,27 +173,6 @@ TextureImporter:
   - first:
       213: -3917281028153007116
     second: RUNESTONE IDLE FRONT_56
-  - first:
-      213: 5887396039681447438
-    second: RUNESTONE IDLE FRONT_57
-  - first:
-      213: -6862400090709379082
-    second: RUNESTONE IDLE FRONT_58
-  - first:
-      213: -8224354809395313999
-    second: RUNESTONE IDLE FRONT_59
-  - first:
-      213: -4695031627816353092
-    second: RUNESTONE IDLE FRONT_60
-  - first:
-      213: -3968009357537562973
-    second: RUNESTONE IDLE FRONT_61
-  - first:
-      213: 4886442156411352010
-    second: RUNESTONE IDLE FRONT_62
-  - first:
-      213: -7290722993707129211
-    second: RUNESTONE IDLE FRONT_63
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -285,6 +264,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -293,9 +298,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 8656
+        y: 7592
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,9 +320,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1926
-        y: 8656
+        y: 7592
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,9 +342,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3852
-        y: 8656
+        y: 7592
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,9 +364,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 7574
+        y: 6508
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,9 +386,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1926
-        y: 7574
+        y: 6508
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,9 +408,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3852
-        y: 7574
+        y: 6508
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,9 +430,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 6492
+        y: 5424
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,9 +452,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1926
-        y: 6492
+        y: 5424
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,9 +474,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3852
-        y: 6492
+        y: 5424
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,9 +496,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5410
+        y: 4340
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -513,9 +518,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1926
-        y: 5410
+        y: 4340
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -535,9 +540,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3852
-        y: 5410
+        y: 4340
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,9 +562,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4328
+        y: 3256
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -579,9 +584,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1926
-        y: 4328
+        y: 3256
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -601,9 +606,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3852
-        y: 4328
+        y: 3256
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -623,9 +628,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3246
+        y: 2172
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -645,9 +650,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1926
-        y: 3246
+        y: 2172
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,9 +672,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3852
-        y: 3246
+        y: 2172
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -689,9 +694,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2164
+        y: 1088
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -711,9 +716,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1926
-        y: 2164
+        y: 1088
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -733,9 +738,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3852
-        y: 2164
+        y: 1088
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -755,9 +760,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1082
+        y: 4
         width: 1906
-        height: 1062
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,77 +777,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: RUNESTONE IDLE FRONT_22
-      rect:
-        serializedVersion: 2
-        x: 1926
-        y: 1082
-        width: 1906
-        height: 1062
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae1e15e766b5e6740800000000000000
-      internalID: 5147151919895142890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RUNESTONE IDLE FRONT_23
-      rect:
-        serializedVersion: 2
-        x: 3852
-        y: 1082
-        width: 1906
-        height: 1062
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15c702bc91553e9d0800000000000000
-      internalID: -2746257778495423407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RUNESTONE IDLE FRONT_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1906
-        height: 1062
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f57df17f1f2baaf00800000000000000
-      internalID: 1128911408912652127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 240815cac4895304d9a46490f92763e1
+    spriteID: a4d61c3b129ded641a3c3c895093cb16
     internalID: 0
     vertices: []
     indices: 
@@ -867,9 +806,6 @@ TextureImporter:
       RUNESTONE IDLE FRONT_2: -846322011423098581
       RUNESTONE IDLE FRONT_20: 2273814988589818520
       RUNESTONE IDLE FRONT_21: 7935159537205493608
-      RUNESTONE IDLE FRONT_22: 5147151919895142890
-      RUNESTONE IDLE FRONT_23: -2746257778495423407
-      RUNESTONE IDLE FRONT_24: 1128911408912652127
       RUNESTONE IDLE FRONT_3: -2358785553149437682
       RUNESTONE IDLE FRONT_4: 3064379557839734922
       RUNESTONE IDLE FRONT_5: -2465240106908642911

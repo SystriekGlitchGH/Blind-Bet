@@ -1,0 +1,1101 @@
+fileFormatVersion: 2
+guid: 0e86cf58a113bde4488e0e32ab754edc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5027417964218775642
+    second: CLUB top 3-4s IDLE_0
+  - first:
+      213: 1069384715433848315
+    second: CLUB top 3-4s IDLE_1
+  - first:
+      213: 214529339722604951
+    second: CLUB top 3-4s IDLE_2
+  - first:
+      213: -5180025140065719083
+    second: CLUB top 3-4s IDLE_3
+  - first:
+      213: -3067018086346141836
+    second: CLUB top 3-4s IDLE_4
+  - first:
+      213: 8245004994243162828
+    second: CLUB top 3-4s IDLE_5
+  - first:
+      213: -4339309468075480658
+    second: CLUB top 3-4s IDLE_6
+  - first:
+      213: -1507122670097273367
+    second: CLUB top 3-4s IDLE_7
+  - first:
+      213: -7352046714773977526
+    second: CLUB top 3-4s IDLE_8
+  - first:
+      213: 3575655913834234293
+    second: CLUB top 3-4s IDLE_9
+  - first:
+      213: 142778326308654637
+    second: CLUB top 3-4s IDLE_10
+  - first:
+      213: -6530389116307842321
+    second: CLUB top 3-4s IDLE_11
+  - first:
+      213: 7199095323155854457
+    second: CLUB top 3-4s IDLE_12
+  - first:
+      213: -1406526064400805366
+    second: CLUB top 3-4s IDLE_13
+  - first:
+      213: 4204044011767979071
+    second: CLUB top 3-4s IDLE_14
+  - first:
+      213: 3080299187502223575
+    second: CLUB top 3-4s IDLE_15
+  - first:
+      213: 6221046822011978265
+    second: CLUB top 3-4s IDLE_16
+  - first:
+      213: 1342493401158588649
+    second: CLUB top 3-4s IDLE_17
+  - first:
+      213: 2862298893261041907
+    second: CLUB top 3-4s IDLE_18
+  - first:
+      213: -4940508446517872442
+    second: CLUB top 3-4s IDLE_19
+  - first:
+      213: 5864632594902711583
+    second: CLUB top 3-4s IDLE_20
+  - first:
+      213: 9031770683438066396
+    second: CLUB top 3-4s IDLE_21
+  - first:
+      213: 1027192015220638973
+    second: CLUB top 3-4s IDLE_22
+  - first:
+      213: 1035825161876190311
+    second: CLUB top 3-4s IDLE_23
+  - first:
+      213: -8059079858156190858
+    second: CLUB top 3-4s IDLE_24
+  - first:
+      213: -8697252809897284169
+    second: CLUB top 3-4s IDLE_25
+  - first:
+      213: 1113065738350662822
+    second: CLUB top 3-4s IDLE_26
+  - first:
+      213: 2176314807260041441
+    second: CLUB top 3-4s IDLE_27
+  - first:
+      213: 5672229694377453869
+    second: CLUB top 3-4s IDLE_28
+  - first:
+      213: -1970460580441960056
+    second: CLUB top 3-4s IDLE_29
+  - first:
+      213: 9147901064747376641
+    second: CLUB top 3-4s IDLE_30
+  - first:
+      213: -735600528321926932
+    second: CLUB top 3-4s IDLE_31
+  - first:
+      213: -4960809200417528375
+    second: CLUB top 3-4s IDLE_32
+  - first:
+      213: -5777606591916326250
+    second: CLUB top 3-4s IDLE_33
+  - first:
+      213: -1841554649036765218
+    second: CLUB top 3-4s IDLE_34
+  - first:
+      213: 4593340189369756761
+    second: CLUB top 3-4s IDLE_35
+  - first:
+      213: -7903724517418361217
+    second: CLUB top 3-4s IDLE_36
+  - first:
+      213: 8395132846342470630
+    second: CLUB top 3-4s IDLE_37
+  - first:
+      213: 2135783675862308649
+    second: CLUB top 3-4s IDLE_38
+  - first:
+      213: -3632965927638130697
+    second: CLUB top 3-4s IDLE_39
+  - first:
+      213: 9220012231348813797
+    second: CLUB top 3-4s IDLE_40
+  - first:
+      213: 5472996332225785957
+    second: CLUB top 3-4s IDLE_41
+  - first:
+      213: 7500870104073166557
+    second: CLUB top 3-4s IDLE_42
+  - first:
+      213: 4267093890052552129
+    second: CLUB top 3-4s IDLE_43
+  - first:
+      213: -8689116023026233111
+    second: CLUB top 3-4s IDLE_44
+  - first:
+      213: 2634228145082724313
+    second: CLUB top 3-4s IDLE_45
+  - first:
+      213: -2518366675885431150
+    second: CLUB top 3-4s IDLE_46
+  - first:
+      213: 6245973901906037767
+    second: CLUB top 3-4s IDLE_47
+  - first:
+      213: 7073170268581425420
+    second: CLUB top 3-4s IDLE_48
+  - first:
+      213: 6512668540068172748
+    second: CLUB top 3-4s IDLE_49
+  - first:
+      213: 4483513751215844731
+    second: CLUB top 3-4s IDLE_50
+  - first:
+      213: -3642495452963231699
+    second: CLUB top 3-4s IDLE_51
+  - first:
+      213: 4566495482028216830
+    second: CLUB top 3-4s IDLE_52
+  - first:
+      213: -2969438847462459436
+    second: CLUB top 3-4s IDLE_53
+  - first:
+      213: -920087339194566795
+    second: CLUB top 3-4s IDLE_54
+  - first:
+      213: -2328497992801219908
+    second: CLUB top 3-4s IDLE_55
+  - first:
+      213: 1474631144405055440
+    second: CLUB top 3-4s IDLE_56
+  - first:
+      213: 6921672215421840969
+    second: CLUB top 3-4s IDLE_57
+  - first:
+      213: 1446446330443748568
+    second: CLUB top 3-4s IDLE_58
+  - first:
+      213: 7311141019756575744
+    second: CLUB top 3-4s IDLE_59
+  - first:
+      213: 210221594717450001
+    second: CLUB top 3-4s IDLE_60
+  - first:
+      213: 7094124231901002834
+    second: CLUB top 3-4s IDLE_61
+  - first:
+      213: 859919777201578628
+    second: CLUB top 3-4s IDLE_62
+  - first:
+      213: -209179211207962068
+    second: CLUB top 3-4s IDLE_63
+  - first:
+      213: 5259128229749372942
+    second: CLUB top 3-4s IDLE_64
+  - first:
+      213: 4542508985588266062
+    second: CLUB top 3-4s IDLE_65
+  - first:
+      213: 5969537678935154714
+    second: CLUB top 3-4s IDLE_66
+  - first:
+      213: 7571694277934638339
+    second: CLUB top 3-4s IDLE_67
+  - first:
+      213: -6579039264190765258
+    second: CLUB top 3-4s IDLE_68
+  - first:
+      213: 7981507127436831297
+    second: CLUB top 3-4s IDLE_69
+  - first:
+      213: -1147459111911558654
+    second: CLUB top 3-4s IDLE_70
+  - first:
+      213: 2189777321894243710
+    second: CLUB top 3-4s IDLE_71
+  - first:
+      213: 148430353474969670
+    second: CLUB top 3-4s IDLE_72
+  - first:
+      213: 7921358924003583049
+    second: CLUB top 3-4s IDLE_73
+  - first:
+      213: -8761121297399812482
+    second: CLUB top 3-4s IDLE_74
+  - first:
+      213: -1837032628369582495
+    second: CLUB top 3-4s IDLE_75
+  - first:
+      213: -499104575131057498
+    second: CLUB top 3-4s IDLE_76
+  - first:
+      213: -6653630413241571697
+    second: CLUB top 3-4s IDLE_77
+  - first:
+      213: 3358691726483384582
+    second: CLUB top 3-4s IDLE_78
+  - first:
+      213: -5715991882853247826
+    second: CLUB top 3-4s IDLE_79
+  - first:
+      213: 5780245798966416045
+    second: CLUB top 3-4s IDLE_80
+  - first:
+      213: -7316658875431939576
+    second: CLUB top 3-4s IDLE_81
+  - first:
+      213: 1407101823083372224
+    second: CLUB top 3-4s IDLE_82
+  - first:
+      213: -7462268939496639359
+    second: CLUB top 3-4s IDLE_83
+  - first:
+      213: -1939331871590018682
+    second: CLUB top 3-4s IDLE_84
+  - first:
+      213: 3151871099812465851
+    second: CLUB top 3-4s IDLE_85
+  - first:
+      213: -1032883754820431154
+    second: CLUB top 3-4s IDLE_86
+  - first:
+      213: 552382051597461376
+    second: CLUB top 3-4s IDLE_87
+  - first:
+      213: 7748932128822642627
+    second: CLUB top 3-4s IDLE_88
+  - first:
+      213: 8040281741418748157
+    second: CLUB top 3-4s IDLE_89
+  - first:
+      213: 6904626373949461739
+    second: CLUB top 3-4s IDLE_90
+  - first:
+      213: -1778917906494440600
+    second: CLUB top 3-4s IDLE_91
+  - first:
+      213: -3142302934288784746
+    second: CLUB top 3-4s IDLE_92
+  - first:
+      213: 1294891052473006820
+    second: CLUB top 3-4s IDLE_93
+  - first:
+      213: 6293828890588304924
+    second: CLUB top 3-4s IDLE_94
+  - first:
+      213: -2944957943457686127
+    second: CLUB top 3-4s IDLE_95
+  - first:
+      213: 850048634522220070
+    second: CLUB top 3-4s IDLE_96
+  - first:
+      213: 7771819897918944240
+    second: CLUB top 3-4s IDLE_97
+  - first:
+      213: 5743912873869011587
+    second: CLUB top 3-4s IDLE_98
+  - first:
+      213: -3168791231975454943
+    second: CLUB top 3-4s IDLE_99
+  - first:
+      213: -6822359528130262656
+    second: CLUB top 3-4s IDLE_100
+  - first:
+      213: 156276810025849399
+    second: CLUB top 3-4s IDLE_101
+  - first:
+      213: -1794534429573933042
+    second: CLUB top 3-4s IDLE_102
+  - first:
+      213: -8310915165213616127
+    second: CLUB top 3-4s IDLE_103
+  - first:
+      213: -5991995916355934673
+    second: CLUB top 3-4s IDLE_104
+  - first:
+      213: 2965427636892966095
+    second: CLUB top 3-4s IDLE_105
+  - first:
+      213: 2702754014524475458
+    second: CLUB top 3-4s IDLE_106
+  - first:
+      213: -1527371614696338271
+    second: CLUB top 3-4s IDLE_107
+  - first:
+      213: -6123949321927194679
+    second: CLUB top 3-4s IDLE_108
+  - first:
+      213: 7749579733774783442
+    second: CLUB top 3-4s IDLE_109
+  - first:
+      213: -4634938790855142982
+    second: CLUB top 3-4s IDLE_110
+  - first:
+      213: -1069343845988032818
+    second: CLUB top 3-4s IDLE_111
+  - first:
+      213: 1314430552475671715
+    second: CLUB top 3-4s IDLE_112
+  - first:
+      213: -2032939533073688759
+    second: CLUB top 3-4s IDLE_113
+  - first:
+      213: 6036298499740953747
+    second: CLUB top 3-4s IDLE_114
+  - first:
+      213: -8614265752738042156
+    second: CLUB top 3-4s IDLE_115
+  - first:
+      213: -1812713315572489843
+    second: CLUB top 3-4s IDLE_116
+  - first:
+      213: 1236895960397810228
+    second: CLUB top 3-4s IDLE_117
+  - first:
+      213: -8242285980778315091
+    second: CLUB top 3-4s IDLE_118
+  - first:
+      213: -3615239684310218347
+    second: CLUB top 3-4s IDLE_119
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9482f501934519f48b747684beb99b18
+      internalID: -1743407041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac25f5cfd6df98749b7008e906bf437c
+      internalID: 1517829106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1b65fcb0022ad41bdd698861171e48
+      internalID: -920011157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2bc98fa93133540a22316c943fefe4
+      internalID: 221543407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435ca8edc93c8804ca4352637efb2f80
+      internalID: 1630021635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2f3f9c32b28894e9ca4b39fa915ea5
+      internalID: 1333710916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec6f653768985e459d271c628b4e067
+      internalID: -2022529115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2c8e053cdb6f847b6909f80abcb821
+      internalID: -1281538300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340f90992d2762c449a5ab7205476f46
+      internalID: 1981472945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf2f2a78a7bf194ea1f938b9ab1691e
+      internalID: 637934087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14050bce29f91c64eaac7b112d577515
+      internalID: 982762891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0a4359dfc8b8341ada660773179f14
+      internalID: -1653175585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4a314c7559d2d4392c0e16f787ac18
+      internalID: -551002030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8494e9a6af98ade43abab130cc6ec0e7
+      internalID: -286769735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd4879d71a49b245a0bb1244921f205
+      internalID: 515019243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a8b763a9069784d972b934561dba03
+      internalID: 1965097664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52dd9ceb6f188344b4a402032a4aede
+      internalID: 237076831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd53154692aabb64596971bb020533da
+      internalID: 1993795343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7beacee8ef651b847b911344df1043c1
+      internalID: 195957299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e56f36f9b1d03b4d9e6da661b25e819
+      internalID: -540671538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba70f9538cbe9a4a83086b82c824090
+      internalID: -348438664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbe85aa16b40d94a9d443db396847a5
+      internalID: -1130721875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa2bf0ea2492ed4a9967cdbc522e467
+      internalID: 1251725769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c18cbc6f4bf9546826bc5398fec12a
+      internalID: -667026761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27529cdb5f037a44b81f1cdebcba405d
+      internalID: -99360237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLUB top 3-4s IDLE_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e24267d42bc5c3488a72d430286bc80
+      internalID: 1517962296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fe14d1ac5165597409102ae231704922
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CLUB top 3-4s IDLE_0: -1743407041
+      CLUB top 3-4s IDLE_1: 1517829106
+      CLUB top 3-4s IDLE_10: 982762891
+      CLUB top 3-4s IDLE_11: -1653175585
+      CLUB top 3-4s IDLE_12: -551002030
+      CLUB top 3-4s IDLE_13: -286769735
+      CLUB top 3-4s IDLE_14: 515019243
+      CLUB top 3-4s IDLE_15: 1965097664
+      CLUB top 3-4s IDLE_16: 237076831
+      CLUB top 3-4s IDLE_17: 1993795343
+      CLUB top 3-4s IDLE_18: 195957299
+      CLUB top 3-4s IDLE_19: -540671538
+      CLUB top 3-4s IDLE_2: -920011157
+      CLUB top 3-4s IDLE_20: -348438664
+      CLUB top 3-4s IDLE_21: -1130721875
+      CLUB top 3-4s IDLE_22: 1251725769
+      CLUB top 3-4s IDLE_23: -667026761
+      CLUB top 3-4s IDLE_24: -99360237
+      CLUB top 3-4s IDLE_25: 1517962296
+      CLUB top 3-4s IDLE_3: 221543407
+      CLUB top 3-4s IDLE_4: 1630021635
+      CLUB top 3-4s IDLE_5: 1333710916
+      CLUB top 3-4s IDLE_6: -2022529115
+      CLUB top 3-4s IDLE_7: -1281538300
+      CLUB top 3-4s IDLE_8: 1981472945
+      CLUB top 3-4s IDLE_9: 637934087
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: af9f3b91b551a36479bb3c51e22ea727
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4249426015378684652
+    second: HEART IDLE TOP 3-4s_0
+  - first:
+      213: -5396082845573151000
+    second: HEART IDLE TOP 3-4s_1
+  - first:
+      213: -7525556570085570791
+    second: HEART IDLE TOP 3-4s_2
+  - first:
+      213: 5858801439141315134
+    second: HEART IDLE TOP 3-4s_3
+  - first:
+      213: 836977662179630204
+    second: HEART IDLE TOP 3-4s_4
+  - first:
+      213: 6236075679750879403
+    second: HEART IDLE TOP 3-4s_5
+  - first:
+      213: -972548959847410968
+    second: HEART IDLE TOP 3-4s_6
+  - first:
+      213: -2776183227339674280
+    second: HEART IDLE TOP 3-4s_7
+  - first:
+      213: -1721849157420754293
+    second: HEART IDLE TOP 3-4s_8
+  - first:
+      213: 4623705780825757732
+    second: HEART IDLE TOP 3-4s_9
+  - first:
+      213: 4760196142549509416
+    second: HEART IDLE TOP 3-4s_10
+  - first:
+      213: -849171285962783708
+    second: HEART IDLE TOP 3-4s_11
+  - first:
+      213: -7124867559825069018
+    second: HEART IDLE TOP 3-4s_12
+  - first:
+      213: 4833023256705979567
+    second: HEART IDLE TOP 3-4s_13
+  - first:
+      213: -3014921861126617772
+    second: HEART IDLE TOP 3-4s_14
+  - first:
+      213: -4191702518298514916
+    second: HEART IDLE TOP 3-4s_15
+  - first:
+      213: -7860301215631045616
+    second: HEART IDLE TOP 3-4s_16
+  - first:
+      213: 8939960006783194212
+    second: HEART IDLE TOP 3-4s_17
+  - first:
+      213: -2256742457053192579
+    second: HEART IDLE TOP 3-4s_18
+  - first:
+      213: -4049321680640262768
+    second: HEART IDLE TOP 3-4s_19
+  - first:
+      213: -2978163258477579022
+    second: HEART IDLE TOP 3-4s_20
+  - first:
+      213: -3806180778525453999
+    second: HEART IDLE TOP 3-4s_21
+  - first:
+      213: 5641437981059518079
+    second: HEART IDLE TOP 3-4s_22
+  - first:
+      213: 3006670186898690887
+    second: HEART IDLE TOP 3-4s_23
+  - first:
+      213: -4231044894470959317
+    second: HEART IDLE TOP 3-4s_24
+  - first:
+      213: -7449480521014221238
+    second: HEART IDLE TOP 3-4s_25
+  - first:
+      213: -7452904358353721664
+    second: HEART IDLE TOP 3-4s_26
+  - first:
+      213: -9044288404469912124
+    second: HEART IDLE TOP 3-4s_27
+  - first:
+      213: 9175478772321822992
+    second: HEART IDLE TOP 3-4s_28
+  - first:
+      213: -3315654354685820645
+    second: HEART IDLE TOP 3-4s_29
+  - first:
+      213: 1655134226186923030
+    second: HEART IDLE TOP 3-4s_30
+  - first:
+      213: -7501378691053285886
+    second: HEART IDLE TOP 3-4s_31
+  - first:
+      213: 341421219352644981
+    second: HEART IDLE TOP 3-4s_32
+  - first:
+      213: 1697358770290705459
+    second: HEART IDLE TOP 3-4s_33
+  - first:
+      213: -8873954499773064411
+    second: HEART IDLE TOP 3-4s_34
+  - first:
+      213: -1243928826531536978
+    second: HEART IDLE TOP 3-4s_35
+  - first:
+      213: 5266574896579971412
+    second: HEART IDLE TOP 3-4s_36
+  - first:
+      213: 8274015638714943724
+    second: HEART IDLE TOP 3-4s_37
+  - first:
+      213: 1002181304510758595
+    second: HEART IDLE TOP 3-4s_38
+  - first:
+      213: -891556580644091716
+    second: HEART IDLE TOP 3-4s_39
+  - first:
+      213: 6094067231900569110
+    second: HEART IDLE TOP 3-4s_40
+  - first:
+      213: -6933887204023604650
+    second: HEART IDLE TOP 3-4s_41
+  - first:
+      213: -551186660361197728
+    second: HEART IDLE TOP 3-4s_42
+  - first:
+      213: -659146406031517314
+    second: HEART IDLE TOP 3-4s_43
+  - first:
+      213: 2273475736117639215
+    second: HEART IDLE TOP 3-4s_44
+  - first:
+      213: 6356234276670620441
+    second: HEART IDLE TOP 3-4s_45
+  - first:
+      213: 8160202396330488475
+    second: HEART IDLE TOP 3-4s_46
+  - first:
+      213: 8017200536747653160
+    second: HEART IDLE TOP 3-4s_47
+  - first:
+      213: 5658674189884287490
+    second: HEART IDLE TOP 3-4s_48
+  - first:
+      213: 3450511047820845297
+    second: HEART IDLE TOP 3-4s_49
+  - first:
+      213: 8936838866099935936
+    second: HEART IDLE TOP 3-4s_50
+  - first:
+      213: -7895807721369780553
+    second: HEART IDLE TOP 3-4s_51
+  - first:
+      213: -2828981432769935440
+    second: HEART IDLE TOP 3-4s_52
+  - first:
+      213: -2048779979577335353
+    second: HEART IDLE TOP 3-4s_53
+  - first:
+      213: -2925028547333090547
+    second: HEART IDLE TOP 3-4s_54
+  - first:
+      213: 3465210793961348876
+    second: HEART IDLE TOP 3-4s_55
+  - first:
+      213: 9092664697311660952
+    second: HEART IDLE TOP 3-4s_56
+  - first:
+      213: -5771814105635050640
+    second: HEART IDLE TOP 3-4s_57
+  - first:
+      213: 7385500645189029870
+    second: HEART IDLE TOP 3-4s_58
+  - first:
+      213: 6535728071576788141
+    second: HEART IDLE TOP 3-4s_59
+  - first:
+      213: 6405793326373737896
+    second: HEART IDLE TOP 3-4s_60
+  - first:
+      213: 5855553277576224133
+    second: HEART IDLE TOP 3-4s_61
+  - first:
+      213: -4314847109547722563
+    second: HEART IDLE TOP 3-4s_62
+  - first:
+      213: 2584269225705196937
+    second: HEART IDLE TOP 3-4s_63
+  - first:
+      213: -6911395581207513504
+    second: HEART IDLE TOP 3-4s_64
+  - first:
+      213: 2555888633186617633
+    second: HEART IDLE TOP 3-4s_65
+  - first:
+      213: 2705433216666362411
+    second: HEART IDLE TOP 3-4s_66
+  - first:
+      213: 1012545309044785498
+    second: HEART IDLE TOP 3-4s_67
+  - first:
+      213: -5926167992118634038
+    second: HEART IDLE TOP 3-4s_68
+  - first:
+      213: 2912699604530484292
+    second: HEART IDLE TOP 3-4s_69
+  - first:
+      213: -6543642786852606346
+    second: HEART IDLE TOP 3-4s_70
+  - first:
+      213: 7351710515165773508
+    second: HEART IDLE TOP 3-4s_71
+  - first:
+      213: 2377385283710062536
+    second: HEART IDLE TOP 3-4s_72
+  - first:
+      213: 7215568443073460077
+    second: HEART IDLE TOP 3-4s_73
+  - first:
+      213: -7771420995515575970
+    second: HEART IDLE TOP 3-4s_74
+  - first:
+      213: -6720200913960758880
+    second: HEART IDLE TOP 3-4s_75
+  - first:
+      213: 7939131972905470883
+    second: HEART IDLE TOP 3-4s_76
+  - first:
+      213: 3596678770168865017
+    second: HEART IDLE TOP 3-4s_77
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf52c75c446bdd742ace16af1cff2c1c
+      internalID: 1968530947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4cc49b4f96b3847846d04dc74e4ef8
+      internalID: -754753346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 8656
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d3d6b6231c6cc498f50861602bf2b0
+      internalID: -1727697161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaf18e55c6dac04ca278cfdc2d08587
+      internalID: -253747577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ca181defbeb6a4cadc9a4366d80b96
+      internalID: -1503294817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 7574
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e63093ce6936d640b6bdb6ec98f7ddf
+      internalID: 1723323551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef92048280fa194d9cee1b355288cc5
+      internalID: 2019975155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14850b808e3b8644eb4a30cbab2a0013
+      internalID: 1299469161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 6492
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548a4f5f239735c4c9a71a8128e2b733
+      internalID: 1037871117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5165fa806c96714fb31efd35a2c1ebc
+      internalID: -909625694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63e6374b8b226043b41dc269309da24
+      internalID: 1763761068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5410
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1c31a1ee3025f49882760508f21bfe
+      internalID: 243719284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd54fe04f8ea234e9c91375fb74b32b
+      internalID: 313521559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47498ccbe5294c54bbb133a22605a306
+      internalID: 132372951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4328
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9418d4b2abf9b46ab7a56ace3b30aa
+      internalID: -1802480280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef81ea0865ac60144bccdbc0bcdd4a30
+      internalID: -263684673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_16
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326ff136044f5174b9e5f2376ad87082
+      internalID: 1235872486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_17
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3246
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86222196c655ca43ae22c7db2c38491
+      internalID: 94736043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec0cf2978cb5b7498348952b5b0038e
+      internalID: -1394442188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3fda985784ed54b8abc9eb8cede6c7
+      internalID: 1925665171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_20
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2164
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b99b69c439271c4eafa0bc1053cf9c6
+      internalID: -825562681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85aaa07c79723bb41addf4894e6fcd98
+      internalID: 2067884030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_22
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552e994cf13bf3849a93da8f68cce7da
+      internalID: 463223125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_23
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1082
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6380d946da1579642a9eccfd4032a5bb
+      internalID: -1484698795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4e0cfd4a4c0d84abbe8fa4e19144d1
+      internalID: -1453841364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEART IDLE TOP 3-4s_25
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 1906
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d04e9f09a5655d4baba1dc097e0257e
+      internalID: -1060499920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ef58d20e205f5d34ebbd6ee4bab77f1a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HEART IDLE TOP 3-4s_0: 1968530947
+      HEART IDLE TOP 3-4s_1: -754753346
+      HEART IDLE TOP 3-4s_10: 1763761068
+      HEART IDLE TOP 3-4s_11: 243719284
+      HEART IDLE TOP 3-4s_12: 313521559
+      HEART IDLE TOP 3-4s_13: 132372951
+      HEART IDLE TOP 3-4s_14: -1802480280
+      HEART IDLE TOP 3-4s_15: -263684673
+      HEART IDLE TOP 3-4s_16: 1235872486
+      HEART IDLE TOP 3-4s_17: 94736043
+      HEART IDLE TOP 3-4s_18: -1394442188
+      HEART IDLE TOP 3-4s_19: 1925665171
+      HEART IDLE TOP 3-4s_2: -1727697161
+      HEART IDLE TOP 3-4s_20: -825562681
+      HEART IDLE TOP 3-4s_21: 2067884030
+      HEART IDLE TOP 3-4s_22: 463223125
+      HEART IDLE TOP 3-4s_23: -1484698795
+      HEART IDLE TOP 3-4s_24: -1453841364
+      HEART IDLE TOP 3-4s_25: -1060499920
+      HEART IDLE TOP 3-4s_3: -253747577
+      HEART IDLE TOP 3-4s_4: -1503294817
+      HEART IDLE TOP 3-4s_5: 1723323551
+      HEART IDLE TOP 3-4s_6: 2019975155
+      HEART IDLE TOP 3-4s_7: 1299469161
+      HEART IDLE TOP 3-4s_8: 1037871117
+      HEART IDLE TOP 3-4s_9: -909625694
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

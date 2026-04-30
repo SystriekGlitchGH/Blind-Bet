@@ -68,15 +68,6 @@ TextureImporter:
   - first:
       213: 5968848036279358883
     second: RUNESTONE HIGH 3-4s_21
-  - first:
-      213: 3797131383199155261
-    second: RUNESTONE HIGH 3-4s_22
-  - first:
-      213: -1080088474793353392
-    second: RUNESTONE HIGH 3-4s_23
-  - first:
-      213: -3239905118380909386
-    second: RUNESTONE HIGH 3-4s_24
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -123,7 +114,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 550
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -168,6 +159,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -175,10 +192,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_0
       rect:
         serializedVersion: 2
-        x: 693
-        y: 8881
-        width: 483
-        height: 747
+        x: 0
+        y: 7592
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +214,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_1
       rect:
         serializedVersion: 2
-        x: 2619
-        y: 8880
-        width: 482
-        height: 727
+        x: 1926
+        y: 7592
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +236,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_2
       rect:
         serializedVersion: 2
-        x: 4549
-        y: 8874
-        width: 483
-        height: 708
+        x: 3852
+        y: 7592
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +258,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_3
       rect:
         serializedVersion: 2
-        x: 693
-        y: 7788
-        width: 483
-        height: 696
+        x: 0
+        y: 6508
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +280,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_4
       rect:
         serializedVersion: 2
-        x: 2619
-        y: 7785
-        width: 481
-        height: 680
+        x: 1926
+        y: 6508
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +302,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_5
       rect:
         serializedVersion: 2
-        x: 4548
-        y: 7777
-        width: 483
-        height: 670
+        x: 3852
+        y: 6508
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +324,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_6
       rect:
         serializedVersion: 2
-        x: 695
-        y: 6694
-        width: 483
-        height: 652
+        x: 0
+        y: 5424
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +346,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_7
       rect:
         serializedVersion: 2
-        x: 2620
-        y: 6690
-        width: 483
-        height: 638
+        x: 1926
+        y: 5424
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +368,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_8
       rect:
         serializedVersion: 2
-        x: 4544
-        y: 6686
-        width: 481
-        height: 623
+        x: 3852
+        y: 5424
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +390,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_9
       rect:
         serializedVersion: 2
-        x: 694
-        y: 5597
-        width: 482
-        height: 619
+        x: 0
+        y: 4340
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +412,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_10
       rect:
         serializedVersion: 2
-        x: 2619
-        y: 5595
-        width: 482
-        height: 603
+        x: 1926
+        y: 4340
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,10 +434,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_11
       rect:
         serializedVersion: 2
-        x: 4548
-        y: 5591
-        width: 483
-        height: 604
+        x: 3852
+        y: 4340
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +456,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_12
       rect:
         serializedVersion: 2
-        x: 693
-        y: 4511
-        width: 482
-        height: 603
+        x: 0
+        y: 3256
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,10 +478,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_13
       rect:
         serializedVersion: 2
-        x: 2619
-        y: 4511
-        width: 482
-        height: 603
+        x: 1926
+        y: 3256
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +500,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_14
       rect:
         serializedVersion: 2
-        x: 4549
-        y: 4507
-        width: 484
-        height: 606
+        x: 3852
+        y: 3256
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +522,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_15
       rect:
         serializedVersion: 2
-        x: 694
-        y: 3432
-        width: 483
-        height: 620
+        x: 0
+        y: 2172
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,10 +544,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_16
       rect:
         serializedVersion: 2
-        x: 2619
-        y: 3440
-        width: 481
-        height: 623
+        x: 1926
+        y: 2172
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +566,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_17
       rect:
         serializedVersion: 2
-        x: 4547
-        y: 3443
-        width: 483
-        height: 639
+        x: 3852
+        y: 2172
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,10 +588,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_18
       rect:
         serializedVersion: 2
-        x: 695
-        y: 2365
-        width: 484
-        height: 653
+        x: 0
+        y: 1088
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +610,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_19
       rect:
         serializedVersion: 2
-        x: 2621
-        y: 2368
-        width: 483
-        height: 669
+        x: 1926
+        y: 1088
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,10 +632,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_20
       rect:
         serializedVersion: 2
-        x: 4548
-        y: 2372
-        width: 483
-        height: 682
+        x: 3852
+        y: 1088
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,10 +654,10 @@ TextureImporter:
       name: RUNESTONE HIGH 3-4s_21
       rect:
         serializedVersion: 2
-        x: 694
-        y: 1295
-        width: 483
-        height: 696
+        x: 0
+        y: 4
+        width: 1906
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -655,77 +672,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: RUNESTONE HIGH 3-4s_22
-      rect:
-        serializedVersion: 2
-        x: 2620
-        y: 1302
-        width: 482
-        height: 706
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d34c21dffde12b430800000000000000
-      internalID: 3797131383199155261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RUNESTONE HIGH 3-4s_23
-      rect:
-        serializedVersion: 2
-        x: 4548
-        y: 1304
-        width: 482
-        height: 728
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 05fd2f53141c201f0800000000000000
-      internalID: -1080088474793353392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RUNESTONE HIGH 3-4s_24
-      rect:
-        serializedVersion: 2
-        x: 693
-        y: 226
-        width: 482
-        height: 746
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6bc9fe8e57b8903d0800000000000000
-      internalID: -3239905118380909386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 91963b1dc582b344dab5491972bacab2
     internalID: 0
     vertices: []
     indices: 
@@ -750,9 +701,6 @@ TextureImporter:
       RUNESTONE HIGH 3-4s_2: -7329115769142065849
       RUNESTONE HIGH 3-4s_20: -3391081983181121471
       RUNESTONE HIGH 3-4s_21: 5968848036279358883
-      RUNESTONE HIGH 3-4s_22: 3797131383199155261
-      RUNESTONE HIGH 3-4s_23: -1080088474793353392
-      RUNESTONE HIGH 3-4s_24: -3239905118380909386
       RUNESTONE HIGH 3-4s_3: -5882379149439922070
       RUNESTONE HIGH 3-4s_4: -7304623094114556007
       RUNESTONE HIGH 3-4s_5: 3661328985169605670
