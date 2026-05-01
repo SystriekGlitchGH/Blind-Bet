@@ -190,7 +190,7 @@ public class EnemyMovement : MonoBehaviour
         if (enemyTarget != null)
         {
             enemyTarget.playerStats.kills++;
-            enemyTarget.playerStats.AddChips(10);
+            enemyTarget.playerStats.AddChips(40);
             gameStats.kills++;
         }
         
