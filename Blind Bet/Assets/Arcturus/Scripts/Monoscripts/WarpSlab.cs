@@ -10,6 +10,8 @@ public class WarpSlab : MonoBehaviour
     Random rand = new Random();
     public void ChangeScene()
     {
+        PlayerMovement pm = FindFirstObjectByType<PlayerMovement>();
+        pm.playerStats.Heal(15);
         if (gameStats.level >= 5)
         {
             if(rand.Next(0,101) >= 50)
