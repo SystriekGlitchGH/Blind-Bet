@@ -228,7 +228,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 10
+  m_Radius: 40
 --- !u!1 &39645161
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,12 +583,13 @@ MonoBehaviour:
   topLeftPos: {fileID: 39645162}
   bottomRightPos: {fileID: 1558291780}
   bottomLeftPos: {fileID: 956797449}
-  state: 2
+  state: 3
   attackVisual: {fileID: 3956911121127704462, guid: f8e26d177611f774f9d752c7f2cc82d8, type: 3}
   anchorTransform: {fileID: 1732083003}
   attackSize: {x: 2.5, y: 3}
   dashRange: 7
   dashLength: 20
+  fireball: {fileID: 6375857079430785866, guid: c43a6d783581cb34d88d0564a5261f0f, type: 3}
 --- !u!212 &1095842389
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6622,7 +6623,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
   m_Origin: {x: -15, y: -9, z: 0}
   m_Size: {x: 30, y: 25, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -6729,9 +6730,9 @@ GameObject:
   - component: {fileID: 2079164473}
   - component: {fileID: 2079164472}
   - component: {fileID: 2079164471}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

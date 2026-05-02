@@ -73,7 +73,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 100
   maxChips: 5000
-  currentChips: 1000
+  currentChips: 2000
   chipLowThreshold: 500
   baseDashDistance: 20
   baseDashCooldown: 0.5

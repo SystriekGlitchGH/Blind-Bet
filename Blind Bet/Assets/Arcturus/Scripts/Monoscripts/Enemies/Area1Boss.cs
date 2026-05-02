@@ -31,6 +31,14 @@ public class Area1Boss : EnemyMovement
     private bool canDash = true;
     public float dashRange;
     public float dashLength;
+    // red
+    public GameObject fireball;
+    private bool foundPositionRed;
+    private bool inRedAttack, canRedAttack = true;
+    // white
+    private bool inWhiteAttack, canWhiteAttack;
+    private bool foundPositionWhite;
+
     protected override void Start()
     {
         rb2d.linearDamping = friction;
@@ -71,6 +79,8 @@ public class Area1Boss : EnemyMovement
             //anchorTransform.rotation = Quaternion.LookRotation(PlayerDirection(target.transform.position));
             anchorTransform.rotation = Quaternion.Euler(0,0,angleDegrees);
         }
+        if(inWhiteAttack)
+            ActivateWhite();
     }
     protected override void FixedUpdate()
     {
@@ -113,6 +123,56 @@ public class Area1Boss : EnemyMovement
                     StartCoroutine(DashTimer());
                 }
             }
+            if(state == BossStates.red)
+            {
+                if (!foundPositionRed)
+                {
+                    int positionNum = rand.Next(1,5);
+                    if(positionNum == 1)
+                        movementTarget = topPos;
+                    else if(positionNum == 2)
+                        movementTarget = rightPos;
+                    else if(positionNum == 3)
+                        movementTarget = bottomPos;
+                    else if(positionNum == 4)
+                        movementTarget = leftPos;
+                    foundPositionRed = true;
+                }
+                if (foundPositionRed && Vector2.Distance(transform.position, movementTarget.position) > 0.5f)
+                {
+                    rb2d.linearDamping = 0;
+                    Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
+                    rb2d.AddForce(newVelocity);
+                    Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
+                    rb2d.linearVelocity = velocity;
+                }
+                if(Vector2.Distance(transform.position, movementTarget.position) < 0.5f && canRedAttack)
+                {
+                    rb2d.linearDamping = friction;
+                    StartCoroutine(RedTimer());
+                }
+            }
+            if(state == BossStates.white)
+            {
+                if (!foundPositionWhite)
+                {
+                    movementTarget = centerPos;
+                    foundPositionWhite = true;
+                }
+                if (foundPositionWhite && Vector2.Distance(transform.position, movementTarget.position) > 0.5f)
+                {
+                    rb2d.linearDamping = 0;
+                    Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
+                    rb2d.AddForce(newVelocity);
+                    Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
+                    rb2d.linearVelocity = velocity;
+                }
+                if(Vector2.Distance(transform.position, movementTarget.position) < 0.5f && canWhiteAttack)
+                {
+                    rb2d.linearDamping = friction;
+                    StartCoroutine(WhiteTimer());
+                }
+            }
             if(distance < stopRange && !isDashing)
             {
                 rb2d.linearDamping = friction;
@@ -152,7 +212,7 @@ public class Area1Boss : EnemyMovement
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         Destroy(attack);
         isAttacking = false;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         SwitchState();
         canAttack = true; // no longer attacking
     }
@@ -168,20 +228,63 @@ public class Area1Boss : EnemyMovement
         rb2d.AddForce(TargetDirection(movementTarget.position)*dashLength,ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.3f); // time where you can take damage/parry/get shot at
         isDashing = false;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         SwitchState();
         canDash = true;
 
     }
+    protected IEnumerator RedTimer()
+    {
+        canRedAttack = false;
+        float extraRotation = -160 / 2;
+        Vector2 targetDirection = TargetDirection(enemyTarget.transform.position);
+        
+        float angleRadians = Mathf.Atan2(TargetDirection(enemyTarget.transform.position).y,TargetDirection(enemyTarget.transform.position).x);
+        //converts that angle to degrees, not radians
+        float angleDegrees = angleRadians * Mathf.Rad2Deg; 
+        angleDegrees -= 90; // sets the rotation correctly by 90 degrees
+        //anchorTransform.rotation = Quaternion.LookRotation(PlayerDirection(target.transform.position));
+        Quaternion targetRotation = Quaternion.Euler(0,0,angleDegrees);
+        for (int i = 0; i < 20; i++)
+        {
+            yield return new WaitForSeconds(0.1f);
+            Vector3 rotation = targetRotation.eulerAngles + new Vector3(0, 0, extraRotation);
+            GameObject shot = Instantiate(fireball, transform.position + (Vector3)targetDirection, Quaternion.Euler(rotation));
+            if (shot.TryGetComponent(out Bullet b))
+            {
+                b.bulletType = "enemy";
+                b.em = this;
+                b.direction = (Vector3)TargetDirection(targetDirection);
+                b.rb2d.AddForce(b.rb2d.transform.up * 1000);
+            }
+            extraRotation += 160 / (20-1);
+        }
+        SwitchState();
+        foundPositionRed = false;
+        canRedAttack = true;
+    }
+    protected IEnumerator WhiteTimer()
+    {
+        canWhiteAttack = false;
+        inWhiteAttack = true;
+        yield return new WaitForSeconds(5);
+        inWhiteAttack = false;
+        canWhiteAttack = true;
+        foundPositionWhite = false;
+    }
+    protected void ActivateWhite()
+    {
+        
+    }
     protected void SwitchState()
     {
-        int attackNum = rand.Next(1,3);
+        int attackNum = rand.Next(1,4);
         if(attackNum == 1)
             state = BossStates.attack;
         if(attackNum == 2)
             state = BossStates.dash;
-        // if(attackNum == 3)
-        //     state = BossStates.red;
+        if(attackNum == 3)
+            state = BossStates.red;
         // if(attackNum == 4)
         //     state = BossStates.white;
         // if(attackNum == 5)
