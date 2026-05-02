@@ -153,10 +153,10 @@ TextureImporter:
       name: SLIME DASH UPPER 3-4s_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2184
-        width: 1906
-        height: 1071
+        x: 654
+        y: 2510
+        width: 454
+        height: 415
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: SLIME DASH UPPER 3-4s_1
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2184
-        width: 1906
-        height: 1071
+        x: 2651
+        y: 2512
+        width: 458
+        height: 413
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: SLIME DASH UPPER 3-4s_2
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2184
-        width: 1906
-        height: 1071
+        x: 4584
+        y: 2510
+        width: 502
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: SLIME DASH UPPER 3-4s_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1093
-        width: 1906
-        height: 1071
+        x: 629
+        y: 1423
+        width: 504
+        height: 409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: SLIME DASH UPPER 3-4s_4
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 1093
-        width: 1906
-        height: 1071
+        x: 2618
+        y: 1423
+        width: 525
+        height: 409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: SLIME DASH UPPER 3-4s_5
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 1093
-        width: 1906
-        height: 1071
+        x: 4584
+        y: 1423
+        width: 506
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: SLIME DASH UPPER 3-4s_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 1906
-        height: 1071
+        x: 654
+        y: 335
+        width: 502
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: SLIME DASH UPPER 3-4s_7
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2
-        width: 1906
-        height: 1071
+        x: 2651
+        y: 335
+        width: 458
+        height: 412
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +329,10 @@ TextureImporter:
       name: SLIME DASH UPPER 3-4s_8
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2
-        width: 1906
-        height: 1071
+        x: 4631
+        y: 329
+        width: 455
+        height: 416
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

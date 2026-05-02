@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -153,10 +153,10 @@ TextureImporter:
       name: SLIME DASH BACK_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2184
-        width: 1906
-        height: 1071
+        x: 816
+        y: 2566
+        width: 264
+        height: 280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: SLIME DASH BACK_1
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2184
-        width: 1906
-        height: 1071
+        x: 2750
+        y: 2566
+        width: 260
+        height: 287
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: SLIME DASH BACK_2
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2184
-        width: 1906
-        height: 1071
+        x: 4680
+        y: 2565
+        width: 253
+        height: 311
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: SLIME DASH BACK_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1093
-        width: 1906
-        height: 1071
+        x: 815
+        y: 1463
+        width: 239
+        height: 389
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: SLIME DASH BACK_4
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 1093
-        width: 1906
-        height: 1071
+        x: 2772
+        y: 1445
+        width: 238
+        height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: SLIME DASH BACK_5
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 1093
-        width: 1906
-        height: 1071
+        x: 4682
+        y: 1461
+        width: 239
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: SLIME DASH BACK_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 1906
-        height: 1071
+        x: 826
+        y: 438
+        width: 254
+        height: 311
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: SLIME DASH BACK_7
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2
-        width: 1906
-        height: 1071
+        x: 2750
+        y: 438
+        width: 260
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +329,10 @@ TextureImporter:
       name: SLIME DASH BACK_8
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2
-        width: 1906
-        height: 1071
+        x: 4682
+        y: 438
+        width: 264
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
