@@ -12,7 +12,12 @@ public class KharonAcceptButton : MonoBehaviour
         for(int i = 0; i < 3; i++)
         {
             DraggableItem di = cardField.transform.GetChild(i).GetComponent<DraggableItem>();
-            
+            pm.playerStats.bench.Add(di.card);
+            Instantiate(di,pm.playerUI.bench);
         }
+        pm.playerStats.buffDebuffs.Add(buff.text);
+        pm.playerStats.buffDebuffs.Add(debuff.text);
+        Time.timeScale = 1;
+        pm.playerUI.kharonMenu.SetActive(false);
     }
 }
