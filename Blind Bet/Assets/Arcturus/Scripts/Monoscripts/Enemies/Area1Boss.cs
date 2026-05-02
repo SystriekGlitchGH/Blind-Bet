@@ -17,7 +17,7 @@ public class Area1Boss : EnemyMovement
     [SerializeField] Transform bottomLeftPos;
     public enum BossStates
     {
-        idle,attack,dash,red,white,blue,green,black,purple
+        idle,attack,dash,red,white,blue
     }
     public BossStates state;
     public Random rand = new Random();
@@ -36,8 +36,16 @@ public class Area1Boss : EnemyMovement
     private bool foundPositionRed;
     private bool inRedAttack, canRedAttack = true;
     // white
-    private bool inWhiteAttack, canWhiteAttack;
+    private bool inWhiteAttack, canWhiteAttack = true;
     private bool foundPositionWhite;
+    private LineRenderer lr1, lr2, lr3, lr4;
+    public LineRenderer lineRend;
+    public LayerMask beamLayer;
+    private float elapsedTime;
+    // blue
+    public GameObject specterBullet;
+    private bool foundPositionBlue;
+    private bool inBlueAttack, canBlueAttack = true;
 
     protected override void Start()
     {
@@ -79,8 +87,12 @@ public class Area1Boss : EnemyMovement
             //anchorTransform.rotation = Quaternion.LookRotation(PlayerDirection(target.transform.position));
             anchorTransform.rotation = Quaternion.Euler(0,0,angleDegrees);
         }
-        if(inWhiteAttack)
+        if (inWhiteAttack)
+        {
             ActivateWhite();
+            elapsedTime += Time.deltaTime;
+        }
+            
     }
     protected override void FixedUpdate()
     {
@@ -171,6 +183,35 @@ public class Area1Boss : EnemyMovement
                 {
                     rb2d.linearDamping = friction;
                     StartCoroutine(WhiteTimer());
+                }
+            }
+            if(state == BossStates.blue)
+            {
+                if (!foundPositionBlue)
+                {
+                    int positionNum = rand.Next(1,5);
+                    if(positionNum == 1)
+                        movementTarget = topRightPos;
+                    else if(positionNum == 2)
+                        movementTarget = topLeftPos;
+                    else if(positionNum == 3)
+                        movementTarget = bottomRightPos;
+                    else if(positionNum == 4)
+                        movementTarget = bottomLeftPos;
+                    foundPositionBlue = true;
+                }
+                if (foundPositionBlue && Vector2.Distance(transform.position, movementTarget.position) > 0.5f)
+                {
+                    rb2d.linearDamping = 0;
+                    Vector2 newVelocity = TargetDirection(movementTarget.position)*acceleration;
+                    rb2d.AddForce(newVelocity);
+                    Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
+                    rb2d.linearVelocity = velocity;
+                }
+                if(Vector2.Distance(transform.position, movementTarget.position) < 0.5f && canBlueAttack)
+                {
+                    rb2d.linearDamping = friction;
+                    StartCoroutine(BlueTimer());
                 }
             }
             if(distance < stopRange && !isDashing)
@@ -266,34 +307,143 @@ public class Area1Boss : EnemyMovement
     protected IEnumerator WhiteTimer()
     {
         canWhiteAttack = false;
+        yield return new WaitForSeconds(1);
         inWhiteAttack = true;
+        lr1 = Instantiate(lineRend);
+        lr2 = Instantiate(lineRend);
+        lr3 = Instantiate(lineRend);
+        lr4 = Instantiate(lineRend);
         yield return new WaitForSeconds(5);
+        Destroy(lr1.gameObject);
+        Destroy(lr2.gameObject);
+        Destroy(lr3.gameObject);
+        Destroy(lr4.gameObject);
+        elapsedTime = 0;
         inWhiteAttack = false;
+        SwitchState();
         canWhiteAttack = true;
         foundPositionWhite = false;
     }
     protected void ActivateWhite()
     {
-        
+        Vector2 angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad*(elapsedTime*90)), Mathf.Cos(Mathf.Deg2Rad*(elapsedTime*90)));
+        RaycastHit2D[] hits1 = Physics2D.RaycastAll(anchorTransform.position + (Vector3)angleAsVector*2, angleAsVector,50,beamLayer);
+        lr1.SetPosition(0, anchorTransform.position + (Vector3)angleAsVector*2);
+        foreach(RaycastHit2D hit in hits1)
+        {
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                if (hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
+                {
+                    player.GetHit(this, 0.1f,enemyStats.baseDamage*enemyStats.GetAttackDamageMod());
+                }
+                continue;
+            }
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+            {
+                lr1.SetPosition(1, hit.point);
+                break;
+            }
+        }
+
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (90+elapsedTime*90)), Mathf.Cos(Mathf.Deg2Rad * (90+elapsedTime*90)));
+        RaycastHit2D[] hits2 = Physics2D.RaycastAll(anchorTransform.position + (Vector3)angleAsVector*2, angleAsVector,50,beamLayer);
+        lr2.SetPosition(0, anchorTransform.position + (Vector3)angleAsVector*2);
+        foreach(RaycastHit2D hit in hits2)
+        {
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                if (hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
+                {
+                    player.GetHit(this, 0.1f,enemyStats.baseDamage*enemyStats.GetAttackDamageMod());
+                }
+                continue;
+            }
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+            {
+                lr2.SetPosition(1, hit.point);
+                break;
+            }
+        }
+
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (180+elapsedTime*90)), Mathf.Cos(Mathf.Deg2Rad * (180+elapsedTime*90)));
+        RaycastHit2D[] hits3 = Physics2D.RaycastAll(anchorTransform.position + (Vector3)angleAsVector*2, angleAsVector,50,beamLayer);
+        lr3.SetPosition(0, anchorTransform.position + (Vector3)angleAsVector*2);
+        foreach(RaycastHit2D hit in hits3)
+        {
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                if (hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
+                {
+                    player.GetHit(this, 0.1f,enemyStats.baseDamage*enemyStats.GetAttackDamageMod());
+                }
+                continue;
+            }
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+            {
+                lr3.SetPosition(1, hit.point);
+                break;
+            }
+        }
+
+        angleAsVector = new(-Mathf.Sin(Mathf.Deg2Rad * (270+elapsedTime*90)), Mathf.Cos(Mathf.Deg2Rad * (270+elapsedTime*90)));
+        RaycastHit2D[] hits4 = Physics2D.RaycastAll(anchorTransform.position + (Vector3)angleAsVector*2, angleAsVector,50,beamLayer);
+        lr4.SetPosition(0, anchorTransform.position + (Vector3)angleAsVector*2);
+        foreach(RaycastHit2D hit in hits4)
+        {
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                if (hit && hit.rigidbody.TryGetComponent(out PlayerMovement player))
+                {
+                    player.GetHit(this, 0.1f,enemyStats.baseDamage*enemyStats.GetAttackDamageMod());
+                }
+                continue;
+            }
+            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Wall"))
+            {
+                lr4.SetPosition(1, hit.point);
+                break;
+            }
+        }
+    }
+    protected IEnumerator BlueTimer()
+    {
+        canBlueAttack = false;
+        float extraRotation = -90 / 2;
+        for(int i = 0; i < 4; i++)
+        {
+            yield return new WaitForSeconds(1f);
+            for (int j = 0; j < 6+i; j++)
+            {
+                Vector3 rotation = anchorTransform.rotation.eulerAngles + new Vector3(0, 0, extraRotation);
+                GameObject shot = Instantiate(specterBullet, transform.position + (Vector3)TargetDirection(enemyTarget.transform.position), Quaternion.Euler(rotation));
+                if (shot.TryGetComponent(out Bullet b))
+                {
+                    b.bulletType = "enemy";
+                    b.em = this;
+                    b.direction = (Vector3)TargetDirection(enemyTarget.transform.position);
+                    b.rb2d.AddForce(b.rb2d.transform.up * 1000);
+                }
+                extraRotation += 90 / (6+i-1);
+            }
+            extraRotation = -90 / 2;
+        }
+        SwitchState();
+        foundPositionBlue = false;
+        canBlueAttack = true;
     }
     protected void SwitchState()
     {
-        int attackNum = rand.Next(1,4);
+        int attackNum = rand.Next(1,6);
         if(attackNum == 1)
             state = BossStates.attack;
         if(attackNum == 2)
             state = BossStates.dash;
         if(attackNum == 3)
             state = BossStates.red;
-        // if(attackNum == 4)
-        //     state = BossStates.white;
-        // if(attackNum == 5)
-        //     state = BossStates.blue;
-        // if(attackNum == 6)
-        //     state = BossStates.green;
-        // if(attackNum == 7)
-        //     state = BossStates.black;
-        // if(attackNum == 8)
-        //     state = BossStates.purple;
+        if(attackNum == 4)
+            state = BossStates.white;
+        if(attackNum == 5)
+            state = BossStates.blue;
     }
 }

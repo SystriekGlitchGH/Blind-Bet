@@ -583,13 +583,18 @@ MonoBehaviour:
   topLeftPos: {fileID: 39645162}
   bottomRightPos: {fileID: 1558291780}
   bottomLeftPos: {fileID: 956797449}
-  state: 3
+  state: 1
   attackVisual: {fileID: 3956911121127704462, guid: f8e26d177611f774f9d752c7f2cc82d8, type: 3}
   anchorTransform: {fileID: 1732083003}
   attackSize: {x: 2.5, y: 3}
   dashRange: 7
   dashLength: 20
   fireball: {fileID: 6375857079430785866, guid: c43a6d783581cb34d88d0564a5261f0f, type: 3}
+  lineRend: {fileID: 7275212597245883165, guid: 85ec4af3a97d1bd4890021c59dd481df, type: 3}
+  beamLayer:
+    serializedVersion: 2
+    m_Bits: 72
+  specterBullet: {fileID: 6375857079430785866, guid: 430dad51de8b0ec449f86365be6b72e8, type: 3}
 --- !u!212 &1095842389
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1083,7 +1088,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1095842392}
