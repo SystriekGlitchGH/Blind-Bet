@@ -501,7 +501,7 @@ MonoBehaviour:
   movedNode: {fileID: 0}
   path: []
   currentState: 0
-  AttackRange: 3
+  attackRange: 4
   stopRange: 3
   isHealer: 0
   attackVisual: {fileID: 3956911121127704462, guid: f8e26d177611f774f9d752c7f2cc82d8, type: 3}

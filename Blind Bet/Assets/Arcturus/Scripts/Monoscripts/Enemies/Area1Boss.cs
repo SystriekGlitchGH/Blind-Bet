@@ -152,6 +152,7 @@ public class Area1Boss : EnemyMovement
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         Destroy(attack);
         isAttacking = false;
+        yield return new WaitForSeconds(2f);
         SwitchState();
         canAttack = true; // no longer attacking
     }
@@ -167,28 +168,29 @@ public class Area1Boss : EnemyMovement
         rb2d.AddForce(TargetDirection(movementTarget.position)*dashLength,ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.3f); // time where you can take damage/parry/get shot at
         isDashing = false;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+        SwitchState();
         canDash = true;
 
     }
     protected void SwitchState()
     {
-        int attackNum = rand.Next(1,9);
+        int attackNum = rand.Next(1,3);
         if(attackNum == 1)
             state = BossStates.attack;
         if(attackNum == 2)
             state = BossStates.dash;
-        if(attackNum == 3)
-            state = BossStates.red;
-        if(attackNum == 4)
-            state = BossStates.white;
-        if(attackNum == 5)
-            state = BossStates.blue;
-        if(attackNum == 6)
-            state = BossStates.green;
-        if(attackNum == 7)
-            state = BossStates.black;
-        if(attackNum == 8)
-            state = BossStates.purple;
+        // if(attackNum == 3)
+        //     state = BossStates.red;
+        // if(attackNum == 4)
+        //     state = BossStates.white;
+        // if(attackNum == 5)
+        //     state = BossStates.blue;
+        // if(attackNum == 6)
+        //     state = BossStates.green;
+        // if(attackNum == 7)
+        //     state = BossStates.black;
+        // if(attackNum == 8)
+        //     state = BossStates.purple;
     }
 }

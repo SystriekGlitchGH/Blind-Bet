@@ -473,7 +473,7 @@ MonoBehaviour:
   movedNode: {fileID: 0}
   path: []
   currentState: 0
-  AttackRange: 20
+  attackRange: 5
   stopRange: 2
   isHealer: 0
   dashForce: 32

@@ -6,12 +6,13 @@ public class KharonAcceptButton : MonoBehaviour
     public GameObject cardField;
     public TMP_Text buff;
     public TMP_Text debuff;
-    void Awake()
+    public void AcceptHand()
     {
         PlayerMovement pm = FindFirstObjectByType<PlayerMovement>();
         for(int i = 0; i < 3; i++)
         {
-            transform.GetChild(i).GetComponent<DraggableItem>();
+            DraggableItem di = cardField.transform.GetChild(i).GetComponent<DraggableItem>();
+            
         }
     }
 }

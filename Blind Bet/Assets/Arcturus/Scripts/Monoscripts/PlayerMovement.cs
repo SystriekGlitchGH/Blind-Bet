@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.Cinemachine;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public PrefabLibrary prefabLib;
     public Node currentNode;
     public GameStats gamestats;
+    private CinemachineImpulseSource impulseSource;
 
 	[Header("Movement stats")]
     public float acceleration; // how quickly you go to top speed
@@ -91,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerStats.weapon = new Weapon(playerStats.activeSuit);
+        impulseSource = GetComponent<CinemachineImpulseSource>();
     }
     private void FixedUpdate()
     {
@@ -426,6 +429,7 @@ public class PlayerMovement : MonoBehaviour
         if (!hasIFrames)
         {
             Debug.Log("got hit for: "+ damage * playerStats.GetDamageMod());
+            impulseSource.GenerateImpulse();
             StartCoroutine(GetHitTimer());
             playerStats.TakeDamage(damage * playerStats.GetDamageMod());
             rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
