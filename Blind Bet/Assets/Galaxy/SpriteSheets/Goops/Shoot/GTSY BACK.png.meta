@@ -93,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -171,10 +171,10 @@ TextureImporter:
       name: GTSY BACK_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4358
-        width: 1906
-        height: 1069
+        x: 778
+        y: 4737
+        width: 263
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: GTSY BACK_1
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 4358
-        width: 1906
-        height: 1069
+        x: 2751
+        y: 4737
+        width: 259
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: GTSY BACK_2
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 4358
-        width: 1906
-        height: 1069
+        x: 4720
+        y: 4737
+        width: 271
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: GTSY BACK_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3269
-        width: 1906
-        height: 1069
+        x: 778
+        y: 3709
+        width: 276
+        height: 263
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +259,10 @@ TextureImporter:
       name: GTSY BACK_4
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 3269
-        width: 1906
-        height: 1069
+        x: 2741
+        y: 3709
+        width: 287
+        height: 289
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: GTSY BACK_5
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 3269
-        width: 1906
-        height: 1069
+        x: 4705
+        y: 3709
+        width: 286
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: GTSY BACK_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2180
-        width: 1906
-        height: 1069
+        x: 778
+        y: 2536
+        width: 283
+        height: 354
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,10 +325,10 @@ TextureImporter:
       name: GTSY BACK_7
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2180
-        width: 1906
-        height: 1069
+        x: 2745
+        y: 2536
+        width: 279
+        height: 333
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,10 +347,10 @@ TextureImporter:
       name: GTSY BACK_8
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2180
-        width: 1906
-        height: 1069
+        x: 4710
+        y: 2536
+        width: 281
+        height: 335
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,10 +369,10 @@ TextureImporter:
       name: GTSY BACK_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1091
-        width: 1906
-        height: 1069
+        x: 778
+        y: 1536
+        width: 290
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,10 +391,10 @@ TextureImporter:
       name: GTSY BACK_10
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 1091
-        width: 1906
-        height: 1069
+        x: 2764
+        y: 1544
+        width: 275
+        height: 331
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,10 +413,10 @@ TextureImporter:
       name: GTSY BACK_11
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 1091
-        width: 1906
-        height: 1069
+        x: 4713
+        y: 1536
+        width: 275
+        height: 314
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,10 +435,10 @@ TextureImporter:
       name: GTSY BACK_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 1906
-        height: 1069
+        x: 778
+        y: 394
+        width: 268
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: GTSY BACK_13
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2
-        width: 1906
-        height: 1069
+        x: 2773
+        y: 394
+        width: 266
+        height: 307
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: GTSY BACK_14
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2
-        width: 1906
-        height: 1069
+        x: 4729
+        y: 394
+        width: 262
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

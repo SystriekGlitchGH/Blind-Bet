@@ -362,6 +362,10 @@ public class EnemyMovement : MonoBehaviour
     {
         return isAttacking;
     }
+    public bool IsReadyingAttack()
+    {
+        return isReadyingAttack;
+    }
     public float GetColliderPushForce()
     {
         return colliderPushForce;

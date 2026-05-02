@@ -141,7 +141,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.15}
   m_Radius: 0.5
 --- !u!1 &1535248516464851881
 GameObject:
@@ -190,6 +190,8 @@ GameObject:
   - component: {fileID: 4401776757835178578}
   - component: {fileID: 3667329435915851471}
   - component: {fileID: 2465219297090570578}
+  - component: {fileID: 2993406065765972028}
+  - component: {fileID: 1007334301016758417}
   m_Layer: 7
   m_Name: EnemyMovement
   m_TagString: Enemy
@@ -303,7 +305,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.15}
   m_Radius: 0.51
 --- !u!50 &4401776757835178578
 Rigidbody2D:
@@ -389,6 +391,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   em: {fileID: 3667329435915851471}
   healthbarSlider: {fileID: 5627094378078370029}
+--- !u!114 &2993406065765972028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3082946522819116292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b54d920dc331841badf4c7452fb2f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1007334301016758417}
+  em: {fileID: 3667329435915851471}
+--- !u!95 &1007334301016758417
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3082946522819116292}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba7830c349d4ff4429cb0acdf6afaacd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6921210386159354721
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +553,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.702}
+  m_AnchoredPosition: {x: 0, y: 0.937}
   m_SizeDelta: {x: 1.0914, y: 0.2456}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &652294623548253034
