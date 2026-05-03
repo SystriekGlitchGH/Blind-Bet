@@ -405,169 +405,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kharon sheet 1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 5427
-        width: 1906
-        height: 1065
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e74a32acb866cd0d0800000000000000
-      internalID: -3396727268366375810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kharon sheet 1_1
-      rect:
-        serializedVersion: 2
-        x: 1926
-        y: 5427
-        width: 1906
-        height: 1065
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 89015eb15681e0c80800000000000000
-      internalID: -8354713436186931048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kharon sheet 1_2
-      rect:
-        serializedVersion: 2
-        x: 3852
-        y: 5427
-        width: 1906
-        height: 1065
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b355fa40a69003b60800000000000000
-      internalID: 7723683711890183483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kharon sheet 1_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4342
-        width: 1906
-        height: 1065
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46451564c0443d2a0800000000000000
-      internalID: -6713947799969246108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kharon sheet 1_4
-      rect:
-        serializedVersion: 2
-        x: 1926
-        y: 4342
-        width: 1906
-        height: 1065
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5cdc210cb5f4ca20800000000000000
-      internalID: 3081858232850635870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kharon sheet 1_5
-      rect:
-        serializedVersion: 2
-        x: 3852
-        y: 4342
-        width: 1906
-        height: 1065
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 06a3c8a29fda6c100800000000000000
-      internalID: 127980925098932832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kharon sheet 1_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3257
-        width: 1906
-        height: 1065
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7989ff9de674ef40800000000000000
-      internalID: 5756856986649594237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Kharon sheet 1_7
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 3257
-        width: 1906
-        height: 1065
+        x: 823
+        y: 5478
+        width: 490
+        height: 933
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -584,12 +430,12 @@ TextureImporter:
       name: Kharon sheet 1_8
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 3257
-        width: 1906
-        height: 1065
+        x: 2747
+        y: 5480
+        width: 490
+        height: 933
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -603,59 +449,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kharon sheet 1_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2172
-        width: 1906
-        height: 1065
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93bc5d675e3d27050800000000000000
-      internalID: 5796928652873943865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kharon sheet 1_10
-      rect:
-        serializedVersion: 2
-        x: 1926
-        y: 2172
-        width: 1906
-        height: 1065
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8d8dead7be6c4f50800000000000000
-      internalID: 6866985267764235658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Kharon sheet 1_11
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2172
-        width: 1906
-        height: 1065
+        x: 4676
+        y: 5478
+        width: 490
+        height: 933
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -669,133 +471,331 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kharon sheet 1_12
+      name: Kharon sheet 1_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1087
-        width: 1906
-        height: 1065
+        x: 4677
+        y: 4395
+        width: 490
+        height: 933
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 79599325aa6150f50800000000000000
-      internalID: 6846903729266464151
+      spriteID: c36ee766517837f4dafab134130afd34
+      internalID: 1699580537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kharon sheet 1_13
+      name: Kharon sheet 1_25
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 1087
-        width: 1906
-        height: 1065
+        x: 822
+        y: 4397
+        width: 490
+        height: 933
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9ef3e20a67d9e5450800000000000000
-      internalID: 6079469679815835625
+      spriteID: 4ea9878d0afad87418b1fa872650714f
+      internalID: -1254117117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kharon sheet 1_14
+      name: Kharon sheet 1_27
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 1087
-        width: 1906
-        height: 1065
+        x: 2749
+        y: 4397
+        width: 490
+        height: 933
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8c05b60d900eedd60800000000000000
-      internalID: 7917011527719932104
+      spriteID: 2598fde252670ba4a8f12b0e6b16fe09
+      internalID: 1660054531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kharon sheet 1_15
+      name: Kharon sheet 1_39
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 1906
-        height: 1065
+        x: 2748
+        y: 3316
+        width: 490
+        height: 933
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b0ae01a653783d520800000000000000
-      internalID: 2725670862971791883
+      spriteID: 10e432dc92299f94685d43f165b3f937
+      internalID: -2028454660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kharon sheet 1_16
+      name: Kharon sheet 1_42
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2
-        width: 1906
-        height: 1065
+        x: 4676
+        y: 3314
+        width: 490
+        height: 933
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4caa791304e72fde0800000000000000
-      internalID: -1300838528181622076
+      spriteID: 7cec99d52dd0c4548a213ae6a2890f91
+      internalID: -816594605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kharon sheet 1_17
+      name: Kharon sheet 1_47
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2
-        width: 1906
-        height: 1065
+        x: 823
+        y: 3314
+        width: 490
+        height: 933
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9a7e55e0814c01d20800000000000000
-      internalID: 3247310938932897705
+      spriteID: 34bd7ae09cc7c0a4caa896b561f09092
+      internalID: -1888856668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 1_53
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 2232
+        width: 490
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8de490d85f6022419420f1e673ff1a0
+      internalID: 1648120407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 1_58
+      rect:
+        serializedVersion: 2
+        x: 2749
+        y: 2232
+        width: 490
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2505dee2de22cb449a9975d993323713
+      internalID: -466500941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 1_60
+      rect:
+        serializedVersion: 2
+        x: 4677
+        y: 2230
+        width: 490
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a9ae0a64d1b114a8efe79785f2a74e
+      internalID: -1652442209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 1_72
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 1151
+        width: 490
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2ef96625db29a469427717de12bb62
+      internalID: 1021125969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 1_78
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1151
+        width: 490
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9513ce4bb3c3a18428969d23af136c5b
+      internalID: -1297904210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 1_80
+      rect:
+        serializedVersion: 2
+        x: 4676
+        y: 1150
+        width: 490
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82907d87074b6094f98a96ac29c54785
+      internalID: -2104117559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 1_88
+      rect:
+        serializedVersion: 2
+        x: 4678
+        y: 66
+        width: 490
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7d9dbcbdd9c3544b71147428844c0e
+      internalID: -788452479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 1_89
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 67
+        width: 490
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e09200c9c3d8e40aa026053da399b1
+      internalID: 1346957986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kharon sheet 1_92
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 70
+        width: 490
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67d126bb0b3dbd49bf7fc16bcdfb1b5
+      internalID: 339645698
       vertices: []
       indices: 
       edges: []
@@ -824,14 +824,90 @@ TextureImporter:
       Kharon sheet 1_15: 2725670862971791883
       Kharon sheet 1_16: -1300838528181622076
       Kharon sheet 1_17: 3247310938932897705
+      Kharon sheet 1_18: -2086648133
+      Kharon sheet 1_19: 1708049318
       Kharon sheet 1_2: 7723683711890183483
+      Kharon sheet 1_20: 1300801138
+      Kharon sheet 1_21: -1048001546
+      Kharon sheet 1_22: -294220411
+      Kharon sheet 1_23: 1289720349
+      Kharon sheet 1_24: 1699580537
+      Kharon sheet 1_25: -1254117117
+      Kharon sheet 1_26: 1115055961
+      Kharon sheet 1_27: 1660054531
+      Kharon sheet 1_28: 957648319
+      Kharon sheet 1_29: -505386052
       Kharon sheet 1_3: -6713947799969246108
+      Kharon sheet 1_30: 1776345654
+      Kharon sheet 1_31: 185090762
+      Kharon sheet 1_32: 1189677582
+      Kharon sheet 1_33: -96516902
+      Kharon sheet 1_34: -1231779205
+      Kharon sheet 1_35: -1100839208
+      Kharon sheet 1_36: 147886446
+      Kharon sheet 1_37: 1498829677
+      Kharon sheet 1_38: -1513133166
+      Kharon sheet 1_39: -2028454660
       Kharon sheet 1_4: 3081858232850635870
+      Kharon sheet 1_40: 2129132250
+      Kharon sheet 1_41: 999997642
+      Kharon sheet 1_42: -816594605
+      Kharon sheet 1_43: -1862374307
+      Kharon sheet 1_44: 932371537
+      Kharon sheet 1_45: -662701289
+      Kharon sheet 1_46: 361476282
+      Kharon sheet 1_47: -1888856668
+      Kharon sheet 1_48: 862304223
+      Kharon sheet 1_49: 1955507551
       Kharon sheet 1_5: 127980925098932832
+      Kharon sheet 1_50: -1175507666
+      Kharon sheet 1_51: 199421247
+      Kharon sheet 1_52: 1647018854
+      Kharon sheet 1_53: 1648120407
+      Kharon sheet 1_54: 845911329
+      Kharon sheet 1_55: -1222011939
+      Kharon sheet 1_56: -1279813893
+      Kharon sheet 1_57: -876192989
+      Kharon sheet 1_58: -466500941
+      Kharon sheet 1_59: -442688780
       Kharon sheet 1_6: 5756856986649594237
+      Kharon sheet 1_60: -1652442209
+      Kharon sheet 1_61: -1582371901
+      Kharon sheet 1_62: 458582580
+      Kharon sheet 1_63: 857124833
+      Kharon sheet 1_64: -1566581510
+      Kharon sheet 1_65: -1414301316
+      Kharon sheet 1_66: 1202551503
+      Kharon sheet 1_67: -931597720
+      Kharon sheet 1_68: -1803461709
+      Kharon sheet 1_69: -1873429237
       Kharon sheet 1_7: -6564335528952860030
+      Kharon sheet 1_70: -1173172738
+      Kharon sheet 1_71: 1460813863
+      Kharon sheet 1_72: 1021125969
+      Kharon sheet 1_73: -2147354112
+      Kharon sheet 1_74: -410182239
+      Kharon sheet 1_75: 661656920
+      Kharon sheet 1_76: -716055336
+      Kharon sheet 1_77: -190517819
+      Kharon sheet 1_78: -1297904210
+      Kharon sheet 1_79: -103248997
       Kharon sheet 1_8: 7643898787146871630
+      Kharon sheet 1_80: -2104117559
+      Kharon sheet 1_81: 1151211221
+      Kharon sheet 1_82: -1529899817
+      Kharon sheet 1_83: 1255237566
+      Kharon sheet 1_84: 1600457829
+      Kharon sheet 1_85: 81409972
+      Kharon sheet 1_86: 1803255287
+      Kharon sheet 1_87: -1007573725
+      Kharon sheet 1_88: -788452479
+      Kharon sheet 1_89: 1346957986
       Kharon sheet 1_9: 5796928652873943865
+      Kharon sheet 1_90: 1269965067
+      Kharon sheet 1_91: 1290335116
+      Kharon sheet 1_92: 339645698
+      Kharon sheet 1_93: -39450914
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

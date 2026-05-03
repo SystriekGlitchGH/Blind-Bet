@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 2549761324a3d64479bfa0fda7fca228
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7257992308141445880
+    second: Mors sheet_0
+  - first:
+      213: 4539858780198746720
+    second: Mors sheet_1
+  - first:
+      213: 5020439093916035821
+    second: Mors sheet_2
+  - first:
+      213: 165880133229891380
+    second: Mors sheet_3
+  - first:
+      213: -2874617462202311095
+    second: Mors sheet_4
+  - first:
+      213: 1613940428625686885
+    second: Mors sheet_5
+  - first:
+      213: -3315581974365476813
+    second: Mors sheet_6
+  - first:
+      213: -238456344847887627
+    second: Mors sheet_7
+  - first:
+      213: -8147146145993968734
+    second: Mors sheet_8
+  - first:
+      213: -4910231258676196968
+    second: Mors sheet_9
+  - first:
+      213: -2892843536090315984
+    second: Mors sheet_10
+  - first:
+      213: -9034064675555007533
+    second: Mors sheet_11
+  - first:
+      213: -7064554207396507646
+    second: Mors sheet_12
+  - first:
+      213: 6757639569760019514
+    second: Mors sheet_13
+  - first:
+      213: 8659028929594908500
+    second: Mors sheet_14
+  - first:
+      213: -4817101872863266092
+    second: Mors sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mors sheet_0
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 5511
+        width: 392
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d26b2437e664b90800000000000000
+      internalID: -7257992308141445880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 5509
+        width: 392
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a3f24e181d00f30800000000000000
+      internalID: 4539858780198746720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_2
+      rect:
+        serializedVersion: 2
+        x: 4590
+        y: 5509
+        width: 392
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea6959a1ce2ca540800000000000000
+      internalID: 5020439093916035821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_3
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 4424
+        width: 394
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f46703a135d4200800000000000000
+      internalID: 165880133229891380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 4425
+        width: 392
+        height: 806
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94edb4406ae4b18d0800000000000000
+      internalID: -2874617462202311095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4589
+        y: 4424
+        width: 394
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56130e0d44ed56610800000000000000
+      internalID: 1613940428625686885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_6
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 3340
+        width: 393
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338e142d2cfacf1d0800000000000000
+      internalID: -3315581974365476813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 3340
+        width: 395
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f257eeb735d0bcf0800000000000000
+      internalID: -238456344847887627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4589
+        y: 3338
+        width: 395
+        height: 811
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a336d2eeb58fee80800000000000000
+      internalID: -8147146145993968734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_9
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 2255
+        width: 393
+        height: 808
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899069d8faa5bdbb0800000000000000
+      internalID: -4910231258676196968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 2254
+        width: 393
+        height: 808
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0334d80812e8ad7d0800000000000000
+      internalID: -2892843536090315984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4590
+        y: 2252
+        width: 394
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3a3a7ca0e80a280800000000000000
+      internalID: -9034064675555007533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_12
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 1169
+        width: 393
+        height: 806
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200d3a3c069a5fd90800000000000000
+      internalID: -7064554207396507646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1168
+        width: 393
+        height: 806
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a346bab9265f7cd50800000000000000
+      internalID: 6757639569760019514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_14
+      rect:
+        serializedVersion: 2
+        x: 4590
+        y: 1166
+        width: 393
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45fd5581fec0b2870800000000000000
+      internalID: 8659028929594908500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mors sheet_15
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 84
+        width: 391
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dabd156e57362db0800000000000000
+      internalID: -4817101872863266092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mors sheet_0: -7257992308141445880
+      Mors sheet_1: 4539858780198746720
+      Mors sheet_10: -2892843536090315984
+      Mors sheet_11: -9034064675555007533
+      Mors sheet_12: -7064554207396507646
+      Mors sheet_13: 6757639569760019514
+      Mors sheet_14: 8659028929594908500
+      Mors sheet_15: -4817101872863266092
+      Mors sheet_2: 5020439093916035821
+      Mors sheet_3: 165880133229891380
+      Mors sheet_4: -2874617462202311095
+      Mors sheet_5: 1613940428625686885
+      Mors sheet_6: -3315581974365476813
+      Mors sheet_7: -238456344847887627
+      Mors sheet_8: -8147146145993968734
+      Mors sheet_9: -4910231258676196968
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
