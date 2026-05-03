@@ -44,11 +44,10 @@ public class CardSoldierH : EnemyMovement
                 rb2d.linearDamping = friction;
                 if(distance < stopRange - 1)
                 {
-                    rb2d.AddForce(-TargetDirection(enemyTarget.transform.position)*acceleration/4);
+                    rb2d.AddForce(-TargetDirection(enemyTarget.transform.position)*acceleration);
                     Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                     rb2d.linearVelocity = velocity;
                 }
-                
             }
             if(distance > 40)
             {
