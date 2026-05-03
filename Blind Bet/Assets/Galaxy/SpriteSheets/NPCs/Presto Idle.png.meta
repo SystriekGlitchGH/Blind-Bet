@@ -99,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -177,10 +177,10 @@ TextureImporter:
       name: Presto Idle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5427
-        width: 1906
-        height: 1065
+        x: 796
+        y: 5532
+        width: 280
+        height: 835
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +199,10 @@ TextureImporter:
       name: Presto Idle_1
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 5427
-        width: 1906
-        height: 1065
+        x: 2721
+        y: 5535
+        width: 278
+        height: 833
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,10 +221,10 @@ TextureImporter:
       name: Presto Idle_2
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 5427
-        width: 1906
-        height: 1065
+        x: 4649
+        y: 5532
+        width: 280
+        height: 836
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,10 +243,10 @@ TextureImporter:
       name: Presto Idle_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4342
-        width: 1906
-        height: 1065
+        x: 796
+        y: 4450
+        width: 279
+        height: 836
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: Presto Idle_4
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 4342
-        width: 1906
-        height: 1065
+        x: 2721
+        y: 4452
+        width: 279
+        height: 835
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,10 +287,10 @@ TextureImporter:
       name: Presto Idle_5
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 4342
-        width: 1906
-        height: 1065
+        x: 4649
+        y: 4451
+        width: 279
+        height: 836
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,10 +309,10 @@ TextureImporter:
       name: Presto Idle_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3257
-        width: 1906
-        height: 1065
+        x: 797
+        y: 3367
+        width: 280
+        height: 838
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: Presto Idle_7
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 3257
-        width: 1906
-        height: 1065
+        x: 2720
+        y: 3371
+        width: 279
+        height: 835
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +353,10 @@ TextureImporter:
       name: Presto Idle_8
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 3257
-        width: 1906
-        height: 1065
+        x: 4649
+        y: 3369
+        width: 279
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,10 +375,10 @@ TextureImporter:
       name: Presto Idle_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2172
-        width: 1906
-        height: 1065
+        x: 795
+        y: 2287
+        width: 280
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,10 +397,10 @@ TextureImporter:
       name: Presto Idle_10
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2172
-        width: 1906
-        height: 1065
+        x: 2722
+        y: 2287
+        width: 279
+        height: 836
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,10 +419,10 @@ TextureImporter:
       name: Presto Idle_11
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2172
-        width: 1906
-        height: 1065
+        x: 4650
+        y: 2286
+        width: 279
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,10 +441,10 @@ TextureImporter:
       name: Presto Idle_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1087
-        width: 1906
-        height: 1065
+        x: 796
+        y: 1204
+        width: 280
+        height: 837
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,10 +463,10 @@ TextureImporter:
       name: Presto Idle_13
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 1087
-        width: 1906
-        height: 1065
+        x: 2721
+        y: 1207
+        width: 278
+        height: 834
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,10 +485,10 @@ TextureImporter:
       name: Presto Idle_14
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 1087
-        width: 1906
-        height: 1065
+        x: 4648
+        y: 1206
+        width: 280
+        height: 835
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,10 +507,10 @@ TextureImporter:
       name: Presto Idle_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 1906
-        height: 1065
+        x: 795
+        y: 123
+        width: 279
+        height: 835
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -529,10 +529,10 @@ TextureImporter:
       name: Presto Idle_16
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2
-        width: 1906
-        height: 1065
+        x: 2722
+        y: 123
+        width: 280
+        height: 834
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
