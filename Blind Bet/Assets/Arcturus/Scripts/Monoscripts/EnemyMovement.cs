@@ -311,7 +311,7 @@ public class EnemyMovement : MonoBehaviour
             }
             if(path.Count > 0)
             {
-                if(Vector2.Distance(transform.position, path[0].transform.position) < 0.1f)
+                if(Vector2.Distance(transform.position, path[0].transform.position) < 0.5f)
                 {
                     currentNode = path[0];
                     path.RemoveAt(0);
