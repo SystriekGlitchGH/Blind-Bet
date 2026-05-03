@@ -177,10 +177,10 @@ TextureImporter:
       name: Saturn Idle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5427
-        width: 1906
-        height: 1065
+        x: 508
+        y: 5568
+        width: 1087
+        height: 793
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +199,10 @@ TextureImporter:
       name: Saturn Idle_1
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 5427
-        width: 1906
-        height: 1065
+        x: 2434
+        y: 5567
+        width: 1089
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,10 +221,10 @@ TextureImporter:
       name: Saturn Idle_2
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 5427
-        width: 1906
-        height: 1065
+        x: 4361
+        y: 5566
+        width: 1090
+        height: 795
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,10 +243,10 @@ TextureImporter:
       name: Saturn Idle_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4342
-        width: 1906
-        height: 1065
+        x: 508
+        y: 4483
+        width: 1092
+        height: 796
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: Saturn Idle_4
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 4342
-        width: 1906
-        height: 1065
+        x: 2434
+        y: 4485
+        width: 1090
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,10 +287,10 @@ TextureImporter:
       name: Saturn Idle_5
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 4342
-        width: 1906
-        height: 1065
+        x: 4361
+        y: 4484
+        width: 1091
+        height: 795
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,10 +309,10 @@ TextureImporter:
       name: Saturn Idle_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3257
-        width: 1906
-        height: 1065
+        x: 508
+        y: 3402
+        width: 1091
+        height: 795
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: Saturn Idle_7
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 3257
-        width: 1906
-        height: 1065
+        x: 2433
+        y: 3400
+        width: 1087
+        height: 793
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +353,10 @@ TextureImporter:
       name: Saturn Idle_8
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 3257
-        width: 1906
-        height: 1065
+        x: 4361
+        y: 3403
+        width: 1090
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,10 +375,10 @@ TextureImporter:
       name: Saturn Idle_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2172
-        width: 1906
-        height: 1065
+        x: 508
+        y: 2320
+        width: 1090
+        height: 795
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,10 +397,10 @@ TextureImporter:
       name: Saturn Idle_10
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2172
-        width: 1906
-        height: 1065
+        x: 2434
+        y: 2322
+        width: 1088
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,10 +419,10 @@ TextureImporter:
       name: Saturn Idle_11
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2172
-        width: 1906
-        height: 1065
+        x: 4361
+        y: 2320
+        width: 1091
+        height: 795
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,10 +441,10 @@ TextureImporter:
       name: Saturn Idle_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1087
-        width: 1906
-        height: 1065
+        x: 508
+        y: 1239
+        width: 1090
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,10 +463,10 @@ TextureImporter:
       name: Saturn Idle_13
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 1087
-        width: 1906
-        height: 1065
+        x: 2434
+        y: 1239
+        width: 1090
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,10 +485,10 @@ TextureImporter:
       name: Saturn Idle_14
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 1087
-        width: 1906
-        height: 1065
+        x: 4362
+        y: 1237
+        width: 1091
+        height: 796
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,10 +507,10 @@ TextureImporter:
       name: Saturn Idle_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 1906
-        height: 1065
+        x: 508
+        y: 155
+        width: 1092
+        height: 796
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -529,10 +529,10 @@ TextureImporter:
       name: Saturn Idle_16
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2
-        width: 1906
-        height: 1065
+        x: 2433
+        y: 159
+        width: 1087
+        height: 793
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -72,11 +72,11 @@ public class Goop1Movement : EnemyMovement
             {
                 return;
             }
-            if(distance < AttackRange && canAttack && hit)
+            if(distance < attackRange && canAttack && hit)
             {
                 StartCoroutine(AttackTimer("enemyTarget"));
             }
-            if(distance < AttackRange && canAttack && !hit && path.Count > 0)
+            if(distance < attackRange && canAttack && !hit && path.Count > 0)
             {
                 StartCoroutine(AttackTimer("node"));
             }

@@ -45,4 +45,7 @@ public class PrefabLibrary : MonoBehaviour
     public GameObject heartIndicator;
     public GameObject clubIndicator;
     public GameObject spadeIndicator;
+
+    [Header("Presentation")]
+    public GameObject warpSlab;
 }

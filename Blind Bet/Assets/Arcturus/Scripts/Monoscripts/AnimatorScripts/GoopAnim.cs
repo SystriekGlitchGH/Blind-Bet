@@ -8,6 +8,7 @@ public class GoopAnim : MonoBehaviour
     {
         if(em.enemyTarget != null)
         {
+            anim.SetBool("isAttacking",em.IsAttacking());
             anim.SetFloat("moveX",em.rb2d.linearVelocity.normalized.x);
             anim.SetFloat("moveY",em.rb2d.linearVelocity.normalized.y);
             if(em.rb2d.linearVelocity.normalized.x > 0)

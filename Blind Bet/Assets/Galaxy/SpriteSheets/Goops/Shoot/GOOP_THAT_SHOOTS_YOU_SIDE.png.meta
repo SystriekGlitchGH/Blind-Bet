@@ -171,10 +171,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4358
-        width: 1906
-        height: 1069
+        x: 702
+        y: 4671
+        width: 439
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_1
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 4358
-        width: 1906
-        height: 1069
+        x: 2564
+        y: 4671
+        width: 442
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_2
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 4358
-        width: 1906
-        height: 1069
+        x: 4582
+        y: 4671
+        width: 456
+        height: 385
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3269
-        width: 1906
-        height: 1069
+        x: 692
+        y: 3570
+        width: 449
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +259,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_4
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 3269
-        width: 1906
-        height: 1069
+        x: 2651
+        y: 3570
+        width: 459
+        height: 409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_5
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 3269
-        width: 1906
-        height: 1069
+        x: 4582
+        y: 3574
+        width: 476
+        height: 405
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2180
-        width: 1906
-        height: 1069
+        x: 621
+        y: 2455
+        width: 520
+        height: 405
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,10 +325,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_7
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2180
-        width: 1906
-        height: 1069
+        x: 2564
+        y: 2485
+        width: 516
+        height: 393
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,10 +347,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_8
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2180
-        width: 1906
-        height: 1069
+        x: 4582
+        y: 2491
+        width: 526
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,10 +369,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1091
-        width: 1906
-        height: 1069
+        x: 664
+        y: 1432
+        width: 506
+        height: 396
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,10 +391,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_10
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 1091
-        width: 1906
-        height: 1069
+        x: 2605
+        y: 1432
+        width: 505
+        height: 380
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,10 +413,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_11
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 1091
-        width: 1906
-        height: 1069
+        x: 4563
+        y: 1408
+        width: 495
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,10 +435,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 1906
-        height: 1069
+        x: 664
+        y: 335
+        width: 502
+        height: 387
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_13
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2
-        width: 1906
-        height: 1069
+        x: 2623
+        y: 335
+        width: 515
+        height: 396
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: GOOP_THAT_SHOOTS_YOU_SIDE_14
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2
-        width: 1906
-        height: 1069
+        x: 4595
+        y: 343
+        width: 492
+        height: 388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

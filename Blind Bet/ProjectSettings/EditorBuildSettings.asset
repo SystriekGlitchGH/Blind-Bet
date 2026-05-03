@@ -50,6 +50,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arcturus/Scenes/Kharon Room.unity
     guid: 39a282c5c4e5f064084134262549e5e8
+  - enabled: 1
+    path: Assets/Arcturus/Scenes/Map1 Presentation.unity
+    guid: 82c4fdd2041f4ff438c5eeea51ecb461
+  - enabled: 1
+    path: Assets/Arcturus/Scenes/Map2 Presentation.unity
+    guid: f1d21d943aa373342a3f57e4ea4b003b
+  - enabled: 1
+    path: Assets/Arcturus/Scenes/Kharon Room Presentation.unity
+    guid: daf0be130a377f94786f758714c0fafd
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7667cd40305d4a54f8aa28688f428dd9, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

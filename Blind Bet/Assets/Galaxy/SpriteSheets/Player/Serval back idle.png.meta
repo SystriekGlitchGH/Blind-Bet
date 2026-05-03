@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 89140e8f8f4467849900ccbd01cedfa4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1961580016414458245
+    second: Serval back idle_0
+  - first:
+      213: 1908667636791852471
+    second: Serval back idle_1
+  - first:
+      213: 4103533129966695808
+    second: Serval back idle_2
+  - first:
+      213: -8470629665139770875
+    second: Serval back idle_3
+  - first:
+      213: 9135887202856249317
+    second: Serval back idle_4
+  - first:
+      213: 2344798535299107558
+    second: Serval back idle_5
+  - first:
+      213: 7970622042525585762
+    second: Serval back idle_6
+  - first:
+      213: -8254301070198396243
+    second: Serval back idle_7
+  - first:
+      213: 147993172386026000
+    second: Serval back idle_8
+  - first:
+      213: -1710589495268189900
+    second: Serval back idle_9
+  - first:
+      213: -4444402718589109562
+    second: Serval back idle_10
+  - first:
+      213: 4512666342573456411
+    second: Serval back idle_11
+  - first:
+      213: 2834482346908370970
+    second: Serval back idle_12
+  - first:
+      213: -5973107629323304009
+    second: Serval back idle_13
+  - first:
+      213: -2360299649443084551
+    second: Serval back idle_14
+  - first:
+      213: -230406955231380424
+    second: Serval back idle_15
+  - first:
+      213: 2219364450606285914
+    second: Serval back idle_16
+  - first:
+      213: -8348339741683256723
+    second: Serval back idle_17
+  - first:
+      213: -6450682102701695584
+    second: Serval back idle_18
+  - first:
+      213: 8792677022798397808
+    second: Serval back idle_19
+  - first:
+      213: -4030149163436193384
+    second: Serval back idle_20
+  - first:
+      213: -2523009510896818259
+    second: Serval back idle_21
+  - first:
+      213: 2155820883156065457
+    second: Serval back idle_22
+  - first:
+      213: -3674569760110360065
+    second: Serval back idle_23
+  - first:
+      213: -3527690817608973523
+    second: Serval back idle_24
+  - first:
+      213: 1093158850636153543
+    second: Serval back idle_25
+  - first:
+      213: 127986502281355327
+    second: Serval back idle_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 330
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Serval back idle_0
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 8785
+        width: 473
+        height: 725
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58183ecc1aee83b10800000000000000
+      internalID: 1961580016414458245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_1
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 8785
+        width: 476
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd33456a13fc7a10800000000000000
+      internalID: 1908667636791852471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_2
+      rect:
+        serializedVersion: 2
+        x: 4707
+        y: 8780
+        width: 469
+        height: 725
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08536b7e3ada2f830800000000000000
+      internalID: 4103533129966695808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_3
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 7702
+        width: 463
+        height: 723
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a3579e237427a80800000000000000
+      internalID: -8470629665139770875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_4
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 7701
+        width: 465
+        height: 723
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7a84ac10139ce70800000000000000
+      internalID: 9135887202856249317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_5
+      rect:
+        serializedVersion: 2
+        x: 4706
+        y: 7701
+        width: 458
+        height: 722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea0c5638d56a8020800000000000000
+      internalID: 2344798535299107558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_6
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 6620
+        width: 455
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261d2ab74865d9e60800000000000000
+      internalID: 7970622042525585762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_7
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 6620
+        width: 456
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daaa2b9e8e4d27d80800000000000000
+      internalID: -8254301070198396243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_8
+      rect:
+        serializedVersion: 2
+        x: 4705
+        y: 6619
+        width: 455
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01290459107cd0200800000000000000
+      internalID: 147993172386026000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_9
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 5538
+        width: 454
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439560acae3c248e0800000000000000
+      internalID: -1710589495268189900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_10
+      rect:
+        serializedVersion: 2
+        x: 2743
+        y: 5536
+        width: 456
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca37bf564f4252c0800000000000000
+      internalID: -4444402718589109562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_11
+      rect:
+        serializedVersion: 2
+        x: 4703
+        y: 5535
+        width: 456
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cb3f2212630ae30800000000000000
+      internalID: 4512666342573456411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_12
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 4455
+        width: 458
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18c6914daa165720800000000000000
+      internalID: 2834482346908370970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_13
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 4456
+        width: 456
+        height: 718
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3420d02424b1da0800000000000000
+      internalID: -5973107629323304009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_14
+      rect:
+        serializedVersion: 2
+        x: 4702
+        y: 4455
+        width: 457
+        height: 718
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f6477769f78e3fd0800000000000000
+      internalID: -2360299649443084551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_15
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 3374
+        width: 457
+        height: 718
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c77af481e6dccf0800000000000000
+      internalID: -230406955231380424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_16
+      rect:
+        serializedVersion: 2
+        x: 2743
+        y: 3373
+        width: 456
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5484898534ccce10800000000000000
+      internalID: 2219364450606285914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_17
+      rect:
+        serializedVersion: 2
+        x: 4704
+        y: 3373
+        width: 456
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6271b08c3db42c80800000000000000
+      internalID: -8348339741683256723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_18
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 2292
+        width: 456
+        height: 719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0adde750ec29a76a0800000000000000
+      internalID: -6450682102701695584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_19
+      rect:
+        serializedVersion: 2
+        x: 2743
+        y: 2291
+        width: 456
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07143a8aa2dd50a70800000000000000
+      internalID: 8792677022798397808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_20
+      rect:
+        serializedVersion: 2
+        x: 4705
+        y: 2290
+        width: 456
+        height: 722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8994c8140b80218c0800000000000000
+      internalID: -4030149163436193384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_21
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1208
+        width: 455
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da72012a7387cfcd0800000000000000
+      internalID: -2523009510896818259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_22
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 1208
+        width: 457
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bcd2e3dba30bed10800000000000000
+      internalID: 2155820883156065457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_23
+      rect:
+        serializedVersion: 2
+        x: 4706
+        y: 1207
+        width: 464
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9ca3a954e410dc0800000000000000
+      internalID: -3674569760110360065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_24
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 129
+        width: 462
+        height: 722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23820354ef1b0fc0800000000000000
+      internalID: -3527690817608973523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_25
+      rect:
+        serializedVersion: 2
+        x: 2746
+        y: 128
+        width: 468
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c20e3fce2eab2f00800000000000000
+      internalID: 1093158850636153543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Serval back idle_26
+      rect:
+        serializedVersion: 2
+        x: 4708
+        y: 127
+        width: 476
+        height: 724
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f306684bb03b6c100800000000000000
+      internalID: 127986502281355327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 21802d281cb25cd469e30ee7c8292145
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Serval back idle_0: 1961580016414458245
+      Serval back idle_1: 1908667636791852471
+      Serval back idle_10: -4444402718589109562
+      Serval back idle_11: 4512666342573456411
+      Serval back idle_12: 2834482346908370970
+      Serval back idle_13: -5973107629323304009
+      Serval back idle_14: -2360299649443084551
+      Serval back idle_15: -230406955231380424
+      Serval back idle_16: 2219364450606285914
+      Serval back idle_17: -8348339741683256723
+      Serval back idle_18: -6450682102701695584
+      Serval back idle_19: 8792677022798397808
+      Serval back idle_2: 4103533129966695808
+      Serval back idle_20: -4030149163436193384
+      Serval back idle_21: -2523009510896818259
+      Serval back idle_22: 2155820883156065457
+      Serval back idle_23: -3674569760110360065
+      Serval back idle_24: -3527690817608973523
+      Serval back idle_25: 1093158850636153543
+      Serval back idle_26: 127986502281355327
+      Serval back idle_3: -8470629665139770875
+      Serval back idle_4: 9135887202856249317
+      Serval back idle_5: 2344798535299107558
+      Serval back idle_6: 7970622042525585762
+      Serval back idle_7: -8254301070198396243
+      Serval back idle_8: 147993172386026000
+      Serval back idle_9: -1710589495268189900
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

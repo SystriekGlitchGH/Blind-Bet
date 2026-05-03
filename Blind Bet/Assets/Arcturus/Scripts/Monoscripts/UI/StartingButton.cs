@@ -24,6 +24,7 @@ public class StartingButton : MonoBehaviour
     {
         PlayerMovement pm = FindFirstObjectByType<PlayerMovement>();
         StartingWarpSlab sw = FindFirstObjectByType<StartingWarpSlab>();
+        WarpPresentation wp = FindFirstObjectByType<WarpPresentation>();
         if(chosenCardsField.transform.childCount == 2)
         {
             for(int i = 0; i < 2; i++)
@@ -32,7 +33,10 @@ public class StartingButton : MonoBehaviour
             }
             pm.playerStats.SortHandCards(pm.playerStats.activeHand, 1);
             Time.timeScale = 1;
-            sw.ChangeScene();
+            if (wp)
+                wp.ChangeScene();
+            else
+                sw.ChangeScene();
             pm.playerUI.cardPicker.gameObject.SetActive(false);
         }
         else

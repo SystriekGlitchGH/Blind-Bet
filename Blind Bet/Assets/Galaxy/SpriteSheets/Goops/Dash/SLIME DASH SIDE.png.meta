@@ -153,10 +153,10 @@ TextureImporter:
       name: SLIME DASH SIDE_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2184
-        width: 1906
-        height: 1071
+        x: 688
+        y: 2538
+        width: 485
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: SLIME DASH SIDE_1
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2184
-        width: 1906
-        height: 1071
+        x: 2627
+        y: 2543
+        width: 506
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: SLIME DASH SIDE_2
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2184
-        width: 1906
-        height: 1071
+        x: 4587
+        y: 2538
+        width: 540
+        height: 373
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: SLIME DASH SIDE_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1093
-        width: 1906
-        height: 1071
+        x: 688
+        y: 1447
+        width: 569
+        height: 361
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: SLIME DASH SIDE_4
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 1093
-        width: 1906
-        height: 1071
+        x: 2627
+        y: 1457
+        width: 575
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: SLIME DASH SIDE_5
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 1093
-        width: 1906
-        height: 1071
+        x: 4572
+        y: 1447
+        width: 570
+        height: 361
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +285,10 @@ TextureImporter:
       name: SLIME DASH SIDE_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 1906
-        height: 1071
+        x: 634
+        y: 345
+        width: 539
+        height: 372
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: SLIME DASH SIDE_7
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2
-        width: 1906
-        height: 1071
+        x: 2661
+        y: 338
+        width: 507
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +329,10 @@ TextureImporter:
       name: SLIME DASH SIDE_8
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2
-        width: 1906
-        height: 1071
+        x: 4641
+        y: 345
+        width: 486
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -289,7 +289,7 @@ public class AbilityShowcase : MonoBehaviour
         else if(abilityCode == "n8s")
         {
             abilityTitle.text = "Four of a kind - "+abilityName;
-            abilityDesc.text = "Hold attack down for 3 seconds to dash forard and make a powerful attack - Scales with ABILITY damage";
+            abilityDesc.text = "Hold attack down for 3 seconds to dash forward and make a powerful attack - Scales with ABILITY damage";
             icon.sprite = icons[42];
         }
         else if(abilityCode == "n9s")

@@ -321,6 +321,8 @@ GameObject:
   - component: {fileID: 3049566946287421281}
   - component: {fileID: 2106727895323353820}
   - component: {fileID: 2531258301390327091}
+  - component: {fileID: 860394632255063782}
+  - component: {fileID: 1201846538794722474}
   m_Layer: 7
   m_Name: EnemyMovement
   m_TagString: Enemy
@@ -501,7 +503,7 @@ MonoBehaviour:
   movedNode: {fileID: 0}
   path: []
   currentState: 0
-  AttackRange: 3
+  attackRange: 4
   stopRange: 3
   isHealer: 0
   attackVisual: {fileID: 3956911121127704462, guid: f8e26d177611f774f9d752c7f2cc82d8, type: 3}
@@ -524,6 +526,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   em: {fileID: 2106727895323353820}
   healthbarSlider: {fileID: 4930514662188820663}
+--- !u!114 &860394632255063782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3205868945080471372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc778834061b784ab56a5dd5cf61aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1201846538794722474}
+  em: {fileID: 2106727895323353820}
+--- !u!95 &1201846538794722474
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3205868945080471372}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49fbca43a1316714a9f933f9e7b4507d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3568755734974835591
 GameObject:
   m_ObjectHideFlags: 0

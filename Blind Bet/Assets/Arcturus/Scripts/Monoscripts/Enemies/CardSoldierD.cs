@@ -11,7 +11,7 @@ public class CardSoldierD : EnemyMovement
     {
         currentNode = AStarManager.instance.FindNearestNode(transform.position);
         rb2d.linearDamping = friction;
-        enemyStats = new Enemy(8,50,6,2,3);
+        enemyStats = new Enemy(8,50,6,4,3);
         currentState = StateMachine.patrol;
     }
     protected override void Update()
@@ -63,7 +63,7 @@ public class CardSoldierD : EnemyMovement
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
-            if(distance < AttackRange && canAttack)
+            if(distance < attackRange && canAttack)
             {
                 StartCoroutine(AttackTimer());
             }

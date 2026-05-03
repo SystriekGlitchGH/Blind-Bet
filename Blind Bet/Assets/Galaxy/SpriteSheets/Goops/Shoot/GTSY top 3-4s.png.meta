@@ -171,10 +171,10 @@ TextureImporter:
       name: GTSY top 3-4s_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4358
-        width: 1906
-        height: 1069
+        x: 695
+        y: 4680
+        width: 460
+        height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: GTSY top 3-4s_1
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 4358
-        width: 1906
-        height: 1069
+        x: 2650
+        y: 4680
+        width: 460
+        height: 409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: GTSY top 3-4s_2
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 4358
-        width: 1906
-        height: 1069
+        x: 4605
+        y: 4680
+        width: 454
+        height: 397
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: GTSY top 3-4s_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3269
-        width: 1906
-        height: 1069
+        x: 695
+        y: 3602
+        width: 451
+        height: 397
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +259,10 @@ TextureImporter:
       name: GTSY top 3-4s_4
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 3269
-        width: 1906
-        height: 1069
+        x: 2647
+        y: 3602
+        width: 460
+        height: 429
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: GTSY top 3-4s_5
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 3269
-        width: 1906
-        height: 1069
+        x: 4575
+        y: 3597
+        width: 459
+        height: 457
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: GTSY top 3-4s_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2180
-        width: 1906
-        height: 1069
+        x: 695
+        y: 2510
+        width: 478
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,10 +325,10 @@ TextureImporter:
       name: GTSY top 3-4s_7
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2180
-        width: 1906
-        height: 1069
+        x: 2597
+        y: 2510
+        width: 517
+        height: 465
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,10 +347,10 @@ TextureImporter:
       name: GTSY top 3-4s_8
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2180
-        width: 1906
-        height: 1069
+        x: 4538
+        y: 2520
+        width: 521
+        height: 471
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,10 +369,10 @@ TextureImporter:
       name: GTSY top 3-4s_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1091
-        width: 1906
-        height: 1069
+        x: 689
+        y: 1396
+        width: 490
+        height: 468
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,10 +391,10 @@ TextureImporter:
       name: GTSY top 3-4s_10
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 1091
-        width: 1906
-        height: 1069
+        x: 2634
+        y: 1396
+        width: 493
+        height: 463
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,10 +413,10 @@ TextureImporter:
       name: GTSY top 3-4s_11
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 1091
-        width: 1906
-        height: 1069
+        x: 4538
+        y: 1396
+        width: 489
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,10 +435,10 @@ TextureImporter:
       name: GTSY top 3-4s_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 1906
-        height: 1069
+        x: 678
+        y: 314
+        width: 495
+        height: 475
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: GTSY top 3-4s_13
       rect:
         serializedVersion: 2
-        x: 1926
-        y: 2
-        width: 1906
-        height: 1069
+        x: 2646
+        y: 314
+        width: 481
+        height: 478
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: GTSY top 3-4s_14
       rect:
         serializedVersion: 2
-        x: 3852
-        y: 2
-        width: 1906
-        height: 1069
+        x: 4600
+        y: 340
+        width: 497
+        height: 476
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

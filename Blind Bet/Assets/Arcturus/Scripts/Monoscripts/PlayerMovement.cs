@@ -2,10 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.Cinemachine;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Random = System.Random;
 
@@ -22,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     public PrefabLibrary prefabLib;
     public Node currentNode;
     public GameStats gamestats;
+    public GameStats gameStatsReset;
+    public Player playerReset;
+    private CinemachineImpulseSource impulseSource;
 
 	[Header("Movement stats")]
     public float acceleration; // how quickly you go to top speed
@@ -91,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerStats.weapon = new Weapon(playerStats.activeSuit);
+        impulseSource = GetComponent<CinemachineImpulseSource>();
     }
     private void FixedUpdate()
     {
@@ -411,6 +417,36 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+    public void OpenManual(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            if (!playerUI.manual.activeInHierarchy)
+            {
+                playerUI.manual.SetActive(true);
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                playerUI.manual.SetActive(false);
+                Time.timeScale = 1f;
+            }
+        }
+    }
+    
+    // presentation cheats
+    public void SpawnWarpSlab(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            GameObject warpslab = Instantiate(prefabLib.warpSlab, new Vector3(-25,-26,0), Quaternion.Euler(Vector2.zero));
+            if(warpslab.TryGetComponent(out WarpPresentation warp))
+            {
+                warp.level = "Map1 Presentation";
+            }
+        }
+        
+    }
     #endregion
     #region ACTIVATION METHODS
     private void ActivateDash(int type)
@@ -426,10 +462,23 @@ public class PlayerMovement : MonoBehaviour
         if (!hasIFrames)
         {
             Debug.Log("got hit for: "+ damage * playerStats.GetDamageMod());
+            impulseSource.GenerateImpulse();
             StartCoroutine(GetHitTimer());
             playerStats.TakeDamage(damage * playerStats.GetDamageMod());
             rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
         }
+        if(playerStats.currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        string json = JsonUtility.ToJson(gameStatsReset);
+        JsonUtility.FromJsonOverwrite(json, gamestats);
+        json = JsonUtility.ToJson(playerReset);
+        JsonUtility.FromJsonOverwrite(json, playerStats);
+        SceneManager.LoadScene("Full House");
     }
     public void GetHealed(float healAmount)
     {
@@ -1454,6 +1503,15 @@ public class PlayerMovement : MonoBehaviour
     private float TimeBetweenAttacks()
     {
         return 1/(1+playerStats.weapon.baseAttackSpeed/100*playerStats.GetAttackSpeedMod());
+    }
+
+    public float GetDirectionX()
+    {
+        return directionX;
+    }
+    public float GetDirectionY()
+    {
+        return directionY;
     }
 
     #endregion

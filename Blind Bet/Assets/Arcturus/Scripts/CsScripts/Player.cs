@@ -145,26 +145,41 @@ public class Player : ScriptableObject
     {
         if(hand.cards[0].rank == 0 && hand.cards[1].rank == 0 && hand.cards[2].rank == 0 && hand.cards[3].rank == 0 && hand.cards[4].rank == 0)
             hand.type = HandType.none;
+        // 1/1/1/1/1
         else if(hand.cards[0].rank == 10 && hand.cards[1].rank == 11 && hand.cards[2].rank == 12 && hand.cards[3].rank == 13 && hand.cards[4].rank == 14 && IsSuited(hand))
             hand.type = HandType.royalflush;
+        // 5
         else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[0].rank && hand.cards[4].rank == hand.cards[0].rank)
             hand.type = HandType.kind5;
+        // 4
         else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[0].rank)
             hand.type = HandType.kind4;
+        // two ways to get full house
+        // 3/2
         else if(hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank && hand.cards[4].rank == hand.cards[3].rank && hand.cards[4].rank != 0 && hand.cards[3].rank != 0)
             hand.type = HandType.fullhouse;
+        // 2/3
+        else if(hand.cards[1].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[2].rank && hand.cards[4].rank == hand.cards[2].rank && hand.cards[2].rank != 0 && hand.cards[3].rank != 0 && hand.cards[4].rank != 0)
+            hand.type = HandType.fullhouse;
+        // 1/1/1/1/1
         else if(hand.cards[1].rank == hand.cards[0].rank+1 && hand.cards[2].rank == hand.cards[1].rank+1 && hand.cards[3].rank == hand.cards[2].rank+1 && hand.cards[4].rank == hand.cards[3].rank+1)
             hand.type = HandType.straight;
+        // 5any
         else if(hand.cards[1].suit == hand.cards[0].suit && hand.cards[2].suit == hand.cards[0].suit && hand.cards[3].suit == hand.cards[0].suit && hand.cards[4].suit == hand.cards[0].suit)
             hand.type = HandType.flush;
+        // 3
         else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[2].rank == hand.cards[0].rank)
             hand.type = HandType.kind3;
+        // 2/2
         else if (hand.cards[1].rank == hand.cards[0].rank && hand.cards[3].rank == hand.cards[2].rank && hand.cards[2].rank != 0)
             hand.type = HandType.twopair;
+        // 2
         else if (hand.cards[1].rank == hand.cards[0].rank)
             hand.type = HandType.pair;
+        // 1
         else if(hand.cards[0].rank != hand.cards[1].rank)
             hand.type = HandType.high;
+        // 0
         else
             hand.type = HandType.none;
         switch (handNum)

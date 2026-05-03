@@ -93,7 +93,7 @@ public class ChargerMovement : EnemyMovement
                 Vector2 velocity = Vector2.ClampMagnitude(new(rb2d.linearVelocity.x, rb2d.linearVelocity.y), enemyStats.topSpeed * enemyStats.GetSpeedMod());
                 rb2d.linearVelocity = velocity;
             }
-            if (distance < AttackRange && canAttack)
+            if (distance < attackRange && canAttack)
             {
                 StartCoroutine(AttackTimer());
             }
