@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     public PrefabLibrary prefabLib;
     public Node currentNode;
     public GameStats gamestats;
+    public GameStats gameStatsReset;
+    public Player playerReset;
     private CinemachineImpulseSource impulseSource;
 
 	[Header("Movement stats")]
@@ -472,6 +474,8 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Die()
     {
+        gamestats = gameStatsReset;
+        playerStats = playerReset;
         SceneManager.LoadScene("Full House");
     }
     public void GetHealed(float healAmount)

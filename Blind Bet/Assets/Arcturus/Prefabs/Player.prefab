@@ -418,6 +418,8 @@ MonoBehaviour:
   prefabLib: {fileID: -3836121528770696468, guid: 47cb42360dc3c0f418f814238e101ee9, type: 3}
   currentNode: {fileID: 0}
   gamestats: {fileID: 11400000, guid: d5b99a2fb29eb7f4f9c607d98f56ff24, type: 2}
+  gameStatsReset: {fileID: 11400000, guid: 6aac6fec24853d7458d86606925b263a, type: 2}
+  playerReset: {fileID: 11400000, guid: 87e9e4d5c4ca0e14f8a6563217299db7, type: 2}
   acceleration: 90
   friction: 8
   blankCard: {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
@@ -625,6 +627,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: e6d99bb7-7069-4825-a1d8-db3d900cfa25
     m_ActionName: 'Player/OpenManual[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 890f8ee9-5d9c-4523-b5c6-337feb3a188c
+    m_ActionName: 'Player/SpawnPresentation[/Keyboard/p]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
