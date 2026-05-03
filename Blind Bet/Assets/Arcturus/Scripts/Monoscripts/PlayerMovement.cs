@@ -414,6 +414,22 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+    public void OpenManual(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            if (!playerUI.manual.activeInHierarchy)
+            {
+                playerUI.manual.SetActive(true);
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                playerUI.manual.SetActive(false);
+                Time.timeScale = 1f;
+            }
+        }
+    }
     #endregion
     #region ACTIVATION METHODS
     private void ActivateDash(int type)

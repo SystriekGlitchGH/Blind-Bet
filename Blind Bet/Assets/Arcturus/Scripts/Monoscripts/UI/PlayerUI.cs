@@ -29,6 +29,8 @@ public class PlayerUI : MonoBehaviour
     public GameObject cardPicker;
     [Header("Kharon")]
     public GameObject kharonMenu;
+    [Header("Manual")]
+    public GameObject manual;
 
 
     private void Start()
