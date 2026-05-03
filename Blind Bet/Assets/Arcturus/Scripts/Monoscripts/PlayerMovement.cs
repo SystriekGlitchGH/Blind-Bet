@@ -7,6 +7,7 @@ using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Random = System.Random;
 
@@ -430,6 +431,20 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+    
+    // presentation cheats
+    public void SpawnWarpSlab(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            GameObject warpslab = Instantiate(prefabLib.warpSlab, new Vector3(-25,-26,0), Quaternion.Euler(Vector2.zero));
+            if(warpslab.TryGetComponent(out WarpPresentation warp))
+            {
+                warp.level = "Map1 Presentation";
+            }
+        }
+        
+    }
     #endregion
     #region ACTIVATION METHODS
     private void ActivateDash(int type)
@@ -450,6 +465,14 @@ public class PlayerMovement : MonoBehaviour
             playerStats.TakeDamage(damage * playerStats.GetDamageMod());
             rb2d.AddForce(attacker.TargetDirection(transform.position)*knockback,ForceMode2D.Impulse);
         }
+        if(playerStats.currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        SceneManager.LoadScene("Full House");
     }
     public void GetHealed(float healAmount)
     {
