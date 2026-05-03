@@ -6753,16 +6753,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 290336900}
     - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1509716785}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenCardMenu
       objectReference: {fileID: 0}
     - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Interact
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938354143582018, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4386654664542035037, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6817,6 +6829,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+--- !u!114 &1509716785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9003751370500190273, guid: 9ee5db72b762a35458a979ac45da0fcb, type: 3}
+  m_PrefabInstance: {fileID: 1509716784}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d2e0a5d2d79984c86a64d16f925d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1661710262
 GameObject:
   m_ObjectHideFlags: 0
