@@ -474,8 +474,10 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Die()
     {
-        gamestats = gameStatsReset;
-        playerStats = playerReset;
+        string json = JsonUtility.ToJson(gameStatsReset);
+        JsonUtility.FromJsonOverwrite(json, gamestats);
+        json = JsonUtility.ToJson(playerReset);
+        JsonUtility.FromJsonOverwrite(json, playerStats);
         SceneManager.LoadScene("Full House");
     }
     public void GetHealed(float healAmount)
