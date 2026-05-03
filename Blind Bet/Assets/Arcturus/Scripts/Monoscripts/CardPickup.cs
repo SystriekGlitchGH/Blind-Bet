@@ -9,7 +9,7 @@ public class CardPickup : MonoBehaviour
     Random rand = new Random();
     void Awake()
     {
-        if(rand.Next(1,101) < 20)
+        if(rand.Next(1,101) < 50)
         {
             Destroy(gameObject);
         }
