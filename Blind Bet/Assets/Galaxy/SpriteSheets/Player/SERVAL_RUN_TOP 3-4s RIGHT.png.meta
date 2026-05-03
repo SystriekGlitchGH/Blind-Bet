@@ -90,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 360
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,10 +111,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -168,10 +168,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_0
       rect:
         serializedVersion: 2
-        x: 570
-        y: 4515
-        width: 687
-        height: 831
+        x: 0
+        y: 4342
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_1
       rect:
         serializedVersion: 2
-        x: 2498
-        y: 4525
-        width: 682
-        height: 818
+        x: 1926
+        y: 4342
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_2
       rect:
         serializedVersion: 2
-        x: 4450
-        y: 4524
-        width: 642
-        height: 800
+        x: 3852
+        y: 4342
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_3
       rect:
         serializedVersion: 2
-        x: 612
-        y: 3445
-        width: 639
-        height: 794
+        x: 0
+        y: 3257
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_4
       rect:
         serializedVersion: 2
-        x: 2594
-        y: 3435
-        width: 604
-        height: 793
+        x: 1926
+        y: 3257
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_5
       rect:
         serializedVersion: 2
-        x: 4587
-        y: 3407
-        width: 550
-        height: 816
+        x: 3852
+        y: 3257
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +300,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_6
       rect:
         serializedVersion: 2
-        x: 729
-        y: 2291
-        width: 560
-        height: 850
+        x: 0
+        y: 2172
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,10 +322,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_7
       rect:
         serializedVersion: 2
-        x: 2642
-        y: 2289
-        width: 571
-        height: 878
+        x: 1926
+        y: 2172
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_8
       rect:
         serializedVersion: 2
-        x: 4518
-        y: 2298
-        width: 616
-        height: 875
+        x: 3852
+        y: 2172
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,10 +366,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_9
       rect:
         serializedVersion: 2
-        x: 706
-        y: 1307
-        width: 556
-        height: 748
+        x: 0
+        y: 1087
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,10 +388,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_10
       rect:
         serializedVersion: 2
-        x: 2661
-        y: 1321
-        width: 514
-        height: 721
+        x: 1926
+        y: 1087
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,10 +410,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_11
       rect:
         serializedVersion: 2
-        x: 4602
-        y: 1305
-        width: 493
-        height: 737
+        x: 3852
+        y: 1087
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,10 +432,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_12
       rect:
         serializedVersion: 2
-        x: 674
-        y: 189
-        width: 579
-        height: 783
+        x: 0
+        y: 2
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,10 +454,10 @@ TextureImporter:
       name: SERVAL_RUN_TOP 3-4s RIGHT_13
       rect:
         serializedVersion: 2
-        x: 2520
-        y: 169
-        width: 649
-        height: 817
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -476,7 +476,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b7b2b898bfdc1304f975b106cae1a9b4
     internalID: 0
     vertices: []
     indices: 

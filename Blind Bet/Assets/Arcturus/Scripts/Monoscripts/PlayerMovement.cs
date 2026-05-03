@@ -1460,6 +1460,15 @@ public class PlayerMovement : MonoBehaviour
         return 1/(1+playerStats.weapon.baseAttackSpeed/100*playerStats.GetAttackSpeedMod());
     }
 
+    public float GetDirectionX()
+    {
+        return directionX;
+    }
+    public float GetDirectionY()
+    {
+        return directionY;
+    }
+
     #endregion
     // for debugging attack hitboxes
     //private void OnDrawGizmos()
