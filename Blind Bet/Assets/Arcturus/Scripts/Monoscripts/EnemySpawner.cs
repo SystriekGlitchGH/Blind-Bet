@@ -15,7 +15,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Instantiate(enemies[rand.Next(0,enemies.Count-1)],transform.position,Quaternion.Euler(Vector3.zero));
+            Instantiate(enemies[rand.Next(0,enemies.Count)],transform.position,Quaternion.Euler(Vector3.zero));
             Destroy(gameObject);
         }
         
