@@ -16,6 +16,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] protected SpriteRenderer spriteRend;
     public Enemy enemyStats;
     public GameStats gameStats;
+    public PrefabLibrary prefabLib;
 
     [Header("Movement Stats")]
     public float acceleration;
@@ -187,14 +188,7 @@ public class EnemyMovement : MonoBehaviour
     #region ACTIVATION METHODS
     public void Die()
     {
-        if (enemyTarget != null)
-        {
-            enemyTarget.playerStats.kills++;
-            enemyTarget.playerStats.AddChips(40);
-            gameStats.kills++;
-        }
-        
-        Destroy(transform.parent.gameObject);
+        StartCoroutine(DieTimer());
     }
     public void GetHit(PlayerMovement attacker, float knockback, float damage)
     {
@@ -253,6 +247,19 @@ public class EnemyMovement : MonoBehaviour
         spriteRend.color = currentColor;
         hasKnockback = false;
     }
+    protected IEnumerator DieTimer()
+    {
+        if (enemyTarget != null)
+        {
+            enemyTarget.playerStats.kills++;
+            enemyTarget.playerStats.AddChips(30);
+            gameStats.kills++;
+        }
+        GameObject deathParticles = Instantiate(prefabLib.deathParticles,transform);
+        yield return new WaitForSeconds(1f);
+        deathParticles.transform.parent = null;
+        Destroy(transform.parent.gameObject);
+    }
     protected virtual IEnumerator AttackTimer()
     {
         canAttack = false; // make the enemy not duplicate attacks
@@ -281,15 +288,15 @@ public class EnemyMovement : MonoBehaviour
     {
         Color32 setColor = baseColor;
         if (enemyStats.hasCharm)
-            setColor = CombineColors(setColor, new Color32(255,70,190,255));
+            setColor = CombineColors(setColor, new Color32(255,70,190,currentColor.a));
         if (enemyStats.hasChill)
-            setColor = CombineColors(setColor, new Color32(80,190,255,255));
+            setColor = CombineColors(setColor, new Color32(80,190,255,currentColor.a));
         if (enemyStats.hasFrozen)
-            setColor = CombineColors(setColor, new Color32(170, 220, 255, 255));
+            setColor = CombineColors(setColor, new Color32(170, 220, 255, currentColor.a));
         if (enemyStats.hasPoison)
-            setColor = CombineColors(setColor, new Color32(50, 220, 70, 255));
+            setColor = CombineColors(setColor, new Color32(50, 220, 70, currentColor.a));
         if(enemyStats.hasEnrage)
-            setColor = CombineColors(setColor, new Color32(240, 100, 0, 255));
+            setColor = CombineColors(setColor, new Color32(240, 100, 0, currentColor.a));
         currentColor = setColor;
     }
     protected Color32 CombineColors(Color32 color1, Color32 color2)
@@ -297,7 +304,7 @@ public class EnemyMovement : MonoBehaviour
         int r = (color1.r + color2.r) / 2;
         int g = (color1.g + color2.g) / 2;
         int b = (color1.b + color2.b) / 2;
-        return new Color32((byte)r, (byte)g, (byte)b, 255);
+        return new Color32((byte)r, (byte)g, (byte)b, currentColor.a);
     }
     //movement help methods
 

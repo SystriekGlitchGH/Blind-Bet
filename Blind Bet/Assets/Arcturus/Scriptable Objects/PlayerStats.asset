@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73259922de1e381499dbac0274e3f230, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  activeSuit: 0
+  activeSuit: 1
   activeHand:
     cards:
-    - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
+    - {fileID: 11400000, guid: 977fdf51e07eeda479c393fd8d3735a3, type: 2}
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     suited: 0
-    type: 0
+    type: 1
   passiveHand1:
     cards:
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
@@ -38,20 +38,18 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
-    suited: 1
+    suited: 0
     type: 0
-  bench:
-  - {fileID: 11400000, guid: d5247143b54d67248afbcb9999299b42, type: 2}
-  - {fileID: 11400000, guid: d4bb836ce51c86d4abfb493f851ca456, type: 2}
+  bench: []
   activeAbility:
-    name: Sharp Edge
-    code: a2
+    name: 
+    code: a1
   passiveAbility1:
     name: Nothing
     code: na
   passiveAbility2:
-    name: Flashbang
-    code: b4d
+    name: Nothing
+    code: na
   blankCard: {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
   effectManager:
     effects: []
@@ -73,9 +71,9 @@ MonoBehaviour:
     baseParrySize: {x: 2, y: 1}
   baseSpeed: 10
   maxHealth: 100
-  currentHealth: 84
+  currentHealth: 82
   maxChips: 5000
-  currentChips: 1000
+  currentChips: 1036
   chipLowThreshold: 500
   baseDashDistance: 20
   baseDashCooldown: 0.5
@@ -85,4 +83,4 @@ MonoBehaviour:
   baseAbilityDamage: 60
   baseAbilityKnockback: 10
   baseAbilityCooldown: 1
-  kills: 21
+  kills: 23
