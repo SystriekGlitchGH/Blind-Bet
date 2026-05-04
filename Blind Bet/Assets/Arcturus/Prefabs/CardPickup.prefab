@@ -127,7 +127,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.804, y: 0.984}
+    oldSize: {x: 0.402, y: 0.492}
     newSize: {x: 0.4, y: 0.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,3 +149,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameStats: {fileID: 11400000, guid: d5b99a2fb29eb7f4f9c607d98f56ff24, type: 2}
   cardDeck: {fileID: 11400000, guid: 20e5d9a6fd1287b4baf5b54a97a594a4, type: 2}
+  prefabLib: {fileID: -3836121528770696468, guid: 47cb42360dc3c0f418f814238e101ee9, type: 3}

@@ -48,6 +48,11 @@ public class PrefabLibrary : MonoBehaviour
 
     [Header("Particles")]
     public GameObject deathParticles;
+    public GameObject playerDeathParticles;
+    public GameObject dashParticles;
+    public GameObject holdParticles;
+    public GameObject kharonParticles;
+    public GameObject starPickupParticles;
 
     [Header("Presentation")]
     public GameObject warpSlab;

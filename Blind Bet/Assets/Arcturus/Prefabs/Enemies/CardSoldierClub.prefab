@@ -486,6 +486,7 @@ MonoBehaviour:
   rb2d: {fileID: 5591057413083369273}
   spriteRend: {fileID: 4151534308051164709}
   gameStats: {fileID: 11400000, guid: d5b99a2fb29eb7f4f9c607d98f56ff24, type: 2}
+  prefabLib: {fileID: -3836121528770696468, guid: 47cb42360dc3c0f418f814238e101ee9, type: 3}
   acceleration: 50
   friction: 8
   hasKnockback: 0

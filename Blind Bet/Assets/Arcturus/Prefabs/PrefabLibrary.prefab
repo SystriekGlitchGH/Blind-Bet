@@ -70,4 +70,9 @@ MonoBehaviour:
   clubIndicator: {fileID: 5905200110543497619, guid: 8e07cee8e3a218a478438f8169577d39, type: 3}
   spadeIndicator: {fileID: 4779351223870598906, guid: a8d8ec19cc40bb1468d918031335a215, type: 3}
   deathParticles: {fileID: 4099415939534977953, guid: 2e8f6f16b55a45245b3b52c8ed7cf718, type: 3}
+  playerDeathParticles: {fileID: 4099415939534977953, guid: 57f43ce68a9a199408f97b0ca576e952, type: 3}
+  dashParticles: {fileID: 686609928228230026, guid: 426abb0c09706fd46ae93b43bf80dd98, type: 3}
+  holdParticles: {fileID: 0}
+  kharonParticles: {fileID: 2937825901647930508, guid: 2de52a820cf33bb42a5c3757616af4a2, type: 3}
+  starPickupParticles: {fileID: 8882923656618104742, guid: e4f17fd7fc33c4b47b43ae28d36e0918, type: 3}
   warpSlab: {fileID: 1954292645912156698, guid: 71eb9155b8f9a1945b8e52346fafc0b7, type: 3}

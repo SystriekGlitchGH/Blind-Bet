@@ -6,6 +6,7 @@ public class CardPickup : MonoBehaviour
     private bool shrinking;
     public GameStats gameStats;
     public CardDeck cardDeck;
+    public PrefabLibrary prefabLib;
     Random rand = new Random();
     void Awake()
     {
@@ -63,6 +64,7 @@ public class CardPickup : MonoBehaviour
                 Debug.Log(rank);
                 pm.playerStats.bench.Add(cardDeck.GetCardFromComponents(rank,suit));
                 Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(rank,suit)),pm.playerUI.bench);
+                Instantiate(prefabLib.starPickupParticles,transform.position,Quaternion.Euler(Vector3.zero));
                 Destroy(gameObject);
             }
             
