@@ -31,6 +31,8 @@ public class PlayerUI : MonoBehaviour
     public GameObject kharonMenu;
     [Header("Manual")]
     public GameObject manual;
+    [Header("ScreenTransitions")]
+    public GameObject screenTransition;
 
 
     private void Start()

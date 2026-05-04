@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     public float acceleration; // how quickly you go to top speed
     public float friction; // controls air resistance
     private float directionX, directionY; // variables for direction when moving
+    private bool isDying;
 
     [Header("Attack stats")]
     public Card blankCard;
@@ -485,7 +486,7 @@ public class PlayerMovement : MonoBehaviour
     // getting hit
     public void GetHit(EnemyMovement attacker, float knockback, float damage)
     {
-        if (!hasIFrames)
+        if (!hasIFrames && !isDying)
         {
             Debug.Log("got hit for: "+ damage * playerStats.GetDamageMod());
             impulseSource.GenerateImpulse();
@@ -500,11 +501,27 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Die()
     {
-        string json = JsonUtility.ToJson(gameStatsReset);
-        JsonUtility.FromJsonOverwrite(json, gamestats);
-        json = JsonUtility.ToJson(playerReset);
-        JsonUtility.FromJsonOverwrite(json, playerStats);
-        SceneManager.LoadScene("Full House");
+        StartCoroutine(DieTimer());
+    }
+    public IEnumerator DieTimer()
+    {
+        if(playerUI.screenTransition.TryGetComponent(out ScreenTransition st))
+        {
+            playerUI.screenTransition.SetActive(true);
+            isDying = true;
+            acceleration = 0;
+            canDash = false;
+            Instantiate(prefabLib.playerDeathParticles,transform);
+            yield return new WaitForSeconds(2f);
+            StartCoroutine(st.FadeToBlack());
+            yield return new WaitForSeconds(2.5f);
+            string json = JsonUtility.ToJson(gameStatsReset);
+            JsonUtility.FromJsonOverwrite(json, gamestats);
+            json = JsonUtility.ToJson(playerReset);
+            JsonUtility.FromJsonOverwrite(json, playerStats);
+            SceneManager.LoadScene("Full House");
+        }
+        
     }
     public void GetHealed(float healAmount)
     {
