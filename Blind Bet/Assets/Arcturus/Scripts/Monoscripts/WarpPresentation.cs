@@ -36,7 +36,7 @@ public class WarpPresentation : MonoBehaviour
     }
     private IEnumerator NextSceneTimer(string name)
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(name);
     }
 }
