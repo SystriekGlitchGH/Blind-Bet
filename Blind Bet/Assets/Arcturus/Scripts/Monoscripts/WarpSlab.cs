@@ -23,6 +23,10 @@ public class WarpSlab : MonoBehaviour
                 StartCoroutine(NextSceneTimer("Kharon Room"));
             return;
         }
+        if(gameStats.levelsAvailable.Count() == 0)
+        {
+            StartCoroutine(NextSceneTimer("BossArena1"));
+        }
         gameStats.level++;
         int levelIndex = rand.Next(0,gameStats.levelsAvailable.Count());
         string scenePickedName = gameStats.levelsAvailable[levelIndex];
