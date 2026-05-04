@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 3feb3d8d17084db43a616f61b34d699c
+guid: 77c84596074f23043be145950b788065
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8885878738611024183
-    second: '{064F06F5-C6C7-4B1C-9BF8-9D2DFF14D05E}_0'
+      213: -7255409249649358458
+    second: reap attack_0
+  - first:
+      213: 1296172065853546506
+    second: reap attack_1
+  - first:
+      213: -6044063959004140541
+    second: reap attack_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '{064F06F5-C6C7-4B1C-9BF8-9D2DFF14D05E}_0'
+      name: reap attack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 386
-        height: 191
+        x: 235
+        y: 932
+        width: 394
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7313b1422abf05b70800000000000000
-      internalID: 8885878738611024183
+      spriteID: 689019e6abb9f4b90800000000000000
+      internalID: -7255409249649358458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reap attack_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 15
+        width: 956
+        height: 909
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a002cf060adecf110800000000000000
+      internalID: 1296172065853546506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reap attack_2
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 382
+        width: 65
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c21d32adb2f1ca0800000000000000
+      internalID: -6044063959004140541
       vertices: []
       indices: 
       edges: []
@@ -151,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      '{064F06F5-C6C7-4B1C-9BF8-9D2DFF14D05E}_0': 8885878738611024183
+      reap attack_0: -7255409249649358458
+      reap attack_1: 1296172065853546506
+      reap attack_2: -6044063959004140541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 3feb3d8d17084db43a616f61b34d699c
+guid: e9cb152723f9c7b43b085c49624b55cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8885878738611024183
-    second: '{064F06F5-C6C7-4B1C-9BF8-9D2DFF14D05E}_0'
+      213: 502400357645485800
+    second: basic attack_0
+  - first:
+      213: -8094469015974223814
+    second: basic attack_1
+  - first:
+      213: 6845551848945946998
+    second: basic attack_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '{064F06F5-C6C7-4B1C-9BF8-9D2DFF14D05E}_0'
+      name: basic attack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 386
-        height: 191
+        x: 7
+        y: 12
+        width: 951
+        height: 932
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7313b1422abf05b70800000000000000
-      internalID: 8885878738611024183
+      spriteID: 8e60d74a672e8f600800000000000000
+      internalID: 502400357645485800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic attack_1
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 839
+        width: 319
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a306379f05baaaf80800000000000000
+      internalID: -8094469015974223814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basic attack_2
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 594
+        width: 96
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67111f72329400f50800000000000000
+      internalID: 6845551848945946998
       vertices: []
       indices: 
       edges: []
@@ -151,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      '{064F06F5-C6C7-4B1C-9BF8-9D2DFF14D05E}_0': 8885878738611024183
+      basic attack_0: 502400357645485800
+      basic attack_1: -8094469015974223814
+      basic attack_2: 6845551848945946998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
