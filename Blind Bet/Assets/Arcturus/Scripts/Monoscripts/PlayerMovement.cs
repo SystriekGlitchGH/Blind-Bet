@@ -447,6 +447,32 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
+    public void FillHP(InputAction.CallbackContext ctx)
+    {
+        if(ctx.performed)
+            playerStats.Heal(100);
+    }
+    public void AddChips(InputAction.CallbackContext ctx)
+    {
+        if(ctx.performed)
+            playerStats.AddChips(1000);
+    }
+    public void Hand1(InputAction.CallbackContext ctx)
+    {
+        
+    }
+    public void Hand2(InputAction.CallbackContext ctx)
+    {
+        
+    }
+    public void Hand3(InputAction.CallbackContext ctx)
+    {
+        
+    }
+    public void Hand4(InputAction.CallbackContext ctx)
+    {
+        
+    }
     #endregion
     #region ACTIVATION METHODS
     private void ActivateDash(int type)

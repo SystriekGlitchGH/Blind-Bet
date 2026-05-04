@@ -38,18 +38,20 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
-    suited: 0
+    suited: 1
     type: 0
-  bench: []
+  bench:
+  - {fileID: 11400000, guid: d5247143b54d67248afbcb9999299b42, type: 2}
+  - {fileID: 11400000, guid: d4bb836ce51c86d4abfb493f851ca456, type: 2}
   activeAbility:
-    name: Nothing
-    code: na
+    name: Sharp Edge
+    code: a2
   passiveAbility1:
     name: Nothing
     code: na
   passiveAbility2:
-    name: Nothing
-    code: na
+    name: Flashbang
+    code: b4d
   blankCard: {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
   effectManager:
     effects: []
@@ -64,14 +66,14 @@ MonoBehaviour:
   hasEnrage: 0
   buffDebuffs: []
   weapon:
-    baseAttack: 25
-    baseAttackSpeed: 100
-    baseKnockback: 8
-    baseAttackSize: {x: 2, y: 4}
+    baseAttack: 30
+    baseAttackSpeed: 200
+    baseKnockback: 10
+    baseAttackSize: {x: 2.5, y: 3}
     baseParrySize: {x: 2, y: 1}
   baseSpeed: 10
   maxHealth: 100
-  currentHealth: 100
+  currentHealth: 84
   maxChips: 5000
   currentChips: 1000
   chipLowThreshold: 500

@@ -77,9 +77,11 @@ public class MenuField : MonoBehaviour, IDropHandler
         {
             GameObject dropped = eventData.pointerDrag;
             DraggableItem item = dropped.GetComponent<DraggableItem>();
+            if(item.card.suit == Card.Suit.heart && handNum == 1)
+                return;
             item.parentAfterDrag = transform;
             
-            InvokeOnEnter(new Field(item.card, handNum));
+            // InvokeOnEnter(new Field(item.card, handNum));
         }
         
     }
