@@ -21,6 +21,9 @@ public class PlayerUI : MonoBehaviour
 
     [Header("Hands")]
     public Transform bench;
+    public Transform activeAbility;
+    public Transform passiveAbility1;
+    public Transform passiveAbility2;
     public bool cardManagerOpen;
     public AbilityShowcase abilityShowcase1;
     public AbilityShowcase abilityShowcase2;

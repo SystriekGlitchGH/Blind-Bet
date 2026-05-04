@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public GameStats gamestats;
     public GameStats gameStatsReset;
     public Player playerReset;
+    public CardDeck cardDeck;
     private CinemachineImpulseSource impulseSource;
 
 	[Header("Movement stats")]
@@ -460,19 +461,198 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Hand1(InputAction.CallbackContext ctx)
     {
-        
+        if (ctx.performed)
+        {
+            string json = JsonUtility.ToJson(playerReset);
+            JsonUtility.FromJsonOverwrite(json, playerStats);
+            for (int i = 0; i < playerUI.activeAbility.transform.childCount; i++)
+            {
+                Destroy(playerUI.activeAbility.transform.GetChild(i).gameObject);
+            }
+            for (int i = 0; i < playerUI.passiveAbility1.transform.childCount; i++)
+            {
+                Destroy(playerUI.passiveAbility1.transform.GetChild(i).gameObject);
+            }
+            for (int i = 0; i < playerUI.passiveAbility2.transform.childCount; i++)
+            {
+                Destroy(playerUI.passiveAbility2.transform.GetChild(i).gameObject); 
+            }
+            // adding whirl winds
+            playerStats.AddCard(cardDeck.GetCardFromComponents(2,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(6,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(8,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(10,Card.Suit.diamond),1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(2,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(6,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(8,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(10,Card.Suit.diamond)), playerUI.activeAbility);
+            // adding accult sacrifice
+            playerStats.AddCard(cardDeck.GetCardFromComponents(8,Card.Suit.heart),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(8,Card.Suit.heart),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(11,Card.Suit.club),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(11,Card.Suit.club),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(11,Card.Suit.club),2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(8,Card.Suit.heart)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(8,Card.Suit.heart)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(11,Card.Suit.club)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(11,Card.Suit.club)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(11,Card.Suit.club)), playerUI.passiveAbility1);
+            // adding flashbang
+            playerStats.AddCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond),3);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond),3);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond),3);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond)), playerUI.passiveAbility2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond)), playerUI.passiveAbility2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond)), playerUI.passiveAbility2);
+        }
     }
     public void Hand2(InputAction.CallbackContext ctx)
     {
-        
+        if (ctx.performed)
+        {
+            string json = JsonUtility.ToJson(playerReset);
+            JsonUtility.FromJsonOverwrite(json, playerStats);
+            for (int i = 0; i < playerUI.activeAbility.transform.childCount; i++)
+            {
+                Destroy(playerUI.activeAbility.transform.GetChild(i).gameObject);
+            }
+            for (int i = 0; i < playerUI.passiveAbility1.transform.childCount; i++)
+            {
+                Destroy(playerUI.passiveAbility1.transform.GetChild(i).gameObject);
+            }
+            for (int i = 0; i < playerUI.passiveAbility2.transform.childCount; i++)
+            {
+                Destroy(playerUI.passiveAbility2.transform.GetChild(i).gameObject); 
+            }
+            // adding whirl winds
+            playerStats.AddCard(cardDeck.GetCardFromComponents(2,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(6,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(8,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(10,Card.Suit.diamond),1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(2,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(6,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(8,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(10,Card.Suit.diamond)), playerUI.activeAbility);
+            // adding tectonic charge
+            playerStats.AddCard(cardDeck.GetCardFromComponents(9,Card.Suit.club),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(9,Card.Suit.club),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(9,Card.Suit.club),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(9,Card.Suit.spade),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(9,Card.Suit.spade),2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(9,Card.Suit.club)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(9,Card.Suit.club)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(9,Card.Suit.club)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(9,Card.Suit.spade)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(9,Card.Suit.spade)), playerUI.passiveAbility1);
+        }
     }
     public void Hand3(InputAction.CallbackContext ctx)
     {
-        
+        if (ctx.performed)
+        {
+            string json = JsonUtility.ToJson(playerReset);
+            JsonUtility.FromJsonOverwrite(json, playerStats);
+            for (int i = 0; i < playerUI.activeAbility.transform.childCount; i++)
+            {
+                Destroy(playerUI.activeAbility.transform.GetChild(i).gameObject);
+            }
+            for (int i = 0; i < playerUI.passiveAbility1.transform.childCount; i++)
+            {
+                Destroy(playerUI.passiveAbility1.transform.GetChild(i).gameObject);
+            }
+            for (int i = 0; i < playerUI.passiveAbility2.transform.childCount; i++)
+            {
+                Destroy(playerUI.passiveAbility2.transform.GetChild(i).gameObject); 
+            }
+            // adding continuous blade
+            playerStats.AddCard(cardDeck.GetCardFromComponents(3,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(5,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(6,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond),1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(3,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(5,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(6,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond)), playerUI.activeAbility);
+            // adding chain rifle
+            playerStats.AddCard(cardDeck.GetCardFromComponents(10,Card.Suit.spade),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(11,Card.Suit.spade),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(12,Card.Suit.spade),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(13,Card.Suit.spade),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(14,Card.Suit.spade),2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(10,Card.Suit.spade)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(11,Card.Suit.spade)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(12,Card.Suit.spade)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(13,Card.Suit.spade)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(14,Card.Suit.spade)), playerUI.passiveAbility1);
+            // adding shocking wheel
+            playerStats.AddCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond),3);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond),3);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond),3);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond),3);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond)), playerUI.passiveAbility2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond)), playerUI.passiveAbility2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond)), playerUI.passiveAbility2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond)), playerUI.passiveAbility2);
+        }
     }
     public void Hand4(InputAction.CallbackContext ctx)
     {
-        
+        if (ctx.performed)
+        {
+            string json = JsonUtility.ToJson(playerReset);
+            JsonUtility.FromJsonOverwrite(json, playerStats);
+            for (int i = 0; i < playerUI.activeAbility.transform.childCount; i++)
+            {
+                Destroy(playerUI.activeAbility.transform.GetChild(i).gameObject);
+            }
+            for (int i = 0; i < playerUI.passiveAbility1.transform.childCount; i++)
+            {
+                Destroy(playerUI.passiveAbility1.transform.GetChild(i).gameObject);
+            }
+            for (int i = 0; i < playerUI.passiveAbility2.transform.childCount; i++)
+            {
+                Destroy(playerUI.passiveAbility2.transform.GetChild(i).gameObject); 
+            }
+            // adding continuous blade
+            playerStats.AddCard(cardDeck.GetCardFromComponents(3,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(5,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(6,Card.Suit.diamond),1);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond),1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(3,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(4,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(5,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(6,Card.Suit.diamond)), playerUI.activeAbility);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(7,Card.Suit.diamond)), playerUI.activeAbility);
+            // adding holy shotgun
+            playerStats.AddCard(cardDeck.GetCardFromComponents(10,Card.Suit.club),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(11,Card.Suit.club),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(12,Card.Suit.club),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(13,Card.Suit.club),2);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(14,Card.Suit.club),2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(10,Card.Suit.club)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(11,Card.Suit.club)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(12,Card.Suit.club)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(13,Card.Suit.club)), playerUI.passiveAbility1);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(14,Card.Suit.club)), playerUI.passiveAbility1);
+            // adding radio prism
+            playerStats.AddCard(cardDeck.GetCardFromComponents(12,Card.Suit.spade),3);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(12,Card.Suit.spade),3);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(12,Card.Suit.spade),3);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(14,Card.Suit.diamond),3);
+            playerStats.AddCard(cardDeck.GetCardFromComponents(14,Card.Suit.diamond),3);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(12,Card.Suit.diamond)), playerUI.passiveAbility2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(12,Card.Suit.diamond)), playerUI.passiveAbility2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(12,Card.Suit.diamond)), playerUI.passiveAbility2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(14,Card.Suit.diamond)), playerUI.passiveAbility2);
+            Instantiate(cardDeck.GetUIObjectFromCard(cardDeck.GetCardFromComponents(14,Card.Suit.diamond)), playerUI.passiveAbility2);
+        }
     }
     #endregion
     #region ACTIVATION METHODS

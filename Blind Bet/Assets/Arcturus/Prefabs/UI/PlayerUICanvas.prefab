@@ -31705,6 +31705,9 @@ MonoBehaviour:
   - {fileID: 4709869405405764654}
   currentChip: {fileID: 4086159788225442511}
   bench: {fileID: 2661686510336456301}
+  activeAbility: {fileID: 3002503595230433344}
+  passiveAbility1: {fileID: 5743184082882719885}
+  passiveAbility2: {fileID: 4633036120043005365}
   cardManagerOpen: 0
   abilityShowcase1: {fileID: 6022790130027278759}
   abilityShowcase2: {fileID: 5696309338141203399}
