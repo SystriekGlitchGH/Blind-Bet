@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: 64c4638ae5cfe4040a946fa9c87f6cc6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5994016311957275317
+    second: Burst sheet_0
+  - first:
+      213: -5745956038056617783
+    second: Burst sheet_1
+  - first:
+      213: -2609524774746724396
+    second: Burst sheet_2
+  - first:
+      213: 1161331473038495721
+    second: Burst sheet_3
+  - first:
+      213: -7608857951266347531
+    second: Burst sheet_4
+  - first:
+      213: 4452325038655513491
+    second: Burst sheet_5
+  - first:
+      213: -4297774195195536226
+    second: Burst sheet_6
+  - first:
+      213: -1106988041108757550
+    second: Burst sheet_7
+  - first:
+      213: -1348522851938858288
+    second: Burst sheet_8
+  - first:
+      213: -7371601224347805433
+    second: Burst sheet_9
+  - first:
+      213: 224681812514662050
+    second: Burst sheet_10
+  - first:
+      213: -6834446647462134587
+    second: Burst sheet_11
+  - first:
+      213: -1698540854643339867
+    second: Burst sheet_12
+  - first:
+      213: 4472754173030612962
+    second: Burst sheet_13
+  - first:
+      213: 7374383849214942085
+    second: Burst sheet_14
+  - first:
+      213: 4331854497307824679
+    second: Burst sheet_15
+  - first:
+      213: 4841974339845953655
+    second: Burst sheet_16
+  - first:
+      213: 1021842814959836446
+    second: Burst sheet_17
+  - first:
+      213: -9100171708598228407
+    second: Burst sheet_18
+  - first:
+      213: 713609660066809085
+    second: Burst sheet_19
+  - first:
+      213: -7773560738692121044
+    second: Burst sheet_20
+  - first:
+      213: -7849987727973660106
+    second: Burst sheet_21
+  - first:
+      213: -6968039166093136123
+    second: Burst sheet_22
+  - first:
+      213: 7793428690322245276
+    second: Burst sheet_23
+  - first:
+      213: -4529164925444654884
+    second: Burst sheet_24
+  - first:
+      213: -3007321925472470143
+    second: Burst sheet_25
+  - first:
+      213: 3195380000393438091
+    second: Burst sheet_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Burst sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2184
+        width: 1906
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b24c1cf3160f2350800000000000000
+      internalID: 5994016311957275317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burst sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2184
+        width: 1906
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8df904d634240b0800000000000000
+      internalID: -5745956038056617783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burst sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2184
+        width: 1906
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7e3a01b0b19cbd0800000000000000
+      internalID: -2609524774746724396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burst sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1092
+        width: 1906
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efc0fc52d0ed1010800000000000000
+      internalID: 1161331473038495721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burst sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1092
+        width: 1906
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5ec5cb108e76690800000000000000
+      internalID: -7608857951266347531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burst sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1092
+        width: 1906
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393a3a18806d9cd30800000000000000
+      internalID: 4452325038655513491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burst sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1906
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c978ad32d3b54c0800000000000000
+      internalID: -4297774195195536226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 26b3ab971352be140a117fa1785687f3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Burst sheet_0: 5994016311957275317
+      Burst sheet_1: -5745956038056617783
+      Burst sheet_2: -2609524774746724396
+      Burst sheet_3: 1161331473038495721
+      Burst sheet_4: -7608857951266347531
+      Burst sheet_5: 4452325038655513491
+      Burst sheet_6: -4297774195195536226
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

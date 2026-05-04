@@ -34,9 +34,9 @@ public class Area1Boss : EnemyMovement
     // red
     public GameObject fireball;
     private bool foundPositionRed;
-    private bool inRedAttack, canRedAttack = true;
+    public bool inRedAttack, canRedAttack = true;
     // white
-    private bool inWhiteAttack, canWhiteAttack = true;
+    public bool inWhiteAttack, canWhiteAttack = true;
     private bool foundPositionWhite;
     private LineRenderer lr1, lr2, lr3, lr4;
     public LineRenderer lineRend;
@@ -45,7 +45,7 @@ public class Area1Boss : EnemyMovement
     // blue
     public GameObject specterBullet;
     private bool foundPositionBlue;
-    private bool inBlueAttack, canBlueAttack = true;
+    public bool inBlueAttack, canBlueAttack = true;
 
     protected override void Start()
     {
@@ -286,6 +286,7 @@ public class Area1Boss : EnemyMovement
         angleDegrees -= 90; // sets the rotation correctly by 90 degrees
         //anchorTransform.rotation = Quaternion.LookRotation(PlayerDirection(target.transform.position));
         Quaternion targetRotation = Quaternion.Euler(0,0,angleDegrees);
+        inRedAttack = true;
         for (int i = 0; i < 20; i++)
         {
             yield return new WaitForSeconds(0.1f);
@@ -300,6 +301,7 @@ public class Area1Boss : EnemyMovement
             }
             extraRotation += 160 / (20-1);
         }
+        inRedAttack = false;
         SwitchState();
         foundPositionRed = false;
         canRedAttack = true;
@@ -410,6 +412,7 @@ public class Area1Boss : EnemyMovement
     {
         canBlueAttack = false;
         float extraRotation = -90 / 2;
+        inBlueAttack = true;
         for(int i = 0; i < 4; i++)
         {
             yield return new WaitForSeconds(1f);
@@ -428,6 +431,7 @@ public class Area1Boss : EnemyMovement
             }
             extraRotation = -90 / 2;
         }
+        inBlueAttack = false;
         SwitchState();
         foundPositionBlue = false;
         canBlueAttack = true;

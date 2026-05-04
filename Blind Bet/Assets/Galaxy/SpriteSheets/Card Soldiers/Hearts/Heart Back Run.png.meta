@@ -1,0 +1,550 @@
+fileFormatVersion: 2
+guid: 38e65d38dc1e9d0459126850bf02c237
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1666965483533393800
+    second: Heart Back Run_0
+  - first:
+      213: 3130623814365879312
+    second: Heart Back Run_1
+  - first:
+      213: 8447819195750258884
+    second: Heart Back Run_2
+  - first:
+      213: 2654054116372988152
+    second: Heart Back Run_3
+  - first:
+      213: -1954473706569670442
+    second: Heart Back Run_4
+  - first:
+      213: 7395005211145227364
+    second: Heart Back Run_5
+  - first:
+      213: -871855793281740116
+    second: Heart Back Run_6
+  - first:
+      213: -2740843385460383138
+    second: Heart Back Run_7
+  - first:
+      213: 3708409936189587457
+    second: Heart Back Run_8
+  - first:
+      213: -2268129477885777633
+    second: Heart Back Run_9
+  - first:
+      213: -7540792723186213057
+    second: Heart Back Run_10
+  - first:
+      213: -6763177560130232877
+    second: Heart Back Run_11
+  - first:
+      213: 2168715372274961352
+    second: Heart Back Run_12
+  - first:
+      213: 752455498109189147
+    second: Heart Back Run_13
+  - first:
+      213: 4574329810399069000
+    second: Heart Back Run_14
+  - first:
+      213: 4829242160468925010
+    second: Heart Back Run_15
+  - first:
+      213: 1800324816498894034
+    second: Heart Back Run_16
+  - first:
+      213: 5379830147198711428
+    second: Heart Back Run_17
+  - first:
+      213: 4880902938027970448
+    second: Heart Back Run_18
+  - first:
+      213: 5118767998180933543
+    second: Heart Back Run_19
+  - first:
+      213: -5774403498847712368
+    second: Heart Back Run_20
+  - first:
+      213: 7900673989187463912
+    second: Heart Back Run_21
+  - first:
+      213: 5309543454809884196
+    second: Heart Back Run_22
+  - first:
+      213: 6885557393889932223
+    second: Heart Back Run_23
+  - first:
+      213: 3443315141644529992
+    second: Heart Back Run_24
+  - first:
+      213: -4062025141954217879
+    second: Heart Back Run_25
+  - first:
+      213: 5912381105327481721
+    second: Heart Back Run_26
+  - first:
+      213: 8957245076832642919
+    second: Heart Back Run_27
+  - first:
+      213: -7602825890930814286
+    second: Heart Back Run_28
+  - first:
+      213: -4699660914956394298
+    second: Heart Back Run_29
+  - first:
+      213: 6102510650332053136
+    second: Heart Back Run_30
+  - first:
+      213: 1528971957492778790
+    second: Heart Back Run_31
+  - first:
+      213: -3394846087988028948
+    second: Heart Back Run_32
+  - first:
+      213: -7315687236443726233
+    second: Heart Back Run_33
+  - first:
+      213: -6197866695983344092
+    second: Heart Back Run_34
+  - first:
+      213: 1509947080958120698
+    second: Heart Back Run_35
+  - first:
+      213: -2404588593566702324
+    second: Heart Back Run_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Heart Back Run_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870a72589bfbdd8e0800000000000000
+      internalID: -1666965483533393800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_1
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c18acb5c5327b20800000000000000
+      internalID: 3130623814365879312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_2
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4342
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c89b61dcceac3570800000000000000
+      internalID: 8447819195750258884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f04315382815d420800000000000000
+      internalID: 2654054116372988152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_4
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0e215e48050e4e0800000000000000
+      internalID: -1954473706569670442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_5
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3257
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c49722f0650a660800000000000000
+      internalID: 7395005211145227364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2531a76cb86e3f0800000000000000
+      internalID: -871855793281740116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_7
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52a7a8667196f9d0800000000000000
+      internalID: -2740843385460383138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_8
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2172
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1000c10603be67330800000000000000
+      internalID: 3708409936189587457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19a606c14cf580e0800000000000000
+      internalID: -2268129477885777633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_10
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f92a998f8b95790800000000000000
+      internalID: -7540792723186213057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_11
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1087
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd5b8787dd5422a0800000000000000
+      internalID: -6763177560130232877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbc0670423d81e10800000000000000
+      internalID: 2168715372274961352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart Back Run_13
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 1906
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c7612f942417a00800000000000000
+      internalID: 752455498109189147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ab72e8a85380c3342b4340f158d2e92e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Heart Back Run_0: -1666965483533393800
+      Heart Back Run_1: 3130623814365879312
+      Heart Back Run_10: -7540792723186213057
+      Heart Back Run_11: -6763177560130232877
+      Heart Back Run_12: 2168715372274961352
+      Heart Back Run_13: 752455498109189147
+      Heart Back Run_2: 8447819195750258884
+      Heart Back Run_3: 2654054116372988152
+      Heart Back Run_4: -1954473706569670442
+      Heart Back Run_5: 7395005211145227364
+      Heart Back Run_6: -871855793281740116
+      Heart Back Run_7: -2740843385460383138
+      Heart Back Run_8: 3708409936189587457
+      Heart Back Run_9: -2268129477885777633
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
