@@ -144,13 +144,13 @@ public class PlayerMovement : MonoBehaviour
             buttonHeldTime += Time.deltaTime;
             if(buttonHeldTime >= 3 && !indicatorShown)
             {
-                if(playerStats.passiveAbility1.code == "n8d" || playerStats.passiveAbility1.code == "n9d")
+                if(playerStats.passiveAbility1.code == "n8d" || playerStats.passiveAbility1.code == "n9d" || playerStats.passiveAbility2.code == "n8d" || playerStats.passiveAbility2.code == "n9d")
                     StartCoroutine(DiamondIndicatorTimer());
-                if(playerStats.passiveAbility1.code == "n8h" || playerStats.passiveAbility1.code == "n9h")
+                if(playerStats.passiveAbility1.code == "n8h" || playerStats.passiveAbility1.code == "n9h" || playerStats.passiveAbility2.code == "n8h" || playerStats.passiveAbility2.code == "n9h")
                     StartCoroutine(HeartIndicatorTimer());
-                if(playerStats.passiveAbility1.code == "n8c" || playerStats.passiveAbility1.code == "n9c")
+                if(playerStats.passiveAbility1.code == "n8c" || playerStats.passiveAbility1.code == "n9c" || playerStats.passiveAbility2.code == "n8c" || playerStats.passiveAbility2.code == "n9c")
                     StartCoroutine(ClubIndicatorTimer());
-                if(playerStats.passiveAbility1.code == "n8s" || playerStats.passiveAbility1.code == "n9s")
+                if(playerStats.passiveAbility1.code == "n8s" || playerStats.passiveAbility1.code == "n9s" || playerStats.passiveAbility2.code == "n8s" || playerStats.passiveAbility2.code == "n9s")
                     StartCoroutine(SpadeIndicatorTimer());
                 indicatorShown = true;
             }
