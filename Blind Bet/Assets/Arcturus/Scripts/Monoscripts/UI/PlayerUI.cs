@@ -36,6 +36,8 @@ public class PlayerUI : MonoBehaviour
     public GameObject manual;
     [Header("ScreenTransitions")]
     public GameObject screenTransition;
+    [Header("Tutorial")]
+    public GameObject tutorial;
 
 
     private void Start()

@@ -9,4 +9,5 @@ public class GameStats : ScriptableObject
     public int level;
     public int kills;
     public int enemies;
+    public bool finishedTutorial;
 }

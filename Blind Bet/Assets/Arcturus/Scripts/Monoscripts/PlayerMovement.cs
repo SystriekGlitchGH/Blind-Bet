@@ -435,7 +435,26 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-    
+    public void TutorialNext(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            if(playerUI.tutorial.activeSelf == true)
+            {
+                if(playerUI.tutorial.transform.childCount > 0)
+                {
+                    Destroy(playerUI.tutorial.transform.GetChild(playerUI.tutorial.transform.childCount-1).gameObject);
+                    if(playerUI.tutorial.transform.childCount == 1)
+                    {
+                        Debug.Log("Finished");
+                        gamestats.finishedTutorial = true;
+                        //playerUI.tutorial.gameObject.SetActive(false);
+                    }
+                }
+            }
+        }
+        
+    }
     // presentation cheats
     public void SpawnWarpSlab(InputAction.CallbackContext ctx)
     {

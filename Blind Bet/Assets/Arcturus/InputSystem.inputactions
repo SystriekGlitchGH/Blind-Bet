@@ -97,6 +97,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "TutorialNext",
+                    "type": "Button",
+                    "id": "a92498b2-2227-48e7-bbe2-ff4442d98340",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "FillHP",
                     "type": "Button",
                     "id": "1463057a-578a-425b-be8c-366e94e25371",
@@ -369,6 +378,17 @@
                     "processors": "",
                     "groups": ";Keyboard",
                     "action": "Hand4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ce11fed4-139b-4107-b7e2-5826ea2a1e05",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "TutorialNext",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -26,3 +26,4 @@ MonoBehaviour:
   level: 0
   kills: 0
   enemies: 0
+  finishedTutorial: 1
