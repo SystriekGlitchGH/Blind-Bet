@@ -6,14 +6,11 @@ public class EnemyUI : MonoBehaviour
 {
     public EnemyMovement em;
     public Slider healthbarSlider;
-    public TMP_Text healthbarText;
     void Update()
     {
         if(healthbarSlider.value != em.enemyStats.currentHealth / em.enemyStats.maxHealth)
         {
             healthbarSlider.value = Mathf.MoveTowards(healthbarSlider.value, em.enemyStats.currentHealth / em.enemyStats.maxHealth, 2f * Time.deltaTime);
         }
-        if(healthbarText.text != em.enemyStats.currentHealth+"/"+em.enemyStats.maxHealth)
-            healthbarText.SetText("{0}"+"/"+"{1}",em.enemyStats.currentHealth,em.enemyStats.maxHealth);
     }
 }
