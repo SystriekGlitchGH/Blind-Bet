@@ -68,7 +68,7 @@ public class Goop1Movement : EnemyMovement
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
             Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
-            if (hasKnockback || isAttacking || enemyStats.hasStun || enemyStats.hasFrozen)
+            if (hasKnockback || isAttacking || enemyStats.hasStun || enemyStats.hasFrozen || isDying)
             {
                 return;
             }

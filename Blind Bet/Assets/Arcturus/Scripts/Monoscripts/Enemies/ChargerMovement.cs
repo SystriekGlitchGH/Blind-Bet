@@ -65,7 +65,7 @@ public class ChargerMovement : EnemyMovement
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, TargetDirection(enemyTarget.transform.position), 3, hitLayer);
             Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
-            if (hasKnockback || enemyStats.hasStun || enemyStats.hasFrozen)
+            if (hasKnockback || enemyStats.hasStun || enemyStats.hasFrozen || isDying)
                 return;
             if (isAttacking)
             {
@@ -137,7 +137,7 @@ public class ChargerMovement : EnemyMovement
     }
     protected void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && isAttacking)
+        if (collision.CompareTag("Player") && isAttacking && !isDying)
         {
             PlayerMovement pm = collision.GetComponent<PlayerMovement>();
             pm.GetHit(this, enemyStats.baseKnockback, enemyStats.baseDamage * enemyStats.GetAttackDamageMod());
