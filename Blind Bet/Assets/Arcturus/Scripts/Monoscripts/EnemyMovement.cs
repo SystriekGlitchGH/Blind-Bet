@@ -190,6 +190,7 @@ public class EnemyMovement : MonoBehaviour
     public void Die()
     {
         isDying = true;
+        // enemyTarget.playerUI.UpdatePercentage();
         StartCoroutine(DieTimer());
     }
     public void GetHit(PlayerMovement attacker, float knockback, float damage)
@@ -197,7 +198,7 @@ public class EnemyMovement : MonoBehaviour
         StartCoroutine(GetHitTimer());
         enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
         Debug.Log(enemyStats.currentHealth);
-        if (enemyStats.currentHealth <= 0)
+        if (enemyStats.currentHealth <= 0 && !isDying)
             Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
     }

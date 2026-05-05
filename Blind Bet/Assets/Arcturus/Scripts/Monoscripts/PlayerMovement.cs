@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using Unity.Cinemachine;
 using Unity.Mathematics;
@@ -100,6 +101,9 @@ public class PlayerMovement : MonoBehaviour
         playerStats.weapon = new Weapon(playerStats.activeSuit);
         impulseSource = GetComponent<CinemachineImpulseSource>();
     }
+    // private void Start()
+    // {
+    // }
     private void FixedUpdate()
     {
         // if you are currently lunging, your lineardamping should be 0 and regular movement shouldn't apply

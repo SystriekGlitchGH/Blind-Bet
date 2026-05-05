@@ -7,7 +7,7 @@ public class GameStats : ScriptableObject
 {
     public List<string> levelsAvailable;
     public int level;
-    public int kills;
-    public int enemies;
+    public float kills;
+    public float enemies;
     public bool finishedTutorial;
 }

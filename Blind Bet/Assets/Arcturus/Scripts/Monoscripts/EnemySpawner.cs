@@ -13,6 +13,10 @@ public class EnemySpawner : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else
+        {
+            gamestats.enemies++;
+        }
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
