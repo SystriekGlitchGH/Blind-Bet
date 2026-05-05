@@ -43,6 +43,10 @@ public class PlayerUI : MonoBehaviour
     private void Start()
     {
         cardManager.SetActive(false);
+        if (pm.gamestats.finishedTutorial)
+        {
+            Destroy(tutorial.gameObject);
+        }
     }
     private void Update()
     {
