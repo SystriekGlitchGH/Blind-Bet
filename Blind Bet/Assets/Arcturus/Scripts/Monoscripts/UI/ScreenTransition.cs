@@ -23,7 +23,7 @@ public class ScreenTransition : MonoBehaviour
     {
         for(int i = 0; i < 100; i++)
         {
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.01f);
             canvasG.alpha += 0.01f;
         }
         canvasG.alpha = 1;

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using Unity.Cinemachine;
 using Unity.Mathematics;
@@ -100,6 +101,9 @@ public class PlayerMovement : MonoBehaviour
         playerStats.weapon = new Weapon(playerStats.activeSuit);
         impulseSource = GetComponent<CinemachineImpulseSource>();
     }
+    // private void Start()
+    // {
+    // }
     private void FixedUpdate()
     {
         // if you are currently lunging, your lineardamping should be 0 and regular movement shouldn't apply
@@ -435,7 +439,26 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-    
+    public void TutorialNext(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            if(playerUI.tutorial.activeSelf == true)
+            {
+                if(playerUI.tutorial.transform.childCount > 0)
+                {
+                    Destroy(playerUI.tutorial.transform.GetChild(playerUI.tutorial.transform.childCount-1).gameObject);
+                    if(playerUI.tutorial.transform.childCount == 1)
+                    {
+                        Debug.Log("Finished");
+                        gamestats.finishedTutorial = true;
+                        //playerUI.tutorial.gameObject.SetActive(false);
+                    }
+                }
+            }
+        }
+        
+    }
     // presentation cheats
     public void SpawnWarpSlab(InputAction.CallbackContext ctx)
     {

@@ -22,7 +22,7 @@ public class CardSoldierH : EnemyMovement
     {
         if(enemyTarget != null)
         {
-            if (hasKnockback || enemyStats.hasStun || enemyStats.hasFrozen)
+            if (hasKnockback || enemyStats.hasStun || enemyStats.hasFrozen || isDying)
             {
                 return;
             }

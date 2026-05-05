@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyUI : MonoBehaviour
+public class BossUI : MonoBehaviour
 {
     public EnemyMovement em;
     public Slider healthbarSlider;

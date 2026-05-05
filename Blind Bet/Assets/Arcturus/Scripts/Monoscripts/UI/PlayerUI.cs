@@ -36,11 +36,19 @@ public class PlayerUI : MonoBehaviour
     public GameObject manual;
     [Header("ScreenTransitions")]
     public GameObject screenTransition;
+    [Header("Tutorial")]
+    public GameObject tutorial;
+    [Header("Percentage")]
+    public TMP_Text percentage;
 
 
     private void Start()
     {
         cardManager.SetActive(false);
+        if (pm.gamestats.finishedTutorial)
+        {
+            Destroy(tutorial.gameObject);
+        }
     }
     private void Update()
     {
@@ -69,6 +77,13 @@ public class PlayerUI : MonoBehaviour
             SwitchChipPicture(1);
         else if(chipbarSlider.value >= 0 && chipbarSlider.value <= 0.1f && chips[0].sprite != currentChip.sprite)
             SwitchChipPicture(0);
+        //percentage
+        if(pm.gamestats.enemies != 0)
+        {
+            if(percentage.text != (int)(pm.gamestats.kills/pm.gamestats.enemies*100) + "%")
+            UpdatePercentage();
+        }
+        
     }
     public void OpenCardMenu(InputAction.CallbackContext ctx)
     {
@@ -109,5 +124,9 @@ public class PlayerUI : MonoBehaviour
         abilityShowcase1.UpdateShowcase(pm.playerStats.activeAbility.code, pm.playerStats.activeAbility.name);
         abilityShowcase2.UpdateShowcase(pm.playerStats.passiveAbility1.code, pm.playerStats.passiveAbility1.name);
         abilityShowcase3.UpdateShowcase(pm.playerStats.passiveAbility2.code, pm.playerStats.passiveAbility2.name);
+    }
+    public void UpdatePercentage()
+    {
+        percentage.text = (int)(pm.gamestats.kills/pm.gamestats.enemies*100) + "%";
     }
 }

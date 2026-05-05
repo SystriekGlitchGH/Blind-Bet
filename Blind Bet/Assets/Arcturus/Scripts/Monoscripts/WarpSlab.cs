@@ -17,15 +17,15 @@ public class WarpSlab : MonoBehaviour
             pm.playerUI.screenTransition.SetActive(true);
             StartCoroutine(st.FadeToBlack());
         }
+        if(gameStats.levelsAvailable.Count() == 0)
+        {
+            StartCoroutine(NextSceneTimer("BossArena1"));
+        }
         if (gameStats.level >= 5)
         {
             if(rand.Next(0,101) >= 50)
                 StartCoroutine(NextSceneTimer("Kharon Room"));
             return;
-        }
-        if(gameStats.levelsAvailable.Count() == 0)
-        {
-            StartCoroutine(NextSceneTimer("BossArena1"));
         }
         gameStats.level++;
         int levelIndex = rand.Next(0,gameStats.levelsAvailable.Count());

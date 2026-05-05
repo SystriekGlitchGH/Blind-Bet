@@ -50,7 +50,7 @@ public class Area1Boss : EnemyMovement
     protected override void Start()
     {
         rb2d.linearDamping = friction;
-        enemyStats = new Enemy(10,500,5,5,0);
+        enemyStats = new Enemy(10,1000 * (1+(gameStats.kills/gameStats.enemies)),5,5,0);
     }
     protected override void Update()
     {

@@ -26,6 +26,7 @@ public class EnemyMovement : MonoBehaviour
     public bool hasKnockback;
     public float knockbackTime;
     public LayerMask hitLayer;
+    protected bool isDying;
 
     [Header("Feedback Colors")]
     public Color32 baseColor;
@@ -125,7 +126,7 @@ public class EnemyMovement : MonoBehaviour
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position,TargetDirection(enemyTarget.transform.position),3,hitLayer);
             Debug.DrawRay(rb2d.position, TargetDirection(enemyTarget.transform.position) * 3f, Color.red);
-            if (hasKnockback || isAttacking || enemyStats.hasStun || enemyStats.hasFrozen)
+            if (hasKnockback || isAttacking || enemyStats.hasStun || enemyStats.hasFrozen || isDying)
             {
                 return;
             }
@@ -188,6 +189,8 @@ public class EnemyMovement : MonoBehaviour
     #region ACTIVATION METHODS
     public void Die()
     {
+        isDying = true;
+        // enemyTarget.playerUI.UpdatePercentage();
         StartCoroutine(DieTimer());
     }
     public void GetHit(PlayerMovement attacker, float knockback, float damage)
@@ -195,7 +198,7 @@ public class EnemyMovement : MonoBehaviour
         StartCoroutine(GetHitTimer());
         enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
         Debug.Log(enemyStats.currentHealth);
-        if (enemyStats.currentHealth <= 0)
+        if (enemyStats.currentHealth <= 0 && !isDying)
             Die();
         rb2d.AddForce(attacker.DirectionToVector()*knockback,ForceMode2D.Impulse);
     }
