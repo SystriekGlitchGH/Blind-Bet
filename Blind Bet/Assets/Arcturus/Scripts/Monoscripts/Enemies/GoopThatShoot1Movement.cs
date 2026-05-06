@@ -5,6 +5,7 @@ public class GoopThatShoot1Movement : EnemyMovement
 {
     [SerializeField] GameObject bullet;
     [SerializeField] Transform anchorTransform;
+    [SerializeField] AudioClip shoot;
     protected override void Start()
     {
         currentNode = AStarManager.instance.FindNearestNode(transform.position);
@@ -77,6 +78,7 @@ public class GoopThatShoot1Movement : EnemyMovement
         isReadyingAttack = false; // no longer readying attack
         spriteRend.color = currentColor;
         isAttacking = true; // is now attacking
+        PlaySound(shoot);
         SpawnBullet();
         yield return new WaitForSeconds(0.2f); // time where you can take damage/parry/get shot at
         isAttacking = false; // no longer attacking
