@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73259922de1e381499dbac0274e3f230, type: 3}
   m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  activeSuit: 0
+  activeSuit: 1
   activeHand:
     cards:
     - {fileID: 11400000, guid: 799af98700816de4c9545005776d396d, type: 2}
@@ -64,16 +64,16 @@ MonoBehaviour:
   hasEnrage: 0
   buffDebuffs: []
   weapon:
-    baseAttack: 0
-    baseAttackSpeed: 0
-    baseKnockback: 0
-    baseAttackSize: {x: 0, y: 0}
+    baseAttack: 30
+    baseAttackSpeed: 200
+    baseKnockback: 10
+    baseAttackSize: {x: 2.5, y: 3}
     baseParrySize: {x: 2, y: 1}
   baseSpeed: 10
   maxHealth: 100
-  currentHealth: 100
+  currentHealth: 90
   maxChips: 5000
-  currentChips: 1000
+  currentChips: 998
   chipLowThreshold: 500
   baseDashDistance: 20
   baseDashCooldown: 0.5
