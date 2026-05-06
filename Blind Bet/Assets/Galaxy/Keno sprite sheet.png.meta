@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 725b181d7a192094b8035117017f08f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3976871776242026932
+    second: Keno sprite sheet_0
+  - first:
+      213: 5011433743571531427
+    second: Keno sprite sheet_1
+  - first:
+      213: 1130863788616513822
+    second: Keno sprite sheet_2
+  - first:
+      213: -6375080856710340119
+    second: Keno sprite sheet_3
+  - first:
+      213: 8076914739293366080
+    second: Keno sprite sheet_4
+  - first:
+      213: -3835245324748213048
+    second: Keno sprite sheet_5
+  - first:
+      213: 7562615683769379409
+    second: Keno sprite sheet_6
+  - first:
+      213: -1005257400730510258
+    second: Keno sprite sheet_7
+  - first:
+      213: 5973797427427635848
+    second: Keno sprite sheet_8
+  - first:
+      213: -6859643186131957171
+    second: Keno sprite sheet_9
+  - first:
+      213: -3230298698167513083
+    second: Keno sprite sheet_10
+  - first:
+      213: -2792992198078617082
+    second: Keno sprite sheet_11
+  - first:
+      213: 3075613707583748767
+    second: Keno sprite sheet_12
+  - first:
+      213: 8342303964681738348
+    second: Keno sprite sheet_13
+  - first:
+      213: 3396981374665104793
+    second: Keno sprite sheet_14
+  - first:
+      213: 7960877846532833985
+    second: Keno sprite sheet_15
+  - first:
+      213: 2696372564667122497
+    second: Keno sprite sheet_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Keno sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 5519
+        width: 545
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4631db90305fc8c0800000000000000
+      internalID: -3976871776242026932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 5519
+        width: 544
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6bcf420703c8540800000000000000
+      internalID: 5011433743571531427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 4558
+        y: 5517
+        width: 545
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19f6d9cf92a1bf00800000000000000
+      internalID: 1130863788616513822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 4437
+        width: 545
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e12369ccb92787a0800000000000000
+      internalID: -6375080856710340119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 4435
+        width: 546
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047a2bc7927f61070800000000000000
+      internalID: 8076914739293366080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 4436
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4b7e772b876cac0800000000000000
+      internalID: -3835245324748213048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 3354
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a2fdb55eec3f860800000000000000
+      internalID: 7562615683769379409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 3354
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c10a958bb9c02f0800000000000000
+      internalID: -1005257400730510258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 3354
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88277f51c1137e250800000000000000
+      internalID: 5973797427427635848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 2272
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a0dacbdd6adc0a0800000000000000
+      internalID: -6859643186131957171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 2272
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5009159e27cab23d0800000000000000
+      internalID: -3230298698167513083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 2272
+        width: 546
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a261dc46c4d39d0800000000000000
+      internalID: -2792992198078617082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1190
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9af9da2f56ceaa20800000000000000
+      internalID: 3075613707583748767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2631
+        y: 1190
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c681037a141d5c370800000000000000
+      internalID: 8342303964681738348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 4557
+        y: 1190
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d1881ff80842f20800000000000000
+      internalID: 3396981374665104793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 109
+        width: 544
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2cdde0938ba7e60800000000000000
+      internalID: 7960877846532833985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keno sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 108
+        width: 545
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143c713cf807b6520800000000000000
+      internalID: 2696372564667122497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Keno sprite sheet_0: -3976871776242026932
+      Keno sprite sheet_1: 5011433743571531427
+      Keno sprite sheet_10: -3230298698167513083
+      Keno sprite sheet_11: -2792992198078617082
+      Keno sprite sheet_12: 3075613707583748767
+      Keno sprite sheet_13: 8342303964681738348
+      Keno sprite sheet_14: 3396981374665104793
+      Keno sprite sheet_15: 7960877846532833985
+      Keno sprite sheet_16: 2696372564667122497
+      Keno sprite sheet_2: 1130863788616513822
+      Keno sprite sheet_3: -6375080856710340119
+      Keno sprite sheet_4: 8076914739293366080
+      Keno sprite sheet_5: -3835245324748213048
+      Keno sprite sheet_6: 7562615683769379409
+      Keno sprite sheet_7: -1005257400730510258
+      Keno sprite sheet_8: 5973797427427635848
+      Keno sprite sheet_9: -6859643186131957171
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

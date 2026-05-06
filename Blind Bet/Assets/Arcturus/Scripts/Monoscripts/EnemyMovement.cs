@@ -14,6 +14,7 @@ public class EnemyMovement : MonoBehaviour
     [Header("Components")]
     public Rigidbody2D rb2d;
     [SerializeField] protected SpriteRenderer spriteRend;
+    [SerializeField] protected AudioSource audioSrc;
     public Enemy enemyStats;
     public GameStats gameStats;
     public PrefabLibrary prefabLib;
@@ -31,6 +32,9 @@ public class EnemyMovement : MonoBehaviour
     [Header("Feedback Colors")]
     public Color32 baseColor;
     public Color32 currentColor;
+    [SerializeField] AudioClip getHitSFX;
+    [SerializeField] AudioClip dieSFX;
+    [SerializeField] AudioClip chipsSFX;
 
     [Header("PathFinding")]
     public Node currentNode;
@@ -195,6 +199,7 @@ public class EnemyMovement : MonoBehaviour
     }
     public void GetHit(PlayerMovement attacker, float knockback, float damage)
     {
+        PlaySound(getHitSFX);
         StartCoroutine(GetHitTimer());
         enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
         Debug.Log(enemyStats.currentHealth);
@@ -204,6 +209,7 @@ public class EnemyMovement : MonoBehaviour
     }
     public void GetHitAway(PlayerMovement attacker, float knockback, float damage)
     {
+        PlaySound(getHitSFX);
         StartCoroutine(GetHitTimer());
         enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
         Debug.Log(enemyStats.currentHealth);
@@ -214,6 +220,7 @@ public class EnemyMovement : MonoBehaviour
     public IEnumerator GetHitDelay(PlayerMovement attacker, float knockback, float damage, float delayTime)
     {
         yield return new WaitForSeconds(delayTime);
+        PlaySound(getHitSFX);
         StartCoroutine(GetHitTimer());
         enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
         Debug.Log(enemyStats.currentHealth);
@@ -223,6 +230,7 @@ public class EnemyMovement : MonoBehaviour
     }
     public void GetHit(Bullet bullet, float knockback, float damage)
     {
+        PlaySound(getHitSFX);
         StartCoroutine(GetHitTimer());
         enemyStats.TakeDamage(damage * enemyStats.GetDamageMod());
         if(enemyStats.currentHealth <= 0)
@@ -255,9 +263,11 @@ public class EnemyMovement : MonoBehaviour
         if (enemyTarget != null)
         {
             enemyTarget.playerStats.kills++;
+            PlaySound(chipsSFX);
             enemyTarget.playerStats.AddChips(30);
             gameStats.kills++;
         }
+        PlaySound(dieSFX);
         GameObject deathParticles = Instantiate(prefabLib.deathParticles,transform);
         yield return new WaitForSeconds(1f);
         deathParticles.transform.parent = null;
@@ -366,6 +376,11 @@ public class EnemyMovement : MonoBehaviour
     public Vector2 TargetDirection(Vector2 targetPos)
     {
         return (targetPos - (Vector2)transform.position).normalized;
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        audioSrc.clip = clip;
+        audioSrc.Play();
     }
     // get statements
     public bool IsAttacking()

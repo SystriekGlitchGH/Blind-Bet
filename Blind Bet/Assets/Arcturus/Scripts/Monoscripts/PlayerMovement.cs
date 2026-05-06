@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2d;
     [SerializeField] SpriteRenderer spriteRend;
 	public Transform anchorTransform;
+    public AudioSource audioSrc;
     public Player playerStats;
     public PlayerUI playerUI;
     public PrefabLibrary prefabLib;
@@ -29,6 +30,12 @@ public class PlayerMovement : MonoBehaviour
     public Player playerReset;
     public CardDeck cardDeck;
     private CinemachineImpulseSource impulseSource;
+    [Header("AudioClips")]
+    [SerializeField] AudioClip abilityUseSFX;
+    [SerializeField] AudioClip parrySFX;
+    [SerializeField] AudioClip dieSFX;
+    [SerializeField] AudioClip attackSFX;
+    [SerializeField] AudioClip getHitSFX;
 
 	[Header("Movement stats")]
     public float acceleration; // how quickly you go to top speed
@@ -212,6 +219,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(ctx.ReadValue<float>() == 1 && canAttack && playerStats.activeSuit != Card.Suit.blank && playerStats.currentChips >= playerStats.GetAttackChipUse())
         {
+            PlaySound(attackSFX);
             buttonHeld = true;
             playerStats.currentChips -= playerStats.GetAttackChipUse();
             StartCoroutine(AttackTimer());
@@ -239,36 +247,44 @@ public class PlayerMovement : MonoBehaviour
             {
                 if(playerStats.passiveAbility1.code == "n8d" || playerStats.passiveAbility2.code == "n8d")
                 {
+                    PlaySound(abilityUseSFX);
                     StartCoroutine(ShockingWheelTimer());
                 }
                 if(playerStats.passiveAbility1.code == "n9d" || playerStats.passiveAbility2.code == "n9d")
                 {
+                    PlaySound(abilityUseSFX);
                     StartCoroutine(FreezingWheelTimer());
                 }
                 if(playerStats.passiveAbility1.code == "n8h" || playerStats.passiveAbility2.code == "n8h")
                 {
+                    PlaySound(abilityUseSFX);
                     StartCoroutine(ShieldingWardTimer());
                 }
                 if(playerStats.passiveAbility1.code == "n9h" || playerStats.passiveAbility2.code == "n9h")
                 {
+                    PlaySound(abilityUseSFX);
                     StartCoroutine(ShieldingWardTimer());
                     StartCoroutine(HyperDashTimer());
                 }
                 if(playerStats.passiveAbility1.code == "n8c" || playerStats.passiveAbility2.code == "n8c")
                 {
+                    PlaySound(abilityUseSFX);
                     StartCoroutine(TectonicAssaultTimer());
                 }
                 if(playerStats.passiveAbility1.code == "n9c" || playerStats.passiveAbility2.code == "n9c")
                 {
+                    PlaySound(abilityUseSFX);
                     StartCoroutine(TectonicAssaultTimer());
                     StartCoroutine(TectonicChargeTimer());
                 }
                 if(playerStats.passiveAbility1.code == "n8s" || playerStats.passiveAbility2.code == "n8s")
                 {
+                    PlaySound(abilityUseSFX);
                     StartCoroutine(ReapingBayonetTimer());
                 }
                 if(playerStats.passiveAbility1.code == "n9s" || playerStats.passiveAbility2.code == "n9s")
                 {
+                    PlaySound(abilityUseSFX);
                     StartCoroutine(ReapingBayonetTimer());
                 }
                 playerStats.currentChips -= playerStats.GetHoldAbilityChipUse();
@@ -286,12 +302,13 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(ParryTimer());
             if(hit && hit.rigidbody.TryGetComponent(out EnemyMovement enemy) && enemy.IsAttacking())
             {
+                PlaySound(parrySFX);
                 enemy.setVelocity(Vector2.zero);
                 StartCoroutine(RetaliationTimer());
             }
             if(hit && hit.rigidbody.TryGetComponent(out Bullet bullet))
             {
-                Debug.Log("Parried");
+                PlaySound(parrySFX);
                 bullet.bulletType = "player";
                 bullet.pm = this;
                 bullet.em = null;
@@ -314,6 +331,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (ctx.performed && canUseAbility1 && playerStats.currentChips >= playerStats.GetAbility1ChipUse())
         {
+            PlaySound(abilityUseSFX);
             // diamonds
             if (playerStats.passiveAbility1.code == "b3d")
                 StartCoroutine(ChillingBurstTimer());
@@ -364,6 +382,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (ctx.performed && canUseAbility2 && playerStats.currentChips >= playerStats.GetAbility2ChipUse())
         {
+            PlaySound(abilityUseSFX);
             // diamonds
             if (playerStats.passiveAbility2.code == "b3d")
                 StartCoroutine(ChillingBurstTimer());
@@ -691,6 +710,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!hasIFrames && !isDying)
         {
+            PlaySound(getHitSFX);
             Debug.Log("got hit for: "+ damage * playerStats.GetDamageMod());
             impulseSource.GenerateImpulse();
             StartCoroutine(GetHitTimer());
@@ -704,6 +724,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Die()
     {
+        PlaySound(dieSFX);
         StartCoroutine(DieTimer());
     }
     public IEnumerator DieTimer()
@@ -1746,6 +1767,11 @@ public class PlayerMovement : MonoBehaviour
             return null;
     }
     // equations for finding amount of time between singular attacks
+    private void PlaySound(AudioClip clip)
+    {
+        audioSrc.clip = clip;
+        audioSrc.Play();
+    }
     private float TimeBetweenAttacks()
     {
         return 1/(1+playerStats.weapon.baseAttackSpeed/100*playerStats.GetAttackSpeedMod());
