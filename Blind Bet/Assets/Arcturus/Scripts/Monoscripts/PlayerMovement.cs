@@ -454,7 +454,8 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 playerUI.manual.SetActive(false);
-                Time.timeScale = 1f;
+                if(!playerUI.cardManager.activeSelf && !playerUI.pauseMenu.activeSelf)
+                    Time.timeScale = 1f;
             }
         }
     }
@@ -477,6 +478,23 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         
+    }
+    public void Pause(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            if (!playerUI.pauseMenu.activeInHierarchy)
+            {
+                playerUI.pauseMenu.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else
+            {
+                playerUI.pauseMenu.SetActive(false);
+                if(!playerUI.cardManager.activeSelf && !playerUI.manual.activeSelf)
+                    Time.timeScale = 1;
+            }
+        }
     }
     // presentation cheats
     public void SpawnWarpSlab(InputAction.CallbackContext ctx)

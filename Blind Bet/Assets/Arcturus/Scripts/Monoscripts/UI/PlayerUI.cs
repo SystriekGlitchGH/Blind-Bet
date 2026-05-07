@@ -40,6 +40,8 @@ public class PlayerUI : MonoBehaviour
     public GameObject tutorial;
     [Header("Percentage")]
     public TMP_Text percentage;
+    [Header("Pause")]
+    public GameObject pauseMenu;
 
 
     private void Start()
@@ -100,7 +102,8 @@ public class PlayerUI : MonoBehaviour
             else
             {
                 cardManager.SetActive(false);
-                Time.timeScale = 1f;
+                if(!manual.activeSelf && !pauseMenu.activeSelf)
+                    Time.timeScale = 1f;
             }
         }
     }

@@ -6,10 +6,18 @@ public class MusicManager : MonoBehaviour
     [SerializeField] AudioClip fullHouse;
     [SerializeField] AudioClip area1;
     [SerializeField] AudioClip kharon;
+    private static MusicManager instance;
     void Start()
     {
         DontDestroyOnLoad(gameObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -22,6 +30,10 @@ public class MusicManager : MonoBehaviour
         {
             audioSrc.clip = kharon;
             audioSrc.Play();
+        }
+        else if(scene.name == "MainMenu")
+        {
+            audioSrc.Stop();
         }
         else
         {

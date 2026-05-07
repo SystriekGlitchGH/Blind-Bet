@@ -71,9 +71,9 @@ MonoBehaviour:
     baseParrySize: {x: 2, y: 1}
   baseSpeed: 10
   maxHealth: 100
-  currentHealth: 90
+  currentHealth: 100
   maxChips: 5000
-  currentChips: 998
+  currentChips: 1000
   chipLowThreshold: 500
   baseDashDistance: 20
   baseDashCooldown: 0.5
